@@ -5,6 +5,8 @@ import './App.css'
 import Navbar from './component/common/Navbar';
 import Footer from './component/common/Footer';
 import Home from './pages/Home/Home';
+import Routes from './routes/routes';
+
 
 
 
@@ -14,9 +16,10 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+      <div className="App">
+        <Routes />
+
+      </div>
     </>
   )
 }

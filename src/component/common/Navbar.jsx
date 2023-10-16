@@ -1,70 +1,158 @@
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import {
+  MobileNav,
+  Typography,
+  Button,
+  IconButton,
+  MenuHandler,
+  MenuItem,
+  MenuList,
+} from "@material-tailwind/react";
 
-
-
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
-const navigation = [
-    { name: 'Home', href: '#home', current: false },
-    { name: 'About', href: '#work', current: false },
-    { name: 'Services', href: '#projects', current: false },
-    { name: 'Contact Us', href: '#testimonials', current: false },
-
-]
-
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../../../public/logo.png";
+const navItems = [
+  {
+    label: "Home",
+    to: "/",
+    current: false,
+  },
+  {
+    label: "Services",
+    to: "/services",
+    current: false,
+  },
+  {
+    label: "Industry",
+    to: "industry/",
+    current: false,
+  },
+  {
+    label: "About Us",
+    to: "/about",
+    current: false,
+  },
+  {
+    label: "Contact",
+    to: "/contact",
+    current: false,
+  },
+];
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
-    return (
-        <>
-            {/* <header className="text-gray-600 border border-green-700  body-font">
-                <div className="container mx-auto flex flex-wrap p-10  flex-col md:flex-row items-center"> */}
-            {/* <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                        </svg>
-                        <span className="ml-3 text-6xl">FlyingChittal</span>
-                    </a> */}
+export default function Navbar() {
+  const [openNav, setOpenNav] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false)
+    );
+  }, []);
 
-            {/* <a className="mr-5 hover:text-green">Home</a>
-                        <a className="mr-5 hover:text-gray-900">About</a>
-                        <a className="mr-5 hover:text-gray-900">Services</a>
-                        <a className="mr-5 hover:text-gray-900">Contact </a> */}
+  // const navList = (
+  //     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 drop-shadow-sm text-base">
+  //         <Typography
+  //             as="li"
+  //             variant="small"
+  //             color="blue-gray"
+  //             className="p-1 font-normal"
+  //         >
+  //             <Link
+  //                 to="/"
+  //                 className="flex items-center text-black font-poppins  text-base"
+  //             >
+  //                 Home
+  //             </Link>
+  //         </Typography>
+  //         <Typography
+  //             as="li"
+  //             variant="small"
+  //             color="blue-gray"
+  //             className="p-1 font-normal"
+  //         >
+  //             <Link
+  //                 to="/about"
+  //                 className="flex items-center  text-black font-poppins text-base"
+  //             >
+  //                 About Us
+  //             </Link>
+  //         </Typography>
+  //         <Typography
+  //             as="li"
+  //             variant="small"
+  //             color="blue-gray"
+  //             className="p-1 font-normal"
+  //         >
+  //             <Link
+  //                 to="/contact"
+  //                 className="flex items-center  text-black font-poppins text-base"
+  //             >
+  //                 Contact
+  //             </Link>
+  //         </Typography>
+  //         <Typography
+  //             as="li"
+  //             variant="small"
+  //             color="blue-gray"
+  //             className="p-1 font-normal"
+  //         >
+  //             <Link
+  //                 to="/services"
+  //                 className="flex items-center  text-black font-poppins text-base"
+  //             >
+  //                 Services
+  //             </Link>
+  //         </Typography>
+  //     </ul>
+  // );
 
-
-            <Disclosure as="nav" className="">
-                {({ open }) => (
-                    <>
-                        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 p-10">
-                            <div className="relative flex h-16 items-center justify-between">
-                                <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                                    {/* Mobile menu button*/}
-                                    <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                                        <span className="absolute -inset-0.5" />
-                                        <span className="sr-only">Open main menu</span>
-                                        {open ? (
-                                            <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                                        ) : (
-                                            <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                                        )}
-                                    </Disclosure.Button>
-                                </div>
-                                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                                    <div className="flex flex-shrink-0 items-center">
-                                        <img
-                                            className="h-8 w-auto"
-                                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                                            alt="Your Company"
-                                        />
-                                    </div>
-                                    <div className="hidden sm:ml-6 sm:block">
-                                        <div className="flex space-x-4">
-                                            {navigation.map((item) => (
+  return (
+    <>
+      <Disclosure as="nav" className="">
+        {({ open }) => (
+          <>
+            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 p-8">
+              <div className="relative flex h-16 items-center justify-between">
+                <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  {/* Mobile menu button*/}
+                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-[#000048]  hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <span className="absolute -inset-0.5" />
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    )}
+                  </Disclosure.Button>
+                </div>
+                <div className="flex flex-1 items-center md:justify-between  sm:items-stretch sm:justify-start">
+                  <div className="flex flex-shrink-0 items-center">
+                    <img
+                      src="/img/logo.png"
+                      alt=""
+                      className="border-blue h-16  "
+                    />
+                    <img
+                      className="h-14 w-auto"
+                      src={logo}
+                      alt="Your Company"
+                    />
+                    {/* <h2 className="text-3xl font-semibold mr-36 ml-4 font-Secondary ">
+                      Flying Chittal
+                    </h2> */}
+                  </div>
+                  <div className="hidden sm:ml-6 sm:block ml-40 ">
+                    <div className="flex justify-end  space-x-4  ">
+                      {/* {navList} */}
+                      {/* {navList.map((item) => (
                                                 <a
                                                     key={item.name}
                                                     href={item.href}
@@ -76,20 +164,40 @@ export default function Example() {
                                                 >
                                                     {item.name}
                                                 </a>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                                            ))} */}
 
+                      <ul className="font-Secondary mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 drop-shadow-sm pt-3 ">
+                        {navItems.map((item, index) => (
+                          <Typography
+                            key={index}
+                            as="li"
+                            variant="small"
+                            color="blue-gray"
+                            className={classNames(
+                              item.current
+                                ? "bg-black text-white"
+                                : "text-gray-900 hover:bg-[#000048]  hover:text-white",
+                              "rounded-md px-3 py-2 text-xl font-medium"
+                            )}
+                          >
+                            <Link to={item.to} className={item.className}>
+                              {item.label}
+                            </Link>
+                          </Typography>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"></div>
+              </div>
+            </div>
 
-                                </div>
-                            </div>
-                        </div>
+            <Disclosure.Panel className="sm:hidden">
+              <div className="space-y-1 px-2 pb-3 pt-2">
+                {/* {navList} */}
 
-                        <Disclosure.Panel className="sm:hidden">
-                            <div className="space-y-1 px-2 pb-3 pt-2">
-                                {navigation.map((item) => (
+                {/* {navList.map((item) => (
                                     <Disclosure.Button
                                         key={item.name}
                                         as="a"
@@ -102,17 +210,35 @@ export default function Example() {
                                     >
                                         {item.name}
                                     </Disclosure.Button>
-                                ))}
-                            </div>
-                        </Disclosure.Panel>
-                    </>
-                )}
-            </Disclosure>
+                                ))} */}
 
-
-            {/* </div >
+                <ul className="">
+                  {navItems.map((item, index) => (
+                    <Typography
+                      key={index}
+                      as="li"
+                      variant="small"
+                      color="blue-gray"
+                      className={classNames(
+                        item.current
+                          ? "bg-black text-white"
+                          : "text-gray-900 hover:bg-gray-700 hover:text-white",
+                        "rounded-md px-3 py-2 text-4xl font-medium"
+                      )}
+                    >
+                      <Link to={item.to} className={item.className}>
+                        {item.label}
+                      </Link>
+                    </Typography>
+                  ))}
+                </ul>
+              </div>
+            </Disclosure.Panel>
+          </>
+        )}
+      </Disclosure>
+      {/* </div >
             </header > */}
-
-        </>
-    )
+    </>
+  );
 }
