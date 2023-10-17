@@ -8,6 +8,9 @@ export default {
         Primary: ["Poppins"],
         Secondary: ["Montserrat"],
       },
+      boxShadow: {
+        custom: "0 0 5px rgba(128, 128, 128, 1)",
+      },
     },
   },
   plugins: [],

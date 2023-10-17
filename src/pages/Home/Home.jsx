@@ -7,43 +7,168 @@ import digital from "../../assets/images/digital.jpeg";
 import experts from "../../assets/images/experts.jpg";
 import truck from "../../assets/images/truck.jpg";
 import truck1 from "../../assets/images/truck1.png";
+// import flyingchital from "../../assets/images/flyingchital.jpeg";
 import warehouse from "../../assets/images/warehouse.png";
 import laptop from "../../assets/images/laptop.png";
 import loading from "../../assets/images/loading.png";
-
+import { useState } from "react";
+import video1 from "../../../src/assets/images/video1.mp4";
+import texture from "../../../src/assets/images/texture.jpg";
+import ReactPlayer from "react-player";
 export default function Home() {
+  const [h1Content, setH1Content] = useState(
+    "INTEGRATED DIGITAL PLATFORM FOR MULTI-MODAL MANAGEMENT IN MINES, PLANTS AND PORTS"
+  );
+  const [h2Content, setH2Content] = useState(
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam debitis recusandae in illum labore blanditiis, nulla voluptatibus, eius repudiandae, nihil velit incidunt."
+  );
+  const handleButtonClick = (point) => {
+    if (point === "Point 1") {
+      setH1Content("Unlock Your Digital Transformation & Innovation Potential");
+
+      setH2Content(
+        "We Help Implement Modern Digital Technologies to Solve Business Problems, Optimise Processes and Save Cost"
+      );
+    } else if (point === "Point 2") {
+      setH1Content(
+        "Automate Your Enterprise Digital Workflows for Enhanced Resilience, Scalability and Sustainability"
+      );
+      setH2Content(
+        "We Help Automate Enterprise Digital Workflows to Streamline Processes, Boost Productivity and Provide Data Driven Insights"
+      );
+    } else if (point === "Point 3") {
+      setH1Content(
+        "Our Edge Computing and Mobility Solutions enable non-connected equipment, Industrial IoT devices, and workstations to capture and process data without having to collaborate with a centralized database system"
+      );
+
+      setH2Content(
+        "Aligned with Industrie 4.0 key driver for Digital Transformation and Industrial Automation"
+      );
+    } else if (point === "Point 4") {
+      setH1Content(
+        "We manage IT Services for applications and infrastructure, so that our clients can run their businesses. We help build and manage IT Infrastructure including private wireless, local area networks, wide area networks, edge networks, data centers and cloud networks"
+      );
+
+      setH2Content(
+        "Build and Manage software Applications from core accounting, stock tracking, bank reconciliation, project management to automating workflows, payroll, CRM, manufacturing etc"
+      );
+    }
+  };
   return (
     <div>
       {/* Section-Header */}
-      <section className="text-gray-600 body-font  bg-gradient-to-tl from-lime-200 via-sky-500 to-violet-500 ">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col   items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-100 font-Primary leading-8">
-              INTEGRATED DIGITAL PLATFORM FOR MULTI-MODAL MANAGEMENT IN MINES,
-              PLANTS AND PORTS
-            </h1>
-            {/* <p className="mb-8 leading-relaxed">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
-            </p> */}
-            <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-lg text-lg font-Secondary">
-                Get Ahead Faster
-              </button>
-            </div>
-          </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
-            <img
-              className="object-cover object-center rounded-lg mr-4"
-              alt="hero"
-              src={logistic}
-            />
-          </div>
-        </div>
-      </section>
+      <div className="w-full h-full relative">
+        <div className="absolute w-full h-full bg-gradient-to-tl from-lime-200 via-sky-500 to-violet-500 opacity-70"></div>
+        <ReactPlayer
+          url={video1}
+          playing
+          loop
+          muted
+          width="100%"
+          height="100%"
+          playbackRate={0.2}
+        />
+        <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center">
+          <section>
+            <div class="container px-5 py-24 mx-auto">
+              <div class="  flex flex-col text-center w-full mb-20">
+                <h1 class="text-6xl text-black tracking-widest font-bold title-font mb-4">
+                  <div className=" relative">
+                    {/* <img
+                      className=" absolute -top-4 -left-4"
+                      src={flyingchital}
+                    /> */}
+                  </div>
+                  <span className="mr-10"> FLYING</span>{" "}
+                  <span className="text-white ">CHITAL</span>
+                </h1>
 
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-xl mr-">
+                  Whatever cardigan tote bag tumblr hexagon brooklyn
+                  asymmetrical gentrify, subway tile poke farm-to-table. Franzen
+                  you probably haven't heard of them man bun deep jianbing
+                  selfies heirloom prism food truck ugh squid celiac humblebrag.
+                </p>
+              </div>
+              <div class="flex flex-wrap">
+                <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-3 border-l-2 border-gray-200 border-opacity-60">
+                  <h2 class="text-lg sm:text-6xl text-yellow-400 font-bold title-font mb-2">
+                    DIGITAL TRANSORMATION AND INNOVATION
+                  </h2>
+                  <p class="leading-relaxed text-base mb-4">
+                    Fingerstache flexitarian street art 8-bit waistcoat.
+                    Distillery hexagon disrupt edison bulbche.
+                  </p>
+                  <a class="text-indigo-500 inline-flex items-center">
+                    Learn More
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <div className="mt-16 gap-3">
+                    <div className="flex flex-row mt-16 gap-3 text-white font-bold">
+                      <button
+                        className="group hover:underline"
+                        onClick={() => handleButtonClick("Point 1")}
+                      >
+                        Digital Transformation
+                      </button>
+                      <button
+                        className="group hover:underline"
+                        onClick={() => handleButtonClick("Point 2")}
+                      >
+                        Automation
+                      </button>
+                      <button
+                        className="group hover:underline"
+                        onClick={() => handleButtonClick("Point 3")}
+                      >
+                        Edge Computing
+                      </button>
+                      <button
+                        className="group hover:underline"
+                        onClick={() => handleButtonClick("Point 4")}
+                      >
+                        IT Services
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                  <h1 class="text-lg sm:text-2xl text-black font-semibold title-font mb-2">
+                    {h1Content}
+                  </h1>
+                  <h2 class="leading-relaxed text-base text-white mb-4">
+                    {h2Content}
+                  </h2>
+                  <a class="text-indigo-500 inline-flex items-center">
+                    Learn More
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
       {/* Section-Philosophy */}
       <section className="text-gray-600 body-font   ">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col   items-center">
@@ -343,7 +468,6 @@ export default function Home() {
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={truck1}
-
                   alt="blog"
                 />
                 <div class="p-6">

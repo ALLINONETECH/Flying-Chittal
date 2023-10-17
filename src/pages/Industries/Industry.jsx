@@ -1,195 +1,191 @@
-import React from "react";
+import React, { useRef } from "react";
+import video1 from "../../../src/assets/images/video1.mp4";
+import texture from "../../../src/assets/images/texture.jpg";
+import ReactPlayer from "react-player";
+import logistics from "../../../src/assets/images/logistics.jpeg";
 
 export default function Industry() {
+  const overviewRef = useRef(null);
+  const insightsRef = useRef(null);
+  const casestudyRef = useRef(null);
+  const ourpartnerRef = useRef(null);
+  const servicesRef = useRef(null);
+  const contactusRef = useRef(null);
+
+  const scrollToOverview = () => {
+    overviewRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToinsights = () => {
+    insightsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollTocasestudy = () => {
+    casestudyRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollTourpartner = () => {
+    ourpartnerRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToservices = () => {
+    servicesRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollTocontactus = () => {
+    contactusRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div>
-      <section className=" bg-[#000048] dark:bg-gray-900">
-        <div className="container px-6 py-12 mx-auto">
-          <div>
-            <p className="font-medium text-blue-500 dark:text-blue-400">
-              Contact us
-            </p>
-            <h1 className="mt-2 text-2xl font-semibold text-gray-100 md:text-3xl dark:text-white">
-              Chat to our friendly team
-            </h1>
-            <p className="mt-3 text-gray-500 dark:text-gray-400">
-              We’d love to hear from you. Please fill out this form or shoot us
-              an email.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
-            <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-              <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                    />
-                  </svg>
-                </span>
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                  Email
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Our friendly team is here to help.
-                </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  hello@merakiui.com
-                </p>
-              </div>
-              <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                    />
-                  </svg>
-                </span>
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                  Live chat
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Our friendly team is here to help.
-                </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  Start new chat
-                </p>
-              </div>
-              <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                    />
-                  </svg>
-                </span>
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                  Office
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Come say hello at our office HQ.
-                </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  100 Smith Street Collingwood VIC 3066 AU
-                </p>
-              </div>
-              <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                    />
-                  </svg>
-                </span>
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                  Phone
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Mon-Fri from 8am to 5pm.
-                </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  +1 (555) 000-0000
-                </p>
+    <>
+      <div className="w-full h-full relative">
+        <div className="absolute w-full h-full bg-gradient-to-tl from-lime-200 via-sky-500 to-violet-500 opacity-70"></div>
+        <img src={logistics} />
+        <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center">
+          <section>
+            <div class="container px-5 py-24 mx-auto">
+              {/* <div class="flex flex-col text-center w-full mb-20">
+              <h1 class="text-6xl text-black tracking-widest font-bold title-font mb-4">
+                OUR SERVICES
+              </h1>
+
+              <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+                gentrify, subway tile poke farm-to-table. Franzen you probably
+                haven't heard of them man bun deep jianbing selfies heirloom
+                prism food truck ugh squid celiac humblebrag.
+              </p>
+            </div> */}
+              <div class="flex flex-wrap">
+                <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-3 border-l-2 border-gray-200 border-opacity-60">
+                  <h2 class="text-lg sm:text-6xl text-yellow-300 font-bold title-font mb-2">
+                    Transport & Logistic
+                  </h2>
+                  <p class="leading-relaxed text-base mb-4">
+                    Fingerstache flexitarian street art 8-bit waistcoat.
+                    Distillery hexagon disrupt edison bulbche.
+                  </p>
+                  <a class="text-indigo-500 inline-flex items-center">
+                    Learn More
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+                <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                  <h2 class="text-lg sm:text-3xl text-black font-bold title-font mb-2">
+                    CREATING DIGITAL TRANSFORMATION AND INNOVATIVE SOLUTIONS FOR
+                    THE CLIENT
+                  </h2>
+                  <p class="leading-relaxed text-base mb-4">
+                    Fingerstache flexitarian street art 8-bit waistcoat.
+                    Distillery hexagon disrupt edison bulbche.
+                  </p>
+                  <a class="text-indigo-500 inline-flex items-center">
+                    Learn More
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
-              <form>
-                <div className="-mx-2 md:items-center md:flex">
-                  <div className="flex-1 px-2">
-                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="John "
-                      className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                    />
-                  </div>
-                  <div className="flex-1 px-2 mt-4 md:mt-0">
-                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Doe"
-                      className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                    />
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                    Email address
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="johndoe@example.com"
-                    className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  />
-                </div>
-                <div className="w-full mt-4">
-                  <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                    Message
-                  </label>
-                  <textarea
-                    className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                    placeholder="Message"
-                    defaultValue={""}
-                  />
-                </div>
-                <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                  Send message
-                </button>
-              </form>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
-    </div>
+      </div>
+
+      <div>
+        {/* Section 2 */}
+        <section class="text-gray-600 body-font bg-[#eff5f5]">
+          <div class="container px-5 py-8 mx-auto">
+            <div class="flex flex-wrap -m-4 text-center">
+              <div class="p-4 sm:w-1/6 w-1/3">
+                <h2 class="title-font font-bold sm:text-xl text-xl text-gray-900 md:hover:text-blue-500">
+                  <button onClick={scrollToOverview}>OVERVIEW </button>
+                </h2>
+              </div>
+              <div class="p-4 sm:w-1/6 w-1/3">
+                <h2 class="title-font font-bold sm:text-xl text-xl text-gray-900 md:hover:text-blue-500">
+                  <button onClick={scrollToinsights}>INSIGHTS </button>
+                </h2>
+              </div>
+              <div class="p-4 sm:w-1/6 w-1/3">
+                <h2 class="title-font font-bold sm:text-xl text-xl text-gray-900 md:hover:text-blue-500">
+                  <button onClick={scrollTocasestudy}>CASE STUDIES </button>
+                </h2>
+              </div>
+              <div class="p-4 sm:w-1/6 w-1/3">
+                <h2 class="title-font font-bold sm:text-xl text-xl text-gray-900 md:hover:text-blue-500">
+                  <button onClick={scrollTourpartner}>OUR PARTNERS </button>
+                </h2>
+              </div>
+              <div class="p-4 sm:w-1/6 w-1/3">
+                <h2 class="title-font font-bold sm:text-xl text-xl text-gray-900 md:hover:text-blue-500">
+                  <button onClick={scrollToservices}>SERVICES</button>
+                </h2>
+              </div>
+              <div class="p-4 sm:w-1/6 w-1/3">
+                <h2 class="title-font font-bold sm:text-xl text-xl text-gray-900 md:hover:text-blue-500">
+                  <button onClick={scrollTocontactus}>CONTACT US</button>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div
+        className="border border-green-600 h-[128px] w-full"
+        id="overview"
+        ref={overviewRef}
+      >
+        Overview
+      </div>
+      <div
+        className="border border-green-600 h-[128px] w-full"
+        id="insight"
+        ref={insightsRef}
+      >
+        Insight
+      </div>
+      <div
+        className="border border-green-600 h-[128px] w-full"
+        if=""
+        ref={casestudyRef}
+      >
+        CaseStudies
+      </div>
+      <div
+        className="border border-green-600 h-[128px] w-full"
+        if=""
+        ref={ourpartnerRef}
+      >
+        Our Partners
+      </div>
+      <div
+        className="border border-green-600 h-[128px] w-full"
+        if=""
+        ref={servicesRef}
+      >
+        Services
+      </div>
+      <div
+        className="border border-green-600 h-[128px] w-full"
+        if=""
+        ref={contactusRef}
+      >
+        Contact Us
+      </div>
+    </>
   );
 }
