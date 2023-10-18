@@ -7,7 +7,7 @@ import digital from "../../assets/images/digital.jpeg";
 import experts from "../../assets/images/experts.jpg";
 import truck from "../../assets/images/truck.jpg";
 import truck1 from "../../assets/images/truck1.png";
-// import flyingchital from "../../assets/images/flyingchital.jpeg";
+import flyingchital1 from "../../assets/images/flyingchital1.png";
 import warehouse from "../../assets/images/warehouse.png";
 import laptop from "../../assets/images/laptop.png";
 import loading from "../../assets/images/loading.png";
@@ -74,20 +74,19 @@ export default function Home() {
               <div class="  flex flex-col text-center w-full mb-20">
                 <h1 class="text-6xl text-black tracking-widest font-bold title-font mb-4">
                   <div className=" relative">
-                    {/* <img
-                      className=" absolute -top-4 -left-4"
-                      src={flyingchital}
-                    /> */}
+                    <img
+                      className=" absolute -top-16 left-36"
+                      src={flyingchital1}
+                    />
                   </div>
-                  <span className="mr-10"> FLYING</span>{" "}
+                  <span className="mr-4"> FLYING</span>{" "}
                   <span className="text-white ">CHITAL</span>
                 </h1>
 
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-xl mr-">
-                  Whatever cardigan tote bag tumblr hexagon brooklyn
-                  asymmetrical gentrify, subway tile poke farm-to-table. Franzen
-                  you probably haven't heard of them man bun deep jianbing
-                  selfies heirloom prism food truck ugh squid celiac humblebrag.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  nam deleniti modi consequuntur asperiores quae dolorem quasi
+                  omnis eveniet rerum!
                 </p>
               </div>
               <div class="flex flex-wrap">
