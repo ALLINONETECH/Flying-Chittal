@@ -1,468 +1,264 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import {
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-  MenuHandler,
-  MenuItem,
-  MenuList,
-} from "@material-tailwind/react";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png'
+import Atulya from '../../assets/images/Atulya.png'
+import Abhinav from '../../assets/images/Abhinav.png'
+import Tech from '../../assets/images/Tech.png'
+import Pvt from '../../assets/images/Pvt.png'
+import Ltd from '../../assets/images/Ltd.png'
 
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import companylogo from "../../../src/assets/images/companylogo.png";
 
-const navItems = [
-  {
-    label: "Home",
-    to: "/",
-    current: false,
-    submenu: [
-      {
-        label: "Submenu Item 1",
-        to: "/submenu-item-1",
-      },
-      {
-        label: "Submenu Item 2",
-        to: "/submenu-item-2",
-      },
-    ],
-  },
-  {
-    label: "Industries",
-    to: "/services",
-    current: false,
-    submenu: [
-      {
-        label: "Transportation & Logistics",
-        to: "/transportation",
-      },
-      {
-        label: "Mining",
-        to: "/mining",
-      },
-      {
-        label: "Ore Processing and Metals",
-        to: "/OreProcessing",
-      },
-      {
-        label: "Cement",
-        to: "/cement",
-      },
-      {
-        label: "Fertilisers",
-        to: "/fertilisers",
-      },
-      {
-        label: "Oil & Gas",
-        to: "/oilgas",
-      },
-      {
-        label: "Agriculture",
-        to: "/agriculture",
-      },
-      {
-        label: "Aquaculture",
-        to: "/aquaculture",
-      },
-    ],
-  },
-  {
-    label: "Product & Solution",
-    to: "/Industry",
-    current: false,
-    submenu: [
-      {
-        label: "Flying Chital Integrated Logistics Management System (FCILMS)",
-        to: "/product-1",
-      },
-      {
-        label: "Flying Chital Smart Vehicle Tracking System (FCSVTS) ",
-        to: "/product-2",
-      },
-      {
-        label: "Flying Chital Smart Vehicle Tracking System (FCSVTS) ",
-        to: "/product-2",
-      },
-      {
-        label: "Flying Chital Smart Vehicle Tracking System (FCSVTS) ",
-        to: "/product-2",
-      },
-      {
-        label: "Flying Chital Smart Vehicle Tracking System (FCSVTS) ",
-        to: "/product-2",
-      },
-    ],
-  },
-  {
-    label: "Resources",
-    to: "/resources",
-    current: false,
-    submenu: [
-      {
-        label: "Blog",
-        to: "/resource-1",
-      },
-      {
-        label: "Market Updates",
-        to: "/resource-2",
-      },
-      {
-        label: "Help Centre",
-        to: "/resource-2",
-      },
-    ],
-  },
-  {
-    label: "Company",
-    to: "/about",
-    current: false,
-    submenu: [
-      {
-        label: "About Us",
-        to: "/team",
-      },
-      {
-        label: "Leadership",
-        to: "/mission",
-      },
-      {
-        label: "Customers",
-        to: "/mission",
-      },
-      {
-        label: "Careers",
-        to: "/mission",
-      },
-      {
-        label: "Contact Us",
-        to: "/mission",
-      },
-    ],
-  },
-];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+const Navbar = () => {
+    const navItem = [
+        {
+            label: "Industry",
+            to: "/home",
+            subMenu: [
+                { label: "Transportation & Logistics", to: "/industry" },
+                { label: "Mining", to: "/about" },
+                { label: "Ore Processing and Metals", to: "/about" },
+                { label: "Cement", to: "/about" },
+                { label: "Fertilisers ", to: "/about" },
+                { label: "Oil & Gas ", to: "/about" },
+                { label: "Warehousing ", to: "/about" },
+                { label: "Agriculture ", to: "/about" },
+                { label: "Aquaculture ", to: "/about" },
+            ]
+        },
+        {
+            label: "Products",
+            to: "/products",
+            subMenu: [
+                { label: "Flying Chital Integrated Logistics Management System", to: "/RoadLogistics" },
+                { label: "Flying Chital Smart Vehicle Tracking System", to: "/RailLogistics" },
+                { label: "Flying Chital Smart Fleet Monitoring System", to: "/flyingchital" },
+                { label: "Flying Chital Smart ContainerTracking System", to: "/product2" },
+                { label: "Flying Chital HEM/HMV/LMV Mobile Asset Management System", to: "/Asset" },
+                { label: "Agriculture Automation Solution", to: "/product2" },
+                { label: "Aquaculture Automation Solution", to: "/product2" },
+            ]
+        },
+        {
+            label: "Resources",
+            to: "/services",
+            subMenu: [
+                { label: "Blog", to: "/blog" },
+                { label: "Help Centre", to: "/service2" },
+                { label: "Market updates", to: "/service3" },
+            ]
+        },
+        {
+            label: "Company",
+            to: "/services",
+            subMenu: [
+                { label: "About Us", to: "/about" },
+                { label: "Leadership", to: "/service2" },
+                { label: "Customers", to: "/service2" },
+            ]
+        },
+    ];
+    const [activeDropdown, setActiveDropdown] = useState(null);
 
-export default function Navbar() {
-  const [openNav, setOpenNav] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [showHomeSubMenu, setShowHomeSubMenu] = useState(false);
-  const [showIndustriesSubMenu, setShowIndustriesSubMenu] = useState(false);
-  const [showProductsSolutionsSubMenu, setShowProductsSolutionsSubMenu] =
-    useState(false);
-  const [showResourcesSubMenu, setShowResourcesSubMenu] = useState(false);
-  const [showCompanySubMenu, setShowCompanySubMenu] = useState(false);
+    const handleDropdownClick = (label) => {
+        setActiveDropdown(activeDropdown === label ? null : label);
+    };
+    return (
+        <nav className="bg-white border-gray-200 dark:bg-gray-900">
+            <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4 ">
+                {/* Your logo and brand */}
 
-  useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
-  }, []);
+                <div className="flex ">
+                    <div> <img
+                        src={logo}
+                        className="h-20 mr-3"
+                        alt="FlyingChital Logo"
+                    /></div>
+                    <div>
+                        <div className="flex">
+                            <img
+                                src={Atulya}
+                                className="h-4 mt-3"
+                                alt="FlyingChital Logo"
+                            />
+                            <span>
+                                <img
+                                    src={Abhinav}
+                                    className="h-4 mt-3"
+                                    alt="FlyingChital Logo"
+                                />
+                            </span>
 
-  return (
-    <>
-      <Disclosure as="nav" className="">
-        {({ open }) => (
-          <>
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 p-8">
-              <div className="relative flex h-16 items-center justify-between">
-                <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                  <Disclosure.Button
-                    className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-[#000048] hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                    onClick={() => setMenuOpen(!menuOpen)}
-                  >
-                    <span className="absolute -inset-0.5" />
-                    <span className="sr-only">Open main menu</span>
-                    {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                    )}
-                  </Disclosure.Button>
-                </div>
-                {menuOpen && (
-                  <div className="space-y-1 px-2 pb-3 pt-2">
-                    <ul className="">
-                      {navItems.map((item, index) => (
-                        <Typography
-                          key={index}
-                          as="li"
-                          variant="small"
-                          color="blue-gray"
-                          className={classNames(
-                            item.current
-                              ? "bg-black text-white"
-                              : "text-gray-900 hover:bg-gray-700 hover:text-white",
-                            "rounded-md px-3 py-2 text-4xl font-medium relative"
-                          )}
-                          onMouseEnter={() => {
-                            setShowHomeSubMenu(item.label === "Home");
-                            setShowIndustriesSubMenu(
-                              item.label === "Industries"
-                            );
-                            setShowProductsSolutionsSubMenu(
-                              item.label === "Product & Solution"
-                            );
-                            setShowResourcesSubMenu(item.label === "Resources");
-                            setShowCompanySubMenu(item.label === "Company");
-                          }}
-                          onMouseLeave={() => {
-                            setShowHomeSubMenu(false);
-                            setShowIndustriesSubMenu(false);
-                            setShowProductsSolutionsSubMenu(false);
-                            setShowResourcesSubMenu(false);
-                            setShowCompanySubMenu(false);
-                          }}
-                        >
-                          <Link to={item.to} className={item.className}>
-                            {item.label}
-                          </Link>
-                          {item.label === "Home" && showHomeSubMenu && (
-                            <div className="absolute left-0 w-64 border border-[blue] p-2 bg-white shadow-lg rounded-lg">
-                              {item.submenu.map((subitem, subindex) => (
-                                <Link
-                                  key={subindex}
-                                  to={subitem.to}
-                                  className="block px-4 py-2 text-gray-800 hover:bg-gray-600"
-                                >
-                                  {subitem.label}
-                                </Link>
-                              ))}
-                            </div>
-                          )}
-                          {item.label === "Industries" &&
-                            showIndustriesSubMenu && (
-                              <div className="absolute left-0 mt-2 w-64 border border-[blue] p-2 bg-white shadow-lg rounded-lg">
-                                {item.submenu.map((subitem, subindex) => (
-                                  <Link
-                                    key={subindex}
-                                    to={subitem.to}
-                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-600"
-                                  >
-                                    {subitem.label}
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
-                          {item.label === "Product & Solution" &&
-                            showProductsSolutionsSubMenu && (
-                              <div className="absolute left-0 mt-2 w-[700px] border border-[blue] p-2 bg-white shadow-lg rounded-lg">
-                                {item.submenu.map((subitem, subindex) => (
-                                  <Link
-                                    key={subindex}
-                                    to={subitem.to}
-                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-600"
-                                  >
-                                    {subitem.label}
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
-                          {item.label === "Resources" &&
-                            showResourcesSubMenu && (
-                              <div className="absolute left-0 mt-2 w-64 border border-[blue] p-2 bg-white shadow-lg rounded-lg">
-                                {item.submenu.map((subitem, subindex) => (
-                                  <Link
-                                    key={subindex}
-                                    to={subitem.to}
-                                    className="block px-4 py-2 text-gray-800 hover:bg-gray-600"
-                                  >
-                                    {subitem.label}
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
-                          {item.label === "Company" && showCompanySubMenu && (
-                            <div className="absolute left-0 mt-8 w-64 border border-[blue] p-2 bg-white shadow-lg rounded-lg">
-                              {item.submenu.map((subitem, subindex) => (
-                                <Link
-                                  key={subindex}
-                                  to={subitem.to}
-                                  className="block px-4 py-2 text-gray-800 hover:bg-gray-600"
-                                >
-                                  {subitem.label}
-                                </Link>
-                              ))}
-                            </div>
-                          )}
-                        </Typography>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                <div className="flex flex-1 items-center md:justify-between sm:items-stretch sm:justify-start">
-                  <div className="flex flex-shrink-0 items-center">
-                    <img
-                      src="/img/companylogo.png"
-                      alt=""
-                      className="border-blue h-26"
-                    />
-                    <img
-                      className="h-14 w-auto"
-                      src={companylogo}
-                      alt="Your Company"
-                    />
-                  </div>
-                  <div className="hidden sm:ml-6 sm:block ml-40 relative">
-                    <div className="flex justify-end space-x-4">
-                      <ul className="font-Secondary mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 drop-shadow-sm pt-3">
-                        {navItems.map((item, index) => (
-                          <Typography
-                            key={index}
-                            as="li"
-                            variant="small"
-                            color="blue-gray"
-                            className={classNames(
-                              item.current
-                                ? "bg-black text-white"
-                                : "text-gray-900 hover:bg-[#000048] hover:text-white",
-                              "rounded-md px-3 py-2 text-xl font-medium relative"
-                            )}
-                            onMouseEnter={() => {
-                              setShowHomeSubMenu(item.label === "Home");
-                              setShowIndustriesSubMenu(
-                                item.label === "Industries"
-                              );
-                              setShowProductsSolutionsSubMenu(
-                                item.label === "Product & Solution"
-                              );
-                              setShowResourcesSubMenu(
-                                item.label === "Resources"
-                              );
-                              setShowCompanySubMenu(item.label === "Company");
-                            }}
-                            onMouseLeave={() => {
-                              setShowHomeSubMenu(false);
-                              setShowIndustriesSubMenu(false);
-                              setShowProductsSolutionsSubMenu(false);
-                              setShowResourcesSubMenu(false);
-                              setShowCompanySubMenu(false);
-                            }}
-                          >
-                            <Link to={item.to} className={item.className}>
-                              {item.label}
-                            </Link>
-                            {item.label === "Home" && showHomeSubMenu && (
-                              <div className="absolute left-0 mt-2 w-64 p-2 bg-white shadow-lg rounded-lg">
-                                <div className="absolute top-0 left-16 transform -translate-x-1/2 -mt-0 w-6 h-6 bg-white border-t-10 border-r-0 border-l-0 rotate-45"></div>
+                        </div>
+                        <div className="flex">
+                            <img
+                                src={Tech}
+                                className="h-4 mr-3"
+                                alt="FlyingChital Logo"
+                            />
+                            <span>
+                                <img
+                                    src={Pvt}
+                                    className="h-4 mr-3"
+                                    alt="FlyingChital Logo"
+                                />
+                            </span>
+                            <span>
+                                <img
+                                    src={Ltd}
+                                    className="h-4 mr-3"
+                                    alt="FlyingChital Logo"
+                                />
+                            </span>
 
-                                {item.submenu.map((subitem, subindex) => (
-                                  <Link
-                                    key={subindex}
-                                    to={subitem.to}
-                                    className="block mt-6 px-4  text-gray-800 hover:bg-gray-600"
-                                  >
-                                    {subitem.label}
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
-                            {item.label === "Industries" &&
-                              showIndustriesSubMenu && (
-                                <div className="absolute left-0 mt-2 w-64  p-2 bg-white shadow-lg rounded-lg">
-                                  <div className="absolute top-0 left-16 transform -translate-x-1/2 -mt-0 w-6 h-6 bg-white border-t-10 border-r-0 border-l-0 rotate-45"></div>
-
-                                  {item.submenu.map((subitem, subindex) => (
-                                    <Link
-                                      key={subindex}
-                                      to={subitem.to}
-                                      className="block mt-6 px-4  text-gray-800 hover:bg-gray-600"
-                                    >
-                                      {subitem.label}
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            {item.label === "Product & Solution" &&
-                              showProductsSolutionsSubMenu && (
-                                <div className="absolute left-0 mt-2 w-[600px] p-2  bg-white shadow-lg rounded-lg">
-                                  <div className="absolute top-0 left-16 transform -translate-x-1/2 -mt-0 w-6 h-6 bg-white border-t-10 border-r-0 border-l-0 rotate-45"></div>
-                                  {item.submenu.map((subitem, subindex) => (
-                                    <Link
-                                      key={subindex}
-                                      to={subitem.to}
-                                      className="block mt-6 px-4 py-2 text-gray-800 hover:bg-gray-600"
-                                    >
-                                      {subitem.label}
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            {item.label === "Resources" &&
-                              showResourcesSubMenu && (
-                                <div className="absolute left-0 mt-2 w-64  p-2 bg-white shadow-lg rounded-lg">
-                                  <div className="absolute top-0 left-16 transform -translate-x-1/2 -mt-0 w-6 h-6 bg-white border-t-10 border-r-0 border-l-0 rotate-45"></div>
-
-                                  {item.submenu.map((subitem, subindex) => (
-                                    <Link
-                                      key={subindex}
-                                      to={subitem.to}
-                                      className="block  mt-6 px-4  text-gray-800 hover:bg-gray-600"
-                                    >
-                                      {subitem.label}
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            {item.label === "Company" && showCompanySubMenu && (
-                              <div className="absolute right-0 mt-2 w-64  p-2 bg-white shadow-lg rounded-lg">
-                                <div className="absolute top-0 right-16 transform -translate-x-1/2 -mt-0 w-6 h-6 bg-white border-t-10 border-r-0 border-l-0 rotate-45"></div>
-
-                                {item.submenu.map((subitem, subindex) => (
-                                  <Link
-                                    key={subindex}
-                                    to={subitem.to}
-                                    className="block mt-6 px-4  text-gray-800 hover:bg-gray-600"
-                                  >
-                                    {subitem.label}
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
-                          </Typography>
-                        ))}
-                      </ul>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"></div>
-              </div>
-            </div>
 
-            <Disclosure.Panel className="sm:hidden">
-              <div className="space-y-1 px-2 pb-3 pt-2">
-                <ul className="">
-                  {navItems.map((item, index) => (
-                    <Typography
-                      key={index}
-                      as="li"
-                      variant="small"
-                      color="blue-gray"
-                      className={classNames(
-                        item.current
-                          ? "bg-black text-white"
-                          : "text-gray-900 hover:bg-gray-700 hover:text-white",
-                        "rounded-md px-3 py-2 text-4xl font-medium relative"
-                      )}
+                {/* <a href="https://flowbite.com" className="flex items-center">
+                    <img
+                        src={logo}
+                        className="h-20 mr-3"
+                        alt="FlyingChital Logo"
+                    />
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                        <img
+                            src={Atulya}
+                            className="h-4 mr-3"
+                            alt="FlyingChital Logo"
+                        />
+                    </span>
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                        <img
+                            src={Abhinav}
+                            className="h-4 mr-3"
+                            alt="FlyingChital Logo"
+                        />
+
+                    </span>
+
+                    <div className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                        <img
+                            src={Tech}
+                            className="h-4 mr-1"
+                            alt="Flowbite Logo"
+                        />
+
+                    </div>
+                    <img
+                        src={Pvt}
+                        className="h-4 mr-3"
+                        alt="Flowbite Logo"
+                    />
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                        <img
+                            src={Ltd}
+                            className="h-4 mr-3"
+                            alt="Flowbite Logo"
+                        />
+                    </span>
+                </a> */}
+
+
+                {/* Buttons and Toggle */}
+                <div className="flex items-center md:order-2">
+                    <a
+                        href="#"
+                        className="text-gray-800 dark:text-white  focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2  focus:outline-none"
                     >
-                      <Link to={item.to} className={item.className}>
-                        {item.label}
-                      </Link>
-                    </Typography>
-                  ))}
-                </ul>
-              </div>
-            </Disclosure.Panel>
-          </>
-        )}
-      </Disclosure>
-    </>
-  );
-}
+                        Careers
+                    </a>
+                    <Link
+                        to="/chat"
+                        className="text-white bg-[#f85a47] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    >
+                        Contact Us
+                    </Link>
+                    {/* <button
+                        onClick={toggleDropdown}
+                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mega-menu-icons"
+                        aria-expanded={isDropdownOpen}
+                    >
+                        <span className="sr-only">Open main menu</span>
+                        <svg
+                            className="w-5 h-5"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 17 14"
+                        >
+                            <path
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M1 1h15M1 7h15M1 13h15"
+                            />
+                        </svg>
+                    </button> */}
+                </div>
+
+                {/* Dropdown Menu */}
+                <nav className="bg-white border-gray-200 dark:bg-gray-900 z-10">
+                    <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+                        <div id="mega-menu-icons" className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                            <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0 ">
+                                {navItem.map(item => (
+                                    <li key={item.label}>
+                                        <button
+                                            id={`mega-menu-icons-dropdown-button-${item.label}`}
+                                            data-dropdown-toggle={`mega-menu-icons-dropdown-${item.label}`}
+                                            className="flex items-center  justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                            onClick={() => handleDropdownClick(item.label)}
+                                        >
+                                            {item.label}
+                                            <svg
+                                                className="w-2.5 h-2.5 ml-2.5"
+                                                aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 10 6"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    d="m1 1 4 4 4-4"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <div
+                                            id={`mega-menu-icons-dropdown-${item.label}`}
+                                            className={`absolute z-10 grid ${activeDropdown === item.label ? 'grid-cols-2' : 'hidden'} w-auto text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-1 dark:bg-gray-700`}
+                                        >
+                                            <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white ">
+                                                <ul className="space-y-4" aria-labelledby={`mega-menu-icons-dropdown-button-${item.label}`}>
+                                                    {item.subMenu && item.subMenu.map(subItem => (
+                                                        <li key={subItem.label}>
+                                                            <a
+                                                                href={subItem.to}
+                                                                className="flex items-center  text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"
+                                                            >
+                                                                <span className="sr-only">{subItem.label}</span>
+
+                                                                {subItem.label}
+                                                            </a>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;  

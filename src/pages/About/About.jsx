@@ -1,706 +1,624 @@
 import React from "react";
-import company1 from "../../assets/images/company2.jpg";
-export default function About() {
-  return (
-    <div>
-      <div className="w-full h-full relative">
-        <div className="absolute w-full h-full bg-gradient-to-tl from-lime-200 via-sky-500 to-violet-500 opacity-70"></div>
-        <img src={company1} />
-        <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center">
-          <section>
-            <div class="container px-5 py-24 mx-auto">
-              {/* <div class="flex flex-col text-center w-full mb-20">
-              <h1 class="text-6xl text-black tracking-widest font-bold title-font mb-4">
-                OUR SERVICES
-              </h1>
+import Dev from "../../assets/images/Dev1.png";
+import Pradyumna from "../../assets/images/Pradyumna1.png";
+import Amar from "../../assets/images/Amar1.png";
+import Samba from "../../assets/images/Samba1.png";
+import Who1 from "../../assets/images/Who1.png";
+import Who2 from "../../assets/images/Who2.png";
+import Why from "../../assets/images/Whyimg.png";
+import Eye from "../../assets/images/Eye.png";
+import Heart from "../../assets/images/Heart.png";
+import Goal from "../../assets/images/Goal.png";
+import Aboutus from "../../assets/images/Aboutus.png";
+import AboutImage1 from "../../assets/images/AboutImage1.png";
+import AboutImage2 from "../../assets/images/AboutImage2.png";
 
-              <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify, subway tile poke farm-to-table. Franzen you probably
-                haven't heard of them man bun deep jianbing selfies heirloom
-                prism food truck ugh squid celiac humblebrag.
-              </p>
-            </div> */}
-              <div class="flex flex-wrap">
-                <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-3 border-l-2 border-gray-200 border-opacity-60">
-                  <h2 class="text-lg sm:text-6xl text-yellow-300 font-bold title-font mb-2">
-                    Smart Agile Logistic At FingerTip
-                  </h2>
-                  <p class="leading-relaxed text-base mb-4">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                  <a class="text-indigo-500 inline-flex items-center">
-                    Learn More
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+export default function About() {
+    return (
+        <div>
+            {/* Section-1 About us */}
+            <section
+                className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+                style={{
+                    backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${Aboutus})`,
+                }}
+            >
+                <nav
+                    x-data="{ isOpen: false }"
+                    className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
+                >
+                    <div className="flex items-center justify-between">
+                        {/* <a href="#">
+                            <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt />
+                        </a> */}
+                        {/* Mobile menu button */}
+                        <div className="flex lg:hidden"></div>
+                    </div>
+                    {/* Mobile Menu open: "block", Menu closed: "hidden" */}
+                    <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+                        {/* <div className="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:-px-8 lg:space-y-0">
+                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Home</a>
+                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Components</a>
+                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Pricing</a>
+                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Contact</a>
+                        </div> */}
+                        {/* <a className="block px-5 py-2 mt-4 text-sm text-center text-white capitalize bg-blue-600 rounded-lg lg:mt-0 hover:bg-blue-500 lg:w-auto" href="#">
+                            Get started
+                        </a> */}
+                    </div>
+                </nav>
+                <div className="container px-6 py-16 mx-auto text-center">
+                    <div className="max-w-lg mx-auto">
+                        <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl">
+                            About Us
+                        </h1>
+                        <p className="mt-6 text-white text-xl not-italic font-bold leading-8 font-heebo w-full">
+                            We provide Smart Solutions to Simplify Your Future
+                        </p>
+                        <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button>
+                        <p className="mt-3 text-sm text-gray-400 "></p>
+                    </div>
                 </div>
-                <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                  <h2 class="text-lg sm:text-3xl text-black font-bold title-font mb-2">
-                    CREATING DIGITAL TRANSFORMATION AND INNOVATIVE SOLUTIONS FOR
-                    THE CLIENT
-                  </h2>
-                  <p class="leading-relaxed text-base mb-4">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                  <a class="text-indigo-500 inline-flex items-center">
-                    Learn More
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+            </section>
+
+            {/* Section- Who We are*/}
+            <section className="text-gray-600 body-font mt-40">
+                <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+                    <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg ">
+                        <img
+                            className="object-cover object-center absolute ml-56 bottom-48"
+                            alt="hero"
+                            src={Who1}
+                        />
+                        <img
+                            className="object-cover object-center  rounded-bl-lg"
+                            alt="hero"
+                            src={Who2}
+                        />
+                    </div>
+                    <div className=" relative bottom-28 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                        <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-start text-gray-900">
+                            <span className="border-b-2 border-secondary">Wh</span>o We are
+                        </h1>
+                        <p className="text-xl not-italic font-normal leading-7 mb-8 text-justify ">
+                            Welcome to Atulya Abhinav Technologies, a pioneering force in the
+                            realm of digital transformation and innovation. With a dedicated
+                            focus on revolutionizing businesses, we specialize in the seamless
+                            automation of enterprise workflows, leveraging cutting-edge
+                            technologies to enhance efficiency and productivity. Our expertise
+                            extends to the realm of edge computing and mobility, enabling
+                            businesses to harness the power of real-time data processing at
+                            the edge. <br />
+                            Moreover, our comprehensive suite of managed IT services empowers
+                            organizations to streamline their operations and drive sustainable
+                            growth in an ever-evolving digital landscape. At Atulya Abhinav
+                            Tech Private Limited, we are committed to propelling businesses
+                            towards a future of unparalleled technological advancement and
+                            operational excellence.
+                        </p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </section>
+            </section>
+
+
+
+
+
+
+
+
+
+            {/* Section-why Choose you */}
+
+            <section
+                className="text-gray-600 body-font mt-40"
+                style={{
+                    borderRadius: "100px 0px",
+                    background: "var(--gray-lighter, #F6F7F8)",
+                }}
+            >
+                <div className="p-2">
+                    <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
+                        Why C<span className="border-b-2 border-secondary">ho</span>oose us
+                    </h1>
+                </div>
+
+                <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center justify-center gap-6">
+                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <img
+                            className="object-cover object-center rounded"
+                            alt="hero"
+                            src={AboutImage2}
+                            style={{
+                                borderRadius: "50px 0px",
+                                background:
+                                    "lightgray 50% / cover no-repeat, lightgray 0px -17.095px / 100% 124.717% no-repeat",
+                            }}
+                        />
+                    </div>
+                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <img
+                            className="object-cover object-center rounded"
+                            alt="hero"
+                            src={AboutImage1}
+                            style={{
+                                borderRadius: "50px 0px",
+                                background:
+                                    "lightgray 50% / cover no-repeat, lightgray 0px -17.095px / 100% 124.717% no-repeat",
+                            }}
+                        />
+                    </div>
+                </div>
+                <div className="flex  justify-center ">
+                    <p className="text-xl not-italic font-normal text-justify leading-7  sm:text-xl mb-4 justify-center text-gray-900 w-4/5 font-heebo">
+                        Choosing Atulya Abhinav over others in the digital transformation
+                        and innovation landscape is a decision grounded in our unwavering
+                        commitment to excellence and the distinct value we bring to the
+                        table. We understand that the digital terrain is constantly
+                        evolving, and that's why we stand out. Our deep-rooted expertise in
+                        digital transformation, automation of enterprise workflows, edge
+                        computing, mobility, and managed IT services is second to none. What
+                        truly sets us apart is our relentless pursuit of innovation and our
+                        ability to tailor solutions to the unique needs of our clients.
+                        <br /> We don't offer a one-size-fits-all approach; we craft
+                        customized strategies that empower businesses to thrive in the
+                        digital age. Businesses don't change their standard operational
+                        procedures (SOPs) to adopt our solution, rather we customize and
+                        improvise the solution to ensure the established time tested SOPs
+                        remain as it is.
+                        <br />
+                        With a proven track record of delivering results, we provide not
+                        just technology, but a comprehensive partnership in achieving your
+                        goals. Our dedication to staying on the cutting edge of technology
+                        ensures that our clients are always ahead of the curve, reaping the
+                        rewards of increased efficiency, enhanced productivity, and
+                        future-proofed operations. In a fast-paced, ever-changing digital
+                        world, we are the reliable partner you can trust to transform your
+                        business and drive it towards lasting success.
+                    </p>
+                </div>
+            </section>
+
+            {/* Mission , Vision, Values */}
+
+            <section className="text-gray-600 body-font bg-white rounded-tl-[50px] rounded-br-[50px]">
+                <div className="container px-5 py-10 mx-auto">
+                    <div class="text-center mb-20">
+                        <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
+                            Mission, Vision, & Values
+                        </h1>
+                        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
+                        <div class="flex mt-6 justify-center">
+                            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-wrap -m-4">
+                        <div className=" md:w-1/3 p-4 ">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  h-full  bg-white ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <img className="p-1" src={Eye} alt="" />
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                                    Vision
+                                </h2>
+                                <div className="flex flex-col">
+                                    <p className="text-xl not-italic font-normal leading-7 font-heebo">
+                                        "Our vision is to empower individuals living in remote and
+                                        underserved areas with accessible, affordable and
+                                        cutting-edge technology solutions that enhance their quality
+                                        of life, bridge the digital divide...
+                                        <br />{" "}
+                                    </p>
+                                    <div className="flex justify-start mt-6">
+                                        <button className="inline-flex text-white font-bold bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                            READ MORE{" "}
+                                            <span>
+                                                {" "}
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth={2}
+                                                    className="w-4 h-4 ml-2 "
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl   h-full  bg-white ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+                                    <img className="p-1" src={Goal} alt="" />
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                                    Mission
+                                </h2>
+                                <div className="flex flex-col">
+                                    <p className="text-xl not-italic font-normal leading-7 font-heebo">
+                                        "At Atulya Abhinav Tech Private Limited, our mission is to
+                                        pioneer innovation in supply chain and logistics operations,
+                                        revolutionizing industrial processes across remote and
+                                        underserved areas...
+                                        <br />
+                                    </p>
+                                    <div className="flex justify-start mt-6">
+                                        <button className="inline-flex text-white font-bold bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                            READ MORE{" "}
+                                            <span>
+                                                {" "}
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth={2}
+                                                    className="w-4 h-4 ml-2 "
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  h-full  bg-white">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+
+                                    <img className="p-1" src={Heart} alt="" />
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                                    Driver Scorecards
+                                </h2>
+                                <div className="flex flex-col">
+                                    <p className="text-xl not-italic font-normal leading-7 font-heebo">
+                                        “At Aditya Abhinav Tech Private Limited, we stand by the
+                                        following core values, which guide our every action.
+                                        Together, these values shape our company culture and drive
+                                        us towards achieving our...
+                                        <br />
+                                    </p>
+                                    <div className="flex justify-start mt-6">
+                                        <button className="inline-flex text-white font-bold bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                            READ MORE{" "}
+                                            <span>
+                                                {" "}
+                                                <svg
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth={2}
+                                                    className="w-4 h-4 ml-2 "
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* LeaderShip */}
+            <section
+                className="text-gray-600 body-font mt-40"
+                style={{
+                    borderRadius: "100px 0px",
+                    background: "var(--gray-lighter, #F6F7F8)",
+                }}
+            >
+                <div className="container px-5 py-24 mx-auto">
+                    <div className="p-2">
+                        <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
+                            Lea<span className="border-b-2 border-secondary">der</span>ship
+                        </h1>
+                    </div>
+
+                    <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
+                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
+                            <img
+                                className="object-cover object-center "
+                                alt="hero"
+                                src={Pradyumna}
+                            />
+                        </div>
+                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                            <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                                Pradyumna Mishra
+                            </h1>
+                            <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                                Co-Founder & CEO
+                            </p>
+                            <p className="text-xl not-italic font-normal leading-7 font-heebo mb-8  text-justify mt-2">
+                                CEO Pradyumna Mishra combines 20 years of distinguished service
+                                in the Indian Navy with a decade in corporate arena with
+                                industry giants like L&T, Mahindra group and innovative startup
+                                like Fre8wise. An inspiring leader who embodies the spirit of
+                                "Vocal for Local" and has been at the forefront of spearheading
+                                the indigenization drive as a significant part of the "Make In
+                                India" initiative. With a strong commitment to promoting
+                                domestic manufacturing and self-sufficiency, Pradyumna is
+                                instrumental in transforming our company into a hub of
+                                innovation and self-reliance. Through this experience, Pradyumna
+                                embodies Atulya Abhinav’s vision of being a perfect fusion of
+                                discipline, operational excellence, cutting edge innovation and
+                                strategic foresight. His deep commitment to unyielding business
+                                ethics and exemplary corporate governance strongly reflects our
+                                core values.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                            <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                                Amar Pradeep Swain
+                            </h1>
+                            <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                                Director Technology & Solutions
+                            </p>
+                            <p className="text-xl not-italic font-normal leading-7 font-heebo mb-8  text-justify mt-2">
+                                A Graduate from IIT, Amar is an accomplished and
+                                forward-thinking technology leader serving as the Director,
+                                Technology and Solutions of our company. With a remarkable
+                                career spanning over 25 years, Amar has demonstrated to be a
+                                true visionary when it comes to driving digital business
+                                transformation and pioneering innovative platform strategies.
+                                His profound expertise extends to orchestrating enterprise-wide
+                                process shifts, managing diverse partner ecosystems, and
+                                consistently delivering impressive results for Fortune 500
+                                giants. Amar's professional journey has taken him across the
+                                globe, from Switzerland to diverse continents like Japan,
+                                Indonesia, Malaysia, Poland, Russia, the UK, the Middle East,
+                                and several countries in Africa and South America. His path
+                                breaking ideas has brought turnaround in industry leaders in
+                                consumer goods, pharmaceuticals, and telecom including notable
+                                companies such as Pfizer, Bayer, Japan Tobacco, Vodafone,
+                                Telefonica, and Michelin. With Amar as our Director, Technology
+                                and Solutions, we are confident that we will find a solution to
+                                every challenge, through innovation leveraging cutting edge
+                                technologies
+                            </p>
+                        </div>
+                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                            <img
+                                className="object-cover object-center rounded"
+                                alt="hero"
+                                src={Amar}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
+                            <img
+                                className="object-cover object-center "
+                                alt="hero"
+                                src={Dev}
+                            />
+                        </div>
+                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                            <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                                Debashis Mohanty
+                            </h1>
+                            <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                                Director Strategy & Growth
+                            </p>
+                            <p className="text-xl not-italic font-normal leading-7 font-heebo mb-8  text-justify mt-2">
+                                With an MBA from Purdue University’s Daniels School, Debashis
+                                Mohanty, our Director of Strategy and Growth is at the heart of
+                                our company. With a dynamic career spanning 25 years, he is a
+                                passionate business leader with a wealth of global experience.
+                                His expertise lies in entrepreneurship, Go-To-Market strategy,
+                                building SAAS platforms, eCommerce, and the intricacies of
+                                Manufacturing Supply Chain Management. Debashis has held senior
+                                leadership positions in prestigious companies across the United
+                                States, Singapore, and Malaysia, including Flipkart, Reliance,
+                                Cummins, DHL, and Pitney Bowes. Notably, he co-founded and
+                                promoted Fre8wise.com, a B2B platform specializing in Supply
+                                Chain Automation and Digitalization. With Debashis leading our
+                                strategy and growth initiatives, we're poised for
+                                state-of-the-art innovation and remarkable success..
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                            <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                                Sambasiva Rao Suda
+                            </h1>
+                            <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                                Consulting Advisor
+                            </p>
+                            <p className="text-xl not-italic font-normal leading-7 font-heebo mb-8  text-justify mt-2">
+                                Sambasiva Rao Suda an accomplished entrepreneur with exceptional
+                                skills in founding and leading innovative ventures, is our
+                                Consulting Advisor. Suda holds a Master's degree in Computer
+                                Science and Engineering from IIT Kanpur. As the Co-founder and
+                                CTO of Fre8wise, he architected and implemented the Transport
+                                Automation platform showcasing his proficiency in creating
+                                transformative solutions. Suda's entrepreneurial acumen extends
+                                to PubMesh Inc, where he served as Founder and CTO, and played a
+                                pivotal role in developing a groundbreaking ad-stitching cloud
+                                platform. Additionally, his expertise in architecting
+                                large-scale internet applications, modern data pipelines, and
+                                contributions to Node.js, along with notable awards, further
+                                underscore his diverse skill set
+                            </p>
+                        </div>
+                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                            <img
+                                className="object-cover object-center rounded"
+                                alt="hero"
+                                src={Samba}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]">
+                <div className="container px-5 py-10 mx-auto">
+                    <div class="text-center mb-20">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">We Are Experienced In Deployments At</h1>
+                        {/* <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Move beyond Track & Trace with an ultra easy to use interface that integrates with 2.2k devices and it accessible on mobile app and web for desktop in over 15 language</p> */}
+                        <div class="flex mt-6 justify-center">
+                            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-wrap -m-4">
+                        <div className=" md:w-1/3 p-4 ">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  bg-white ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <img className="p-1" src={intelligent} alt="" /> */}
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Intelligent 24*7 Real time tracking</h2>
+                                <div className="flex">
+                                    {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  bg-white ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+                                    {/* <img className="p-1" src={Safety} alt="" /> */}
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Safety & Theft Prevention</h2>
+                                <div className="flex">
+                                    {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
+                                </div>
+
+                                <div className="flex">
+                                    {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
+                                </div>
+                                <div className="flex">
+                                    {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  bg-white">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+
+                                    {/* <img className="p-1" src={Driver} alt="" /> */}
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2>
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  bg-white ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+                                    {/* <img className="p-1" src={Fuel} alt="" /> */}
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Fuel Monitoring & Tracking</h2>
+
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+
+
+
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+                                    {/* <img className="p-1" src={Rich} alt="" /> */}
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Rich Analytics & Reporting</h2>
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl   bg-white">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+                                    {/* <img className="p-1" src={Drivertruck} alt="" /> */}
+                                </div>
+                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver App</h2>
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
         </div>
-      </div>
-      <div>
-        <section class="text-gray-600 body-font">
-          <div class="w-full sm:p-4 px-4 mb-6">
-            <h1 className="title-font sm:text-3xl text-3xl  font-bold text-indigo-800 font-Primary leading-8 mb-6">
-              OUR COMPANY
-            </h1>
-          </div>
-          <div class="container px-5 py-24 mx-auto">
-            Flying-Chital’s #1 cloud-based collaborative Transport Management
-            System, is on a mission to take freight online. With an intention of
-            solving complex problems in the logistics ecosystem, Flying- Chital
-            came into existence in 2023. Founded by top-notch industry experts,
-            Pradyumna Mishra, Amar, Debasish, Sitansu Jena and Samba,
-            Flying-Chital takes your logistics business from MIS reports to
-            complete digitisation,helping companies in end-to-end automation of
-            business processes.Pradyumna comes with an extensive experience of
-            25+ years in the logistics and technology domain. He has a knack of
-            building consumer centric products from scratch. Flying-Chital’s
-            young & enthusiastic team of dedicated product & technical experts
-            are leveraging high-tech technologies to provide the logistic
-            industry with automotive order & dispatch planning, yard management
-            (in-plant monitoring), fleet management and digitised billing &
-            invoice settlement. Since inception, Flying-Chital has earned the
-            trust of top-notch Indian industry leaders.
-          </div>
-        </section>
-      </div>
-      {/* OUR VISION MISSION AND VALUES */}
-      <div>
-        <section class="text-gray-600 body-font">
-          <div class="container px-5 py-24 mx-auto">
-            <h1 className="title-font sm:text-3xl text-3xl  font-bold text-indigo-800 font-Primary leading-8 mb-6">
-              OUR VISION MISSION AND VALUES
-            </h1>
-            <div class="flex flex-wrap -m-4">
-              <div class="p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img
-                    class="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src="https://dummyimage.com/720x400"
-                    alt="blog"
-                  />
-                  <div class="p-6">
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                      OUR VISION
-                    </h1>
-                    <p class="leading-relaxed mb-3">
-                      Connecting people, businesses, and communities to a better
-                      future – through logistics.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img
-                    class="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src="https://dummyimage.com/721x401"
-                    alt="blog"
-                  />
-                  <div class="p-6">
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                      OUR MISSION
-                    </h1>
-                    <p class="leading-relaxed mb-3">
-                      To become the world’s preferred supply chain logistics
-                      company – applying insight, service quality, and
-                      innovation to create sustainable growth for business and
-                      society.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img
-                    class="lg:h-48 md:h-36 w-full object-cover object-center"
-                    src="https://dummyimage.com/722x402"
-                    alt="blog"
-                  />
-                  <div class="p-6">
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                      OUR VALUES
-                    </h1>
-                    <p class="leading-relaxed mb-3">
-                      Our values will guide how we behave and how we communicate
-                      with each other and the world around us.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      {/* OUR TEAM */}
-      <div>
-        <section class="text-gray-600 body-font">
-          <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-20">
-              <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">
-                OUR TEAM
-              </h1>
-              <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify, subway tile poke farm-to-table. Franzen you probably
-                haven't heard of them.
-              </p>
-            </div>
-            <div class="flex flex-wrap -m-4">
-              <div class="p-4 lg:w-1/2">
-                <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                  <img
-                    alt="team"
-                    class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                    src="https://dummyimage.com/200x200"
-                  />
-                  <div class="flex-grow sm:pl-8">
-                    <h2 class="title-font font-medium text-lg text-gray-900">
-                      Holden Caulfield
-                    </h2>
-                    <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                    <p class="mb-4">
-                      DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                      pack vaporware.
-                    </p>
-                    <span class="inline-flex">
-                      <a class="text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                      </a>
-                      <a class="ml-2 text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                        </svg>
-                      </a>
-                      <a class="ml-2 text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                        </svg>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 lg:w-1/2">
-                <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                  <img
-                    alt="team"
-                    class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                    src="https://dummyimage.com/201x201"
-                  />
-                  <div class="flex-grow sm:pl-8">
-                    <h2 class="title-font font-medium text-lg text-gray-900">
-                      Alper Kamu
-                    </h2>
-                    <h3 class="text-gray-500 mb-3">Designer</h3>
-                    <p class="mb-4">
-                      DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                      pack vaporware.
-                    </p>
-                    <span class="inline-flex">
-                      <a class="text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                      </a>
-                      <a class="ml-2 text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                        </svg>
-                      </a>
-                      <a class="ml-2 text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                        </svg>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 lg:w-1/2">
-                <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                  <img
-                    alt="team"
-                    class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                    src="https://dummyimage.com/204x204"
-                  />
-                  <div class="flex-grow sm:pl-8">
-                    <h2 class="title-font font-medium text-lg text-gray-900">
-                      Atticus Finch
-                    </h2>
-                    <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                    <p class="mb-4">
-                      DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                      pack vaporware.
-                    </p>
-                    <span class="inline-flex">
-                      <a class="text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                      </a>
-                      <a class="ml-2 text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                        </svg>
-                      </a>
-                      <a class="ml-2 text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                        </svg>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 lg:w-1/2">
-                <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                  <img
-                    alt="team"
-                    class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                    src="https://dummyimage.com/206x206"
-                  />
-                  <div class="flex-grow sm:pl-8">
-                    <h2 class="title-font font-medium text-lg text-gray-900">
-                      Henry Letham
-                    </h2>
-                    <h3 class="text-gray-500 mb-3">Designer</h3>
-                    <p class="mb-4">
-                      DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                      pack vaporware.
-                    </p>
-                    <span class="inline-flex">
-                      <a class="text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                      </a>
-                      <a class="ml-2 text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                        </svg>
-                      </a>
-                      <a class="ml-2 text-gray-500">
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-5 h-5"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                        </svg>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      {/* OUR CUSTOMERS */}
-      <div>
-        <section class="text-gray-600 body-font">
-          <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap -m-4">
-              <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                <div class="h-full text-center">
-                  <img
-                    alt="testimonial"
-                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                    src="https://dummyimage.com/302x302"
-                  />
-                  <p class="leading-relaxed">
-                    Edison bulb retro cloud bread echo park, helvetica stumptown
-                    taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin
-                    coffee ennui shaman taiyaki vape DIY tote bag drinking
-                    vinegar cronut adaptogen squid fanny pack vaporware.
-                  </p>
-                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                    HOLDEN CAULFIELD
-                  </h2>
-                  <p class="text-gray-500">Senior Product Designer</p>
-                </div>
-              </div>
-              <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                <div class="h-full text-center">
-                  <img
-                    alt="testimonial"
-                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                    src="https://dummyimage.com/300x300"
-                  />
-                  <p class="leading-relaxed">
-                    Edison bulb retro cloud bread echo park, helvetica stumptown
-                    taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin
-                    coffee ennui shaman taiyaki vape DIY tote bag drinking
-                    vinegar cronut adaptogen squid fanny pack vaporware.
-                  </p>
-                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                    ALPER KAMU
-                  </h2>
-                  <p class="text-gray-500">UI Develeoper</p>
-                </div>
-              </div>
-              <div class="lg:w-1/3 lg:mb-0 p-4">
-                <div class="h-full text-center">
-                  <img
-                    alt="testimonial"
-                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                    src="https://dummyimage.com/305x305"
-                  />
-                  <p class="leading-relaxed">
-                    Edison bulb retro cloud bread echo park, helvetica stumptown
-                    taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin
-                    coffee ennui shaman taiyaki vape DIY tote bag drinking
-                    vinegar cronut adaptogen squid fanny pack vaporware.
-                  </p>
-                  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                    HENRY LETHAM
-                  </h2>
-                  <p class="text-gray-500">CTO</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      {/* CAREER */}
-      <section class="text-gray-600 body-font relative">
-        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-          <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-            <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-              <div class="lg:w-1/2 px-6">
-                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                  ADDRESS
-                </h2>
-                <p class="mt-1">
-                  Photo booth tattooed prism, portland taiyaki hoodie neutra
-                  typewriter
-                </p>
-              </div>
-              <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                  EMAIL
-                </h2>
-                <a class="text-indigo-500 leading-relaxed">example@email.com</a>
-                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                  PHONE
-                </h2>
-                <p class="leading-relaxed">123-456-7890</p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-            <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-              Feedback
-            </h2>
-            <p class="leading-relaxed mb-5 text-gray-600">
-              Post-ironic portland shabby chic echo park, banjo fashion axe
-            </p>
-            <div class="relative mb-4">
-              <label for="name" class="leading-7 text-sm text-gray-600">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div class="relative mb-4">
-              <label for="email" class="leading-7 text-sm text-gray-600">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div class="relative mb-4">
-              <label for="message" class="leading-7 text-sm text-gray-600">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              ></textarea>
-            </div>
-            <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Button
-            </button>
-            <p class="text-xs text-gray-500 mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
-            </p>
-          </div>
-        </div>
-      </section>
-      {/* Contact Us */}
-      <div>
-        <section class="text-gray-600 body-font relative">
-          <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-12">
-              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                Contact Us
-              </h1>
-              <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify.
-              </p>
-            </div>
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
-              <div class="flex flex-wrap -m-2">
-                <div class="p-2 w-1/2">
-                  <div class="relative">
-                    <label for="name" class="leading-7 text-sm text-gray-600">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                  </div>
-                </div>
-                <div class="p-2 w-1/2">
-                  <div class="relative">
-                    <label for="email" class="leading-7 text-sm text-gray-600">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label
-                      for="message"
-                      class="leading-7 text-sm text-gray-600"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="p-2 w-full">
-                  <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                    Button
-                  </button>
-                </div>
-                <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a class="text-indigo-500">example@email.com</a>
-                  <p class="leading-normal my-5">49 Smith St.</p>
-                  <span class="inline-flex">
-                    <a class="text-gray-500">
-                      <svg
-                        fill="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                      </svg>
-                    </a>
-                    <a class="ml-4 text-gray-500">
-                      <svg
-                        fill="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                      </svg>
-                    </a>
-                    <a class="ml-4 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <rect
-                          width="20"
-                          height="20"
-                          x="2"
-                          y="2"
-                          rx="5"
-                          ry="5"
-                        ></rect>
-                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                      </svg>
-                    </a>
-                    <a class="ml-4 text-gray-500">
-                      <svg
-                        fill="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  );
+    );
 }

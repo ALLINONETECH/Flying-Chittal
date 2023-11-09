@@ -4,12 +4,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        Primary: ["Poppins"],
-        Secondary: ["Montserrat"],
+      colors: {
+        primary: "#3734A9",
+        secondary: "#F85A47",
+        heading: "#121113",
+        body: "#30343F",
+        divider: "#EAEFF3",
+        white: "#FFFFFF",
       },
-      boxShadow: {
-        custom: "0 0 5px rgba(128, 128, 128, 1)",
+      fontFamily: {
+        heebo: ["Heebo", "sans"],
       },
     },
   },

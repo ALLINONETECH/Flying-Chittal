@@ -1,13 +1,152 @@
 import React from 'react'
+import logo from '../../assets/images/logo.png'
+
 
 export default function Footer() {
     return (
         <div>
 
-            <footer className="text-gray-600 body-font">
+            <footer className="text-gray-600 body-font bg-[#1d2939]">
+                <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                    <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                        <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                            <span className="ml-3 text-xl">
+                                <img src={logo} alt />
+                            </span>
+                        </a>
+                        <p className="mt-2 text-sm text-gray-200">Air plant banjo lyft occupy retro adaptogen indego</p>
+                    </div>
+                    <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 className="title-font font-bold text-gray-200 tracking-widest text-md mb-3">Industries</h2>
+                            <nav className="list-none mb-10">
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Transportation & Logistics</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Mining</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Ore Processing and Metals</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Cement</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Fertilisers</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Oil & Gas</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Warehousing</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Agriculture</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Aquaculture</a>
+                                </li>
+
+
+
+
+
+
+
+
+
+
+
+                            </nav>
+                        </div>
+                        <div className="lg:w-1/3 md:w-1/2 w-full px-10">
+                            <h2 className="title-font font-bold text-gray-200 tracking-widest text-md mb-3">Product & Solutions</h2>
+                            <nav className="list-none mb-10">
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Flying Chital Integrated Logistics
+                                        Management System</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Flying Chital Smart Vehicle Tracking System</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Flying Chital Smart Fleet Monitoring System</a>
+                                </li>
+
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Flying Chital HEM/HMV/LMV Mobile Asset Management System</a>
+                                </li>
+
+
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Agriculture Automation Solution</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Aquaculture Automation Solution</a>
+                                </li>
+
+
+
+                            </nav>
+                        </div>
+                        <div className="lg:w-1/3 md:w-1/2 w-full px-20">
+                            <h2 className="title-font font-bold text-gray-200 tracking-widest text-md mb-3">Company</h2>
+                            <nav className="list-none mb-10">
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">About Us</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Leadership</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Customers</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Blog</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Market Updates</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Help Centre</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Careers</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-200 hover:text-gray-400">Contact us</a>
+                                </li>
+
+
+
+                            </nav>
+                        </div>
+                        {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                            <nav className="list-none mb-10">
+                                <li>
+                                    <a className="text-gray-600 hover:text-gray-800">First Link</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                                </li>
+                            </nav>
+                        </div> */}
+                    </div>
+                </div>
                 <div className="bg-gray-100">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-end">
+                        <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 FlyingChital —
+                            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+                        </p>
+                        <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                             <a className="text-gray-500">
                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
@@ -31,84 +170,10 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </span>
-
                     </div>
                 </div>
-                <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-
-                    <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Industries</h2>
-                            <nav className="list-none mb-10">
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Automotive</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                                </li>
-                            </nav>
-                        </div>
-                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Insights</h2>
-                            <nav className="list-none mb-10">
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Modern Business</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                                </li>
-                            </nav>
-                        </div>
-                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Services</h2>
-                            <nav className="list-none mb-10">
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Application Services & Modernization</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                                </li>
-                            </nav>
-                        </div>
-                        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">About Us</h2>
-                            <nav className="list-none mb-10">
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Annual Report</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                                </li>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
             </footer>
+
 
 
 
