@@ -16,14 +16,14 @@ const Navbar = () => {
             to: "/home",
             subMenu: [
                 { label: "Transportation & Logistics", to: "/industry" },
-                { label: "Mining", to: "/about" },
-                { label: "Ore Processing and Metals", to: "/about" },
-                { label: "Cement", to: "/about" },
-                { label: "Fertilisers ", to: "/about" },
-                { label: "Oil & Gas ", to: "/about" },
-                { label: "Warehousing ", to: "/about" },
-                { label: "Agriculture ", to: "/about" },
-                { label: "Aquaculture ", to: "/about" },
+                { label: "Mining", to: "/roadLogistics" },
+                { label: "Ore Processing and Metals", to: "/railLogistics" },
+                { label: "Cement", to: "/mission" },
+                { label: "Fertilisers ", to: "/vision" },
+                { label: "Oil & Gas ", to: "/values" },
+                { label: "Warehousing ", to: "/professional" },
+                { label: "Agriculture ", to: "/railmodule1" },
+                { label: "Aquaculture ", to: "/railmodule2" },
             ]
         },
         {
@@ -31,12 +31,12 @@ const Navbar = () => {
             to: "/products",
             subMenu: [
                 { label: "Flying Chital Integrated Logistics Management System", to: "/RoadLogistics" },
-                { label: "Flying Chital Smart Vehicle Tracking System", to: "/RailLogistics" },
-                { label: "Flying Chital Smart Fleet Monitoring System", to: "/flyingchital" },
-                { label: "Flying Chital Smart ContainerTracking System", to: "/product2" },
+                { label: "Flying Chital Smart Vehicle Tracking System", to: "/flyingChitalVehicle" },
+                { label: "Flying Chital Smart Fleet Monitoring System", to: "/flyingChitalFleet" },
+                { label: "Flying Chital Smart ContainerTracking System", to: "/flyingChitalContainer" },
                 { label: "Flying Chital HEM/HMV/LMV Mobile Asset Management System", to: "/Asset" },
-                { label: "Agriculture Automation Solution", to: "/product2" },
-                { label: "Aquaculture Automation Solution", to: "/product2" },
+                { label: "Agriculture Automation Solution", to: "/agricultureAutomation" },
+                { label: "Aquaculture Automation Solution", to: "/aquacultureAutomation" },
             ]
         },
         {
@@ -162,12 +162,12 @@ const Navbar = () => {
 
                 {/* Buttons and Toggle */}
                 <div className="flex items-center md:order-2">
-                    <a
-                        href="#"
+                    <Link
+                        to="/career"
                         className="text-gray-800 dark:text-white  focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2  focus:outline-none"
                     >
                         Careers
-                    </a>
+                    </Link>
                     <Link
                         to="/chat"
                         className="text-white bg-[#f85a47] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"

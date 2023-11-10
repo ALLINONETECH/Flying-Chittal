@@ -17,6 +17,15 @@ import RoadLogistics from "../../src/pages/ProductandSolutions/RoadLogistics"
 import RailLogistics from "../../src/pages/ProductandSolutions/RailLogistics"
 import Blog from "../pages/Resources/Blog";
 import Chat from "../pages/Chat";
+import FlyingChitalVehicle from "../pages/ProductandSolutions/FlyingChitalVehicle";
+import FlyingChitalFleet from "../pages/ProductandSolutions/FlyingChitalFleet";
+import FlyingChitalContainer from "../pages/ProductandSolutions/FlyingChitalContainer";
+import AgricultureAutomation from "../pages/ProductandSolutions/AgricultureAutomation";
+import AquacultureAutomation from "../pages/ProductandSolutions/AquacultureAutomation";
+import Career from "../pages/Career";
+import Professional from "../pages/Professional";
+import RailModule1 from "../pages/RailModule/RailModule1";
+import RailModule2 from "../pages/RailModule/RailModule2";
 
 
 
@@ -36,9 +45,19 @@ export default function Routes() {
                 { path: "/vision", element: <Vision /> },
                 { path: "/values", element: <Values /> },
                 { path: "/flyingchital", element: <FlyingChital /> },
-                { path: "/RoadLogistics", element: <RoadLogistics /> },
-                { path: "/RailLogistics", element: <RailLogistics /> },
+                { path: "/roadLogistics", element: <RoadLogistics /> },
+                { path: "/railLogistics", element: <RailLogistics /> },
+                { path: "/flyingChitalVehicle", element: <FlyingChitalVehicle /> },
+                { path: "/flyingChitalFleet", element: <FlyingChitalFleet /> },
+                { path: "/flyingChitalContainer", element: <FlyingChitalContainer /> },
+                { path: "/agricultureAutomation", element: <AgricultureAutomation /> },
+                { path: "/aquacultureAutomation", element: <AquacultureAutomation /> },
+                { path: "/professional", element: <Professional /> },
+                { path: "/railmodule1", element: <RailModule1 /> },
+                { path: "/railmodule2", element: <RailModule2 /> },
                 { path: "/blog", element: <Blog /> },
+                { path: "/career", element: <Career /> },
+
                 { path: "/chat", element: <Chat /> },
             ],
         },
