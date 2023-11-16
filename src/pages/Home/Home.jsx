@@ -9,7 +9,10 @@ import Software from "../../assets/images/Software.png";
 import smalllogo from "../../assets/images/smalllogo.png";
 // import Digital from "../../assets/images/Homenew.png";
 import Home1 from "../../assets/images/Home.png";
+import EdgeComp12 from "../../assets/images/EdgeComp12.png";
 import vectorImage from "../../assets/images/vector.png";
+import homebluebg from "../../assets/images/homebluebg.png";
+import One from "../../component/common/svg/One";
 
 import car from "../../assets/images/car.png";
 import header from "../../assets/images/header.jpg";
@@ -18,132 +21,80 @@ export default function Home() {
     return (
         <div className="static">
             {/* Section-Header */}
-            {/* <section className="text-gray-600 relative body-font bg-primary  rounded-br-[100px]"> */}
             <section
-                className="text-gray-600 relative body-font bg-primary rounded-br-[100px]"
+                className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
                 style={{
-                    backgroundImage: `url(${vectorImage})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
+                    backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${homebluebg})`,
                 }}
             >
-                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col   items-center ">
-                    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16  flex flex-col md:items-start md:text-left mb- md:mb-0 items-center text-center">
+                <nav
+                    x-data="{ isOpen: false }"
+                    className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
+                >
+                    <div className="flex items-center justify-between">
+                        <div className="flex lg:hidden"></div>
+                    </div>
+                    <div className=" inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div>
+                </nav>
+                <div className="container px-6 py-16 mx-auto text-start">
+                    <div className=" mx-auto">
                         <h1 className=" not-italic font-bold mb-8 font-heebo title-font sm:text-6xl  text-4xl title-font text-white ">
-                            Digital
-                            <br /> Transformation & <br /> Innovation
+                            Digital Transformation & <br /> Innovation
                         </h1>
-                        <p className=" text-xl not-italic font-normal leading-7 font-heboo text-white  ">
-                            Unlock Your Digital Transformation & Innovation Potential.
-                            <br /> We Help Implement Modern Digital Technologies to Solve.
-                            <br /> Business Problems, Optimise Processes and Save Cost.
+                        <p className=" text-xl not-italic font-normal leading-7 font-heboo text-white   ">
+                            Unlock your digital transformation & innovation potential. We help
+                            implement modern digital <br /> technologies to solve business
+                            problems, optimize processes and save cost.
                         </p>
-                        <div className="flex justify-center mt-6">
-                            <button className="inline-flex text-primary font-bold bg-white border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                LEARN MORE{" "}
-                                <span>
-                                    {" "}
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        className="w-4 h-4 ml-2 "
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path d="M5 12h14M12 5l7 7-7 7" />
-                                    </svg>
-                                </span>
+
+                        <div className="justify-center mt-24 ">
+                            <button className=" text-sm not-italic font-bold  text-white border-0 py-2  px-1  focus:outline-none hover:border-b-2 hover:border-white">
+                                Digital Transformation and Innovation
+                            </button>
+                            <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none  hover:border-b-2 hover:border-white ">
+                                Automation of Enterprise Workflows
+                            </button>
+                            <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white">
+                                Edge Computing and Mobility
+                            </button>
+
+                            <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white">
+                                Managed IT Services
                             </button>
                         </div>
-                        <div className=" mt-10">
-                            <div className="absolute flex justify-center mt-10">
-                                <button className=" text-sm not-italic font-bold  text-white border-0 py-2 px-1  focus:outline-none hover:border-b-2 hover:border-white">
-                                    Digital Transformation and Innovation
-                                </button>
-                                <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none  hover:border-b-2 hover:border-white ">
-                                    Automation of Enterprise Workflows
-                                </button>
-                                <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white">
-                                    Edge Computing and Mobility
-                                </button>
-
-                                <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white">
-                                    Managed IT Services
-                                </button>
-                            </div>
-                        </div>
                     </div>
-                    <div className="absoulte lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-blend-lighten bg-cover bg-no-repeat">
-                        <img
-                            className="object-cover object-center rounded bg-lightgray"
-                            alt="hero"
-                            src={Home1}
-                            style={{
-                                mixBlendMode: "lighten",
-                            }}
-                        />
-                    </div>
-
-                    {/* <div className="absoulte lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={Digital}
-            />
-          </div> */}
                 </div>
             </section>
 
             {/* Section-Flying Chital - Smart Agile Logistics at Fingertip */}
 
-            <section className="text-gray-600 body-font relative  z-20 -mt-20 ">
-                <div className="container mx-auto flex px-1 py-5   bg-white  rounded-xl md:flex-col flex-col items-center border-2 border-gray-200 ">
-                    <div>
-                        <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900 font-heebo">
-                            Flying Chital - Smart Agile Logistics at Fingertip...
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-8 mx-auto ">
+                    <div class="flex flex-wrap w-full  flex-col items-center text-center">
+                        <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
+                            <span className=" font-heebo text-[40px] text-primary">
+                                Flying Chital -&nbsp;
+                            </span>
+                            Smart Agile Logistics at Fingertip...
                         </h1>
+                        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500"></p>
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
                     </div>
-
-                    <div className="flex flex-row">
-                        <div className="lg:max-w-lg lg:w-1/6 md:w-1/3 w-1/6 mb-10 md:mb-0  ml-2">
+                    <div className="flex flex-row shadow-lg  md:shadow-xl  bg-white  ">
+                        <div className="lg:max-w-lg lg:w-1/4 md:w-1/3 w-1/6 mb-10 md:mb-0  ml-20 px-3 py-10">
                             <img
                                 className="object-cover object-center "
                                 alt="hero"
                                 src={smalllogo}
                             />
                         </div>
-                        <div className="lg:flex-grow md:w-1/2 lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo">
-                            <p className="mb-4 text-justify mt-2 mr-2">
-                                Flying Chital stands as a trailblazing, multi-modal integrated
-                                logistics management platform, revolutionizing the logistics
-                                landscape with its comprehensive suite of services. By combining
-                                advanced analytics, customized reporting capabilities and
-                                infographics it seamlessly streamlines and optimizes logistics
-                                operations, providing invaluable logistics intelligence,
-                                connectivity, and real-time virtualization. Positioned at the
-                                forefront of its category, Flying Chital's mobility feature
-                                offers 'Smart Agile Logistics Operations at Fingertip,' ensuring
-                                unparalleled accessibility and 100% visibility, irrespective of
-                                location or device. Moreover, its integrated digital platform
-                                interfaces effortlessly with various Government Regulatory
-                                Portals, including Vahan, Parivahan, GST Portal, Govt Mining
-                                Regulatory Portals, ERP/SAP, and more, enabling real-time data
-                                access through customizable dashboards and reports. This
-                                innovative platform not only ensures end-to-end visibility from
-                                source to destination but also significantly reduces turnaround
-                                times, operational expenses, and the risks of pilferage and
-                                revenue leakages. With its adaptability to multiple
-                                transportation modes, including road, rail, container, and port
-                                terminals, this digital logistics management system serves as a
-                                versatile, comprehensive solution for businesses operating in
-                                the modern logistics landscape. Flying Chital is a cost
-                                effective conveneient door way to Logistics 4.0.
-                            </p>
-                            <div className="flex justify-center ">
-                                <button className="inline-flex text-primary font-bold bg-white border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                    LEARN MORE{" "}
+                        <div className="text-3xl not-italic font-bold leading-9 lg:flex-grow md:w-1/2 lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-5 text-[#30343F] ">
+                            <div className="flex  h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo ">
+                                <One />
+                            </div>
+                            <div className="flex justify-start ">
+                                <button className="inline-flex text-white font-bold bg-[#30343F] border-0 py-2 px-6 ml-4 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                    READ MORE{" "}
                                     <span>
                                         {" "}
                                         <svg
@@ -176,11 +127,10 @@ export default function Home() {
                         />
                     </div>
                     <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                        <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
-                            <span className="border-b-2 border-secondary">Au</span>tomation of
-                            Enterprise Workflows
-                        </h1>
-                        <p className="mb-8 text-justify text-base not-italic font-normal leading-6 w-4/5">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+                            <span className=" text-indigo-800 font-bold text-[40px] ">Automation</span><span className=" text-[40px] font-heebo font-bold "> of Enterprise Workflows</span></h1>
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+                        <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  w-4/5">
                             Automate Your Enterprise Digital Workflows for Enhanced
                             Resilience, Scalability, and Sustainability. We Help Automate
                             Enterprise Digital Workflows to Streamline Processes, Boost
@@ -195,13 +145,13 @@ export default function Home() {
             </section>
 
             {/* Section-Edge Computing and Mobility */}
-            <section className="text-gray-600 body-font bg-[#F6F7F8] rounded-tl-[70px] rounded-br-[70px]">
+            {/* <section className="text-gray-600 body-font bg-[#F6F7F8] rounded-tl-[70px] rounded-br-[70px]">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
+                        <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  sm:text-4xl mb-4 text-start text-gray-900">
                             Edge Computing and Mobility
                         </h1>
-                        <p className="mb-8 leading-relaxed">
+                        <p className="mb-8 text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">
                             Our Edge Computing and Mobility Solutions enable non-connected
                             equipment, Industrial IoT devices, and workstations to capture and
                             process data without having to collaborate with a centralized
@@ -221,16 +171,23 @@ export default function Home() {
                         />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
+            <div className="  ">
+                <img
+                    className="object-cover object-center  drop-shadow-lg"
+                    alt="hero"
+                    src={EdgeComp12}
+                />
+            </div>
             {/* Section- Managed IT Services*/}
 
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full mb-20">
-                        <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
-                            Managed IT Services
-                        </h1>
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+                            <span className=" text-indigo-800 font-bold text-[40px] ">Managed </span><span className=" text-[40px] font-heebo font-bold "> IT Services</span></h1>
+                        {/* <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div> */}
                     </div>
                     <div className="flex flex-wrap -mx-4 -mb-10 text-center">
                         <div className="sm:w-1/2 mb-10 px-4">
@@ -241,10 +198,10 @@ export default function Home() {
                                     src={Empower}
                                 />
                             </div>
-                            <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 text-start">
+                            <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mt-6 mb-3 text-start">
                                 Empowering Business Through IT Solutions
                             </h2>
-                            <p className="leading-relaxed text-base text-start">
+                            <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] text-start">
                                 We manage IT Services for applications and infrastructure, so
                                 that our clients can run their businesses. We help build and
                                 manage IT Infrastructure including private wireless, local area
@@ -261,10 +218,10 @@ export default function Home() {
                                 />
                             </div>
 
-                            <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 text-start">
+                            <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F] mt-6 mb-3 text-start">
                                 Comprehensive Software Solutions for Business
                             </h2>
-                            <p className="leading-relaxed text-base text-start">
+                            <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] text-start">
                                 Build and Manage software Applications from core accounting,
                                 stock tracking, bank reconciliation, project management to
                                 automating workflows, payroll, CRM, manufacturing etc

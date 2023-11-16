@@ -12,6 +12,18 @@ import Goal from "../../assets/images/Goal.png";
 import Aboutus from "../../assets/images/Aboutus.png";
 import AboutImage1 from "../../assets/images/AboutImage1.png";
 import AboutImage2 from "../../assets/images/AboutImage2.png";
+import Tata from "../../assets/images/Tata.png";
+import Nippon from "../../assets/images/nipponsteel.png";
+import Nalco from "../../assets/images/Nalco.png";
+import JSW from "../../assets/images/JSW.png";
+import Arcelor from "../../assets/images/Arcelor.png";
+import Jindal from "../../assets/images/jindal.png";
+import JSL from "../../assets/images/JSL.png";
+import TataSteel from "../../assets/images/TataSteel.png";
+import BRPL from "../../assets/images/BRPL.png";
+import SJSPL from "../../assets/images/SJSPL.png";
+import MYTHRI from "../../assets/images/MYTHRI.png";
+import aboutusbluebg from "../../assets/images/aboutusbluebg.png";
 
 export default function About() {
     return (
@@ -20,7 +32,7 @@ export default function About() {
             <section
                 className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
                 style={{
-                    backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${Aboutus})`,
+                    backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${aboutusbluebg})`,
                 }}
             >
                 <nav
@@ -47,24 +59,28 @@ export default function About() {
                         </a> */}
                     </div>
                 </nav>
-                <div className="container px-6 py-16 mx-auto text-center">
-                    <div className="max-w-lg mx-auto">
-                        <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl">
+                <div className="container px-6 py-16 mx-auto text-start">
+                    <div className=" mx-auto">
+                        <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
                             About Us
                         </h1>
-                        <p className="mt-6 text-white text-xl not-italic font-bold leading-8 font-heebo w-full">
+                        <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
                             We provide Smart Solutions to Simplify Your Future
                         </p>
-                        <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button>
-                        <p className="mt-3 text-sm text-gray-400 "></p>
+                        <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
+                            Home / About Us
+                        </p>
                     </div>
                 </div>
             </section>
 
             {/* Section- Who We are*/}
             <section className="text-gray-600 body-font mt-40">
-                <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-                    <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg ">
+                <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
+                    <div
+                        className=" flex relative items-start lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg "
+                        style={{ marginTop: "-120px" }}
+                    >
                         <img
                             className="object-cover object-center absolute ml-56 bottom-48"
                             alt="hero"
@@ -76,11 +92,14 @@ export default function About() {
                             src={Who2}
                         />
                     </div>
-                    <div className=" relative bottom-28 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                        <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-start text-gray-900">
-                            <span className="border-b-2 border-secondary">Wh</span>o We are
+                    <div className=" relative bottom-28 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16  flex flex-col md:items-start md:text-left items-center text-center">
+                        <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
+                            <span className=" font-heebo text-[40px] text-primary">
+                                <span className="border-b-2 border-secondary">Wh</span>o&nbsp;
+                            </span>
+                            we are
                         </h1>
-                        <p className="text-xl not-italic font-normal leading-7 mb-8 text-justify ">
+                        <p className="text-xl not-italic font-normal leading-7 mb-8 text-justify font-heebo w-5/6">
                             Welcome to Atulya Abhinav Technologies, a pioneering force in the
                             realm of digital transformation and innovation. With a dedicated
                             focus on revolutionizing businesses, we specialize in the seamless
@@ -100,18 +119,10 @@ export default function About() {
                 </div>
             </section>
 
-
-
-
-
-
-
-
-
             {/* Section-why Choose you */}
 
             <section
-                className="text-gray-600 body-font mt-40"
+                className="text-gray-600 body-font mt-10"
                 style={{
                     borderRadius: "100px 0px",
                     background: "var(--gray-lighter, #F6F7F8)",
@@ -119,7 +130,8 @@ export default function About() {
             >
                 <div className="p-2">
                     <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-                        Why C<span className="border-b-2 border-secondary">ho</span>oose us
+                        <span className="font-heebo text-[40px] text-primary">Why</span> C
+                        <span className="border-b-2 border-secondary">ho</span>ose us
                     </h1>
                 </div>
 
@@ -149,33 +161,62 @@ export default function About() {
                         />
                     </div>
                 </div>
-                <div className="flex  justify-center ">
-                    <p className="text-xl not-italic font-normal text-justify leading-7  sm:text-xl mb-4 justify-center text-gray-900 w-4/5 font-heebo">
-                        Choosing Atulya Abhinav over others in the digital transformation
-                        and innovation landscape is a decision grounded in our unwavering
-                        commitment to excellence and the distinct value we bring to the
-                        table. We understand that the digital terrain is constantly
-                        evolving, and that's why we stand out. Our deep-rooted expertise in
-                        digital transformation, automation of enterprise workflows, edge
-                        computing, mobility, and managed IT services is second to none. What
-                        truly sets us apart is our relentless pursuit of innovation and our
-                        ability to tailor solutions to the unique needs of our clients.
-                        <br /> We don't offer a one-size-fits-all approach; we craft
-                        customized strategies that empower businesses to thrive in the
-                        digital age. Businesses don't change their standard operational
-                        procedures (SOPs) to adopt our solution, rather we customize and
-                        improvise the solution to ensure the established time tested SOPs
-                        remain as it is.
-                        <br />
-                        With a proven track record of delivering results, we provide not
-                        just technology, but a comprehensive partnership in achieving your
-                        goals. Our dedication to staying on the cutting edge of technology
-                        ensures that our clients are always ahead of the curve, reaping the
-                        rewards of increased efficiency, enhanced productivity, and
-                        future-proofed operations. In a fast-paced, ever-changing digital
-                        world, we are the reliable partner you can trust to transform your
-                        business and drive it towards lasting success.
-                    </p>
+                <div className="flex flex-col justify-center mx-4 sm:ml-0">
+                    <div>
+                        <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-justify mb-2 font-heebo mx-24">
+                            Commitment to Excellence
+                        </h1>
+                    </div>
+                    <div className="w-full">
+                        <p className="text-xl not-italic  font-heebo sm:text-base font-normal text-justify mb-2 text-gray-900 mx-24">
+                            Choosing Atulya Abhinav over others in the digital transformation
+                            and innovation landscape is a decision grounded in our unwavering
+                            commitment to excellence and the distinct value we bring to the
+                            table. We understand that the digital terrain is constantly
+                            evolving, and that's why we stand out. Our deep-rooted expertise
+                            in digital transformation, automation of enterprise workflows,
+                            edge computing, mobility, and managed IT services is second to
+                            none. What truly sets us apart is our relentless pursuit of
+                            innovation and our ability to tailor solutions to the unique needs
+                            of our clients.
+                        </p>
+                    </div>
+                </div>
+                <div className="flex flex-col justify-center mx-4 sm:ml-0">
+                    <div>
+                        <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-justify mb-2 font-heebo mx-24">
+                            Solution Customized to Your SOPs
+                        </h1>
+                    </div>
+                    <div className="w-full">
+                        <p className="text-xl not-italic  font-heebo sm:text-base font-normal text-justify mb-2 text-gray-900 mx-24">
+                            We don't offer a one-size-fits-all approach; we craft customized
+                            strategies that empower businesses to thrive in the digital age.
+                            Businesses don't change their standard operational procedures
+                            (SOPs) to adopt our solution, rather we customize and improvise
+                            the solution to ensure the established time tested SOPs remain as
+                            it is.
+                        </p>
+                    </div>
+                </div>
+                <div className="flex flex-col justify-center mx-4 sm:ml-0">
+                    <div>
+                        <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-justify mb-2 font-heebo mx-24">
+                            Proven Track Record
+                        </h1>
+                    </div>
+                    <div className="w-full">
+                        <p className="text-xl not-italic  font-heebo sm:text-base font-normal text-justify mb-2 text-gray-900 mx-24">
+                            With a proven track record of delivering results, we provide not
+                            just technology, but a comprehensive partnership in achieving your
+                            goals. Our dedication to staying on the cutting edge of technology
+                            ensures that our clients are always ahead of the curve, reaping
+                            the rewards of increased efficiency, enhanced productivity, and
+                            future-proofed operations. In a fast-paced, ever-changing digital
+                            world, we are the reliable partner you can trust to transform your
+                            business and drive it towards lasting success.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -185,7 +226,11 @@ export default function About() {
                 <div className="container px-5 py-10 mx-auto">
                     <div class="text-center mb-20">
                         <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-                            Mission, Vision, & Values
+                            <span className="font-heebo text-[40px] text-primary">
+                                {" "}
+                                Mission,
+                            </span>{" "}
+                            Vision, & Values
                         </h1>
                         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
                         <div class="flex mt-6 justify-center">
@@ -211,7 +256,7 @@ export default function About() {
                                         <br />{" "}
                                     </p>
                                     <div className="flex justify-start mt-6">
-                                        <button className="inline-flex text-white font-bold bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                        <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
                                             READ MORE{" "}
                                             <span>
                                                 {" "}
@@ -252,7 +297,7 @@ export default function About() {
                                         <br />
                                     </p>
                                     <div className="flex justify-start mt-6">
-                                        <button className="inline-flex text-white font-bold bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                        <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
                                             READ MORE{" "}
                                             <span>
                                                 {" "}
@@ -294,7 +339,7 @@ export default function About() {
                                         <br />
                                     </p>
                                     <div className="flex justify-start mt-6">
-                                        <button className="inline-flex text-white font-bold bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                        <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
                                             READ MORE{" "}
                                             <span>
                                                 {" "}
@@ -321,7 +366,7 @@ export default function About() {
 
             {/* LeaderShip */}
             <section
-                className="text-gray-600 body-font mt-40"
+                className="text-gray-600 body-font mt-20"
                 style={{
                     borderRadius: "100px 0px",
                     background: "var(--gray-lighter, #F6F7F8)",
@@ -330,7 +375,10 @@ export default function About() {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="p-2">
                         <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-                            Lea<span className="border-b-2 border-secondary">der</span>ship
+                            <span className="font-heebo text-[40px] text-primary">
+                                Lea<span className="border-b-2 border-secondary">der</span>
+                            </span>
+                            ship
                         </h1>
                     </div>
 
@@ -478,54 +526,36 @@ export default function About() {
                 </div>
             </section>
 
-
             <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]">
                 <div className="container px-5 py-10 mx-auto">
                     <div class="text-center mb-20">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">We Are Experienced In Deployments At</h1>
+                        <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
+                            We are{" "}
+                            <span className="font-heebo text-[40px] text-primary">
+                                Experienc
+                                <span className="border-b-2 border-secondary">ed&nbsp;</span>
+                            </span>
+                            In Deployments At
+                        </h1>
+
                         {/* <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Move beyond Track & Trace with an ultra easy to use interface that integrates with 2.2k devices and it accessible on mobile app and web for desktop in over 15 language</p> */}
-                        <div class="flex mt-6 justify-center">
-                            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
-                        </div>
                     </div>
 
                     <div className="flex flex-wrap -m-4">
                         <div className=" md:w-1/3 p-4 ">
-                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  bg-white ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <img className="p-1" src={intelligent} alt="" /> */}
-                                </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Intelligent 24*7 Real time tracking</h2>
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full ">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <img className="p-1" src={intelligent} alt="" />
+                                </div> */}
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Intelligent 24*7 Real time tracking</h2> */}
                                 <div className="flex">
                                     {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
                                 </div>
-
-
+                                <img className="p-1" src={Tata} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  bg-white ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                                    {/* <img className="p-1" src={Safety} alt="" /> */}
-                                </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Safety & Theft Prevention</h2>
-                                <div className="flex">
-                                    {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
-                                </div>
-
-                                <div className="flex">
-                                    {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
-                                </div>
-                                <div className="flex">
-                                    {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  bg-white">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
                                     {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
@@ -533,7 +563,7 @@ export default function About() {
 
                                     {/* <img className="p-1" src={Driver} alt="" /> */}
                                 </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2>
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div>
@@ -544,18 +574,19 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
+                                <img className="p-1" src={JSW} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  bg-white ">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
                                     {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                                    {/* <img className="p-1" src={Fuel} alt="" /> */}
-                                </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Fuel Monitoring & Tracking</h2>
 
+                                    {/* <img className="p-1" src={Driver} alt="" /> */}
+                                </div>
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div>
@@ -566,20 +597,19 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
-
-
-
+                                <img className="p-1" src={Nippon} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
                                     {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                                    {/* <img className="p-1" src={Rich} alt="" /> */}
+
+                                    {/* <img className="p-1" src={Driver} alt="" /> */}
                                 </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Rich Analytics & Reporting</h2>
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div>
@@ -590,17 +620,19 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
+                                <img className="p-1" src={Arcelor} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl   bg-white">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
                                     {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                                    {/* <img className="p-1" src={Drivertruck} alt="" /> */}
+
+                                    {/* <img className="p-1" src={Driver} alt="" /> */}
                                 </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver App</h2>
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div>
@@ -611,14 +643,138 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
+                                <img className="p-1" src={Jindal} alt="" />
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+
+                                    {/* <img className="p-1" src={Driver} alt="" /> */}
+                                </div>
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                                <img className="p-1" src={JSL} alt="" />
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+
+                                    {/* <img className="p-1" src={Driver} alt="" /> */}
+                                </div>
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                                <img className="p-1" src={TataSteel} alt="" />
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                                <img className="p-1" src={Nalco} alt="" />
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                                <img className="p-1" src={BRPL} alt="" />
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+
+                                    {/* <img className="p-1" src={Driver} alt="" /> */}
+                                </div>
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                                <img className="p-1" src={SJSPL} alt="" />
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg> */}
+
+                                    {/* <img className="p-1" src={Driver} alt="" /> */}
+                                </div>
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                                <img className="p-1" src={MYTHRI} alt="" />
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
-
-
         </div>
     );
 }

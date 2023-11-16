@@ -1,17 +1,16 @@
-import React from 'react'
-import Card from '../../assets/images/card-media.png'
-import Card2 from '../../assets/images/card-media2.png'
-import Card3 from '../../assets/images/card-media3.png'
-import Card4 from '../../assets/images/card-media4.png'
-import Card5 from '../../assets/images/card-media5.png'
-import Card6 from '../../assets/images/card-media6.png'
-import Card7 from '../../assets/images/card-media7.png'
-import Card8 from '../../assets/images/card-media8.png'
-import Card9 from '../../assets/images/card-media9.png'
-import Card10 from '../../assets/images/card-media10.png'
-import Card11 from '../../assets/images/card-media11.png'
+import React from "react";
+import Card from "../../assets/images/card-media.png";
+import Card2 from "../../assets/images/card-media2.png";
+import Card3 from "../../assets/images/card-media3.png";
+import Card4 from "../../assets/images/card-media4.png";
+import Card5 from "../../assets/images/card-media5.png";
+import Card6 from "../../assets/images/card-media6.png";
+import Card7 from "../../assets/images/card-media7.png";
+import Card8 from "../../assets/images/card-media8.png";
+import Card9 from "../../assets/images/card-media9.png";
+import Card10 from "../../assets/images/card-media10.png";
+import Card11 from "../../assets/images/card-media11.png";
 import Blog1 from "../../assets/images/Blog1.png";
-
 
 export default function RoadLogistics() {
     return (
@@ -47,37 +46,46 @@ export default function RoadLogistics() {
                         </a> */}
                     </div>
                 </nav>
-                <div className="container px-6 py-16 mx-auto text-center">
-                    <div className="max-w-lg mx-auto">
-                        <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl">
-                            RoadLogistics
+                <div className="container px-6 py-16 mx-auto text-start">
+                    <div className=" mx-auto">
+                        <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+                            Road Logistics
                         </h1>
-                        <p className="mt-6 text-white text-xl not-italic font-bold leading-8 font-heebo w-full">
-                            Challenge, Ideate & Create
+                        <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+                            We provide Smart Solutions to Simplify Your Future
                         </p>
-                        <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button>
-                        <p className="mt-3 text-sm text-gray-400 "></p>
+                        <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
+                            Flying Chital / Road Logistics
+                        </p>
                     </div>
                 </div>
             </section>
-
-
 
             {/* Section-2  */}
             <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px]">
                 <div className="container px-5 py-10 mx-auto">
                     <div class="text-center mb-5">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">Road Logistics</h1>
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                            <span className=" text-indigo-800 font-bold text-[40px] ">
+                                Flying Chital&nbsp;
+                            </span>
+                            <span className=" text-[40px] font-heebo font-bold ">
+                                Integrated Road Logistics Management System
+                            </span>
+                        </h1>
+                        <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4">
+                            (FCI<span className="border-b-2 border-secondary">RL</span>MS)
+                        </h1>
                         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-                        <div class="flex justify-center">
-                            <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-                        </div>
                     </div>
                     <div className="container px-5  mx-auto">
                         <div class="text-center mb-5">
-                            <p class="text-center leading-relaxed xl:w-2/3 lg:w-1/4 mx-auto text-gray-500s">oad logistics in a truck company involve 6
-                                the planning, implementation, and control of the movement and storage of goods and services from one place to another
-                                using trucks and other road vehicles. </p>
+                            <p class="text-center leading-relaxed xl:w-2/3 lg:w-1/4 mx-auto text-gray-500s">
+                                Road logistics in a truck company involve 6 the planning,
+                                implementation, and control of the movement and storage of goods
+                                and services from one place to another using trucks and other
+                                road vehicles.{" "}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -92,34 +100,24 @@ export default function RoadLogistics() {
                                     <img className="rounded-tr-[80px] w-full" src={Card} alt="" />
                                 </div>
 
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Digital Workspace with Digital Profiles</h2>
+                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">
+                                    Digital Workspace with Digital Profiles
+                                </h2>
                                 <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">A digital workspace is an integrated technology framework that
-                                        centralizes an organization's applications, data, and collaboration tools into a single user interface
-                                        accessible from anywhere with an internet connection. It provides employees with a unified platform to
-                                        access their work-related resources, applications, and data. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" w-auto md:w-1/2 p-4  ">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card2} alt="" />
-                                </div>
-
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Automated Transaction Points</h2>
-                                <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">Automated Transaction Points in Business: In business,
-                                        automated transaction points can refer to specific stages in a sales or service process where transactions are automatically processed.
-                                        <br />
-                                        <br />
-                                        <p>•Vehicle and Driver Assignment</p>
-                                        <br />
-                                        <p>•Entry and Exit</p>
-                                        <br />
-                                        <p>•Weighment – Man-less & Near Man-less</p>
-                                        <br />
-                                        <p>•Electronic Proof of Delivery</p>
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        We create a digital ecosystem through integration of
+                                        advanced technologies, such as AI, cloud computing, and IoT,
+                                        to streamline and digitize business processes. It results in
+                                        a digital workplace where tasks, communication, and
+                                        collaboration occur seamlessly and efficiently. Digital
+                                        profiles for employees and stakeholders provide a
+                                        comprehensive view of their roles, preferences, and
+                                        interactions, enhancing personalized experiences. Moreover,
+                                        a digital interface connects all stakeholders, including
+                                        customers, suppliers, and employees, fostering real-time
+                                        data sharing and decision-making. This digital
+                                        transformation optimizes operations, increases productivity,
+                                        and positions businesses to stay competitive.
                                     </p>
                                 </div>
                             </div>
@@ -127,20 +125,28 @@ export default function RoadLogistics() {
                         <div className=" w-auto md:w-1/2 p-4  ">
                             <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card3} alt="" />
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card2}
+                                        alt=""
+                                    />
                                 </div>
 
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Automated Validation & Verification</h2>
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Automated Validation & Verification
+                                </h2>
                                 <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">Automated Validation and Verification (V&V) refers to the use
-                                        of automated tools, techniques, and processes to confirm that a product, system, or software application meets its specified requirements and functions correctly.
-                                        <br />
-                                        <br />
-                                        <p>•Vehicle & Driver</p>
-                                        <br />
-                                        <p>•Tamperproof Transactions</p>
-                                        <br />
-                                        <p>•Minimized Manual Intervention</p>
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        Our digital solutions enhance efficiency and accuracy by
+                                        automating the validation & verification process, reducing
+                                        human error and saving time. They provide a secure and
+                                        tamper-proof digital record of all transactions, ensuring
+                                        transparency and trust among stakeholders. In logistics
+                                        management, this technology allows for real-time tracking,
+                                        reducing delays, and enhancing supply chain visibility.
+                                        Additionally, it streamlines compliance, mitigates fraud,
+                                        and ensures that all parties involved in the process can
+                                        rely on the integrity and authenticity of the data.
                                     </p>
                                 </div>
                             </div>
@@ -148,18 +154,27 @@ export default function RoadLogistics() {
                         <div className=" w-auto md:w-1/2 p-4  ">
                             <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card4} alt="" />
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card3}
+                                        alt=""
+                                    />
                                 </div>
-
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Automated Documentation</h2>
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Automated Validation & Verification
+                                </h2>
                                 <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">Automated documentation refers to the process of automatically
-                                        generating documentation for software applications, APIs, or any other technology-related projects without manual intervention.
-                                        <br />
-                                        <br />
-                                        <p>•Generation</p>
-                                        <br />
-                                        <p>•Printing</p>
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        Our digital solutions enhance efficiency and accuracy by
+                                        automating the validation & verification process, reducing
+                                        human error and saving time. They provide a secure and
+                                        tamper-proof digital record of all transactions, ensuring
+                                        transparency and trust among stakeholders. In logistics
+                                        management, this technology allows for real-time tracking,
+                                        reducing delays, and enhancing supply chain visibility.
+                                        Additionally, it streamlines compliance, mitigates fraud,
+                                        and ensures that all parties involved in the process can
+                                        rely on the integrity and authenticity of the data.
                                     </p>
                                 </div>
                             </div>
@@ -167,129 +182,263 @@ export default function RoadLogistics() {
                         <div className=" w-auto md:w-1/2 p-4  ">
                             <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card5} alt="" />
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card4}
+                                        alt=""
+                                    />
                                 </div>
 
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Invoicing & Payment</h2>
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Automated Documentation
+                                </h2>
                                 <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">Create an Invoice: Include your business name, logo, and contact
-                                        information. Add the client's details: name, address, and contact information. Assign a unique invoice number
-                                        and date. Clearly outline the products or services provided, along with their quantities and prices. Calculate
-                                        the total amount, including any taxes or discounts. Specify the payment terms (e.g., due upon receipt, net 30 days).</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" w-auto md:w-1/2 p-4  ">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card6} alt="" />
-                                </div>
-
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Reverse Bidding</h2>
-                                <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">Reverse bidding is a procurement strategy in which buyers post
-                                        their requirements for a service or product, and sellers then bid to win the business. Unlike traditional
-                                        bidding where sellers compete to offer the lowest price, in reverse bidding, sellers compete to offer the
-                                        best value, which may include factors such as quality, delivery time, and additional services.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" w-auto md:w-1/2 p-4  ">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card7} alt="" />
-                                </div>
-
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Integrated Transporter Module</h2>
-                                <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">An Integrated Transporter Module could refer to a comprehensive
-                                        software or hardware solution that combines several functions essential for efficient trucking operations.
-                                        Here are some key features such a module might include. Fleet Management: Tracking the location, fuel consumption, and maintenance schedules of all trucks</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" w-auto md:w-1/2 p-4  ">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card8} alt="" />
-                                </div>
-
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Rich Analytics</h2>
-                                <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">Implementing rich analytics in a truck company can significantly
-                                        improve operational efficiency, reduce costs, enhance safety, and optimize various aspects of the business.
-                                        Here are some key areas where rich analytics can be applied in a truck company. Route Optimization Predictive
-                                        Analysis: Use historical data and real-time traffic information to predict optimal routes for trucks, reducing fuel consumption and delivery times. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" w-auto md:w-1/2 p-4  ">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card9} alt="" />
-                                </div>
-
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Customized Reports</h2>
-                                <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">Certainly! It looks like you're interested in customized reports.
-                                        If you could provide more specific details about the type of report you need, such as the purpose, the data
-                                        you want to include, the format, or any specific questions you have, I'd be happy to assist you further in creating a customized report. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" w-auto md:w-1/2 p-4  ">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card10} alt="" />
-                                </div>
-
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Centralized Command and Control Room</h2>
-                                <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">A Centralized Command and Control Room (CCR) is a facility used
-                                        by organizations, such as emergency services, military, transportation, and large corporations, to monitor,
-                                        manage, and coordinate various operations and activities from a single location. This room is equipped with
-                                        advanced technologies and systems that allow operators to gather real-time information.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" w-auto md:w-1/2 p-4  ">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                                    <img className="rounded-tr-[80px] w-full" src={Card11} alt="" />
-                                </div>
-
-                                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">Integrated Telematics</h2>
-                                <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-justify">Integrated telematics refers to the combination of telecommunications and informatics
-                                        technologies in various fields, such as vehicle tracking, fleet management, insurance, and healthcare.
-                                        <br />
-                                        <br />
-                                        <p>•GPS – Fixed/Portable/Solar</p>
-                                        <br />
-                                        <p>•IoT</p>
-                                        <br />
-                                        <p>•RFID</p>
-                                        <br />
-                                        <p>•ANPR</p>
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        Technology-driven automated document generation and printing
+                                        at transaction/transit points offer a host of advantages in
+                                        modern business operations. By automating this process,
+                                        businesses can ensure the swift and accurate creation of
+                                        essential documents, reducing the likelihood of errors and
+                                        saving valuable time. Real-time data updating further
+                                        enhances the efficiency of this system, allowing for
+                                        immediate access to the most up-to-date information.
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        <div className=" w-auto md:w-1/2 p-4  ">
+                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
+                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card5}
+                                        alt=""
+                                    />
+                                </div>
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Invoicing & Payment
+                                </h2>
+                                <div className="px-6 pb-6">
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        Create an Invoice: Include your business name, logo, and
+                                        contact information. Add the client's details: name,
+                                        address, and contact information. Assign a unique invoice
+                                        number and date. Clearly outline the products or services
+                                        provided, along with their quantities and prices. Calculate
+                                        the total amount, including any taxes or discounts. Specify
+                                        the payment terms (e.g., due upon receipt, net 30 days).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" w-auto md:w-1/2 p-4  ">
+                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
+                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card6}
+                                        alt=""
+                                    />
+                                </div>
 
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Reverse Bidding
+                                </h2>
+                                <div className="px-6 pb-6">
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        Reverse bidding is a procurement strategy in which buyers
+                                        post their requirements for a service or product, and
+                                        sellers then bid to win the business. Unlike traditional
+                                        bidding where sellers compete to offer the lowest price, in
+                                        reverse bidding, sellers compete to offer the best value,
+                                        which may include factors such as quality, delivery time,
+                                        and additional services.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" w-auto md:w-1/2 p-4  ">
+                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
+                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card7}
+                                        alt=""
+                                    />
+                                </div>
+
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Integrated Transporter Module
+                                </h2>
+                                <div className="px-6 pb-6">
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        We provide a digital platform to tag vehicles on government
+                                        regulatory portals, verify vehicle and driver credentials
+                                        from platforms like Vahan and Parivahan, and seamlessly link
+                                        them to permits, delivery orders (DO), and shipping orders
+                                        (SO) it offers significant advantages. Transporters can use
+                                        the portal for reverse bidding and making payments. This
+                                        integrated approach minimizes administrative burden, reduces
+                                        human error, and ensures regulatory compliance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" w-auto md:w-1/2 p-4  ">
+                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
+                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card8}
+                                        alt=""
+                                    />
+                                </div>
+
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Descriptive, Predictive & Prescriptive Analytics
+                                </h2>
+                                <div className="px-6 pb-6">
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        Data mining-based descriptive, predictive, and prescriptive
+                                        analytics are essential components of Integrated Logistics
+                                        Management Systems (ILMS). Descriptive analytics help in
+                                        understanding past performance, offering insights into
+                                        historical trends and identifying areas for improvement.
+                                        Predictive analytics enable ILMS to forecast future trends,
+                                        demands, and potential issues, allowing proactive planning
+                                        and resource allocation. Prescriptive analytics takes it a
+                                        step further by providing actionable recommendations,
+                                        optimizing decisions, and offering solutions to enhance
+                                        efficiency and reduce costs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" w-auto md:w-1/2 p-4  ">
+                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
+                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card9}
+                                        alt=""
+                                    />
+                                </div>
+
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Customized Reports
+                                </h2>
+                                <div className="px-6 pb-6">
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        Customized, tailor-made reports with infographics, including
+                                        shift-wise, day-wise, weekly, monthly, and quarterly
+                                        insights, are integral to an Integrated Logistics Management
+                                        System (ILMS). These reports offer a comprehensive view of
+                                        logistics operations, making it easier to identify patterns,
+                                        bottlenecks, and areas for improvement. Infographics enhance
+                                        data visualization, enabling stakeholders to quickly grasp
+                                        complex information. This level of customization empowers
+                                        decision-makers to fine-tune strategies, allocate resources
+                                        efficiently, and optimize processes, leading to cost
+                                        reductions, improved performance, and a competitive edge in
+                                        the fast-paced logistics industry.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" w-auto md:w-1/2 p-4  ">
+                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
+                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card10}
+                                        alt=""
+                                    />
+                                </div>
+
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Centralized Command and Control Room
+                                </h2>
+                                <div className="px-6 pb-6">
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        A Centralized Logistics Operation Command and Control Room
+                                        serves as the nerve center of logistics management,
+                                        aggregating all aspects of operations onto one digital wall.
+                                        This centralized approach enables proactive decision-making,
+                                        as it offers real-time visibility into the entire supply
+                                        chain. It provides access to alerts, alarms, and performance
+                                        metrics, allowing for immediate responses to potential
+                                        issues. This shift from reactive to proactive action can
+                                        significantly reduce disruptions, enhance efficiency, and
+                                        mitigate risks, ultimately ensuring a more reliable and
+                                        responsive logistics operation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" w-auto md:w-full p-4  ">
+                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
+                                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
+                                    <img
+                                        className="rounded-tr-[80px] w-full"
+                                        src={Card11}
+                                        alt=""
+                                    />
+                                </div>
+
+                                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
+                                    Integrated Telematics
+                                </h2>
+                                <div className="px-6 pb-6">
+                                    <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
+                                        {" "}
+                                        Integrated with Vahan & Parivahan Interface with Vahan
+                                        enables swift digital vehicle inspections using just the
+                                        vehicle number, providing access to crucial information like
+                                        registration, insurance, fitness, and taxation status. This
+                                        expedites security checks and prevents penalties and delays
+                                        by ensuring compliance with all vehicle details.
+                                        <br />
+                                        Interface with Sarathi facilitates rapid digital driver
+                                        inspections using only the driver's license number and date
+                                        of birth, offering details such as a photograph, license
+                                        expiration date, and current status. This streamlines
+                                        security checks and prevents penalties and delays by
+                                        ensuring compliance with all driver information.
+                                        <br />
+                                        Key benefits:
+                                        <br />• Ensuring complete compliance and verification of
+                                        both the vehicle and driver before task allocation.
+                                        <br />• Access to real-time information to avoid penalties
+                                        for violating government compliance rules (e.g., expired
+                                        licenses or lack of insurance).
+                                        <br />• Preventing potential sales losses due to
+                                        non-compliance with government regulations, such as taxation
+                                        and fitness certification.
+                                        <br />• Eliminating paperwork and the need for
+                                        cross-verification of driver and vehicle information, as it
+                                        comes directly from government APIs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-
-
-            <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]  bg-gray-200">
+            <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]  ">
                 <div className="container px-32 py-5 mx-auto">
                     <div className="flex flex-wrap -m-4 ">
-
-                        <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px] bg-gray-200">
+                        <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-200">
                             <div className="container px-5 py-10 mx-auto">
                                 <div class="text-center mb-5">
-                                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">Modules & Features</h1>
+                                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                                        <span className=" text-indigo-800 font-bold text-[40px] ">
+                                            Module &nbsp;
+                                        </span>
+                                        <span className=" text-[40px] font-heebo font-bold ">
+                                            & Features
+                                        </span>
+                                    </h1>
                                     <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
                                     <div class="flex justify-center">
                                         <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
@@ -297,93 +446,114 @@ export default function RoadLogistics() {
                                 </div>
                                 <div className="container px-5  mx-auto">
                                     <div class="text-center mb-5">
-                                        <p class="text-center leading-relaxed xl:w-2/3 lg:w-1/4 mx-auto text-gray-500s">oad logistics in a truck company involve 6
-                                            the planning, implementation, and control of the movement and storage of goods and services from one place to another
-                                            using trucks and other road vehicles. </p>
+                                        <p class="text-xl not-italic font-normal leading-7 text-center xl:w-4/5 lg:w-4/5 mx-auto text-gray-500">
+                                            Road logistics in a truck company involve 6 the planning,
+                                            implementation, and control of the movement and storage of
+                                            goods and services from one place to another using trucks
+                                            and other road vehicles.{" "}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </section>
 
-
-
-
                         <div className=" w-auto md:w-1/2 p-4">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl border-2 border-black"
+                            <div
+                                className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl  "
                                 style={{
-                                    width: 'full',
-                                    height: 'full',
-                                    backgroundSize: 'cover',
+                                    width: "full",
+                                    height: "full",
+                                    backgroundSize: "cover",
                                     // backgroundImage:`url(${Card10})`,
-                                    backgroundColor: 'black'
+                                    backgroundColor: "black",
                                 }}
                             >
-                                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">Mines outbound</h2>
+                                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">
+                                    Outbound From Mines
+                                </h2>
                                 <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-white text-justify">Efficient route planning is crucial to ensure timely deliveries and reduce
-                                        transportation costs. Companies use specialized software and GPS technology to optimize routes based on factors like distance, traffic conditions, and delivery schedules. </p>
+                                    <p className="leading-relaxed text-white text-justify">
+                                        Mine outbound logistics, powered by technology, has
+                                        revolutionized the mining industry. By leveraging advanced
+                                        tracking and automation systems, mines can optimize the
+                                        transportation of raw materials and products, reducing costs
+                                        and increasing overall productivity.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div className=" w-auto md:w-1/2 p-4">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl border-2 border-black"
+                            <div
+                                className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl "
                                 style={{
-                                    width: 'full',
-                                    height: 'full',
-                                    backgroundSize: 'cover',
+                                    width: "full",
+                                    height: "full",
+                                    backgroundSize: "cover",
                                     // backgroundImage:`url(${Card10})`,
-                                    backgroundColor: 'black'
+                                    backgroundColor: "black",
                                 }}
                             >
-                                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">Plants inbound and outbound</h2>
+                                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">
+                                    Inbound to Plants
+                                </h2>
                                 <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-white text-justify">Inbound logistics involve receiving raw materials, components,
-                                        or products from suppliers or other facilities. In the context of a trucking company, this could mean receiving parts for the trucks, fuel, or any other materials necessary for operations.</p>
+                                    <p className="leading-relaxed text-white text-justify">
+                                        Leveraging high-end technologies in logistics management for
+                                        sourcing raw materials and other essentails in a
+                                        game-changer in the modern business landscape.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div className=" w-auto md:w-1/2 p-4">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl border-2 border-black"
+                            <div
+                                className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl "
                                 style={{
-                                    width: 'full',
-                                    height: 'full',
-                                    backgroundSize: 'cover',
+                                    width: "full",
+                                    height: "full",
+                                    backgroundSize: "cover",
                                     // backgroundImage:`url(${Card10})`,
-                                    backgroundColor: 'black'
+                                    backgroundColor: "black",
                                 }}
                             >
-                                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">port inbound and outbound</h2>
+                                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">
+                                    Outbound From Plants
+                                </h2>
                                 <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-white text-justify">Define Your Services: Specify whether you'll focus on local,
-                                        regional, or national transportation. Will you handle general freight, specialized goods, or perishable items?Market Analysis: Research your competitors, target market, and industry trends. </p>
+                                    <p className="leading-relaxed text-white text-justify">
+                                        Technology is paramount in managing outbound logistics from
+                                        ports, serving as the linchpin of efficient and effective
+                                        global trade.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div className=" w-auto md:w-1/2 p-4">
-                            <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl border-2 border-black"
+                            <div
+                                className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl "
                                 style={{
-                                    width: 'full',
-                                    height: 'full',
-                                    backgroundSize: 'cover',
+                                    width: "full",
+                                    height: "full",
+                                    backgroundSize: "cover",
                                     // backgroundImage:`url(${Card10})`,
-                                    backgroundColor: 'black'
+                                    backgroundColor: "black",
                                 }}
                             >
-                                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">railway sliding in and outbound</h2>
+                                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">
+                                    Inbound To Ports
+                                </h2>
                                 <div className="px-6 pb-6">
-                                    <p className="leading-relaxed text-white text-justify">Choose a Business Structure: Decide whether you want to operate as a
-                                        sole proprietorship, partnership, LLC, or corporation. Each has different legal and tax implications.Register Your Business. </p>
+                                    <p className="leading-relaxed text-white text-justify">
+                                        Technolgy play a pivotal role in mannaging inbound logistics
+                                        to ports, ensuring the efficiency and effectiveness of this
+                                        critical gateway in global trade.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
-
-
         </div>
-    )
+    );
 }

@@ -20,8 +20,7 @@ import Blog1 from "../../assets/images/Blog1.png";
 export default function RoadLogistics() {
     return (
         <div>
-            {/* Section-1  RoadLogistics */}
-
+            {/* Section-1 Industry */}
             <section
                 className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
                 style={{
@@ -52,16 +51,17 @@ export default function RoadLogistics() {
                         </a> */}
                     </div>
                 </nav>
-                <div className="container px-6 py-16 mx-auto text-center">
-                    <div className="max-w-lg mx-auto">
-                        <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl">
-                            RailLogistics
+                <div className="container px-6 py-16 mx-auto text-start">
+                    <div className=" mx-auto">
+                        <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+                            Rail Logistics
                         </h1>
-                        <p className="mt-6 text-white text-xl not-italic font-bold leading-8 font-heebo w-full">
-                            Challenge, Ideate & Create
+                        <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+                            We provide Smart Solutions to Simplify Your Future
                         </p>
-                        <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button>
-                        <p className="mt-3 text-sm text-gray-400 "></p>
+                        <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
+                            Flying Chital / Rail Logistics
+                        </p>
                     </div>
                 </div>
             </section>

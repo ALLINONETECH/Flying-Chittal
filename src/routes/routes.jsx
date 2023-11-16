@@ -26,6 +26,22 @@ import Career from "../pages/Career";
 import Professional from "../pages/Professional";
 import RailModule1 from "../pages/RailModule/RailModule1";
 import RailModule2 from "../pages/RailModule/RailModule2";
+import RailModule3 from "../pages/RailModule/RailModule3";
+import RailModule4 from "../pages/RailModule/RailModule4";
+import RailModule5 from "../pages/RailModule/RailModule5";
+import RailModule6 from "../pages/RailModule/RailModule6";
+import RailModule7 from "../pages/RailModule/RailModule7";
+import RailModule8 from "../pages/RailModule/RailModule8";
+import RailModule9 from "../pages/RailModule/RailModule9";
+import Telematics from "../pages/Telematics";
+import Customized from "../pages/Customized";
+import Help from "../pages/Help";
+import LogisticsIntelligence from "../pages/Blog/LogisticsIntelligence";
+import MiningMetal from "../pages/Blog/MiningMetal";
+import MACHArchitecture from "../pages/Blog/MACHArchitecture";
+import Challenge from "../pages/Blog/Challenge";
+import Fertilizer from "../pages/Blog/Fertilizer";
+import EdgeComputing from "../pages/Blog/EdgeComputing";
 
 
 
@@ -55,8 +71,24 @@ export default function Routes() {
                 { path: "/professional", element: <Professional /> },
                 { path: "/railmodule1", element: <RailModule1 /> },
                 { path: "/railmodule2", element: <RailModule2 /> },
+                { path: "/railmodule3", element: <RailModule3 /> },
+                { path: "/railmodule4", element: <RailModule4 /> },
+                { path: "/railmodule5", element: <RailModule5 /> },
+                { path: "/railmodule6", element: <RailModule6 /> },
+                { path: "/railmodule7", element: <RailModule7 /> },
+                { path: "/railmodule8", element: <RailModule8 /> },
+                { path: "/railmodule9", element: <RailModule9 /> },
+                { path: "/telematics", element: <Telematics /> },
+                { path: "/customized", element: <Customized /> },
                 { path: "/blog", element: <Blog /> },
+                { path: "/logisticsIntelligence", element: <LogisticsIntelligence /> },
+                { path: "/mACHArchitecture", element: <MACHArchitecture /> },
+                { path: "/miningMetal", element: <MiningMetal /> },
+                { path: "/help", element: <Help /> },
                 { path: "/career", element: <Career /> },
+                { path: "/Challenge", element: <Challenge /> },
+                { path: "/Fertilizer", element: <Fertilizer /> },
+                { path: "/EdgeComputing", element: <EdgeComputing /> },
 
                 { path: "/chat", element: <Chat /> },
             ],
