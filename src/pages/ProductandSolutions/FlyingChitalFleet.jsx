@@ -3,6 +3,7 @@ import Blog1 from "../../assets/images/Blog1.png";
 import FCFleet from "../../assets/images/FCFleet.png";
 import FleetContent from "../../assets/images/FleetContent.png";
 import vehiclefleetbg from "../../assets/images/vehiclefleetbg.png";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 
 export default function FlyingChitalFleet() {
     return (
@@ -49,7 +50,12 @@ export default function FlyingChitalFleet() {
                         </p>
                         {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Flying Chital Smart Fleet Monitoring System
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Flying Chital Smart Fleet Monitoring System</span>  </div>
+                            </div>
+
+
                         </p>
                     </div>
                 </div>

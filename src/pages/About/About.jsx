@@ -1,4 +1,5 @@
 import React from "react";
+
 import Dev from "../../assets/images/Dev1.png";
 import Pradyumna from "../../assets/images/Pradyumna1.png";
 import Amar from "../../assets/images/Amar1.png";
@@ -23,7 +24,10 @@ import TataSteel from "../../assets/images/TataSteel.png";
 import BRPL from "../../assets/images/BRPL.png";
 import SJSPL from "../../assets/images/SJSPL.png";
 import MYTHRI from "../../assets/images/MYTHRI.png";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 import aboutusbluebg from "../../assets/images/aboutusbluebg.png";
+import Socialicon from "../../assets/images/Socialicon.png";
+import { Link } from "react-router-dom";
 
 export default function About() {
     return (
@@ -67,8 +71,12 @@ export default function About() {
                         <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
                             We provide Smart Solutions to Simplify Your Future
                         </p>
+
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / About Us
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">Home</span><span className="font-[700] font-heebo text-[32px] "> / About Us</span>  </div>
+                            </div>
                         </p>
                     </div>
                 </div>
@@ -255,25 +263,28 @@ export default function About() {
                                         of life, bridge the digital divide...
                                         <br />{" "}
                                     </p>
-                                    <div className="flex justify-start mt-6">
-                                        <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                            READ MORE{" "}
-                                            <span>
-                                                {" "}
-                                                <svg
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    className="w-4 h-4 ml-2 "
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </div>
+
+                                    <Link to="/vision">
+                                        <div className="flex justify-start mt-6">
+                                            <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                                READ MORE{" "}
+                                                <span>
+                                                    {" "}
+                                                    <svg
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        strokeWidth={2}
+                                                        className="w-4 h-4 ml-2 "
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -296,25 +307,27 @@ export default function About() {
                                         underserved areas...
                                         <br />
                                     </p>
-                                    <div className="flex justify-start mt-6">
-                                        <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                            READ MORE{" "}
-                                            <span>
-                                                {" "}
-                                                <svg
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    className="w-4 h-4 ml-2 "
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </div>
+                                    <Link to="/mission">
+                                        <div className="flex justify-start mt-6">
+                                            <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                                READ MORE{" "}
+                                                <span>
+                                                    {" "}
+                                                    <svg
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        strokeWidth={2}
+                                                        className="w-4 h-4 ml-2 "
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -328,7 +341,7 @@ export default function About() {
                                     <img className="p-1" src={Heart} alt="" />
                                 </div>
                                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-                                    Driver Scorecards
+                                    Values
                                 </h2>
                                 <div className="flex flex-col">
                                     <p className="text-xl not-italic font-normal leading-7 font-heebo">
@@ -338,25 +351,27 @@ export default function About() {
                                         us towards achieving our...
                                         <br />
                                     </p>
-                                    <div className="flex justify-start mt-6">
-                                        <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                            READ MORE{" "}
-                                            <span>
-                                                {" "}
-                                                <svg
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth={2}
-                                                    className="w-4 h-4 ml-2 "
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </div>
+                                    <Link to="/values">
+                                        <div className="flex justify-start mt-6">
+                                            <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                                READ MORE{" "}
+                                                <span>
+                                                    {" "}
+                                                    <svg
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        strokeWidth={2}
+                                                        className="w-4 h-4 ml-2 "
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -414,6 +429,7 @@ export default function About() {
                                 ethics and exemplary corporate governance strongly reflects our
                                 core values.
                             </p>
+                            <span><img src={Socialicon} alt="" /></span>
                         </div>
                     </div>
 
@@ -447,6 +463,7 @@ export default function About() {
                                 every challenge, through innovation leveraging cutting edge
                                 technologies
                             </p>
+                            <span><img src={Socialicon} alt="" /></span>
                         </div>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                             <img
@@ -488,6 +505,7 @@ export default function About() {
                                 strategy and growth initiatives, we're poised for
                                 state-of-the-art innovation and remarkable success..
                             </p>
+                            <span><img src={Socialicon} alt="" /></span>
                         </div>
                     </div>
 
@@ -514,6 +532,7 @@ export default function About() {
                                 contributions to Node.js, along with notable awards, further
                                 underscore his diverse skill set
                             </p>
+                            <span><img src={Socialicon} alt="" /></span>
                         </div>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                             <img
@@ -551,18 +570,18 @@ export default function About() {
                                 <div className="flex">
                                     {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
                                 </div>
-                                <img className="p-1" src={Tata} alt="" />
+                                <img className="" src={Tata} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
                             <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
+                                    </svg>
 
-                                    {/* <img className="p-1" src={Driver} alt="" /> */}
-                                </div>
+                                    <img className="p-1" src={Driver} alt="" />
+                                </div> */}
                                 {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
@@ -574,18 +593,18 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
-                                <img className="p-1" src={JSW} alt="" />
+                                <img className="mt-20" src={JSW} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
                             <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
+                                    </svg>
 
-                                    {/* <img className="p-1" src={Driver} alt="" /> */}
-                                </div>
+                                    <img className="p-1" src={Driver} alt="" />
+                                </div> */}
                                 {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
@@ -597,18 +616,18 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
-                                <img className="p-1" src={Nippon} alt="" />
+                                <img className="mt-20" src={Nippon} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
                             <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
+                                    </svg>
 
-                                    {/* <img className="p-1" src={Driver} alt="" /> */}
-                                </div>
+                                    <img className="p-1" src={Driver} alt="" />
+                                </div> */}
                                 {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
@@ -620,18 +639,18 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
-                                <img className="p-1" src={Arcelor} alt="" />
+                                <img className="mt-10" src={TataSteel} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
                             <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
+                                    </svg>
 
-                                    {/* <img className="p-1" src={Driver} alt="" /> */}
-                                </div>
+                                    <img className="p-1" src={Driver} alt="" />
+                                </div> */}
                                 {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
@@ -643,18 +662,18 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
-                                <img className="p-1" src={Jindal} alt="" />
+                                <img className="mt-10" src={Arcelor} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
                             <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
+                                    </svg>
 
-                                    {/* <img className="p-1" src={Driver} alt="" /> */}
-                                </div>
+                                    <img className="p-1" src={Driver} alt="" />
+                                </div> */}
                                 {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
@@ -666,18 +685,18 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
-                                <img className="p-1" src={JSL} alt="" />
+                                <img className="mt-10" src={Jindal} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
                             <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
+                                    </svg>
 
-                                    {/* <img className="p-1" src={Driver} alt="" /> */}
-                                </div>
+                                    <img className="p-1" src={Driver} alt="" />
+                                </div> */}
                                 {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
                                 {/* <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
@@ -689,7 +708,7 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
-                                <img className="p-1" src={TataSteel} alt="" />
+                                <img className="mt-10" src={SJSPL} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
@@ -706,7 +725,54 @@ export default function About() {
                                 <div className="flex">
                                     <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
                                 </div> */}
-                                <img className="p-1" src={Nalco} alt="" />
+                                <img className="mt-10" src={Nalco} alt="" />
+                            </div>
+                        </div>
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg>
+
+                                    <img className="p-1" src={Driver} alt="" />
+                                </div> */}
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                                <img className="mt-10" src={JSL} alt="" />
+                            </div>
+                        </div>
+
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+                                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg>
+
+                                    <img className="p-1" src={Driver} alt="" />
+                                </div> */}
+                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
+                                {/* <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div>
+                                <div className="flex">
+                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
+                                </div> */}
+                                <img className="mt-10" src={MYTHRI} alt="" />
                             </div>
                         </div>
                         <div className="xl:w-1/3 md:w-1/2 p-4">
@@ -726,52 +792,8 @@ export default function About() {
                                 <img className="p-1" src={BRPL} alt="" />
                             </div>
                         </div>
-                        <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
 
-                                    {/* <img className="p-1" src={Driver} alt="" /> */}
-                                </div>
-                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
 
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                                <img className="p-1" src={SJSPL} alt="" />
-                            </div>
-                        </div>
-                        <div className="xl:w-1/3 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-
-                                    {/* <img className="p-1" src={Driver} alt="" /> */}
-                                </div>
-                                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                                <img className="p-1" src={MYTHRI} alt="" />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

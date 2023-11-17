@@ -4,6 +4,7 @@ import Aquacul from "../../assets/images/Aquacul.png";
 import CDAC from "../../assets/images/CDAC.png";
 import IconFC from "../../assets/images/IconFC.png";
 import aquaculture from "../../assets/images/aquaculture.png";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 
 export default function AquacultureAutomation() {
     return (
@@ -48,7 +49,11 @@ export default function AquacultureAutomation() {
                         </p>
                         {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Aquaculture Automation System
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Aquaculture Automation Solution (SAgAS)</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>
@@ -69,7 +74,7 @@ export default function AquacultureAutomation() {
                             <span className=" font-heebo text-[40px] text-primary">
                                 Smart&nbsp;
                             </span>
-                            Auaculture
+                            Aquaculture
                             <br />
                             <span className="border-b-2 border-secondary">Au</span>tomation
                             Solution (SAqAS)

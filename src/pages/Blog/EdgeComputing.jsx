@@ -7,6 +7,8 @@ import Edge12 from '../../assets/images/Edge12.png'
 import Edge21 from '../../assets/images/Edge21.png'
 
 
+
+
 export default function EdgeComputing() {
     return (
         <div>
@@ -36,7 +38,7 @@ export default function EdgeComputing() {
                             Challenge, Ideate & Create
                         </p>
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            <div className="flex">
+                            <div className="flex gap-2">
                                 <div><span><img className="" src={HomeIcon} alt="" /></span></div>
                                 <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">Home</span><span className="font-[700] font-heebo text-[32px] "> / Blogs</span>  </div>
                             </div>

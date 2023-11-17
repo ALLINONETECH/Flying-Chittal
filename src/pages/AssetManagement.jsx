@@ -25,6 +25,7 @@ import SafetyS from "../assets/images/SafetyS.png";
 import bluebgmobile from "../assets/images/bluebgmobile.png";
 import pinkbgmobile from "../assets/images/pinkbgmobile.png";
 import assestcontent from "../assets/images/assestcontent.png";
+import HomeIcon from "../assets/images/HomeIcon.png";
 export default function AssetManagement() {
     return (
         <div className="">
@@ -69,7 +70,11 @@ export default function AssetManagement() {
                         </p>
 
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Flying Chital HEM/HMV/LMV Mobile Asset Management System
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Flying Chital HEM/HMV/LMV Mobile Asset Management System</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>
@@ -90,10 +95,9 @@ export default function AssetManagement() {
                         />
                     </div>
                     <div className=" relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center bottom-20  ">
-                        <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
-                            <span className=" font-heebo text-[40px] text-primary">High</span>
-                            lights
-                        </h1>
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+                            <span className=" text-indigo-800 font-bold text-[40px] gap-2">High</span><span className=" text-[40px] font-heebo font-bold ">lights</span></h1>
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
                         <div className="flex mt-5 gap-2">
                             <span>
                                 <img className="p-1" src={IconFC} alt="" />
@@ -183,7 +187,7 @@ export default function AssetManagement() {
                             </span>
                             -Mobile Asset Management
                         </h1>
-
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
                         <p class="text-xl not-italic font-normal leading-7  xl:w-4/5 lg:w-3/4 mx-auto text-gray-500s font-heebo text-[#30343F]">
                             Move beyond Track & Trace with an ultra easy to use interface that
                             integrates with 2.2k devices and it accessible on mobile app and
@@ -504,7 +508,7 @@ export default function AssetManagement() {
 
             {/* Section-4 Monitoring at all the Transaction Points */}
             <section class="text-gray-600 body-font">
-                <div class="container px-5 py-24 mx-auto ">
+                <div class="container px-5 py-10 mx-auto ">
                     <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                         <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
                             <span className=" font-heebo text-[40px] text-primary">
@@ -512,6 +516,7 @@ export default function AssetManagement() {
                             </span>
                             At All Transaction Points
                         </h1>
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
                         <p class="lg:w-1/2 w-full leading-relaxed text-gray-500"></p>
                     </div>
                     <div className="flex flex-row shadow-lg  md:shadow-xl  bg-white  ">
@@ -711,7 +716,7 @@ export default function AssetManagement() {
                                 </p>
                             </div>
                         </div>
-                        <div className="lg:max-w-lg lg:w-1/2 md:w-1/3 w-1/6 mb-10 md:mb-0  ml-2 px-3 py-10">
+                        <div className="lg:max-w-lg lg:w-1/4 md:w-1/3 w-1/6 mb-10 md:mb-0 mr-28  px-3 py-10">
                             <img
                                 className="object-cover object-center "
                                 alt="hero"

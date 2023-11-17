@@ -16,6 +16,7 @@ import Customer4 from "../../assets/images/Customer4.png";
 import Agriculture from "../../assets/images/Agriculture.png";
 import Backgrnd4 from "../../assets/images/Backgrnd4.png";
 import Railbg1 from "../../assets/images/Railbg1.png";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 
 
 export default function RailModule4() {
@@ -46,7 +47,11 @@ export default function RailModule4() {
                             We provide Smart Solutions to Simplify Your Future
                         </p>
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Rail Logistics
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Rail Logistics</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>

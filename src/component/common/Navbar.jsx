@@ -6,6 +6,7 @@ import Abhinav from '../../assets/images/Abhinav.png'
 import Tech from '../../assets/images/Tech.png'
 import Pvt from '../../assets/images/Pvt.png'
 import Ltd from '../../assets/images/Ltd.png'
+import clogo from "../../assets/images/clogo.png";
 
 
 
@@ -44,7 +45,7 @@ const Navbar = () => {
             to: "/services",
             subMenu: [
                 // { label: "Blog", to: "/blog" },
-                { label: "Blog", to: "/mACHArchitecture" },
+                { label: "Blog", to: "/Challenge" },
                 { label: "Help Centre", to: "/service2" },
                 { label: "Market updates", to: "/service3" },
             ]
@@ -89,50 +90,13 @@ const Navbar = () => {
                 {/* Your logo and brand */}
 
                 <div className="flex ">
-                    <div> <img
-                        src={logo}
-                        className="h-20 mr-3"
-                        alt="FlyingChital Logo"
-                    /></div>
                     <div>
-                        <div className="flex">
-                            <img
-                                src={Atulya}
-                                className="h-4 mt-3"
-                                alt="FlyingChital Logo"
-                            />
-                            <span>
-                                <img
-                                    src={Abhinav}
-                                    className="h-4 mt-3"
-                                    alt="FlyingChital Logo"
-                                />
-                            </span>
-
-                        </div>
-                        <div className="flex">
-                            <img
-                                src={Tech}
-                                className="h-4 mr-3"
-                                alt="FlyingChital Logo"
-                            />
-                            <span>
-                                <img
-                                    src={Pvt}
-                                    className="h-4 mr-3"
-                                    alt="FlyingChital Logo"
-                                />
-                            </span>
-                            <span>
-                                <img
-                                    src={Ltd}
-                                    className="h-4 mr-3"
-                                    alt="FlyingChital Logo"
-                                />
-                            </span>
-
-                        </div>
+                        <Link to="/">
+                            <img src={clogo} className="h-20 mr-3" alt="FlyingChital Logo" />
+                        </Link>
                     </div>
+
+
                 </div>
 
                 {/* <a href="https://flowbite.com" className="flex items-center">

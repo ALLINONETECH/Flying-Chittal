@@ -4,6 +4,7 @@ import Phone from "../assets/images/Phone.png";
 import Email from "../assets/images/Email.png";
 import contactusbluebg from "../assets/images/contactusbluebg.png";
 import cardmedia from "../assets/images/cardmedia.png";
+import HomeIcon from "../assets/images/HomeIcon.png";
 
 export default function Chat() {
     return (
@@ -46,7 +47,11 @@ export default function Chat() {
                         </h1>
 
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Contact Us
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] ">/ Contact Us</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>
@@ -122,6 +127,7 @@ export default function Chat() {
                                         type="text"
                                         id="name"
                                         name="name"
+                                        placeholder="First Name"
                                         className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
@@ -138,6 +144,7 @@ export default function Chat() {
                                         type="email"
                                         id="email"
                                         name="email"
+                                        placeholder="E-mail "
                                         className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
@@ -154,6 +161,7 @@ export default function Chat() {
                                         type="text"
                                         id="name"
                                         name="name"
+                                        placeholder="Organization "
                                         className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
@@ -170,6 +178,7 @@ export default function Chat() {
                                         type="name"
                                         id="name"
                                         name="name"
+                                        placeholder="Contact Number "
                                         className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
@@ -180,12 +189,13 @@ export default function Chat() {
                                         htmlFor="name"
                                         className="leading-7 text-sm text-gray-600"
                                     >
-                                        Name
+                                        Region
                                     </label>
                                     <input
                                         type="text"
                                         id="name"
                                         name="name"
+                                        placeholder="Region "
                                         className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
@@ -196,12 +206,13 @@ export default function Chat() {
                                         htmlFor="name"
                                         className="leading-7 text-sm text-gray-600"
                                     >
-                                        name
+                                        Inquiry Type
                                     </label>
                                     <input
                                         type="name"
                                         id="name"
                                         name="name"
+                                        placeholder="Inquiry Type "
                                         className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
@@ -217,6 +228,7 @@ export default function Chat() {
                                     <textarea
                                         id="message"
                                         name="message"
+                                        placeholder=" Enter Message "
                                         className="w-full bg-gray-100 shadow-lg  md:shadow-xl  bg-white  bg-opacity-50 rounded focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                                         defaultValue={""}
                                     />

@@ -16,6 +16,7 @@ import IAgro from "../../assets/images/IAgro.png";
 import FCVehicle from "../../assets/images/FCVehicle.png";
 import Best from "../../assets/images/Best.png";
 import vehiclebluebg from "../../assets/images/vehiclebluebg.png";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 
 
 export default function FlyingChitalVehicle() {
@@ -46,7 +47,11 @@ export default function FlyingChitalVehicle() {
                             We provide Smart Solutions to Simplify Your Future
                         </p>
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Flying Chital Smart Fleet Monitoring System
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Flying Chital Smart Vehicle Tracking System (FCSVTS)</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>
@@ -64,9 +69,9 @@ export default function FlyingChitalVehicle() {
                         />
                     </div>
                     <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                        <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
-                            <span className="border-b-2 border-secondary"></span>Flying Chital Smart Vehicle Tracking System (FCSVTS)
-                        </h1>
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+                            <span className=" text-indigo-800 font-bold text-[40px] gap-2">Flying</span><span className=" text-[40px] font-heebo font-bold "> Chital Smart Vehicle Tracking System (FCSVTS)</span></h1>
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
                         <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  w-4/5">
                             The Flying Chital Smart Vehicle Tracking System stands as a transformative solution in the domain of logistics and transportation. By offering end-to-end visibility of cargo movement, this system allows businesses to stay informed about their assets' whereabouts in real-time. The holistic approach of this Smart Vehicle Tracking System signifies a comprehensive solution for businesses seeking to streamline operations, mitigate risks of pilferage and revenue leakage, and ensure seamless and secure cargo transportation
                         </p>
@@ -79,11 +84,11 @@ export default function FlyingChitalVehicle() {
             < section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]" >
                 <div className="container px-5 py-10 mx-auto">
                     <div class="text-center mb-14">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">Highlights</h1>
-                        <p class="text-base text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-                        <div class="flex justify-center">
-                            <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-                        </div>
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+                            <span className=" text-indigo-800 font-bold text-[40px] gap-2">High</span><span className=" text-[40px] font-heebo font-bold ">lights</span></h1>
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+                        <p class=" text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">"Flying Chital Smart Vehicle Tracking System" is a specific product or service, I recommend visiting the official website of the company or contacting the company directly for the most accurate and up-to-date information.</p>
+
                     </div>
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4 md:w-1/2">

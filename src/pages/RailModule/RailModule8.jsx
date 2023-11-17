@@ -5,6 +5,7 @@ import FCAgriculture from "../../assets/images/FCAgriculture.png";
 import CDAC from "../../assets/images/CDAC.png";
 import IconFC from "../../assets/images/IconFC.png";
 import Controlled8 from "../../assets/images/Controlled8.png";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 
 
 import Railbg1 from "../../assets/images/Railbg1.png";
@@ -38,7 +39,11 @@ export default function RailModule8() {
                             We provide Smart Solutions to Simplify Your Future
                         </p>
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Rail Logistics
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Rail Logistics</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ import sc1 from '../../assets/images/sc1.png'
 import sc2 from '../../assets/images/sc2.png'
 import sc3 from '../../assets/images/sc3.png'
 import sc4 from '../../assets/images/sc4.png'
-
+import HomeIcon from "../../assets/images/HomeIcon.png";
 export default function flyingChital() {
     return (
         <div className="">

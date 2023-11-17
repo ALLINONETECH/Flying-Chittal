@@ -3,16 +3,18 @@ import Mines from '../../assets/images/Mines.png'
 import Cement from '../../assets/images/Cement.png'
 import Thermal from '../../assets/images/Thermal.png'
 import Fertilizer from '../../assets/images/Fertilizer.png'
-import Down from '../../assets/images/Down.png'
+import OILGas1 from '../../assets/images/OILGas1.png'
 import Agro from '../../assets/images/Agro.png'
 import Blog1 from "../../assets/images/Blog1.png";
 import IMining from "../../assets/images/IMining.png";
 import IManufacture from "../../assets/images/IManufacture.png";
 import ICement from "../../assets/images/ICement.png";
-import IThermal from "../../assets/images/IThermal.png";
-import IFertilizer from "../../assets/images/IFertilizer.png";
+import Transformation from "../../assets/images/Transformation.png";
+import Fertilizer1 from "../../assets/images/Fertilizer1.png";
 import IDown from "../../assets/images/IDown.png";
 import IAgro from "../../assets/images/IAgro.png";
+import Warehouse from "../../assets/images/Warehouse.png";
+import Aqua1 from "../../assets/images/Aqua1.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
 
 
@@ -44,9 +46,9 @@ export default function Industry() {
                             We provide Smart Solutions to Simplify Your Future
                         </p>
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            <div className="flex">
+                            <div className="flex gap-2">
                                 <div><span><img className="" src={HomeIcon} alt="" /></span></div>
-                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">Home</span><span className="font-[700] font-heebo text-[32px] ">/Industries</span>  </div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Industries</span>  </div>
                             </div>
                         </p>
                     </div>
@@ -67,6 +69,17 @@ export default function Industry() {
                         <p class="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">.</p>
                     </div>
                     <div className="flex flex-wrap -m-4">
+                        <div className="p-4 md:w-1/2">
+                            <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={Transformation} alt="blog" />
+                                <div className="p-6">
+
+                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Transformation & Logistics</h1>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">Thermal power plants hold immense criticality in India's energy landscape. They are the backbone of the country's electricity generation, accounting for a substantial portion of its power supply. These plants predominantly rely on coal, natural gas, or oil for power generation, and they provide the much-needed base load power, ensuring a steady supply of electricity to industries, households, and infrastructure.</p>
+
+                                </div>
+                            </div>
+                        </div>
                         <div className="p-4 md:w-1/2 ">
                             <div className="h-full border-2 border-gray-200 bg-white shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={IMining} alt="blog" />
@@ -83,7 +96,7 @@ export default function Industry() {
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={IManufacture} alt="blog" />
                                 <div className="p-6">
 
-                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Manufacturing Plants</h1>
+                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Metal Manufacturing</h1>
                                     <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">Metal manufacturing plants in India form a crucial part of the country's industrial landscape. India has a strong and diverse metal manufacturing sector, producing various metals like steel, aluminum, copper, and more. These plants support infrastructure development, automotive industries, and numerous other sectors.</p>
 
                                 </div>
@@ -100,23 +113,13 @@ export default function Industry() {
                                 </div>
                             </div>
                         </div>
-                        <div className="p-4 md:w-1/2">
-                            <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
-                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={IThermal} alt="blog" />
-                                <div className="p-6">
 
-                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Thermal Power Plants</h1>
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">Thermal power plants hold immense criticality in India's energy landscape. They are the backbone of the country's electricity generation, accounting for a substantial portion of its power supply. These plants predominantly rely on coal, natural gas, or oil for power generation, and they provide the much-needed base load power, ensuring a steady supply of electricity to industries, households, and infrastructure.</p>
-
-                                </div>
-                            </div>
-                        </div>
                         <div className="p-4 md:w-1/2">
                             <div className="h-full border-2 border-gray-200  bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
-                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={IFertilizer} alt="blog" />
+                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={Fertilizer1} alt="blog" />
                                 <div className="p-6">
 
-                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Fertilizers and Chemicals</h1>
+                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Fertilizers</h1>
                                     <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">Fertilizer and Chemical manufacturing plants are significant contributors to India's agricultural and industrial sectors. These plants produce a wide range of chemical products, including fertilizers, pesticides, and other chemicals used in agriculture, manufacturing, and healthcare. The Indian fertilizer industry plays a crucial role in supporting the country's agricultural sector, ensuring food security and promoting rural development.</p>
 
                                 </div>
@@ -124,10 +127,10 @@ export default function Industry() {
                         </div>
                         <div className="p-4 md:w-1/2">
                             <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
-                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={IDown} alt="blog" />
+                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={OILGas1} alt="blog" />
                                 <div className="p-6">
 
-                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Downstream Sector</h1>
+                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Oil & Gas</h1>
                                     <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">The Indian downstream sector is of paramount importance in the country's energy industry. This sector encompasses the refining and distribution of petroleum and petrochemical products. It plays a critical role in ensuring the availability of essential fuels like petrol, diesel, and natural gas, which power various industries, transportation, and households across India. The downstream sector is pivotal for meeting energy demands and facilitating economic growth.</p>
 
                                 </div>
@@ -135,10 +138,35 @@ export default function Industry() {
                         </div>
                         <div className="p-4 md:w-1/2">
                             <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={Warehouse} alt="blog" />
+                                <div className="p-6">
+
+                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Warehousing</h1>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">Agricultural products are the lifeblood of India's economy and culture. Agriculture is the backbone of the nation, employing a significant portion of the population and contributing substantially to the country's GDP. India is one of the world's leading producers of a wide range of agricultural commodities, including rice, wheat, cotton, and spices.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div className="p-4 md:w-1/2">
+                            <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={IAgro} alt="blog" />
                                 <div className="p-6">
 
-                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Agro Products</h1>
+                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Agriculture</h1>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">Agricultural products are the lifeblood of India's economy and culture. Agriculture is the backbone of the nation, employing a significant portion of the population and contributing substantially to the country's GDP. India is one of the world's leading producers of a wide range of agricultural commodities, including rice, wheat, cotton, and spices.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="p-4 md:w-1/2">
+                            <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={Aqua1} alt="blog" />
+                                <div className="p-6">
+
+                                    <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">Aquaculture</h1>
                                     <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">Agricultural products are the lifeblood of India's economy and culture. Agriculture is the backbone of the nation, employing a significant portion of the population and contributing substantially to the country's GDP. India is one of the world's leading producers of a wide range of agricultural commodities, including rice, wheat, cotton, and spices.</p>
 
                                 </div>

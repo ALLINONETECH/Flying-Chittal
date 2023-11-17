@@ -4,6 +4,7 @@ import FCAgriculture from "../../assets/images/FCAgriculture.png";
 import CDAC from "../../assets/images/CDAC.png";
 import IconFC from "../../assets/images/IconFC.png";
 import Agriculture from "../../assets/images/Agriculture.png";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 
 export default function AgricultureAutomation() {
   return (
@@ -48,7 +49,11 @@ export default function AgricultureAutomation() {
             </p>
             {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
             <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              Home / Agriculture Automation Solution (SAgAS)
+              <div className="flex gap-2">
+                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Agriculture Automation Solution (SAgAS)</span>  </div>
+              </div>
+
             </p>
           </div>
         </div>
@@ -96,16 +101,11 @@ export default function AgricultureAutomation() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="font-heebo text-3xl sm:text-4xl mb-4 text-start text-gray-900">
-              <span className=" font-heebo text-3xl text-primary">
-                Agriculture&nbsp;
-              </span>
-              Automation
-              <br />
-              <span className="border-b-2 border-secondary">So</span>
-              lutions(SAgAS)
-              <br />
-            </h1>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+              <span className=" text-indigo-800 font-bold text-[40px]"> Agriculture</span>
+              <span className=" text-[40px] font-heebo font-bold  "> Automation Solution (SAgAS)</span></h1>
+
+            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             <p className="text-base sm:text-xl mb-8 text-justify w-full">
               Atulya Abhinav in association with C-DAC, Trivandrum provides a
               completely indigenous Smart Agriculture Automation Solution
@@ -230,6 +230,7 @@ export default function AgricultureAutomation() {
           </span>
           Partner
         </h1>
+
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
           <img
             className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg ml-10"

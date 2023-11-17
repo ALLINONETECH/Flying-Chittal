@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/images/logo.png'
+import flogo from '../../assets/images/flogo.png'
 
 
 export default function Footer() {
@@ -11,10 +11,10 @@ export default function Footer() {
                     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                             <span className="ml-3 text-xl">
-                                <img src={logo} alt />
+                                <img src={flogo} alt />
                             </span>
                         </a>
-                        <p className="mt-2 text-sm text-gray-200">Air plant banjo lyft occupy retro adaptogen indego</p>
+                        <p className="mt-2  text-white text-[14px]  font-normal leading-5 ml-5">Unlock your digital <span className="text-secondary text-[14px] not-italic font-normal leading-5">transformation <br /> & innovation</span>  potential.</p>
                     </div>
                     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">

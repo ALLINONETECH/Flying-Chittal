@@ -6,6 +6,7 @@ import RealVirtual from "../../assets/images/RealVirtual.png";
 import Logisticintel1 from "../../assets/images/Logisticintel1.png";
 import IconFC from '../../assets/images/IconFC.png'
 import LogisticArt from '../../assets/images/LogisticArt.png'
+import HomeIcon from '../../assets/images/HomeIcon.png'
 
 export default function LogisticsIntelligence() {
     return (
@@ -35,7 +36,11 @@ export default function LogisticsIntelligence() {
                             Challenge, Ideate & Create
                         </p>
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Blogs
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">Home</span><span className="font-[700] font-heebo text-[32px] "> / Blogs</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>

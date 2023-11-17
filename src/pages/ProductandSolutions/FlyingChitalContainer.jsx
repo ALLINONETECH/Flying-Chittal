@@ -4,6 +4,7 @@ import FCContainer from "../../assets/images/FCContainer.png";
 import Seamless from "../../assets/images/Seamless.png";
 import Facilitating from "../../assets/images/Facilitating.png";
 import Enhanced from "../../assets/images/Enhanced.png";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 
 export default function FlyingChitalContainer() {
     return (
@@ -50,7 +51,11 @@ export default function FlyingChitalContainer() {
                         </p>
                         {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Flying Chital Smart Container Tracking System
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Flying Chital Smart Container Tracking System</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>
@@ -67,7 +72,7 @@ export default function FlyingChitalContainer() {
                         />
                     </div>
                     <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                        <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
+                        {/* <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
                             <span className=" font-heebo text-[40px] text-primary">
                                 Flying&nbsp;
                             </span>
@@ -75,7 +80,10 @@ export default function FlyingChitalContainer() {
                             <br />
                             Tracking System <br /> (
                             <span className="border-b-2 border-secondary">FC</span>SCTS)
-                        </h1>
+                        </h1> */}
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+                            <span className=" text-indigo-800 font-bold text-[40px] gap-2">Flying</span><span className=" text-[40px] font-heebo font-bold ">Chital Smart Container Tracking System (FCSCTS)</span></h1>
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
                         <p className="text-xl not-italic font-normal leading-7 mb-8 text-justify  w-4/5">
                             FCSTS is a cutting-edge solution that empowers businesses to
                             efficiently monitor and regulate the movement of containers,
@@ -95,13 +103,10 @@ export default function FlyingChitalContainer() {
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div class="text-center mb-14">
-                        <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
-                            <span className=" font-heebo text-[40px] text-primary">High</span>
-                            lights
-                        </h1>
-                        <div class="flex justify-center">
-                            <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-                        </div>
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+                            <span className=" text-indigo-800 font-bold text-[40px] gap-2">High</span><span className=" text-[40px] font-heebo font-bold ">lights</span></h1>
+                        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+
                         <p class="xl:w-3/4 lg:w-3/4 mx-auto text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">
                             "Flying Chital Smart Container Tracking System (FCSCTS)"
                             represents a recently developed system or a specialized product.
