@@ -12,6 +12,7 @@ import Home1 from "../../assets/images/Home.png";
 import EdgeComp12 from "../../assets/images/EdgeComp12.png";
 import vectorImage from "../../assets/images/vector.png";
 import homebluebg from "../../assets/images/homebluebg.png";
+import home1 from "../../assets/images/home1.jpg";
 import One from "../../component/common/svg/One";
 
 import car from "../../assets/images/car.png";
@@ -80,8 +81,8 @@ export default function Home() {
                         <p class="lg:w-1/2 w-full leading-relaxed text-gray-500"></p>
                         <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
                     </div>
-                    <div className="flex flex-row shadow-lg  md:shadow-xl  bg-white  ">
-                        <div className="lg:max-w-lg lg:w-1/4 md:w-1/3 w-1/6 mb-10 md:mb-0  ml-20 px-3 py-10">
+                    <div className="flex flex-row  bg-white  ">
+                        <div className="lg:max-w-lg lg:w-1/4 md:w-1/3 w-1/6 mb-10 md:mb-0  px-3 py-10">
                             <img
                                 className="object-cover object-center "
                                 alt="hero"
@@ -118,7 +119,7 @@ export default function Home() {
 
             {/* Section- Automation of Enterprise Workflows */}
             <section className="text-gray-600 body-font mt-0">
-                <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+                <div className="container mx-auto flex  px-5 py-12 md:flex-row flex-col items-center">
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
                         <img
                             className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
@@ -173,12 +174,27 @@ export default function Home() {
                 </div>
             </section> */}
 
-            <div className="  ">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={EdgeComp12}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${home1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+                        Edge Computing and Mobility
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-10 ">
+                        Our Edge Computing and Mobility Solutions enable non-connected
+                        equipment, Industrial IoT devices, and workstations to capture and
+                        process data without having to collaborate with a centralized
+                        database system. Aligned with Industries 4.0 key driver for Digital
+                        Transformation and Industrial Automation. Our Edge Computing and
+                        Mobility Solutions enable non-connected equipment, Industrial IoT
+                        devices, and workstations to capture and process data without having
+                        to collaborate with a centralized database system.
+                    </p>
+                </div>
             </div>
             {/* Section- Managed IT Services*/}
 
@@ -186,8 +202,16 @@ export default function Home() {
                 <div className="container px-5 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full mb-20">
                         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-                            <span className=" text-indigo-800 font-bold text-[40px] ">Managed </span><span className=" text-[40px] font-heebo font-bold "> IT Services</span></h1>
-                        {/* <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div> */}
+                            <span className=" text-indigo-800 font-bold text-[40px] ">
+                                Managed{" "}
+                            </span>
+                            <span className=" text-[40px] font-heebo font-bold ">
+                                {" "}
+                                <span className="border-b-4 border-orange-400">IT </span>
+                                Services
+                            </span>
+                        </h1>
+                        {/* <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>     */}
                     </div>
                     <div className="flex flex-wrap -mx-4 -mb-10 text-center">
                         <div className="sm:w-1/2 mb-10 px-4">

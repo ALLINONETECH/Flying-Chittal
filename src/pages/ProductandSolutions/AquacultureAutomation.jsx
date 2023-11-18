@@ -5,6 +5,7 @@ import CDAC from "../../assets/images/CDAC.png";
 import IconFC from "../../assets/images/IconFC.png";
 import aquaculture from "../../assets/images/aquaculture.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import product1 from "../../assets/images/product1.png";
 
 export default function AquacultureAutomation() {
     return (
@@ -102,21 +103,80 @@ export default function AquacultureAutomation() {
                 </div>
             </section>
 
-            <div className="  mb-20">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={aquaculture}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${product1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+                        Salient Features
+                    </h1>
+
+
+                    <div className="flex  gap-2">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Easy mountable compact design
+                        </p>
+                    </div>
+                    <div className="flex  gap-2">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Configurable 20 parameters control
+                        </p>
+                    </div>
+
+                    <div className="flex  gap-2">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Manual, Auto, Timer and Remote mode of Operation.
+                        </p>
+                    </div>
+                    <div className="flex  gap-2">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Embeds Free RTOS
+                        </p>
+                    </div>
+                    <div className="flex  gap-2">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Almost any sensor can be interfaced.
+                        </p>
+                    </div>
+
+                    <div className="flex gap-2 mb-10">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Touch Screen GUI interface
+                        </p>
+                    </div>
+
+                </div>
             </div>
 
-            <section className="text-gray-600 body-font mt-0">
+            <section className="text-gray-600 body-font mt-10">
                 <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
                     <span className=" font-heebo text-[40px] text-primary">
                         Our&nbsp;
                     </span>
                     Partner
                 </h1>
+
                 <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
                     <img
                         className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg ml-10"

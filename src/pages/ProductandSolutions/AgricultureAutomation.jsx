@@ -5,6 +5,7 @@ import CDAC from "../../assets/images/CDAC.png";
 import IconFC from "../../assets/images/IconFC.png";
 import Agriculture from "../../assets/images/Agriculture.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import customised1 from "../../assets/images/customised1.jpg";
 
 export default function AgricultureAutomation() {
   return (
@@ -119,12 +120,26 @@ export default function AgricultureAutomation() {
         </div>
       </section>
 
-      <div className="  mb-20">
-        <img
-          className="object-cover object-center  drop-shadow-lg"
-          alt="hero"
-          src={Agriculture}
-        />
+      <div
+        className="flex items-center justify-center  bg-cover bg-no-repeat "
+        style={{
+          background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${customised1}) lightgray 50% / cover no-repeat`,
+        }}
+      >
+        <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+          <h1 className="font-heebo text-4xl font-bold mb-5 ">
+            Customized Features
+          </h1>
+          <p className="font-heebo text-lg font-normal text-justify mb-10 ">
+            Stakeholders can access vital data, track shipments, and ensure
+            compliance with regulatory requirements effortlessly. By
+            consolidating information from these various sources into a single
+            platform, businesses gain a holistic view of their logistics
+            operations, enabling more informed decision-making, enhanced
+            efficiency, and ultimately, a competitive edge in today's dynamic
+            and complex supply chain landscape.
+          </p>
+        </div>
       </div>
 
       <section className="text-gray-600 body-font mt-0">

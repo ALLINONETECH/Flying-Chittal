@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Revolution from "../../assets/images/Revolution.png";
 import Revolution2 from "../../assets/images/Revolution2.png";
 import Empowering1 from "../../assets/images/Empowering1.png";
@@ -8,6 +9,7 @@ import Unloading from "../../assets/images/Unloading.png";
 import Blogbg from "../../assets/images/Blogbg.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
 import IconFC from "../../assets/images/IconFC.png";
+import { Link } from 'react-router-dom';
 
 export default function Challenge() {
     return (
@@ -71,25 +73,27 @@ export default function Challenge() {
                                 MACH architecture, which stands for "Microservices, API-first, Cloud-native, and Headless," allows businesses to deploy an ecosystem of pluggable, scalable, and replaceable third-party solutions to solve discrete business problems.
                             </p>
 
-                            <div className="flex justify-start mt-3 p-3">
-                                <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                    READ MORE{" "}
-                                    <span>
-                                        {" "}
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            className="w-4 h-4 ml-2 "
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
+                            <Link to="/logisticsIntelligence">
+                                <div className="flex justify-start mt-3 p-3">
+                                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                        READ MORE{" "}
+                                        <span>
+                                            {" "}
+                                            <svg
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                className="w-4 h-4 ml-2 "
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -99,25 +103,28 @@ export default function Challenge() {
                             <p className="text-xl not-italic font-normal leading-relaxed text-black ">
                                 The Digital Transformation initiative of enterprises is typically focused on the enablement of better products, services, experience, or business models. At the heart of such transformation is data; but often fundamental changes are only possible when the organization can make substantive shifts in how data is gathered, moved, stored, or processed
                             </p>
-                            <div className="flex justify-start mt-3 p-3">
-                                <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                    READ MORE{" "}
-                                    <span>
-                                        {" "}
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            className="w-4 h-4 ml-2 "
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
+
+                            <Link to="/mACHArchitecture">
+                                <div className="flex justify-start mt-3 p-3">
+                                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                        READ MORE{" "}
+                                        <span>
+                                            {" "}
+                                            <svg
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                className="w-4 h-4 ml-2 "
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </Link>
                         </div>
                         <div className="lg:max-w-lg lg:w-1/4 md:w-1/3 w-1/6 mb-10 md:mb-0 mr-16  px-3 py-10">
                             <img
@@ -142,25 +149,28 @@ export default function Challenge() {
                             <p className="text-xl not-italic font-normal leading-relaxed text-black ">
                                 Managing Outbound Supply chain for Fertilizer sector is often cumbersome as the allocation and distribution is under the control market by govt of India. Moreover, 99% transportation of raw materials and finished goods is managed by Indian Railways
                             </p>
-                            <div className="flex justify-start mt-3 p-3">
-                                <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                    READ MORE{" "}
-                                    <span>
-                                        {" "}
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            className="w-4 h-4 ml-2 "
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
+
+                            <Link to="/fertilizer">
+                                <div className="flex justify-start mt-3 p-3">
+                                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                        READ MORE{" "}
+                                        <span>
+                                            {" "}
+                                            <svg
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                className="w-4 h-4 ml-2 "
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </Link>
 
                         </div>
                     </div>
@@ -170,25 +180,28 @@ export default function Challenge() {
                             <p className="text-xl not-italic font-normal leading-relaxed text-black ">
                                 Let's revolutionize the way we manage logistics in the mining and ore processing industry by harnessing the power of IoT and smart technologies. Together, we can unlock an era of unprecedented efficiency and optimization. Feel free to reach out for more information or to discuss this exciting transformation further!
                             </p>
-                            <div className="flex justify-start mt-3 p-3">
-                                <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                    READ MORE{" "}
-                                    <span>
-                                        {" "}
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            className="w-4 h-4 ml-2 "
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
+
+                            <Link to="/miningMetal">
+                                <div className="flex justify-start mt-3 p-3">
+                                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                        READ MORE{" "}
+                                        <span>
+                                            {" "}
+                                            <svg
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                className="w-4 h-4 ml-2 "
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </Link>
                         </div>
                         <div className="lg:max-w-lg lg:w-1/4 md:w-1/3 w-1/6 mb-10 md:mb-0 mr-16  px-3 py-10">
                             <img
@@ -213,25 +226,28 @@ export default function Challenge() {
                             <p className="text-xl not-italic font-normal leading-relaxed text-black ">
                                 Some of the typical challenges faced in day–to–day operation by a Mining and Metal Industries whose business is diversified to Iron and Steel Plants and mines. First drawback is the manual collection of data from various entities like transporters, SAP, plants, plots, railway sidings, etc.
                             </p>
-                            <div className="flex justify-start mt-3 p-3">
-                                <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                                    READ MORE{" "}
-                                    <span>
-                                        {" "}
-                                        <svg
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            className="w-4 h-4 ml-2 "
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path d="M5 12h14M12 5l7 7-7 7" />
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
+
+                            <Link to="/edgeComputing">
+                                <div className="flex justify-start mt-3 p-3">
+                                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                                        READ MORE{" "}
+                                        <span>
+                                            {" "}
+                                            <svg
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                className="w-4 h-4 ml-2 "
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path d="M5 12h14M12 5l7 7-7 7" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </Link>
 
                         </div>
                     </div>

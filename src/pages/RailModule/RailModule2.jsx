@@ -16,6 +16,7 @@ import IDown from "../../assets/images/IDown.png";
 import Timely2 from "../../assets/images/Timely2.png";
 import Railbg1 from "../../assets/images/Railbg1.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import customised1 from "../../assets/images/customised1.jpg";
 
 
 export default function RailModule2() {
@@ -138,12 +139,25 @@ export default function RailModule2() {
                     <p className=" text-lg"></p>
                 </div>
             </div> */}
-            <div className="  ">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={Backgrnd2}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${customised1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+                        Flying Chital helps to meticulously orchestrate these elements in the process of Rake Arrival and Placement for material loading, logistics managers can minimize downtime, reduce operational costs, and ensure that goods are transported swiftly and cost-effectively, benefiting both shippers and the rail transport system.
+                    </p>
+
+
+
+
+
+                </div>
             </div>
 
 

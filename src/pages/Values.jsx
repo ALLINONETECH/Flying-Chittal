@@ -86,9 +86,9 @@ export default function Values() {
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
                                     <img className="p-1" src={intelligent} alt="" />
                                 </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Customer-Centric Approach</h2>
+                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Integrity</h2>
                                 <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We put our customers at the forefront of our mission, tailoring our technology solutions to meet their specific needs and offering exceptional support throughout their journey with us. </p>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We uphold the highest ethical standards, always acting with honesty, transparency, and respect for all stakeholders </p>
                                 </div>
 
 
@@ -102,9 +102,9 @@ export default function Values() {
                                     </svg> */}
                                     <img className="p-1" src={Safety} alt="" />
                                 </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Innovation Hub</h2>
+                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Accountability</h2>
                                 <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We aspire to be a hub of innovation, continuously developing and implementing groundbreaking technologies that address the unique challenges faced by industries in remote and underserved regions. </p>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We take full responsibility for our actions, ensuring that we deliver on our promises and hold ourselves accountable for the results. </p>
                                 </div>
 
 
@@ -119,9 +119,9 @@ export default function Values() {
 
                                     <img className="p-1" src={Driver} alt="" />
                                 </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Supply Chain Excellence</h2>
+                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Commitment to Customers</h2>
                                 <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">Our mission centers on optimizing supply chain and logistics operations, reducing lead times, minimizing costs, and maximizing the flow of goods to fuel economic growth. </p>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">Our customers are at the heart of everything we do. We are dedicated to understanding their needs, providing exceptional service, and exceeding their expectations.</p>
                                 </div>
 
 
@@ -135,10 +135,10 @@ export default function Values() {
                                     </svg> */}
                                     <img className="p-1" src={Fuel} alt="" />
                                 </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Industrial Efficiency</h2>
+                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Employee Development</h2>
 
                                 <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We are dedicated to improving industrial processes in mining, ore processing, cement and fertilizer production, and warehousing through smart technologies, automation, and data driven insights. </p>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We believe in nurturing our employees' talents, encouraging growth, and fostering a collaborative and inclusive work environment that promotes learning and professional development. </p>
                                 </div>
 
 
@@ -155,9 +155,9 @@ export default function Values() {
                                     </svg> */}
                                     <img className="p-1" src={Rich} alt="" />
                                 </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Affordability</h2>
+                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Innovation</h2>
                                 <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We believe that advanced technology should be accessible to all, and our mission is to make it cost-effective for industries operating in remote areas </p>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We constantly seek new and groundbreaking solutions to empower our customers and enhance their experiences. We embrace creativity, out-of-the-box thinking, and adaptability to stay ahead of the curve.</p>
                                 </div>
 
 
@@ -171,9 +171,9 @@ export default function Values() {
                                     </svg> */}
                                     <img className="p-1" src={Drivertruck} alt="" />
                                 </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Reliability</h2>
+                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Quality</h2>
                                 <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We strive to enhance the reliability and predictability of operations, reducing downtime and disruptions, thus improving overall productivity.</p>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">Delivering excellence is our priority. We are committed to providing innovative, reliable, and top-notch products and services that consistently meet or exceed the highest industry standards</p>
                                 </div>
 
 
@@ -187,61 +187,16 @@ export default function Values() {
                                     </svg> */}
                                     <img className="p-1" src={Drivertruck} alt="" />
                                 </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Sustainability</h2>
+                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Simplicity</h2>
                                 <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We are committed to promoting sustainability by implementing eco-friendly practices and solutions that minimize environmental impact and support responsible resource management. </p>
+                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We strive to simplify technology for everyone, making it easy to understand, access, and implement. We design user-friendly solutions that bring convenience and efficiency to our customers' lives</p>
                                 </div>
 
                             </div>
                         </div>
-                        <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6  h-full rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                                    <img className="p-1" src={Drivertruck} alt="" />
-                                </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Community Empowerment</h2>
-                                <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">Our mission extends to empowering local communities by creating job opportunities, fostering economic growth, and contributing to the well-being of the regions we serve  </p>
-                                </div>
 
 
-                            </div>
-                        </div>
-                        <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6  h-full rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                                    <img className="p-1" src={Drivertruck} alt="" />
-                                </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Collaborative Partnerships:</h2>
-                                <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">We actively seek collaboration with industrial players, government agencies, and logistics providers to create comprehensive, holistic solutions that benefit all stakeholders. </p>
-                                </div>
 
-
-                            </div>
-                        </div>
-                        <div className="xl:w-1/4 md:w-1/2 p-4">
-                            <div className="border border-gray-200 p-6  h-full rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl">
-                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                                    <img className="p-1" src={Drivertruck} alt="" />
-                                </div>
-                                <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">Global Reach</h2>
-                                <div className="flex">
-                                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">While our focus is on remote areas, we aim to have a global impact by setting new industry standards and sharing our expertise and technology solutions worldwide</p>
-                                </div>
-
-
-                            </div>
-                        </div>
 
                     </div>
 

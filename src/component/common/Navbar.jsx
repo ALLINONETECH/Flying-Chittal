@@ -45,7 +45,7 @@ const Navbar = () => {
             to: "/services",
             subMenu: [
                 // { label: "Blog", to: "/blog" },
-                { label: "Blog", to: "/Challenge" },
+                { label: "Blog", to: "/challenge" },
                 { label: "Help Centre", to: "/service2" },
                 { label: "Market updates", to: "/service3" },
             ]
@@ -60,24 +60,24 @@ const Navbar = () => {
             ]
         },
 
-        {
-            label: "RailModule",
-            to: "/services",
-            subMenu: [
-                { label: "RailModule1", to: "/railmodule1" },
-                { label: "RailModule2", to: "/railmodule2" },
-                { label: "RailModule3", to: "/railmodule3" },
-                { label: "RailModule4", to: "/railmodule4" },
-                { label: "RailModule5", to: "/railmodule5" },
-                { label: "RailModule6", to: "/railmodule6" },
-                { label: "RailModule7", to: "/railmodule7" },
-                { label: "RailModule8", to: "/railmodule8" },
-                { label: "RailModule9", to: "/railmodule9" },
-                { label: "logisticsIntelligence", to: "/logisticsIntelligence" },
-                { label: "miningMetal", to: "/miningMetal" },
-                { label: "mACHArchitecture", to: "/mACHArchitecture" },
-            ]
-        },
+        // {
+        //     label: "RailModule",
+        //     to: "/services",
+        //     subMenu: [
+        //         { label: "RailModule1", to: "/railmodule1" },
+        //         { label: "RailModule2", to: "/railmodule2" },
+        //         { label: "RailModule3", to: "/railmodule3" },
+        //         { label: "RailModule4", to: "/railmodule4" },
+        //         { label: "RailModule5", to: "/railmodule5" },
+        //         { label: "RailModule6", to: "/railmodule6" },
+        //         { label: "RailModule7", to: "/railmodule7" },
+        //         { label: "RailModule8", to: "/railmodule8" },
+        //         { label: "RailModule9", to: "/railmodule9" },
+        //         { label: "logisticsIntelligence", to: "/logisticsIntelligence" },
+        //         { label: "miningMetal", to: "/miningMetal" },
+        //         { label: "mACHArchitecture", to: "/mACHArchitecture" },
+        //     ]
+        // },
     ];
     const [activeDropdown, setActiveDropdown] = useState(null);
 

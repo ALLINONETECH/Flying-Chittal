@@ -26,6 +26,7 @@ import bluebgmobile from "../assets/images/bluebgmobile.png";
 import pinkbgmobile from "../assets/images/pinkbgmobile.png";
 import assestcontent from "../assets/images/assestcontent.png";
 import HomeIcon from "../assets/images/HomeIcon.png";
+import product1 from "../assets/images/product1.png";
 export default function AssetManagement() {
     return (
         <div className="">
@@ -498,12 +499,82 @@ export default function AssetManagement() {
                 </div>
             </section>
             {/* Section 3a Image Section */}
-            <div className=" mb-20">
-                <img
-                    className="object-cover object-center w-full drop-shadow-lg"
-                    alt="hero"
-                    src={assestcontent}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${product1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+                        Close Monitoring For Controlled Operations
+                    </h1>
+
+                    <div className="flex ">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium font-heebo ">
+                            Critical Operation Parameters Monitored
+                            <div className="flex gap-2">
+                                <span>
+                                    <img className="" src={IconFC} alt="" />
+                                </span>
+                                <p className="text-xl not-italic font-normal  font-heebo ">
+                                    Number of trips made, operator name, speed of the truck, time status, origin - destination, remaining fuel, etc
+                                </p>
+                            </div>
+
+
+                        </p>
+                    </div>
+
+
+                    <div className="flex ">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium font-heebo ">
+                            MAP Interface
+                            <div className="flex gap-2">
+                                <span>
+                                    <img className="" src={IconFC} alt="" />
+                                </span>
+                                <p className="text-xl not-italic font-normal  font-heebo ">
+                                    Updated real, graphical dynamic map of the Mine, current GPS based real position, status of HEMM <br />equipment, location of dump, parking, workshop, crusher, road network and equipment movement in real - time.
+                                </p>
+                            </div>
+
+
+                        </p>
+                    </div>
+                    <div className="flex  gap-2">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Equipment visible in a single view, with icon /symbols
+                        </p>
+                    </div>
+                    <div className="flex  gap-2">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Route deviation, wrong arrival, speed, delay, overloading, wrong dump, incorrect material information.
+                        </p>
+                    </div>
+
+
+                    <div className="flex gap-2 mb-10">
+                        <span>
+                            <img className="p-1" src={IconFC} alt="" />
+                        </span>
+                        <p className="text-xl not-italic font-medium  font-heebo ">
+                            Vehicle speed, operator, payload, assignments etc. available for post -mining analysis
+                        </p>
+                    </div>
+                </div>
             </div>
 
             {/* Section-4 Monitoring at all the Transaction Points */}

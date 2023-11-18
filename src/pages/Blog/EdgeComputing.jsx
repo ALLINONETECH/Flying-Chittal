@@ -5,6 +5,7 @@ import FertilizerIndus from "../../assets/images/FertilizerIndus.png";
 import IconFC from '../../assets/images/IconFC.png'
 import Edge12 from '../../assets/images/Edge12.png'
 import Edge21 from '../../assets/images/Edge21.png'
+import edgecomputing1 from '../../assets/images/edgecomputing1.jpg'
 
 
 
@@ -153,12 +154,25 @@ export default function EdgeComputing() {
                     <p className=" text-lg"></p>
                 </div>
             </div> */}
-            <div className="  ">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={FertilizerIndus}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${edgecomputing1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+                        Orchestrating And Securing Distributed Assets And Devices
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+                        For remote operations with limited or no connectivity to the cloud – for example deep in a mine or out in an agricultural field ­– edge computing can perform real-time operational decisions based on local analysis of sensor data. Many IoT sensors used in warehouses, factories, fields, and vehicles have adopted an asynchronous data model approach. With the increase in computing, connectivity and other functionality available in these IoT sensors, many of these devices can now perform some of their own computing operations, without the need to interact with any other resources in real-time.
+                    </p>
+
+
+
+
+
+                </div>
             </div>
 
         </div>

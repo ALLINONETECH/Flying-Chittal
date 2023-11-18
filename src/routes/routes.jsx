@@ -86,9 +86,9 @@ export default function Routes() {
                 { path: "/miningMetal", element: <MiningMetal /> },
                 { path: "/help", element: <Help /> },
                 { path: "/career", element: <Career /> },
-                { path: "/Challenge", element: <Challenge /> },
-                { path: "/Fertilizer", element: <Fertilizer /> },
-                { path: "/EdgeComputing", element: <EdgeComputing /> },
+                { path: "/challenge", element: <Challenge /> },
+                { path: "/fertilizer", element: <Fertilizer /> },
+                { path: "/edgeComputing", element: <EdgeComputing /> },
 
                 { path: "/chat", element: <Chat /> },
             ],

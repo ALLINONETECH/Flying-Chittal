@@ -7,6 +7,7 @@ import Logisticintel1 from "../../assets/images/Logisticintel1.png";
 import IconFC from '../../assets/images/IconFC.png'
 import LogisticArt from '../../assets/images/LogisticArt.png'
 import HomeIcon from '../../assets/images/HomeIcon.png'
+import logisticintelligence from '../../assets/images/logisticintelligence.jpg'
 
 export default function LogisticsIntelligence() {
     return (
@@ -109,12 +110,20 @@ export default function LogisticsIntelligence() {
             </section>
 
 
-            <div className="  ">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={LogisticArt}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${logisticintelligence}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+                        Logistics Intelligence, Logistics Connectivity and Real-Time Virtualization
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-10 ">
+                        Let's revolutionize the way we manage logistics in the mining and ore processing industry by harnessing the power of IoT and smart technologies. Together, we can unlock an era of unprecedented efficiency and optimization. Feel free to reach out for more information or to discuss this exciting transformation further!
+                    </p>
+                </div>
             </div>
         </div>
     )

@@ -3,6 +3,9 @@ import React from "react";
 import CareerFC from "../assets/images/CareerFC.png";
 import Team from "../assets/images/Team.png";
 import career1 from "../assets/images/career1.png";
+import HomeIcon from "../assets/images/HomeIcon.png";
+
+import customised1 from "../assets/images/customised1.jpg";
 
 export default function career() {
     return (
@@ -48,7 +51,11 @@ export default function career() {
                         </p>
                         {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
                         <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-                            Home / Careers
+                            <div className="flex gap-2">
+                                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
+                                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> /  Careers</span>  </div>
+                            </div>
+
                         </p>
                     </div>
                 </div>
@@ -70,7 +77,7 @@ export default function career() {
                             </span>
                             Team
                         </h1>
-                        <p className="mb-8 mt-2 text-justify text-base not-italic font-normal leading-6 w-4/5">
+                        <p className="mb-8 mt-2 text-justify text-[20px] font-[400] font-heebo leading-[26px] text-[#30343F] w-4/5">
                             Atulya Abhinav Tech Private Limited invites dynamic talent to join
                             our team and be a part of our groundbreaking journey in the realm
                             of Digital Transformation and Innovation, Automation of Enterprise
@@ -92,12 +99,26 @@ export default function career() {
                 </div>
             </section>
 
-            <div className=" mt-20 ">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={Team}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${customised1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+                        We value your skills and experience, and should a fitting job opportunity arise, we will reach out to you promptly. We appreciate your interest in joining our team and anticipate the possibility of
+                        connecting with you in the near future.
+                    </p>
+
+
+
+
+
+                </div>
             </div>
         </div>
     );

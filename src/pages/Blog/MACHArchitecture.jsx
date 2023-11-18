@@ -11,6 +11,7 @@ import Integration from "../../assets/images/Integration.png";
 import CloudNa from "../../assets/images/CloudNa.png";
 import Articles from "../../assets/images/Articles.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import article from "../../assets/images/article.jpg";
 
 export default function MACHArchitecture() {
     return (
@@ -156,12 +157,20 @@ export default function MACHArchitecture() {
                 </div>
             </section>
 
-            <div className="  ">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={Articles}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${article}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+                        Articles Of Interest
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-10 ">
+                        MACH architecture, which stands for "Microservices, API-first, Cloud-native, and Headless," allows businesses to deploy an ecosystem of pluggable, scalable, and replaceable third-party solutions to solve discrete business problems. Here's how MACH architecture principles can be applied to digitalization initiatives:
+                    </p>
+                </div>
             </div>
         </div>
     )

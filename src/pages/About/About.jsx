@@ -242,7 +242,7 @@ export default function About() {
                         </h1>
                         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
                         <div class="flex mt-6 justify-center">
-                            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                            <div class="w-16 h-1 rounded-full bg-secondary inline-flex"></div>
                         </div>
                     </div>
 
@@ -252,7 +252,7 @@ export default function About() {
                                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
                                     <img className="p-1" src={Eye} alt="" />
                                 </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                                <h2 className="text-[26px] text-[#30343F] font-[700] font-heebo mb-2">
                                     Vision
                                 </h2>
                                 <div className="flex flex-col">
@@ -296,7 +296,7 @@ export default function About() {
                                     </svg> */}
                                     <img className="p-1" src={Goal} alt="" />
                                 </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                                <h2 className="text-[26px] text-[#30343F] font-[700] font-heebo  mb-2">
                                     Mission
                                 </h2>
                                 <div className="flex flex-col">
@@ -340,11 +340,11 @@ export default function About() {
 
                                     <img className="p-1" src={Heart} alt="" />
                                 </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                                <h2 className="text-[26px] text-[#30343F] font-[700] font-heebo  mb-2">
                                     Values
                                 </h2>
                                 <div className="flex flex-col">
-                                    <p className="text-xl not-italic font-normal leading-7 font-heebo">
+                                    <p className="text-xl  font-normal leading-7 font-heebo">
                                         “At Aditya Abhinav Tech Private Limited, we stand by the
                                         following core values, which guide our every action.
                                         Together, these values shape our company culture and drive
@@ -412,7 +412,7 @@ export default function About() {
                             <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
                                 Co-Founder & CEO
                             </p>
-                            <p className="text-xl not-italic font-normal leading-7 font-heebo mb-8  text-justify mt-2">
+                            <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
                                 CEO Pradyumna Mishra combines 20 years of distinguished service
                                 in the Indian Navy with a decade in corporate arena with
                                 industry giants like L&T, Mahindra group and innovative startup
@@ -441,7 +441,7 @@ export default function About() {
                             <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
                                 Director Technology & Solutions
                             </p>
-                            <p className="text-xl not-italic font-normal leading-7 font-heebo mb-8  text-justify mt-2">
+                            <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
                                 A Graduate from IIT, Amar is an accomplished and
                                 forward-thinking technology leader serving as the Director,
                                 Technology and Solutions of our company. With a remarkable
@@ -489,7 +489,7 @@ export default function About() {
                             <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
                                 Director Strategy & Growth
                             </p>
-                            <p className="text-xl not-italic font-normal leading-7 font-heebo mb-8  text-justify mt-2">
+                            <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
                                 With an MBA from Purdue University’s Daniels School, Debashis
                                 Mohanty, our Director of Strategy and Growth is at the heart of
                                 our company. With a dynamic career spanning 25 years, he is a
@@ -517,7 +517,7 @@ export default function About() {
                             <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
                                 Consulting Advisor
                             </p>
-                            <p className="text-xl not-italic font-normal leading-7 font-heebo mb-8  text-justify mt-2">
+                            <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
                                 Sambasiva Rao Suda an accomplished entrepreneur with exceptional
                                 skills in founding and leading innovative ventures, is our
                                 Consulting Advisor. Suda holds a Master's degree in Computer

@@ -1,6 +1,7 @@
 import React from 'react'
 import Fertilizerbg from "../../assets/images/Fertilizerbg.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import fertilizers1 from "../../assets/images/fertilizers1.jpg";
 import FertilizerIndus from "../../assets/images/FertilizerIndus.png";
 export default function Fertilizer() {
     return (
@@ -119,12 +120,21 @@ export default function Fertilizer() {
                     <p className=" text-lg"></p>
                 </div>
             </div> */}
-            <div className="  ">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={FertilizerIndus}
-                />
+
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${fertilizers1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-36 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+                        Fertilizer Industry
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+                        Managing Outbound Supply chain for Fertilizer sector is often cumbersome as the allocation and distribution is under the control market by govt of India. Moreover, 99% transportation of raw materials and finished goods is managed by Indian Railways
+                    </p>
+                </div>
             </div>
 
         </div>

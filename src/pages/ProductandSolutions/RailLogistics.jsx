@@ -19,9 +19,15 @@ import item5 from "../../assets/images/rail-item5.png";
 import Blog1 from "../../assets/images/Blog1.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
 import railA from "../../assets/images/railA.png";
-import railB from "../../assets/images/railB.png";
+import rail12 from "../../assets/images/rail12.jpg";
+
 import railE from "../../assets/images/railE.png";
 import railD from "../../assets/images/railD.png";
+import raillogistic1 from "../../assets/images/raillogistic1.jpg";
+import raillogistic2 from "../../assets/images/raillogistic2.jpg";
+import raillogistic3 from "../../assets/images/raillogistic3.jpg";
+import raillogistic4 from "../../assets/images/raillogistic4.jpg";
+import raillogistic5 from "../../assets/images/raillogistic5.jpg";
 import IconFC from "../../assets/images/IconFC.png";
 import { Link } from "react-router-dom";
 export default function RoadLogistics() {
@@ -74,12 +80,12 @@ export default function RoadLogistics() {
                                     </span>
                                 </div>
                                 <div classNAme="justify">
-                                    {" "}
+
                                     <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
                                         Flying Chital
                                     </span>
                                     <span className="font-[700] font-heebo text-[32px] ">
-                                        {" "}
+
                                         / Rail Logistics
                                     </span>
                                 </div>
@@ -137,38 +143,116 @@ export default function RoadLogistics() {
 
                         <div className="flex flex-wrap -m-4 mb-2 ">
                             <div className=" w-auto md:w-1/2 p-4">
-                                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl">
-                                    <img className=" w-full" src={railA} alt="" />
+                                <div
+                                    className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[50px] rounded-bl-[50px]  shadow-lg "
+                                    style={{
+                                        background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic1}) lightgray 50% / cover no-repeat`,
+                                    }}
+                                >
+                                    <div className=" w-auto md:w-4/5 text-start text-white  grid content-end">
+                                        <h1 className="font-heebo text-4xl font-bold mb-5 mt-60">
+                                            Outbound From Mines
+                                        </h1>
+                                        <p className="font-heebo text-lg font-normal text-justify  mb-20">
+                                            Efficient route planning is crucial to ensure timely
+                                            deliveries and reduce transportation costs. Companies use
+                                            specialized software and GPS technology to optimize routes
+                                            based on factors like distance, traffic conditions, and
+                                            delivery schedules.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className=" w-auto md:w-1/2 p-4">
+                                <div
+                                    className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
+                                    style={{
+                                        background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%),url(${raillogistic3})  lightgray 50% / cover no-repeat`,
+                                    }}
+                                >
+                                    <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
+                                        <h1 className="font-heebo text-4xl font-bold mb-5 mt-52 ">
+                                            Inbound To Plants
+                                        </h1>
+                                        <p className="font-heebo text-lg font-normal text-justify  ">
+                                            Leveraging high-end technologies in logistics management
+                                            for sourcing raw materials and other essentials is a
+                                            game-changer in the modern business landscape. These
+                                            technologies offer real-time visibility and optimization
+                                            capabilities that streamline the entire supply chain
+                                            process. They enable companies to track the movement of
+                                            raw materials from source to destination, anticipate
+                                            potential disruptions, and ensure timely deliveries.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className=" w-auto md:w-1/2 p-4">
+                                <div
+                                    className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
+                                    style={{
+                                        background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic2}) lightgray 50% / cover no-repeat`,
+                                    }}
+                                >
+                                    <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
+                                        <h1 className="font-heebo text-4xl font-bold mb-5  mt-40 ">
+                                            Outbound From Plants
+                                        </h1>
+                                        <p className="font-heebo text-lg font-normal text-justify ">
+                                            Technology is paramount in managing outbound logistics
+                                            from ports, serving as the linchpin of efficient and
+                                            effective global trade. Ports are the gateway for exports
+                                            and outbound shipments, and the integration of advanced
+                                            tools such as real-time tracking, automation, and
+                                            predictive analytics is crucial in optimizing the movement
+                                            of goods. These technologies enable the timely loading of
+                                            cargo onto vessels, streamline customs processes, and
+                                            enhance security and compliance
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className=" w-auto md:w-1/2 p-4">
-                                <div className=" border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl border-2 border-black">
-                                    <img
-                                        className="rounded-tr-[15px] w-full"
-                                        src={railB}
-                                        alt=""
-                                    />
+                                <div
+                                    className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
+                                    style={{
+                                        background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%),url(${raillogistic4})  lightgray 50% / cover no-repeat`,
+                                    }}
+                                >
+                                    <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
+                                        <h1 className="font-heebo text-4xl font-bold mb-5 mt-80 ">
+                                            Inbound To Ports
+                                        </h1>
+                                        <p className="font-heebo text-lg font-normal text-justify mb-10 ">
+                                            Technologies play a pivotal role in managing inbound
+                                            logistics to ports, ensuring the efficiency and
+                                            effectiveness of this critical gateway in global trade.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className=" w-auto md:w-1/2 p-4">
+                                <div
+                                    className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
+                                    style={{
+                                        background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic5})  lightgray 50% / cover no-repeat`,
+                                    }}
+                                >
+                                    <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
+                                        <h1 className="font-heebo text-4xl font-bold mb-5 mt-80 ">
+                                            Outbound From Ports
+                                        </h1>
+                                        <p className="font-heebo text-lg font-normal text-justify mb-10 ">
+                                            Technologies play a pivotal role in managing inbound
+                                            logistics to ports, ensuring the efficiency and
+                                            effectiveness of this critical gateway in global trade.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-wrap -m-4 ">
-                            <div className=" w-auto md:w-1/2 p-4">
-                                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl">
-                                    <img className=" w-full" src={railE} alt="" />
-                                </div>
-                            </div>
 
-                            <div className=" w-auto md:w-1/2 p-4">
-                                <div className=" border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl border-2 border-black">
-                                    <img
-                                        className="rounded-tr-[15px] w-full"
-                                        src={railD}
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

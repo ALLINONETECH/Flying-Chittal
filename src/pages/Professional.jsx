@@ -5,6 +5,7 @@ import Agriculture from "../assets/images/Agriculture.png"
 import IconFC from "../assets/images/IconFC.png"
 import Professionalbg from "../assets/images/Professionalbg.png"
 import HomeIcon from "../assets/images/HomeIcon.png"
+import customised1 from "../assets/images/customised1.jpg"
 
 import CDAC from "../assets/images/CDAC.png"
 
@@ -74,44 +75,61 @@ export default function Professional() {
 
 
 
-            <div className="  mb-20">
-                <img
-                    className="object-cover object-center  drop-shadow-lg"
-                    alt="hero"
-                    src={Agriculture}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${customised1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+                        The indigenous technology provided by Atulya Abhinav Tech Private Limited is a result of the Transfer of Technology (ToT) from C-DAC Thiruvananthapuram, who have independently developed the entire system. Clients can rely on our expertise to deliver a robust communication infrastructure that enhances operational efficiency and safety in these vital industries.
+                    </p>
+
+
+
+
+
+                </div>
             </div>
             <section className="text-gray-600 body-font mt-0">
-                <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
-                    <span className="border-b-2 border-secondary"></span>HighLights</h1>
-                <div>
-                    <p className=" text-center ">Terrestrial Trunked Radio (TETRA) is a digital trunked mobile radio standard developed to meet the needs of traditional Professional Mobile Radio (PMR) user organizations such as: Public Safety. Transportation. Utilities. Government.</p>
+                <div class="text-center mt-16 mb-10">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+                        <span className=" text-indigo-800 font-bold text-[40px]  ">High</span><span className=" text-[40px] font-heebo font-bold ">lights</span></h1>
+                    <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+
+
+                    <p class="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">Terrestrial Trunked Radio (TETRA) is a digital trunked mobile radio standard developed to meet the needs of traditional Professional Mobile Radio (PMR) user organizations such as: Public Safety. Transportation. Utilities. Government.</p>
                 </div>
+
 
                 <div className="container mx-auto  px-5 py-12 md:flex-row flex-col items-center ml-10">
                     <div className="flex">
-                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage Alerts on fuel drainage </p>
+                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">Alerts on fuel drainage Alerts on fuel drainage </p>
                     </div>
                     <div className="flex">
-                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage Alerts on fuel drainage </p>
+                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">Alerts on fuel drainage Alerts on fuel drainage </p>
                     </div>
                     <div className="flex">
-                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage Alerts on fuel drainage </p>
+                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">Alerts on fuel drainage Alerts on fuel drainage </p>
                     </div>
                     <div className="flex">
-                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage Alerts on fuel drainage </p>
+                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">Alerts on fuel drainage Alerts on fuel drainage </p>
                     </div>
                     <div className="flex">
-                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage Alerts on fuel drainage </p>
+                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">Alerts on fuel drainage Alerts on fuel drainage </p>
                     </div>
                     <div className="flex">
-                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage Alerts on fuel drainage </p>
+                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">Alerts on fuel drainage Alerts on fuel drainage </p>
                     </div>
                     <div className="flex">
-                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage Alerts on fuel drainage </p>
+                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">Alerts on fuel drainage Alerts on fuel drainage </p>
                     </div>
                     <div className="flex">
-                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage Alerts on fuel drainage </p>
+                        <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">Alerts on fuel drainage Alerts on fuel drainage </p>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
 

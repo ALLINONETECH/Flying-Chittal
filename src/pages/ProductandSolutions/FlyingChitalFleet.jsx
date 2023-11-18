@@ -4,6 +4,7 @@ import FCFleet from "../../assets/images/FCFleet.png";
 import FleetContent from "../../assets/images/FleetContent.png";
 import vehiclefleetbg from "../../assets/images/vehiclefleetbg.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import home1 from "../../assets/images/home1.jpg";
 
 export default function FlyingChitalFleet() {
     return (
@@ -97,12 +98,25 @@ export default function FlyingChitalFleet() {
                 </div>
             </section>
 
-            <div className=" mb-20">
-                <img
-                    className="object-cover object-center w-full drop-shadow-lg"
-                    alt="hero"
-                    src={FleetContent}
-                />
+            <div
+                className="flex items-center justify-center  bg-cover bg-no-repeat "
+                style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${home1}) lightgray 50% / cover no-repeat`,
+                }}
+            >
+                <div className=" w-auto md:w-4/5 text-start mt-20 text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 ">
+                        Highlights
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify  ">
+                        First and foremost, it empowers businesses to create effective and efficient shipping plans, a crucial aspect of streamlined operations
+                    </p>
+                    <p className="font-heebo text-lg font-normal text-justify  ">The system provides end-to-end visibility of the entire fleet of vehicles, enabling better monitoring and control, which is essential for safeguarding the integrity and security of cargo.</p>
+                    <p className="font-heebo text-lg font-normal text-justify  ">This advanced application goes beyond conventional fleet management by offering innovative services related to various modes of transport and traffic management, providing users with real-time inputs to make informed decisions. By doing so, it ensures the optimization of vehicle utility, enhances efficiency, and promotes the safety of cargo movement.</p>
+                    <p className="font-heebo text-lg font-normal text-justify  ">Importantly, it shifts the paradigm from reactive corrective action to proactive preventive action, preventing issues before they escalate.</p>
+                    <p className="font-heebo text-lg font-normal text-justify mb-12 ">With the ability to manage all transportation activities throughout the supply chain, this system combines user-friendliness with industry-leading capabilities, resulting in more efficient logistics operations, reduced freight costs, and optimized service levels.</p>
+
+                </div>
             </div>
         </div>
     );
