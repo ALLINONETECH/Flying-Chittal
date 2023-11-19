@@ -1,15 +1,15 @@
 import React from "react";
-import Card from "../../assets/images/card-media.png";
-import Card2 from "../../assets/images/card-media2.png";
-import Card3 from "../../assets/images/card-media3.png";
+import Card from "../../assets/images/istockphoto-fS1CLV3ig5.jpg";
+import Card2 from "../../assets/images/istockphoto-Gmxn3WwBXe2.jpg";
+import Card3 from "../../assets/images/istockphoto-Q7uqFa1tlN.jpg";
 import Card4 from "../../assets/images/card-media4.png";
 import Card5 from "../../assets/images/card-media5.png";
 import Card6 from "../../assets/images/card-media6.png";
-import Card7 from "../../assets/images/card-media7.png";
+import Card7 from "../../assets/images/istockphoto-sjXLTHaloU.jpg";
 import Card8 from "../../assets/images/card-media8.png";
 import Card9 from "../../assets/images/card-media9.png";
 import Card10 from "../../assets/images/card-media10.png";
-import Card11 from "../../assets/images/card-media11.png";
+import Card11 from "../../assets/images/istockphoto-ATX1YbrzMH.jpg";
 import Blog1 from "../../assets/images/Blog1.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
 import raillogistic1 from "../../assets/images/raillogistic1.jpg";
@@ -99,23 +99,22 @@ export default function RoadLogistics() {
           <div className="container px-5  mx-auto">
             <div class="text-start mb-5">
               <p class=" text-xl not-italic font-normal leading-7 font-heebo xl:w-full lg:w-full mx-auto text-gray-500s text-justify text-[#30343F]">
-                Leveraging technologies in rail logistics management offers
-                improved operational efficiency, real-time tracking, and
-                predictive maintenance capabilities. It enhances the accuracy of
-                scheduling, reduces delays, and minimizes costs, ultimately
-                leading to a more reliable and cost-effective rail
-                transportation system, which is essential for the modern supply
-                chain.
-                <br /> Technology-driven efficient rail logistics have brought
-                significant advancements to the transportation industry.
-                Real-time monitoring, automation, and data analytics optimize
-                the movement of goods by rail. GPS, RFID, IoT and sensor
-                technologies enable precise tracking, reducing transit times and
-                enhancing the safety of cargo. Digital platforms and smart
-                systems facilitate the coordination of shipments and real-time
-                communication among stakeholders, making rail logistics more
-                efficient and responsive. The integration of these technologies
-                promotes sustainability, cost-efficiency, and reliability.
+                Leveraging technologies in road logistics management provides
+                real-time tracking, route optimization, and efficient load
+                management. It enhances visibility, reduces fuel consumption,
+                and minimizes delivery times, resulting in cost savings,
+                improved customer service, and a more sustainable and agile road
+                logistics network.
+                <br /> <br /> Technology-driven efficient road logistics have
+                revolutionized the transportation industry. Advanced tools like
+                GPS tracking, route optimization, and real-time data analysis
+                streamline operations, reducing delivery times and minimizing
+                fuel consumption. Automation, IoT sensors, and AI-driven systems
+                enhance supply chain visibility, ensuring accurate tracking and
+                efficient inventory management. Additionally, digital platforms
+                and mobile apps improve communication and coordination among
+                stakeholders, making road logistics more responsive and
+                customer-centric.
               </p>
             </div>
           </div>
@@ -422,19 +421,19 @@ export default function RoadLogistics() {
                 <div className="px-6 pb-6">
                   <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
                     {" "}
-                    Integrated with Vahan & Parivahan Interface with Vahan
-                    enables swift digital vehicle inspections using just the
-                    vehicle number, providing access to crucial information like
-                    registration, insurance, fitness, and taxation status. This
-                    expedites security checks and prevents penalties and delays
-                    by ensuring compliance with all vehicle details.
+                    Interface with Vahan enables swift digital vehicle
+                    inspections using just the vehicle number, providing access
+                    to crucial information like registration, insurance,
+                    fitness, and taxation status. This expedites security checks
+                    and prevents penalties and delays by ensuring compliance
+                    with all vehicle details.
                     <br />
-                    Interface with Sarathi facilitates rapid digital driver
-                    inspections using only the driver's license number and date
-                    of birth, offering details such as a photograph, license
-                    expiration date, and current status. This streamlines
-                    security checks and prevents penalties and delays by
-                    ensuring compliance with all driver information.
+                    Interface with Sarathi/Pari Vahan facilitates rapid digital
+                    driver inspections using only the driver's license number
+                    and date of birth, offering details such as a photograph,
+                    license expiration date, and current status. This
+                    streamlines security checks and prevents penalties and
+                    delays by ensuring compliance with all driver information.
                     <br />
                     Key benefits:
                     <br />• Ensuring complete compliance and verification of
@@ -478,10 +477,10 @@ export default function RoadLogistics() {
                 <div className="container px-5  mx-auto">
                   <div class="text-center mb-5">
                     <p class="text-xl not-italic font-normal leading-7 text-center xl:w-4/5 lg:w-4/5 mx-auto text-gray-500">
-                      Road logistics in a truck company involve 6 the planning,
+                      {/* Road logistics in a truck company involve 6 the planning,
                       implementation, and control of the movement and storage of
                       goods and services from one place to another using trucks
-                      and other road vehicles.{" "}
+                      and other road vehicles.{" "} */}
                     </p>
                   </div>
                 </div>
@@ -501,29 +500,12 @@ export default function RoadLogistics() {
                       Outbound From Mines
                     </h1>
                     <p className="font-heebo text-lg font-normal text-justify  mb-20">
-                      Efficient route planning is crucial to ensure timely
-                      deliveries and reduce transportation costs. Companies use
-                      specialized software and GPS technology to optimize routes
-                      based on factors like distance, traffic conditions, and
-                      delivery schedules.
+                      Mine outbound logistics, powered by technology, has
+                      revolutionized the mining industry. By leveraging advanced
+                      tracking and automation systems, mines can optimize the
+                      transportation of raw materials and products, reducing
+                      costs and increasing overall productivity.
                     </p>
-                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 ml-4 mb-2 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                      READ MORE{" "}
-                      <span>
-                        {" "}
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          className="w-4 h-4 ml-2 "
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                    </button>
                   </div>
                 </div>
               </div>
