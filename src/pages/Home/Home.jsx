@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Manphoto from "../../assets/images/Manphoto.png";
 import siemens from "../../assets/images/siemens.png";
 import Automation1 from "../../assets/images/Automation1.png";
@@ -17,8 +17,13 @@ import One from "../../component/common/svg/One";
 
 import car from "../../assets/images/car.png";
 import header from "../../assets/images/header.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
+  const digitalRef = useRef();
+  const automateRef = useRef();
+  const edgeComputeRef = useRef();
+  const managedRef = useRef();
   return (
     <div className="static">
       {/* Section-Header */}
@@ -45,24 +50,49 @@ export default function Home() {
             >
               Digital Transformation & <br /> Innovation
             </h1>
-            <p data-aos="fade-right" className=" text-xl not-italic font-normal leading-7 font-heboo text-white   ">
+            <p
+              data-aos="fade-right"
+              className=" text-xl not-italic font-normal leading-7 font-heboo text-white   "
+            >
               Unlock your digital transformation & innovation potential. We help
               implement modern digital <br /> technologies to solve business
               problems, optimize processes and save cost.
             </p>
 
             <div className="justify-center mt-24 ">
-              <button className=" text-sm not-italic font-bold  text-white border-0 py-2  px-1  focus:outline-none hover:border-b-2 hover:border-white">
+              <button
+                onClick={() => {
+                  digitalRef.current?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className=" text-sm not-italic font-bold  text-white border-0 py-2  px-1  focus:outline-none hover:border-b-2 hover:border-white"
+              >
                 Digital Transformation and Innovation
               </button>
-              <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none  hover:border-b-2 hover:border-white ">
+              <button
+                onClick={() => {
+                  automateRef.current?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none  hover:border-b-2 hover:border-white "
+              >
                 Automation of Enterprise Workflows
               </button>
-              <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white">
+              <button
+                onClick={() => {
+                  edgeComputeRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white"
+              >
                 Edge Computing and Mobility
               </button>
 
-              <button className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white">
+              <button
+                onClick={() => {
+                  managedRef.current?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white"
+              >
                 Managed IT Services
               </button>
             </div>
@@ -72,10 +102,17 @@ export default function Home() {
 
       {/* Section-Flying Chital - Smart Agile Logistics at Fingertip */}
 
-      <section class="text-gray-600 body-font">
+      <section
+        data-aos="fade-right"
+        ref={digitalRef}
+        class="text-gray-600 body-font"
+      >
         <div class="container px-5 py-8 mx-auto ">
           <div class="flex flex-wrap w-full  flex-col items-center text-center">
-            <h1 data-aos="fade-down" className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
+            <h1
+              data-aos="fade-down"
+              className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900"
+            >
               <span className=" font-heebo text-[40px] text-primary">
                 Flying Chital -&nbsp;
               </span>
@@ -87,33 +124,39 @@ export default function Home() {
           <div data-aos="fade-up-right" className="flex flex-row  bg-white  ">
             <div className="lg:max-w-lg lg:w-1/4 md:w-1/3 w-1/6 mb-10 md:mb-0  px-3 py-10">
               <img
+                data-aos="zoom-in-down"
                 className="object-cover object-center "
                 alt="hero"
                 src={smalllogo}
               />
             </div>
             <div className="text-3xl not-italic font-bold leading-9 lg:flex-grow md:w-1/2 lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-5 text-[#30343F] ">
-              <div data-aos="fade-up-left" className="flex  h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo ">
+              <div
+                data-aos="fade-up-left"
+                className="flex  h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo "
+              >
                 <One />
               </div>
               <div className="flex justify-start ">
-                <button className="inline-flex text-white font-bold bg-[#30343F] border-0 py-2 px-6 ml-4 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                  READ MORE{" "}
-                  <span>
-                    {" "}
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      className="w-4 h-4 ml-2 "
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </button>
+                <Link to="/flyingchital">
+                  <button className="inline-flex text-white font-bold bg-[#30343F] border-0 py-2 px-6 ml-4 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                    READ MORE{" "}
+                    <span>
+                      {" "}
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        className="w-4 h-4 ml-2 "
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -121,7 +164,11 @@ export default function Home() {
       </section>
 
       {/* Section- Automation of Enterprise Workflows */}
-      <section className="text-gray-600 body-font mt-0">
+      <section
+        data-aos="fade-left"
+        ref={automateRef}
+        className="text-gray-600 body-font mt-0"
+      >
         <div className="container mx-auto flex  px-5 py-12 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
             <img
@@ -185,6 +232,8 @@ export default function Home() {
             </section> */}
 
       <div
+        data-aos="fade-right"
+        ref={edgeComputeRef}
         className="flex items-center justify-center  bg-cover bg-no-repeat "
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${home1}) lightgray 50% / cover no-repeat`,
@@ -208,7 +257,11 @@ export default function Home() {
       </div>
       {/* Section- Managed IT Services*/}
 
-      <section className="text-gray-600 body-font">
+      <section
+        data-aos="fade-up"
+        ref={managedRef}
+        className="text-gray-600 body-font"
+      >
         <div className="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
@@ -225,8 +278,12 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap -mx-4 -mb-10 text-center">
             <div className="sm:w-1/2 mb-10 px-4">
-              <div className="rounded-lg h-64 overflow-hidden">
+              <div
+                className="rounded-lg h-64 overflow-hidden"
+                data-aos="fade-up-left"
+              >
                 <img
+                  data-aos="zoom-in"
                   alt="content"
                   className="object-cover object-center h-full w-full"
                   src={Empower}
@@ -243,9 +300,10 @@ export default function Home() {
                 cloud networks.
               </p>
             </div>
-            <div className="sm:w-1/2 mb-10 px-4">
+            <div className="sm:w-1/2 mb-10 px-4" data-aos="fade-up-right">
               <div className="rounded-lg h-64 overflow-hidden">
                 <img
+                  data-aos="zoom-in"
                   alt="content"
                   className="object-cover object-center h-full w-full"
                   src={Software}
