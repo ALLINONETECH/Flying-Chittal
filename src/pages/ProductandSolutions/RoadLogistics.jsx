@@ -165,20 +165,20 @@ export default function RoadLogistics() {
                 </div>
 
                 <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Automated Validation & Verification
+                  Automated Transit & Transaction Points
                 </h2>
                 <div className="px-6 pb-6">
                   <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    Our digital solutions enhance efficiency and accuracy by
-                    automating the validation & verification process, reducing
-                    human error and saving time. They provide a secure and
-                    tamper-proof digital record of all transactions, ensuring
-                    transparency and trust among stakeholders. In logistics
-                    management, this technology allows for real-time tracking,
-                    reducing delays, and enhancing supply chain visibility.
-                    Additionally, it streamlines compliance, mitigates fraud,
-                    and ensures that all parties involved in the process can
-                    rely on the integrity and authenticity of the data.
+                    Automated transaction and transit points in logistics
+                    management are revolutionizing the industry by harnessing
+                    state-of-the-art technologies. These points facilitate
+                    seamless and efficient movement of goods through real-time
+                    monitoring, automation, and data analytics. Advanced systems
+                    like RFID, IoT sensors, and AI-driven platforms ensure
+                    accurate tracking, reduce human error, and optimize the flow
+                    of products. They enable swift transactions, minimize
+                    delays, and enhance security, making the entire supply chain
+                    more reliable and cost-effective.
                   </p>
                 </div>
               </div>
