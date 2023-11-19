@@ -1,73 +1,116 @@
 import React from "react";
 import Rightarr from "../../assets/images/Rightarr.png";
 import smalllogo from "../../assets/images/smalllogo.png";
-import Citem1 from "../../assets/images/flaying-item1.png";
-import Citem2 from "../../assets/images/flaying-item2.png";
-import Citem3 from "../../assets/images/flaying-item3.png";
+import logisticfire2 from "../../assets/images/logisticfire2.png";
+import logisticfire from "../../assets/images/logisticfire.png";
+import Citem3 from "../../assets/images/road.jpg";
 import right from "../../assets/images/right.png";
 import group from "../../assets/images/Group 14.png";
 import sc1 from "../../assets/images/sc1.png";
 import sc2 from "../../assets/images/sc2.png";
 import sc3 from "../../assets/images/sc3.png";
 import sc4 from "../../assets/images/sc4.png";
+import fclogo from "../../assets/images/fclogo.png";
+import raillogistic from "../../assets/images/raillogistic.png";
+import roadogistic from "../../assets/images/roadlogistic.png";
+import telematics from "../../assets/images/telematics.png";
+import customisedfeature from "../../assets/images/customisedfeature.png";
+import IconFC from "../../assets/images/IconFC.png";
+import flyingchitalbg from "../../assets/images/flyingchitalbg.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import handicon from "../../assets/images/handicon.png";
+import mobilicon from "../../assets/images/mobileicon.png";
+import manicon from "../../assets/images/man.png";
+import moneyicon from "../../assets/images/money.png";
+import awardicon from "../../assets/images/award.png";
+import right1 from "../../assets/images/right1.png";
+import conclusion from "../../assets/images/65723.jpg";
 import { Link } from "react-router-dom";
 export default function flyingChital() {
   return (
     <div className="">
-      <section className="bg-[#3734a9]  dark:bg-gray-900 rounded-br-[100px]">
+      <section
+        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        style={{
+          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${flyingchitalbg})`,
+        }}
+      >
         <nav
           x-data="{ isOpen: false }"
           className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
         >
           <div className="flex items-center justify-between">
-            {/* <a href="#">
-                            <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt />
-                        </a> */}
-            {/* Mobile menu button */}
             <div className="flex lg:hidden"></div>
           </div>
-          {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div>
         </nav>
-        <div className="container px-6 py-16 mx-auto text-center">
-          <div className="max-w-lg mx-auto">
-            {/* <h1 className="text-6xl font-semibold  dark:text-white lg:text-6xl mt-6 text-gray-200 dark:text-gray-300">Flying Chital HEM/HMV/LMV  Mobile Asset Management System</h1> */}
-            <h2 className="mt-6 text-gray-200 dark:text-gray-300  text-4xl font-semibold">
-              Flying Chital
-            </h2>
-            <p className="mt-6 text-gray-200 dark:text-gray-300 ">
-              Smart Agile Logistics at Fingertip...
-            </p>
-            <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button>
-            <p className="mt-3 text-sm text-gray-400 "></p>
-          </div>
-        </div>
-      </section>
-
-      <section className="text-gray-600 body-font  rounded-tl-[50px] rounded-br-[50px] ">
-        <div className="container px-5 pt-10 mx-auto">
-          <div class="text-center mb-5">
-            <h1 class="sm:text-4xl text-4xl font-medium title-font text-gray-900 mb-1">
+        <div className="container px-6 py-16 mx-auto text-start">
+          <div className=" mx-auto">
+            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
               Flying Chital
             </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-            <div class="flex justify-center">
-              <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-            </div>
+            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+              Smart Agile Logistics at Fingertip...
+            </p>
+            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
+              <div className="flex gap-2">
+                <div>
+                  <span>
+                    <img className="" src={HomeIcon} alt="" />
+                  </span>
+                </div>
+                <div classNAme="justify">
+                  {" "}
+                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
+                    {" "}
+                    Home
+                  </span>
+                  <span className="font-[700] font-heebo text-[32px] ">
+                    {" "}
+                    / Flying Chital
+                  </span>{" "}
+                </div>
+              </div>
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-5 mx-auto ">
+      <section class="text-gray-600 body-font mt-6">
+        <div class="container px-5 py-2 mx-auto ">
+          <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl text-center text-gray-900 mb-16">
+            <span className=" font-heebo text-[40px] text-primary">
+              Flyin
+              <span className="border-b-4 border-secondary">g&nbsp;</span>
+            </span>
+            Chital
+          </h1>
           <div className="flex flex-row ml-20  ">
-            <div className=" m-auto mb-28">
-              <img className="object-cover w-auto" alt="hero" src={smalllogo} />
+            <div className="flex flex-col items-center m-auto mb-44">
+              <img
+                className="object-cover w-[300px] mb-4"
+                alt="hero"
+                src={fclogo}
+              />
+              <div className="flex flex-col m-2 p-4 space-y-4 bg-[#EAEFF3] w-[300px]">
+                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo text-xl not-italic font-medium text-primary bg-[#dce0ee]">
+                  Logistics Intelligence
+                </div>
+                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo text-xl not-italic font-medium text-secondary bg-[#ece3e6]">
+                  Logistics Connectivity
+                </div>
+                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo text-xl not-italic font-medium text-black bg-[#dddde6]">
+                  Real-Time Virtualization
+                </div>
+              </div>
             </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-5">
-              <div className="my-2 rounded-md p-5 bg-slate-200">
-                <p className="mb-4 text-justify text-xl mt-2 mr-2">
+
+            <div className="lg:flex-grow md:w-1/2 lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-2">
+              <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo mb-2 mx-2">
+                Multimodal Integrated Logistics Management
+              </h1>
+              <div className="my-2 rounded-md p-2 bg-slate-200 w-5/6">
+                <p className=" not-italic font-normal leading-7  text-[#30343F]mb-4 text-justify text-xl mt-2 mr-2 font-heebo">
                   Flying Chital stands as a trailblazing, multi-modal integrated
                   logistics management platform, revolutionizing the logistics
                   landscape with its comprehensive suite of services. By
@@ -77,8 +120,11 @@ export default function flyingChital() {
                   intelligence, connectivity, and real-time virtualization.{" "}
                 </p>
               </div>
-              <div className="bg-orange-50 p-5">
-                <p className="mb-4 text-justify text-xl mt-2 mr-2">
+              <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo my-2 mx-2">
+                Decision Making Information at Fingertip
+              </h1>
+              <div className="bg-orange-50 my-2 rounded-md p-2 w-5/6">
+                <p className=" not-italic font-normal leading-7  text-[#30343F] mb-4 text-justify text-xl mt-2 mr-2 ">
                   Positioned at the forefront of its category, Flying Chital's
                   mobility feature offers 'Smart Agile Logistics Operations at
                   Fingertip,' ensuring unparalleled accessibility and 100%
@@ -90,8 +136,11 @@ export default function flyingChital() {
                   customizable dashboards and reports.{" "}
                 </p>
               </div>
-              <div className="my-2 rounded-md p-5 bg-zinc-100">
-                <p className="mb-4 text-justify text-xl mt-2 mr-2">
+              <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo my-2 mx-2">
+                End to End Visibility
+              </h1>
+              <div className="my-2 rounded-md p-2 bg-zinc-100 w-5/6">
+                <p className=" not-italic font-normal leading-7  text-[#30343F]mb-4 text-justify text-xl mt-2 mr-2 ">
                   This innovative platform not only ensures end-to-end
                   visibility from source to destination but also significantly
                   reduces turnaround times, operational expenses, and the risks
@@ -112,198 +161,38 @@ export default function flyingChital() {
       <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-100">
         <div className="container px-32 py-5 mx-auto">
           <div className="flex flex-wrap -m-4 ">
-            <div className="container px-5 pt-20 mx-auto">
-              <div class="text-center mb-5">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-                  Modules & Features
-                </h1>
-                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-                <div class="flex justify-center">
-                  <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
+            <div className=" w-auto md:w-1/2 p-4">
+              <Link to="/railLogistics">
+                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl">
+                  <img className=" w-full" src={raillogistic} alt="" />
                 </div>
-              </div>
+              </Link>
+            </div>
+            <div className=" w-auto md:w-1/2 p-4">
+              <Link to="/roadLogistics">
+                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl">
+                  <img className=" w-full" src={roadogistic} alt="" />
+                </div>
+              </Link>
+            </div>
+            <div className=" w-auto md:w-1/2 p-4">
+              <Link to="/telematics">
+                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl">
+                  <img className=" w-full" src={telematics} alt="" />
+                </div>
+              </Link>
             </div>
 
             <div className=" w-auto md:w-1/2 p-4">
-              <div
-                className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl border-2 border-black"
-                style={{
-                  width: "full",
-                  height: "full",
-                  backgroundSize: "cover",
-                  // backgroundImage:`url(${Card10})`,
-                  backgroundColor: "black",
-                }}
-              >
-                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">
-                  Rail Logistics
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className="leading-relaxed text-white text-justify">
-                    Rail logistics, also known as rail freight logistics or rail
-                    transportation logistics, refers to the process of planning,
-                    implementing, and controlling the efficient movement of
-                    goods, services, or information via railroads.{" "}
-                  </p>
+              <Link to="/customized">
+                <div className=" border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl border-2 ">
+                  <img
+                    className="rounded-tr-[15px] w-full"
+                    src={customisedfeature}
+                    alt=""
+                  />
                 </div>
-
-                <div className="flex justify-end mx-2 ">
-                  <Link to="/railLogistics">
-                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 ml-4 mb-2 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                      READ MORE{" "}
-                      <span>
-                        {" "}
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          className="w-4 h-4 ml-2 "
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className=" w-auto md:w-1/2 p-4">
-              <div
-                className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl border-2 border-black"
-                style={{
-                  width: "full",
-                  height: "full",
-                  backgroundSize: "cover",
-                  // backgroundImage:`url(${Card10})`,
-                  backgroundColor: "black",
-                }}
-              >
-                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">
-                  Road Logistics
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className="leading-relaxed text-white text-justify">
-                    Road logistics, also known as road transport or freight
-                    transportation by road, is the process of moving goods and
-                    commodities from one place to another using trucks, vans,
-                    and other vehicles on roads and highways.
-                  </p>
-                </div>
-                <div className="flex justify-end mx-2 ">
-                  <Link to="/roadLogistics">
-                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 ml-4 mb-2 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                      READ MORE{" "}
-                      <span>
-                        {" "}
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          className="w-4 h-4 ml-2 "
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className=" w-auto md:w-1/2 p-4">
-              <div
-                className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl border-2 border-black"
-                style={{
-                  width: "full",
-                  height: "full",
-                  backgroundSize: "cover",
-                  // backgroundImage:`url(${Card10})`,
-                  backgroundColor: "black",
-                }}
-              >
-                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">
-                  Telematics
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className="leading-relaxed text-white text-justify">
-                    Telematics refers to the integration of telecommunications
-                    and informatics, primarily in vehicles. It involves the use
-                    of technology to monitor and transmit information about
-                    vehicles.{" "}
-                  </p>
-                </div>
-                <div className="flex justify-end mx-2 ">
-                  <Link to="/telematics">
-                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 ml-4 mb-2 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                      READ MORE{" "}
-                      <span>
-                        {" "}
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          className="w-4 h-4 ml-2 "
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className=" w-auto md:w-1/2 p-4">
-              <div
-                className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full bg-red-400 shadow-lg  md:shadow-xl border-2 border-black"
-                style={{
-                  width: "full",
-                  height: "full",
-                  backgroundSize: "cover",
-                  // backgroundImage:`url(${Card10})`,
-                  backgroundColor: "black",
-                }}
-              >
-                <h2 className="text-4xl text-white font-bold title-font mt-60 p-6">
-                  Customized Features
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className="leading-relaxed text-white text-justify">
-                    Logistics involves the management and coordination of the
-                    movement of goods, services, and information throughout the
-                    supply chain. Customized features in logistics can enhance
-                    efficiency & accuracy.
-                  </p>
-                </div>
-                <div className="flex justify-end mx-2 ">
-                  <Link to="/customized">
-                    <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 ml-4 mb-2 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                      READ MORE{" "}
-                      <span>
-                        {" "}
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          className="w-4 h-4 ml-2 "
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -313,22 +202,22 @@ export default function flyingChital() {
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center ">
           <div className=" relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center  ">
             <h1 className="title-font sm:text-4xl text-3xl  font-medium text-gray-900  mt-5">
-              Flyingchital does
+              <span className=" text-[#3734a9]">High</span>lights
             </h1>
             <div class="flex justify-center">
               <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
             </div>
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed font-bold">
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 Digitalization
-                <div className="flex mt-5">
+                <div className="flex gap-2">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base font-normal">
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
                     Reduced Paper and Menial Work
                   </p>
                 </div>
@@ -337,33 +226,32 @@ export default function flyingChital() {
 
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 Weighment Solutions
-                <div className="flex mt-5">
+                <div className="flex gap-2">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base font-normal">
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
                     Man less, In Motion Weigh Bridges
                   </p>
                 </div>
               </p>
             </div>
+
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 Mobility
-                <div className="flex mt-5">
+                <div className="flex gap-2">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base font-normal">
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
                     Mobile App along with web version
                   </p>
                 </div>
@@ -371,17 +259,16 @@ export default function flyingChital() {
             </div>
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 Automation
-                <div className="flex mt-5">
+                <div className="flex gap-2">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base font-normal">
-                    Vehicle & Driver Assignment, Entry, Exit, Weighment,
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                    Vehicle & Driver Assignment, Entry, Exit, Weighment, <br />
                     Validation & Verification, Documentation
                   </p>
                 </div>
@@ -389,16 +276,15 @@ export default function flyingChital() {
             </div>
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 Telematics
-                <div className="flex mt-5">
+                <div className="flex gap-2">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base font-normal">
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
                     GPS Trace and Track, Fixed/Portable/Solar
                   </p>
                 </div>
@@ -408,51 +294,62 @@ export default function flyingChital() {
           <div className=" relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center  ">
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 HEM/HMV/LMV Management
-                <div className="flex mt-5">
+                <div className="flex gap-2">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base font-normal">
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
                     Trip level within mines, plants, port
                   </p>
                 </div>
               </p>
             </div>
+
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
-                Analytics & Customised Reports{" "}
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
-                Single Integrated Digital Platform
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
-                Multi Modal
-                <div className="flex mt-5">
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Analytics & Customised Reports
+                <div className="flex gap-2">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base font-normal">
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
+              </p>
+            </div>
+
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Single Integrated Digital Platform
+                <div className="flex gap-2">
+                  <span>
+                    <img className="" src={IconFC} alt="" />
+                  </span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
+              </p>
+            </div>
+
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Multi Modal
+                <div className="flex gap-2">
+                  <span>
+                    <img className="" src={IconFC} alt="" />
+                  </span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
                     Road, Rail, Port Terminals
                   </p>
                 </div>
@@ -460,16 +357,15 @@ export default function flyingChital() {
             </div>
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base font-bold">
-                {" "}
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 End to End Visibility
-                <div className="flex mt-5">
+                <div className="flex gap-2">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base font-normal">
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
                     Anytime/Anywhere/Any Device
                   </p>
                 </div>
@@ -482,85 +378,126 @@ export default function flyingChital() {
       <section className="text-gray-600 body-font mt-10 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center ">
           <div className=" relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center  ">
-            <h1 className="title-font sm:text-4xl text-3xl  font-medium text-gray-900  mt-5">
-              Logistics – Every Minute Fire Fighting
+            {/* <h1 className="title-font sm:text-4xl text-3xl  font-medium text-gray-900  mt-5">Logistics – Every Minute Fire Fighting</h1> */}
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+              <span className=" text-indigo-800 font-bold text-[40px] ">
+                Logistics
+              </span>
+              <span className=" text-[40px] font-heebo font-bold ">
+                {" "}
+                Every Minute Fire Fighting
+              </span>
             </h1>
-            <div class="flex justify-center">
-              <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-            </div>
+            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+            {/* <div class="flex justify-center">
+                            <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
+                        </div> */}
+
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base">
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 Current process disjointed
+                <div className="flex gap-2">
+                  <span>{/* <img className="" src={IconFC} alt="" /> */}</span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
               </p>
             </div>
 
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base">
-                Data collected offline - Not leveraged to full potential{" "}
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Data collected offline - Not leveraged to full potential
+                <div className="flex gap-2">
+                  <span>{/* <img className="" src={IconFC} alt="" /> */}</span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
               </p>
             </div>
+
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base">
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 Manual and paper-based system
+                <div className="flex gap-2">
+                  <span>{/* <img className="" src={IconFC} alt="" /> */}</span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
+              </p>
+            </div>
+
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                High dependency on manpower
+                <div className="flex gap-2">
+                  <span>{/* <img className="" src={IconFC} alt="" /> */}</span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
               </p>
             </div>
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base">
-                High dependency on manpower{" "}
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Higher Turn Around Times (TAT) - Higher Cost
+                <div className="flex gap-2">
+                  <span>{/* <img className="" src={IconFC} alt="" /> */}</span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
               </p>
             </div>
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base">
-                Higher TATs - higher cost{" "}
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base">
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                 Limited visibility and control
+                <div className="flex gap-2">
+                  <span>{/* <img className="" src={IconFC} alt="" /> */}</span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
               </p>
             </div>
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base">Delays and chaos</p>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Delays and chaos
+                <div className="flex gap-2">
+                  <span>{/* <img className="" src={IconFC} alt="" /> */}</span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                </div>
+              </p>
             </div>
           </div>
           <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg">
             <img
               className="object-cover object-center absolute ml-52 bottom-48"
               alt="hero"
-              src={Citem2}
+              src={logisticfire}
             />
             <img
               className="object-cover object-center  rounded-bl-lg"
               alt="hero"
-              src={Citem1}
+              src={logisticfire2}
             />
           </div>
         </div>
       </section>
 
       <section className="text-gray-600 body-font mt-0">
-        <div className="container mx-auto flex pl-56 py-12 md:flex-row flex-col items-center">
+        <div className="container mx-auto flex pl-28 py-12 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
             <img
               className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
@@ -569,114 +506,149 @@ export default function flyingChital() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
-              Smart Agile Logistics – Smooth Operations
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+              <span className=" text-indigo-800 font-bold text-[40px] ">
+                Smart
+              </span>
+              <span className=" text-[40px] font-heebo font-bold ">
+                {" "}
+                Agile Logistics – Smooth Operations
+              </span>
             </h1>
-            <div class="flex justify-center">
-              <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-            </div>
+            <div className="w-16 h-1  rounded-full bg-orange-400 inline-flex"></div>
 
-            <div className="mx-auto flex py-12 md:flex-row flex-col ">
+            <div className="mx-auto flex py-5 md:flex-row flex-col ">
               <div>
                 <div className="flex mt-5">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="p-1" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base">
+                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                     Reduced
-                    <div className="flex mt-2">
+                    <div className="flex gap-2">
                       <span>
-                        <img className="p-1" src={Rightarr} alt="" />
+                        <img className="" src={IconFC} alt="" />
                       </span>
-                      <p className="leading-relaxed text-base">
-                        Turn Around Time (TAT){" "}
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                        Turn Around
                       </p>
                     </div>
-                    <div className="flex mt-2">
+                    <div className="flex gap-2">
                       <span>
-                        <img className="p-1" src={Rightarr} alt="" />
+                        <img className="" src={IconFC} alt="" />
                       </span>
-                      <p className="leading-relaxed text-base">
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
                         Cost of Operations
                       </p>
                     </div>
-                    <div className="flex mt-2">
+                    <div className="flex gap-2">
                       <span>
-                        <img className="p-1" src={Rightarr} alt="" />
+                        <img className="" src={IconFC} alt="" />
                       </span>
-                      <p className="leading-relaxed text-base">
-                        Revenue Leakage/Los{" "}
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                        Revenue Leakage/Los
                       </p>
                     </div>
-                    <div className="flex mt-2">
+                    <div className="flex gap-2">
                       <span>
-                        <img className="p-1" src={Rightarr} alt="" />
+                        <img className="" src={IconFC} alt="" />
                       </span>
-                      <p className="leading-relaxed text-base"> Fatigue</p>
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                        Fatigue
+                      </p>
                     </div>
                   </p>
                 </div>
                 <div className="flex mt-5">
                   <span>
-                    <img className="p-1" src={Rightarr} alt="" />
+                    <img className="p-1" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base">
+                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                     Increased
-                    <div className="flex mt-2">
+                    <div className="flex gap-2">
                       <span>
-                        <img className="p-1" src={Rightarr} alt="" />
+                        <img className="" src={IconFC} alt="" />
                       </span>
-                      <p className="leading-relaxed text-base">
-                        Production Efficiency{" "}
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                        Production Efficiency
                       </p>
                     </div>
-                    <div className="flex mt-2">
+                    <div className="flex gap-2">
                       <span>
-                        <img className="p-1" src={Rightarr} alt="" />
+                        <img className="" src={IconFC} alt="" />
                       </span>
-                      <p className="leading-relaxed text-base">Top line</p>
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                        Top line
+                      </p>
                     </div>
-                    <div className="flex mt-2">
+                    <div className="flex gap-2">
                       <span>
-                        <img className="p-1" src={Rightarr} alt="" />
+                        <img className="" src={IconFC} alt="" />
                       </span>
-                      <p className="leading-relaxed text-base">Bottom line</p>
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                        Bottom line
+                      </p>
                     </div>
                   </p>
                 </div>
               </div>
               <div className="pl-20 mt-4">
-                <div className="flex mt-2">
+                <div className="flex mt-5">
                   <span>
-                    <img className="p-1" src={right} alt="" />
+                    <img className="p-1" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base">
+                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                     End to End Visibility – Real Time
+                    <div className="flex gap-2">
+                      <span>
+                        {/* <img className="" src={IconFC} alt="" /> */}
+                      </span>
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                    </div>
                   </p>
                 </div>
 
-                <div className="flex mt-2">
+                <div className="flex mt-5">
                   <span>
-                    <img className="p-1" src={right} alt="" />
+                    <img className="p-1" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base">
+                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                     Trip Level Monitoring and Control
+                    <div className="flex gap-2">
+                      <span>
+                        {/* <img className="" src={IconFC} alt="" /> */}
+                      </span>
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                    </div>
                   </p>
                 </div>
-                <div className="flex mt-2">
+                <div className="flex mt-5">
                   <span>
-                    <img className="p-1" src={right} alt="" />
+                    <img className="p-1" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base">
+                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
                     Proactive Preventive Action
+                    <div className="flex gap-2">
+                      <span>
+                        {/* <img className="" src={IconFC} alt="" /> */}
+                      </span>
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                    </div>
                   </p>
                 </div>
-                <div className="flex mt-2">
+                <div className="flex mt-5">
                   <span>
-                    <img className="p-1" src={right} alt="" />
+                    <img className="p-1" src={IconFC} alt="" />
                   </span>
-                  <p className="leading-relaxed text-base">
-                    No Need for Reactive Corrective Action{" "}
+                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                    No need for Reactive <br />
+                    Corrective Action
+                    <div className="flex gap-2">
+                      <span>
+                        {/* <img className="" src={IconFC} alt="" /> */}
+                      </span>
+                      <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
+                    </div>
                   </p>
                 </div>
               </div>
@@ -688,7 +660,7 @@ export default function flyingChital() {
       <section className="text-gray-600 body-font bg-indigo-800 rounded-tl-[50px] rounded-br-[50px]">
         <div className="container px-5 py-10 mx-auto">
           <div class="text-center mb-14">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-1">
+            <h1 class=" text-[5rem] font-bold title-font text-white mb-1">
               Features
             </h1>
             <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
@@ -702,11 +674,12 @@ export default function flyingChital() {
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
                   <img className="p-1" src={group} alt="" />
                 </div>
-                <h1 className="text-xl text-gray-900 font-bold title-font mb-2">
-                  Single Integrated Solution Multi Model-Road and Rail
+                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
+                  Single Integrated Solution <br />
+                  Multi Modal-Road and Rail
                 </h1>
                 <div className="">
-                  <p className="leading-relaxed text-base">
+                  <p className="text-xl not-italic font-normal leading-7 ">
                     Competition is trying to solve individual ecosystem
                     problems.
                   </p>
@@ -719,15 +692,14 @@ export default function flyingChital() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={group} alt="" />
+                  <img className="p-1" src={handicon} alt="" />
                 </div>
-                <h1 className="text-xl text-gray-900 font-bold title-font mb-2">
-                  Case Flow Optimization
+                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
+                  Cash Flow Optimization
                 </h1>
                 <div className="">
-                  <p className="leading-relaxed text-base">
-                    SCL module optimizes Cash flow for enterprises and
-                    transports.
+                  <p className="text-xl not-italic font-normal leading-7 ">
+                    Optimizes cash flow for enterprises and transports.
                   </p>
                 </div>
               </div>
@@ -739,14 +711,15 @@ export default function flyingChital() {
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
 
-                  <img className="p-1" src={group} alt="" />
+                  <img className="p-1" src={mobilicon} alt="" />
                 </div>
-                <h1 className="text-xl text-gray-900 font-bold title-font mb-2">
+                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
                   Complete Mobility
                 </h1>
                 <div className="">
-                  <p className="leading-relaxed text-base">
-                    Mobile based deep integration with ERP platforms.
+                  <p className="text-xl not-italic font-normal leading-7 ">
+                    Integration with ERP/SAP/TALLY platforms for seamless
+                    exchange of data and information.
                   </p>
                 </div>
               </div>
@@ -757,16 +730,16 @@ export default function flyingChital() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={group} alt="" />
+                  <img className="p-1" src={awardicon} alt="" />
                 </div>
-                <h1 className="text-xl text-gray-900 font-bold title-font mb-2">
-                  Visibility and control
+                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
+                  Visibility and Control
                 </h1>
 
                 <div className="">
-                  <p className="leading-relaxed text-base">
+                  <p className="text-xl not-italic font-normal leading-7 ">
                     Enterprises, Transporters, Truck owners get complete
-                    visibility and control of their bussiness.
+                    visibility and control of their business.
                   </p>
                 </div>
               </div>
@@ -777,15 +750,15 @@ export default function flyingChital() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={group} alt="" />
+                  <img className="p-1" src={manicon} alt="" />
                 </div>
-                <h1 className="text-xl text-gray-900 title-font mb-2 font-bold">
+                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
                   Profiles
                 </h1>
                 <div className="">
-                  <p className="leading-relaxed text-base">
-                    Instead of eliminating stakeholders, We ‘empower’ them
-                    through our platform{" "}
+                  <p className="text-xl not-italic font-normal leading-7 ">
+                    Digital Workspace and Profiles empower all stakeholders and
+                    users.{" "}
                   </p>
                 </div>
               </div>
@@ -796,14 +769,15 @@ export default function flyingChital() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={group} alt="" />
+                  <img className="p-1" src={moneyicon} alt="" />
                 </div>
-                <h1 className="text-xl text-gray-900 font-bold title-font mb-2">
+                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
                   Revenue Optimization
                 </h1>
                 <div className="pb-6">
-                  <p className="leading-relaxed text-base">
-                    Enterprises reduce costs. Transporters increase revenue. All
+                  <p className="text-xl not-italic font-normal leading-7 ">
+                    Enterprises reduce cost. Transporters increase revenue. Win
+                    Win for All.
                   </p>
                 </div>
               </div>
@@ -855,14 +829,95 @@ export default function flyingChital() {
             </div>
             <div className="flex mt-5">
               <span>
-                <img className="p-1" src={Rightarr} alt="" />
+                <img className="p-1" src={IconFC} alt="" />
               </span>
-              <p className="leading-relaxed text-base">
-                Current process disjointed
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Single Integrated Digital Platform
+                <div className="flex gap-2">
+                  <span>
+                    <img className="" src={IconFC} alt="" />
+                  </span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                    Real Time Situational Awareness- Proactive Action not
+                    Reactive Response
+                  </p>
+                </div>
+              </p>
+            </div>
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Multi Modal Transport
+                <div className="flex gap-2">
+                  <span>
+                    <img className="" src={IconFC} alt="" />
+                  </span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                    Road and Rail Network – Combined/ Independent as Stand Alone
+                  </p>
+                </div>
+              </p>
+            </div>
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Complete Visibility
+                <div className="flex gap-2">
+                  <span>
+                    <img className="" src={IconFC} alt="" />
+                  </span>
+                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
+                    Inbound/Outbound – Within Mines/Plants/Ports/Railway Yards
+                  </p>
+                </div>
+              </p>
+            </div>
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Automation Eliminates Inefficient Manual Processes
+              </p>
+            </div>
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Reduced Costs, Wastage, Pilferage – Revenue Leakage
+              </p>
+            </div>
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Enhanced Efficiency, Transparency, Reliability
+              </p>
+            </div>
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Seamless Interface with Govt. & Regulatory Portals
+              </p>
+            </div>
+            <div className="flex mt-5">
+              <span>
+                <img className="p-1" src={IconFC} alt="" />
+              </span>
+              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
+                Aligned with Logistics 4.0
               </p>
             </div>
 
-            <div className="flex mt-5">
+            {/* <div className="flex mt-5">
               <span>
                 <img className="p-1" src={Rightarr} alt="" />
               </span>
@@ -907,18 +962,18 @@ export default function flyingChital() {
                 <img className="p-1" src={Rightarr} alt="" />
               </span>
               <p className="leading-relaxed text-base">Delays and chaos</p>
-            </div>
+            </div> */}
           </div>
           <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg">
-            <img
+            {/* <img
               className="object-cover object-center absolute ml-52 bottom-48"
               alt="hero"
-              src={Citem2}
-            />
+              src={right1}
+            /> */}
             <img
-              className="object-cover object-center  rounded-bl-lg"
+              className="object-cover object-center  rounded-bl-3xl rounded-tr-3xl"
               alt="hero"
-              src={Citem1}
+              src={conclusion}
             />
           </div>
         </div>
