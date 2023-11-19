@@ -74,7 +74,7 @@ export default function RoadLogistics() {
                     Flying Chital
                   </span>
                   <span className="font-[700] font-heebo text-[32px] ">
-                    / Raod Logistics
+                    / Road Logistics
                   </span>
                 </div>
               </div>

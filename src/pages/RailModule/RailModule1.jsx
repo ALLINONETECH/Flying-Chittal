@@ -31,7 +31,7 @@ export default function RailModule1() {
                 <div className="container px-6 py-16 mx-auto text-start">
                     <div className=" mx-auto">
                         <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
-                            Rail Solution Modules 1
+                            Rail Solution Module 1
                         </h1>
                         <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
                             We provide Smart Solutions to Simplify Your Future
