@@ -4,6 +4,8 @@ import React from "react";
 import Dev from "../../assets/images/Dev1.png";
 import Pradyumna from "../../assets/images/Pradyumna1.png";
 import Amar from "../../assets/images/Amar1.png";
+import parshu from "../../assets/images/parshu.jpeg";
+import kalki from "../../assets/images/kalki.jpeg";
 import Samba from "../../assets/images/Samba1.png";
 import Who1 from "../../assets/images/Who1.png";
 import Who2 from "../../assets/images/Who2.png";
@@ -566,6 +568,83 @@ export default function About() {
             </div>
           </div>
 
+          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                Kalikinkar Panda
+              </h1>
+              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                Mentor & Director Business Development
+              </p>
+              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
+                Bringing a wealth of experience amassed over a distinguished
+                career spanning 38 years across the realms of Aluminium, Power,
+                and Mining industries, Shri K. K. Panda stands as a stalwart
+                Director of Business Development. His exceptional journey,
+                adorned with academic excellence—a B.Tech in Electrical
+                Engineering and an MS in Environmental Science—reflects a
+                commitment to both technical proficiency and environmental
+                stewardship. Formerly serving as the Executive Director of
+                NALCO, Panda's tenure at the helm signifies a treasure trove of
+                industry insights and strategic foresight. His exceptional
+                leadership and comprehensive understanding of the industrial
+                landscape elevate him as a guiding force, offering invaluable
+                perspectives on Environmental, Social, and Governance (ESG)
+                practices. Panda's presence on our board is a testament to our
+                commitment to shaping a future where environmental consciousness
+                converges harmoniously with business success.
+              </p>
+              <span>
+                <img src={Socialicon} alt="" />
+              </span>
+            </div>
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
+              <img
+                className="object-cover object-center h-[420px] rounded-3xl"
+                alt="hero"
+                src={kalki}
+              />
+            </div>
+          </div>
+          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
+              <img
+                className="object-cover object-center h-[450px] "
+                alt="hero"
+                src={parshu}
+              />
+            </div>
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                Parshuram Panigrahi
+              </h1>
+              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                Consulting Advisor
+              </p>
+              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
+                With over two decades of dedicated leadership in product
+                engineering and a track record of pioneering SaaS products,
+                Parshuram Panigrahi stands as a luminary Consulting Advisor at
+                our company guiding innovation and transformation. His
+                invaluable expertise spans the realms of technological
+                innovation, digital transformation, and customer-centric
+                solutions, shaping the landscape of modern business. A graduate
+                in System Science and Automation from the prestigious IISc
+                Bangalore, Panigrahi is a visionary who has cultivated a culture
+                of innovation. His remarkable contributions include spearheading
+                the development of groundbreaking solutions, resulting in a
+                portfolio boasting 10+ patents, a testament to his relentless
+                pursuit of excellence. His proficiency extends to architecting
+                large-scale internet applications, designing modern data
+                pipelines capable of managing terabytes of information, and
+                constructing AI/ML-powered low-code platforms, setting new
+                benchmarks in technological advancement.
+              </p>
+              <span>
+                <img src={Socialicon} alt="" />
+              </span>
+            </div>
+          </div>
           {/* <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">

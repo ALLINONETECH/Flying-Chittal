@@ -58,8 +58,8 @@ const Navbar = () => {
           to: "/aquacultureAutomation",
         },
         {
-          label: "Indigenous Professional Mobile Radio (TETRA PMR)",
-          to: "/aquacultureAutomation",
+          label: "Professional Mobile Radio (TETRA PMR)",
+          to: "/professional",
         },
       ],
     },
@@ -69,7 +69,7 @@ const Navbar = () => {
       subMenu: [
         // { label: "Blog", to: "/blog" },
         { label: "Blog", to: "/challenge" },
-        { label: "Help Centre", to: "/service2" },
+        { label: "Help Centre", to: "/help" },
         // { label: "Market updates", to: "/service3" },
       ],
     },

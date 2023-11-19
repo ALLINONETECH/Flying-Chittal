@@ -106,7 +106,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a className="text-gray-200 hover:text-gray-400">
-                   Indigenous Professional Mobile Radio (TETRA PMR)
+                    Professional Mobile Radio (TETRA PMR)
                   </a>
                 </li>
               </nav>

@@ -5,7 +5,7 @@ import CDAC from "../../assets/images/CDAC.png";
 import IconFC from "../../assets/images/IconFC.png";
 import Agriculture from "../../assets/images/Agriculture.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
-import customised1 from "../../assets/images/customised1.jpg";
+import customised1 from "../../assets/images/Downloader-La-PXkjipqYwF.jpg";
 
 export default function AgricultureAutomation() {
   return (
@@ -51,10 +51,23 @@ export default function AgricultureAutomation() {
             {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
             <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
               <div className="flex gap-2">
-                <div><span><img className="" src={HomeIcon} alt="" /></span></div>
-                <div classNAme="justify"> <span className="text-[#F85A47] font-[700] font-heebo text-[32px] "> Home</span><span className="font-[700] font-heebo text-[32px] "> / Agriculture Automation Solution (SAgAS)</span>  </div>
+                <div>
+                  <span>
+                    <img className="" src={HomeIcon} alt="" />
+                  </span>
+                </div>
+                <div classNAme="justify">
+                  {" "}
+                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
+                    {" "}
+                    Home
+                  </span>
+                  <span className="font-[700] font-heebo text-[32px] ">
+                    {" "}
+                    / Agriculture Automation Solution (SAgAS)
+                  </span>{" "}
+                </div>
               </div>
-
             </p>
           </div>
         </div>
@@ -103,8 +116,15 @@ export default function AgricultureAutomation() {
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-              <span className=" text-indigo-800 font-bold text-[40px]"> Agriculture</span>
-              <span className=" text-[40px] font-heebo font-bold  "> Automation Solution (SAgAS)</span></h1>
+              <span className=" text-indigo-800 font-bold text-[40px]">
+                {" "}
+                Agriculture
+              </span>
+              <span className=" text-[40px] font-heebo font-bold  ">
+                {" "}
+                Automation Solution (SAgAS)
+              </span>
+            </h1>
 
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             <p className="text-base sm:text-xl mb-8 text-justify w-full">
@@ -126,18 +146,25 @@ export default function AgricultureAutomation() {
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${customised1}) lightgray 50% / cover no-repeat`,
         }}
       >
-        <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
-          <h1 className="font-heebo text-4xl font-bold mb-5 ">
-            Customized Features
-          </h1>
+        <div className=" w-auto md:w-4/5 text-start mt-32 text-white  grid content-end">
+          <h1 className="font-heebo text-4xl font-bold mb-5 ">Highlights</h1>
           <p className="font-heebo text-lg font-normal text-justify mb-10 ">
-            Stakeholders can access vital data, track shipments, and ensure
-            compliance with regulatory requirements effortlessly. By
-            consolidating information from these various sources into a single
-            platform, businesses gain a holistic view of their logistics
-            operations, enabling more informed decision-making, enhanced
-            efficiency, and ultimately, a competitive edge in today's dynamic
-            and complex supply chain landscape.
+            The SAgAS can intelligently operate pumps / valves based on the data
+            collected from the field and the crop specific pre-programs.
+            Cost-effective and farmer friendly SAgAS addresses both economic and
+            environmental issues that surround production agriculture today.
+            SAgAS help the farmers to plan irrigation and fertigation based on
+            environmental and soil conditions. This System monitors and controls
+            different farm parameters like soil moisture, pH, atmospheric
+            temperature, humidity, CO2 etc. The farmers can configure the device
+            for getting alerts of important field parameters or alarm
+            conditions. These alerts can be in the form of pre-programmed SMS
+            messages even when one is away from the farm. Situation based
+            commands for controlling the agricultural field equipment from a
+            remote location can be performed through mobile phones. Monitoring
+            and control of various agricultural parameters like Temperature,
+            Humidity, CO2, Soil moisture, soil nutrients, Poly house shades etc
+            using suitable sensors.
           </p>
         </div>
       </div>
