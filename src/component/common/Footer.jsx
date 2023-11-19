@@ -1,10 +1,17 @@
 import React from "react";
 import flogo from "../../assets/images/flogo.png";
+import footerImage from "../../assets/images/footer.jpg";
 
 export default function Footer() {
   return (
     <div>
-      <footer className="text-gray-600 body-font bg-[#1d2939]">
+      <footer
+        className="text-gray-600 body-font bg-[#1d2939]"
+        style={{
+          background: `linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgb(96 1 72 / 98%)),url('${footerImage}')`,
+          backgroundSize: "6px, auto, cover",
+        }}
+      >
         <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -12,13 +19,13 @@ export default function Footer() {
                 <img src={flogo} alt />
               </span>
             </a>
-            <p className="mt-2  text-white text-[14px]  font-normal leading-5 ml-5">
+            {/* <p className="mt-2  text-white text-[14px]  font-normal leading-5 ml-5">
               Unlock your digital{" "}
               <span className="text-secondary text-[14px] not-italic font-normal leading-5">
                 transformation <br /> & innovation
               </span>{" "}
               potential.
-            </p>
+            </p> */}
           </div>
           <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">

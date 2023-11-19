@@ -3,6 +3,16 @@ import React from "react";
 import intelligent from "../assets/images/intelligent.png";
 import Safety from "../assets/images/Safety.png";
 import Driver from "../assets/images/Driver.png";
+import IconInovate from "../assets/images/iconInovate.png";
+import IconInclusivity from "../assets/images/iconInclusivity.png";
+import IconAccessibility from "../assets/images/iconAccessibility.png";
+import iconAffordability from "../assets/images/iconAffordability.png";
+import iconEducation from "../assets/images/iconEducation.png";
+import iconsus from "../assets/images/iconsus.png";
+import iconPartner from "../assets/images/iconPartner.png";
+import iconCommunity from "../assets/images/iconCommunity.png";
+import iconGlobalREach from "../assets/images/iconGlobalREach.png";
+import iconMesure from "../assets/images/iconMesure.png";
 import Fuel from "../assets/images/Fuel.png";
 import Drivertruck from "../assets/images/Drivertruck.png";
 import Rich from "../assets/images/Rich.png";
@@ -129,7 +139,7 @@ export default function Vision() {
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
 
-                  <img className="p-1" src={Driver} alt="" />
+                  <img className="p-1" src={IconInovate} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Innovation
@@ -150,7 +160,7 @@ export default function Vision() {
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
 
-                  <img className="p-1" src={Driver} alt="" />
+                  <img className="p-1" src={IconInclusivity} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Inclusivity
@@ -198,7 +208,7 @@ export default function Vision() {
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
 
-                  <img className="p-1" src={Driver} alt="" />
+                  <img className="p-1" src={IconAccessibility} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Accessibility
@@ -218,7 +228,7 @@ export default function Vision() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={Fuel} alt="" />
+                  <img className="p-1" src={iconAffordability} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Affordability
@@ -238,7 +248,7 @@ export default function Vision() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={Rich} alt="" />
+                  <img className="p-1" src={iconEducation} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Education
@@ -258,7 +268,7 @@ export default function Vision() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={Drivertruck} alt="" />
+                  <img className="p-1" src={iconsus} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Sustainability
@@ -278,7 +288,7 @@ export default function Vision() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={Drivertruck} alt="" />
+                  <img className="p-1" src={iconPartner} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Partnerships
@@ -298,7 +308,7 @@ export default function Vision() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={Drivertruck} alt="" />
+                  <img className="p-1" src={iconCommunity} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Community Building{" "}
@@ -318,7 +328,7 @@ export default function Vision() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={Drivertruck} alt="" />
+                  <img className="p-1" src={iconGlobalREach} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Global Reach
@@ -338,7 +348,7 @@ export default function Vision() {
                   {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg> */}
-                  <img className="p-1" src={Drivertruck} alt="" />
+                  <img className="p-1" src={iconMesure} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
                   Measuring Impact
