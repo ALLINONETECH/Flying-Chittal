@@ -285,9 +285,6 @@ export default function Vision() {
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 h-full rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl">
                 <div className="w-10 h-10 inline-flex items-center  justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
                   <img className="p-1" src={iconPartner} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
@@ -305,9 +302,6 @@ export default function Vision() {
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6  h-full rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
                   <img className="p-1" src={iconCommunity} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
@@ -325,9 +319,6 @@ export default function Vision() {
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6  h-full rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
                   <img className="p-1" src={iconGlobalREach} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
@@ -345,9 +336,6 @@ export default function Vision() {
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6  h-full rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
                   <img className="p-1" src={iconMesure} alt="" />
                 </div>
                 <h2 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]mb-2">
