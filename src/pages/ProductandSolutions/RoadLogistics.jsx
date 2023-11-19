@@ -15,8 +15,10 @@ import HomeIcon from "../../assets/images/HomeIcon.png";
 import raillogistic1 from "../../assets/images/raillogistic1.jpg";
 import raillogistic2 from "../../assets/images/raillogistic2.jpg";
 import raillogistic3 from "../../assets/images/raillogistic3.jpg";
-import raillogistic4 from "../../assets/images/raillogistic4.jpg";
-import raillogistic5 from "../../assets/images/raillogistic5.jpg";
+import raillogistic4 from "../../assets/images/inboundToPorts.jpg";
+import raillogistic5 from "../../assets/images/istockphoto-Y8Nei51GvL.jpg";
+import raillogistic6 from "../../assets/images/railInbound.jpg";
+import raillogistic7 from "../../assets/images/istockphoto-es9kqyNnxj.jpg";
 
 export default function RoadLogistics() {
   return (
@@ -458,34 +460,26 @@ export default function RoadLogistics() {
       <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]  ">
         <div className="container px-32 py-5 mx-auto">
           <div className="flex flex-wrap -m-4 ">
-            <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-200">
-              <div className="container px-5 py-10 mx-auto">
-                <div class="text-center mb-5">
-                  <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-                    <span className=" text-indigo-800 font-bold text-[40px] ">
-                      Module &nbsp;
-                    </span>
-                    <span className=" text-[40px] font-heebo font-bold ">
-                      & Features
-                    </span>
-                  </h1>
-                  <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-                  <div class="flex justify-center">
-                    <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-                  </div>
-                </div>
-                <div className="container px-5  mx-auto">
+            <div className="flex justify-center w-full mb-3">
+              <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-200">
+                <div className="container px-5 py-10 mx-auto">
                   <div class="text-center mb-5">
-                    <p class="text-xl not-italic font-normal leading-7 text-center xl:w-4/5 lg:w-4/5 mx-auto text-gray-500">
-                      {/* Road logistics in a truck company involve 6 the planning,
-                      implementation, and control of the movement and storage of
-                      goods and services from one place to another using trucks
-                      and other road vehicles.{" "} */}
-                    </p>
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                      <span className=" text-indigo-800 font-bold text-[40px] ">
+                        Module &nbsp;
+                      </span>
+                      <span className=" text-[40px] font-heebo font-bold ">
+                        & Features
+                      </span>
+                    </h1>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
+                    <div class="flex justify-center">
+                      <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <div className="flex flex-wrap -m-4 mb-2 ">
               <div className=" w-auto md:w-1/2 p-4">
@@ -500,11 +494,21 @@ export default function RoadLogistics() {
                       Outbound From Mines
                     </h1>
                     <p className="font-heebo text-lg font-normal text-justify  mb-20">
-                      Mine outbound logistics, powered by technology, has
-                      revolutionized the mining industry. By leveraging advanced
-                      tracking and automation systems, mines can optimize the
-                      transportation of raw materials and products, reducing
-                      costs and increasing overall productivity.
+                      Efficient mine outbound logistics, powered by technology,
+                      has revolutionized the mining industry. By leveraging
+                      advanced tracking and automation systems, mines can
+                      optimize the transportation of raw materials and products,
+                      reducing costs and increasing overall productivity.
+                      Real-time monitoring of shipments, route optimization, and
+                      predictive maintenance of transportation vehicles are just
+                      a few examples of how technology streamlines the outbound
+                      logistics process. This not only enhances the safety of
+                      the supply chain but also minimizes environmental impacts,
+                      making it a sustainable and forward-thinking approach to
+                      resource extraction. In a rapidly evolving industry,
+                      embracing these technological solutions is essential for
+                      ensuring both economic viability and environmental
+                      responsibility.
                     </p>
                   </div>
                 </div>
@@ -520,15 +524,23 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5 mt-52 ">
                       Inbound To Plants
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify  ">
+                    <p className="font-heebo text-lg font-normal text-justify   mb-20">
                       Leveraging high-end technologies in logistics management
                       for sourcing raw materials and other essentials is a
                       game-changer in the modern business landscape. These
-                      technologies offer real-time visibility and optimization
-                      capabilities that streamline the entire supply chain
-                      process. They enable companies to track the movement of
-                      raw materials from source to destination, anticipate
-                      potential disruptions, and ensure timely deliveries.
+                      technologies, including artificial intelligence,
+                      blockchain, and Internet of Things (IoT), offer real-time
+                      visibility and optimization capabilities that streamline
+                      the entire supply chain process. They enable companies to
+                      track the movement of raw materials from source to
+                      destination, anticipate potential disruptions, and ensure
+                      timely deliveries. Additionally, advanced data analytics
+                      can help in making data-driven decisions for procurement,
+                      inventory management, and demand forecasting. By
+                      harnessing the power of these cutting-edge tools,
+                      businesses can not only reduce costs but also enhance
+                      their agility and responsiveness, ensuring a competitive
+                      edge in an increasingly complex global marketplace.
                     </p>
                   </div>
                 </div>
@@ -544,16 +556,21 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5  mt-40 ">
                       Outbound From Plants
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify ">
-                      Technology is paramount in managing outbound logistics
-                      from ports, serving as the linchpin of efficient and
-                      effective global trade. Ports are the gateway for exports
-                      and outbound shipments, and the integration of advanced
-                      tools such as real-time tracking, automation, and
-                      predictive analytics is crucial in optimizing the movement
-                      of goods. These technologies enable the timely loading of
-                      cargo onto vessels, streamline customs processes, and
-                      enhance security and compliance
+                    <p className="font-heebo text-lg font-normal text-justify mb-20">
+                      Harnessing high-end technologies for efficient logistics
+                      management in the supply of finished goods and products is
+                      imperative for businesses looking to maintain security and
+                      meet customer demand with precision. Advanced technologies
+                      like AI, RFID, and automation systems empower companies to
+                      monitor the entire distribution network in real-time,
+                      ensuring the safety of products and minimizing the risk of
+                      theft or damage. Furthermore, these tools optimize routes,
+                      anticipate potential delays, and enhance inventory
+                      visibility, all of which are crucial for on-time
+                      deliveries. By integrating these innovative solutions,
+                      companies can guarantee the seamless flow of products,
+                      enhance customer satisfaction, and remain competitive in
+                      an increasingly fast-paced and demanding market.
                     </p>
                   </div>
                 </div>
@@ -567,13 +584,24 @@ export default function RoadLogistics() {
                   }}
                 >
                   <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-80 ">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
                       Inbound To Ports
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify mb-10 ">
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
                       Technologies play a pivotal role in managing inbound
                       logistics to ports, ensuring the efficiency and
                       effectiveness of this critical gateway in global trade.
+                      The modern world relies on the seamless flow of goods, and
+                      advanced tools such as data analytics, GPS tracking, and
+                      digital platforms are instrumental in optimizing the
+                      movement of cargo from point of origin to the port.
+                      Real-time data and smart systems enable better
+                      coordination, minimize congestion, and enhance security,
+                      while also offering better visibility and predictability
+                      for all stakeholders. In an era of increasingly complex
+                      and interconnected supply chains, these technologies are
+                      indispensable for port logistics, driving economic growth,
+                      and facilitating global trade on an unprecedented scale.
                     </p>
                   </div>
                 </div>
@@ -586,13 +614,86 @@ export default function RoadLogistics() {
                   }}
                 >
                   <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-80 ">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
                       Outbound From Ports
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify mb-10 ">
-                      Technologies play a pivotal role in managing inbound
-                      logistics to ports, ensuring the efficiency and
-                      effectiveness of this critical gateway in global trade.
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+                      Technology is paramount in managing outbound logistics
+                      from ports, serving as the linchpin of efficient and
+                      effective global trade. Ports are the gateway for exports
+                      and outbound shipments, and the integration of advanced
+                      tools such as real-time tracking, automation, and
+                      predictive analytics is crucial in optimizing the movement
+                      of goods. These technologies enable the timely loading of
+                      cargo onto vessels, streamline customs processes, and
+                      enhance security and compliance. Additionally, data-driven
+                      insights empower businesses to make informed decisions and
+                      optimize their supply chain strategies. By embracing
+                      technological innovations, ports can ensure the swift and
+                      secure flow of products, bolster international trade, and
+                      contribute significantly to economic growth and
+                      competitiveness on a global scale.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-auto md:w-1/2 p-4">
+                <div
+                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
+                  style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic6})  lightgray 50% / cover no-repeat`,
+                  }}
+                >
+                  <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
+                      Inbound To Railway Sidings
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+                      Technologies are indispensable in the efficient management
+                      of inbound logistics at railway sidings, offering numerous
+                      advantages for businesses and the transportation sector.
+                      These advancements include sensor-based monitoring, RFID
+                      tracking, and digital inventory management systems, which
+                      provide real-time visibility into cargo movements and
+                      storage at sidings. They enhance the coordination and
+                      scheduling of inbound shipments, reduce congestion, and
+                      minimize waiting times. By harnessing these tools,
+                      companies can optimize their logistics, reduce costs, and
+                      enhance their overall supply chain efficiency, making
+                      railway sidings a crucial component in the seamless
+                      movement of goods.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-auto md:w-1/2 p-4">
+                <div
+                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
+                  style={{
+                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic7})  lightgray 50% / cover no-repeat`,
+                  }}
+                >
+                  <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
+                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
+                      Outbound From Railway Sidings
+                    </h1>
+                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+                      Technological advancements are pivotal in managing
+                      outbound logistics at railway sidings, offering an array
+                      of benefits for businesses and the transportation
+                      industry. These innovations, such as real-time tracking
+                      systems, automation, and data analytics, facilitate the
+                      efficient loading and dispatch of goods from sidings. They
+                      enhance scheduling, routing, and last-mile delivery,
+                      ensuring the timely and secure movement of products.
+                      Additionally, technology enables predictive maintenance of
+                      railway infrastructure, reducing the risk of disruptions
+                      and ensuring the safety and reliability of the outbound
+                      logistics process. By leveraging these tools, companies
+                      can streamline their supply chain, reduce operational
+                      costs, and improve the overall efficiency of transporting
+                      goods via railway sidings, contributing to economic growth
+                      and sustainability.
                     </p>
                   </div>
                 </div>
