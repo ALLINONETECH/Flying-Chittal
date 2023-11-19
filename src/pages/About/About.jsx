@@ -41,7 +41,6 @@ export default function About() {
   const search = window.location.search;
   const params = new URLSearchParams(search);
   const page = params.get("page");
-  console.log(page);
   useEffect(() => {
     if (page == "who") {
       whoRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -554,10 +553,10 @@ export default function About() {
                 platforms, e-Commerce, and the intricacies of Manufacturing
                 Supply Chain Management. Debashis has held senior leadership
                 positions in prestigious companies across the United States,
-                Singapore and Malaysia. These include Flipkart, Reliance, Cummins,
-                DHL and Pitney Bowes. Notably, he co-founded and promoted
-                Fre8wise.com, a B2B platform specializing in Supply Chain
-                Automation and Digitalization. With Debashis leading our
+                Singapore and Malaysia. These include Flipkart, Reliance,
+                Cummins, DHL and Pitney Bowes. Notably, he co-founded and
+                promoted Fre8wise.com, a B2B platform specializing in Supply
+                Chain Automation and Digitalization. With Debashis leading our
                 strategy and growth initiatives, we're poised for
                 state-of-the-art innovation and remarkable success.
               </p>

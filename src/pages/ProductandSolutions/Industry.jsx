@@ -1,24 +1,55 @@
 /* eslint-disable react/no-unknown-property */
-import React from "react";
-import Mines from "../../assets/images/Mines.png";
-import Cement from "../../assets/images/Cement.png";
-import Thermal from "../../assets/images/Thermal.png";
-import Fertilizer from "../../assets/images/Fertilizer.png";
+import React, { useEffect, useRef } from "react";
 import OILGas1 from "../../assets/images/OILGas1.png";
-import Agro from "../../assets/images/Agro.png";
 import Blog1 from "../../assets/images/Blog1.png";
 import IMining from "../../assets/images/IMining.png";
 import IManufacture from "../../assets/images/IManufacture.png";
 import ICement from "../../assets/images/ICement.png";
 import Transformation from "../../assets/images/Transformation.png";
 import Fertilizer1 from "../../assets/images/Fertilizer1.png";
-import IDown from "../../assets/images/IDown.png";
 import IAgro from "../../assets/images/IAgro.png";
 import Warehouse from "../../assets/images/Warehouse.png";
 import Aqua1 from "../../assets/images/Aqua1.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
 
 export default function Industry() {
+  const transportRef = useRef();
+  const miningRef = useRef();
+  const metalsRef = useRef();
+  const cementRef = useRef();
+  const fertiliserRef = useRef();
+  const oilRef = useRef();
+  const warehousingRef = useRef();
+  const agricultureRef = useRef();
+  const search = window.location.search;
+  const params = new URLSearchParams(search);
+  const page = params.get("page");
+  useEffect(() => {
+    if (page == "transport") {
+      transportRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page == "mining") {
+      miningRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page == "metals") {
+      metalsRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page == "cement") {
+      cementRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page == "fertiliser") {
+      fertiliserRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page == "oil") {
+      oilRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page == "warehousing") {
+      warehousingRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (page == "agriculture") {
+      agricultureRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
     <div>
       {/* {/ Section-1 /} */}
@@ -86,7 +117,7 @@ export default function Industry() {
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2">
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+              <div ref={transportRef} className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={Transformation}
@@ -111,14 +142,14 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2 ">
+            <div className="p-4 md:w-1/2 " ref={miningRef}>
               <div className="h-full border-2 border-gray-200 bg-white shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={IMining}
                   alt="blog"
                 />
-                <div className="p-6">
+                <div  className="p-6">
                   <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
                     Mining
                   </h1>
@@ -131,7 +162,7 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" ref={metalsRef}>
               <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -153,7 +184,7 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" ref={cementRef}>
               <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -179,7 +210,7 @@ export default function Industry() {
               </div>
             </div>
 
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" ref={fertiliserRef}>
               <div className="h-full border-2 border-gray-200  bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -203,7 +234,7 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" ref={oilRef}>
               <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -228,7 +259,7 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" ref={warehousingRef}>
               <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -255,7 +286,7 @@ export default function Industry() {
               </div>
             </div>
 
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" ref={agricultureRef}>
               <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -267,22 +298,22 @@ export default function Industry() {
                     Agriculture
                   </h1>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    In India, the agricultural sector is undergoing a significant
-                    transformation through the adoption of advanced technologies
-                    aimed at improving yield and sustainability. Precision
-                    agriculture, enabled by technologies such as drones,
-                    satellite imagery, and GPS, allows farmers to optimize
-                    resource utilization by precisely managing irrigation,
-                    fertilization, and pest control. Internet of Things (IoT)
-                    devices, soil sensors, and data analytics provide real-time
-                    insights into soil health and crop conditions, empowering
-                    farmers to make informed decisions and maximize
-                    productivity.
+                    In India, the agricultural sector is undergoing a
+                    significant transformation through the adoption of advanced
+                    technologies aimed at improving yield and sustainability.
+                    Precision agriculture, enabled by technologies such as
+                    drones, satellite imagery, and GPS, allows farmers to
+                    optimize resource utilization by precisely managing
+                    irrigation, fertilization, and pest control. Internet of
+                    Things (IoT) devices, soil sensors, and data analytics
+                    provide real-time insights into soil health and crop
+                    conditions, empowering farmers to make informed decisions
+                    and maximize productivity.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" ref={agricultureRef}>
               <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
