@@ -181,17 +181,10 @@ export default function AquacultureAutomation() {
         </div>
       </div>
 
-      <section className="text-gray-600 body-font mt-10">
-        <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
-          <span className=" font-heebo text-[40px] text-primary">
-            Our&nbsp;
-          </span>
-          Partner
-        </h1>
-
+      <section className="text-gray-600 body-font mt-0">
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
           <img
-            className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg ml-10"
+            className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg sm:ml-10"
             alt="hero"
             src={CDAC}
           />

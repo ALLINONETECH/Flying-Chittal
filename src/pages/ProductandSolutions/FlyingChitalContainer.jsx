@@ -53,7 +53,7 @@ export default function FlyingChitalContainer() {
             </p>
             {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex flex-col lg:flex-row gap-2">
+              <div className="flex flex-col lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
@@ -65,7 +65,7 @@ export default function FlyingChitalContainer() {
                     {" "}
                     Home
                   </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
+                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / Flying Chital Smart Container Tracking System
                   </span>{" "}

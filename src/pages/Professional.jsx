@@ -49,7 +49,7 @@ export default function Professional() {
                     {" "}
                     Home
                   </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
+                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / Professional Mobile Radio (TETRA)
                   </span>{" "}
@@ -62,27 +62,28 @@ export default function Professional() {
 
       {/* Section-2- Flying Chital Smart Vehicle  */}
       <section className="text-gray-600 body-font mt-0">
-        <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center ml-10">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
+        <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center lg:ml-10 sm:ml-4">
+          <div className="lg:max-w-lg lg:w-full md:w-full w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden ">
             <img
-              className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
+              className="object-cover object-center w-full h-auto rounded-tl-[50px] md:rounded-tl-lg md:rounded-bl-[50px] lg:rounded-tl-[50px] lg:rounded-br-[50px] drop-shadow-lg "
               alt="hero"
               src={FCAgriculture}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-              <span className=" text-indigo-800 font-bold text-[40px] ">
+
+          <div className="lg:flex-grow md:w-full lg:w-1/2 lg:pl-8 md:pl-4 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+              <span className="text-indigo-800 font-bold text-[32px] md:text-[40px] lg:text-[40px]">
                 Indigenous
               </span>
-              <span className=" text-[40px] font-heebo font-bold ">
+              <span className="text-[32px] md:text-[40px] lg:text-[40px] font-heebo font-bold">
                 {" "}
                 TETRA Trunked Radio System/PMR
               </span>
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
 
-            <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] w-4/5">
+            <p className="mb-8 text-justify text-[16px] md:text-[20px] lg:text-[20px] font-[400] font-heebo leading-[24px] text-[#30343F] w-full md:w-4/5">
               Atulya Abhinav Tech Private Limited is pleased to offer
               comprehensive services for the supply and installation of the
               indigenous TETRA Professional Mobile Radio (PMR) systems, tailored
@@ -108,9 +109,9 @@ export default function Professional() {
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${customised1}) lightgray 50% / cover no-repeat`,
         }}
       >
-        <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
-          <h1 className="font-heebo text-4xl font-bold mb-5 "></h1>
-          <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+        <div className="w-full md:w-4/5 lg:w-3/5 xl:w-2/3 text-start mt-8 md:mt-16 lg:mt-24 text-white grid content-end mx-auto px-4">
+          <h1 className="font-heebo text-4xl font-bold mb-5"></h1>
+          <p className="font-heebo text-lg font-normal text-justify mb-10 lg:mb-20">
             The indigenous technology provided by Atulya Abhinav Tech Private
             Limited is a result of the Transfer of Technology (ToT) from C-DAC
             Thiruvananthapuram, who have independently developed the entire
@@ -205,7 +206,7 @@ export default function Professional() {
       <section className="text-gray-600 body-font mt-0">
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
           <img
-            className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg ml-10"
+            className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg sm:ml-10"
             alt="hero"
             src={CDAC}
           />
