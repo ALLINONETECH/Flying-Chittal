@@ -30,7 +30,7 @@ export default function flyingChital() {
   return (
     <div className="">
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="bg-no-repeat bg-center bg-cover rounded-br-[100px]"
         style={{
           backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${flyingchitalbg})`,
         }}
@@ -40,26 +40,33 @@ export default function flyingChital() {
           className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
         >
           <div className="flex items-center justify-between">
-            <div className="flex lg:hidden"></div>
+            <div className="flex lg:hidden">
+              {/* Add mobile menu button/icon here */}
+            </div>
           </div>
-          <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div>
+          <div className="lg:hidden">
+            {/* Add mobile navigation content here */}
+          </div>
+          <div className="hidden lg:flex lg:items-center">
+            {/* Add desktop navigation content here */}
+          </div>
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
-          <div className=" mx-auto">
-            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+          <div className="mx-auto text-center lg:text-start">
+            <h1 className="text-6xl font-bold font-heebo text-gray-100 dark:text-white lg:text-6xl">
               Flying Chital
             </h1>
-            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className="text-3xl leading-9 mt-6 text-white font-bold font-heebo lg:w-1/2">
               Smart Agile Logistics at Fingertip...
             </p>
-            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              <div className="flex gap-2">
+            <p className="text-2xl font-normal text-white bg-opacity-80 mt-4 lg:w-1/2">
+              <div className="flex flex-col lg:flex-row gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
                   </span>
                 </div>
-                <div classNAme="justify">
+                <div className="justify">
                   {" "}
                   <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
                     {" "}
