@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import React from "react";
 
@@ -126,11 +128,11 @@ export default function About() {
             className=" flex relative items-start lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg "
             style={{ marginTop: "-120px" }}
           >
-            {/* <img
+            <img
               className="object-cover object-center absolute ml-56 bottom-48"
               alt="hero"
               src={Who1}
-            /> */}
+            />
             <img
               className="object-cover object-center  rounded-bl-lg"
               alt="hero"
@@ -547,7 +549,7 @@ export default function About() {
                 Amar Pradeep Swain
               </h1>
               <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Co-Founder , Director Technology & Solutions
+                Co-Founder & Director Technology & Solutions
               </p>
               <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
                 A graduate from IIT, Amar is an accomplished and
@@ -597,7 +599,7 @@ export default function About() {
                 Debashis Mohanty
               </h1>
               <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Co-Founder , Director Strategy & Growth
+                Co-Founder & Director Strategy & Growth
               </p>
               <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
                 With an MBA from Purdue University’s Daniels School, Debashis
