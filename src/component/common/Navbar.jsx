@@ -7,9 +7,7 @@ import darkLogo from "../../assets/images/Atulya-Abhinav-dark-Logo-Final2.png";
 import {
   Navbar as NavBarTailWind,
   MobileNav,
-  Typography,
   Button,
-  IconButton,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import { navItem } from "./navList";
@@ -113,6 +111,7 @@ export default function Navbar() {
 
   return (
     <NavBarTailWind className="mx-auto ">
+      {/* desktop nav  */}
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <div className="flex ">
           <div>
@@ -134,22 +133,22 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-
         <div className="hidden lg:block">{navList}</div>
-
+        {/* toggle switch  */}
         <Button
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
-          {openNav ? (
+                    {openNav ? (
             <AdjustmentsHorizontalIcon className="h-6 w-6 text-blue-500 ml-auto" />
           ) : (
             <AdjustmentsHorizontalIcon className="h-6 w-6 text-blue-500 ml-auto" />
           )}
         </Button>
       </div>
+      {/* mobile nav */}
       <MobileNav open={openNav}>
         <div className="container mx-auto">{navList}</div>
       </MobileNav>
