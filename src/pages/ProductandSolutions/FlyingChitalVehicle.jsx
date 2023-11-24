@@ -36,36 +36,36 @@ export default function FlyingChitalVehicle() {
           <div className="flex items-center justify-between">
             <div className="flex lg:hidden"></div>
           </div>
-          <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div>
+          {/* <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div> */}
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className=" mx-auto">
-            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
               Flying Chital Smart Vehicle Tracking System (FCSVTS)
             </h1>
-            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
               We provide Smart Solutions to Simplify Your Future
             </p>
-            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              <div className="flex gap-2">
+            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+              <div className="flex flex-col lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
                   </span>
                 </div>
-                <div classNAme="justify">
+                <div className="justify">
                   {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
+                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     Home
                   </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
+                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / Flying Chital Smart Vehicle Tracking System (FCSVTS)
                   </span>{" "}
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -81,14 +81,13 @@ export default function FlyingChitalVehicle() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-              <span className=" text-indigo-800 font-bold text-[40px] gap-2">
+            <h1 class="sm:text-xl text-2xl font-medium title-font text-gray-900 ">
+              <span className=" text-indigo-800 font-bold text-[40px] ">
                 Flying
               </span>
-              <span className=" text-[40px] font-heebo font-bold ">
-                {" "}
-                Chital Smart Vehicle <br></br>
-                <br></br> Tracking System (FCSVTS)
+              <span className=" text-[40px] font-heebo   font-bold ">
+                Chital Smart Vehicle <br />
+                Tracking System (FCSVTS)
               </span>
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
@@ -137,7 +136,7 @@ export default function FlyingChitalVehicle() {
                   <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
                     Reduced Operational Costs
                   </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
+                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3 text-justify">
                     Reduced Operational Costs by optimizing route planning and
                     real time detection of route deviation. Reducing operational
                     costs by optimizing route planning and implementing
@@ -158,7 +157,7 @@ export default function FlyingChitalVehicle() {
                   <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
                     Best-in-Class GPS Devices
                   </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
+                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3 text-justify">
                     Best-in-class GPS Devices including fixed, portable, and
                     solar-powered ones from reputable Original Equipment
                     Manufacturers (OEMs) ensures accurate and reliable tracking
@@ -178,7 +177,7 @@ export default function FlyingChitalVehicle() {
                   <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
                     Reliable and Robust
                   </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
+                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3 text-justify">
                     Reliable and Robust, coupled with RFID and AI Camera
                     technology, enhancing reliability and robustness, making it
                     an indispensable tool for cargo security.
@@ -197,7 +196,7 @@ export default function FlyingChitalVehicle() {
                   <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
                     Real Time Alerts and Alarms
                   </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
+                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3 text-justify">
                     Real Time Alerts and Alarms Robust underlying application
                     provides real-time alerts and alarms without false alarms
                     for any deviations from predefined business rules, enabling
@@ -217,7 +216,7 @@ export default function FlyingChitalVehicle() {
                   <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
                     Rich Analytical Insights and Customized Reports
                   </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
+                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3 text-justify">
                     Rich Analytical Insights and Customized Reports empowers
                     businesses to make data-driven decisions, ultimately
                     enhancing operational efficiency and productivity.

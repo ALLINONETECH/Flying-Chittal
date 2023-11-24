@@ -44,16 +44,16 @@ export default function FlyingChitalContainer() {
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className="mx-auto">
-            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
               Flying Chital Smart Container
               <br /> Tracking System
             </h1>
-            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
               We provide Smart Solutions to Simplify Your Future
             </p>
             {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
-            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              <div className="flex gap-2">
+            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+              <div className="flex flex-col lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
@@ -61,17 +61,17 @@ export default function FlyingChitalContainer() {
                 </div>
                 <div classNAme="justify">
                   {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
+                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     Home
                   </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
+                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / Flying Chital Smart Container Tracking System
                   </span>{" "}
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -98,12 +98,11 @@ export default function FlyingChitalContainer() {
                         </h1> */}
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
               <span className=" text-indigo-800 font-bold text-[40px] gap-2">
-                Flying 
+                Flying
               </span>
               <span className=" text-[40px] font-heebo font-bold gap-2">
-              {" "}
-               Chital Smart Container
-                <br />
+                {" "}
+                Chital Smart Container
                 <br /> Tracking System (FCSCTS)
               </span>
             </h1>
@@ -125,7 +124,7 @@ export default function FlyingChitalContainer() {
       {/* Section-3 */}
 
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto ">
+        <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="text-center mb-14">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
               <span className=" text-indigo-800 font-bold text-[40px] gap-2">
@@ -136,11 +135,13 @@ export default function FlyingChitalContainer() {
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
 
             <p class="xl:w-3/4 lg:w-3/4 mx-auto text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">
-              {/* "Flying Chital Smart Container Tracking System (FCSCTS)" Comes
-              with */}
+              "Flying Chital Smart Container Tracking System (FCSCTS)"
+              represents a recently developed system or a specialized product.
+              It is advisable to explore the official website of the relevant
+              company or organization for more information.
             </p>
           </div>
-          <div className="flex  flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
             <div className="flex items-center lg:w-4/5 mx-auto pb-10 mb-10 sm:flex-row flex-col">
               <div className="inline-flex items-center justify-center flex-shrink-0 ">
                 <img
@@ -190,37 +191,16 @@ export default function FlyingChitalContainer() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center lg:w-4/5 mx-auto  pb-10 mt-10  sm:flex-row flex-col">
-              <div className="inline-flex items-center justify-center flex-shrink-0 ">
-                <img
-                  className="rounded-tr-[50px] rounded-bl-[50px] h-84 w-84"
-                  alt="hero"
-                  src={Enhanced2}
-                />
-              </div>
-
-              <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 className="text-xl not-italic font-bold leading-8 text-gray-900 title-font ml-3 mb-2 font-heebo">
-                  Enhancing Supply Chain Efficiency
-                </h2>
-                <p className="font-heebo leading-1 text-base ml-3 w-full text-black">
-                  The platform's robust functionality enables the tracking of
-                  containers across various modes of transportation, including
-                  road, railway, and shipping routes, providing comprehensive
-                  visibility throughout the supply chain.
-                </p>
-              </div>
-            </div>
           </div>
 
-          {/* <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-          
+          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+            {/* <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400" /> */}
             <img
               alt="feature"
               className="object-cover object-center h-full w-full"
               src={Enhanced}
             />
-          </div> */}
+          </div>
         </div>
       </section>
     </div>
