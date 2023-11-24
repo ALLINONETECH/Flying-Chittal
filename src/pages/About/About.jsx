@@ -82,52 +82,44 @@ export default function About() {
             <div className="flex lg:hidden"></div>
           </div>
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
-          <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-            {/* <div className="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:-px-8 lg:space-y-0">
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Home</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Components</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Pricing</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Contact</a>
-                        </div> */}
-            {/* <a className="block px-5 py-2 mt-4 text-sm text-center text-white capitalize bg-blue-600 rounded-lg lg:mt-0 hover:bg-blue-500 lg:w-auto" href="#">
-                            Get started
-                        </a> */}
-          </div>
+          {/* <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+         
+          </div> */}
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className=" mx-auto">
-            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
-              About Us
+            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
+              About us
             </h1>
-            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
               We provide Smart Solutions to Simplify Your Future
             </p>
 
-            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              <div className="flex gap-2">
+            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+              <div className="flex lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
                   </span>
                 </div>
-                <div classNAme="justify">
+                <div classNAme="justify ">
                   {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
+                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
                     Home
                   </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
+                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / About Us
                   </span>{" "}
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Section- Who We are*/}
-      <section className="text-gray-600 body-font mt-40">
+      {/* <section className="text-gray-600 body-font mt-40">
         <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
           <div
             className=" flex relative items-start lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg "
@@ -173,7 +165,59 @@ export default function About() {
             </p>
           </div>
         </div>
+      </section> */}
+
+      {/* /test */}
+      <section className="text-gray-600 body-font mt-40">
+        <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
+          <div
+            className="flex relative items-start lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg "
+            style={{ marginTop: "-120px" }}
+          >
+            <img
+              className="object-cover object-center absolute ml-56 bottom-48 hidden md:block md:ml-0 lg:ml-56"
+              alt="hero"
+              src={Who1}
+              id="who1img"
+            />
+            <img
+              className="object-cover object-center rounded-bl-lg"
+              alt="hero"
+              src={Who2}
+            />
+          </div>
+          <div
+            ref={whoRef}
+            className="relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16  flex flex-col md:items-start md:text-left items-center text-center"
+          >
+            <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
+              <span className=" font-heebo text-[40px] text-primary">
+                <span className="border-b-2 border-secondary">Wh</span>o&nbsp;
+              </span>
+              we are
+            </h1>
+            <p className="text-md not-italic font-normal leading-7 mb-8  font-heebo w-5/6 md:w-fit text-black">
+              Welcome to Atulya Abhinav Technologies, a pioneering force in the
+              realm of digital transformation and innovation. With a dedicated
+              focus on revolutionizing businesses, we specialize in the seamless
+              automation of enterprise workflows, leveraging cutting-edge
+              technologies to enhance efficiency and productivity. Our expertise
+              extends to the realm of edge computing and mobility, enabling
+              businesses to harness the power of real-time data processing at
+              the edge. <br />
+              <br />
+              Moreover, our comprehensive suite of managed IT services empowers
+              organizations to streamline their operations and drive sustainable
+              growth in an ever-evolving digital landscape. At Atulya Abhinav
+              Tech Private Limited, we are committed to propelling businesses
+              towards a future of unparalleled technological advancement and
+              operational excellence.
+            </p>
+          </div>
+        </div>
       </section>
+
+      {/* /test */}
 
       {/* Section-why Choose you */}
 
@@ -195,6 +239,7 @@ export default function About() {
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center justify-center gap-6">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
+              id="AboutImage1"
               className="object-cover object-center rounded"
               alt="hero"
               src={AboutImage2}
@@ -205,7 +250,10 @@ export default function About() {
               }}
             />
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div
+            id="whychooseusimg"
+            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+          >
             <img
               className="object-cover object-center rounded"
               alt="hero"
@@ -218,14 +266,17 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center mx-4 sm:ml-0">
+        <div
+          id="excellance"
+          className="flex flex-col justify-center mx-4 sm:mx-0"
+        >
           <div>
-            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-justify mb-2 font-heebo mx-24">
+            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-center sm:text-left mb-2 font-heebo mx-4 sm:mx-24">
               Commitment to Excellence
             </h1>
           </div>
           <div className="w-full">
-            <p className="text-xl not-italic  font-heebo sm:text-base font-normal text-justify mb-2 text-gray-900 mx-24">
+            <p className="text-xl not-italic font-heebo sm:text-base font-normal text-center sm:text-justify mb-2 text-gray-900 mx-4 sm:mx-24">
               Choosing Atulya Abhinav over others in the digital transformation
               and innovation landscape is a decision grounded in our unwavering
               commitment to excellence and the distinct value we bring to the
@@ -239,14 +290,15 @@ export default function About() {
             </p>
           </div>
         </div>
+
         <div className="flex flex-col justify-center mx-4 sm:ml-0">
           <div>
-            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-justify mb-2 font-heebo mx-24">
+            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-center sm:text-left mb-2 font-heebo mx-4 sm:mx-24">
               Solution Customized to Your SOPs
             </h1>
           </div>
           <div className="w-full">
-            <p className="text-xl not-italic  font-heebo sm:text-base font-normal text-justify mb-2 text-gray-900 mx-24">
+            <p className="text-xl not-italic font-heebo sm:text-base font-normal text-center sm:text-justify mb-2 text-gray-900 mx-4 sm:mx-24">
               We don't offer a one-size-fits-all approach;{" "}
               <b>we craft customized strategies that empower businesses</b> to
               thrive in the digital age. Businesses don't change their standard
@@ -258,12 +310,12 @@ export default function About() {
         </div>
         <div className="flex flex-col justify-center mx-4 sm:ml-0">
           <div>
-            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-justify mb-2 font-heebo mx-24">
+            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-center sm:text-left mb-2 font-heebo mx-4 sm:mx-24">
               Proven Track Record
             </h1>
           </div>
           <div className="w-full">
-            <p className="text-xl not-italic  font-heebo sm:text-base font-normal text-justify mb-2 text-gray-900 mx-24">
+            <p className="text-xl not-italic font-heebo sm:text-base font-normal text-center sm:text-justify mb-2 text-gray-900 mx-4 sm:mx-24">
               With a proven track record of delivering results, we provide not
               just technology, but a comprehensive partnership in achieving your
               goals. Our dedication to staying on the cutting edge of technology
@@ -443,10 +495,10 @@ export default function About() {
         <div className="container px-5 py-24 mx-auto">
           <div className="p-2">
             <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-              <span className="font-heebo text-[40px] text-primary">
+              <span className="font-heebo text-primary text-4xl sm:text-[40px]">
                 Lea<span className="border-b-2 border-secondary">der</span>
+                <span className="text-black">ship</span>
               </span>
-              ship
             </h1>
           </div>
 
@@ -488,7 +540,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
                 Amar Pradeep Swain
@@ -568,7 +620,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
                 Kalikinkar Panda
@@ -645,41 +697,6 @@ export default function About() {
               </span>
             </div>
           </div>
-          {/* <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Sambasiva Rao Suda
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Consulting Advisor
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                Sambasiva Rao Suda an accomplished entrepreneur with exceptional
-                skills in founding and leading innovative ventures, is our
-                Consulting Advisor. Suda holds a Master's degree in Computer
-                Science and Engineering from IIT Kanpur. As the Co-founder and
-                CTO of Fre8wise, he architected and implemented the Transport
-                Automation platform showcasing his proficiency in creating
-                transformative solutions. Suda's entrepreneurial acumen extends
-                to PubMesh Inc, where he served as Founder and CTO, and played a
-                pivotal role in developing a groundbreaking ad-stitching cloud
-                platform. Additionally, his expertise in architecting
-                large-scale internet applications, modern data pipelines, and
-                contributions to Node.js, along with notable awards, further
-                underscore his diverse skill set
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img
-                className="object-cover object-center rounded"
-                alt="hero"
-                src={Samba}
-              />
-            </div>
-          </div> */}
         </div>
       </section>
 

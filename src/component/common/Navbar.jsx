@@ -68,7 +68,7 @@ const Navbar = () => {
       to: "/services",
       subMenu: [
         // { label: "Blog", to: "/blog" },
-        { label: "Blog", to: "/challenge" },
+        { label: "Blog", to: "/blog" },
         { label: "Help Centre", to: "/help" },
         // { label: "Market updates", to: "/service3" },
       ],

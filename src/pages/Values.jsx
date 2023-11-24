@@ -28,18 +28,18 @@ export default function Values() {
           <div className="flex items-center justify-between">
             <div className="flex lg:hidden"></div>
           </div>
-          <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div>
+          {/* <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div> */}
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className=" mx-auto">
-            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
               Values
             </h1>
-            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
               We provide Smart Solutions to Simplify Your Future
             </p>
-            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              <div className="flex gap-2">
+            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+              <div className="flex flex-col lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
@@ -57,18 +57,19 @@ export default function Values() {
                   </span>{" "}
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="text-gray-600 body-font mt-40">
+      <section className="text-gray-600 body-font lg:mt-40 sm:mt-20">
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center ">
-          <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg ">
+          <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-36 md:mb-0 rounded-tl-lg ">
             <img
               className="object-cover object-center absolute ml-52 bottom-48"
               alt="hero"
               src={Values21}
+              id="valuesimg"
             />
             <img
               className="object-cover object-center  rounded-bl-lg"

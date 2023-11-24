@@ -66,18 +66,17 @@ export default function Industry() {
           <div className="flex items-center justify-between">
             <div className="flex lg:hidden"></div>
           </div>
-          <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div>
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className=" mx-auto">
-            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
               Industries
             </h1>
-            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
               We provide Smart Solutions to Simplify Your Future
             </p>
-            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              <div className="flex gap-2">
+            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+              <div className="flex flex-col lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
@@ -85,17 +84,17 @@ export default function Industry() {
                 </div>
                 <div classNAme="justify">
                   {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
+                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     Home
                   </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
+                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / Industries
                   </span>{" "}
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -117,7 +116,10 @@ export default function Industry() {
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2">
-              <div ref={transportRef} className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+              <div
+                ref={transportRef}
+                className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]"
+              >
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={Transformation}
@@ -149,7 +151,7 @@ export default function Industry() {
                   src={IMining}
                   alt="blog"
                 />
-                <div  className="p-6">
+                <div className="p-6">
                   <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
                     Mining
                   </h1>

@@ -43,15 +43,15 @@ export default function career() {
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className="mx-auto">
-            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
               Careers
             </h1>
-            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
               We provide Smart Solutions to Simplify Your Future
             </p>
             {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
-            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              <div className="flex gap-2">
+            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+              <div className="flex flex-col lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
@@ -59,17 +59,17 @@ export default function career() {
                 </div>
                 <div classNAme="justify">
                   {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
+                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     Home
                   </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
+                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / Careers
                   </span>{" "}
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function career() {
             opportunity arise, we will reach out to you promptly. We appreciate
             your interest in joining our team and anticipate the possibility of
             connecting with you in the near future. Kindly forward your updated
-            resume to career@atulyabhinav.com. 
+            resume to career@atulyabhinav.com.
           </p>
         </div>
       </div>

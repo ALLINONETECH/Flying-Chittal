@@ -42,14 +42,14 @@ export default function Customized() {
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className=" mx-auto">
-            <h1 className="text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-6xl text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
               Customized Features
             </h1>
-            <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
               We provide Smart Solutions to Simplify Your Future
             </p>
-            <p className=" text-2xl not-italic font-normal  text-white bg-opacity-80 ">
-              <div className="flex gap-2">
+            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+              <div className="flex flex-col lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
@@ -57,17 +57,17 @@ export default function Customized() {
                 </div>
                 <div classNAme="justify">
                   {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
+                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     Flying Chital
                   </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
+                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / Customized Features
                   </span>{" "}
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </section>

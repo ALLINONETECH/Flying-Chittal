@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+  #who1img,
+  #AboutImage1,
+  #visionimg1,
+  #Missionimg,
+  #valuesimg {
+    visibility: hidden !important;
+  }
+  #whychooseusimg {
+    position: relative;
+    bottom: 12em;
+  }
+  #excellance {
+    position: relative;
+    bottom: 8em;
+  }
+  #myimg {
+    position: relative;
+    top: 40px;
+    object-fit: contain;
+  }
+  #someimg {
+    border-radius: 10%;
+  }
+}

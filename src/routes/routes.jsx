@@ -15,7 +15,7 @@ import Values from "../pages/Values";
 import FlyingChital from "../pages/ProductandSolutions/FlyingChital";
 import RoadLogistics from "../../src/pages/ProductandSolutions/RoadLogistics";
 import RailLogistics from "../../src/pages/ProductandSolutions/RailLogistics";
-import Blog from "../pages/Resources/Blog";
+// import Blog from "../pages/Resources/Blog";
 import Chat from "../pages/Chat";
 import FlyingChitalVehicle from "../pages/ProductandSolutions/FlyingChitalVehicle";
 import FlyingChitalFleet from "../pages/ProductandSolutions/FlyingChitalFleet";
@@ -39,7 +39,7 @@ import Help from "../pages/Help";
 import LogisticsIntelligence from "../pages/Blog/LogisticsIntelligence";
 import MiningMetal from "../pages/Blog/MiningMetal";
 import MACHArchitecture from "../pages/Blog/MACHArchitecture";
-import Challenge from "../pages/Blog/Challenge";
+import Blog from "../pages/Blog/Blog";
 import Fertilizer from "../pages/Blog/Fertilizer";
 import EdgeComputing from "../pages/Blog/EdgeComputing";
 
@@ -78,13 +78,13 @@ export default function Routes() {
         { path: "/railmodule9", element: <RailModule9 /> },
         { path: "/telematics", element: <Telematics /> },
         { path: "/customized", element: <Customized /> },
-        { path: "/blog", element: <Blog /> },
+        // { path: "/blog", element: <Blog /> },
         { path: "/logisticsIntelligence", element: <LogisticsIntelligence /> },
         { path: "/mACHArchitecture", element: <MACHArchitecture /> },
         { path: "/miningMetal", element: <MiningMetal /> },
         { path: "/help", element: <Help /> },
         { path: "/career", element: <Career /> },
-        { path: "/challenge", element: <Challenge /> },
+        { path: "/blog", element: <Blog /> },
         { path: "/fertilizer", element: <Fertilizer /> },
         { path: "/edgeComputing", element: <EdgeComputing /> },
         { path: "/chat", element: <Chat /> },

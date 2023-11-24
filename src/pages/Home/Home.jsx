@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div className="flex lg:hidden"></div>
           </div>
-          <div className=" inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div>
+          {/* <div className=" inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div> */}
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className=" mx-auto">
@@ -64,7 +64,7 @@ export default function Home() {
                 onClick={() => {
                   digitalRef.current?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className=" text-sm not-italic font-bold  text-white border-0 py-2  px-1  focus:outline-none hover:border-b-2 hover:border-white"
+                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none  hover:border-b-2 hover:border-white "
               >
                 Digital Transformation and Innovation
               </button>
@@ -107,13 +107,10 @@ export default function Home() {
         ref={digitalRef}
         className="text-gray-600 body-font"
       >
-        <div className="container px-5 py-8 mx-auto ">
+        <div className="container px-5 py-5 mx-auto ">
           <div className="flex flex-wrap w-full flex-col items-center text-center">
-            <h1
-              data-aos="fade-down"
-              className="font-heebo text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl not-italic font-bold leading-9 title-font mb-4 text-center text-gray-900"
-            >
-              <span className=" font-heebo text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary">
+            <h1 class="font-heebo text-2xl sm:text-3xl lg:text-5xl font-bold leading-9 title-font mb-2 text-center text-gray-900 ">
+              <span class="font-heebo text-2xl sm:text-3xl lg:text-5xl text-primary">
                 Flying Chital -&nbsp;
               </span>
               Smart Agile Logistics at Fingertip...
@@ -125,7 +122,7 @@ export default function Home() {
             data-aos="fade-up-right"
             className="flex flex-col lg:flex-row bg-white"
           >
-            <div className="lg:max-w-lg lg:w-1/4 md:w-1/3 w-1/2 mb-10 md:mb-0 px-3 py-10">
+            <div className="lg:max-w-lg lg:w-1/4 md:w-full w-full mb-5 md:mb-0 px-3 py-10">
               <img
                 data-aos="zoom-in-down"
                 className="object-cover object-center w-full h-full"
@@ -133,10 +130,10 @@ export default function Home() {
                 src={smalllogo}
               />
             </div>
-            <div className="lg:w-3/4 md:w-2/3 w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-5 text-[#30343F]">
+            <div className="lg:w-3/4 md:w-full w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-2  text-[#30343F] border-2">
               <div
                 data-aos="fade-up-left"
-                className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo "
+                className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo border-2 "
               >
                 <One />
               </div>
@@ -191,7 +188,9 @@ export default function Home() {
               </span>
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  w-4/5">
+            {/* <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  w-4/5 "> */}
+
+            <p className="mb-8  text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed  w-4/5mb-8   font-heebo  text-[#30343F]  w-4/5 ">
               Automate Your Enterprise Digital Workflows for Enhanced
               Resilience, Scalability, and Sustainability. We Help Automate
               Enterprise Digital Workflows to Streamline Processes, Boost
@@ -239,14 +238,14 @@ export default function Home() {
         ref={edgeComputeRef}
         className="flex items-center justify-center  bg-cover bg-no-repeat "
         style={{
-          background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${home1}) lightgray 50% / cover no-repeat`,
+          background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${home1}) lightgray 50% / cover no-repeat `,
         }}
       >
-        <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
-          <h1 className="font-heebo text-4xl font-bold mb-5 ">
+        <div className="w-full md:w-4/5 mx-auto text-center md:text-start mt-40 text-white grid content-end">
+          <h1 className="font-heebo text-4xl font-bold mb-5 px-2">
             Edge Computing and Mobility
           </h1>
-          <p className="font-heebo text-lg font-normal text-justify mb-10 ">
+          <p className="font-heebo text-lg font-normal  mb-10 px-2">
             Our Edge Computing and Mobility Solutions enable non-connected
             equipment, Industrial IoT devices, and workstations to capture and
             process data without having to collaborate with a centralized
