@@ -242,7 +242,7 @@ export default function flyingChital() {
       </section>
 
       <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-100">
-        <div className="container px-32 py-5 mx-auto">
+        <div className="container md:px-32 py-5 mx-auto">
           <div className="flex flex-wrap -m-4 ">
             <div className="w-full sm:w-auto md:w-1/2 p-4">
               <Link to="/railLogistics">
