@@ -54,29 +54,26 @@ export default function AssetManagement() {
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className="mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
               Flying Chital HEM/HMV/LMV Mobile
               <br /> Asset Management System
             </h1>
-            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
               We provide Smart Solutions to Simplify Your Future
             </p>
 
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex flex-col lg:flex-row  gap-2">
+              <div className="flex lg:flex-row  gap-2">
                 <div>
                   <span>
-                    <img className="" src={HomeIcon} alt="" />
+                    <img className="w-full" src={HomeIcon} alt="" />
                   </span>
                 </div>
-                <div classNAme="justify">
-                  {" "}
+                <div classNme="justify">
                   <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
                     Home
                   </span>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
                     / Flying Chital HEM/HMV/LMV Mobile Asset Management System
                   </span>{" "}
                 </div>

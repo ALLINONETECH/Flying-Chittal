@@ -46,7 +46,7 @@ export default function Home() {
           <div className=" mx-auto">
             <h1
               data-aos="fade-left"
-              className=" not-italic font-bold mb-8 font-heebo title-font sm:text-6xl  text-4xl title-font text-white "
+              className=" text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white"
             >
               Digital Transformation & <br /> Innovation
             </h1>
@@ -130,10 +130,10 @@ export default function Home() {
                 src={smalllogo}
               />
             </div>
-            <div className="lg:w-3/4 md:w-full w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-2  text-[#30343F] border-2">
+            <div className="lg:w-3/4 md:w-full w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-2  text-[#30343F] ">
               <div
                 data-aos="fade-up-left"
-                className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo border-2 "
+                className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo "
               >
                 <One />
               </div>
