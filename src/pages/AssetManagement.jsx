@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React from "react";
 import intelligent from "../assets/images/intelligent.png";
 import Safety from "../assets/images/Safety.png";
@@ -316,8 +317,228 @@ export default function AssetManagement() {
             </p>
             <div class="flex mt-6 justify-center"></div>
           </div>
+          <div className="container">
+            <div className="grid md:grid-cols-2 justify-between gap-3">
+              <div class="w-full  lg:flex gap-3">
+                <div
+                  class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  title="Woman holding a mug"
+                >
+                  <img
+                    className="object-cover object-center w-full"
+                    alt="hero"
+                    src={Drivers}
+                    id="someimg"
+                  />
+                </div>
+                <div className=" h-full w-full ">
+                  <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
+                    Intelligent 24*7 Real Time <br />
+                    Tracking
+                  </h2>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Live location updates on app,
+                      <br /> web, and email
+                    </p>
+                  </div>
 
-          <div className="flex flex-wrap ">
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Automated Trip Management
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Unlimited movement history
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Track multiple vehicles <br />
+                      simulataneously
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" w-full  lg:flex gap-3 ">
+                <div
+                  class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  title="Woman holding a mug"
+                >
+                  <img
+                    className="object-cover object-center w-full"
+                    alt="hero"
+                    src={Drivers}
+                    id="someimg"
+                  />
+                </div>
+                <div className=" h-full xl:w-1/2 md:w-1/2  pt-4 ">
+                  <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
+                    Intelligent 24*7 Real Time <br />
+                    Tracking
+                  </h2>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Live location updates on app,
+                      <br /> web, and email
+                    </p>
+                  </div>
+
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Automated Trip Management
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Unlimited movement history
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Track multiple vehicles <br />
+                      simulataneously
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" w-full  lg:flex gap-3">
+                <div
+                  class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  title="Woman holding a mug"
+                >
+                  <img
+                    className="object-cover object-center w-full"
+                    alt="hero"
+                    src={Drivers}
+                    id="someimg"
+                  />
+                </div>
+                <div className=" h-full xl:w-1/2 md:w-1/2  pt-4 ">
+                  <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
+                    Intelligent 24*7 Real Time <br />
+                    Tracking
+                  </h2>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Live location updates on app,
+                      <br /> web, and email
+                    </p>
+                  </div>
+
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Automated Trip Management
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Unlimited movement history
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Track multiple vehicles <br />
+                      simulataneously
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" w-full  lg:flex gap-3 ">
+                <div
+                  class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  title="Woman holding a mug"
+                >
+                  <img
+                    className="object-cover object-center w-full"
+                    alt="hero"
+                    src={Drivers}
+                    id="someimg"
+                  />
+                </div>
+                <div className=" h-full xl:w-1/2 md:w-1/2  pt-4 ">
+                  <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
+                    Intelligent 24*7 Real Time <br />
+                    Tracking
+                  </h2>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Live location updates on app,
+                      <br /> web, and email
+                    </p>
+                  </div>
+
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Automated Trip Management
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Unlimited movement history
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Track multiple vehicles <br />
+                      simulataneously
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="flex flex-wrap ">
             <div className=" xl:w-1/2 md:w-1/2  bg-white mt-10 ">
               <div className=" mr-2  ">
                 <div className="flex flex-col sm:flex-row justify-center border-2 border-gray-200 rounded-tr-[50px] rounded-bl-[50px] shadow-lg md:shadow-xl bg-white h-[380px] gap-8 ">
@@ -420,14 +641,6 @@ export default function AssetManagement() {
               </div>
             </div>
             <div className=" xl:w-1/2 md:w-1/2  bg-white mt-10 ">
-              {/* <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full   "> */}
-              {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <img className="p-1" src={intelligent} alt="" />
-                                </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Intelligent 24*7 Real time tracking</h2>
-                                <div className="flex">
-                                    <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
               <div className=" ml-2  ">
                 <div className="flex flex-col sm:flex-row justify-center border-2 border-gray-200 rounded-tr-[50px] rounded-bl-[50px] shadow-lg md:shadow-xl bg-white h-[380px] gap-8 ">
                   <div className="  w-full md:w-1/3 sm:1/3 lg:1/3">
@@ -473,14 +686,6 @@ export default function AssetManagement() {
               </div>
             </div>
             <div className=" xl:w-1/2 md:w-1/2  bg-white mt-10  ">
-              {/* <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full   "> */}
-              {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <img className="p-1" src={intelligent} alt="" />
-                                </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Intelligent 24*7 Real time tracking</h2>
-                                <div className="flex">
-                                    <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
               <div className=" ml-2  ">
                 <div className="flex flex-col sm:flex-row justify-center border-2 border-gray-200 rounded-tr-[50px] rounded-bl-[50px] shadow-lg md:shadow-xl bg-white h-[380px] gap-8 ">
                   <div className="  w-full md:w-1/3 sm:1/3 lg:1/3">
@@ -516,14 +721,6 @@ export default function AssetManagement() {
               </div>
             </div>
             <div className=" xl:w-1/2 md:w-1/2  bg-white mt-10   ">
-              {/* <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full   "> */}
-              {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <img className="p-1" src={intelligent} alt="" />
-                                </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Intelligent 24*7 Real time tracking</h2>
-                                <div className="flex">
-                                    <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
               <div className=" ml-2  ">
                 <div className="flex flex-col sm:flex-row justify-center border-2 border-gray-200 rounded-tr-[50px] rounded-bl-[50px] shadow-lg md:shadow-xl bg-white h-[380px] gap-8 ">
                   <div className="  w-full md:w-1/3 sm:1/3 lg:1/3">
@@ -559,14 +756,6 @@ export default function AssetManagement() {
               </div>
             </div>
             <div className=" xl:w-1/2 md:w-1/2  bg-white mt-10  ">
-              {/* <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full   "> */}
-              {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <img className="p-1" src={intelligent} alt="" />
-                                </div>
-                                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Intelligent 24*7 Real time tracking</h2>
-                                <div className="flex">
-                                    <span><img className="p-1" src={IconFC} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
               <div className=" ml-2  ">
                 <div className="flex flex-col sm:flex-row justify-center border-2 border-gray-200 rounded-tr-[50px] rounded-bl-[50px] shadow-lg md:shadow-xl bg-white h-[380px] gap-8  ">
                   <div className="  w-full md:w-1/3 sm:1/3 lg:1/3">
@@ -601,7 +790,7 @@ export default function AssetManagement() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

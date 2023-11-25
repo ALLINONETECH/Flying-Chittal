@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import React from "react";
 
@@ -43,6 +45,7 @@ export default function About() {
   const search = window.location.search;
   const params = new URLSearchParams(search);
   const page = params.get("page");
+
   useEffect(() => {
     if (page == "who") {
       whoRef.current?.scrollIntoView({ behavior: "smooth" });
