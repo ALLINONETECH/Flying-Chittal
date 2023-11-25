@@ -23,3 +23,25 @@
     border-radius: 10%;
   }
 }
+
+/* Add this CSS to your styles */
+.button-container {
+  position: relative;
+}
+
+.text-blue-500 {
+  transform: translateY(40px);
+  opacity: 0; /* Hide the button by default */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+  background-color: transparent; /* Add a background color for better visibility */
+  padding: 5px; /* Add padding for better aesthetics */
+  transition: opacity 0.3s ease; /* Add a transition effect for a smooth appearance */
+}
+
+.button-container:hover .text-blue-500 {
+  text-decoration: none;
+  opacity: 1; /* Show the button on hover */
+}

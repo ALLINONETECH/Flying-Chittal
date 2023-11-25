@@ -101,7 +101,7 @@ export default function Navbar() {
       <li>
         <Link
           to="/chat"
-          className="text-white bg-[#f85a47] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 md:mt-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          className="text-white bg-[#f85a47] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 md:px-2 md:py-2.5 mr-1 md:mr-2 md:mt-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 "
         >
           Contact Us
         </Link>
@@ -141,7 +141,7 @@ export default function Navbar() {
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
-                    {openNav ? (
+          {openNav ? (
             <AdjustmentsHorizontalIcon className="h-6 w-6 text-blue-500 ml-auto" />
           ) : (
             <AdjustmentsHorizontalIcon className="h-6 w-6 text-blue-500 ml-auto" />

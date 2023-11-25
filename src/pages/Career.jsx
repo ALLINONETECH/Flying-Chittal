@@ -29,29 +29,21 @@ export default function career() {
             <div className="flex lg:hidden"></div>
           </div>
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
-          <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-            {/* <div className="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:-px-8 lg:space-y-0">
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Home</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Components</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Pricing</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Contact</a>
-                        </div> */}
-            {/* <a className="block px-5 py-2 mt-4 text-sm text-center text-white capitalize bg-blue-600 rounded-lg lg:mt-0 hover:bg-blue-500 lg:w-auto" href="#">
-                            Get started
-                        </a> */}
-          </div>
+          {/* <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+           
+          </div> */}
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className="mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
               Careers
             </h1>
-            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
               We provide Smart Solutions to Simplify Your Future
             </p>
             {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex flex-col lg:flex-row  gap-2">
+              <div className="flex lg:flex-row  gap-2">
                 <div>
                   <span>
                     <img className="" src={HomeIcon} alt="" />
@@ -90,7 +82,7 @@ export default function career() {
               </span>
               Team
             </h1>
-            <p className="mb-8 mt-2 text-justify text-[20px] font-[400] font-heebo leading-[26px] text-[#30343F] w-4/5">
+            <p className="mb-8 mt-2  text-[20px] font-[400] font-heebo leading-[26px] text-[#30343F] w-4/5">
               Atulya Abhinav Tech Private Limited invites dynamic talent to join
               our team and be a part of our groundbreaking journey in the realm
               of Digital Transformation and Innovation, Automation of Enterprise
@@ -125,7 +117,7 @@ export default function career() {
       >
         <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
           <h1 className="font-heebo text-4xl font-bold mb-5 "></h1>
-          <p className="font-heebo text-lg font-normal text-justify mb-20 ">
+          <p className="font-heebo text-lg font-normal  mb-20 ">
             We value your skills and experience, and should a fitting job
             opportunity arise, we will reach out to you promptly. We appreciate
             your interest in joining our team and anticipate the possibility of

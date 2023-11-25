@@ -190,7 +190,7 @@ export default function Home() {
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             {/* <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  w-4/5 "> */}
 
-            <p className="mb-8  text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed  w-4/5mb-8   font-heebo  text-[#30343F]  w-4/5 ">
+            <p className="mb-8  text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed  w-4/5mb-8   font-heebo  text-[#30343F]  w-5/6 ">
               Automate Your Enterprise Digital Workflows for Enhanced
               Resilience, Scalability, and Sustainability. We Help Automate
               Enterprise Digital Workflows to Streamline Processes, Boost
@@ -198,7 +198,7 @@ export default function Home() {
               Enterprise Digital Workflows for Enhanced Resilience, Scalability,
               and Sustainability. We Help Automate Enterprise Digital Workflows
               to Streamline Processes, Boost Productivity, and Provide
-              Data-Driven Insights
+              Data-Driven Insights.
             </p>
           </div>
         </div>

@@ -194,7 +194,7 @@ export default function flyingChital() {
               Multimodal Integrated Logistics Management
             </h1>
             <div className="my-2 rounded-md p-2 bg-slate-200 ">
-              <p className=" not-italic font-normal leading-7  text-[#30343F]mb-4 text-justify text-xl mt-2 mr-2 font-heebo">
+              <p className=" not-italic font-normal leading-7  text-[#30343F]mb-4  text-xl mt-2 mr-2 font-heebo ">
                 Flying Chital stands as a trailblazing, multi-modal integrated
                 logistics management platform, revolutionizing the logistics
                 landscape with its comprehensive suite of services. By combining
@@ -209,7 +209,7 @@ export default function flyingChital() {
               Decision Making Information at Fingertip
             </h1>
             <div className="bg-orange-50 my-2 rounded-md p-2 ">
-              <p className=" not-italic font-normal leading-7  text-[#30343F] mb-4 text-justify text-xl mt-2 mr-2 ">
+              <p className=" not-italic font-normal leading-7  text-[#30343F] mb-4  text-xl mt-2 mr-2 ">
                 Positioned at the forefront of its category, Flying Chital's
                 mobility feature offers 'Smart Agile Logistics Operations at
                 Fingertip,' ensuring unparalleled accessibility and 100%
@@ -288,15 +288,15 @@ export default function flyingChital() {
 
       <section className="text-gray-600 body-font mt-10 rounded-tl-[50px] rounded-br-[50px] pb-10 container">
         <div className="container px-5 py-10 mx-auto ">
-          <h1 className="title-font sm:text-4xl text-3xl font-medium text-gray-900 mt-5 text-center  md:text-center">
+          <h1 className="title-font sm:text-4xl text-3xl font-medium text-gray-900 mt-5 text-start  md:text-start ml-12">
             <span className="text-[#3734a9]">Highlights</span>
           </h1>
-          <div className="flex justify-center  md:text-center">
+          <div className="flex text-start  md:text-start ml-12">
             <div className="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
           </div>
 
-          <div className=" mx-auto flex flex-col lg:flex-row ml-20 py-10 md:items-center">
-            <div className="lg:w-full md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left   ml-12">
+          <div className=" mx-auto flex flex-col lg:flex-row  py-10 ">
+            <div className="lg:w-full md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-start text-left   ml-12">
               <div className="flex mt-5">
                 <span>
                   <img className="p-1" src={IconFC} alt="" />
@@ -471,7 +471,7 @@ export default function flyingChital() {
       {/* Logistic every minute */}
       <section className="text-gray-600 body-font mt-10 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
         <div className="container  flex flex-col-reverse md:flex-row items-center px-5 py-10">
-          <div className="relative lg:flex-grow md:w-1/2 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-center  text-center sm:pl-20">
+          <div className="relative lg:flex-grow md:w-1/2 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start  text-start ">
             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
               <span className="text-indigo-800 font-bold text-[40px]  ">
                 Logistics&nbsp;
@@ -484,7 +484,7 @@ export default function flyingChital() {
 
             <div className="flex flex-col mt-5">
               {/* Repeat this block for each item */}
-              <div className="flex items-center">
+              <div className="flex items-start">
                 <span>
                   <img className="p-1" src={IconFC} alt="" />
                 </span>
@@ -492,7 +492,15 @@ export default function flyingChital() {
                   Current process disjointed
                 </p>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-start">
+                <span>
+                  <img className="p-1" src={IconFC} alt="" />
+                </span>
+                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
+                  Data collected offline - Not leveraged to full potential
+                </p>
+              </div>
+              <div className="flex items-start">
                 <span>
                   <img className="p-1" src={IconFC} alt="" />
                 </span>
@@ -559,7 +567,7 @@ export default function flyingChital() {
       </section>
 
       <section className="text-gray-600 body-font mt-10">
-        <div className="container mx-auto flex pl-28 py-12 md:flex-row flex-col items-center">
+        <div className="container mx-auto flex pl-8 py-12 md:flex-row flex-col items-start">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
             <img
               className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
@@ -567,7 +575,7 @@ export default function flyingChital() {
               src={Citem3}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-start text-start">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
               <span className=" text-indigo-800 font-bold text-[40px] ">
                 Smart
@@ -654,7 +662,7 @@ export default function flyingChital() {
                   </p>
                 </div>
               </div>
-              <div className="pl-20 mt-4">
+              <div className=" mt-4">
                 <div className="flex mt-5">
                   <span>
                     <img className="p-1" src={IconFC} alt="" />
@@ -881,8 +889,8 @@ export default function flyingChital() {
       </section>
 
       <section className="text-gray-600 body-font mt-10 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
-        <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center ">
-          <div className=" relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center  ">
+        <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-start ">
+          <div className=" relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-start text-start  ">
             <h1 className="title-font sm:text-4xl text-3xl  font-medium text-gray-900  mt-5">
               In Summary
             </h1>
