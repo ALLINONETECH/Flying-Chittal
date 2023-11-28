@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Blog1 from "../assets/images/Blog1.png";
 import FCAgriculture from "../assets/images/istockphoto-73tYS6yBVq.jpg";

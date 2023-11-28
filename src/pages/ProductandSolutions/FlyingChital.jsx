@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Rightarr from "../../assets/images/Rightarr.png";
 import smalllogo from "../../assets/images/smalllogo.png";
@@ -212,7 +215,7 @@ export default function flyingChital() {
               <p className=" not-italic font-normal leading-7  text-[#30343F] mb-4 text-justify text-xl mt-2 mr-2 ">
                 Positioned at the forefront of its category, Flying Chital's
                 mobility feature offers 'Smart Agile Logistics Operations at
-                Fingertip,' ensuring unparalleled accessibility and 100%
+                Fingertip, ensuring unparalleled accessibility and 100%
                 visibility, irrespective of location or device. Moreover, its
                 integrated digital platform interfaces effortlessly with various
                 Government Regulatory Portals, including Vahan, Parivahan, GST
