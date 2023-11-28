@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../../assets/images/istockphoto-fS1CLV3ig5.jpg";
 import Card2 from "../../assets/images/istockphoto-Gmxn3WwBXe2.jpg";
 import Card3 from "../../assets/images/istockphoto-Q7uqFa1tlN.jpg";
@@ -21,6 +21,21 @@ import raillogistic6 from "../../assets/images/railInbound.jpg";
 import raillogistic7 from "../../assets/images/istockphoto-es9kqyNnxj.jpg";
 
 export default function RoadLogistics() {
+  const [readmore, setReadmore] = useState({
+    readmore1: false,
+    readmore2: false,
+    readmore3: false,
+    readmore4: false,
+    readmore5: false,
+    readmore6: false,
+    readmore7: false,
+  });
+  const toggleReadMore = (section) => {
+    setReadmore((prevState) => ({
+      ...prevState,
+      [section]: !prevState[section],
+    }));
+  };
   return (
     <div>
       {/* Section-1 Industry */}
@@ -124,9 +139,9 @@ export default function RoadLogistics() {
       </section>
 
       <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px]">
-        <div className="container px-32 py-5 mx-auto">
+        <div className="container mx-auto md:px-32 md:py-5 sm:px-0 sm:py-0">
           <div className="flex flex-wrap -m-4 ">
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img className="rounded-tr-[80px] w-full" src={Card} alt="" />
@@ -154,7 +169,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -183,7 +198,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -211,7 +226,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -238,7 +253,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -263,7 +278,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -289,7 +304,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -316,7 +331,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -346,7 +361,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -377,7 +392,7 @@ export default function RoadLogistics() {
                 </div>
               </div>
             </div>
-            <div className=" w-auto md:w-1/2 p-4  ">
+            <div className=" w-full md:w-1/2 p-4  ">
               <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
                 <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
                   <img
@@ -458,7 +473,7 @@ export default function RoadLogistics() {
       </section>
 
       <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]  ">
-        <div className="container px-32 py-5 mx-auto">
+        <div className="container mx-auto md:px-32 md:py-5 sm:px-0 sm:py-0">
           <div className="flex flex-wrap -m-4 ">
             <div className="flex justify-center w-full mb-3">
               <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-200">
@@ -493,23 +508,61 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5 mt-60">
                       Outbound From Mines
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify  mb-20">
-                      Efficient mine outbound logistics, powered by technology,
-                      has revolutionized the mining industry. By leveraging
-                      advanced tracking and automation systems, mines can
-                      optimize the transportation of raw materials and products,
-                      reducing costs and increasing overall productivity.
-                      Real-time monitoring of shipments, route optimization, and
-                      predictive maintenance of transportation vehicles are just
-                      a few examples of how technology streamlines the outbound
-                      logistics process. This not only enhances the safety of
-                      the supply chain but also minimizes environmental impacts,
-                      making it a sustainable and forward-thinking approach to
-                      resource extraction. In a rapidly evolving industry,
-                      embracing these technological solutions is essential for
-                      ensuring both economic viability and environmental
-                      responsibility.
-                    </p>
+                    <div className="button-container relative mb-10">
+                      <p className="font-heebo text-lg font-normal text-justify mb-2">
+                        Efficient mine outbound logistics, powered by
+                        technology, has revolutionized the mining industry. By
+                        leveraging advanced tracking and automation systems,
+                        mines can optimize the transportation of raw materials
+                        and products,
+                      </p>
+                      {readmore.readmore1 ? (
+                        <p className="font-heebo text-lg font-normal text-justify mb-20">
+                          reducing costs and increasing overall productivity.
+                          Real-time monitoring of shipments, route optimization,
+                          and predictive maintenance of transportation vehicles
+                          are just a few examples of how technology streamlines
+                          the outbound logistics process. This not only enhances
+                          the safety of the supply chain but also minimizes
+                          environmental impacts, making it a sustainable and
+                          forward-thinking approach to resource extraction. In a
+                          rapidly evolving industry, embracing these
+                          technological solutions is essential for ensuring both
+                          economic viability and environmental responsibility.
+                        </p>
+                      ) : null}
+                      <div
+                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
+                          readmore.readmore1 ? "opacity-100" : ""
+                        }`}
+                      >
+                        {/* <button
+                          onClick={() => toggleReadMore("readmore1")}
+                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        >
+                          {readmore.readmore1 ? "Read Less" : "Read More"}
+                        </button> */}
+                        <button
+                          onClick={() => toggleReadMore("readmore1")}
+                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
+                        >
+                          {readmore.readmore1 ? "Read Less" : "Read More"}
+                          <span class="ml-2">
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              class="w-4 h-4"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -524,24 +577,64 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5 mt-52 ">
                       Inbound To Plants
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify   mb-20">
-                      Leveraging high-end technologies in logistics management
-                      for sourcing raw materials and other essentials is a
-                      game-changer in the modern business landscape. These
-                      technologies, including artificial intelligence,
-                      blockchain, and Internet of Things (IoT), offer real-time
-                      visibility and optimization capabilities that streamline
-                      the entire supply chain process. They enable companies to
-                      track the movement of raw materials from source to
-                      destination, anticipate potential disruptions, and ensure
-                      timely deliveries. Additionally, advanced data analytics
-                      can help in making data-driven decisions for procurement,
-                      inventory management, and demand forecasting. By
-                      harnessing the power of these cutting-edge tools,
-                      businesses can not only reduce costs but also enhance
-                      their agility and responsiveness, ensuring a competitive
-                      edge in an increasingly complex global marketplace.
-                    </p>
+                    <div className="button-container relative mb-10">
+                      <p className="font-heebo text-lg font-normal text-justify mb-2">
+                        Leveraging high-end technologies in logistics management
+                        for sourcing raw materials and other essentials is a
+                        game-changer in the modern business landscape. These
+                        technologies, including artificial intelligence,
+                      </p>
+                      {readmore.readmore2 ? (
+                        <p className="font-heebo text-lg font-normal text-justify mb-20">
+                          blockchain, and Internet of Things (IoT), offer
+                          real-time visibility and optimization capabilities
+                          that streamline the entire supply chain process. They
+                          enable companies to track the movement of raw
+                          materials from source to destination, anticipate
+                          potential disruptions, and ensure timely deliveries.
+                          Additionally, advanced data analytics can help in
+                          making data-driven decisions for procurement,
+                          inventory management, and demand forecasting. By
+                          harnessing the power of these cutting-edge tools,
+                          businesses can not only reduce costs but also enhance
+                          their agility and responsiveness, ensuring a
+                          competitive edge in an increasingly complex global
+                          marketplace.
+                        </p>
+                      ) : null}
+                      <div
+                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
+                          readmore.readmore2 ? "opacity-100" : ""
+                        }`}
+                      >
+                        {/* <button
+                          onClick={() => toggleReadMore("readmore2")}
+                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        >
+                          {readmore.readmore2 ? "Read Less" : "Read More"}
+                        </button> */}
+
+                        <button
+                          onClick={() => toggleReadMore("readmore2")}
+                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
+                        >
+                          {readmore.readmore2 ? "Read Less" : "Read More"}
+                          <span class="ml-2">
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              class="w-4 h-4"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -556,22 +649,62 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5  mt-40 ">
                       Outbound From Plants
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify mb-20">
-                      Harnessing high-end technologies for efficient logistics
-                      management in the supply of finished goods and products is
-                      imperative for businesses looking to maintain security and
-                      meet customer demand with precision. Advanced technologies
-                      like AI, RFID, and automation systems empower companies to
-                      monitor the entire distribution network in real-time,
-                      ensuring the safety of products and minimizing the risk of
-                      theft or damage. Furthermore, these tools optimize routes,
-                      anticipate potential delays, and enhance inventory
-                      visibility, all of which are crucial for on-time
-                      deliveries. By integrating these innovative solutions,
-                      companies can guarantee the seamless flow of products,
-                      enhance customer satisfaction, and remain competitive in
-                      an increasingly fast-paced and demanding market.
-                    </p>
+
+                    <div className="button-container relative mb-10">
+                      <p className="font-heebo text-lg font-normal text-justify mb-2">
+                        Harnessing high-end technologies for efficient logistics
+                        management in the supply of finished goods and products
+                        is imperative for businesses looking to maintain
+                        security and meet customer demand with precision.
+                      </p>
+                      {readmore.readmore3 ? (
+                        <p className="font-heebo text-lg font-normal text-justify mb-20">
+                          Advanced technologies like AI, RFID, and automation
+                          systems empower companies to monitor the entire
+                          distribution network in real-time, ensuring the safety
+                          of products and minimizing the risk of theft or
+                          damage. Furthermore, these tools optimize routes,
+                          anticipate potential delays, and enhance inventory
+                          visibility, all of which are crucial for on-time
+                          deliveries. By integrating these innovative solutions,
+                          companies can guarantee the seamless flow of products,
+                          enhance customer satisfaction, and remain competitive
+                          in an increasingly fast-paced and demanding market.
+                        </p>
+                      ) : null}
+                      <div
+                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
+                          readmore.readmore3 ? "opacity-100" : ""
+                        }`}
+                      >
+                        {/* <button
+                          onClick={() => toggleReadMore("readmore3")}
+                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        >
+                          {readmore.readmore3 ? "Read Less" : "Read More"}
+                        </button> */}
+
+                        <button
+                          onClick={() => toggleReadMore("readmore3")}
+                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
+                        >
+                          {readmore.readmore3 ? "Read Less" : "Read More"}
+                          <span class="ml-2">
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              class="w-4 h-4"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -587,22 +720,61 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
                       Inbound To Ports
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
-                      Technologies play a pivotal role in managing inbound
-                      logistics to ports, ensuring the efficiency and
-                      effectiveness of this critical gateway in global trade.
-                      The modern world relies on the seamless flow of goods, and
-                      advanced tools such as data analytics, GPS tracking, and
-                      digital platforms are instrumental in optimizing the
-                      movement of cargo from point of origin to the port.
-                      Real-time data and smart systems enable better
-                      coordination, minimize congestion, and enhance security,
-                      while also offering better visibility and predictability
-                      for all stakeholders. In an era of increasingly complex
-                      and interconnected supply chains, these technologies are
-                      indispensable for port logistics, driving economic growth,
-                      and facilitating global trade on an unprecedented scale.
-                    </p>
+                    <div className="button-container relative mb-10">
+                      <p className="font-heebo text-lg font-normal text-justify mb-2">
+                        Technologies play a pivotal role in managing inbound
+                        logistics to ports, ensuring the efficiency and
+                        effectiveness of this critical gateway in global trade.
+                      </p>
+                      {readmore.readmore4 ? (
+                        <p className="font-heebo text-lg font-normal text-justify mb-20">
+                          The modern world relies on the seamless flow of goods,
+                          and advanced tools such as data analytics, GPS
+                          tracking, and digital platforms are instrumental in
+                          optimizing the movement of cargo from point of origin
+                          to the port. Real-time data and smart systems enable
+                          better coordination, minimize congestion, and enhance
+                          security, while also offering better visibility and
+                          predictability for all stakeholders. In an era of
+                          increasingly complex and interconnected supply chains,
+                          these technologies are indispensable for port
+                          logistics, driving economic growth, and facilitating
+                          global trade on an unprecedented scale.
+                        </p>
+                      ) : null}
+                      <div
+                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
+                          readmore.readmore4 ? "opacity-100" : ""
+                        }`}
+                      >
+                        {/* <button
+                          onClick={() => toggleReadMore("readmore4")}
+                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        >
+                          {readmore.readmore4 ? "Read Less" : "Read More"}
+                        </button> */}
+
+                        <button
+                          onClick={() => toggleReadMore("readmore4")}
+                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
+                        >
+                          {readmore.readmore4 ? "Read Less" : "Read More"}
+                          <span class="ml-2">
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              class="w-4 h-4"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -617,23 +789,62 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
                       Outbound From Ports
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
-                      Technology is paramount in managing outbound logistics
-                      from ports, serving as the linchpin of efficient and
-                      effective global trade. Ports are the gateway for exports
-                      and outbound shipments, and the integration of advanced
-                      tools such as real-time tracking, automation, and
-                      predictive analytics is crucial in optimizing the movement
-                      of goods. These technologies enable the timely loading of
-                      cargo onto vessels, streamline customs processes, and
-                      enhance security and compliance. Additionally, data-driven
-                      insights empower businesses to make informed decisions and
-                      optimize their supply chain strategies. By embracing
-                      technological innovations, ports can ensure the swift and
-                      secure flow of products, bolster international trade, and
-                      contribute significantly to economic growth and
-                      competitiveness on a global scale.
-                    </p>
+                    <div className="button-container relative mb-10">
+                      <p className="font-heebo text-lg font-normal text-justify mb-2">
+                        Technology is paramount in managing outbound logistics
+                        from ports, serving as the linchpin of efficient and
+                        effective global trade. Ports are the gateway for
+                        exports and outbound shipments, and the integration of
+                        advanced tools
+                      </p>
+                      {readmore.readmore5 ? (
+                        <p className="font-heebo text-lg font-normal text-justify mb-20">
+                          such as real-time tracking, automation, and predictive
+                          analytics is crucial in optimizing the movement of
+                          goods. These technologies enable the timely loading of
+                          cargo onto vessels, streamline customs processes, and
+                          enhance security and compliance. Additionally,
+                          data-driven insights empower businesses to make
+                          informed decisions and optimize their supply chain
+                          strategies. By embracing technological innovations,
+                          ports can ensure the swift and secure flow of
+                          products, bolster international trade, and contribute
+                          significantly to economic growth and competitiveness
+                          on a global scale.
+                        </p>
+                      ) : null}
+                      <div
+                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
+                          readmore.readmore5 ? "opacity-100" : ""
+                        }`}
+                      >
+                        {/* <button
+                          onClick={() => toggleReadMore("readmore5")}
+                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        >
+                          {readmore.readmore5 ? "Read Less" : "Read More"}
+                        </button> */}
+                        <button
+                          onClick={() => toggleReadMore("readmore5")}
+                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
+                        >
+                          {readmore.readmore5 ? "Read Less" : "Read More"}
+                          <span class="ml-2">
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              class="w-4 h-4"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -648,21 +859,60 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
                       Inbound To Railway Sidings
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
-                      Technologies are indispensable in the efficient management
-                      of inbound logistics at railway sidings, offering numerous
-                      advantages for businesses and the transportation sector.
-                      These advancements include sensor-based monitoring, RFID
-                      tracking, and digital inventory management systems, which
-                      provide real-time visibility into cargo movements and
-                      storage at sidings. They enhance the coordination and
-                      scheduling of inbound shipments, reduce congestion, and
-                      minimize waiting times. By harnessing these tools,
-                      companies can optimize their logistics, reduce costs, and
-                      enhance their overall supply chain efficiency, making
-                      railway sidings a crucial component in the seamless
-                      movement of goods.
-                    </p>
+                    <div className="button-container relative mb-10">
+                      <p className="font-heebo text-lg font-normal text-justify mb-2">
+                        Technologies are indispensable in the efficient
+                        management of inbound logistics at railway sidings,
+                        offering numerous advantages for businesses and the
+                        transportation sector.
+                      </p>
+                      {readmore.readmore6 ? (
+                        <p className="font-heebo text-lg font-normal text-justify mb-20">
+                          These advancements include sensor-based monitoring,
+                          RFID tracking, and digital inventory management
+                          systems, which provide real-time visibility into cargo
+                          movements and storage at sidings. They enhance the
+                          coordination and scheduling of inbound shipments,
+                          reduce congestion, and minimize waiting times. By
+                          harnessing these tools, companies can optimize their
+                          logistics, reduce costs, and enhance their overall
+                          supply chain efficiency, making railway sidings a
+                          crucial component in the seamless movement of goods.
+                        </p>
+                      ) : null}
+                      <div
+                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
+                          readmore.readmore6 ? "opacity-100" : ""
+                        }`}
+                      >
+                        {/* <button
+                          onClick={() => toggleReadMore("readmore6")}
+                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        >
+                          {readmore.readmore6 ? "Read Less" : "Read More"}
+                        </button> */}
+
+                        <button
+                          onClick={() => toggleReadMore("readmore6")}
+                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
+                        >
+                          {readmore.readmore6 ? "Read Less" : "Read More"}
+                          <span class="ml-2">
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              class="w-4 h-4"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -677,24 +927,64 @@ export default function RoadLogistics() {
                     <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
                       Outbound From Railway Sidings
                     </h1>
-                    <p className="font-heebo text-lg font-normal text-justify mb-20 ">
-                      Technological advancements are pivotal in managing
-                      outbound logistics at railway sidings, offering an array
-                      of benefits for businesses and the transportation
-                      industry. These innovations, such as real-time tracking
-                      systems, automation, and data analytics, facilitate the
-                      efficient loading and dispatch of goods from sidings. They
-                      enhance scheduling, routing, and last-mile delivery,
-                      ensuring the timely and secure movement of products.
-                      Additionally, technology enables predictive maintenance of
-                      railway infrastructure, reducing the risk of disruptions
-                      and ensuring the safety and reliability of the outbound
-                      logistics process. By leveraging these tools, companies
-                      can streamline their supply chain, reduce operational
-                      costs, and improve the overall efficiency of transporting
-                      goods via railway sidings, contributing to economic growth
-                      and sustainability.
-                    </p>
+
+                    <div className="button-container relative mb-10">
+                      <p className="font-heebo text-lg font-normal text-justify mb-2">
+                        Technological advancements are pivotal in managing
+                        outbound logistics at railway sidings, offering an array
+                        of benefits for businesses and the transportation
+                        industry. These innovations, such as real-time tracking
+                        systems,
+                      </p>
+                      {readmore.readmore7 ? (
+                        <p className="font-heebo text-lg font-normal text-justify mb-20">
+                          automation, and data analytics, facilitate the
+                          efficient loading and dispatch of goods from sidings.
+                          They enhance scheduling, routing, and last-mile
+                          delivery, ensuring the timely and secure movement of
+                          products. Additionally, technology enables predictive
+                          maintenance of railway infrastructure, reducing the
+                          risk of disruptions and ensuring the safety and
+                          reliability of the outbound logistics process. By
+                          leveraging these tools, companies can streamline their
+                          supply chain, reduce operational costs, and improve
+                          the overall efficiency of transporting goods via
+                          railway sidings, contributing to economic growth and
+                          sustainability.
+                        </p>
+                      ) : null}
+                      <div
+                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
+                          readmore.readmore7 ? "opacity-100" : ""
+                        }`}
+                      >
+                        {/* <button
+                          onClick={() => toggleReadMore("readmore7")}
+                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        >
+                          {readmore.readmore7 ? "Read Less" : "Read More"}
+                        </button> */}
+                        <button
+                          onClick={() => toggleReadMore("readmore7")}
+                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
+                        >
+                          {readmore.readmore7 ? "Read Less" : "Read More"}
+                          <span class="ml-2">
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              class="w-4 h-4"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

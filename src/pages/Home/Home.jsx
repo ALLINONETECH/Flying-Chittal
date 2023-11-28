@@ -46,7 +46,7 @@ export default function Home() {
           <div className=" mx-auto">
             <h1
               data-aos="fade-left"
-              className=" not-italic font-bold mb-8 font-heebo title-font sm:text-6xl  text-4xl title-font text-white "
+              className=" text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white"
             >
               Digital Transformation & <br /> Innovation
             </h1>
@@ -130,10 +130,10 @@ export default function Home() {
                 src={smalllogo}
               />
             </div>
-            <div className="lg:w-3/4 md:w-full w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-2  text-[#30343F] border-2">
+            <div className="lg:w-3/4 md:w-full w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-2  text-[#30343F] ">
               <div
                 data-aos="fade-up-left"
-                className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo border-2 "
+                className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo "
               >
                 <One />
               </div>
@@ -190,7 +190,7 @@ export default function Home() {
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             {/* <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  w-4/5 "> */}
 
-            <p className="mb-8  text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed  w-4/5mb-8   font-heebo  text-[#30343F]  w-4/5 ">
+            <p className="mb-8  text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed  w-4/5mb-8   font-heebo  text-[#30343F]  w-5/6 ">
               Automate Your Enterprise Digital Workflows for Enhanced
               Resilience, Scalability, and Sustainability. We Help Automate
               Enterprise Digital Workflows to Streamline Processes, Boost
@@ -198,7 +198,7 @@ export default function Home() {
               Enterprise Digital Workflows for Enhanced Resilience, Scalability,
               and Sustainability. We Help Automate Enterprise Digital Workflows
               to Streamline Processes, Boost Productivity, and Provide
-              Data-Driven Insights
+              Data-Driven Insights.
             </p>
           </div>
         </div>

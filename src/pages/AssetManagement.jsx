@@ -56,29 +56,26 @@ export default function AssetManagement() {
         </nav>
         <div className="container px-6 py-16 mx-auto text-start">
           <div className="mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
+            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
               Flying Chital HEM/HMV/LMV Mobile
               <br /> Asset Management System
             </h1>
-            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
+            <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
               We provide Smart Solutions to Simplify Your Future
             </p>
 
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex flex-col lg:flex-row  gap-2">
+              <div className="flex lg:flex-row  gap-2">
                 <div>
                   <span>
-                    <img className="" src={HomeIcon} alt="" />
+                    <img className="w-full" src={HomeIcon} alt="" />
                   </span>
                 </div>
-                <div classNAme="justify">
-                  {" "}
+                <div classNme="justify">
                   <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
                     Home
                   </span>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
                     / Flying Chital HEM/HMV/LMV Mobile Asset Management System
                   </span>{" "}
                 </div>
@@ -385,22 +382,20 @@ export default function AssetManagement() {
                   <img
                     className="object-cover object-center w-full"
                     alt="hero"
-                    src={Drivers}
+                    src={SafetyS}
                     id="someimg"
                   />
                 </div>
                 <div className=" h-full xl:w-1/2 md:w-1/2  pt-4 ">
                   <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
-                    Intelligent 24*7 Real Time <br />
-                    Tracking
+                    Safety & Theft Prevention
                   </h2>
                   <div className="flex">
                     <span>
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Live location updates on app,
-                      <br /> web, and email
+                      SOS alerts
                     </p>
                   </div>
 
@@ -409,7 +404,7 @@ export default function AssetManagement() {
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Automated Trip Management
+                      Geofence with real time vehicle entry and exit alerts
                     </p>
                   </div>
                   <div className="flex">
@@ -417,16 +412,7 @@ export default function AssetManagement() {
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Unlimited movement history
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <span>
-                      <img className="p-1" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Track multiple vehicles <br />
-                      simulataneously
+                      Remove vehicle lock with immobillizer
                     </p>
                   </div>
                 </div>
@@ -439,22 +425,20 @@ export default function AssetManagement() {
                   <img
                     className="object-cover object-center w-full"
                     alt="hero"
-                    src={Drivers}
+                    src={DriverS1}
                     id="someimg"
                   />
                 </div>
                 <div className=" h-full xl:w-1/2 md:w-1/2  pt-4 ">
                   <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
-                    Intelligent 24*7 Real Time <br />
-                    Tracking
+                    Driver Scorecards
                   </h2>
                   <div className="flex">
                     <span>
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Live location updates on app,
-                      <br /> web, and email
+                      Track and rank drivers performance
                     </p>
                   </div>
 
@@ -463,7 +447,8 @@ export default function AssetManagement() {
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Automated Trip Management
+                      Define exception and incident threshold such as over
+                      speeding, non economical driving
                     </p>
                   </div>
                   <div className="flex">
@@ -471,16 +456,7 @@ export default function AssetManagement() {
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Unlimited movement history
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <span>
-                      <img className="p-1" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Track multiple vehicles <br />
-                      simulataneously
+                      Coach drivers with real examples
                     </p>
                   </div>
                 </div>
@@ -493,22 +469,20 @@ export default function AssetManagement() {
                   <img
                     className="object-cover object-center w-full"
                     alt="hero"
-                    src={Drivers}
+                    src={FuelM}
                     id="someimg"
                   />
                 </div>
                 <div className=" h-full xl:w-1/2 md:w-1/2  pt-4 ">
                   <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
-                    Intelligent 24*7 Real Time <br />
-                    Tracking
+                    Fuel Monitoring & Tracking
                   </h2>
                   <div className="flex">
                     <span>
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Live location updates on app,
-                      <br /> web, and email
+                      Alerts on fuel drainage
                     </p>
                   </div>
 
@@ -517,24 +491,77 @@ export default function AssetManagement() {
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Automated Trip Management
+                      Visibility on refueling, draining and mileage on trips
                     </p>
                   </div>
+                </div>
+              </div>
+              <div class=" w-full  lg:flex gap-3 ">
+                <div
+                  class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  title="Woman holding a mug"
+                >
+                  <img
+                    className="object-cover object-center w-full"
+                    alt="hero"
+                    src={RichA}
+                    id="someimg"
+                  />
+                </div>
+                <div className=" h-full xl:w-1/2 md:w-1/2  pt-4 ">
+                  <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
+                    Rich Analytics & Reporting
+                  </h2>
                   <div className="flex">
                     <span>
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Unlimited movement history
+                      Customizable reports
                     </p>
                   </div>
+
                   <div className="flex">
                     <span>
                       <img className="p-1" src={IconFC} alt="" />
                     </span>
                     <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
-                      Track multiple vehicles <br />
-                      simulataneously
+                      Data driven information for preventive maintenance
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" w-full  lg:flex gap-3 ">
+                <div
+                  class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  title="Woman holding a mug"
+                >
+                  <img
+                    className="object-cover object-center w-full"
+                    alt="hero"
+                    src={DriverAp}
+                    id="someimg"
+                  />
+                </div>
+                <div className=" h-full xl:w-1/2 md:w-1/2  pt-4 ">
+                  <h2 className="text-2xl not-italic font-bold leading-8  text-gray-900  title-font mb-2 ml-2 font-heebo">
+                    Driver App
+                  </h2>
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Task management between driver and operator
+                    </p>
+                  </div>
+
+                  <div className="flex">
+                    <span>
+                      <img className="p-1" src={IconFC} alt="" />
+                    </span>
+                    <p className="text-xl not-italic font-normal leading-7 text-[#30343F]">
+                      Electronic Proof of Delivery (EPoD)
                     </p>
                   </div>
                 </div>
