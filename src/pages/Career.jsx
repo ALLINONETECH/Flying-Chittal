@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unknown-property */
 import React from "react";
-
 import CareerFC from "../assets/images/real.jpg";
 import Team from "../assets/images/Team.png";
 import career1 from "../assets/images/career1.png";

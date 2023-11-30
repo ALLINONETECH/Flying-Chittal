@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
 import React from "react";
 import intelligent from "../assets/images/intelligent.png";

@@ -298,10 +298,11 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:block">{navList}</div>
         {/* toggle switch  */}
-        <Button
-          variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
+
+        <div
+          // variant="text"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden cursor-pointer"
+          // ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
@@ -309,7 +310,7 @@ export default function Navbar() {
           ) : (
             <AdjustmentsHorizontalIcon className="h-6 w-6 text-black ml-auto" />
           )}
-        </Button>
+        </div>
       </div>
       {/* mobile nav */}
       <MobileNav open={openNav}>
