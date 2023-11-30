@@ -110,7 +110,7 @@ export default function Navbar() {
   );
 
   return (
-    <NavBarTailWind className="mx-auto ">
+    <NavBarTailWind className="mx-auto " >
       {/* desktop nav  */}
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <div className="flex ">
@@ -135,18 +135,21 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:block">{navList}</div>
         {/* toggle switch  */}
-        <Button
-          variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
+
+        <div
+          // variant="text"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden cursor-pointer"
+          // ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
-            <AdjustmentsHorizontalIcon className="h-6 w-6 text-blue-500 ml-auto" />
+            // <AdjustmentsHorizontalIcon className="h-6 w-6 text-blue-500 ml-auto" />
+            <img src="https://static-00.iconduck.com/assets.00/menu-hamburger-icon-512x445-t1eio7fs.png" />
           ) : (
-            <AdjustmentsHorizontalIcon className="h-6 w-6 text-blue-500 ml-auto" />
+            // <AdjustmentsHorizontalIcon className="h-6 w-6 text-blue-500 ml-auto" />
+            <img src="https://static-00.iconduck.com/assets.00/menu-hamburger-icon-512x445-t1eio7fs.png" />
           )}
-        </Button>
+        </div>
       </div>
       {/* mobile nav */}
       <MobileNav open={openNav}>
