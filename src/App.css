@@ -1,4 +1,5 @@
 @media (max-width: 1024px) {
+
   #who1img,
   #AboutImage1,
   #visionimg1,
@@ -6,21 +7,37 @@
   #valuesimg {
     visibility: hidden !important;
   }
+
   #whychooseusimg {
     position: relative;
-    bottom: 12em;
+    bottom  : 12em;
   }
+
   #excellance {
     position: relative;
-    bottom: 8em;
+    bottom  : 8em;
   }
+
   #myimg {
-    position: relative;
-    top: 40px;
+    position  : relative;
+    top       : 40px;
     object-fit: contain;
   }
+
   #someimg {
     border-radius: 10%;
+  }
+
+  #contact-cta {
+    width: 120px !important;
+  }
+}
+@media (max-width: 767px) {
+  #contact-cta {
+    padding-top: 20px;
+  }
+  #contact-form{
+    margin-top: 60px !important;
   }
 }
 
@@ -30,18 +47,23 @@
 }
 
 .text-blue-500 {
-  transform: translateY(40px);
-  opacity: 0; /* Hide the button by default */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-decoration: none;
-  background-color: transparent; /* Add a background color for better visibility */
-  padding: 5px; /* Add padding for better aesthetics */
-  transition: opacity 0.3s ease; /* Add a transition effect for a smooth appearance */
+  transform       : translateY(40px);
+  opacity         : 0;
+  /* Hide the button by default */
+  position        : absolute;
+  bottom          : 0;
+  left            : 0;
+  text-decoration : none;
+  background-color: transparent;
+  /* Add a background color for better visibility */
+  padding         : 5px;
+  /* Add padding for better aesthetics */
+  transition      : opacity 0.3s ease;
+  /* Add a transition effect for a smooth appearance */
 }
 
 .button-container:hover .text-blue-500 {
   text-decoration: none;
-  opacity: 1; /* Show the button on hover */
+  opacity        : 1;
+  /* Show the button on hover */
 }

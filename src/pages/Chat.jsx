@@ -89,7 +89,7 @@ export default function Chat() {
                         </div> */}
 
             <div className="flex flex-col mb-4 lg:items-start items-center  sm:mr-16">
-              <div className=" flex-grow  py-4 px-5 rounded-tr-[50px] rounded-bl-[50px]  shadow-lg   md:shadow-xl  bg-white h-full w-full px-10 ">
+              <div className=" flex-grow  py-4 px-16 rounded-tr-[50px] rounded-bl-[50px]  shadow-lg   md:shadow-xl  bg-white h-full w-full ">
                 <div className=" inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mt-10 md:ml-20 sm:ml-20 ">
                   <img className="p-1" src={Phone} alt="" />
                 </div>
@@ -103,7 +103,7 @@ export default function Chat() {
             </div>
 
             <div className="flex flex-col lg:items-start items-center mt-5 sm:mr-16 ">
-              <div className=" flex-grow   py-6 px-5 rounded-tr-[50px] rounded-bl-[50px]  shadow-lg   md:shadow-xl  bg-white h-full  w-full ">
+              <div className=" flex-grow   py-6 px-16 rounded-tr-[50px] rounded-bl-[50px]  shadow-lg   md:shadow-xl  bg-white h-full  w-full ">
                 <div className=" inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mt-10 md:ml-20 sm:ml-20 ">
                   <img className="p-1" src={Email} alt="" />
                 </div>
@@ -254,7 +254,7 @@ export default function Chat() {
                             </button>
                         </div>
                     </div> */}
-          <div className="lg:w-4/6 md:w-5/6 sm:w-full mx-auto sm:mt-10 lg:mt-10 sm:mb-10 lg:mb-10 rounded-tr-[50px] overflow-hidden rounded-bl-[30px] shadow-lg md:shadow-xl border-1 bg-white">
+          <div id="contact-form" className="lg:w-4/6 md:w-5/6 sm:w-full mx-auto lg:mt-10 sm:mt-16 sm:mb-10 lg:mb-10 rounded-tr-[50px] overflow-hidden rounded-bl-[30px] shadow-lg md:shadow-xl border-1 bg-white">
             <div className="flex flex-col text-center w-full mb-8">
               <p className="lg:w-full mx-auto text-[20px] font-[400] leading-7 font-heebo text-black mt-10">
                 Our friendly team would love to hear from you
