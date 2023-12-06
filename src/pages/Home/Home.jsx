@@ -59,12 +59,12 @@ export default function Home() {
               problems, optimize processes and save cost.
             </p>
 
-            <div className="justify-center mt-24 ">
+            <div className=" justify-center mt-24 space-x-4">
               <button
                 onClick={() => {
                   digitalRef.current?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none  hover:border-b-2 hover:border-white "
+                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white transition-all duration-300"
               >
                 Digital Transformation and Innovation
               </button>
@@ -72,7 +72,7 @@ export default function Home() {
                 onClick={() => {
                   automateRef.current?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none  hover:border-b-2 hover:border-white "
+                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white transition-all duration-300"
               >
                 Automation of Enterprise Workflows
               </button>
@@ -82,16 +82,15 @@ export default function Home() {
                     behavior: "smooth",
                   });
                 }}
-                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white"
+                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white transition-all duration-300"
               >
                 Edge Computing and Mobility
               </button>
-
               <button
                 onClick={() => {
                   managedRef.current?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white"
+                className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white transition-all duration-300"
               >
                 Managed IT Services
               </button>
@@ -130,10 +129,10 @@ export default function Home() {
                 src={smalllogo}
               />
             </div>
-            <div className="lg:w-3/4 md:w-full w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-2  text-[#30343F] ">
+            <div className="lg:w-3/4 md:w-full w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-10  text-[#30343F] ">
               <div
                 data-aos="fade-up-left"
-                className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo "
+                className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo"
               >
                 <One />
               </div>
@@ -167,7 +166,8 @@ export default function Home() {
       <section
         data-aos="fade-left"
         ref={automateRef}
-        className="text-gray-600 body-font mt-0"
+        className="text-gray-600 body-font mt-0 bg-gray-100"
+        style={{ borderRadius: "100px 0px 100px 0px" }}
       >
         <div className="container mx-auto flex  px-5 py-12 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
@@ -177,7 +177,7 @@ export default function Home() {
               src={Automation1}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-4 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
               <span className=" text-indigo-800 font-bold text-[40px] ">
                 Automation
@@ -279,7 +279,7 @@ export default function Home() {
             {/* <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>     */}
           </div>
           <div className="flex flex-wrap -mx-4 -mb-10 text-center">
-            <div className="sm:w-1/2 mb-10 px-4">
+            <div className="sm:w-1/2 mb-10 px-4 ">
               <div
                 className="rounded-lg h-64 overflow-hidden"
                 data-aos="fade-up-left"
@@ -302,7 +302,7 @@ export default function Home() {
                 cloud networks.
               </p>
             </div>
-            <div className="sm:w-1/2 mb-10 px-4" data-aos="fade-up-right">
+            <div className="sm:w-1/2 mb-10 px-4  " data-aos="fade-up-right">
               <div className="rounded-lg h-64 overflow-hidden">
                 <img
                   data-aos="zoom-in"

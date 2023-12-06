@@ -503,20 +503,20 @@ export default function flyingChital() {
                   Data collected offline - Not leveraged to full potential
                 </p>
               </div>
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                 <span>
                   <img className="p-1" src={IconFC} alt="" />
                 </span>
                 <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
                   Data collected offline - Not leveraged to full potential
                 </p>
-              </div>
+              </div> */}
               <div className="flex items-center">
                 <span>
                   <img className="p-1" src={IconFC} alt="" />
                 </span>
                 <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  Manual and pater-based system
+                  Manual and paper-based system
                 </p>
               </div>
               <div className="flex items-center">
@@ -570,7 +570,7 @@ export default function flyingChital() {
       </section>
 
       <section className="text-gray-600 body-font mt-10">
-        <div className="container mx-auto flex pl-8 py-12 md:flex-row flex-col items-start">
+        <div className="container mx-auto flex pl-8 py-12 md:flex-row flex-col items-start" >
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
             <img
               className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
@@ -579,7 +579,7 @@ export default function flyingChital() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1" >
               <span className=" text-indigo-800 font-bold text-[40px] ">
                 Smart
               </span>
@@ -603,7 +603,7 @@ export default function flyingChital() {
                         <img className="" src={IconFC} alt="" />
                       </span>
                       <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Turn Around
+                        Turn Around Time (TAT)
                       </p>
                     </div>
                     <div className="flex gap-2">
@@ -619,7 +619,7 @@ export default function flyingChital() {
                         <img className="" src={IconFC} alt="" />
                       </span>
                       <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Revenue Leakage/Los
+                        Revenue Leakage/Loss
                       </p>
                     </div>
                     <div className="flex gap-2">
