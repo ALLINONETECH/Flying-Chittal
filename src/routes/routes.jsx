@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -42,6 +43,7 @@ import MACHArchitecture from "../pages/Blog/MACHArchitecture";
 import Blog from "../pages/Blog/Blog";
 import Fertilizer from "../pages/Blog/Fertilizer";
 import EdgeComputing from "../pages/Blog/EdgeComputing";
+import Terms from "../pages/termsandservices/terms";
 
 export default function Routes() {
   const router = createBrowserRouter([
@@ -88,6 +90,7 @@ export default function Routes() {
         { path: "/fertilizer", element: <Fertilizer /> },
         { path: "/edgeComputing", element: <EdgeComputing /> },
         { path: "/chat", element: <Chat /> },
+        { path: "/termsandcondition", element: <Terms /> },
       ],
     },
   ]);
