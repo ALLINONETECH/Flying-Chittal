@@ -458,7 +458,7 @@ export default function Chat() {
                   {/* Empty paragraph for spacing */}
                   <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3"></p>
                   <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    India - 751021
+                    {/* India - 751021 */}
                   </p>
                 </div>
               </div>

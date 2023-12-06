@@ -3,6 +3,78 @@ import React from "react";
 export default function Terms() {
   return (
     <div className="container mx-auto px-4 py-4">
+      <h1>1. WHAT WE COLLECT?</h1>
+      <h2>We may collect the following information:</h2>
+      <p>
+        <p>
+          We collect personal information that you voluntarily provide to us
+          when you register on the Services, express an interest in obtaining
+          information about us or our products and Services, when you
+          participate in activities on the Services, or otherwise when you
+          contact us.
+        </p>
+        <p>
+          Personal Information Provided by You. The personal information that we
+          collect depends on the context of your interactions with us and the
+          Services, the choices you make, and the products and features you use.
+          The personal information we collect may include the following:
+        </p>
+        <ul>
+          <li>names</li>
+          <li>phone numbers</li>
+          <li>email addresses</li>
+          <li>usernames</li>
+          <li>passwords</li>
+        </ul>
+        <h2>Sensitive Information. We do not process sensitive information.</h2>
+        <h2>
+          Application Data. If you use our application(s), we also may collect
+          the following information if you choose to provide us with access or
+          permission:
+        </h2>
+        <p>
+          Geolocation Information. We may request access or permission to track
+          location-based information from your mobile device, either
+          continuously or while you are using our mobile application(s), to
+          provide certain location-based services. If you wish to change our
+          access or permissions, you may do so in your device's settings. Mobile
+          Device Access.
+        </p>
+        <p>
+          We may request access or permission to certain features from your
+          mobile device, including your mobile device's bluetooth, camera,
+          storage, sms messages, and other features. If you wish to change our
+          access or permissions, you may do so in your device's settings. Mobile
+          Device Data. We automatically collect device information (such as your
+          mobile device ID, model, and manufacturer), operating system, version
+          information and system configuration information, device and
+          application identification numbers, browser type and version, hardware
+          model Internet service provider and/or mobile carrier, and Internet
+          Protocol (IP) address (or proxy server). If you are using our
+          application(s), we may also collect information about the phone
+          network associated with your mobile device, your mobile device’s
+          operating system or platform, the type of mobile device you use, your
+          mobile device’s unique device ID, and information about the features
+          of our application(s) you accessed. Push Notifications.
+        </p>
+        <p>
+          We may request to send you push notifications regarding your account
+          or certain features of the application(s). If you wish to opt out from
+          receiving these types of communications, you may turn them off in your
+          device's settings. This information is primarily needed to maintain
+          the security and operation of our application(s), for troubleshooting,
+          and for our internal analytics and reporting purposes.
+        </p>
+        <p>
+          All personal information that you provide to us must be true,
+          complete, and accurate, and you must notify us of any changes to such
+          personal information.
+        </p>
+        <p>Information automatically collected</p>
+        In Short: Some information — such as your Internet Protocol (IP) address
+        and/or browser and device characteristics — is collected automatically
+        when you visit our Services.
+      </p>
       <h2>I. Acceptance of terms</h2>
       <p>
         Thank you for using Flying Chital. These Terms of Service (the "Terms")
