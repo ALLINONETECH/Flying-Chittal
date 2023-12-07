@@ -11,6 +11,7 @@ import IAgro from "../../assets/images/IAgro.png";
 import Warehouse from "../../assets/images/Warehouse.png";
 import Aqua1 from "../../assets/images/Aqua1.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import { Parallax } from "react-scroll-parallax";
 
 export default function Industry() {
   const transportRef = useRef();
@@ -109,19 +110,15 @@ export default function Industry() {
               </span>
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-
-            <p class="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">
-              .
-            </p>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" data-aos="fade-right">
               <div
                 ref={transportRef}
-                className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]"
+                className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105"
               >
                 <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center rounded-tr-[30px] "
                   src={Transformation}
                   alt="blog"
                 />
@@ -130,7 +127,7 @@ export default function Industry() {
                     Transportation & Logistics
                   </h1>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The transportation and logistics industry in India is a
+                  The transportation and logistics industry in India is a
                     dynamic and rapidly evolving sector that plays a pivotal
                     role in the country's economic growth. With a vast network
                     of roads, railways, ports, and airways, India's logistics
@@ -144,8 +141,8 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2 " ref={miningRef}>
-              <div className="h-full border-2 border-gray-200 bg-white shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+            <div className="p-4 md:w-1/2 " ref={miningRef} data-aos="fade-left">
+              <div className="h-full border-2 border-gray-200 bg-white shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={IMining}
@@ -164,8 +161,8 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2" ref={metalsRef}>
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+            <div className="p-4 md:w-1/2" ref={metalsRef} data-aos="fade-right">
+              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={IManufacture}
@@ -186,8 +183,8 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2" ref={cementRef}>
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+            <div className="p-4 md:w-1/2" ref={cementRef} data-aos="fade-left">
+              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={ICement}
@@ -212,8 +209,12 @@ export default function Industry() {
               </div>
             </div>
 
-            <div className="p-4 md:w-1/2" ref={fertiliserRef}>
-              <div className="h-full border-2 border-gray-200  bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+            <div
+              className="p-4 md:w-1/2"
+              ref={fertiliserRef}
+              data-aos="fade-right"
+            >
+              <div className="h-full border-2 border-gray-200  bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={Fertilizer1}
@@ -236,8 +237,8 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2" ref={oilRef}>
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+            <div className="p-4 md:w-1/2" ref={oilRef} data-aos="fade-left">
+              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={OILGas1}
@@ -261,8 +262,12 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2" ref={warehousingRef}>
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+            <div
+              className="p-4 md:w-1/2"
+              ref={warehousingRef}
+              data-aos="fade-right"
+            >
+              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={Warehouse}
@@ -288,8 +293,12 @@ export default function Industry() {
               </div>
             </div>
 
-            <div className="p-4 md:w-1/2" ref={agricultureRef}>
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+            <div
+              className="p-4 md:w-1/2"
+              ref={agricultureRef}
+              data-aos="fade-left"
+            >
+              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={IAgro}
@@ -315,8 +324,12 @@ export default function Industry() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2" ref={agricultureRef}>
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">
+            <div
+              className="p-4 md:w-1/2"
+              ref={agricultureRef}
+              data-aos="fade-right"
+            >
+              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={Aqua1}

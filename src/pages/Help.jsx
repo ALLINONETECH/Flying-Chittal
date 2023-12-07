@@ -1,12 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 import React from "react";
-
 import Blog1 from "../assets/images/Blog1.png";
 import HomeIcon from "../assets/images/HomeIcon.png";
-// import FCAgriculture from "../../assets/images/FCAgriculture.png";
-// import CDAC from "../../assets/images/CDAC.png";
-// import IconFC from "../../assets/images/IconFC.png";
-// import RailMod1 from "../../assets/images/RailMod1.png";
+import Lottie from "lottie-react";
+import helpCenter from "../assets/json/helpCenter.json";
+import phone from "../assets/json/phone.json";
+import email from "../assets/json/email.json";
 
 export default function Help() {
   return (
@@ -124,6 +123,9 @@ export default function Help() {
           <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
               <div>
+                <Lottie animationData={helpCenter} loop={true} />
+              </div>
+              <div>
                 <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -140,80 +142,24 @@ export default function Help() {
                     />
                   </svg>
                 </span>
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                  Email
+                <h2 className="pt-10 mt-10 text-base font-medium text-gray-800 dark:text-white">
+                  <Lottie
+                    animationData={email}
+                    loop={true}
+                    style={{
+                      height: "20%",
+                      width: "20%",
+                      position: "relative",
+                      left: "80px",
+                    }}
+                  />{" "}
+                  customercare@atulyaabhinav.com
                 </h2>
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                   Our friendly team is here to help.
-                </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  customercare@atulyaabhinav.com
                 </p>
               </div>
-              {/* <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                    />
-                  </svg>
-                </span>
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                  Live chat
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Our friendly team is here to help.
-                </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  Start new chat
-                </p>
-              </div> */}
-              {/* <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                    />
-                  </svg>
-                </span>
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                  Office
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Come say hello at our office HQ.
-                </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  100 Smith Street Collingwood VIC 3066 AU
-                </p>
-              </div> */}
+
               <div>
                 <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
                   <svg
@@ -232,13 +178,15 @@ export default function Help() {
                   </svg>
                 </span>
                 <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                  Phone
+                  <Lottie
+                    animationData={phone}
+                    loop={true}
+                    style={{ height: "40%", width: "40%" }}
+                  />
+                  +91 67479 63768
                 </h2>
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                   Mon-Fri from 8am to 5pm.
-                </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  +91 67479 63768
                 </p>
               </div>
             </div>

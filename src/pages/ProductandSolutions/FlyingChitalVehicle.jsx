@@ -125,7 +125,7 @@ export default function FlyingChitalVehicle() {
             </p> */}
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" data-aos="flip-left">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-tr-[50px] overflow-hidden shadow-lg md:shadow-xl ">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center "
@@ -146,7 +146,7 @@ export default function FlyingChitalVehicle() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" data-aos="flip-right">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-tr-[50px] overflow-hidden shadow-lg md:shadow-xl ">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -166,7 +166,7 @@ export default function FlyingChitalVehicle() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" data-aos="flip-left">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-tr-[50px] overflow-hidden shadow-lg md:shadow-xl ">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -185,7 +185,7 @@ export default function FlyingChitalVehicle() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2" data-aos="flip-right">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-tr-[50px] overflow-hidden shadow-lg md:shadow-xl ">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -205,7 +205,7 @@ export default function FlyingChitalVehicle() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2">
+            <div className="p-4 md:w-1/2"data-aos="flip-left">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-tr-[50px] overflow-hidden shadow-lg md:shadow-xl ">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"

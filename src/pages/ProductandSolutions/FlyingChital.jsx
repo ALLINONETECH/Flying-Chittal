@@ -85,88 +85,6 @@ export default function flyingChital() {
           </div>
         </div>
       </section>
-      {/* 
-      <section class="text-gray-600 body-font mt-6">
-        <div class="container px-5 py-2 mx-auto ">
-          <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl text-center text-gray-900 mb-16">
-            <span className=" font-heebo text-[40px] text-primary">
-              Flyin
-              <span className="border-b-4 border-secondary">g&nbsp;</span>
-            </span>
-            Chital
-          </h1>
-          <div className="flex flex-row ml-20  ">
-            <div className="flex flex-col items-center m-auto mb-44">
-              <img
-                className="object-cover w-[300px] mb-4"
-                alt="hero"
-                src={fclogo}
-              />
-              <div className="flex flex-col m-2 p-4 space-y-4 bg-[#EAEFF3] w-[300px]">
-                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo text-xl not-italic font-medium text-primary bg-[#dce0ee]">
-                  Logistics Intelligence
-                </div>
-                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo text-xl not-italic font-medium text-secondary bg-[#ece3e6]">
-                  Logistics Connectivity
-                </div>
-                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo text-xl not-italic font-medium text-black bg-[#dddde6]">
-                  Real-Time Virtualization
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:flex-grow md:w-1/2 lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-2">
-              <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo mb-2 mx-2">
-                Multimodal Integrated Logistics Management
-              </h1>
-              <div className="my-2 rounded-md p-2 bg-slate-200 w-5/6">
-                <p className=" not-italic font-normal leading-7  text-[#30343F]mb-4 text-justify text-xl mt-2 mr-2 font-heebo">
-                  Flying Chital stands as a trailblazing, multi-modal integrated
-                  logistics management platform, revolutionizing the logistics
-                  landscape with its comprehensive suite of services. By
-                  combining advanced analytics, customized reporting
-                  capabilities and infographics it seamlessly streamlines and
-                  optimizes logistics operations, providing invaluable logistics
-                  intelligence, connectivity, and real-time virtualization.{" "}
-                </p>
-              </div>
-              <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo my-2 mx-2">
-                Decision Making Information at Fingertip
-              </h1>
-              <div className="bg-orange-50 my-2 rounded-md p-2 w-5/6">
-                <p className=" not-italic font-normal leading-7  text-[#30343F] mb-4 text-justify text-xl mt-2 mr-2 ">
-                  Positioned at the forefront of its category, Flying Chital's
-                  mobility feature offers 'Smart Agile Logistics Operations at
-                  Fingertip,' ensuring unparalleled accessibility and 100%
-                  visibility, irrespective of location or device. Moreover, its
-                  integrated digital platform interfaces effortlessly with
-                  various Government Regulatory Portals, including Vahan,
-                  Parivahan, GST Portal, Govt Mining Regulatory Portals,
-                  ERP/SAP, and more, enabling real-time data access through
-                  customizable dashboards and reports.{" "}
-                </p>
-              </div>
-              <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo my-2 mx-2">
-                End to End Visibility
-              </h1>
-              <div className="my-2 rounded-md p-2 bg-zinc-100 w-5/6">
-                <p className=" not-italic font-normal leading-7  text-[#30343F]mb-4 text-justify text-xl mt-2 mr-2 ">
-                  This innovative platform not only ensures end-to-end
-                  visibility from source to destination but also significantly
-                  reduces turnaround times, operational expenses, and the risks
-                  of pilferage and revenue leakages. With its adaptability to
-                  multiple transportation modes, including road, rail,
-                  container, and port terminals, this digital logistics
-                  management system serves as a versatile, comprehensive
-                  solution for businesses operating in the modern logistics
-                  landscape. Flying Chital is a cost effective conveneient door
-                  way to Logistics 4.0.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/3 w-full mb-10 md:mb-0 sm:pl-20 ">
@@ -249,7 +167,7 @@ export default function flyingChital() {
           <div className="flex flex-wrap -m-4 ">
             <div className="w-full sm:w-auto md:w-1/2 p-4">
               <Link to="/railLogistics">
-                <div className="border border-gray-200 rounded-tr-[80px] rounded-bl-[50px] shadow-lg md:shadow-xl h-full">
+                <div className="border border-gray-200 rounded-tr-[80px] rounded-bl-[50px] shadow-lg md:shadow-xl h-full transition-transform transform hover:scale-105">
                   <img
                     className="w-full h-full object-cover"
                     src={raillogistic}
@@ -261,14 +179,14 @@ export default function flyingChital() {
 
             <div className=" w-auto md:w-1/2 p-4">
               <Link to="/roadLogistics">
-                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl">
+                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl transition-transform transform hover:scale-105">
                   <img className=" w-full" src={roadogistic} alt="" />
                 </div>
               </Link>
             </div>
             <div className=" w-auto md:w-1/2 p-4">
               <Link to="/telematics">
-                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl">
+                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl transition-transform transform hover:scale-105">
                   <img className=" w-full" src={telematics} alt="" />
                 </div>
               </Link>
@@ -276,7 +194,7 @@ export default function flyingChital() {
 
             <div className=" w-auto md:w-1/2 p-4">
               <Link to="/customized">
-                <div className=" border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl border-2 ">
+                <div className=" border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl border-2 transition-transform transform hover:scale-105 ">
                   <img
                     className="rounded-tr-[15px] w-full"
                     src={customisedfeature}

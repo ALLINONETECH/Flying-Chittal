@@ -18,6 +18,7 @@ import One from "../../component/common/svg/One";
 import car from "../../assets/images/car.png";
 import header from "../../assets/images/header.jpg";
 import { Link } from "react-router-dom";
+import { Parallax } from "react-scroll-parallax";
 
 export default function Home() {
   const digitalRef = useRef();
@@ -100,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* Section-Flying Chital - Smart Agile Logistics at Fingertip */}
-
+      <Parallax speed={5}>
       <section
         data-aos="fade-right"
         ref={digitalRef}
@@ -161,13 +162,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      </Parallax>
+      <Parallax speed={-5}>
+   
       {/* Section- Automation of Enterprise Workflows */}
       <section
         data-aos="fade-left"
         ref={automateRef}
-        className="text-gray-600 body-font mt-0 bg-gray-100"
-        style={{ borderRadius: "100px 0px 100px 0px" }}
+        className="text-gray-600 body-font mt-0 bg-gray-100 rounded-tl-[100px] rounded-br-[100px] "
       >
         <div className="container mx-auto flex  px-5 py-12 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
@@ -203,7 +205,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      </Parallax>
       {/* Section-Edge Computing and Mobility */}
       {/* <section className="text-gray-600 body-font bg-[#F6F7F8] rounded-tl-[70px] rounded-br-[70px]">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
