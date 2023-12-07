@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from "react";
 import clogo from "../../assets/images/clogo.png";
 import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/solid";
-import darkLogo from "../../assets/images/Atulya-Abhinav-dark-Logo-Final2.png";
 import flogo from "../../assets/images/flogo.png";
-import {
-  Navbar as NavBarTailWind,
-  MobileNav,
-  Button,
-} from "@material-tailwind/react";
+import { Navbar as NavBarTailWind, MobileNav } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import { navItem } from "./navList";
 
