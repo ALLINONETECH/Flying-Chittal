@@ -1,6 +1,7 @@
 import React from "react";
 import flogo from "../../assets/images/flogo.png";
 import footerImage from "../../assets/images/footer.jpg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -33,45 +34,73 @@ export default function Footer() {
                 Industries
               </h2>
               <nav className="list-none mb-10">
-                <li>
+                {/* <li>
                   <a className="text-gray-200 hover:text-gray-400">
                     Transportation & Logistics
                   </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">Mining</a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Ore Processing and Metals
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">Cement</a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Fertilisers
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">Oil & Gas</a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Warehousing
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Agriculture
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Aquaculture
-                  </a>
-                </li>
+                </li> */}
+                <Link
+                  to="/industry?page=transport"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Transportation & Logistics</li>
+                </Link>
+
+                <Link
+                  to="/industry?page=mining"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Mining</li>
+                </Link>
+
+                <Link
+                  to="/industry?page=metals"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Ore Processing and Metals</li>
+                </Link>
+
+                <Link
+                  to="/industry?page=cement"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Cement</li>
+                </Link>
+
+                <Link
+                  to="/industry?page=fertiliser"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Fertilisers</li>
+                </Link>
+
+                <Link
+                  to="/industry?page=oil"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Oil & Gas</li>
+                </Link>
+
+                <Link
+                  to="/industry?page=warehousing"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Warehousing</li>
+                </Link>
+
+                <Link
+                  to="/industry?page=agriculture"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Agriculture</li>
+                </Link>
+
+                <Link
+                  to="/aquacultureAutomation"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Aquaculture</li>
+                </Link>
               </nav>
             </div>
             <div className="lg:w-1/3 md:w-1/2 w-full px-10">
@@ -79,43 +108,51 @@ export default function Footer() {
                 Product & Solutions
               </h2>
               <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Flying Chital ILMS
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Flying Chital Smart VTS
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Flying Chital Smart FMS
-                  </a>
-                </li>
+                <Link
+                  to="/flyingchital"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Flying Chital ILMS</li>
+                </Link>
 
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Flying Chital HEM/HMV/LMV MS
-                  </a>
-                </li>
+                <Link
+                  to="/flyingChitalVehicle"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Flying Chital Smart VTS</li>
+                </Link>
 
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Agriculture Automation Solution
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Aquaculture Automation Solution
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Professional Mobile Radio (TETRA PMR)
-                  </a>
-                </li>
+                <Link
+                  to="/flyingChitalFleet"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Flying Chital Smart FMS</li>
+                </Link>
+
+                <Link to="/Asset" className="text-gray-200 hover:text-gray-400">
+                  <li>Flying Chital HEM/HMV/LMV MS</li>
+                </Link>
+
+                <Link
+                  to="/agricultureAutomation"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li> Agriculture Automation Solution</li>
+                </Link>
+
+                <Link
+                  to="/aquacultureAutomation"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Aquaculture</li>
+                </Link>
+
+                <Link
+                  to="/professional"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Professional Mobile Radio (TETRA PMR)</li>
+                </Link>
               </nav>
             </div>
             <div className="lg:w-1/3 md:w-1/2 w-full px-20">
@@ -124,18 +161,41 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-200 hover:text-gray-400">About Us</a>
+                  <Link
+                    to="/about"
+                    className="text-gray-200 hover:text-gray-400"
+                  >
+                    About Us
+                  </Link>
+                  {/* <a className="text-gray-200 hover:text-gray-400">About Us</a> */}
                 </li>
-                <li>
-                  <a className="text-gray-200 hover:text-gray-400">
-                    Leadership
-                  </a>
-                </li>
-                <li>
+                <Link
+                  to="/about?page=leaders"
+                  className="text-gray-200 hover:text-gray-400"
+                >
+                  <li>Leadership</li>
+                </Link>
+
+                {/* <li>
+
                   <a className="text-gray-200 hover:text-gray-400">Customers</a>
-                </li>
+                </li> */}
+
+                <Link to="/about?page=customers">
+                  <li>
+                    <a className="text-gray-200 hover:text-gray-400">
+                      Customers
+                    </a>
+                  </li>
+                </Link>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-400">Blog</a>
+                  <Link
+                    to="/blog"
+                    className="text-gray-200 hover:text-gray-400"
+                  >
+                    Blog
+                  </Link>
+                  {/* <a className="text-gray-200 hover:text-gray-400">Blog</a> */}
                 </li>
                 <li>
                   <a className="text-gray-200 hover:text-gray-400">
@@ -143,17 +203,37 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-gray-400">
+                  <Link
+                    to="/help"
+                    className="text-gray-200 hover:text-gray-400"
+                  >
                     Help Centre
-                  </a>
+                  </Link>
+
+                  {/* <a className="text-gray-200 hover:text-gray-400">
+                    Help Centre
+                  </a> */}
                 </li>
-                <li>
+
+                {/* <li>
                   <a className="text-gray-200 hover:text-gray-400">Careers</a>
-                </li>
+                </li> */}
+                <Link to="/career">
+                  <li>
+                    <a className="text-gray-200 hover:text-gray-400">Careers</a>
+                  </li>
+                </Link>
+
                 <li>
-                  <a className="text-gray-200 hover:text-gray-400">
+                  <Link
+                    to="/help"
+                    className="text-gray-200 hover:text-gray-400"
+                  >
                     Contact us
-                  </a>
+                  </Link>
+                  {/* <a className="text-gray-200 hover:text-gray-400">
+                    Contact us
+                  </a> */}
                 </li>
               </nav>
             </div>

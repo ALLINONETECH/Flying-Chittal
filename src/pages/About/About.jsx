@@ -175,14 +175,14 @@ export default function About() {
         <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
           <div
             className="flex relative items-start lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg "
-            style={{ marginTop: "-120px" }}
+          
           >
-            <img
+            {/* <img
               className="object-cover object-center absolute ml-56 bottom-48 hidden md:block md:ml-0 lg:ml-56"
               alt="hero"
               src={Who1}
               id="who1img"
-            />
+            /> */}
             <img
               className="object-cover object-center rounded-bl-lg"
               alt="hero"
