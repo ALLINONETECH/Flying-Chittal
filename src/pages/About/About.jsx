@@ -3,11 +3,24 @@
 /* eslint-disable react/no-unknown-property */
 import React from "react";
 
-import Dev from "../../assets/images/Dev1.png";
-import Pradyumna from "../../assets/images/Pradyumna1.png";
-import Amar from "../../assets/images/Amar1.png";
-import parshu from "../../assets/images/parshu.jpeg";
-import kalki from "../../assets/images/kalki.jpeg";
+// import Dev from "../../assets/images/Dev1.png";
+import Dev from "../../assets/images/Debashis Sir.jpg";
+import Sitanshu from "../../assets/images/Sitanshu Sir.jpg";
+// import Pradyumna from "../../assets/images/Pradyumna1.png";
+import Pradyumna from "../../assets/images/Praduman Sir.jpg";
+// import Amar from "../../assets/images/Amar1.png";
+import Amar from "../../assets/images/Amar Sir.jpg";
+// import parshu from "../../assets/images/parshu.jpeg";
+import parshu from "../../assets/images/Parshu sir.jpg";
+// import kalki from "../../assets/images/kalki.jpeg";
+import kalki from "../../assets/images/KK Panda Sir.jpg";
+import Bibhu from "../../assets/images/Bibhu Sir.jpg";
+import Abhijit from "../../assets/images/Abhijit Radke.jpg";
+import Amit from "../../assets/images/Amit.jpg";
+import Chiranjiv from "../../assets/images/Chiranjiv sir 2.jpg";
+import Biplab from "../../assets/images/Biplab JI.jpg";
+import Debashis from "../../assets/images/Debashis Sahoo ji.jpg";
+
 import Samba from "../../assets/images/Samba1.png";
 import Who1 from "../../assets/images/Who1.png";
 import Who2 from "../../assets/images/Who2.png";
@@ -173,10 +186,7 @@ export default function About() {
       {/* /test */}
       <section className="text-gray-600 body-font mt-40">
         <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
-          <div
-            className="flex relative items-start lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg "
-          
-          >
+          <div className="flex relative items-start lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg ">
             {/* <img
               className="object-cover object-center absolute ml-56 bottom-48 hidden md:block md:ml-0 lg:ml-56"
               alt="hero"
@@ -508,7 +518,7 @@ export default function About() {
           <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
               <img
-                className="object-cover object-center "
+                className="object-cover object-center  rounded-tr-[70px] rounded-bl-[70px]"
                 alt="hero"
                 src={Pradyumna}
               />
@@ -579,7 +589,7 @@ export default function About() {
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img
-                className="object-cover object-center rounded"
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
                 alt="hero"
                 src={Amar}
               />
@@ -589,7 +599,7 @@ export default function About() {
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
               <img
-                className="object-cover object-center "
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px] "
                 alt="hero"
                 src={Dev}
               />
@@ -626,6 +636,47 @@ export default function About() {
           <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                Sitanshu Jena
+              </h1>
+              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                Director Engineering & Development
+              </p>
+              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
+                Meet Sitansu, a seasoned Architect bringing a wealth of
+                knowledge and experience to our team. With a specialization tons
+                in Android Application Development, React.js, Node.js, Java,
+                JavaScript, HTML, Python, and Machine Learning. Having dedicated
+                eight years at Sears, he honed his architectural vision and
+                technical leadership, playing a key role in shaping innovative
+                solution ideas. Prior to his tenure at Sears, he spent three
+                years each at industry giants Samsung and Robert Bosch,
+                solidifying his expertise and contributing to the success of
+                globally recognized brands. Sitansu's expertise as we drive
+                innovation and excellence in the world of technology.
+              </p>
+              <span>
+                <img src={Socialicon} alt="" />
+              </span>
+            </div>
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+              <img
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                alt="hero"
+                src={Sitanshu}
+              />
+            </div>
+          </div>
+
+          {/* <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
+              <img
+                className="object-cover object-center "
+                alt="hero"
+                src={kalki}
+              />
+            </div>
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
                 Kalikinkar Panda
               </h1>
               <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
@@ -653,23 +704,49 @@ export default function About() {
                 <img src={Socialicon} alt="" />
               </span>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
+          </div> */}
+
+          <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
               <img
-                className="object-cover object-center h-[420px] rounded-3xl"
+                className="object-cover object-center  rounded-tr-[70px] rounded-bl-[70px]"
                 alt="hero"
                 src={kalki}
               />
             </div>
-          </div>
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
-              <img
-                className="object-cover object-center h-[450px] "
-                alt="hero"
-                src={parshu}
-              />
-            </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                Kalikinkar Panda
+              </h1>
+              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                Mentor & Director Business Development
+              </p>
+              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
+                Bringing a wealth of experience amassed over a distinguished
+                career spanning 38 years across the realms of Aluminium, Power,
+                and Mining industries, Shri K. K. Panda stands as a stalwart
+                Director of Business Development. His exceptional journey,
+                adorned with academic excellence—a B.Tech in Electrical
+                Engineering and an MS in Environmental Science—reflects a
+                commitment to both technical proficiency and environmental
+                stewardship. Formerly serving as the Executive Director of
+                NALCO, Panda's tenure at the helm signifies a treasure trove of
+                industry insights and strategic foresight. His exceptional
+                leadership and comprehensive understanding of the industrial
+                landscape elevate him as a guiding force, offering invaluable
+                perspectives on Environmental, Social, and Governance (ESG)
+                practices. Panda's presence on our board is a testament to our
+                commitment to shaping a future where environmental consciousness
+                converges harmoniously with business success.
+              </p>
+              <span>
+                <img src={Socialicon} alt="" />
+              </span>
+            </div>
+          </div>
+
+          <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
                 Parshuram Panigrahi
               </h1>
@@ -699,9 +776,148 @@ export default function About() {
                 <img src={Socialicon} alt="" />
               </span>
             </div>
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+              <img
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                alt="hero"
+                src={parshu}
+              />
+            </div>
           </div>
         </div>
       </section>
+
+
+
+      <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      {/* <h1 class="text-4xl sm:text-[40px] font-bold mb-4 text-gray-900">Development Team</h1> */}
+      <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
+              <span className="font-heebo text-primary text-4xl sm:text-[40px]">
+                Develop<span className="border-b-2 border-secondary">ment</span>
+                <span className="text-black"> Team</span>
+              </span>
+            </h1>
+      {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> */}
+    </div>
+    <div class="flex flex-wrap -m-4">
+      
+      <div class="p-4 lg:w-1/3 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+        <img
+                className="object-cover object-center rounded-tr-[50px] rounded-bl-[50px]"
+                alt="hero"
+                src={Abhijit}
+              />
+          <div class="w-full">
+            <h2 class="font-bold text-3xl text-gray-900 mt-1">Abhijit Radke</h2>
+            <h3 class="text-gray-800 font-bold text-xl mb-3">Software Developer</h3>
+            <p class="mb-4"></p>
+         
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/3 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+        <img
+                className="object-cover object-center rounded-tr-[50px] rounded-bl-[50px]"
+                alt="hero"
+                src={Bibhu}
+              />
+          <div class="w-full">
+            <h2 class="font-bold text-3xl text-gray-900 mt-1">Bibhudutta Das</h2>
+            <h3 class="text-gray-800 font-bold text-xl mb-3">Principal Software Architect</h3>
+            <p class="mb-4"></p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/3 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+        <img
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                alt="hero"
+                src={Amit}
+              />
+          <div class="w-full">
+            <h2 class="font-bold text-3xl text-gray-900 mt-1">Amit Mazumdar</h2>
+            <h3 class="text-gray-800 font-bold text-xl mb-3">Software Developer</h3>
+            <p class="mb-4"></p>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      {/* <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">Development Team</h1> */}
+      <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
+              <span className="font-heebo text-primary text-4xl sm:text-[40px]">
+                Opera<span className="border-b-2 border-secondary">tion</span>
+                <span className="text-black"> Team</span>
+              </span>
+            </h1>
+      
+    </div>
+    <div class="flex flex-wrap -m-4">
+    <div class="p-4 lg:w-1/3 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+        <img
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                alt="hero"
+                src={Biplab}
+              />
+          <div class="w-full">
+            <h2 class="font-bold text-3xl text-gray-900 mt-1">Biplab Kumar Naik</h2>
+            <h3 class="text-gray-800 font-bold text-xl mb-3">Operations Manager</h3>
+            <p class="mb-4"></p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/3 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+        <img
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                alt="hero"
+                src={Chiranjiv}
+              />
+          <div class="w-full">
+            <h2 class="font-bold text-3xl text-gray-900 mt-1">Chiranjeev Bindhani</h2>
+            <h3 class="text-gray-800 font-bold text-xl mb-3">Senior Operation Manager</h3>
+            <p class="mb-4"></p>
+        
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/3 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+        <img
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                alt="hero"
+                src={Debashis}
+              />
+          <div class="w-full">
+            <h2 class="font-bold text-3xl text-gray-900 mt-1">Debashish Sahoo</h2>
+            <h3 class="text-gray-800 font-bold text-xl mb-3">Field Executive </h3>
+            <p class="mb-4"></p>
+            <span class="inline-flex">
+            
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
 
       <section
         ref={customersRef}
