@@ -5,6 +5,7 @@ import Revolution2 from "../../assets/images/Revolution2.png";
 import Empowering1 from "../../assets/images/Empowering1.png";
 import Streamline from "../../assets/images/Streamline.png";
 import Optimize from "../../assets/images/Optimize.png";
+import ExpoCovr from "../../assets/images/Expo.png";
 import Unloading from "../../assets/images/Unloading.png";
 import Blogbg from "../../assets/images/Blogbg.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
@@ -343,6 +344,47 @@ export default function Blog() {
                 plants, plots, railway sidings, etc.
               </p>
               <Link to="/miningMetal">
+                <div class="flex justify-start">
+                  <button class="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
+                    READ MORE
+                    <span class="ml-2">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-4 h-4"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+
+
+          <div class="flex flex-col md:flex-row shadow-lg md:shadow-xl bg-white mt-10 md:mt-16">
+            <div class="md:w-1/3 w-full md:max-w-sm mb-10 md:mb-0 md:ml-10 px-3 py-10">
+              <img
+                class="object-cover object-center w-full"
+                alt="hero"
+                src={ExpoCovr}
+              />
+            </div>
+            <div class="flex-1 px-4 md:px-8 py-6 md:py-10 flex flex-col items-center md:items-start text-center md:text-left">
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                Atulya Abhinav Tech Private Limited's Impactful Presence at the 2nd Odisha Mining & Infrastructure International Expo 2024
+              </h2>
+              <p class="text-lg lg:text-xl font-normal leading-relaxed text-gray-800 mb-6">
+                At the 2nd Odisha Mining & Infrastructure International Expo 2024, AATPL showcased Flying Chital, a groundbreaking logistics platform, redefining industry standards with innovation and excellence. Seamlessly integrating cutting-edge technologies, 
+                AATPL empowers businesses to thrive in the digital era, driving efficiency and sustainability. With Flying Chital leading the charge, AATPL paves the way for a future of unparalleled growth and productivity in logistics management.
+              </p>
+              <Link to="/MiningExpo">
                 <div class="flex justify-start">
                   <button class="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
                     READ MORE

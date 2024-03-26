@@ -37,6 +37,7 @@ import Customized from "../pages/Customized";
 import Help from "../pages/Help";
 import LogisticsIntelligence from "../pages/Blog/LogisticsIntelligence";
 import MiningMetal from "../pages/Blog/MiningMetal";
+import MiningExpo from "../pages/Blog/MiningExpo";
 import MACHArchitecture from "../pages/Blog/MACHArchitecture";
 import Blog from "../pages/Blog/Blog";
 import Fertilizer from "../pages/Blog/Fertilizer";
@@ -82,6 +83,7 @@ export default function Routes() {
         { path: "/logisticsIntelligence", element: <LogisticsIntelligence /> },
         { path: "/mACHArchitecture", element: <MACHArchitecture /> },
         { path: "/miningMetal", element: <MiningMetal /> },
+        { path: "/miningExpo", element: <MiningExpo /> },
         { path: "/help", element: <Help /> },
         { path: "/career", element: <Career /> },
         { path: "/blog", element: <Blog /> },
