@@ -105,18 +105,6 @@ export default function MiningExpo() {
                     The foundation of AATPL's success lies in its dedication to innovation and operational excellence. By harnessing the capabilities of cloud computing, IoT, and artificial intelligence, AATPL has developed a solution that transcends traditional logistics practices. Flying Chital equips logistics managers with crucial decision-making information on the go, enabling quick and informed actions in dynamic operational settings.
                   </p>
                   <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Vision, Mission, and Values:
-                  </h3>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Guided by a visionary outlook, AATPL's vision is to empower individuals in remote and underserved areas with accessible and cutting-edge technology solutions. At the core of its mission lies the commitment to pioneer innovation in supply chain and logistics operations, catalyzing industrial processes across diverse landscapes. Upheld by values of integrity, excellence, and collaboration, AATPL sets the benchmark for ethical business conduct and transformative innovation.
-                  </p>
-                  <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Leadership:
-                  </h3>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The leadership ensemble at AATPL comprises distinguished professionals, each bringing a wealth of experience and expertise to the table. From Pradyumna Mishra's strategic acumen to Amar Pradeep Swain's visionary leadership, the team embodies the essence of innovation and operational excellence. Debashis Mohanty's entrepreneurial spirit and Sitanshu Jena's technical prowess further fortify AATPL's position as a trailblazer in the tech industry.
-                  </p>
-                  <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
                     Exploring Opportunities and Strengths:
                   </h3>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
@@ -142,14 +130,12 @@ export default function MiningExpo() {
 
 
       <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]">
-        <div className="container px-5 py-10 mx-auto">
           {/* Previous content */}
-        </div>
         {/* New section for YouTube videos */}
-        <div className="container px-5 py-10 mx-auto pb-16"> {/* Added pb-16 for large padding */}
+        <div className="container px-5 py-10 mx-auto pb-16 md:h-40"> {/* Added pb-16 for large padding */}
           <h2 className="text-2xl font-bold mb-4">YouTube Videos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="aspect-w-16 aspect-h-9">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div>
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/W8Rdo3vi-Z4"
@@ -158,7 +144,7 @@ export default function MiningExpo() {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="aspect-w-16 aspect-h-9">
+            <div >
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/ta4QepLSgSI"
@@ -170,10 +156,6 @@ export default function MiningExpo() {
           </div>
         </div>
       </section>
-
-
-
-
     </div>
   );
 }
