@@ -180,7 +180,7 @@ export default function Home() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-4 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
               <span className=" text-indigo-800 font-bold text-[40px] ">
                 Automation
               </span>
@@ -196,11 +196,7 @@ export default function Home() {
               Automate Your Enterprise Digital Workflows for Enhanced
               Resilience, Scalability, and Sustainability. We Help Automate
               Enterprise Digital Workflows to Streamline Processes, Boost
-              Productivity and Provide Data-Driven Insights. Automate Your
-              Enterprise Digital Workflows for Enhanced Resilience, Scalability,
-              and Sustainability. We Help Automate Enterprise Digital Workflows
-              to Streamline Processes, Boost Productivity, and Provide
-              Data-Driven Insights.
+              Productivity and Provide Data-Driven Insights.
             </p>
           </div>
         </div>
@@ -252,10 +248,7 @@ export default function Home() {
             equipment, Industrial IoT devices, and workstations to capture and
             process data without having to collaborate with a centralized
             database system. Aligned with Industries 4.0 key driver for Digital
-            Transformation and Industrial Automation. Our Edge Computing and
-            Mobility Solutions enable non-connected equipment, Industrial IoT
-            devices, and workstations to capture and process data without having
-            to collaborate with a centralized database system.
+            Transformation and Industrial Automation.
           </p>
         </div>
       </div>
@@ -267,8 +260,8 @@ export default function Home() {
         className="text-gray-600 body-font"
       >
         <div className="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
               <span className=" text-indigo-800 font-bold text-[40px] ">
                 Managed{" "}
               </span>

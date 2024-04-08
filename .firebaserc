@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "atulyabhinav"
-  }
+    "default": "atulyabhinav",
+    "deploy": "atulyabhinav-90935"
+  },
+  "targets": {},
+  "etags": {}
 }
