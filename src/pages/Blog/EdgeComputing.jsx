@@ -137,23 +137,7 @@ export default function EdgeComputing() {
               </div>
             </div>
           </div>
-          <div>
-            <div className="flex ">
-              <div className="h-12 w-24">
-                <img className="p-1  " src={IconFC} alt="" />
-              </div>
-              <div>
-                <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                  The most significant way in which edge computing complements
-                  Digital Transformation initiatives is by enabling edge-native
-                  applications that leverage cloud-native principles while
-                  considering the unique characteristics of the edge:
-                  standardization, connectivity, scalability, security,
-                  hyper-personalization, manageability, and cost.
-                </p>
-              </div>
-            </div>
-          </div>
+
           <div>
             <div className="flex ">
               <div className="h-12 w-24">
@@ -170,22 +154,7 @@ export default function EdgeComputing() {
               </div>
             </div>
           </div>
-          <div>
-            <div className="flex ">
-              <div className="h-12 w-24">
-                <img className="p-1  " src={IconFC} alt="" />
-              </div>
-              <div>
-                <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                  First drawback is the manual collection of data from various
-                  entities like transporters, SAP, plants, plots, railway
-                  sidings, etc. There are a lot of errors making it difficult to
-                  get meaningful insights required for immediate action.
-                  Entry/Exit are paper based and not captured electronically.
-                </p>
-              </div>
-            </div>
-          </div>
+  
 
           <p className="text-[26px] font-[700] font-heebo leading-[28px] text-[#3A0749]   mx-auto  mb-5">
             Let’s Dig Into How Edge Computing Helps With Digital Transformation:
