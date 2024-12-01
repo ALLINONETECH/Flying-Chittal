@@ -29,7 +29,7 @@ export default function Navbar() {
     setActiveDropdown(activeDropdown === label ? null : label);
   };
   const navList = (
-    <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-8">
+    <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-6">
       {navItem.map((item) => (
         <li key={item.label}>
           <button
@@ -98,7 +98,7 @@ export default function Navbar() {
         <button id="contact-cta">
           <Link
             to="/chat"
-            className="text-white bg-[#f85a47] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 md:px-2 md:py-2.5 mr-1 md:mr-2 md:mt-2 dark:bg-[#f85a47] dark:hover:bg-blue-700 focus:outline-none dark:focus:bg-[#f85a47]"
+            className="text-white bg-[#f85a47] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-1.5 mr-1 md:mr-2 md:mt-2 dark:bg-[#f85a47] dark:hover:bg-blue-700 focus:outline-none dark:focus:bg-[#f85a47]"
           >
             Contact Us
           </Link>

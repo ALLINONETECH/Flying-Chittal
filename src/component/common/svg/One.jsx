@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function One() {
   return (
     <svg
@@ -22,10 +20,10 @@ export default function One() {
       <path
         d="M347.814 184.781H62.5088C48.3614 184.781 37.0435 173.463 37.0435 159.316V46.2938C37.0435 32.3037 48.3614 20.8286 62.5088 20.8286H804.46C818.451 20.8286 829.926 32.1465 829.926 46.2938V159.316C829.926 173.306 818.608 184.781 804.46 184.781H569.928"
         stroke="#F17F30"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M562.383 191.226C565.942 191.226 568.828 188.34 568.828 184.781C568.828 181.222 565.942 178.336 562.383 178.336C558.824 178.336 555.938 181.222 555.938 184.781C555.938 188.34 558.824 191.226 562.383 191.226Z"

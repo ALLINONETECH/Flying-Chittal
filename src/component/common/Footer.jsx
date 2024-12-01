@@ -90,6 +90,7 @@ export default function Footer() {
 
                 <Link
                   to="/industry?page=agriculture"
+                  
                   className="text-gray-200 hover:text-gray-400"
                 >
                   <li>Agriculture</li>

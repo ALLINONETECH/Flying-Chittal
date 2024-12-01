@@ -15,7 +15,7 @@ export default function MiningExpo() {
         }}
       >
         <nav
-          x-data="{ isOpen: false }"
+          // x-data="{ isOpen: false }"
           className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
         >
           <div className="flex items-center justify-between">
@@ -40,7 +40,7 @@ export default function MiningExpo() {
                     <img className="" src={HomeIcon} alt="" />
                   </span>
                 </div>
-                <div classNAme="justify">
+                <div className="justify">
                   {" "}
                   <span className="text-[#F85A47] font-[700] font-heebo text-[20px] ">
                     Home

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useRoutes } from "react-router-dom";
 import About from "../pages/About/About";
 import Parentlayout from "../component/layout/parentlayout";
 import Home from "../pages/Home/Home";
@@ -45,7 +45,7 @@ import EdgeComputing from "../pages/Blog/EdgeComputing";
 import Terms from "../pages/termsandservices/Terms";
 
 export default function Routes() {
-  const router = createBrowserRouter([
+  const router = useRoutes([
     {
       path: "/",
       element: <Parentlayout />,
@@ -94,5 +94,5 @@ export default function Routes() {
       ],
     },
   ]);
-  return <RouterProvider router={router} />;
+  return router;// <RouterProvider router={router} />;
 }
