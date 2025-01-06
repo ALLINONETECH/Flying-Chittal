@@ -44,6 +44,7 @@ import AdminDashboard from "../admin/AdminDashboard"; // Dashboard component
 import NotFound from "../admin/notfound/notfound";
 import AddBlogPage from "../admin/pages/blogs/addblogs";
 import AllBlog from "../pages/Blog/AllBlog";
+import AddLeader from "../admin/pages/Leaders/addLeaders";
 
 // Utility to check authentication
 const isAuthenticated = () => {
@@ -116,6 +117,7 @@ const AdminRoutes = () => {
           element: <PrivateRoute element={<AdminDashboard />} />,
         },
         { path: "blogs", element: <PrivateRoute element={<AddBlogPage />} /> },
+        { path: "leaders", element: <PrivateRoute element={<AddLeader />} /> },
 
         {
           path: "*",

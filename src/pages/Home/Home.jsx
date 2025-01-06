@@ -37,14 +37,14 @@ export default function Home() {
         <meta property="og:image" content="https://atulyabhinav.com/logo.png" />
         <meta name="robots" content="index, follow" />
       </Helmet>
-      <div className="static">
+      <div className="static ">
         <section
           className="bg-no-repeat bg-center bg-cover rounded-br-[100px]"
           style={{
             backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${homebluebg})`,
           }}
         >
-          <div className="container p-6 mx-auto text-start">
+          <div className="container p-6 mx-auto text-start px-4 md:px-8 lg:px-16 xl:px-24">
             <div className="mx-auto">
               <h1
                 data-aos="fade-left"
@@ -105,7 +105,7 @@ export default function Home() {
           <section
             data-aos="fade-right"
             ref={digitalRef}
-            className="text-gray-600 body-font"
+            className="text-gray-600 body-font px-4 md:px-8 lg:px-16 xl:px-24"
           >
             <div className="container px-5 py-5 mx-auto">
               <div className="flex flex-wrap w-full flex-col items-center text-center">
@@ -170,14 +170,8 @@ export default function Home() {
             ref={automateRef}
             className="text-gray-600 body-font mt-0 bg-gray-100 rounded-tl-[100px] rounded-br-[100px]"
           >
-            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
-                <img
-                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
-                  alt="hero"
-                  src={Automation1}
-                />
-              </div>
+            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
+       
               <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-4 flex flex-col md:items-start md:text-left items-center text-center">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
                   <span className="text-indigo-800 font-bold text-[40px]">
@@ -196,6 +190,13 @@ export default function Home() {
                   Productivity and Provide Data-Driven Insights.
                 </p>
               </div>
+              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
+                <img
+                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
+                  alt="hero"
+                  src={Automation1}
+                />
+              </div>
             </div>
           </section>
         </Parallax>
@@ -207,7 +208,7 @@ export default function Home() {
             ref={edgeComputeRef}
             className="text-gray-600 body-font mt-0 bg-white rounded-tl-[100px] rounded-br-[100px]"
           >
-            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
               <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
                 <img
                   className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
@@ -244,14 +245,8 @@ export default function Home() {
             ref={managedRef}
             className="text-gray-600 body-font mt-0 bg-gray-100 rounded-tl-[100px] rounded-br-[100px]"
           >
-            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
-                <img
-                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
-                  alt="hero"
-                  src={Empower}
-                />
-              </div>
+            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
+       
               <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-4 flex flex-col md:items-start md:text-left items-center text-center">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
                   <span className="text-indigo-800 font-bold text-[40px]">
@@ -268,6 +263,13 @@ export default function Home() {
                   Monitoring, and Strategic IT Solutions to Ensure Your Systems
                   Operate Efficiently and Securely.
                 </p>
+              </div>
+              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
+                <img
+                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
+                  alt="hero"
+                  src={Empower}
+                />
               </div>
             </div>
           </section>
