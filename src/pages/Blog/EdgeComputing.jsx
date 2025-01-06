@@ -154,7 +154,6 @@ export default function EdgeComputing() {
               </div>
             </div>
           </div>
-  
 
           <p className="text-[26px] font-[700] font-heebo leading-[28px] text-[#3A0749]   mx-auto  mb-5">
             Let’s Dig Into How Edge Computing Helps With Digital Transformation:

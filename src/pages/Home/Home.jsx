@@ -7,7 +7,7 @@ import smalllogo from "../../assets/images/smalllogo.png";
 import homebluebg from "../../assets/images/homebluebg.png";
 import One from "../../component/common/svg/One";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 export default function Home() {
   const digitalRef = useRef();
   const automateRef = useRef();
@@ -16,6 +16,27 @@ export default function Home() {
 
   return (
     <ParallaxProvider>
+      <Helmet>
+        <title>Atulya Bhinav | Home</title>
+        <meta
+          name="description"
+          content="Welcome to Atulya Bhinav's official website. Explore our services, solutions, and expertise."
+        />
+        <meta
+          name="keywords"
+          content="Atulya Bhinav, software solutions, web development, consulting"
+        />
+        <meta name="author" content="Atulya Bhinav" />
+        <meta property="og:title" content="Atulya Bhinav | Home" />
+        <meta
+          property="og:description"
+          content="Welcome to Atulya Bhinav's official website. Explore our services, solutions, and expertise."
+        />
+        <meta property="og:url" content="https://atulyabhinav.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://atulyabhinav.com/logo.png" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="static">
         <section
           className="bg-no-repeat bg-center bg-cover rounded-br-[100px]"

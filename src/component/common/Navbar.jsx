@@ -28,6 +28,7 @@ export default function Navbar() {
   const handleDropdownClick = (label) => {
     setActiveDropdown(activeDropdown === label ? null : label);
   };
+  
   const navList = (
     <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-6">
       {navItem.map((item) => (

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import flogo from "../../assets/images/flogo.png";
 import footerImage from "../../assets/images/footer.jpg";

@@ -1,6 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { createBrowserRouter, RouterProvider, useRoutes } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useRoutes,
+  Navigate,
+} from "react-router-dom";
 import About from "../pages/About/About";
 import Parentlayout from "../component/layout/parentlayout";
 import Home from "../pages/Home/Home";
@@ -14,7 +19,6 @@ import Values from "../pages/Values";
 import FlyingChital from "../pages/ProductandSolutions/FlyingChital";
 import RoadLogistics from "../../src/pages/ProductandSolutions/RoadLogistics";
 import RailLogistics from "../../src/pages/ProductandSolutions/RailLogistics";
-// import Blog from "../pages/Resources/Blog";
 import Chat from "../pages/Chat";
 import FlyingChitalVehicle from "../pages/ProductandSolutions/FlyingChitalVehicle";
 import FlyingChitalFleet from "../pages/ProductandSolutions/FlyingChitalFleet";
@@ -23,15 +27,6 @@ import AgricultureAutomation from "../pages/ProductandSolutions/AgricultureAutom
 import AquacultureAutomation from "../pages/ProductandSolutions/AquacultureAutomation";
 import Career from "../pages/Career";
 import Professional from "../pages/Professional";
-import RailModule1 from "../pages/RailModule/RailModule1";
-import RailModule2 from "../pages/RailModule/RailModule2";
-import RailModule3 from "../pages/RailModule/RailModule3";
-import RailModule4 from "../pages/RailModule/RailModule4";
-import RailModule5 from "../pages/RailModule/RailModule5";
-import RailModule6 from "../pages/RailModule/RailModule6";
-import RailModule7 from "../pages/RailModule/RailModule7";
-import RailModule8 from "../pages/RailModule/RailModule8";
-import RailModule9 from "../pages/RailModule/RailModule9";
 import Telematics from "../pages/Telematics";
 import Customized from "../pages/Customized";
 import Help from "../pages/Help";
@@ -43,8 +38,26 @@ import Blog from "../pages/Blog/Blog";
 import Fertilizer from "../pages/Blog/Fertilizer";
 import EdgeComputing from "../pages/Blog/EdgeComputing";
 import Terms from "../pages/termsandservices/Terms";
+import AdminLayout from "../admin/AdminLayout"; // Admin layout component
+import Login from "../admin/login";
+import AdminDashboard from "../admin/AdminDashboard"; // Dashboard component
+import NotFound from "../admin/notfound/notfound";
+import AddBlogPage from "../admin/pages/blogs/addblogs";
+import AllBlog from "../pages/Blog/AllBlog";
 
-export default function Routes() {
+// Utility to check authentication
+const isAuthenticated = () => {
+  const user = localStorage.getItem("authUser");
+  return user ? JSON.parse(user) : null;
+};
+
+// Private Route Component
+const PrivateRoute = ({ element }) => {
+  return isAuthenticated() ? element : <Navigate to="/admin/login" replace />;
+};
+
+// User/Public Routes
+const UserRoutes = () => {
   const router = useRoutes([
     {
       path: "/",
@@ -68,18 +81,8 @@ export default function Routes() {
         { path: "/agricultureAutomation", element: <AgricultureAutomation /> },
         { path: "/aquacultureAutomation", element: <AquacultureAutomation /> },
         { path: "/professional", element: <Professional /> },
-        { path: "/railmodule1", element: <RailModule1 /> },
-        { path: "/railmodule2", element: <RailModule2 /> },
-        { path: "/railmodule3", element: <RailModule3 /> },
-        { path: "/railmodule4", element: <RailModule4 /> },
-        { path: "/railmodule5", element: <RailModule5 /> },
-        { path: "/railmodule6", element: <RailModule6 /> },
-        { path: "/railmodule7", element: <RailModule7 /> },
-        { path: "/railmodule8", element: <RailModule8 /> },
-        { path: "/railmodule9", element: <RailModule9 /> },
         { path: "/telematics", element: <Telematics /> },
         { path: "/customized", element: <Customized /> },
-        // { path: "/blog", element: <Blog /> },
         { path: "/logisticsIntelligence", element: <LogisticsIntelligence /> },
         { path: "/mACHArchitecture", element: <MACHArchitecture /> },
         { path: "/miningMetal", element: <MiningMetal /> },
@@ -89,10 +92,47 @@ export default function Routes() {
         { path: "/blog", element: <Blog /> },
         { path: "/fertilizer", element: <Fertilizer /> },
         { path: "/edgeComputing", element: <EdgeComputing /> },
+        { path: "/allblogs", element: <AllBlog /> },
+
         { path: "/chat", element: <Chat /> },
         { path: "/termsandcondition", element: <Terms /> },
       ],
     },
   ]);
-  return router;// <RouterProvider router={router} />;
+  return router;
+};
+
+// Admin Routes
+const AdminRoutes = () => {
+  const router = useRoutes([
+    {
+      path: "/admin",
+      element: <AdminLayout />, // Common Admin Layout
+      children: [
+        // { index: true, element: <Navigate to="/login" replace /> }, // Redirect "/admin" to "/admin/login"
+        { path: "login", element: <Login /> },
+        {
+          path: "dashboard",
+          element: <PrivateRoute element={<AdminDashboard />} />,
+        },
+        { path: "blogs", element: <PrivateRoute element={<AddBlogPage />} /> },
+
+        {
+          path: "*",
+          element: <NotFound message="This page is under construction." />,
+        },
+      ],
+    },
+  ]);
+  return router;
+};
+
+// Combined Router
+export default function Routes() {
+  return (
+    <>
+      <UserRoutes />
+      <AdminRoutes />
+    </>
+  );
 }

@@ -28,27 +28,27 @@ export default function One() {
       <path
         d="M562.383 191.226C565.942 191.226 568.828 188.34 568.828 184.781C568.828 181.222 565.942 178.336 562.383 178.336C558.824 178.336 555.938 181.222 555.938 184.781C555.938 188.34 558.824 191.226 562.383 191.226Z"
         stroke="#F17F30"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M340.741 175.507L347.814 184.781L340.741 193.427"
         stroke="#F17F30"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <text
         x="100"
         y="90"
         fill="black"
-        font-family="Heebo, sans-serif"
-        font-size="22"
-        font-weight="400"
-        text-anchor="start"
+        fontFamily="Heebo, sans-serif"
+        fontSize="22"
+        fontWeight="400"
+        textAnchor="start"
       >
         Flying Chital stands as a trailblazing, multi-modal integrated logistics
         <tspan x="100" dy="1.2em">
@@ -58,7 +58,6 @@ export default function One() {
           comprehensive suite of services...
         </tspan>
       </text>
-
       <defs>
         <filter
           id="filter0_dd_610_7168"
@@ -67,9 +66,9 @@ export default function One() {
           width="826.766"
           height="174.21"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

@@ -48,6 +48,7 @@ import Socialicon from "../../assets/images/Socialicon.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useRef } from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function About() {
   const whoRef = useRef();
@@ -79,6 +80,25 @@ export default function About() {
 
   return (
     <div>
+          <Helmet>
+        <title>About Us | Atulya Bhinav</title>
+        <meta
+          name="description"
+          content="Learn more about Atulya Bhinav. Discover our mission, vision, and the team behind our success."
+        />
+        <meta
+          name="keywords"
+          content="Atulya Bhinav, about us, team, mission, vision"
+        />
+        <meta property="og:title" content="About Us | Atulya Bhinav" />
+        <meta
+          property="og:description"
+          content="Learn more about Atulya Bhinav. Discover our mission, vision, and the team behind our success."
+        />
+        <meta property="og:url" content="https://atulyabhinav.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://atulyabhinav.com/assets/Praduman%20Sir-e7a57db4.jpg" />
+      </Helmet>
       {/* Section-1 About us */}
       <section
         className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
@@ -553,7 +573,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
+          {/* <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
                 Amar Pradeep Swain
@@ -594,9 +614,9 @@ export default function About() {
                 src={Amar}
               />
             </div>
-          </div>
+          </div> */}
 
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          {/* <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
               <img
                 className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px] "
@@ -631,7 +651,7 @@ export default function About() {
                 <img src={Socialicon} alt="" />
               </span>
             </div>
-          </div>
+          </div> */}
 
           <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
