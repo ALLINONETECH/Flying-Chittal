@@ -86,7 +86,7 @@ export default function Professional() {
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
 
             <p className="mb-8 text-justify text-[16px] md:text-[20px] lg:text-[20px] font-[400] font-heebo leading-[24px] text-[#30343F] w-full md:w-4/5">
-              Atulya Abhinav Tech Private Limited is pleased to offer
+              flying chital Tech Private Limited is pleased to offer
               comprehensive services for the supply and installation of the
               indigenous TETRA Professional Mobile Radio (PMR) systems, tailored
               to meet the specific communication requirements within the
@@ -114,7 +114,7 @@ export default function Professional() {
         <div className="w-full md:w-4/5 lg:w-3/5 xl:w-2/3 text-start mt-8 md:mt-16 lg:mt-24 text-white grid content-end mx-auto px-4">
           <h1 className="font-heebo text-4xl font-bold mb-5"></h1>
           <p className="font-heebo text-lg font-normal text-justify mb-10 lg:mb-20">
-            The indigenous technology provided by Atulya Abhinav Tech Private
+            The indigenous technology provided by flying chital Tech Private
             Limited is a result of the Transfer of Technology (ToT) from C-DAC
             Thiruvananthapuram, who have independently developed the entire
             system. Clients can rely on our expertise to deliver a robust
@@ -148,7 +148,8 @@ export default function Professional() {
               <img className="p-1" src={IconFC} alt="" />
             </span>
             <p className="leading-relaxed text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">
-              Fully indigenous technology based on the ETSI standard for TETRA.{" "}
+              Fully indigenous technology based on the ETSI standard for
+              TETRA.{" "}
             </p>
           </div>
           <div className="flex">

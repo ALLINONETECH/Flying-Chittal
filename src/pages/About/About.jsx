@@ -80,24 +80,27 @@ export default function About() {
 
   return (
     <div>
-          <Helmet>
-        <title>About Us | Atulya Bhinav</title>
+      <Helmet>
+        <title>About Us | flying chital</title>
         <meta
           name="description"
-          content="Learn more about Atulya Bhinav. Discover our mission, vision, and the team behind our success."
+          content="Learn more about flying chital. Discover our mission, vision, and the team behind our success."
         />
         <meta
           name="keywords"
-          content="Atulya Bhinav, about us, team, mission, vision"
+          content="flying chital, about us, team, mission, vision"
         />
-        <meta property="og:title" content="About Us | Atulya Bhinav" />
+        <meta property="og:title" content="About Us | flying chital" />
         <meta
           property="og:description"
-          content="Learn more about Atulya Bhinav. Discover our mission, vision, and the team behind our success."
+          content="Learn more about flying chital. Discover our mission, vision, and the team behind our success."
         />
         <meta property="og:url" content="https://atulyabhinav.com/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://atulyabhinav.com/assets/Praduman%20Sir-e7a57db4.jpg" />
+        <meta
+          property="og:image"
+          content="https://atulyabhinav.com/assets/Praduman%20Sir-e7a57db4.jpg"
+        />
       </Helmet>
       {/* Section-1 About us */}
       <section
@@ -183,7 +186,7 @@ export default function About() {
               we are
             </h1>
             <p className="text-xl not-italic font-normal leading-7 mb-8 text-justify font-heebo w-5/6">
-              Welcome to Atulya Abhinav Technologies, a pioneering force in the
+              Welcome to flying chital Technologies, a pioneering force in the
               realm of digital transformation and innovation. With a dedicated
               focus on revolutionizing businesses, we specialize in the seamless
               automation of enterprise workflows, leveraging cutting-edge
@@ -194,7 +197,7 @@ export default function About() {
               <br />
               Moreover, our comprehensive suite of managed IT services empowers
               organizations to streamline their operations and drive sustainable
-              growth in an ever-evolving digital landscape. At Atulya Abhinav
+              growth in an ever-evolving digital landscape. At flying chital
               Tech Private Limited, we are committed to propelling businesses
               towards a future of unparalleled technological advancement and
               operational excellence.
@@ -230,7 +233,7 @@ export default function About() {
               we are
             </h1>
             <p className="text-md not-italic font-normal leading-7 mb-8  font-heebo w-5/6 md:w-fit text-black">
-              Welcome to Atulya Abhinav Technologies, a pioneering force in the
+              Welcome to flying chital Technologies, a pioneering force in the
               realm of digital transformation and innovation. With a dedicated
               focus on revolutionizing businesses, we specialize in the seamless
               automation of enterprise workflows, leveraging cutting-edge
@@ -241,7 +244,7 @@ export default function About() {
               <br />
               Moreover, our comprehensive suite of managed IT services empowers
               organizations to streamline their operations and drive sustainable
-              growth in an ever-evolving digital landscape. At Atulya Abhinav
+              growth in an ever-evolving digital landscape. At flying chital
               Tech Private Limited, we are committed to propelling businesses
               towards a future of unparalleled technological advancement and
               operational excellence.
@@ -310,7 +313,7 @@ export default function About() {
           </div>
           <div className="w-full">
             <p className="text-xl not-italic font-heebo sm:text-base font-normal text-center sm:text-justify mb-2 text-gray-900 mx-4 sm:mx-24">
-              Choosing Atulya Abhinav over others in the digital transformation
+              Choosing flying chital over others in the digital transformation
               and innovation landscape is a decision grounded in our unwavering
               commitment to excellence and the distinct value we bring to the
               table. We understand that the digital terrain is constantly
@@ -438,7 +441,7 @@ export default function About() {
                 </h2>
                 <div className="flex flex-col">
                   <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                    "At Atulya Abhinav Tech Private Limited, our mission is to
+                    "At flying chital Tech Private Limited, our mission is to
                     pioneer innovation in supply chain and logistics operations,
                     revolutionizing industrial processes across remote and
                     underserved areas...
@@ -561,7 +564,7 @@ export default function About() {
                 domestic manufacturing and self-sufficiency, Pradyumna is
                 instrumental in transforming our company into a hub of
                 innovation and self-reliance. Through this experience, Pradyumna
-                embodies Atulya Abhinav’s vision of being a perfect fusion of
+                embodies flying chital’s vision of being a perfect fusion of
                 discipline, operational excellence, cutting edge innovation and
                 strategic foresight. His deep commitment to unyielding business
                 ethics and exemplary corporate governance strongly reflects our
@@ -726,7 +729,7 @@ export default function About() {
             </div>
           </div> */}
 
-          <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
+          {/* <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
               <img
                 className="object-cover object-center  rounded-tr-[70px] rounded-bl-[70px]"
@@ -763,9 +766,9 @@ export default function About() {
                 <img src={Socialicon} alt="" />
               </span>
             </div>
-          </div>
+          </div> */}
 
-          <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
+          {/* <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
                 Parshuram Panigrahi
@@ -803,141 +806,151 @@ export default function About() {
                 src={parshu}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
-
-
       <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      {/* <h1 class="text-4xl sm:text-[40px] font-bold mb-4 text-gray-900">Development Team</h1> */}
-      <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            {/* <h1 class="text-4xl sm:text-[40px] font-bold mb-4 text-gray-900">Development Team</h1> */}
+            <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
               <span className="font-heebo text-primary text-4xl sm:text-[40px]">
                 Develop<span className="border-b-2 border-secondary">ment</span>
                 <span className="text-black"> Team</span>
               </span>
             </h1>
-      {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> */}
-    </div>
-    <div class="flex flex-wrap -m-4">
-      
-      <div class="p-4 lg:w-1/3 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-        <img
-                className="object-cover object-center rounded-tr-[50px] rounded-bl-[50px]"
-                alt="hero"
-                src={Abhijit}
-              />
-          <div class="w-full">
-            <h2 class="font-bold text-3xl text-gray-900 mt-1">Abhijit Radke</h2>
-            <h3 class="text-gray-800 font-bold text-xl mb-3">Software Developer</h3>
-            <p class="mb-4"></p>
-         
+            {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> */}
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img
+                  className="object-cover object-center rounded-tr-[50px] rounded-bl-[50px]"
+                  alt="hero"
+                  src={Abhijit}
+                />
+                <div class="w-full">
+                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
+                    Abhijit Radke
+                  </h2>
+                  <h3 class="text-gray-800 font-bold text-xl mb-3">
+                    Software Developer
+                  </h3>
+                  <p class="mb-4"></p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img
+                  className="object-cover object-center rounded-tr-[50px] rounded-bl-[50px]"
+                  alt="hero"
+                  src={Bibhu}
+                />
+                <div class="w-full">
+                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
+                    Bibhudutta Das
+                  </h2>
+                  <h3 class="text-gray-800 font-bold text-xl mb-3">
+                    Principal Software Architect
+                  </h3>
+                  <p class="mb-4"></p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img
+                  className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                  alt="hero"
+                  src={Amit}
+                />
+                <div class="w-full">
+                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
+                    Amit Mazumdar
+                  </h2>
+                  <h3 class="text-gray-800 font-bold text-xl mb-3">
+                    Software Developer
+                  </h3>
+                  <p class="mb-4"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="p-4 lg:w-1/3 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-        <img
-                className="object-cover object-center rounded-tr-[50px] rounded-bl-[50px]"
-                alt="hero"
-                src={Bibhu}
-              />
-          <div class="w-full">
-            <h2 class="font-bold text-3xl text-gray-900 mt-1">Bibhudutta Das</h2>
-            <h3 class="text-gray-800 font-bold text-xl mb-3">Principal Software Architect</h3>
-            <p class="mb-4"></p>
-           
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/3 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-        <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={Amit}
-              />
-          <div class="w-full">
-            <h2 class="font-bold text-3xl text-gray-900 mt-1">Amit Mazumdar</h2>
-            <h3 class="text-gray-800 font-bold text-xl mb-3">Software Developer</h3>
-            <p class="mb-4"></p>
-            
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
+      </section>
 
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      {/* <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">Development Team</h1> */}
-      <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            {/* <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">Development Team</h1> */}
+            <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
               <span className="font-heebo text-primary text-4xl sm:text-[40px]">
                 Opera<span className="border-b-2 border-secondary">tion</span>
                 <span className="text-black"> Team</span>
               </span>
             </h1>
-      
-    </div>
-    <div class="flex flex-wrap -m-4">
-    <div class="p-4 lg:w-1/3 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-        <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={Biplab}
-              />
-          <div class="w-full">
-            <h2 class="font-bold text-3xl text-gray-900 mt-1">Biplab Kumar Naik</h2>
-            <h3 class="text-gray-800 font-bold text-xl mb-3">Operations Manager</h3>
-            <p class="mb-4"></p>
-            
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img
+                  className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                  alt="hero"
+                  src={Biplab}
+                />
+                <div class="w-full">
+                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
+                    Biplab Kumar Naik
+                  </h2>
+                  <h3 class="text-gray-800 font-bold text-xl mb-3">
+                    Operations Manager
+                  </h3>
+                  <p class="mb-4"></p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img
+                  className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                  alt="hero"
+                  src={Chiranjiv}
+                />
+                <div class="w-full">
+                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
+                    Chiranjeev Bindhani
+                  </h2>
+                  <h3 class="text-gray-800 font-bold text-xl mb-3">
+                    Senior Operation Manager
+                  </h3>
+                  <p class="mb-4"></p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img
+                  className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                  alt="hero"
+                  src={Debashis}
+                />
+                <div class="w-full">
+                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
+                    Debashish Sahoo
+                  </h2>
+                  <h3 class="text-gray-800 font-bold text-xl mb-3">
+                    Field Executive{" "}
+                  </h3>
+                  <p class="mb-4"></p>
+                  <span class="inline-flex"></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="p-4 lg:w-1/3 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-        <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={Chiranjiv}
-              />
-          <div class="w-full">
-            <h2 class="font-bold text-3xl text-gray-900 mt-1">Chiranjeev Bindhani</h2>
-            <h3 class="text-gray-800 font-bold text-xl mb-3">Senior Operation Manager</h3>
-            <p class="mb-4"></p>
-        
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/3 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-        <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={Debashis}
-              />
-          <div class="w-full">
-            <h2 class="font-bold text-3xl text-gray-900 mt-1">Debashish Sahoo</h2>
-            <h3 class="text-gray-800 font-bold text-xl mb-3">Field Executive </h3>
-            <p class="mb-4"></p>
-            <span class="inline-flex">
-            
-            </span>
-          </div>
-        </div>
-      </div>
-      
-      
-    </div>
-  </div>
-</section>
+      </section>
 
       <section
         ref={customersRef}

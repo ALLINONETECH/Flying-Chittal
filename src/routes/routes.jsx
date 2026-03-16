@@ -25,6 +25,8 @@ import FlyingChitalFleet from "../pages/ProductandSolutions/FlyingChitalFleet";
 import FlyingChitalContainer from "../pages/ProductandSolutions/FlyingChitalContainer";
 import AgricultureAutomation from "../pages/ProductandSolutions/AgricultureAutomation";
 import AquacultureAutomation from "../pages/ProductandSolutions/AquacultureAutomation";
+import Mobilyt from "../pages/ProductandSolutions/Mobilyt";
+import Traks from "../pages/ProductandSolutions/Traks";
 import Career from "../pages/Career";
 import Professional from "../pages/Professional";
 import Telematics from "../pages/Telematics";
@@ -77,6 +79,8 @@ const UserRoutes = () => {
         { path: "/roadLogistics", element: <RoadLogistics /> },
         { path: "/railLogistics", element: <RailLogistics /> },
         { path: "/flyingChitalVehicle", element: <FlyingChitalVehicle /> },
+        { path: "/mobilyt", element: <Mobilyt /> },
+        { path: "/traks", element: <Traks /> },
         { path: "/flyingChitalFleet", element: <FlyingChitalFleet /> },
         { path: "/flyingChitalContainer", element: <FlyingChitalContainer /> },
         { path: "/agricultureAutomation", element: <AgricultureAutomation /> },

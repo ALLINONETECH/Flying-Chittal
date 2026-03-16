@@ -366,8 +366,6 @@ export default function Blog() {
             </div>
           </div>
 
-
-
           <div class="flex flex-col md:flex-row shadow-lg md:shadow-xl bg-white mt-10 md:mt-16">
             <div class="md:w-1/3 w-full md:max-w-sm mb-10 md:mb-0 md:ml-10 px-3 py-10">
               <img
@@ -378,11 +376,18 @@ export default function Blog() {
             </div>
             <div class="flex-1 px-4 md:px-8 py-6 md:py-10 flex flex-col items-center md:items-start text-center md:text-left">
               <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                Atulya Abhinav Tech Private Limited's Impactful Presence at the 2nd Odisha Mining & Infrastructure International Expo 2024
+                flying chital Tech Private Limited's Impactful Presence at the
+                2nd Odisha Mining & Infrastructure International Expo 2024
               </h2>
               <p class="text-lg lg:text-xl font-normal leading-relaxed text-gray-800 mb-6">
-                At the 2nd Odisha Mining & Infrastructure International Expo 2024, AATPL showcased Flying Chital, a groundbreaking logistics platform, redefining industry standards with innovation and excellence. Seamlessly integrating cutting-edge technologies, 
-                AATPL empowers businesses to thrive in the digital era, driving efficiency and sustainability. With Flying Chital leading the charge, AATPL paves the way for a future of unparalleled growth and productivity in logistics management.
+                At the 2nd Odisha Mining & Infrastructure International Expo
+                2024, AATPL showcased Flying Chital, a groundbreaking logistics
+                platform, redefining industry standards with innovation and
+                excellence. Seamlessly integrating cutting-edge technologies,
+                AATPL empowers businesses to thrive in the digital era, driving
+                efficiency and sustainability. With Flying Chital leading the
+                charge, AATPL paves the way for a future of unparalleled growth
+                and productivity in logistics management.
               </p>
               <Link to="/MiningExpo">
                 <div class="flex justify-start">

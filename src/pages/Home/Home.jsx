@@ -5,8 +5,6 @@ import Edge1 from "../../assets/images/Edge1.png";
 import Empower from "../../assets/images/Empower.png";
 import smalllogo from "../../assets/images/smalllogo.png";
 import homebluebg from "../../assets/images/homebluebg.png";
-import One from "../../component/common/svg/One";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 export default function Home() {
   const digitalRef = useRef();
@@ -17,65 +15,72 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <Helmet>
-        <title>Atulya Bhinav | Home</title>
+        <title>flying chital | Home</title>
         <meta
           name="description"
-          content="Welcome to Atulya Bhinav's official website. Explore our services, solutions, and expertise."
+          content="Welcome to flying chital's official website. Explore our services, solutions, and expertise."
         />
         <meta
           name="keywords"
-          content="Atulya Bhinav, software solutions, web development, consulting"
+          content="flying chital, software solutions, web development, consulting"
         />
-        <meta name="author" content="Atulya Bhinav" />
-        <meta property="og:title" content="Atulya Bhinav | Home" />
+        <meta name="author" content="flying chital" />
+        <meta property="og:title" content="flying chital | Home" />
         <meta
           property="og:description"
-          content="Welcome to Atulya Bhinav's official website. Explore our services, solutions, and expertise."
+          content="Welcome to flying chital's official website. Explore our services, solutions, and expertise."
         />
         <meta property="og:url" content="https://atulyabhinav.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://atulyabhinav.com/logo.png" />
         <meta name="robots" content="index, follow" />
       </Helmet>
+      <style>{`
+        @keyframes fcTicker {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
       <div className="static ">
         <section
-          className="bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+          className="bg-no-repeat bg-center bg-cover rounded-br-[60px] md:rounded-br-[100px]"
           style={{
             backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${homebluebg})`,
           }}
         >
-          <div className="container p-6 mx-auto text-start px-4 md:px-8 lg:px-16 xl:px-24">
-            <div className="mx-auto">
+          <div className="container mx-auto text-start px-4 py-8 md:px-8 md:py-12 lg:px-16 xl:px-24">
+            <div className="mx-auto rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 p-5 md:p-8 shadow-xl">
               <h1
                 data-aos="fade-left"
-                className="text-4xl lg:text-6xl not-italic font-medium font-heebo text-gray-100 dark:text-white"
+                className="text-3xl sm:text-4xl lg:text-6xl not-italic font-semibold font-heebo text-gray-100 dark:text-white leading-tight"
               >
-                Digital Transformation & <br /> Innovation
+                Intelligent, Data-Driven & <br /> Sustainable Digital
+                Transformation
               </h1>
               <p
                 data-aos="fade-right"
-                className="text-xl not-italic font-normal leading-7 font-heboo text-white"
+                className="mt-4 text-base sm:text-lg lg:text-xl not-italic font-normal leading-7 font-heboo text-white/95 max-w-4xl"
               >
-                Unlock your digital transformation & innovation potential. We
-                help implement modern digital <br /> technologies to solve
-                business problems, optimize processes and save cost.
+                We are a technology-driven startup committed to being a catalyst
+                for intelligent digital ecosystems across Android, iOS, and web
+                platforms.
               </p>
-              <div className="justify-center mt-24 space-x-4">
+              <div className="mt-8 md:mt-10 flex flex-wrap gap-3">
                 <button
                   onClick={() =>
                     digitalRef.current?.scrollIntoView({ behavior: "smooth" })
                   }
-                  className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white transition-all duration-300"
+                  className="inline-flex text-sm not-italic font-semibold leading-5 text-white bg-white/10 border border-white/30 py-2.5 px-5 rounded-full focus:outline-none hover:bg-white/20 transition-all duration-300"
                 >
-                  Digital Transformation and Innovation
+                  Home Page
                 </button>
                 <button
                   onClick={() =>
                     automateRef.current?.scrollIntoView({ behavior: "smooth" })
                   }
-                  className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white transition-all duration-300"
+                  className="inline-flex text-sm not-italic font-semibold leading-5 text-white bg-white/10 border border-white/30 py-2.5 px-5 rounded-full focus:outline-none hover:bg-white/20 transition-all duration-300"
                 >
-                  Automation of Enterprise Workflows
+                  Driving Efficiency
                 </button>
                 <button
                   onClick={() =>
@@ -83,17 +88,17 @@ export default function Home() {
                       behavior: "smooth",
                     })
                   }
-                  className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white transition-all duration-300"
+                  className="inline-flex text-sm not-italic font-semibold leading-5 text-white bg-white/10 border border-white/30 py-2.5 px-5 rounded-full focus:outline-none hover:bg-white/20 transition-all duration-300"
                 >
-                  Edge Computing and Mobility
+                  What We Bring
                 </button>
                 <button
                   onClick={() =>
                     managedRef.current?.scrollIntoView({ behavior: "smooth" })
                   }
-                  className="inline-flex text-sm not-italic font-bold leading-5 text-white border-0 py-2 px-6 focus:outline-none hover:border-b-2 hover:border-white transition-all duration-300"
+                  className="inline-flex text-sm not-italic font-semibold leading-5 text-white bg-white/10 border border-white/30 py-2.5 px-5 rounded-full focus:outline-none hover:bg-white/20 transition-all duration-300"
                 >
-                  Managed IT Services
+                  Results-Driven Systems
                 </button>
               </div>
             </div>
@@ -107,38 +112,74 @@ export default function Home() {
             ref={digitalRef}
             className="text-gray-600 body-font px-4 md:px-8 lg:px-16 xl:px-24"
           >
-            <div className="container px-5 py-5 mx-auto">
+            <div className="container px-2 md:px-5 py-5 mx-auto">
               <div className="flex flex-wrap w-full flex-col items-center text-center">
                 <h1 className="font-heebo text-2xl sm:text-3xl lg:text-5xl font-bold leading-9 title-font mb-2 text-center text-gray-900">
-                  <span className="font-heebo text-2xl sm:text-3xl lg:text-5xl text-primary">
-                    Flying Chital -&nbsp;
-                  </span>
-                  Smart Agile Logistics at Fingertip...
+                  {/* <span className="font-heebo text-2xl sm:text-3xl lg:text-5xl text-primary">
+                    Home Page -&nbsp;
+                  </span> */}
+                  Intelligent Transformation, Delivered
                 </h1>
                 <p className="lg:w-1/2 w-full leading-relaxed text-gray-500"></p>
                 <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
               </div>
               <div
                 data-aos="fade-up-right"
-                className="flex flex-col lg:flex-row bg-white"
+                className="flex flex-col lg:flex-row bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden"
               >
-                <div className="lg:max-w-lg lg:w-1/4 md:w-full w-full mb-5 md:mb-0 px-3 py-10">
+                <div className="lg:max-w-lg lg:w-1/4 md:w-full w-full mb-0 px-4 py-6 md:py-10 bg-gray-50">
                   <img
                     data-aos="zoom-in-down"
-                    className="object-cover object-center w-full h-full"
+                    className="object-contain object-center w-full h-full max-h-[220px] md:max-h-[300px]"
                     alt="hero"
                     src={smalllogo}
                   />
                 </div>
-                <div className="lg:w-3/4 md:w-full w-full lg:pl-5 md:pl-5 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-10 text-[#30343F]">
+                <div className="lg:w-3/4 md:w-full w-full lg:pl-6 md:pl-5 px-4 md:px-6 py-6 flex flex-col md:items-start md:text-left items-center text-center font-heebo text-[#30343F]">
                   <div
                     data-aos="fade-up-left"
                     className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo"
                   >
-                    <One />
+                    <div className="text-base md:text-lg leading-relaxed text-left p-4">
+                      <p className="mb-4">
+                        We are a technology-driven startup committed to being a
+                        catalyst for intelligent, data-driven and sustainable
+                        digital transformation. Founded with a clear vision to
+                        engineer impactful digital ecosystems, we design,
+                        develop, test, deploy and maintain intelligent, smart
+                        software applications across Android, iOS and web
+                        platforms.
+                      </p>
+                      <p className="mb-4">
+                        By harnessing the power of Artificial Intelligence (AI),
+                        Cloud Computing, Data Science, Internet of Things (IoT),
+                        and advanced sensor technologies, Flying Chital delivers
+                        integrated, future-ready solutions that address
+                        real-world business, industrial, commercial, and
+                        governance challenges.
+                      </p>
+                      <div className="w-full bg-gradient-to-r from-[#30343F] via-[#3f4350] to-[#30343F] text-white rounded-full py-2.5 px-3 overflow-hidden shadow-md">
+                        <div
+                          className="whitespace-nowrap font-semibold tracking-wide"
+                          style={{ animation: "fcTicker 18s linear infinite" }}
+                        >
+                          <span className="inline-block pr-16">
+                            We don’t just build software — we build intelligent
+                            systems that deliver results.
+                          </span>
+                          <span
+                            className="inline-block pr-16"
+                            aria-hidden="true"
+                          >
+                            We don’t just build software — we build intelligent
+                            systems that deliver results.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex justify-start mt-4 lg:mt-0">
-                    <Link to="/flyingchital">
+                    {/* <Link to="/flyingchital">
                       <button className="inline-flex text-white font-bold bg-[#30343F] border-0 py-2 px-6 ml-4 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
                         READ MORE
                         <span>
@@ -155,7 +196,7 @@ export default function Home() {
                           </svg>
                         </span>
                       </button>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -170,29 +211,39 @@ export default function Home() {
             ref={automateRef}
             className="text-gray-600 body-font mt-0 bg-gray-100 rounded-tl-[100px] rounded-br-[100px]"
           >
-            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
-       
+            <div className="container mx-auto flex py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
               <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-4 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-                  <span className="text-indigo-800 font-bold text-[40px]">
-                    Automation
-                  </span>
-                  <span className="text-[40px] font-heebo font-bold">
-                    {" "}
-                    of Enterprise Workflows
-                  </span>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium title-font text-gray-900 mb-1 leading-tight">
+                  <span className="text-indigo-800 font-bold">Driving</span>
+                  <span className="font-heebo font-bold"> Efficiency</span>
                 </h1>
                 <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-                <p className="mb-8 text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed w-4/5 font-heebo text-[#30343F]">
-                  Automate Your Enterprise Digital Workflows for Enhanced
-                  Resilience, Scalability, and Sustainability. We Help Automate
-                  Enterprise Digital Workflows to Streamline Processes, Boost
-                  Productivity and Provide Data-Driven Insights.
-                </p>
+                <div className="mb-8 text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed w-4/5 font-heebo text-[#30343F]">
+                  <p className="mb-3 font-semibold">
+                    Protecting Revenue. Maximising Profitability.
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-base md:text-lg">
+                    <li>
+                      Digitising processes to eliminate manual inefficiencies
+                    </li>
+                    <li>
+                      Reducing operational costs through intelligent
+                      optimisation
+                    </li>
+                    <li>
+                      Identifying and preventing revenue leakages to safeguard
+                      profitability
+                    </li>
+                    <li>
+                      Strengthening financial control and maximising measurable
+                      ROI
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
                 <img
-                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
+                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-xl"
                   alt="hero"
                   src={Automation1}
                 />
@@ -208,31 +259,60 @@ export default function Home() {
             ref={edgeComputeRef}
             className="text-gray-600 body-font mt-0 bg-white rounded-tl-[100px] rounded-br-[100px]"
           >
-            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
+            <div className="container mx-auto flex py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
               <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
                 <img
-                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
+                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-xl"
                   alt="hero"
                   src={Edge1}
                 />
               </div>
               <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-4 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-                  <span className="text-indigo-800 font-bold text-[40px]">
-                    Edge Computing
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium title-font text-gray-900 mb-1 leading-tight">
+                  <span className="text-indigo-800 font-bold">
+                    What We Bring
                   </span>
-                  <span className="text-[40px] font-heebo font-bold">
+                  <span className="font-heebo font-bold">
                     {" "}
-                    and Mobility
+                    to Your Business
                   </span>
                 </h1>
                 <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-                <p className="mb-8 text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed w-4/5 font-heebo text-[#30343F]">
-                  Enhance Your Edge Computing and Mobility Solutions. We Enable
-                  Efficient Edge Computing, Support Data-Driven Decision-Making,
-                  and Enable Seamless Mobility Solutions to Improve Operational
-                  Efficiency and Agility.
-                </p>
+                <div className="mb-8 w-4/5 font-heebo text-[#30343F] grid gap-4">
+                  <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4 md:p-5 text-left shadow-sm">
+                    <p className="text-lg md:text-xl font-semibold mb-2">
+                      🚀 Intelligent Software Solutions
+                    </p>
+                    <p className="text-base md:text-lg font-normal leading-relaxed">
+                      We design and develop powerful mobile and web applications
+                      across Android, iOS, and browser platforms, backed by
+                      secure, cloud-native SaaS architectures for enterprises
+                      and government institutions.
+                    </p>
+                  </div>
+
+                  <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4 md:p-5 text-left shadow-sm">
+                    <p className="text-lg md:text-xl font-semibold mb-2">
+                      ⚙️ Digital Automation & Optimisation
+                    </p>
+                    <p className="text-base md:text-lg font-normal leading-relaxed">
+                      Through AI-powered workflow automation, IoT integration,
+                      smart sensors, and real-time monitoring systems, we enable
+                      transparency, accountability, and faster service delivery.
+                    </p>
+                  </div>
+
+                  <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4 md:p-5 text-left shadow-sm">
+                    <p className="text-lg md:text-xl font-semibold mb-2">
+                      📊 Data-Driven Decision Support
+                    </p>
+                    <p className="text-base md:text-lg font-normal leading-relaxed">
+                      We unlock real-time Business Intelligence through AI and
+                      advanced analytics, including predictive modelling,
+                      interactive dashboards, and intelligent reporting.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -245,28 +325,28 @@ export default function Home() {
             ref={managedRef}
             className="text-gray-600 body-font mt-0 bg-gray-100 rounded-tl-[100px] rounded-br-[100px]"
           >
-            <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
-       
+            <div className="container mx-auto flex py-12 md:flex-row flex-col items-center px-4 md:px-8 lg:px-16 xl:px-24">
               <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-4 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-                  <span className="text-indigo-800 font-bold text-[40px]">
-                    Managed IT
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium title-font text-gray-900 mb-1 leading-tight">
+                  <span className="text-indigo-800 font-bold">
+                    Future-Ready
                   </span>
-                  <span className="text-[40px] font-heebo font-bold">
-                    Services
+                  <span className="font-heebo font-bold">
+                    {" "}
+                    Intelligent Systems
                   </span>
                 </h1>
                 <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
                 <p className="mb-8 text-lg md:text-xl lg:text-xl font-normal leading-normal md:leading-relaxed w-4/5 font-heebo text-[#30343F]">
-                  Streamline Your IT Operations with Our Managed IT Services.
-                  Our Expert Team Provides Comprehensive Support, Proactive
-                  Monitoring, and Strategic IT Solutions to Ensure Your Systems
-                  Operate Efficiently and Securely.
+                  At Flying Chital Private Limited, we deliver intelligent,
+                  scalable and future-ready digital solutions that create
+                  measurable impact and sustainable growth across business,
+                  industrial, commercial, and governance ecosystems.
                 </p>
               </div>
               <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
                 <img
-                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
+                  className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-xl"
                   alt="hero"
                   src={Empower}
                 />

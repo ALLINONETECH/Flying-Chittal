@@ -1,85 +1,89 @@
 import React, { useEffect, useState } from "react";
 import clogo from "../../assets/images/clogo.png";
-import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/solid";
 import flogo from "../../assets/images/flogo.png";
+import {
+  Bars3Icon,
+  ChevronDownIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { Navbar as NavBarTailWind, MobileNav } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { navItem } from "./navList";
 
 export default function Navbar() {
-  const [openNav, setOpenNav] = React.useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const location = useLocation();
 
-  React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 960) {
+        setOpenNav(false);
+        setActiveDropdown(null);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const [dark, setDark] = useState(prefersDark);
   useEffect(() => {
-    if (prefersDark) {
-      setDark(true);
-    }
-  }, [dark, prefersDark]);
+    setOpenNav(false);
+    setActiveDropdown(null);
+  }, [location.pathname, location.search]);
 
   const handleDropdownClick = (label) => {
     setActiveDropdown(activeDropdown === label ? null : label);
   };
-  
+
+  const isCurrentRoute = (to) => {
+    if (!to) return false;
+    return (
+      location.pathname + location.search === to || location.pathname === to
+    );
+  };
+
   const navList = (
-    <ul className="flex flex-col mt-4 font-medium md:flex-row md:space-x-6">
+    <ul className="flex flex-col lg:items-center mt-3 lg:mt-0 font-medium md:flex-row md:space-x-2 lg:space-x-3">
       {navItem.map((item) => (
-        <li key={item.label}>
+        <li key={item.label} className="relative">
           <button
             id={`mega-menu-icons-dropdown-button-${item.label}`}
             data-dropdown-toggle={`mega-menu-icons-dropdown-${item.label}`}
-            className={`flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium ${
-              dark ? "text-white" : "text-gray-900"
-            } border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700`}
+            className="flex items-center justify-between w-full py-2.5 px-3.5 text-[15px] font-semibold text-gray-700 rounded-lg border-b border-gray-100 md:w-auto md:border-0 hover:bg-indigo-50 hover:text-primary transition-colors"
             onClick={() => handleDropdownClick(item.label)}
           >
             {item.label}
-            <svg
-              className="w-2.5 h-2.5 ml-2.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
+            <ChevronDownIcon
+              className={`w-4 h-4 ml-2 transition-transform ${
+                activeDropdown === item.label ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </button>
           <div
             id={`mega-menu-icons-dropdown-${item.label}`}
-            className={`absolute z-10 grid ${
-              activeDropdown === item.label ? "grid-cols-2" : "hidden"
-            } w-auto text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-1 dark:bg-gray-700`}
+            className={`z-20 ${
+              activeDropdown === item.label ? "block" : "hidden"
+            } lg:absolute lg:top-full lg:left-0 lg:mt-2 w-full lg:w-80`}
           >
-            <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white ">
+            <div className="p-3 lg:p-4 bg-white border border-gray-200 rounded-xl shadow-lg">
               <ul
-                className="space-y-4"
+                className="space-y-1"
                 aria-labelledby={`mega-menu-icons-dropdown-button-${item.label}`}
               >
                 {item.subMenu &&
                   item.subMenu.map((subItem) => (
                     <li key={subItem.label}>
-                      <a
-                        href={subItem.to}
-                        className="flex items-center  text-gray-500 dark:text-white  hover:text-blue-600 dark:hover:text-blue-500 group"
+                      <Link
+                        to={subItem.to}
+                        className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
+                          isCurrentRoute(subItem.to)
+                            ? "bg-indigo-50 text-primary font-semibold"
+                            : "text-gray-700 hover:bg-gray-50 hover:text-primary"
+                        }`}
                       >
-                        <span className="sr-only">{subItem.label}</span>
-
                         {subItem.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
               </ul>
@@ -87,19 +91,25 @@ export default function Navbar() {
           </div>
         </li>
       ))}
+
       <li>
         <Link
           to="/career"
-          className="text-gray-800  dark:text-white  focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-md px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2  focus:outline-none"
+          className={`text-[15px] font-semibold rounded-lg px-4 py-2.5 mr-1 md:mr-2 transition-colors ${
+            isCurrentRoute("/career")
+              ? "bg-indigo-50 text-primary"
+              : "text-gray-700 hover:bg-indigo-50 hover:text-primary"
+          }`}
         >
           Careers
         </Link>
       </li>
+
       <li>
-        <button id="contact-cta">
+        <button id="contact-cta" className="w-full md:w-auto">
           <Link
             to="/chat"
-            className="text-white bg-[#f85a47] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-1.5 mr-1 md:mr-2 md:mt-2 dark:bg-[#f85a47] dark:hover:bg-blue-700 focus:outline-none dark:focus:bg-[#f85a47]"
+            className="inline-flex items-center justify-center w-full md:w-auto text-white bg-secondary hover:bg-primary focus:ring-4 focus:ring-blue-200 font-semibold rounded-full text-sm px-5 py-2.5 mr-1 md:mr-2 md:mt-0 transition-colors"
           >
             Contact Us
           </Link>
@@ -109,48 +119,34 @@ export default function Navbar() {
   );
 
   return (
-    <NavBarTailWind className={`mx-auto ${dark ? "bg-gray-900" : "bg-white"}`}>
-      {/* desktop nav  */}
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-        <div className="flex ">
-          <div>
-            <Link to="/">
-              {!dark && (
-                <img
-                  src={clogo}
-                  className="h-20 mr-3"
-                  alt="FlyingChital Logo"
-                />
-              )}
-              {dark && (
-                <img
-                  src={flogo}
-                  className="h-20 mr-3"
-                  alt="FlyingChital Logo"
-                />
-              )}
-            </Link>
-          </div>
+    <NavBarTailWind className="mx-auto sticky top-0 z-50 bg-white/95 backdrop-blur-sm border border-gray-100 rounded-none max-w-full shadow-sm px-2 lg:px-4">
+      <div className="container mx-auto flex items-center justify-between text-blue-gray-900 py-1">
+        <div className="flex">
+          <Link to="/">
+            <img
+              src={clogo || flogo}
+              className="h-14 md:h-16 mr-2"
+              alt="FlyingChital Logo"
+            />
+          </Link>
         </div>
+
         <div className="hidden lg:block">{navList}</div>
-        {/* toggle switch  */}
 
         <div
-          // variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden cursor-pointer"
-          // ripple={false}
+          className="ml-auto h-9 w-9 rounded-lg text-inherit hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200 lg:hidden cursor-pointer flex items-center justify-center"
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
-            <AdjustmentsHorizontalIcon className="h-6 w-6 text-black ml-auto" />
+            <XMarkIcon className="h-6 w-6 text-black" />
           ) : (
-            <AdjustmentsHorizontalIcon className="h-6 w-6 text-black ml-auto" />
+            <Bars3Icon className="h-6 w-6 text-black" />
           )}
         </div>
       </div>
-      {/* mobile nav */}
-      <MobileNav open={openNav}>
-        <div className="container mx-auto">{navList}</div>
+
+      <MobileNav open={openNav} className="border-0 shadow-none">
+        <div className="container mx-auto pb-3">{navList}</div>
       </MobileNav>
     </NavBarTailWind>
   );

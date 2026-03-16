@@ -18,36 +18,17 @@ export const navItem = [
     to: "/products",
     subMenu: [
       {
-        label: "Flying Chital Integrated Logistics Management System",
+        label:
+          "Intelligent Integrated Multi Modal (Road, Rail & Conveyor) Logistics Management System",
         to: "/flyingchital",
       },
       {
-        label: "Flying Chital Smart Vehicle Tracking System",
-        to: "/flyingChitalVehicle",
+        label: "Mobilyt",
+        to: "/mobilyt",
       },
       {
-        label: "Flying Chital Smart Fleet Monitoring System",
-        to: "/flyingChitalFleet",
-      },
-      {
-        label: "Flying Chital Smart ContainerTracking System",
-        to: "/flyingChitalContainer",
-      },
-      {
-        label: "Flying Chital HEM/HMV/LMV Mobile Asset Management System",
-        to: "/Asset",
-      },
-      {
-        label: "Agriculture Automation Solution",
-        to: "/agricultureAutomation",
-      },
-      {
-        label: "Aquaculture Automation Solution",
-        to: "/aquacultureAutomation",
-      },
-      {
-        label: "Professional Mobile Radio (TETRA PMR)",
-        to: "/professional",
+        label: "Traks – Intelligent Field Force Management Suite",
+        to: "/traks",
       },
     ],
   },

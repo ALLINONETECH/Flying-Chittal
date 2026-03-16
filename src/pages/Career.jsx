@@ -84,7 +84,7 @@ export default function career() {
               Team
             </h1>
             <p className="mb-8 mt-2  text-[20px] font-[400] font-heebo leading-[26px] text-[#30343F] w-4/5">
-              Atulya Abhinav Tech Private Limited invites dynamic talent to join
+              flying chital Tech Private Limited invites dynamic talent to join
               our team and be a part of our groundbreaking journey in the realm
               of Digital Transformation and Innovation, Automation of Enterprise
               Workflow, Edge Computing, and Mobility, as well as Managed IT
@@ -100,9 +100,9 @@ export default function career() {
               <br />
               <br />
               With a commitment to good corporate governance and a culture that
-              fosters innovation, your career at Atulya Abhinav Tech will be
-              both satisfying and rewarding, propelling you toward new horizons
-              of success and personal development. Join us to be a part of
+              fosters innovation, your career at flying chital Tech will be both
+              satisfying and rewarding, propelling you toward new horizons of
+              success and personal development. Join us to be a part of
               something extraordinary and be at the forefront of technological
               innovation.
             </p>

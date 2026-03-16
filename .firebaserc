@@ -1,7 +1,9 @@
 {
   "projects": {
-    "default": "atulyabhinav",
-    "deploy": "atulyabhinav-90935"
+    "default": "testing-flyingchittal",
+    "deploy": "atulyabhinav-90935",
+    "stage": "atulya-web-site",
+    "stage2": "shuttlebook-d8e79"
   },
   "targets": {},
   "etags": {}
