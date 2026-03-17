@@ -29,6 +29,7 @@ import awardicon from "../../assets/images/award.png";
 import right1 from "../../assets/images/right1.png";
 import conclusion from "../../assets/images/65723.jpg";
 import { Link } from "react-router-dom";
+import SampleScreenshots from "../../component/common/SampleScreenshots";
 export default function flyingChital() {
   return (
     <div className="overflow-x-hidden">
@@ -779,37 +780,7 @@ export default function flyingChital() {
       </section>
 
       {/* /test */}
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-10 mx-auto">
-          <div class="text-center mb-14">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-              Sample Screenshots
-            </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-            <div class="flex justify-center">
-              <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-            </div>
-          </div>
-          <div className="flex flex-wrap  place-content-center ">
-            <div className=" flex m-auto mb-28 w-1/4  place-content-center">
-              <img
-                className="object-non object-center w-auto "
-                alt="hero"
-                src={sc1}
-              />
-            </div>
-            <div className=" flex m-auto mb-28 w-1/4  place-content-center">
-              <img className="object-cover w-auto" alt="hero" src={sc2} />
-            </div>
-            <div className=" m-auto flex m-auto mb-28 w-1/4  place-content-center">
-              <img className="object-cover w-auto " alt="hero" src={sc3} />
-            </div>
-            <div className=" flex m-auto mb-28 w-1/4  place-content-center">
-              <img className="object-cover w-auto " alt="hero" src={sc4} />
-            </div>
-          </div>
-        </div>
-      </section>
+      <SampleScreenshots images={[sc1, sc2, sc3, sc4]} />
 
       <section className="text-gray-600 body-font mt-10 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-start ">
