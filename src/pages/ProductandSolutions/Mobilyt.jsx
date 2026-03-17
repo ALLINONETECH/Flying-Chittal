@@ -15,8 +15,191 @@ import highlight3 from "../../assets/images/Mobilyt/hf_20260211_174259_3c331f70-
 import highlight4 from "../../assets/images/Mobilyt/hf_20260211_183645_ca0869ab-e197-424b-a355-f810caa48f8b.jpeg";
 import highlight5 from "../../assets/images/Mobilyt/hf_20260211_184106_36b76779-78bd-44c8-a670-89b6ac02eaff.jpeg";
 import conclusionImg from "../../assets/images/Mobilyt/A_powerful_cinematic_photorealistic_render_of_a_fl_delpmaspu.png";
+import ProductIntroSection from "../../component/common/ProductIntroSection";
+import ProductCapabilityShowcase from "../../component/common/ProductCapabilityShowcase";
+import ProductFeatureDeepDive from "../../component/common/ProductFeatureDeepDive";
+import ProductFeatureCardsGrid from "../../component/common/ProductFeatureCardsGrid";
 
 export default function Mobilyt() {
+  const introSections = [
+    {
+      heading: "AI-Powered Fleet Intelligence",
+      body: "Mobilyt is a fully integrated Smart and Intelligent Vehicle Management System that provides end-to-end visibility across every vehicle in your fleet. From real-time GPS tracking to automated maintenance alerts, it puts complete control at your fingertips.",
+    },
+    {
+      heading: "One Platform. Every Vehicle. Total Control.",
+      body: "Mobilyt unifies fleet tracking, driver analytics, fuel management, compliance monitoring, and predictive maintenance on a single secure platform, accessible anytime, on any device, from any location.",
+    },
+    {
+      heading: "Smarter Fleets. Stronger ROI.",
+      body: "By automating data collection, compliance checks, and performance reporting, Mobilyt reduces operational costs, prevents fuel leakages, improves asset utilisation, and delivers tangible, measurable ROI.",
+    },
+  ];
+
+  const introCapabilityTags = [
+    "Real-Time Tracking & Control",
+    "Intelligent Automation",
+    "Enterprise Governance",
+  ];
+
+  const capabilityStats = [
+    { value: "24/7", label: "Fleet Visibility" },
+    { value: "AI", label: "Automation Layer" },
+    { value: "360°", label: "Operational Insight" },
+  ];
+
+  const capabilityCards = [
+    {
+      kicker: "Command View",
+      title: "Unified Fleet Command Across Every Route",
+      description:
+        "Bring live tracking, route playback, and asset visibility into one operational control layer for fleet teams, dispatchers, and supervisors.",
+      image: highlight1,
+      alt: "Mobilyt fleet control dashboard",
+    },
+    {
+      kicker: "Performance",
+      title: "Driver and Vehicle Intelligence",
+      description:
+        "Track behaviour, utilisation, and operational efficiency with the context needed to improve safety, discipline, and fleet productivity.",
+      image: highlight2,
+      alt: "Mobilyt vehicle performance monitoring",
+    },
+    {
+      kicker: "Automation",
+      title: "Predictive Maintenance and Smart Alerts",
+      description:
+        "Turn raw telemetry into automated interventions through maintenance triggers, fault detection, and preventive decision support.",
+      image: highlight3,
+      alt: "Mobilyt maintenance automation interface",
+    },
+    {
+      kicker: "Compliance",
+      title: "Audit-Ready Governance for Enterprise Fleets",
+      description:
+        "Support policy enforcement, approvals, and statutory record keeping with a platform built for structured, accountable mobility operations.",
+      image: highlight4,
+      alt: "Mobilyt enterprise compliance workflow",
+    },
+    {
+      kicker: "Scale",
+      title: "Built for LMV, HMV, and Heavy Equipment Operations",
+      description:
+        "Extend a common operating model across vehicle classes, routes, and business units without losing control, security, or reporting clarity.",
+      image: highlight5,
+      alt: "Mobilyt heavy fleet operations overview",
+    },
+  ];
+
+  const trackingStats = [
+    "Live map command",
+    "Geo-fence alerts",
+    "Route playback",
+  ];
+
+  const trackingBullets = [
+    "Live vehicle monitoring on an interactive map",
+    "Complete route history, playback and deviation alerts",
+    "Geo-fencing with automated entry / exit notifications",
+    "Idle-time detection and trip analytics",
+    "Fuel efficiency monitoring and theft alerts",
+    "Enhanced asset security and route discipline",
+  ];
+
+  const automationStats = [
+    "AI analytics",
+    "Predictive alerts",
+    "Driver scoring",
+  ];
+
+  const automationBullets = [
+    "AI-powered analytics and Smart and Intelligent sensor integration",
+    "Automated attendance validation with GPS verification",
+    "Vehicle utilisation tracking and performance benchmarking",
+    "Preventive maintenance alerts based on real usage data",
+    "Driver behaviour monitoring — harsh braking, overspeeding",
+    "Reduced manual oversight and operational inefficiencies",
+  ];
+
+  const intelligenceStats = [
+    "Live KPIs",
+    "Predictive insights",
+    "360° visibility",
+  ];
+
+  const intelligenceBullets = [
+    "Real-time dashboards with live KPIs and alerts",
+    "Predictive analytics to prevent breakdowns and delays",
+    "Automated customisable reports for management and compliance",
+    "Identify deployment bottlenecks and cost overruns instantly",
+    "Optimise fleet utilisation with data-backed scheduling",
+    "360° visibility from source to destination",
+  ];
+
+  const governanceStats = ["Enterprise-grade", "Policy control", "Audit-ready"];
+
+  const governanceBullets = [
+    "Scalable, secure and enterprise-grade architecture",
+    "Transparent accountability for municipal and public fleets",
+    "Ideal for corporations, public transport and defence establishments",
+    "Integration with ERP, SAP and Government Regulatory Portals",
+    "Role-based access control and multi-level approvals",
+    "Builds smarter, safer and more accountable mobility ecosystems",
+  ];
+
+  const keyHighlightsCards = [
+    {
+      title: "Live Fleet Tracking",
+      description: "Interactive map with route history and playback.",
+      icon: IconFC,
+    },
+    {
+      title: "Geo-Fencing",
+      description: "Automated alerts on zone entry and exit.",
+      icon: IconFC,
+    },
+    {
+      title: "AI Automation",
+      description: "Smart and Intelligent sensors and predictive maintenance.",
+      icon: IconFC,
+    },
+    {
+      title: "Driver Analytics",
+      description: "Behaviour monitoring and performance scoring.",
+      icon: IconFC,
+    },
+    {
+      title: "Fuel Management",
+      description: "Consumption tracking and theft prevention.",
+      icon: IconFC,
+    },
+    {
+      title: "Real-Time Dashboards",
+      description: "Live KPIs, exception alerts and custom reports.",
+      icon: IconFC,
+    },
+    {
+      title: "Preventive Maintenance",
+      description: "Alerts based on usage, mileage and faults.",
+      icon: IconFC,
+    },
+    {
+      title: "ERP / SAP Integration",
+      description: "Seamless data flow with enterprise systems.",
+      icon: IconFC,
+    },
+    {
+      title: "Compliance Monitoring",
+      description: "Statutory compliance and audit-ready records.",
+      icon: IconFC,
+    },
+    {
+      title: "Multi-Modal Support",
+      description: "LMV, HMV, HEM across road, rail and port.",
+      icon: IconFC,
+    },
+  ];
+
   return (
     <div className="bg-white">
       {/* ── Hero Section ── */}
@@ -32,7 +215,7 @@ export default function Mobilyt() {
               Mobilyt
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start">
-              Intelligent Smart and Intelligent Vehicle Management System
+              Smart and Intelligent Vehicle Management System
             </p>
             <p className="mt-3 text-base md:text-lg text-white/90 max-w-4xl">
               An AI-enabled platform engineered to transform fleet operations
@@ -66,334 +249,78 @@ export default function Mobilyt() {
       </section>
 
       {/* ── Overview ── */}
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 lg:py-20 items-center gap-8 md:gap-10">
-          <div className="lg:max-w-sm lg:w-full md:w-1/3 w-full flex flex-col items-center gap-4">
-            <img
-              className="object-contain rounded-2xl shadow-xl"
-              alt="Mobilyt Logo"
-              src={mobilytLogo}
-            />
-            <div className="w-full px-3 py-4 bg-[#EAEFF3] rounded-lg">
-              <div className="flex px-3 py-5 justify-center items-start rounded-xl font-heebo text-lg font-medium text-primary bg-[#dce0ee] mb-3">
-                Real-Time Tracking &amp; Control
-              </div>
-              <div className="flex px-3 py-5 justify-center items-start rounded-xl font-heebo text-lg font-medium text-secondary bg-[#ece3e6] mb-3">
-                Intelligent Automation
-              </div>
-              <div className="flex px-3 py-5 justify-center items-start rounded-xl font-heebo text-lg font-medium text-black bg-[#dddde6]">
-                Enterprise Governance
-              </div>
-            </div>
-          </div>
+      <ProductIntroSection
+        logo={mobilytLogo}
+        productName="Mobilyt"
+        eyebrow="Smart Vehicle Management System"
+        title="Intelligent Control for Every Vehicle in Motion"
+        subtitle="An AI-enabled fleet platform designed to unify tracking, automation, compliance, and performance visibility across complex vehicle operations."
+        capabilityTags={introCapabilityTags}
+        sections={introSections}
+      />
 
-          <div className="w-full md:flex-1 lg:pl-14 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="text-xl sm:text-2xl font-bold text-primary font-heebo mb-2">
-              AI-Powered Fleet Intelligence
-            </h1>
-            <div className="my-2 rounded-md p-3 bg-slate-100">
-              <p className="not-italic font-normal leading-7 text-[#30343F] text-xl font-heebo">
-                Mobilyt is a fully integrated Smart and Intelligent Vehicle
-                Management System that provides end-to-end visibility across
-                every vehicle in your fleet. From real-time GPS tracking to
-                automated maintenance alerts, it puts complete control at your
-                fingertips.
-              </p>
-            </div>
-            <h1 className="text-2xl font-bold text-primary font-heebo my-2">
-              One Platform. Every Vehicle. Total Control.
-            </h1>
-            <div className="bg-orange-50 my-2 rounded-md p-3">
-              <p className="not-italic font-normal leading-7 text-[#30343F] text-xl">
-                Mobilyt unifies fleet tracking, driver analytics, fuel
-                management, compliance monitoring, and predictive maintenance on
-                a single secure platform — accessible anytime, on any device,
-                from any location.
-              </p>
-            </div>
-            <h1 className="text-2xl font-bold text-primary font-heebo my-2">
-              Smarter Fleets. Stronger ROI.
-            </h1>
-            <div className="my-2 rounded-md p-3 bg-zinc-100">
-              <p className="not-italic font-normal leading-7 text-[#30343F] text-xl">
-                By automating data collection, compliance checks, and
-                performance reporting, Mobilyt reduces operational costs,
-                prevents fuel leakages, improves asset utilisation, and delivers
-                tangible, measurable ROI.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductCapabilityShowcase
+        eyebrow="Capability Showcase"
+        title="What Mobilyt Looks Like in Live Operations"
+        description="A visual tour of the platform across command visibility, automation, compliance, and enterprise fleet control. The section is designed to communicate system depth before the detailed feature breakdown below."
+        stats={capabilityStats}
+        cards={capabilityCards}
+      />
 
-      {/* ── Highlights Grid ── */}
-      <section className="text-gray-600 body-font rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100">
-        <div className="container px-4 sm:px-6 md:px-16 py-6 md:py-10 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            {[highlight1, highlight2, highlight3, highlight4, highlight5].map(
-              (img, i) => (
-                <div key={i} className="w-full sm:w-1/2 lg:w-1/3 p-4">
-                  <div className="border border-gray-200 rounded-tr-[60px] rounded-bl-[40px] shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-                    <img
-                      className="w-full h-56 object-cover"
-                      src={img}
-                      alt={`Mobilyt highlight ${i + 1}`}
-                    />
-                  </div>
-                </div>
-              ),
-            )}
-          </div>
-        </div>
-      </section>
+      <ProductFeatureDeepDive
+        eyebrow="Operational Core"
+        title="Real-Time Tracking and Control Across Every Vehicle"
+        description="Mobilyt brings the live fleet picture into one structured command layer so route visibility, deviations, fuel risk, and on-road discipline can be managed in real time rather than after the fact."
+        image={gpsVehicles}
+        imageAlt="GPS vehicle tracking"
+        bullets={trackingBullets}
+        stats={trackingStats}
+      />
 
-      {/* ── Section 1: Real-Time Tracking ── */}
-      <section className="text-gray-600 body-font mt-6 md:mt-10">
-        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 items-center gap-6 md:gap-10">
-          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
-            <img
-              className="object-cover object-center w-full h-full"
-              alt="GPS vehicle tracking"
-              src={gpsVehicles}
-            />
-          </div>
-          <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">
-                Real-Time Tracking
-              </span>{" "}
-              <span className="font-heebo">&amp; Control</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <div className="flex flex-col mt-2 space-y-3">
-              {[
-                "Live vehicle monitoring on an interactive map",
-                "Complete route history, playback and deviation alerts",
-                "Geo-fencing with automated entry / exit notifications",
-                "Idle-time detection and trip analytics",
-                "Fuel efficiency monitoring and theft alerts",
-                "Enhanced asset security and route discipline",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <img className="p-1 mt-1 flex-shrink-0" src={IconFC} alt="" />
-                  <p className="text-lg not-italic font-medium leading-relaxed font-heebo">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductFeatureDeepDive
+        eyebrow="Automation Layer"
+        title="Intelligent Automation That Reduces Manual Oversight"
+        description="Mobilyt combines AI analytics, behavioural monitoring, preventive maintenance logic, and smart sensor integration to move fleet operations from reactive supervision to continuous, automated control."
+        image={aiBrain}
+        imageAlt="AI brain connected to fleet"
+        bullets={automationBullets}
+        stats={automationStats}
+        reverse
+        overlayLabel="Automation and Monitoring"
+        overlayText="AI-assisted monitoring helps operators intervene earlier, reduce exceptions, and maintain consistent fleet performance at scale."
+      />
 
-      {/* ── Section 2: Intelligent Automation ── */}
-      <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-10">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
-          <div className="w-full md:flex-1 lg:pr-12 md:pr-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">
-                Intelligent Automation
-              </span>{" "}
-              <span className="font-heebo">&amp; Monitoring</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <div className="flex flex-col mt-2 space-y-3">
-              {[
-                "AI-powered analytics and Smart and Intelligent sensor integration",
-                "Automated attendance validation with GPS verification",
-                "Vehicle utilisation tracking and performance benchmarking",
-                "Preventive maintenance alerts based on real usage data",
-                "Driver behaviour monitoring — harsh braking, overspeeding",
-                "Reduced manual oversight and operational inefficiencies",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <img className="p-1 mt-1 flex-shrink-0" src={IconFC} alt="" />
-                  <p className="text-lg not-italic font-medium leading-relaxed font-heebo">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
-            <img
-              className="object-cover object-center w-full h-full"
-              alt="AI brain connected to fleet"
-              src={aiBrain}
-            />
-          </div>
-        </div>
-      </section>
+      <ProductFeatureDeepDive
+        eyebrow="Decision Intelligence"
+        title="Data-Driven Visibility That Turns Fleet Data Into Action"
+        description="Mobilyt transforms telemetry, route activity, and operational exceptions into live dashboards, predictive insights, and decision-ready reporting so teams can respond before delays and losses accumulate."
+        image={dashboard}
+        imageAlt="Floating dashboard analytics"
+        bullets={intelligenceBullets}
+        stats={intelligenceStats}
+        overlayLabel="Data-Driven Intelligence"
+        overlayText="A live analytics layer gives operators the context to improve scheduling, control cost drift, and respond faster to emerging issues."
+      />
 
-      {/* ── Section 3: Data-Driven Intelligence ── */}
-      <section className="text-gray-600 body-font mt-4 md:mt-6">
-        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 items-center gap-6 md:gap-10">
-          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
-            <img
-              className="object-cover object-center w-full h-full"
-              alt="Floating dashboard analytics"
-              src={dashboard}
-            />
-          </div>
-          <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">Data-Driven</span>{" "}
-              <span className="font-heebo">Decision Intelligence</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <div className="flex flex-col mt-2 space-y-3">
-              {[
-                "Real-time dashboards with live KPIs and alerts",
-                "Predictive analytics to prevent breakdowns and delays",
-                "Automated customisable reports for management and compliance",
-                "Identify deployment bottlenecks and cost overruns instantly",
-                "Optimise fleet utilisation with data-backed scheduling",
-                "360° visibility from source to destination",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <img className="p-1 mt-1 flex-shrink-0" src={IconFC} alt="" />
-                  <p className="text-lg not-italic font-medium leading-relaxed font-heebo">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductFeatureDeepDive
+        eyebrow="Governance Layer"
+        title="Enterprise Governance and Enablement at Operational Scale"
+        description="Mobilyt extends beyond fleet visibility to deliver policy-led governance, secure enterprise controls, and audit-ready operational accountability across public and private mobility ecosystems."
+        image={enterprise}
+        imageAlt="Enterprise network visualization"
+        bullets={governanceBullets}
+        stats={governanceStats}
+        reverse
+        overlayLabel="Governance and Control"
+        overlayText="A governance-first operating layer helps organisations standardise compliance, approvals, and accountability without slowing field execution."
+      />
 
-      {/* ── Section 4: Governance & Enterprise ── */}
-      <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-10">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
-          <div className="w-full md:flex-1 lg:pr-12 md:pr-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">Governance</span>{" "}
-              <span className="font-heebo">&amp; Enterprise Enablement</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <div className="flex flex-col mt-2 space-y-3">
-              {[
-                "Scalable, secure and enterprise-grade architecture",
-                "Transparent accountability for municipal and public fleets",
-                "Ideal for corporations, public transport and defence establishments",
-                "Integration with ERP, SAP and Government Regulatory Portals",
-                "Role-based access control and multi-level approvals",
-                "Builds smarter, safer and more accountable mobility ecosystems",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <img className="p-1 mt-1 flex-shrink-0" src={IconFC} alt="" />
-                  <p className="text-lg not-italic font-medium leading-relaxed font-heebo">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
-            <img
-              className="object-cover object-center w-full h-full"
-              alt="Enterprise network visualization"
-              src={enterprise}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* ── Key Highlights ── */}
-      <section className="text-gray-600 body-font mt-6 md:mt-10 pb-8 md:pb-10">
-        <div className="container px-4 sm:px-6 py-6 md:py-10 mx-auto">
-          <h1 className="title-font text-2xl sm:text-3xl md:text-4xl font-medium text-gray-900 mt-4 text-start ml-4 sm:ml-8 md:ml-12">
-            <span className="text-primary">Highlights</span>
-          </h1>
-          <div className="flex text-start ml-4 sm:ml-8 md:ml-12">
-            <div className="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-          </div>
-          <div className="mx-auto flex flex-col lg:flex-row py-6 md:py-10">
-            <div className="w-full lg:w-1/2 lg:pr-10 flex flex-col items-start text-left ml-4 sm:ml-8 md:ml-12">
-              {[
-                {
-                  title: "Live Fleet Tracking",
-                  sub: "Interactive map with route history and playback",
-                },
-                {
-                  title: "Geo-Fencing",
-                  sub: "Automated alerts on zone entry and exit",
-                },
-                {
-                  title: "AI Automation",
-                  sub: "Smart and Intelligent sensors and predictive maintenance",
-                },
-                {
-                  title: "Driver Analytics",
-                  sub: "Behaviour monitoring and performance scoring",
-                },
-                {
-                  title: "Fuel Management",
-                  sub: "Consumption tracking and theft prevention",
-                },
-              ].map((item, i) => (
-                <div key={i} className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo mb-0">
-                    {item.title}
-                    <div className="flex gap-2">
-                      <span>
-                        <img src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo mb-0">
-                        {item.sub}
-                      </p>
-                    </div>
-                  </p>
-                </div>
-              ))}
-            </div>
-            <div className="w-full lg:w-1/2 lg:pr-10 flex flex-col md:items-start md:text-left ml-4 sm:ml-8 md:ml-12 mt-2 lg:mt-0">
-              {[
-                {
-                  title: "Real-Time Dashboards",
-                  sub: "Live KPIs, exception alerts and custom reports",
-                },
-                {
-                  title: "Preventive Maintenance",
-                  sub: "Alerts based on usage, mileage and faults",
-                },
-                {
-                  title: "ERP / SAP Integration",
-                  sub: "Seamless data flow with enterprise systems",
-                },
-                {
-                  title: "Compliance Monitoring",
-                  sub: "Statutory compliance and audit-ready records",
-                },
-                {
-                  title: "Multi-Modal Support",
-                  sub: "LMV, HMV, HEM across road, rail and port",
-                },
-              ].map((item, i) => (
-                <div key={i} className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                    {item.title}
-                    <div className="flex gap-2">
-                      <span>
-                        <img src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                        {item.sub}
-                      </p>
-                    </div>
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductFeatureCardsGrid
+        eyebrow="Platform Highlights"
+        title="Capabilities That Keep Every Fleet Operation in Control"
+        description="From live tracking and predictive maintenance to compliance and enterprise integrations, Mobilyt unifies the essential controls needed for reliable fleet performance."
+        cards={keyHighlightsCards}
+      />
 
       {/* ── Conclusion Banner ── */}
       <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-12">

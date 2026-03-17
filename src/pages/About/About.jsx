@@ -47,6 +47,7 @@ import MYTHRI from "../../assets/images/MYTHRI.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
 import aboutusbluebg from "../../assets/images/aboutusbluebg.png";
 import Socialicon from "../../assets/images/Socialicon.png";
+import TeamSection from "../../component/common/TeamSection";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useRef } from "react";
@@ -93,6 +94,109 @@ export default function About() {
     { name: "JSL", logo: JSL },
     { name: "MYTHRI", logo: MYTHRI },
     { name: "BRPL", logo: BRPL },
+  ];
+
+  const leadershipTeam = [
+    {
+      name: "Vijay Anand Krishnan",
+      role: "Director, Business Strategy, Growth & Sustainability",
+      image: Vijaya,
+      bio: "Mr. Vijay Anand Krishnan is a seasoned entrepreneur having extensive experience across Asia Africa and Middle East. He has founded and led companies operating in various infrastructure verticals such as oil and gas infrastructure, power generation, telecom networks, and water infrastructure. As Director - Business Strategy and Growth at Flying Chital Private Limited, he brings deep global market insight, strong government and industry relationships, and proven expertise in structuring complex infrastructure projects. His presence strengthens the Board by enhancing Flying Chital's capability to expand internationally, build strategic partnerships, and pursue high-value industrial and technology projects.",
+    },
+    {
+      name: "Pradyumna Mishra",
+      role: "Co-Founder & CEO",
+      image: Pradyumna,
+      bio: "At our helm is Pradyumna Mishra, a visionary leader with over 30 years of distinguished experience spanning 20 years in the Indian Navy and a decade in the corporate sector with Larsen & Toubro, Mahindra Group, Fre8wise and Atulya Abhinav Tech Private Limited. With a strong technology foundation, he has delivered state-of-the-art solutions to defence forces, government agencies, and global enterprises. A committed advocate of the Make in India initiative, he champions indigenisation, innovation, ethical governance, and strategic foresight, embodying discipline, operational excellence and cutting-edge technological leadership.",
+    },
+
+    {
+      name: "Sitansu Jena",
+      role: "Director Engineering and Development",
+      image: Sitanshu,
+      bio: "Sitansu is a seasoned Technology Architect bringing deep expertise in Agentic AI, Generative AI, and Advanced Data Analytics to our innovation ecosystem. With strong proficiency across Android Application Development, React.js, Node.js, Java, JavaScript, HTML, Python, and Machine Learning, he designs intelligent, scalable, and future-ready digital solutions. He has led the development of AI-driven systems that leverage autonomous agents, large language models, and predictive analytics to deliver real-time insights and decision intelligence. His blend of AI innovation, architectural foresight, and hands-on technical leadership enables the creation of intelligent platforms that power automation, optimisation and data-driven excellence.",
+    },
+  ];
+
+  const developmentTeam = [
+    {
+      name: "Abhijit Radke",
+      role: "Software Developer",
+      image: Abhijit,
+    },
+    {
+      name: "Bibhudutta Das",
+      role: "Principal Software Architect",
+      image: Bibhu,
+    },
+    {
+      name: "Amit Mazumdar",
+      role: "Software Developer",
+      image: Amit,
+    },
+  ];
+
+  const operationTeam = [
+    {
+      name: "Biplab Kumar Naik",
+      role: "Operations Manager",
+      image: Biplab,
+    },
+    {
+      name: "Chiranjeev Bindhani",
+      role: "Senior Operation Manager",
+      image: Chiranjiv,
+    },
+    {
+      name: "Debashish Sahoo",
+      role: "Field Executive",
+      image: Debashis,
+    },
+  ];
+
+  const whyChooseUsPoints = [
+    {
+      title: "Commitment to Excellence",
+      description:
+        "Choosing Flying Chital over others in the digital transformation and innovation landscape is a decision grounded in our unwavering commitment to excellence and the distinct value we bring to the table. We understand that the digital terrain is constantly evolving, and that's why we stand out. Our deep-rooted expertise in digital transformation, automation of enterprise workflows, edge computing, mobility, and managed IT services is second to none.",
+    },
+    {
+      title: "Solutions Customized to Your SOPs",
+      description:
+        "We don't offer a one-size-fits-all approach; we craft customized strategies that empower businesses to thrive in the digital age. Businesses don't change their standard operational procedures to adopt our solution. Instead, we customize and improvise our solutions so established, time-tested SOPs remain intact.",
+    },
+    {
+      title: "Proven Track Record",
+      description:
+        "With a proven track record of delivering results, we provide not just technology, but a comprehensive partnership in achieving your goals. Our dedication to staying on the cutting edge ensures that clients stay ahead through increased efficiency, enhanced productivity, and future-proofed operations.",
+    },
+  ];
+
+  const visionMissionValues = [
+    {
+      title: "Vision",
+      description:
+        "Flying Chital Private Limited envisions building a future-ready enterprise where Artificial Intelligence and Data Analytics form the strategic core of every solution we create, transforming complex challenges into intelligent, market-ready products and platforms.",
+      icon: Eye,
+      link: "/vision",
+      accent: "from-indigo-100 to-indigo-50",
+    },
+    {
+      title: "Mission",
+      description:
+        "Flying Chital Private Limited is committed to designing and delivering intelligent, scalable, and commercially viable technology solutions powered by Artificial Intelligence and Data Analytics. Our mission is to transform data into actionable insight and build market-ready products.",
+      icon: Goal,
+      link: "/mission",
+      accent: "from-orange-100 to-orange-50",
+    },
+    {
+      title: "Values",
+      description:
+        "At Flying Chital Private Limited, our foundation rests on unwavering ethics, strong corporate governance, and absolute integrity in every decision we make. We foster a culture of transparency, accountability, and responsible leadership.",
+      icon: Heart,
+      link: "/values",
+      accent: "from-indigo-100 to-orange-50",
+    },
   ];
 
   return (
@@ -224,48 +328,60 @@ export default function About() {
       </section> */}
 
       {/* /test */}
-      <section className="text-gray-600 body-font mt-40">
-        <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
-          <div className="flex relative items-start lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg ">
-            {/* <img
-              className="object-cover object-center absolute ml-56 bottom-48 hidden md:block md:ml-0 lg:ml-56"
-              alt="hero"
-              src={Who1}
-              id="who1img"
-            /> */}
-            <img
-              className="object-cover object-center rounded-bl-lg"
-              alt="hero"
-              src={Who2}
-            />
-          </div>
-          <div
-            ref={whoRef}
-            className="relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16  flex flex-col md:items-start md:text-left items-center text-center"
-          >
-            <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
-              <span className=" font-heebo text-[40px] text-primary">
-                <span className="border-b-2 border-secondary">Wh</span>o&nbsp;
-              </span>
-              we are
-            </h1>
-            <p className="text-md not-italic font-normal leading-7 mb-8  font-heebo w-5/6 md:w-fit text-black">
-              Welcome to Flying Chital, a pioneering force in the realm of
-              digital transformation and innovation. With a dedicated focus on
-              revolutionizing businesses, we specialize in the seamless
-              automation of enterprise workflows, leveraging cutting-edge
-              technologies to enhance efficiency and productivity. Our expertise
-              extends to the realm of edge computing and mobility, enabling
-              businesses to harness the power of real-time data processing at
-              the edge. <br />
-              <br />
-              Moreover, our comprehensive suite of managed IT services empowers
-              organizations to streamline their operations and drive sustainable
-              growth in an ever-evolving digital landscape. At Flying Chital
-              Tech Private Limited, we are committed to propelling businesses
-              towards a future of unparalleled technological advancement and
-              operational excellence.
-            </p>
+      <section
+        ref={whoRef}
+        className="relative overflow-hidden text-gray-700 body-font mt-20"
+      >
+        <div className="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-indigo-100/60 blur-3xl"></div>
+        <div className="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-orange-100/50 blur-3xl"></div>
+
+        <div className="container mx-auto px-5 py-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            <div className="lg:col-span-5">
+              <div className="rounded-3xl border border-gray-200 bg-white shadow-xl p-4 sm:p-5">
+                <img
+                  className="w-full h-auto object-cover object-center rounded-2xl"
+                  alt="Who We Are"
+                  src={Who2}
+                />
+              </div>
+            </div>
+
+            <div className="lg:col-span-7">
+              <div className="rounded-3xl border border-indigo-100 bg-white/90 backdrop-blur-sm shadow-lg p-6 sm:p-8 lg:p-10">
+                <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-indigo-50 text-primary border border-indigo-100 font-semibold text-sm font-heebo">
+                  <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+                  About Flying Chital
+                </div>
+
+                <h1 className="font-heebo text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-5 text-gray-900">
+                  <span className="bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent">
+                    Who We Are
+                  </span>
+                </h1>
+
+                <p className="text-base sm:text-lg font-normal leading-relaxed font-heebo text-gray-700">
+                  Welcome to Flying Chital, a pioneering force in the realm of
+                  digital transformation and innovation. With a dedicated focus
+                  on revolutionizing businesses, we specialize in the seamless
+                  automation of enterprise workflows, leveraging cutting-edge
+                  technologies to enhance efficiency and productivity. Our
+                  expertise extends to the realm of edge computing and mobility,
+                  enabling businesses to harness the power of real-time data
+                  processing at the edge.
+                </p>
+
+                <p className="mt-4 text-base sm:text-lg font-normal leading-relaxed font-heebo text-gray-700">
+                  Moreover, our comprehensive suite of managed IT services
+                  empowers organizations to streamline their operations and
+                  drive sustainable growth in an ever-evolving digital
+                  landscape. At Flying Chital Tech Private Limited, we are
+                  committed to propelling businesses towards a future of
+                  unparalleled technological advancement and operational
+                  excellence.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -276,108 +392,75 @@ export default function About() {
 
       <section
         ref={whyRef}
-        className="text-gray-600 body-font mt-10"
-        style={{
-          borderRadius: "100px 0px",
-          background: "var(--gray-lighter, #F6F7F8)",
-        }}
+        className="relative overflow-hidden text-gray-700 body-font mt-12 rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-br from-slate-50 via-white to-orange-50"
       >
-        <div className="p-2">
-          <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-            <span className="font-heebo text-[40px] text-primary">Why</span> C
-            <span className="border-b-2 border-secondary">ho</span>ose us
-          </h1>
-        </div>
+        <div className="absolute -top-20 -right-16 w-60 h-60 rounded-full bg-indigo-100/60 blur-3xl"></div>
+        <div className="absolute -bottom-20 -left-16 w-72 h-72 rounded-full bg-orange-100/50 blur-3xl"></div>
 
-        <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center justify-center gap-6">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              id="AboutImage1"
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={AboutImage2}
-              style={{
-                borderRadius: "50px 0px",
-                background:
-                  "lightgray 50% / cover no-repeat, lightgray 0px -17.095px / 100% 124.717% no-repeat",
-              }}
-            />
-          </div>
-          <div
-            id="whychooseusimg"
-            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
-          >
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={AboutImage1}
-              style={{
-                borderRadius: "50px 0px",
-                background:
-                  "lightgray 50% / cover no-repeat, lightgray 0px -17.095px / 100% 124.717% no-repeat",
-              }}
-            />
-          </div>
-        </div>
-        <div
-          id="excellance"
-          className="flex flex-col justify-center mx-4 sm:mx-0"
-        >
-          <div>
-            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-center sm:text-left mb-2 font-heebo mx-4 sm:mx-24">
-              Commitment to Excellence
+        <div className="container mx-auto px-5 py-14 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-white border border-indigo-100 shadow-sm text-primary font-semibold text-sm font-heebo">
+              <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+              Our Value Proposition
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight font-heebo text-gray-900">
+              Why Choose
+              <span className="bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent">
+                {" "}
+                Us
+              </span>
             </h1>
-          </div>
-          <div className="w-full">
-            <p className="text-xl not-italic font-heebo sm:text-base font-normal text-center sm:text-justify mb-2 text-gray-900 mx-4 sm:mx-24">
-              Choosing Flying Chital over others in the digital transformation
-              and innovation landscape is a decision grounded in our unwavering
-              commitment to excellence and the distinct value we bring to the
-              table. We understand that the digital terrain is constantly
-              evolving, and that's why we stand out. Our deep-rooted expertise
-              in digital transformation, automation of enterprise workflows,
-              edge computing, mobility, and managed IT services is second to
-              none. What truly sets us apart is our relentless pursuit of
-              innovation and our ability to tailor solutions to the unique needs
-              of our clients.
+            <p className="mt-4 text-base sm:text-lg text-gray-600 font-heebo leading-relaxed">
+              We combine domain expertise, intelligent technology, and practical
+              execution to deliver solutions that adapt to your business and
+              create lasting operational impact.
             </p>
           </div>
-        </div>
 
-        <div className="flex flex-col justify-center mx-4 sm:ml-0">
-          <div>
-            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-center sm:text-left mb-2 font-heebo mx-4 sm:mx-24">
-              Solution Customized to Your SOPs
-            </h1>
-          </div>
-          <div className="w-full">
-            <p className="text-xl not-italic font-heebo sm:text-base font-normal text-center sm:text-justify mb-2 text-gray-900 mx-4 sm:mx-24">
-              We don't offer a one-size-fits-all approach;{" "}
-              <b>we craft customized strategies that empower businesses</b> to
-              thrive in the digital age. Businesses don't change their standard
-              operational procedures (SOPs) to adopt our solution, rather we
-              customize and improvise the solution to ensure the established
-              time tested SOPs remain as it is.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center mx-4 sm:ml-0">
-          <div>
-            <h1 className="text-primary text-2xl sm:text-xl font-bold leading-8 text-center sm:text-left mb-2 font-heebo mx-4 sm:mx-24">
-              Proven Track Record
-            </h1>
-          </div>
-          <div className="w-full">
-            <p className="text-xl not-italic font-heebo sm:text-base font-normal text-center sm:text-justify mb-2 text-gray-900 mx-4 sm:mx-24">
-              With a proven track record of delivering results, we provide not
-              just technology, but a comprehensive partnership in achieving your
-              goals. Our dedication to staying on the cutting edge of technology
-              ensures that our clients are always ahead of the curve, reaping
-              the rewards of increased efficiency, enhanced productivity, and
-              future-proofed operations. In a fast-paced, ever-changing digital
-              world, we are the reliable partner you can trust to transform your
-              business and drive it towards lasting success.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mb-12">
+            <div className="lg:col-span-5">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-[32px] overflow-hidden shadow-lg border border-gray-200 bg-white p-2 translate-y-6">
+                  <img
+                    id="AboutImage1"
+                    className="w-full h-full object-cover object-center rounded-[24px]"
+                    alt="Why Choose Us"
+                    src={AboutImage2}
+                  />
+                </div>
+                <div className="rounded-[32px] overflow-hidden shadow-lg border border-gray-200 bg-white p-2 -translate-y-4">
+                  <img
+                    id="whychooseusimg"
+                    className="w-full h-full object-cover object-center rounded-[24px]"
+                    alt="Flying Chital team"
+                    src={AboutImage1}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-7 grid grid-cols-1 gap-4">
+              {whyChooseUsPoints.map((point) => (
+                <div
+                  key={point.title}
+                  className="rounded-3xl border border-gray-200 bg-white/90 backdrop-blur-sm shadow-sm hover:shadow-xl transition-all duration-300 p-5 sm:p-6"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-100 to-orange-100 flex items-center justify-center text-primary font-bold">
+                      •
+                    </div>
+                    <div>
+                      <h2 className="text-xl sm:text-2xl text-primary font-bold leading-8 mb-2 font-heebo">
+                        {point.title}
+                      </h2>
+                      <p className="text-base sm:text-lg font-heebo font-normal leading-relaxed text-gray-700">
+                        {point.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -386,629 +469,104 @@ export default function About() {
 
       <section
         ref={missionRef}
-        className="text-gray-600 body-font bg-white rounded-tl-[50px] rounded-br-[50px]"
+        className="relative overflow-hidden text-gray-700 body-font bg-gradient-to-br from-white via-slate-50 to-indigo-50 rounded-tl-[50px] rounded-br-[50px] mt-10"
       >
-        <div className="container px-5 py-10 mx-auto">
-          <div class="text-center mb-20">
-            <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-              <span className="font-heebo text-[40px] text-primary">
-                {" "}
-                Vision,
-              </span>{" "}
-              Mission & Values
-            </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-            <div class="flex mt-6 justify-center">
-              <div class="w-16 h-1 rounded-full bg-secondary inline-flex"></div>
+        <div className="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-indigo-100/60 blur-3xl"></div>
+        <div className="absolute -bottom-24 -right-20 w-72 h-72 rounded-full bg-orange-100/50 blur-3xl"></div>
+
+        <div className="container px-5 py-14 mx-auto relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-white border border-indigo-100 shadow-sm text-primary font-semibold text-sm font-heebo">
+              <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+              Our Guiding Principles
             </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight font-heebo text-gray-900">
+              <span className="bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent">
+                Vision, Mission
+              </span>{" "}
+              & Values
+            </h1>
+            <p className="mt-4 text-base sm:text-lg text-gray-600 font-heebo leading-relaxed">
+              The principles that shape how we build products, lead with
+              purpose, and deliver long-term value through intelligent
+              transformation.
+            </p>
           </div>
 
-          <div className="flex flex-wrap -m-4">
-            <div className=" md:w-1/3 p-4 ">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  h-full  bg-white ">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  <img className="p-1" src={Eye} alt="" />
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+            {visionMissionValues.map((item) => (
+              <article
+                key={item.title}
+                className="group rounded-3xl border border-gray-200 bg-white/95 backdrop-blur-sm shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              >
+                <div
+                  className={`bg-gradient-to-br ${item.accent} p-6 border-b border-gray-100`}
+                >
+                  <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-4">
+                    <img
+                      className="w-8 h-8 object-contain"
+                      src={item.icon}
+                      alt={item.title}
+                    />
+                  </div>
+                  <h2 className="text-2xl sm:text-[28px] text-[#30343F] font-[700] font-heebo mb-1">
+                    {item.title}
+                  </h2>
                 </div>
-                <h2 className="text-[26px] text-[#30343F] font-[700] font-heebo mb-2">
-                  Vision
-                </h2>
-                <div className="flex flex-col">
-                  <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                    Flying Chital Private Limited envisions building a
-                    future-ready enterprise where Artificial Intelligence and
-                    Data Analytics form the strategic core of every solution we
-                    create—transforming complex challenges into intelligent,
-                    market-ready products and platforms. We are committed to
-                    developing scalable, high-impact solutions with strong ...
-                    <br />{" "}
+
+                <div className="p-6 flex flex-col h-full">
+                  <p className="text-base sm:text-lg font-normal leading-relaxed font-heebo text-gray-700 flex-grow">
+                    {item.description}
                   </p>
 
-                  <Link to="/vision">
-                    <div className="flex justify-start mt-6">
-                      <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                        READ MORE{" "}
-                        <span>
-                          {" "}
-                          <svg
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            className="w-4 h-4 ml-2 "
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
+                  <Link to={item.link} className="mt-6 inline-flex">
+                    <span className="inline-flex items-center text-white font-bold bg-gradient-to-r from-orange-500 to-orange-600 border-0 py-2.5 px-6 hover:from-primary hover:to-indigo-600 rounded-full text-sm font-heebo transition-all duration-300 shadow-md hover:shadow-lg">
+                      READ MORE
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </span>
                   </Link>
                 </div>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl   h-full  bg-white ">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                  <img className="p-1" src={Goal} alt="" />
-                </div>
-                <h2 className="text-[26px] text-[#30343F] font-[700] font-heebo  mb-2">
-                  Mission
-                </h2>
-                <div className="flex flex-col">
-                  <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                    Flying Chital Private Limited is committed to designing and
-                    delivering intelligent, scalable, and commercially viable
-                    technology solutions powered by Artificial Intelligence and
-                    Data Analytics. Our mission is to transform data into
-                    actionable insight, automate decision-making through
-                    advanced AI capabilities, and build market-ready products
-                    that...
-                    <br />
-                  </p>
-                  <Link to="/mission">
-                    <div className="flex justify-start mt-6">
-                      <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                        READ MORE{" "}
-                        <span>
-                          {" "}
-                          <svg
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            className="w-4 h-4 ml-2 "
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  h-full  bg-white">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-
-                  <img className="p-1" src={Heart} alt="" />
-                </div>
-                <h2 className="text-[26px] text-[#30343F] font-[700] font-heebo  mb-2">
-                  Values
-                </h2>
-                <div className="flex flex-col">
-                  <p className="text-xl  font-normal leading-7 font-heebo">
-                    At Flying Chital Private Limited, our foundation rests on
-                    unwavering ethics, strong corporate governance, and absolute
-                    integrity in every decision we make. We are committed to
-                    transparency, accountability, and responsible leadership,
-                    ensuring that our actions consistently align with the
-                    highest professional and legal standards. We foster a
-                    culture ...
-                    <br />
-                  </p>
-                  <Link to="/values">
-                    <div className="flex justify-start mt-6">
-                      <button className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo">
-                        READ MORE{" "}
-                        <span>
-                          {" "}
-                          <svg
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            className="w-4 h-4 ml-2 "
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
       {/* LeaderShip */}
-      <section
-        ref={leadersRef}
-        className="text-gray-600 body-font mt-20"
-        style={{
-          borderRadius: "100px 0px",
-          background: "var(--gray-lighter, #F6F7F8)",
-        }}
-      >
-        <div className="container px-5 py-24 mx-auto">
-          <div className="p-2">
-            <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-              <span className="font-heebo text-primary text-4xl sm:text-[40px]">
-                Lea<span className="border-b-2 border-secondary">der</span>
-                <span className="text-black">ship</span>
-              </span>
-            </h1>
-          </div>
-          <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Vijay Anand Krishnan
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Director, Business Strategy & Growth
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                Mr. Vijay Anand Krishnan is a seasoned entrepreneur having
-                extensive experience across Asia Africa and Middle East. He has
-                founded and led companies operating in various infrastructure
-                verticals such as oil & gas infrastructure, power generation,
-                telecom networks, and water infrastructure. As Director –
-                Business Strategy & Growth at Flying Chital Private Limited, he
-                brings deep global market insight, strong government and
-                industry relationships, and proven expertise in structuring
-                complex infrastructure projects. His presence strengthens the
-                Board by enhancing Flying Chital’s capability to expand
-                internationally, build strategic partnerships, and pursue
-                high-value industrial & technology projects.
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={Vijaya}
-              />
-            </div>
-          </div>
-          <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
-              <img
-                className="object-cover object-center  rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={Pradyumna}
-              />
-            </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Pradyumna Mishra
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Co-Founder & CEO
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                Pradyumna Mishra combines 20 years of distinguished service in
-                the Indian Navy with a decade in corporate arena with industry
-                giants like L&T, Mahindra group and innovative startup like
-                Fre8wise. An inspiring leader who embodies the spirit of "Vocal
-                for Local" and has been at the forefront of spearheading the
-                indigenization drive as a significant part of the "Make In
-                India" initiative. With a strong commitment to promoting
-                domestic manufacturing and self-sufficiency, Pradyumna is
-                instrumental in transforming our company into a hub of
-                innovation and self-reliance. Through this experience, Pradyumna
-                embodies Flying Chital’s vision of being a perfect fusion of
-                discipline, operational excellence, cutting edge innovation and
-                strategic foresight. His deep commitment to unyielding business
-                ethics and exemplary corporate governance strongly reflects our
-                core values.
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-          </div>
+      <TeamSection
+        sectionRef={leadersRef}
+        badge="Leadership Core"
+        title="Leadership"
+        subtitle="Meet the leadership team shaping strategy, innovation, and long-term growth at Flying Chital."
+        members={leadershipTeam}
+        showBio
+        variant="rows"
+        sectionClassName="mt-20 rounded-tl-[100px] rounded-br-[100px] bg-gradient-to-br from-slate-50 via-white to-indigo-50"
+      />
 
-          {/* <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Amar Pradeep Swain
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Co-Founder , Director Technology & Solutions
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                A graduate from IIT, Amar is an accomplished and
-                forward-thinking technology leader serving as the Director,
-                Technology and Solutions of our company. With a remarkable
-                career spanning over 25 years, Amar has demonstrated to be a
-                true visionary when it comes to driving digital business
-                transformation and pioneering innovative platform strategies.
-                His profound expertise extends to orchestrating enterprise-wide
-                process shifts, managing diverse partner ecosystems, and
-                consistently delivering impressive results for Fortune 500
-                giants. Amar's professional journey has taken him across the
-                globe, from Switzerland to diverse continents like Japan,
-                Indonesia, Malaysia, Poland, Russia, the UK, the Middle East,
-                and several countries in Africa and South America. His path
-                breaking ideas has brought turnaround in industry leaders in
-                consumer goods, pharmaceuticals, and telecom including notable
-                companies such as Pfizer, Bayer, Japan Tobacco, Vodafone,
-                Telefonica, and Michelin. With Amar as our Director, Technology
-                and Solutions, we are confident that we will find a solution to
-                every challenge, through innovation & leveraging cutting edge
-                technologies
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={Amar}
-              />
-            </div>
-          </div> */}
+      <TeamSection
+        badge="Engineering Excellence"
+        title="Development Team"
+        subtitle="Our builders and architects delivering scalable, intelligent software products."
+        members={developmentTeam}
+      />
 
-          {/* <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
-              <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px] "
-                alt="hero"
-                src={Dev}
-              />
-            </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Debashis Mohanty
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Co-Founder , Director Strategy & Growth
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                With an MBA from Purdue University’s Daniels School, Debashis
-                Mohanty is the heart and brain of our company. With a dynamic
-                career spanning 25 years, he is a passionate business leader
-                with a wealth of global experience. His expertise lies in
-                entrepreneurship, Go-To-Market strategy, building SAAS
-                platforms, e-Commerce, and the intricacies of Manufacturing
-                Supply Chain Management. Debashis has held senior leadership
-                positions in prestigious companies across the United States,
-                Singapore and Malaysia. These include Flipkart, Reliance,
-                Cummins, DHL and Pitney Bowes. Notably, he co-founded and
-                promoted Fre8wise.com, a B2B platform specializing in Supply
-                Chain Automation and Digitalization. With Debashis leading our
-                strategy and growth initiatives, we're poised for
-                state-of-the-art innovation and remarkable success.
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-          </div> */}
-
-          <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Sitanshu Jena
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Director Engineering & Development
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                Meet Sitansu, a seasoned Architect bringing a wealth of
-                knowledge and experience to our team. With a specialization tons
-                in Android Application Development, React.js, Node.js, Java,
-                JavaScript, HTML, Python, and Machine Learning. Having dedicated
-                eight years at Sears, he honed his architectural vision and
-                technical leadership, playing a key role in shaping innovative
-                solution ideas. Prior to his tenure at Sears, he spent three
-                years each at industry giants Samsung and Robert Bosch,
-                solidifying his expertise and contributing to the success of
-                globally recognized brands. Sitansu's expertise as we drive
-                innovation and excellence in the world of technology.
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={Sitanshu}
-              />
-            </div>
-          </div>
-
-          {/* <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
-              <img
-                className="object-cover object-center "
-                alt="hero"
-                src={kalki}
-              />
-            </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Kalikinkar Panda
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Mentor & Director Business Development
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                Bringing a wealth of experience amassed over a distinguished
-                career spanning 38 years across the realms of Aluminium, Power,
-                and Mining industries, Shri K. K. Panda stands as a stalwart
-                Director of Business Development. His exceptional journey,
-                adorned with academic excellence—a B.Tech in Electrical
-                Engineering and an MS in Environmental Science—reflects a
-                commitment to both technical proficiency and environmental
-                stewardship. Formerly serving as the Executive Director of
-                NALCO, Panda's tenure at the helm signifies a treasure trove of
-                industry insights and strategic foresight. His exceptional
-                leadership and comprehensive understanding of the industrial
-                landscape elevate him as a guiding force, offering invaluable
-                perspectives on Environmental, Social, and Governance (ESG)
-                practices. Panda's presence on our board is a testament to our
-                commitment to shaping a future where environmental consciousness
-                converges harmoniously with business success.
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-          </div> */}
-
-          {/* <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
-              <img
-                className="object-cover object-center  rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={kalki}
-              />
-            </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Kalikinkar Panda
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Mentor & Director Business Development
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                Bringing a wealth of experience amassed over a distinguished
-                career spanning 38 years across the realms of Aluminium, Power,
-                and Mining industries, Shri K. K. Panda stands as a stalwart
-                Director of Business Development. His exceptional journey,
-                adorned with academic excellence—a B.Tech in Electrical
-                Engineering and an MS in Environmental Science—reflects a
-                commitment to both technical proficiency and environmental
-                stewardship. Formerly serving as the Executive Director of
-                NALCO, Panda's tenure at the helm signifies a treasure trove of
-                industry insights and strategic foresight. His exceptional
-                leadership and comprehensive understanding of the industrial
-                landscape elevate him as a guiding force, offering invaluable
-                perspectives on Environmental, Social, and Governance (ESG)
-                practices. Panda's presence on our board is a testament to our
-                commitment to shaping a future where environmental consciousness
-                converges harmoniously with business success.
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-          </div> */}
-
-          {/* <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
-                Parshuram Panigrahi
-              </h1>
-              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
-                Consulting Advisor
-              </p>
-              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                With over two decades of dedicated leadership in product
-                engineering and a track record of pioneering SaaS products,
-                Parshuram Panigrahi stands as a luminary Consulting Advisor at
-                our company guiding innovation and transformation. His
-                invaluable expertise spans the realms of technological
-                innovation, digital transformation, and customer-centric
-                solutions, shaping the landscape of modern business. A graduate
-                in System Science and Automation from the prestigious IISc
-                Bangalore, Panigrahi is a visionary who has cultivated a culture
-                of innovation. His remarkable contributions include spearheading
-                the development of groundbreaking solutions, resulting in a
-                portfolio boasting 10+ patents, a testament to his relentless
-                pursuit of excellence. His proficiency extends to architecting
-                large-scale internet applications, designing modern data
-                pipelines capable of managing terabytes of information, and
-                constructing AI/ML-powered low-code platforms, setting new
-                benchmarks in technological advancement.
-              </p>
-              <span>
-                <img src={Socialicon} alt="" />
-              </span>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img
-                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                alt="hero"
-                src={parshu}
-              />
-            </div>
-          </div> */}
-        </div>
-      </section>
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            {/* <h1 class="text-4xl sm:text-[40px] font-bold mb-4 text-gray-900">Development Team</h1> */}
-            <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-              <span className="font-heebo text-primary text-4xl sm:text-[40px]">
-                Develop<span className="border-b-2 border-secondary">ment</span>
-                <span className="text-black"> Team</span>
-              </span>
-            </h1>
-            {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> */}
-          </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 lg:w-1/3 md:w-1/2">
-              <div class="h-full flex flex-col items-center text-center">
-                <img
-                  className="object-cover object-center rounded-tr-[50px] rounded-bl-[50px]"
-                  alt="hero"
-                  src={Abhijit}
-                />
-                <div class="w-full">
-                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
-                    Abhijit Radke
-                  </h2>
-                  <h3 class="text-gray-800 font-bold text-xl mb-3">
-                    Software Developer
-                  </h3>
-                  <p class="mb-4"></p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 lg:w-1/3 md:w-1/2">
-              <div class="h-full flex flex-col items-center text-center">
-                <img
-                  className="object-cover object-center rounded-tr-[50px] rounded-bl-[50px]"
-                  alt="hero"
-                  src={Bibhu}
-                />
-                <div class="w-full">
-                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
-                    Bibhudutta Das
-                  </h2>
-                  <h3 class="text-gray-800 font-bold text-xl mb-3">
-                    Principal Software Architect
-                  </h3>
-                  <p class="mb-4"></p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 lg:w-1/3 md:w-1/2">
-              <div class="h-full flex flex-col items-center text-center">
-                <img
-                  className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                  alt="hero"
-                  src={Amit}
-                />
-                <div class="w-full">
-                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
-                    Amit Mazumdar
-                  </h2>
-                  <h3 class="text-gray-800 font-bold text-xl mb-3">
-                    Software Developer
-                  </h3>
-                  <p class="mb-4"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            {/* <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">Development Team</h1> */}
-            <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-              <span className="font-heebo text-primary text-4xl sm:text-[40px]">
-                Opera<span className="border-b-2 border-secondary">tion</span>
-                <span className="text-black"> Team</span>
-              </span>
-            </h1>
-          </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 lg:w-1/3 md:w-1/2">
-              <div class="h-full flex flex-col items-center text-center">
-                <img
-                  className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                  alt="hero"
-                  src={Biplab}
-                />
-                <div class="w-full">
-                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
-                    Biplab Kumar Naik
-                  </h2>
-                  <h3 class="text-gray-800 font-bold text-xl mb-3">
-                    Operations Manager
-                  </h3>
-                  <p class="mb-4"></p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 lg:w-1/3 md:w-1/2">
-              <div class="h-full flex flex-col items-center text-center">
-                <img
-                  className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                  alt="hero"
-                  src={Chiranjiv}
-                />
-                <div class="w-full">
-                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
-                    Chiranjeev Bindhani
-                  </h2>
-                  <h3 class="text-gray-800 font-bold text-xl mb-3">
-                    Senior Operation Manager
-                  </h3>
-                  <p class="mb-4"></p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 lg:w-1/3 md:w-1/2">
-              <div class="h-full flex flex-col items-center text-center">
-                <img
-                  className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
-                  alt="hero"
-                  src={Debashis}
-                />
-                <div class="w-full">
-                  <h2 class="font-bold text-3xl text-gray-900 mt-1">
-                    Debashish Sahoo
-                  </h2>
-                  <h3 class="text-gray-800 font-bold text-xl mb-3">
-                    Field Executive{" "}
-                  </h3>
-                  <p class="mb-4"></p>
-                  <span class="inline-flex"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TeamSection
+        badge="Execution Engine"
+        title="Operation Team"
+        subtitle="The operational experts ensuring reliability, speed, and high-quality on-ground delivery."
+        members={operationTeam}
+      />
 
       <section
         ref={customersRef}

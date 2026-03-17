@@ -15,8 +15,201 @@ import highlight3 from "../../assets/images/traks/hf_20260130_014143_fa3b1e6e-1b
 import highlight4 from "../../assets/images/traks/hf_20260130_030926_c3bb045e-a591-4c63-b062-03f0db2baf2c.png";
 import highlight5 from "../../assets/images/traks/hf_20260131_060818_e2819554-ff54-4e0b-983c-7ccf9f7b3ec6.png";
 import conclusionImg from "../../assets/images/traks/Clean_electrostruction_animation_style_wide_169_da_cb799d3b35.jpeg";
+import ProductIntroSection from "../../component/common/ProductIntroSection";
+import ProductCapabilityShowcase from "../../component/common/ProductCapabilityShowcase";
+import ProductFeatureDeepDive from "../../component/common/ProductFeatureDeepDive";
+import ProductFeatureCardsGrid from "../../component/common/ProductFeatureCardsGrid";
 
 export default function Traks() {
+  const introSections = [
+    {
+      heading: "AI-Powered Field Force Intelligence",
+      body: "Traks is a comprehensive Field Force Management Software Suite that digitises, monitors, and optimises field sales, service, and security operations. With real-time visibility and workforce accountability, it delivers measurable performance gains across every operational layer.",
+    },
+    {
+      heading: "Single Platform. Total Control.",
+      body: "From geo-fenced attendance to automated payroll computation, Traks unifies every aspect of workforce management on one secure, scalable digital platform, accessible anytime, on any device, from any location.",
+    },
+    {
+      heading: "Smarter Supervision. Measurable ROI.",
+      body: "Traks helps organisations reduce operational costs, prevent financial leakages, enhance workforce productivity, and achieve sustainable, data-driven growth through automated compliance, accurate payroll, and real-time dashboards.",
+    },
+  ];
+
+  const introCapabilityTags = [
+    "Real-Time Attendance",
+    "Geo-Spatial Control",
+    "Workforce Cost Management",
+  ];
+
+  const capabilityStats = [
+    { value: "95%", label: "Tracking Accuracy" },
+    { value: "GPS", label: "Attendance Validation" },
+    { value: "24/7", label: "Field Visibility" },
+  ];
+
+  const capabilityCards = [
+    {
+      kicker: "Attendance",
+      title: "Verified Presence at Every Operational Point",
+      description:
+        "Establish attendance integrity with geo-tagged check-ins, live headcount visibility, and real-time supervisor awareness across distributed teams.",
+      image: highlight1,
+      alt: "Traks attendance and workforce visibility",
+    },
+    {
+      kicker: "Control",
+      title: "Geo-Spatial Monitoring for Field Teams",
+      description:
+        "Track movement, monitor route discipline, and enforce zone-based controls with precise location intelligence built into daily operations.",
+      image: highlight2,
+      alt: "Traks geo-spatial control dashboard",
+    },
+    {
+      kicker: "Productivity",
+      title: "Supervisor Dashboards for Real-Time Decisions",
+      description:
+        "Give managers live context on absenteeism, field deployment, and workforce performance so intervention happens before productivity slips.",
+      image: highlight3,
+      alt: "Traks supervisor decision support",
+    },
+    {
+      kicker: "Efficiency",
+      title: "System-Led Discipline and Alertness Monitoring",
+      description:
+        "Reduce missed patrols, delayed visits, and field inefficiencies with automated oversight designed for high-accountability environments.",
+      image: highlight4,
+      alt: "Traks alertness and patrol compliance",
+    },
+    {
+      kicker: "Cost",
+      title: "Workforce Cost Intelligence with Operational Clarity",
+      description:
+        "Support payroll accuracy, deployment transparency, and measurable ROI through a single layer of workforce data and automation.",
+      image: highlight5,
+      alt: "Traks workforce cost management",
+    },
+  ];
+
+  const attendanceStats = [
+    "GPS attendance",
+    "Live headcount",
+    "Supervisor alerts",
+  ];
+
+  const attendanceBullets = [
+    "Real-time attendance with GPS validation",
+    "Live headcount at every operational site",
+    "Accurate working hours tracking with automated computation",
+    "Flexible, policy-driven custom leave management",
+    "Instant absentee notifications to supervisors",
+    "Geo-fence enabled check-in / check-out with Lat, Long, Date & Time stamps",
+  ];
+
+  const locationStats = [
+    "Geo-fence control",
+    "95% route accuracy",
+    "Instant alerts",
+  ];
+
+  const locationBullets = [
+    "Continuous real-time location monitoring of all personnel",
+    "Up to 95% accurate distance calculation across field routes",
+    "Geo-fence creation with automated compliance and safety alerts",
+    "Live headcount within each geo-fenced operational zone",
+    "Entry and exit alerts with instant notifications",
+    "Enhanced operational visibility for supervisors and command centres",
+  ];
+
+  const alertnessStats = [
+    "Patrol visibility",
+    "Night oversight",
+    "Exception alerts",
+  ];
+
+  const alertnessBullets = [
+    "Ensures all scheduled positions are visited as planned",
+    "Patrol monitoring to track skipped or delayed checkpoints",
+    "Static guard monitoring to confirm alertness at assigned posts",
+    "Night shift oversight to reduce fatigue-related lapses",
+    "Exception alerts for inactivity or missed patrols",
+    "Promotes discipline, accountability, and performance benchmarking",
+  ];
+
+  const financialStats = [
+    "Payroll accuracy",
+    "Statutory compliance",
+    "Leakage prevention",
+  ];
+
+  const financialBullets = [
+    "Track and maintain detailed records of employee business expenses",
+    "Digital submission, approval workflows, and expense analytics",
+    "Automated salary and wage calculation based on actual attendance and working hours",
+    "System-driven computation of statutory contributions including ESIC, EPFO, and other compliances",
+    "Accurate payroll data generation to reduce errors and prevent revenue leakage",
+  ];
+
+  const keyHighlightsCards = [
+    {
+      title: "Field Digitisation",
+      description: "Eliminate paper-based processes end-to-end.",
+      icon: IconFC,
+    },
+    {
+      title: "GPS Geo-Fencing",
+      description: "Automated check-in and check-out with location stamps.",
+      icon: IconFC,
+    },
+    {
+      title: "Mobile + Web Access",
+      description: "Anytime, anywhere, on any device.",
+      icon: IconFC,
+    },
+    {
+      title: "Patrol and Guard Monitoring",
+      description: "Night shift and static post alertness tracking.",
+      icon: IconFC,
+    },
+    {
+      title: "AI Analytics",
+      description: "Real-time dashboards and custom reports.",
+      icon: IconFC,
+    },
+    {
+      title: "Expense Management",
+      description: "Digital submission and approval workflows.",
+      icon: IconFC,
+    },
+    {
+      title: "Automated Payroll",
+      description: "Salary, ESIC, EPFO and statutory computations.",
+      icon: IconFC,
+    },
+    {
+      title: "Live Headcount",
+      description: "Per site and per geo-fenced zone.",
+      icon: IconFC,
+    },
+    {
+      title: "Exception Alerts",
+      description: "Inactivity, missed patrols, and absentee notifications.",
+      icon: IconFC,
+    },
+    {
+      title: "Scalable Platform",
+      description: "Secure, cloud-based, and enterprise-grade.",
+      icon: IconFC,
+    },
+  ];
+
+  const conclusionOutcomes = [
+    "Operational cost reduction",
+    "Leakage prevention",
+    "Attendance-backed payroll",
+    "Compliance-ready execution",
+  ];
+
   return (
     <div className="bg-white">
       {/* ── Hero Section ── */}
@@ -55,7 +248,8 @@ export default function Traks() {
                     Home
                   </Link>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}/ Traks
+                    {" "}
+                    / Traks
                   </span>
                 </div>
               </div>
@@ -65,329 +259,155 @@ export default function Traks() {
       </section>
 
       {/* ── Overview ── */}
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 lg:py-20 items-center gap-8 md:gap-10">
-          <div className="lg:max-w-sm lg:w-full md:w-1/3 w-full flex flex-col items-center gap-4">
-            <img
-              className="object-contain rounded-2xl shadow-xl"
-              alt="Traks Logo"
-              src={traksLogo}
-            />
-            <div className="w-full px-3 py-4 bg-[#EAEFF3] rounded-lg">
-              <div className="flex px-3 py-5 justify-center items-start rounded-xl font-heebo text-lg font-medium text-primary bg-[#dce0ee] mb-3">
-                Real-Time Attendance
-              </div>
-              <div className="flex px-3 py-5 justify-center items-start rounded-xl font-heebo text-lg font-medium text-secondary bg-[#ece3e6] mb-3">
-                Geo-Spatial Control
-              </div>
-              <div className="flex px-3 py-5 justify-center items-start rounded-xl font-heebo text-lg font-medium text-black bg-[#dddde6]">
-                Workforce Cost Management
-              </div>
-            </div>
-          </div>
+      <ProductIntroSection
+        logo={traksLogo}
+        productName="Traks"
+        eyebrow="Field Force Management Suite"
+        title="AI-Powered Visibility for Field Operations"
+        subtitle="A digital field force management suite built to improve attendance integrity, supervision quality, workforce productivity, and cost control."
+        capabilityTags={introCapabilityTags}
+        sections={introSections}
+      />
 
-          <div className="w-full md:flex-1 lg:pl-14 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="text-xl sm:text-2xl font-bold text-primary font-heebo mb-2">
-              AI-Powered Field Force Intelligence
-            </h1>
-            <div className="my-2 rounded-md p-3 bg-slate-100">
-              <p className="not-italic font-normal leading-7 text-[#30343F] text-xl font-heebo">
-                Traks is a comprehensive Field Force Management Software Suite
-                that digitises, monitors, and optimises field sales, service,
-                and security operations. With real-time visibility and workforce
-                accountability, it delivers measurable performance gains across
-                every operational layer.
-              </p>
-            </div>
-            <h1 className="text-2xl font-bold text-primary font-heebo my-2">
-              Single Platform. Total Control.
-            </h1>
-            <div className="bg-orange-50 my-2 rounded-md p-3">
-              <p className="not-italic font-normal leading-7 text-[#30343F] text-xl">
-                From geo-fenced attendance to automated payroll computation,
-                Traks unifies every aspect of workforce management on one
-                secure, scalable digital platform — accessible anytime, on any
-                device, from any location.
-              </p>
-            </div>
-            <h1 className="text-2xl font-bold text-primary font-heebo my-2">
-              Smarter Supervision. Measurable ROI.
-            </h1>
-            <div className="my-2 rounded-md p-3 bg-zinc-100">
-              <p className="not-italic font-normal leading-7 text-[#30343F] text-xl">
-                Traks helps organisations reduce operational costs, prevent
-                financial leakages, enhance workforce productivity, and achieve
-                sustainable, data-driven growth through automated compliance,
-                accurate payroll, and real-time dashboards.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductCapabilityShowcase
+        eyebrow="Capability Showcase"
+        title="How Traks Strengthens Field Execution"
+        description="A visual snapshot of the suite across attendance integrity, location monitoring, supervisory visibility, and workforce cost control before the detailed operational sections below."
+        stats={capabilityStats}
+        cards={capabilityCards}
+      />
 
-      {/* ── Highlights Grid ── */}
-      <section className="text-gray-600 body-font rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100">
-        <div className="container px-4 sm:px-6 md:px-16 py-6 md:py-10 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            {[highlight1, highlight2, highlight3, highlight4, highlight5].map(
-              (img, i) => (
-                <div key={i} className="w-full sm:w-1/2 lg:w-1/3 p-4">
-                  <div className="border border-gray-200 rounded-tr-[60px] rounded-bl-[40px] shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-                    <img
-                      className="w-full h-56 object-cover"
-                      src={img}
-                      alt={`Traks highlight ${i + 1}`}
-                    />
+      <ProductFeatureDeepDive
+        eyebrow="Operational Core"
+        title="Attendance Integrity with Location Intelligence Built In"
+        description="Traks turns attendance into a live operational control point by validating presence, surfacing absenteeism instantly, and giving supervisors a reliable view of workforce readiness across sites."
+        image={fieldWorker}
+        imageAlt="Field worker checking in"
+        bullets={attendanceBullets}
+        stats={attendanceStats}
+      />
+
+      <ProductFeatureDeepDive
+        eyebrow="Geo-Spatial Control"
+        title="Live Location Intelligence for Safer, Tighter Field Execution"
+        description="Traks gives supervisors a location-aware operating picture with geo-fence logic, route visibility, and instant alerts so field movement is measurable, verifiable, and easier to control."
+        image={gpsCheckin}
+        imageAlt="GPS check-in animation"
+        bullets={locationBullets}
+        stats={locationStats}
+        reverse
+        overlayLabel="Location Tracking"
+        overlayText="Geo-spatial control reduces blind spots in deployment, strengthens compliance, and improves supervisor response time across distributed sites."
+      />
+
+      <ProductFeatureDeepDive
+        eyebrow="Monitoring Layer"
+        title="System-Managed Efficiency and Alertness Across the Field"
+        description="Traks extends control beyond attendance and location by continuously monitoring guard alertness, patrol discipline, missed checkpoints, and night-shift performance across critical deployments."
+        image={nightShift}
+        imageAlt="Supervisor dashboard night shift"
+        bullets={alertnessBullets}
+        stats={alertnessStats}
+        overlayLabel="Alertness Monitoring"
+        overlayText="Continuous oversight helps supervisors detect missed patrols, fatigue risks, and field discipline gaps before they become operational failures."
+      />
+
+      <ProductFeatureDeepDive
+        eyebrow="Financial Governance"
+        title="Financial Control and Workforce Cost Management with Confidence"
+        description="Traks strengthens financial governance by combining attendance-backed payroll, expense workflow control, and automated statutory computation into one accountable operating framework."
+        image={industrialSite}
+        imageAlt="Industrial field operation site"
+        bullets={financialBullets}
+        stats={financialStats}
+        reverse
+        overlayLabel="Cost and Compliance"
+        overlayText="A finance-aware execution layer helps teams protect margins, reduce leakage, and maintain compliance without slowing operations."
+      />
+
+      <ProductFeatureCardsGrid
+        eyebrow="Platform Highlights"
+        title="Core Capabilities Behind Traks Performance"
+        description="Traks combines attendance integrity, geo-spatial controls, alertness monitoring, and workforce finance intelligence into one execution-ready platform."
+        cards={keyHighlightsCards}
+      />
+
+      <section className="relative overflow-hidden py-14 sm:py-16">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(55,52,169,0.10),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(248,90,71,0.10),_transparent_28%)]"></div>
+
+        <div className="container relative z-10 mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10 items-stretch">
+            <div className="lg:col-span-5">
+              <div className="relative h-full min-h-[320px] overflow-hidden rounded-[32px] border border-white/70 shadow-[0_26px_80px_rgba(15,23,42,0.12)] sm:min-h-[420px]">
+                <img
+                  className="h-full w-full object-cover"
+                  alt="Traks platform"
+                  src={conclusionImg}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/25 to-transparent"></div>
+                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                  <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur-md sm:p-5">
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/80 font-heebo">
+                      Traks Outcome
+                    </p>
+                    <p className="mt-2 text-lg font-semibold leading-7 text-white font-heebo sm:text-xl">
+                      Smarter supervision, stronger compliance, and measurable
+                      financial control.
+                    </p>
                   </div>
                 </div>
-              )
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Section 1: Attendance ── */}
-      <section className="text-gray-600 body-font mt-6 md:mt-10">
-        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 items-center gap-6 md:gap-10">
-          <div className="w-full md:w-1/2 lg:max-w-lg mb-0 rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
-            <img
-              className="object-cover object-center w-full h-full"
-              alt="Field worker checking in"
-              src={fieldWorker}
-            />
-          </div>
-          <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">Real-Time Attendance</span>{" "}
-              <span className="font-heebo">with Location Intelligence</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <div className="flex flex-col mt-2 space-y-3">
-              {[
-                "Real-time attendance with GPS validation",
-                "Live headcount at every operational site",
-                "Accurate working hours tracking with automated computation",
-                "Flexible, policy-driven custom leave management",
-                "Instant absentee notifications to supervisors",
-                "Geo-fence enabled check-in / check-out with Lat, Long, Date & Time stamps",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <img className="p-1 mt-1 flex-shrink-0" src={IconFC} alt="" />
-                  <p className="text-lg not-italic font-medium leading-relaxed font-heebo">
-                    {item}
-                  </p>
-                </div>
-              ))}
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* ── Section 2: Location Tracking ── */}
-      <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-10">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
-          <div className="w-full md:flex-1 lg:pr-12 md:pr-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">Real-Time Location Tracking</span>{" "}
-              <span className="font-heebo">&amp; Geo-Spatial Control</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <div className="flex flex-col mt-2 space-y-3">
-              {[
-                "Continuous real-time location monitoring of all personnel",
-                "Up to 95% accurate distance calculation across field routes",
-                "Geo-fence creation with automated compliance and safety alerts",
-                "Live headcount within each geo-fenced operational zone",
-                "Entry and exit alerts with instant notifications",
-                "Enhanced operational visibility for supervisors and command centres",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <img className="p-1 mt-1 flex-shrink-0" src={IconFC} alt="" />
-                  <p className="text-lg not-italic font-medium leading-relaxed font-heebo">
-                    {item}
-                  </p>
+            <div className="lg:col-span-7">
+              <div className="h-full rounded-[32px] border border-slate-200 bg-white p-6 shadow-[0_24px_80px_rgba(15,23,42,0.08)] sm:p-8 lg:p-10">
+                <div className="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1.5 text-sm font-semibold text-primary font-heebo">
+                  <span className="h-2 w-2 rounded-full bg-orange-400"></span>
+                  Conclusion
                 </div>
-              ))}
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
-            <img
-              className="object-cover object-center w-full h-full"
-              alt="GPS check-in animation"
-              src={gpsCheckin}
-            />
-          </div>
-        </div>
-      </section>
 
-      {/* ── Section 3: Alertness Monitoring ── */}
-      <section className="text-gray-600 body-font mt-4 md:mt-6">
-        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 items-center gap-6 md:gap-10">
-          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
-            <img
-              className="object-cover object-center w-full h-full"
-              alt="Supervisor dashboard night shift"
-              src={nightShift}
-            />
-          </div>
-          <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">System-Managed Efficiency</span>{" "}
-              <span className="font-heebo">&amp; Alertness Monitoring</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <div className="flex flex-col mt-2 space-y-3">
-              {[
-                "Ensures all scheduled positions are visited as planned",
-                "Patrol monitoring to track skipped or delayed checkpoints",
-                "Static guard monitoring to confirm alertness at assigned posts",
-                "Night shift oversight to reduce fatigue-related lapses",
-                "Exception alerts for inactivity or missed patrols",
-                "Promotes discipline, accountability, and performance benchmarking",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <img className="p-1 mt-1 flex-shrink-0" src={IconFC} alt="" />
-                  <p className="text-lg not-italic font-medium leading-relaxed font-heebo">
-                    {item}
-                  </p>
+                <h2 className="mt-5 text-3xl font-bold leading-tight text-slate-900 font-heebo sm:text-4xl lg:text-5xl">
+                  Smarter Supervision. Stronger Compliance. Measurable ROI.
+                </h2>
+
+                <div className="mt-5 flex gap-2">
+                  <div className="h-1.5 w-16 rounded-full bg-orange-400"></div>
+                  <div className="h-1.5 w-8 rounded-full bg-indigo-300"></div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* ── Section 4: Financial Control ── */}
-      <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-10">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
-          <div className="w-full md:flex-1 lg:pr-12 md:pr-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">Financial Control</span>{" "}
-              <span className="font-heebo">&amp; Workforce Cost Management</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <div className="flex flex-col mt-2 space-y-3">
-              {[
-                "Track and maintain detailed records of employee business expenses",
-                "Digital submission, approval workflows, and expense analytics",
-                "Automated salary and wage calculation based on actual attendance and working hours",
-                "System-driven computation of statutory contributions including ESIC, EPFO, and other compliances",
-                "Accurate payroll data generation to reduce errors and prevent revenue leakage",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <img className="p-1 mt-1 flex-shrink-0" src={IconFC} alt="" />
-                  <p className="text-lg not-italic font-medium leading-relaxed font-heebo">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
-            <img
-              className="object-cover object-center w-full h-full"
-              alt="Industrial field operation site"
-              src={industrialSite}
-            />
-          </div>
-        </div>
-      </section>
+                <p className="mt-6 text-base leading-7 text-slate-600 font-heebo sm:text-lg">
+                  With integrated AI analytics, automated compliance,
+                  attendance-linked payroll accuracy, and real-time dashboards,
+                  Traks helps organisations reduce operational costs, prevent
+                  financial leakages, and improve workforce productivity through
+                  a secure, scalable platform.
+                </p>
 
-      {/* ── Key Highlights ── */}
-      <section className="text-gray-600 body-font mt-6 md:mt-10 pb-8 md:pb-10">
-        <div className="container px-4 sm:px-6 py-6 md:py-10 mx-auto">
-          <h1 className="title-font text-2xl sm:text-3xl md:text-4xl font-medium text-gray-900 mt-4 text-start ml-4 sm:ml-8 md:ml-12">
-            <span className="text-primary">Highlights</span>
-          </h1>
-          <div className="flex text-start ml-4 sm:ml-8 md:ml-12">
-            <div className="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-          </div>
-          <div className="mx-auto flex flex-col lg:flex-row py-6 md:py-10">
-            <div className="w-full lg:w-1/2 lg:pr-10 flex flex-col items-start text-left ml-4 sm:ml-8 md:ml-12">
-              {[
-                { title: "Field Digitisation", sub: "Eliminate paper-based processes end-to-end" },
-                { title: "GPS Geo-Fencing", sub: "Automated check-in, check-out with location stamps" },
-                { title: "Mobile + Web Access", sub: "Anytime, anywhere, any device" },
-                { title: "Patrol & Guard Monitoring", sub: "Night shift and static post alertness tracking" },
-                { title: "AI Analytics", sub: "Real-time dashboards and custom reports" },
-              ].map((item, i) => (
-                <div key={i} className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo mb-0">
-                    {item.title}
-                    <div className="flex gap-2">
-                      <span>
-                        <img src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo mb-0">
-                        {item.sub}
-                      </p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {conclusionOutcomes.map((item, index) => (
+                    <div
+                      key={item}
+                      className={`rounded-full px-4 py-2 text-sm font-semibold shadow-sm font-heebo ${
+                        index % 3 === 0
+                          ? "bg-indigo-100 text-primary"
+                          : index % 3 === 1
+                            ? "bg-orange-100 text-orange-700"
+                            : "bg-slate-100 text-slate-700"
+                      }`}
+                    >
+                      {item}
                     </div>
-                  </p>
+                  ))}
                 </div>
-              ))}
-            </div>
-            <div className="w-full lg:w-1/2 lg:pr-10 flex flex-col md:items-start md:text-left ml-4 sm:ml-8 md:ml-12 mt-2 lg:mt-0">
-              {[
-                { title: "Expense Management", sub: "Digital submission and approval workflows" },
-                { title: "Automated Payroll", sub: "Salary, ESIC, EPFO and statutory computations" },
-                { title: "Live Headcount", sub: "Per site and per geo-fenced zone" },
-                { title: "Exception Alerts", sub: "Inactivity, missed patrols, absentee notifications" },
-                { title: "Scalable Platform", sub: "Secure, cloud-based, enterprise-grade" },
-              ].map((item, i) => (
-                <div key={i} className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                    {item.title}
-                    <div className="flex gap-2">
-                      <span>
-                        <img src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                        {item.sub}
-                      </p>
-                    </div>
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* ── Conclusion Banner ── */}
-      <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-12">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
-          <div className="w-full md:w-1/2 lg:max-w-xl rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg">
-            <img
-              className="object-cover object-center w-full"
-              alt="Traks platform"
-              src={conclusionImg}
-            />
-          </div>
-          <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">
-              <span className="text-primary font-heebo">Smarter Supervision.</span>{" "}
-              <span className="font-heebo">Stronger Compliance. Measurable ROI.</span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-            <p className="text-lg not-italic font-normal leading-7 text-[#30343F] font-heebo">
-              With integrated AI analytics, automated compliance, payroll
-              accuracy, and real-time dashboards, Traks helps organisations
-              reduce operational costs, prevent financial leakages, enhance
-              workforce productivity, and achieve sustainable, data-driven growth
-              through a secure and scalable platform.
-            </p>
-            <Link
-              to="/contact"
-              className="mt-6 inline-flex items-center gap-2 bg-primary text-white font-heebo font-semibold px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
-            >
-              Get in Touch
-            </Link>
+                <Link
+                  to="/chat"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-indigo-600 px-7 py-3 text-white font-heebo font-semibold shadow-lg transition hover:from-indigo-700 hover:to-primary"
+                >
+                  Get in Touch
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
