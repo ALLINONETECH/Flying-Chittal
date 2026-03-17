@@ -188,7 +188,7 @@ export default function About() {
               we are
             </h1>
             <p className="text-xl not-italic font-normal leading-7 mb-8 text-justify font-heebo w-5/6">
-              Welcome to Flying Chital Technologies, a pioneering force in the
+              Welcome to Flying Chital, a pioneering force in the
               realm of digital transformation and innovation. With a dedicated
               focus on revolutionizing businesses, we specialize in the seamless
               automation of enterprise workflows, leveraging cutting-edge
@@ -235,7 +235,7 @@ export default function About() {
               we are
             </h1>
             <p className="text-md not-italic font-normal leading-7 mb-8  font-heebo w-5/6 md:w-fit text-black">
-              Welcome to Flying Chital Technologies, a pioneering force in the
+              Welcome to Flying Chital, a pioneering force in the
               realm of digital transformation and innovation. With a dedicated
               focus on revolutionizing businesses, we specialize in the seamless
               automation of enterprise workflows, leveraging cutting-edge

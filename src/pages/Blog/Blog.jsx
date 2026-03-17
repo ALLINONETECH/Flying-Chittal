@@ -381,12 +381,12 @@ export default function Blog() {
               </h2>
               <p class="text-lg lg:text-xl font-normal leading-relaxed text-gray-800 mb-6">
                 At the 2nd Odisha Mining & Infrastructure International Expo
-                2024, AATPL showcased Flying Chital, a groundbreaking logistics
+                2024, Flying Chital showcased Flying Chital, a groundbreaking logistics
                 platform, redefining industry standards with innovation and
                 excellence. Seamlessly integrating cutting-edge technologies,
-                AATPL empowers businesses to thrive in the digital era, driving
+                Flying Chital empowers businesses to thrive in the digital era, driving
                 efficiency and sustainability. With Flying Chital leading the
-                charge, AATPL paves the way for a future of unparalleled growth
+                charge, Flying Chital paves the way for a future of unparalleled growth
                 and productivity in logistics management.
               </p>
               <Link to="/MiningExpo">

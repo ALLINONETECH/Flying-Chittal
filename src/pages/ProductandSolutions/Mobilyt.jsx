@@ -21,12 +21,12 @@ export default function Mobilyt() {
     <div className="bg-white">
       {/* ── Hero Section ── */}
       <section
-        className="bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="bg-no-repeat bg-center bg-cover rounded-br-[40px] md:rounded-br-[70px] lg:rounded-br-[100px]"
         style={{
           backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.75) 12%, rgba(55, 52, 169, 0.55) 120%), url(${mobilytBg})`,
         }}
       >
-        <div className="container px-6 py-16 mx-auto text-start">
+        <div className="container px-4 sm:px-6 py-10 sm:py-14 lg:py-24 mx-auto text-start">
           <div className="mx-auto text-center lg:text-start">
             <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo text-gray-100">
               Mobilyt
@@ -66,7 +66,7 @@ export default function Mobilyt() {
 
       {/* ── Overview ── */}
       <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center gap-10">
+        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 lg:py-20 items-center gap-8 md:gap-10">
           <div className="lg:max-w-sm lg:w-full md:w-1/3 w-full flex flex-col items-center gap-4">
             <img
               className="object-contain rounded-2xl shadow-xl"
@@ -86,8 +86,8 @@ export default function Mobilyt() {
             </div>
           </div>
 
-          <div className="lg:flex-grow md:w-2/3 lg:pl-16 md:pl-10 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="text-2xl font-bold text-primary font-heebo mb-2">
+          <div className="w-full md:flex-1 lg:pl-14 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 className="text-xl sm:text-2xl font-bold text-primary font-heebo mb-2">
               AI-Powered Fleet Intelligence
             </h1>
             <div className="my-2 rounded-md p-3 bg-slate-100">
@@ -125,8 +125,8 @@ export default function Mobilyt() {
       </section>
 
       {/* ── Highlights Grid ── */}
-      <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-100">
-        <div className="container md:px-16 py-5 mx-auto">
+      <section className="text-gray-600 body-font rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100">
+        <div className="container px-4 sm:px-6 md:px-16 py-6 md:py-10 mx-auto">
           <div className="flex flex-wrap -m-4">
             {[highlight1, highlight2, highlight3, highlight4, highlight5].map(
               (img, i) => (
@@ -146,17 +146,17 @@ export default function Mobilyt() {
       </section>
 
       {/* ── Section 1: Real-Time Tracking ── */}
-      <section className="text-gray-600 body-font mt-10">
-        <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center gap-10">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-6 md:mb-0 rounded-tl-[50px] rounded-br-[50px] overflow-hidden shadow-lg">
+      <section className="text-gray-600 body-font mt-6 md:mt-10">
+        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 items-center gap-6 md:gap-10">
+          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
             <img
               className="object-cover object-center w-full h-full"
               alt="GPS vehicle tracking"
               src={gpsVehicles}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-16 md:pl-10 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-1">
+          <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
               <span className="text-primary font-heebo">Real-Time Tracking</span>{" "}
               <span className="font-heebo">&amp; Control</span>
             </h1>
@@ -183,10 +183,10 @@ export default function Mobilyt() {
       </section>
 
       {/* ── Section 2: Intelligent Automation ── */}
-      <section className="text-gray-600 body-font mt-4 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
-        <div className="container mx-auto flex flex-col-reverse md:flex-row items-center px-5 py-12 gap-10">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-16 md:pr-10 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-1">
+      <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-10">
+        <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
+          <div className="w-full md:flex-1 lg:pr-12 md:pr-8 flex flex-col md:items-start md:text-left items-start text-start">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
               <span className="text-primary font-heebo">Intelligent Automation</span>{" "}
               <span className="font-heebo">&amp; Monitoring</span>
             </h1>
@@ -209,7 +209,7 @@ export default function Mobilyt() {
               ))}
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-6 md:mb-0 rounded-tl-[50px] rounded-br-[50px] overflow-hidden shadow-lg">
+          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
             <img
               className="object-cover object-center w-full h-full"
               alt="AI brain connected to fleet"
@@ -220,17 +220,17 @@ export default function Mobilyt() {
       </section>
 
       {/* ── Section 3: Data-Driven Intelligence ── */}
-      <section className="text-gray-600 body-font mt-10">
-        <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center gap-10">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-6 md:mb-0 rounded-tl-[50px] rounded-br-[50px] overflow-hidden shadow-lg">
+      <section className="text-gray-600 body-font mt-4 md:mt-6">
+        <div className="container mx-auto flex flex-col md:flex-row px-4 sm:px-6 py-8 md:py-14 items-center gap-6 md:gap-10">
+          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
             <img
               className="object-cover object-center w-full h-full"
               alt="Floating dashboard analytics"
               src={dashboard}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-16 md:pl-10 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-1">
+          <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
               <span className="text-primary font-heebo">Data-Driven</span>{" "}
               <span className="font-heebo">Decision Intelligence</span>
             </h1>
@@ -257,10 +257,10 @@ export default function Mobilyt() {
       </section>
 
       {/* ── Section 4: Governance & Enterprise ── */}
-      <section className="text-gray-600 body-font mt-4 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
-        <div className="container mx-auto flex flex-col-reverse md:flex-row items-center px-5 py-12 gap-10">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-16 md:pr-10 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-1">
+      <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-10">
+        <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
+          <div className="w-full md:flex-1 lg:pr-12 md:pr-8 flex flex-col md:items-start md:text-left items-start text-start">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
               <span className="text-primary font-heebo">Governance</span>{" "}
               <span className="font-heebo">&amp; Enterprise Enablement</span>
             </h1>
@@ -283,7 +283,7 @@ export default function Mobilyt() {
               ))}
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-6 md:mb-0 rounded-tl-[50px] rounded-br-[50px] overflow-hidden shadow-lg">
+          <div className="w-full md:w-1/2 lg:max-w-lg rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg min-h-[220px] md:min-h-0">
             <img
               className="object-cover object-center w-full h-full"
               alt="Enterprise network visualization"
@@ -294,16 +294,16 @@ export default function Mobilyt() {
       </section>
 
       {/* ── Key Highlights ── */}
-      <section className="text-gray-600 body-font mt-10 pb-10 container">
-        <div className="container px-5 py-10 mx-auto">
-          <h1 className="title-font sm:text-4xl text-3xl font-medium text-gray-900 mt-5 text-start ml-12">
+      <section className="text-gray-600 body-font mt-6 md:mt-10 pb-8 md:pb-10">
+        <div className="container px-4 sm:px-6 py-6 md:py-10 mx-auto">
+          <h1 className="title-font text-2xl sm:text-3xl md:text-4xl font-medium text-gray-900 mt-4 text-start ml-4 sm:ml-8 md:ml-12">
             <span className="text-primary">Highlights</span>
           </h1>
-          <div className="flex text-start ml-12">
+          <div className="flex text-start ml-4 sm:ml-8 md:ml-12">
             <div className="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
           </div>
-          <div className="mx-auto flex flex-col lg:flex-row py-10">
-            <div className="lg:w-full md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-start text-left ml-12">
+          <div className="mx-auto flex flex-col lg:flex-row py-6 md:py-10">
+            <div className="w-full lg:w-1/2 lg:pr-10 flex flex-col items-start text-left ml-4 sm:ml-8 md:ml-12">
               {[
                 { title: "Live Fleet Tracking", sub: "Interactive map with route history and playback" },
                 { title: "Geo-Fencing", sub: "Automated alerts on zone entry and exit" },
@@ -325,7 +325,7 @@ export default function Mobilyt() {
                 </div>
               ))}
             </div>
-            <div className="lg:w-full md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left ml-12">
+            <div className="w-full lg:w-1/2 lg:pr-10 flex flex-col md:items-start md:text-left ml-4 sm:ml-8 md:ml-12 mt-2 lg:mt-0">
               {[
                 { title: "Real-Time Dashboards", sub: "Live KPIs, exception alerts and custom reports" },
                 { title: "Preventive Maintenance", sub: "Alerts based on usage, mileage and faults" },
@@ -352,17 +352,17 @@ export default function Mobilyt() {
       </section>
 
       {/* ── Conclusion Banner ── */}
-      <section className="text-gray-600 body-font mt-4 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-5 py-12 gap-10">
-          <div className="lg:max-w-xl lg:w-full md:w-1/2 w-full mb-6 md:mb-0 rounded-tl-[50px] rounded-br-[50px] overflow-hidden shadow-lg">
+      <section className="text-gray-600 body-font mt-4 md:mt-6 rounded-tl-[20px] sm:rounded-tl-[40px] md:rounded-tl-[50px] rounded-br-[20px] sm:rounded-br-[40px] md:rounded-br-[50px] bg-gray-100 pb-8 md:pb-12">
+        <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
+          <div className="w-full md:w-1/2 lg:max-w-xl rounded-tl-[30px] md:rounded-tl-[50px] rounded-br-[30px] md:rounded-br-[50px] overflow-hidden shadow-lg">
             <img
               className="object-cover object-center w-full"
               alt="Mobilyt fleet platform"
               src={conclusionImg}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-16 md:pl-10 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 className="sm:text-3xl text-2xl font-bold mb-1">
+          <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">
               <span className="text-primary font-heebo">Driving Efficiency.</span>{" "}
               <span className="font-heebo">Ensuring Compliance. Protecting Revenue.</span>
             </h1>

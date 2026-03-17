@@ -41,7 +41,7 @@ export default function Home() {
           100% { transform: translateX(-50%); }
         }
       `}</style>
-      <div className="static ">
+      <div className="static overflow-x-hidden">
         <section
           className="bg-no-repeat bg-center bg-cover rounded-br-[60px] md:rounded-br-[100px]"
           style={{
@@ -125,7 +125,7 @@ export default function Home() {
               </div>
               <div
                 data-aos="fade-up-right"
-                className="flex flex-col lg:flex-row bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden"
+                className="flex flex-col lg:flex-row bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden max-w-full"
               >
                 <div className="lg:max-w-lg lg:w-1/4 md:w-full w-full mb-0 px-4 py-6 md:py-10 bg-gray-50">
                   <img
@@ -135,12 +135,12 @@ export default function Home() {
                     src={smalllogo}
                   />
                 </div>
-                <div className="lg:w-3/4 md:w-full w-full lg:pl-6 md:pl-5 px-4 md:px-6 py-6 flex flex-col md:items-start md:text-left items-center text-center font-heebo text-[#30343F]">
+                <div className="lg:w-3/4 md:w-full w-full min-w-0 lg:pl-6 md:pl-5 px-4 md:px-6 py-6 flex flex-col md:items-start md:text-left items-center text-center font-heebo text-[#30343F]">
                   <div
                     data-aos="fade-up-left"
-                    className="flex h-3/4 w-full bg-cover bg-center bg-no-repeat rounded relative font-heebo"
+                    className="flex h-3/4 w-full min-w-0 overflow-hidden bg-cover bg-center bg-no-repeat rounded relative font-heebo"
                   >
-                    <div className="text-base md:text-lg leading-relaxed text-left p-4">
+                    <div className="w-full min-w-0 text-base md:text-lg leading-relaxed text-left p-4">
                       <p className="mb-4">
                         We are a technology-driven startup committed to being a
                         catalyst for intelligent, data-driven and sustainable
@@ -158,9 +158,9 @@ export default function Home() {
                         real-world business, industrial, commercial, and
                         governance challenges.
                       </p>
-                      <div className="w-full bg-gradient-to-r from-[#30343F] via-[#3f4350] to-[#30343F] text-white rounded-full py-2.5 px-3 overflow-hidden shadow-md">
+                      <div className="w-full max-w-full bg-primary/10 text-primary border border-primary/20 rounded-full py-2.5 px-3 overflow-hidden shadow-sm">
                         <div
-                          className="whitespace-nowrap font-semibold tracking-wide"
+                          className="inline-flex whitespace-nowrap font-semibold tracking-wide"
                           style={{ animation: "fcTicker 18s linear infinite" }}
                         >
                           <span className="inline-block pr-16">

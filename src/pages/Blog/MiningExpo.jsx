@@ -74,19 +74,19 @@ export default function MiningExpo() {
                   <div className="flex">
                     <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
                       At 2nd Odisha Mining & Infrastructure International Expo
-                      2024, stood Flying Chital Tech Private Limited (AATPL), a
+                      2024, stood Flying Chital Tech Private Limited (Flying Chital), a
                       beacon of innovation and digital transformation. With a
                       strategic focus on revolutionizing businesses and
-                      pioneering technological advancements, AATPL's
+                      pioneering technological advancements, Flying Chital'ss
                       participation at the expo marked a significant milestone
                       in the realm of industrial innovation.
                     </p>
                   </div>
                   <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    AATPL: A Vanguard of Digital Transformation:
+                    Flying Chital: A Vanguard of Digital Transformation:
                   </h3>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    AATPL's journey embodies a relentless pursuit of excellence
+                    Flying Chital'ss journey embodies a relentless pursuit of excellence
                     in the digital landscape. Specializing in the seamless
                     automation of enterprise workflows, the company leverages
                     cutting-edge technologies such as cloud computing, IoT, data
@@ -100,13 +100,13 @@ export default function MiningExpo() {
                     Vision, Mission, and Values:
                   </h3>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Guided by a visionary outlook, AATPL's vision is to empower
+                    Guided by a visionary outlook, Flying Chital'ss vision is to empower
                     individuals in remote and underserved areas with accessible
                     and cutting-edge technology solutions. At the core of its
                     mission lies the commitment to pioneer innovation in supply
                     chain and logistics operations, catalyzing industrial
                     processes across diverse landscapes. Upheld by values of
-                    integrity, excellence, and collaboration, AATPL sets the
+                    integrity, excellence, and collaboration, Flying Chital sets the
                     benchmark for ethical business conduct and transformative
                     innovation.
                   </p>
@@ -114,21 +114,21 @@ export default function MiningExpo() {
                     Leadership:
                   </h3>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The leadership ensemble at AATPL comprises distinguished
+                    The leadership ensemble at Flying Chital comprises distinguished
                     professionals, each bringing a wealth of experience and
                     expertise to the table. From Pradyumna Mishra's strategic
                     acumen to Amar Pradeep Swain's visionary leadership, the
                     team embodies the essence of innovation and operational
                     excellence. Debashis Mohanty's entrepreneurial spirit and
-                    Sitanshu Jena's technical prowess further fortify AATPL's
+                    Sitanshu Jena's technical prowess further fortify Flying Chital'ss
                     position as a trailblazer in the tech industry.
                   </p>
                   <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    AATPL's Expo Showcase:
+                    Flying Chital'ss Expo Showcase:
                   </h3>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
                     At the 2nd Odisha Mining & Infrastructure International
-                    Expo, AATPL shone bright with its groundbreaking offering:
+                    Expo, Flying Chital shone bright with its groundbreaking offering:
                     the Flying Chital platform. This innovative solution marks a
                     significant leap forward in logistics management by
                     seamlessly integrating advanced technologies to enhance
@@ -139,10 +139,10 @@ export default function MiningExpo() {
                     flexibility.
                   </p>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The foundation of AATPL's success lies in its dedication to
+                    The foundation of Flying Chital'ss success lies in its dedication to
                     innovation and operational excellence. By harnessing the
                     capabilities of cloud computing, IoT, and artificial
-                    intelligence, AATPL has developed a solution that transcends
+                    intelligence, Flying Chital has developed a solution that transcends
                     traditional logistics practices. Flying Chital equips
                     logistics managers with crucial decision-making information
                     on the go, enabling quick and informed actions in dynamic
@@ -153,15 +153,15 @@ export default function MiningExpo() {
                   </h3>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
                     The Odisha Mining & Infrastructure International Expo
-                    provided a strategic platform for AATPL to showcase the
+                    provided a strategic platform for Flying Chital to showcase the
                     transformative potential of the Flying Chital platform. As
-                    industry congregated at the expo, AATPL seized the
+                    industry congregated at the expo, Flying Chital seized the
                     opportunity to foster collaborations and discussions, paving
                     the way for future partnerships and innovations. The expo
-                    served as an ideal stage for AATPL to underscore the
+                    served as an ideal stage for Flying Chital to underscore the
                     strength of its tech solutions, particularly the
                     groundbreaking features of Flying Chital. Through live demos
-                    and interactive sessions, AATPL illustrated how Flying
+                    and interactive sessions, Flying Chital illustrated how Flying
                     Chital empowers logistics managers with actionable insights
                     and operational intelligence. The platform's seamless
                     integration with regulatory portals further enhances its
@@ -173,15 +173,15 @@ export default function MiningExpo() {
                     dynamics. From optimized route planning to advanced asset
                     tracking, Flying Chital promises to reshape the logistics
                     landscape, driving efficiency, transparency, and
-                    sustainability across the value chain. As AATPL navigates
+                    sustainability across the value chain. As Flying Chital navigates
                     the evolving digital landscape, the expo reaffirms its
                     unwavering commitment to innovation and customer-centricity.
-                    By leveraging technology as a catalyst for progress, AATPL
+                    By leveraging technology as a catalyst for progress, Flying Chital
                     is poised to shape the future of logistics management,
                     driving operational excellence and value creation for its
                     partners and stakeholders. By showcasing the revolutionary
                     Flying Chital platform at the 2nd Odisha Mining &
-                    Infrastructure International Expo, AATPL has not only made a
+                    Infrastructure International Expo, Flying Chital has not only made a
                     lasting impression but also laid a solid foundation for
                     future growth and success in the dynamic world of logistics.
                   </p>
@@ -189,14 +189,14 @@ export default function MiningExpo() {
                     Conclusion:
                   </h3>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    AATPL's participation at the 2nd Odisha Mining &
+                    Flying Chital'ss participation at the 2nd Odisha Mining &
                     Infrastructure International Expo 2024 epitomizes its
                     unwavering commitment to innovation and excellence. As the
                     company continues to redefine industry standards and push
                     the boundaries of technological advancement, it remains
                     steadfast in its mission to empower businesses and
                     communities with transformative technology solutions. With
-                    Flying Chital leading the charge, AATPL charts a course
+                    Flying Chital leading the charge, Flying Chital charts a course
                     towards a future of unparalleled efficiency, productivity,
                     and sustainable growth in the digital age.
                   </p>

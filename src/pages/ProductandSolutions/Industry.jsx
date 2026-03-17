@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import OILGas1 from "../../assets/images/OILGas1.png";
 import Blog1 from "../../assets/images/Blog1.png";
 import IMining from "../../assets/images/IMining.png";
@@ -11,7 +12,6 @@ import IAgro from "../../assets/images/IAgro.png";
 import Warehouse from "../../assets/images/Warehouse.png";
 import Aqua1 from "../../assets/images/Aqua1.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
-import { Parallax } from "react-scroll-parallax";
 
 export default function Industry() {
   const transportRef = useRef();
@@ -22,37 +22,45 @@ export default function Industry() {
   const oilRef = useRef();
   const warehousingRef = useRef();
   const agricultureRef = useRef();
-  const search = window.location.search;
+  const { search } = useLocation();
   const params = new URLSearchParams(search);
   const page = params.get("page");
+
+  const scrollToSection = (sectionRef) => {
+    if (!sectionRef?.current) return;
+    const topPosition =
+      sectionRef.current.getBoundingClientRect().top + window.pageYOffset - 20;
+    window.scrollTo({ top: topPosition, behavior: "smooth" });
+  };
+
   useEffect(() => {
     if (page == "transport") {
-      transportRef.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(transportRef);
     }
     if (page == "mining") {
-      miningRef.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(miningRef);
     }
     if (page == "metals") {
-      metalsRef.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(metalsRef);
     }
     if (page == "cement") {
-      cementRef.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(cementRef);
     }
     if (page == "fertiliser") {
-      fertiliserRef.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(fertiliserRef);
     }
     if (page == "oil") {
-      oilRef.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(oilRef);
     }
     if (page == "warehousing") {
-      warehousingRef.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(warehousingRef);
     }
     if (page == "agriculture") {
-      agricultureRef.current?.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(agricultureRef);
     }
-  }, []);
+  }, [page]);
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* {/ Section-1 /} */}
       <section
         className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
@@ -101,7 +109,7 @@ export default function Industry() {
       </section>
 
       {/* Section-2  */}
-      <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]">
+      <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px] overflow-x-hidden">
         <div className="container px-5 py-10 mx-auto">
           <div class="text-center mb-14 mt-10">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
@@ -127,7 +135,7 @@ export default function Industry() {
                     Transportation & Logistics
                   </h1>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                  The transportation and logistics industry in India is a
+                    The transportation and logistics industry in India is a
                     dynamic and rapidly evolving sector that plays a pivotal
                     role in the country's economic growth. With a vast network
                     of roads, railways, ports, and airways, India's logistics

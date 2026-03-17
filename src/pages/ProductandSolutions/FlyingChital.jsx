@@ -31,7 +31,7 @@ import conclusion from "../../assets/images/65723.jpg";
 import { Link } from "react-router-dom";
 export default function flyingChital() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <section
         className="bg-no-repeat bg-center bg-cover rounded-br-[100px]"
         style={{
@@ -474,7 +474,7 @@ export default function flyingChital() {
             </div>
           </div>
 
-          <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg">
+          <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg overflow-hidden">
             <img
               className="object-cover object-center absolute ml-52 bottom-48  hidden md:block"
               alt="hero"
