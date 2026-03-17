@@ -1,238 +1,120 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BlogMining from "../../assets/images/BlogMining.png";
-import MiningExpoCollage from "../../assets/images/MiningExpoCollage.jpg";
 
-import HomeIcon from "../../assets/images/HomeIcon.png";
+const sections = [
+  {
+    heading: "Introduction",
+    content:
+      "At the 2nd Odisha Mining & Infrastructure International Expo 2024, stood Flying Chital Tech Private Limited — a beacon of innovation and digital transformation. With a strategic focus on revolutionizing businesses and pioneering technological advancements, Flying Chital's participation at the expo marked a significant milestone in the realm of industrial innovation.",
+  },
+  {
+    heading: "Flying Chital: A Vanguard of Digital Transformation",
+    content:
+      "Flying Chital's journey embodies a relentless pursuit of excellence in the digital landscape. Specializing in seamless automation of enterprise workflows, the company leverages cloud computing, IoT, data analytics, and artificial intelligence to enhance operational efficiency and drive sustainable growth. Its comprehensive suite of managed IT services empowers organizations to navigate the complexities of the digital age with ease.",
+  },
+  {
+    heading: "Vision, Mission, and Values",
+    content:
+      "Guided by a visionary outlook, Flying Chital's vision is to empower individuals in remote and underserved areas with accessible and cutting-edge technology solutions. At the core of its mission lies the commitment to pioneer innovation in supply chain and logistics operations, catalyzing industrial processes across diverse landscapes. Upheld by values of integrity, excellence, and collaboration, Flying Chital sets the benchmark for ethical business conduct and transformative innovation.",
+  },
+  {
+    heading: "Leadership",
+    content:
+      "The leadership ensemble at Flying Chital comprises distinguished professionals, each bringing a wealth of experience and expertise to the table. From Pradyumna Mishra's strategic acumen to Amar Pradeep Swain's visionary leadership, the team embodies the essence of innovation and operational excellence. Debashis Mohanty's entrepreneurial spirit and Sitanshu Jena's technical prowess further fortify Flying Chital's position as a trailblazer in the tech industry.",
+  },
+  {
+    heading: "Flying Chital's Expo Showcase",
+    content:
+      "At the 2nd Odisha Mining & Infrastructure International Expo, Flying Chital shone bright with its groundbreaking offering: the Flying Chital platform. This innovative solution marks a significant leap forward in logistics management by seamlessly integrating advanced technologies to enhance supply chain operations across various industries — with cutting-edge analytics, real-time data processing, and end-to-end visibility.",
+  },
+  {
+    heading: "Exploring Opportunities and Strengths",
+    content:
+      "The Odisha Mining & Infrastructure International Expo provided a strategic platform for Flying Chital to showcase the transformative potential of its platform. Through live demos and interactive sessions, Flying Chital illustrated how the platform empowers logistics managers with actionable insights and operational intelligence. Flying Chital's emergence as a disruptive force in Logistics 4.0 was evident — from optimized route planning to advanced asset tracking, the platform is reshaping logistics across the value chain.",
+  },
+  {
+    heading: "Conclusion",
+    content:
+      "Flying Chital's participation at the 2nd Odisha Mining & Infrastructure International Expo 2024 epitomizes its unwavering commitment to innovation and excellence. As the company continues to redefine industry standards and push the boundaries of technological advancement, it remains steadfast in its mission to empower businesses and communities with transformative technology solutions — charting a course towards a future of unparalleled efficiency, productivity, and sustainable growth.",
+  },
+];
 
 export default function MiningExpo() {
   return (
-    <div>
-      {/* {/ Section-1 /} */}
+    <div className="bg-white">
+      {/* Hero */}
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="relative bg-no-repeat bg-center bg-cover min-h-[460px] flex items-end pb-16 rounded-br-[80px] overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${BlogMining})`,
+          backgroundImage: `linear-gradient(95deg, rgba(55,52,169,0.88) 0%, rgba(55,52,169,0.55) 100%), url(${BlogMining})`,
         }}
       >
-        <nav
-          // x-data="{ isOpen: false }"
-          className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex lg:hidden"></div>
-          </div>
-          {/* <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-                    </div> */}
-        </nav>
-        <div className="container px-6 py-16 mx-auto text-start">
-          <div className=" mx-auto">
-            <h1 className="text-4xl lg:text-4.5xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              Flying Chital Tech Private Limited's Impactful Presence at the 2nd
-              Odisha Mining & Infrastructure International Expo 2024
-            </h1>
-            <p className=" text-xl md:text-xl lg:text-2xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              Challenge, Ideate & Create
-            </p>
-            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex lg:flex-row  gap-2">
-                <div>
-                  <span>
-                    <img className="" src={HomeIcon} alt="" />
-                  </span>
-                </div>
-                <div className="justify">
-                  {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[20px] ">
-                    Home
-                  </span>
-                  <span className="font-[700] font-heebo text-[20px] ">
-                    {" "}
-                    / Blogs
-                  </span>{" "}
-                </div>
-              </div>
-            </div>
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-10 right-10 w-72 h-72 rounded-full bg-white/5 blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-indigo-400/10 blur-3xl" />
+        </div>
+        <div className="container px-6 mx-auto relative z-10">
+          <span className="inline-block bg-white/20 backdrop-blur-sm text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-4 border border-white/30">
+            Events
+          </span>
+          <h1 className="text-4xl lg:text-5xl font-bold font-heebo text-white mb-4 max-w-4xl leading-tight">
+            Flying Chital at the 2nd Odisha Mining &amp; Infrastructure International Expo 2024
+          </h1>
+          <p className="text-lg text-white/80 font-heebo mb-6 max-w-xl">
+            Challenge, Ideate &amp; Create
+          </p>
+          <div className="flex items-center gap-2 text-white/80 text-sm font-heebo">
+            <Link to="/" className="text-orange-400 hover:text-orange-300 font-semibold transition-colors">Home</Link>
+            <span>/</span>
+            <Link to="/blog" className="hover:text-white transition-colors">Blogs</Link>
+            <span>/</span>
+            <span className="text-white">Odisha Mining Expo 2024</span>
           </div>
         </div>
       </section>
 
-      {/* Section-2 */}
-      <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]">
-        <div className="container px-5 py-10 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-tr-[50px]  overflow-hidden shadow-lg md:shadow-xl">
-                <img
-                  className="object-cover object-center rounded-bl-[50px]"
-                  src={MiningExpoCollage}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[20px] font-[700] font-heebo leading-[38px] text-[#30343F] mb-3">
-                    Introduction:
-                  </h1>
-                  <div className="flex">
-                    <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                      At 2nd Odisha Mining & Infrastructure International Expo
-                      2024, stood Flying Chital Tech Private Limited (Flying Chital), a
-                      beacon of innovation and digital transformation. With a
-                      strategic focus on revolutionizing businesses and
-                      pioneering technological advancements, Flying Chital'ss
-                      participation at the expo marked a significant milestone
-                      in the realm of industrial innovation.
-                    </p>
-                  </div>
-                  <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Flying Chital: A Vanguard of Digital Transformation:
-                  </h3>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Flying Chital'ss journey embodies a relentless pursuit of excellence
-                    in the digital landscape. Specializing in the seamless
-                    automation of enterprise workflows, the company leverages
-                    cutting-edge technologies such as cloud computing, IoT, data
-                    analytics, and artificial intelligence to enhance
-                    operational efficiency and drive sustainable growth. Its
-                    comprehensive suite of managed IT services empowers
-                    organizations to navigate the complexities of the digital
-                    age with ease.
-                  </p>
-                  <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Vision, Mission, and Values:
-                  </h3>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Guided by a visionary outlook, Flying Chital'ss vision is to empower
-                    individuals in remote and underserved areas with accessible
-                    and cutting-edge technology solutions. At the core of its
-                    mission lies the commitment to pioneer innovation in supply
-                    chain and logistics operations, catalyzing industrial
-                    processes across diverse landscapes. Upheld by values of
-                    integrity, excellence, and collaboration, Flying Chital sets the
-                    benchmark for ethical business conduct and transformative
-                    innovation.
-                  </p>
-                  <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Leadership:
-                  </h3>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The leadership ensemble at Flying Chital comprises distinguished
-                    professionals, each bringing a wealth of experience and
-                    expertise to the table. From Pradyumna Mishra's strategic
-                    acumen to Amar Pradeep Swain's visionary leadership, the
-                    team embodies the essence of innovation and operational
-                    excellence. Debashis Mohanty's entrepreneurial spirit and
-                    Sitanshu Jena's technical prowess further fortify Flying Chital'ss
-                    position as a trailblazer in the tech industry.
-                  </p>
-                  <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Flying Chital'ss Expo Showcase:
-                  </h3>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    At the 2nd Odisha Mining & Infrastructure International
-                    Expo, Flying Chital shone bright with its groundbreaking offering:
-                    the Flying Chital platform. This innovative solution marks a
-                    significant leap forward in logistics management by
-                    seamlessly integrating advanced technologies to enhance
-                    supply chain operations across various industries. With its
-                    blend of cutting-edge analytics, real-time data processing,
-                    and end-to-end visibility, Flying Chital is revolutionizing
-                    the logistics landscape, delivering unmatched efficiency and
-                    flexibility.
-                  </p>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The foundation of Flying Chital'ss success lies in its dedication to
-                    innovation and operational excellence. By harnessing the
-                    capabilities of cloud computing, IoT, and artificial
-                    intelligence, Flying Chital has developed a solution that transcends
-                    traditional logistics practices. Flying Chital equips
-                    logistics managers with crucial decision-making information
-                    on the go, enabling quick and informed actions in dynamic
-                    operational settings.
-                  </p>
-                  <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Exploring Opportunities and Strengths:
-                  </h3>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The Odisha Mining & Infrastructure International Expo
-                    provided a strategic platform for Flying Chital to showcase the
-                    transformative potential of the Flying Chital platform. As
-                    industry congregated at the expo, Flying Chital seized the
-                    opportunity to foster collaborations and discussions, paving
-                    the way for future partnerships and innovations. The expo
-                    served as an ideal stage for Flying Chital to underscore the
-                    strength of its tech solutions, particularly the
-                    groundbreaking features of Flying Chital. Through live demos
-                    and interactive sessions, Flying Chital illustrated how Flying
-                    Chital empowers logistics managers with actionable insights
-                    and operational intelligence. The platform's seamless
-                    integration with regulatory portals further enhances its
-                    value proposition, ensuring compliance and adherence to
-                    regulations in complex operational environments. Flying
-                    Chital's emergence as a disruptive force in Logistics 4.0
-                    was evident at the expo, as industry stakeholders were
-                    captivated by its potential to transform supply chain
-                    dynamics. From optimized route planning to advanced asset
-                    tracking, Flying Chital promises to reshape the logistics
-                    landscape, driving efficiency, transparency, and
-                    sustainability across the value chain. As Flying Chital navigates
-                    the evolving digital landscape, the expo reaffirms its
-                    unwavering commitment to innovation and customer-centricity.
-                    By leveraging technology as a catalyst for progress, Flying Chital
-                    is poised to shape the future of logistics management,
-                    driving operational excellence and value creation for its
-                    partners and stakeholders. By showcasing the revolutionary
-                    Flying Chital platform at the 2nd Odisha Mining &
-                    Infrastructure International Expo, Flying Chital has not only made a
-                    lasting impression but also laid a solid foundation for
-                    future growth and success in the dynamic world of logistics.
-                  </p>
-                  <h3 className="text-[20px] font-[700] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Conclusion:
-                  </h3>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Flying Chital'ss participation at the 2nd Odisha Mining &
-                    Infrastructure International Expo 2024 epitomizes its
-                    unwavering commitment to innovation and excellence. As the
-                    company continues to redefine industry standards and push
-                    the boundaries of technological advancement, it remains
-                    steadfast in its mission to empower businesses and
-                    communities with transformative technology solutions. With
-                    Flying Chital leading the charge, Flying Chital charts a course
-                    towards a future of unparalleled efficiency, productivity,
-                    and sustainable growth in the digital age.
-                  </p>
-                  {/* Continue with the rest of the content */}
-                </div>
+      {/* Article Content */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <div className="space-y-10">
+            {sections.map((sec, i) => (
+              <div key={i}>
+                <h2 className="text-xl font-bold font-heebo text-gray-900 mb-3 flex items-center gap-3">
+                  <span className="inline-block w-1.5 h-6 rounded-full bg-indigo-600 flex-shrink-0" />
+                  {sec.heading}
+                </h2>
+                <p className="text-base font-heebo text-gray-600 leading-relaxed pl-5">{sec.content}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]">
-        {/* Previous content */}
-        {/* New section for YouTube videos */}
-        <div className="container px-5 py-10 mx-auto pb-16 md:h-40">
-          {" "}
-          {/* Added pb-16 for large padding */}
-          <h2 className="text-2xl font-bold mb-4">YouTube Videos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <div>
+      {/* YouTube Videos */}
+      <section className="py-12 pb-20 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-2xl font-bold font-heebo text-indigo-900 text-center mb-10">
+            Watch Our Expo Highlights
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="rounded-2xl overflow-hidden shadow-lg aspect-video">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/W8Rdo3vi-Z4"
-                title="YouTube Video 1"
+                title="Flying Chital Expo Video 1"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              />
             </div>
-            <div>
+            <div className="rounded-2xl overflow-hidden shadow-lg aspect-video">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/ta4QepLSgSI"
-                title="YouTube Video 2"
+                title="Flying Chital Expo Video 2"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              />
             </div>
           </div>
         </div>
