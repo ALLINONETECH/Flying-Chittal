@@ -125,15 +125,15 @@ export default function Fertilizer() {
                   </p>
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
                     {" "}
-                    <span className="font-bold">Solution:</span> Smart Vehicle
-                    Tracking System - Commission Telematics with location-based
-                    tracking and intelligence for dedicated and market vehicles
-                    along with live photo capturing option with latitude and
-                    longitude coordinates. This gives the Customer 100% ground
-                    coverage and intelligence of their entire distribution
-                    network under one single integrated platform. It also helps
-                    in identifying the exact location of trip completion, along
-                    with electronic proof of delivery.
+                    <span className="font-bold">Solution:</span> Smart and
+                    IntelligentVehicle Tracking System - Commission Telematics
+                    with location-based tracking and intelligence for dedicated
+                    and market vehicles along with live photo capturing option
+                    with latitude and longitude coordinates. This gives the
+                    Customer 100% ground coverage and intelligence of their
+                    entire distribution network under one single integrated
+                    platform. It also helps in identifying the exact location of
+                    trip completion, along with electronic proof of delivery.
                   </p>
                 </div>
               </div>

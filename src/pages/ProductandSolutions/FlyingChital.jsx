@@ -61,7 +61,7 @@ export default function flyingChital() {
               Flying Chital
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              Smart Agile Logistics at Fingertip...
+              Smart and Intelligent Agile Logistics at Fingertip...
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex lg:flex-row  gap-2">
@@ -72,11 +72,14 @@ export default function flyingChital() {
                 </div>
                 <div className="justify">
                   {" "}
-                  <Link to="/" className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    Home
-                  </span>
+                  <Link
+                    to="/"
+                    className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]"
+                  >
+                    <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
+                      {" "}
+                      Home
+                    </span>
                   </Link>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
@@ -135,14 +138,14 @@ export default function flyingChital() {
             <div className="bg-orange-50 my-2 rounded-md p-2 ">
               <p className=" not-italic font-normal leading-7  text-[#30343F] mb-4  text-xl mt-2 mr-2 ">
                 Positioned at the forefront of its category, Flying Chital's
-                mobility feature offers 'Smart Agile Logistics Operations at
-                Fingertip, ensuring unparalleled accessibility and 100%
-                visibility, irrespective of location or device. Moreover, its
-                integrated digital platform interfaces effortlessly with various
-                Government Regulatory Portals, including Vahan, Parivahan, GST
-                Portal, Govt Mining Regulatory Portals, ERP/SAP, and more,
-                enabling real-time data access through customizable dashboards
-                and reports.
+                mobility feature offers 'Smart and Intelligent Agile Logistics
+                Operations at Fingertip, ensuring unparalleled accessibility and
+                100% visibility, irrespective of location or device. Moreover,
+                its integrated digital platform interfaces effortlessly with
+                various Government Regulatory Portals, including Vahan,
+                Parivahan, GST Portal, Govt Mining Regulatory Portals, ERP/SAP,
+                and more, enabling real-time data access through customizable
+                dashboards and reports.
               </p>
             </div>
             <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo my-2 mx-2">
@@ -491,7 +494,7 @@ export default function flyingChital() {
       </section>
 
       <section className="text-gray-600 body-font mt-10">
-        <div className="container mx-auto flex pl-8 py-12 md:flex-row flex-col items-start" >
+        <div className="container mx-auto flex pl-8 py-12 md:flex-row flex-col items-start">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
             <img
               className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
@@ -500,7 +503,7 @@ export default function flyingChital() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1" >
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
               <span className=" text-indigo-800 font-bold text-[40px] ">
                 Smart
               </span>

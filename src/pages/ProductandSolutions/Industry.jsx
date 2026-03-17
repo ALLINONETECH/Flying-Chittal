@@ -82,7 +82,7 @@ export default function Industry() {
               Industries
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex lg:flex-row  gap-2">
@@ -290,12 +290,12 @@ export default function Industry() {
                     transformative shift with the integration of advanced
                     technologies, heralding the era of Logistics 4.0. Embracing
                     automation, robotics, and data-driven analytics, warehouses
-                    are evolving into smart and efficient hubs that streamline
-                    operations and enhance overall supply chain management.
-                    Automated storage and retrieval systems (AS/RS), IoT-enabled
-                    sensors, and RFID technology are being employed to optimize
-                    inventory tracking, minimize errors, and improve overall
-                    warehouse efficiency.
+                    are evolving into Smart and Intelligent and efficient hubs
+                    that streamline operations and enhance overall supply chain
+                    management. Automated storage and retrieval systems (AS/RS),
+                    IoT-enabled sensors, and RFID technology are being employed
+                    to optimize inventory tracking, minimize errors, and improve
+                    overall warehouse efficiency.
                   </p>
                 </div>
               </div>

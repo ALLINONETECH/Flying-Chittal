@@ -64,7 +64,7 @@ export default function RoadLogistics() {
               Rail Logistics
             </h1>
             <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex flex-col lg:flex-row  gap-2">
@@ -98,7 +98,7 @@ export default function RoadLogistics() {
                     <span className=" font-heebo text-[40px] text-primary">
                       Flying Chital&nbsp;
                     </span>
-                    Smart Rail Logistics Management System
+                    Smart and Intelligent Rail Logistics Management System
                     <br />
                     (FCS
                     <span className="border-b-2 border-secondary">RL</span>MS)
@@ -122,7 +122,7 @@ export default function RoadLogistics() {
                       and data analytics optimize the movement of goods by rail.
                       GPS, RFID, IoT and sensor technologies enable precise
                       tracking, reducing transit times and enhancing the safety
-                      of cargo. Digital platforms and smart systems facilitate
+                      of cargo. Digital platforms and Smart and Intelligent systems facilitate
                       the coordination of shipments and real-time communication
                       among stakeholders, making rail logistics more efficient
                       and responsive. The integration of these technologies
@@ -380,7 +380,7 @@ export default function RoadLogistics() {
                           data analytics, GPS tracking, and digital platforms
                           are instrumental in optimizing the movement of cargo
                           from point of origin to the port. Real-time data and
-                          smart systems enable better coordination, minimize
+                          Smart and Intelligent systems enable better coordination, minimize
                           congestion, and enhance security, while also offering
                           better visibility and predictability for all
                           stakeholders. In an era of increasingly complex and

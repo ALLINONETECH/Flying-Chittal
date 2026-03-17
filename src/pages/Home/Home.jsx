@@ -29,7 +29,7 @@ export default function Home() {
       icon: "⚙️",
       title: "Digital Automation & Optimisation",
       description:
-        "Through AI-powered workflow automation, IoT integration, smart sensors, and real-time monitoring systems, we enable transparency, accountability, and faster service delivery.",
+        "Through AI-powered workflow automation, IoT integration, Smart and Intelligent sensors, and real-time monitoring systems, we enable transparency, accountability, and faster service delivery.",
     },
     {
       icon: "📊",
@@ -291,7 +291,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section-Flying Chital - Smart Agile Logistics at Fingertip */}
+        {/* Section-Flying Chital - Smart and Intelligent Agile Logistics at Fingertip */}
         <Parallax y={[-20, 20]}>
           <section
             data-aos="fade-right"

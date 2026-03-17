@@ -80,6 +80,21 @@ export default function About() {
     }
   }, []);
 
+  const deploymentClients = [
+    { name: "BMC", logo: BMC },
+    { name: "Tata", logo: Tata },
+    { name: "JSW", logo: JSW },
+    { name: "Nippon Steel", logo: Nippon },
+    { name: "Tata Steel", logo: TataSteel },
+    { name: "Arcelor", logo: Arcelor },
+    { name: "Jindal", logo: Jindal },
+    { name: "SJSPL", logo: SJSPL },
+    { name: "Nalco", logo: Nalco },
+    { name: "JSL", logo: JSL },
+    { name: "MYTHRI", logo: MYTHRI },
+    { name: "BRPL", logo: BRPL },
+  ];
+
   return (
     <div>
       <Helmet>
@@ -133,7 +148,7 @@ export default function About() {
               About us
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
 
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
@@ -235,9 +250,9 @@ export default function About() {
               we are
             </h1>
             <p className="text-md not-italic font-normal leading-7 mb-8  font-heebo w-5/6 md:w-fit text-black">
-              Welcome to Flying Chital, a pioneering force in the
-              realm of digital transformation and innovation. With a dedicated
-              focus on revolutionizing businesses, we specialize in the seamless
+              Welcome to Flying Chital, a pioneering force in the realm of
+              digital transformation and innovation. With a dedicated focus on
+              revolutionizing businesses, we specialize in the seamless
               automation of enterprise workflows, leveraging cutting-edge
               technologies to enhance efficiency and productivity. Our expertise
               extends to the realm of edge computing and mobility, enabling
@@ -399,7 +414,12 @@ export default function About() {
                 </h2>
                 <div className="flex flex-col">
                   <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                    Flying Chital Private Limited envisions building a future-ready enterprise where Artificial Intelligence and Data Analytics form the strategic core of every solution we create—transforming complex challenges into intelligent, market-ready products and platforms. We are committed to developing scalable, high-impact solutions with strong ...
+                    Flying Chital Private Limited envisions building a
+                    future-ready enterprise where Artificial Intelligence and
+                    Data Analytics form the strategic core of every solution we
+                    create—transforming complex challenges into intelligent,
+                    market-ready products and platforms. We are committed to
+                    developing scalable, high-impact solutions with strong ...
                     <br />{" "}
                   </p>
 
@@ -440,7 +460,13 @@ export default function About() {
                 </h2>
                 <div className="flex flex-col">
                   <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                    Flying Chital Private Limited is committed to designing and delivering intelligent, scalable, and commercially viable technology solutions powered by Artificial Intelligence and Data Analytics. Our mission is to transform data into actionable insight, automate decision-making through advanced AI capabilities, and build market-ready products that...
+                    Flying Chital Private Limited is committed to designing and
+                    delivering intelligent, scalable, and commercially viable
+                    technology solutions powered by Artificial Intelligence and
+                    Data Analytics. Our mission is to transform data into
+                    actionable insight, automate decision-making through
+                    advanced AI capabilities, and build market-ready products
+                    that...
                     <br />
                   </p>
                   <Link to="/mission">
@@ -481,7 +507,13 @@ export default function About() {
                 </h2>
                 <div className="flex flex-col">
                   <p className="text-xl  font-normal leading-7 font-heebo">
-                    At Flying Chital Private Limited, our foundation rests on unwavering ethics, strong corporate governance, and absolute integrity in every decision we make. We are committed to transparency, accountability, and responsible leadership, ensuring that our actions consistently align with the highest professional and legal standards. We foster a culture ...
+                    At Flying Chital Private Limited, our foundation rests on
+                    unwavering ethics, strong corporate governance, and absolute
+                    integrity in every decision we make. We are committed to
+                    transparency, accountability, and responsible leadership,
+                    ensuring that our actions consistently align with the
+                    highest professional and legal standards. We foster a
+                    culture ...
                     <br />
                   </p>
                   <Link to="/values">
@@ -539,10 +571,18 @@ export default function About() {
                 Director, Business Strategy & Growth
               </p>
               <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
-                Mr. Vijay Anand Krishnan is a seasoned entrepreneur having extensive experience across Asia Africa and Middle East. He has founded and led companies operating in various infrastructure verticals such as oil & gas infrastructure, power generation, telecom networks, and water infrastructure.
-
-                As Director – Business Strategy & Growth at Flying Chital Private Limited, he brings deep global market insight, strong government and industry relationships, and proven expertise in structuring complex infrastructure projects. His presence strengthens the Board by enhancing Flying Chital’s capability to expand internationally, build strategic partnerships, and pursue high-value industrial & technology projects.
-
+                Mr. Vijay Anand Krishnan is a seasoned entrepreneur having
+                extensive experience across Asia Africa and Middle East. He has
+                founded and led companies operating in various infrastructure
+                verticals such as oil & gas infrastructure, power generation,
+                telecom networks, and water infrastructure. As Director –
+                Business Strategy & Growth at Flying Chital Private Limited, he
+                brings deep global market insight, strong government and
+                industry relationships, and proven expertise in structuring
+                complex infrastructure projects. His presence strengthens the
+                Board by enhancing Flying Chital’s capability to expand
+                internationally, build strategic partnerships, and pursue
+                high-value industrial & technology projects.
               </p>
               <span>
                 <img src={Socialicon} alt="" />
@@ -972,236 +1012,47 @@ export default function About() {
 
       <section
         ref={customersRef}
-        className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]"
+        className="relative overflow-hidden text-gray-700 body-font bg-gradient-to-br from-slate-50 via-white to-indigo-50 rounded-tl-[50px] rounded-br-[50px] mt-8"
       >
-        <div className="container px-5 py-10 mx-auto">
-          <div class="text-center mb-20">
-            <h1 className="text-3xl not-italic font-bold leading-9 font-heebo title-font sm:text-4xl mb-4 text-center text-gray-900 mt-8">
-              We are{" "}
-              <span className="font-heebo text-[40px] text-primary">
-                Experienc
-                <span className="border-b-2 border-secondary">ed&nbsp;</span>
-              </span>
-              In Deployments At
+        <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-indigo-200/25 blur-3xl"></div>
+        <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-orange-200/25 blur-3xl"></div>
+
+        <div className="container px-5 py-14 mx-auto relative z-10">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-white border border-indigo-100 shadow-sm text-primary font-semibold text-sm font-heebo">
+              <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+              Trusted Enterprise Deployments
+            </div>
+
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight font-heebo text-gray-900">
+              We Are Experienced
+              <span className="bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent">
+                {" "}
+                In Deployments
+              </span>{" "}
+              At
             </h1>
 
-            {/* <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Move beyond Track & Trace with an ultra easy to use interface that integrates with 2.2k devices and it accessible on mobile app and web for desktop in over 15 language</p> */}
+            <p className="mt-4 max-w-3xl mx-auto text-base sm:text-lg text-gray-600 font-heebo leading-relaxed">
+              Our solutions are deployed across leading industrial and
+              enterprise organizations with consistent delivery quality,
+              reliability, and measurable business outcomes.
+            </p>
           </div>
 
-          <div className="flex flex-wrap -m-4">
-                        <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-
-                <img className="mt-20" src={BMC} alt="" />
-              </div>
-            </div>
-            <div className=" md:w-1/3 p-4 ">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full ">
-                <div className="flex">
+          <div className="flex flex-wrap -m-3">
+            {deploymentClients.map((client) => (
+              <div key={client.name} className="w-1/2 md:w-1/3 lg:w-1/4 p-3">
+                <div className="group h-40 rounded-2xl border border-gray-200/80 bg-white/95 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 px-5 py-4 flex items-center justify-center">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-h-20 w-auto object-contain grayscale-[8%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-300"
+                    loading="lazy"
+                  />
                 </div>
-                <img className="" src={Tata} alt="" />
               </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-
-                <img className="mt-20" src={JSW} alt="" />
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-
-                                    <img className="p-1" src={Driver} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="mt-20" src={Nippon} alt="" />
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-
-                                    <img className="p-1" src={Driver} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="mt-10" src={TataSteel} alt="" />
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-
-                                    <img className="p-1" src={Driver} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="mt-10" src={Arcelor} alt="" />
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-
-                                    <img className="p-1" src={Driver} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="mt-10" src={Jindal} alt="" />
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-
-                                    <img className="p-1" src={Driver} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="mt-10" src={SJSPL} alt="" />
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="mt-10" src={Nalco} alt="" />
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-
-                                    <img className="p-1" src={Driver} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="mt-10" src={JSL} alt="" />
-              </div>
-            </div>
-
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-
-                                    <img className="p-1" src={Driver} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="mt-10" src={MYTHRI} alt="" />
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
-                <img className="p-1" src={BRPL} alt="" />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

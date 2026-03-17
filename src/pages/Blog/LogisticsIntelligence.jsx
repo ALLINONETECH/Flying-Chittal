@@ -139,9 +139,9 @@ export default function LogisticsIntelligence() {
                 <p className=" leading-1 text-md ml-3 font-heebo">
                   Real-Time Virtualization empowers us to monitor and track the
                   movement of material, machinery & equipment and hold ups in
-                  real-time. By integrating IoT sensors and smart devices, we
-                  can create a digital representation of the entire logistics
-                  network.
+                  real-time. By integrating IoT sensors and Smart and
+                  Intelligentdevices, we can create a digital representation of
+                  the entire logistics network.
                 </p>
               </div>
             </div>

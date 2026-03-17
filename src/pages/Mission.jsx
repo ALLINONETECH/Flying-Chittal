@@ -36,7 +36,7 @@ export default function Mission() {
               Mission
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex lg:flex-row  gap-2">
@@ -309,8 +309,8 @@ export default function Mission() {
                   <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]">
                     We are dedicated to improving industrial processes in
                     mining, ore processing, cement and fertilizer production,
-                    and warehousing through smart technologies, automation, and
-                    data driven insights.{" "}
+                    and warehousing through Smart and Intelligent technologies,
+                    automation, and data driven insights.{" "}
                   </p>
                 </div>
               </div>

@@ -20,11 +20,11 @@ export default function FlyingChitalFleet() {
         <div className="container px-4 lg:px-6 py-10 lg:py-16 mx-auto text-start">
           <div className="mx-auto">
             <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              Flying Chital Smart Fleet Monitoring
+              Flying Chital Smart and Intelligent Fleet Monitoring
               <br /> System
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
 
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
@@ -42,7 +42,8 @@ export default function FlyingChitalFleet() {
                   </span>
                   <span className="font-[700] font-heebo text-[18px] lg:text-[32px]">
                     {" "}
-                    / Flying Chital Smart Fleet Monitoring System
+                    / Flying Chital Smart and Intelligent Fleet Monitoring
+                    System
                   </span>{" "}
                 </div>
               </div>
@@ -51,7 +52,7 @@ export default function FlyingChitalFleet() {
         </div>
       </section>
 
-      {/* Section-2- Flying Chital Smart Vehicle  */}
+      {/* Section-2- Flying Chital Smart and Intelligent Vehicle  */}
       {/* <section className="text-gray-600 body-font mt-0">
         <div className="container mx-auto flex flex-col-reverse px-5 py-12 md:flex-row items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
@@ -66,7 +67,7 @@ export default function FlyingChitalFleet() {
               <span className=" font-heebo text-[40px] text-primary">
                 Flying&nbsp;
               </span>
-              Chital Smart Fleet
+              Chital Smart and Intelligent Fleet
               <br />
               Management System <br /> (
               <span className="border-b-2 border-secondary">FC</span>SFMS)
@@ -74,7 +75,7 @@ export default function FlyingChitalFleet() {
             <p className="text-xl not-italic font-normal leading-7 mb-8 text-justify  w-4/5">
               FCSFMS is a pivotal tool for enhancing logistics and
               transportation operations. It boasts numerous advantages that
-              cater to the evolving needs of the industry. The Smart Fleet
+              cater to the evolving needs of the industry. The Smart and Intelligent Fleet
               Management System is a game-changer for businesses seeking to stay
               competitive and responsive in the ever-evolving transportation
               landscape.
@@ -98,7 +99,7 @@ export default function FlyingChitalFleet() {
                 Flying&nbsp;
               </span>
               <span className=" text-[40px] font-heebo mb-4  font-bold ">
-                Chital Smart Fleet <br />
+                Chital Smart and Intelligent Fleet <br />
                 Management System <br /> (FCSFMS)
               </span>
             </h1>
@@ -106,10 +107,10 @@ export default function FlyingChitalFleet() {
             <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  w-4/5">
               FCSFMS is a pivotal tool for enhancing logistics and
               transportation operations. It boasts numerous advantages that
-              cater to the evolving needs of the industry. The Smart Fleet
-              Management System is a game-changer for businesses seeking to stay
-              competitive and responsive in the ever-evolving transportation
-              landscape.
+              cater to the evolving needs of the industry. The Smart and
+              IntelligentFleet Management System is a game-changer for
+              businesses seeking to stay competitive and responsive in the
+              ever-evolving transportation landscape.
             </p>
           </div>
         </div>

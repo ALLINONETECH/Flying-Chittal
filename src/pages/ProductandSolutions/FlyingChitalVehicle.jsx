@@ -41,10 +41,11 @@ export default function FlyingChitalVehicle() {
         <div className="container px-6 py-16 mx-auto text-start">
           <div className=" mx-auto">
             <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              Flying Chital Smart Vehicle Tracking System (FCSVTS)
+              Flying Chital Smart and Intelligent Vehicle Tracking System
+              (FCSVTS)
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex lg:flex-row  gap-2">
@@ -61,7 +62,8 @@ export default function FlyingChitalVehicle() {
                   </span>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
-                    / Flying Chital Smart Vehicle Tracking System (FCSVTS)
+                    / Flying Chital Smart and Intelligent Vehicle Tracking
+                    System (FCSVTS)
                   </span>{" "}
                 </div>
               </div>
@@ -70,7 +72,7 @@ export default function FlyingChitalVehicle() {
         </div>
       </section>
 
-      {/* Section-2- Flying Chital Smart Vehicle  */}
+      {/* Section-2- Flying Chital Smart and Intelligent Vehicle  */}
       <section className="text-gray-600 body-font mt-0">
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
@@ -86,21 +88,21 @@ export default function FlyingChitalVehicle() {
                 Flying
               </span>
               <span className=" text-[40px] font-heebo   font-bold ">
-                Chital Smart Vehicle <br />
+                Chital Smart and Intelligent Vehicle <br />
                 Tracking System (FCSVTS)
               </span>
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             <p className="mb-8 text-justify text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  w-4/5">
-              The Flying Chital Smart Vehicle Tracking System stands as a
-              transformative solution in the domain of logistics and
+              The Flying Chital Smart and Intelligent Vehicle Tracking System
+              stands as a transformative solution in the domain of logistics and
               transportation. By offering end-to-end visibility of cargo
               movement, this system allows businesses to stay informed about
               their assets' whereabouts in real-time. The holistic approach of
-              this Smart Vehicle Tracking System signifies a comprehensive
-              solution for businesses seeking to streamline operations, mitigate
-              risks of pilferage and revenue leakage, and ensure seamless and
-              secure cargo transportation
+              this Smart and Intelligent Vehicle Tracking System signifies a
+              comprehensive solution for businesses seeking to streamline
+              operations, mitigate risks of pilferage and revenue leakage, and
+              ensure seamless and secure cargo transportation
             </p>
           </div>
         </div>
@@ -118,7 +120,7 @@ export default function FlyingChitalVehicle() {
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             {/* <p class=" text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">
-              "Flying Chital Smart Vehicle Tracking System" is a specific
+              "Flying Chital Smart and Intelligent Vehicle Tracking System" is a specific
               product or service, I recommend visiting the official website of
               the company or contacting the company directly for the most
               accurate and up-to-date information.
@@ -205,7 +207,7 @@ export default function FlyingChitalVehicle() {
                 </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/2"data-aos="flip-left">
+            <div className="p-4 md:w-1/2" data-aos="flip-left">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-tr-[50px] overflow-hidden shadow-lg md:shadow-xl ">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center"

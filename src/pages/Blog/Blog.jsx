@@ -38,7 +38,7 @@ export default function Blog() {
               Challenge, Ideate & Create
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex lg:flex-row  gap-2">
@@ -247,7 +247,7 @@ export default function Blog() {
                         <div className="text-3xl not-italic font-bold leading-9 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-24 flex flex-col md:items-start md:text-left items-center text-center font-heebo mt-5 text-[#30343F] ">
                             <h2 className="mt-6 mb-2">Revolutionizing Mining and Ore Processing</h2>
                             <p className="text-xl not-italic font-normal leading-relaxed text-black ">
-                                Let's revolutionize the way we manage logistics in the mining and ore processing industry by harnessing the power of IoT and smart technologies. Together, we can unlock an era of unprecedented efficiency and optimization. Feel free to reach out for more information or to discuss this exciting transformation further!
+                                Let's revolutionize the way we manage logistics in the mining and ore processing industry by harnessing the power of IoT and Smart and Intelligent technologies. Together, we can unlock an era of unprecedented efficiency and optimization. Feel free to reach out for more information or to discuss this exciting transformation further!
                             </p>
 
                             <Link to="/miningMetal">
@@ -289,9 +289,9 @@ export default function Blog() {
               <p class="text-lg lg:text-xl font-normal leading-relaxed text-gray-800 mb-6">
                 Let's revolutionize the way we manage logistics in the mining
                 and ore processing industry by harnessing the power of IoT and
-                smart technologies. Together, we can unlock an era of
-                unprecedented efficiency and optimization. Feel free to reach
-                out for more information or to discuss this exciting
+                Smart and Intelligent technologies. Together, we can unlock an
+                era of unprecedented efficiency and optimization. Feel free to
+                reach out for more information or to discuss this exciting
                 transformation further!
               </p>
               <a href="/logisticsIntelligence" class="flex justify-start">
@@ -381,13 +381,14 @@ export default function Blog() {
               </h2>
               <p class="text-lg lg:text-xl font-normal leading-relaxed text-gray-800 mb-6">
                 At the 2nd Odisha Mining & Infrastructure International Expo
-                2024, Flying Chital showcased Flying Chital, a groundbreaking logistics
-                platform, redefining industry standards with innovation and
-                excellence. Seamlessly integrating cutting-edge technologies,
-                Flying Chital empowers businesses to thrive in the digital era, driving
-                efficiency and sustainability. With Flying Chital leading the
-                charge, Flying Chital paves the way for a future of unparalleled growth
-                and productivity in logistics management.
+                2024, Flying Chital showcased Flying Chital, a groundbreaking
+                logistics platform, redefining industry standards with
+                innovation and excellence. Seamlessly integrating cutting-edge
+                technologies, Flying Chital empowers businesses to thrive in the
+                digital era, driving efficiency and sustainability. With Flying
+                Chital leading the charge, Flying Chital paves the way for a
+                future of unparalleled growth and productivity in logistics
+                management.
               </p>
               <Link to="/MiningExpo">
                 <div class="flex justify-start">

@@ -36,11 +36,11 @@ export default function FlyingChitalContainer() {
         <div className="container px-6 py-16 mx-auto text-start">
           <div className="mx-auto">
             <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              Flying Chital Smart Container
+              Flying Chital Smart and Intelligent Container
               <br /> Tracking System
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
@@ -58,7 +58,8 @@ export default function FlyingChitalContainer() {
                   </span>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
-                    / Flying Chital Smart Container Tracking System
+                    / Flying Chital Smart and Intelligent Container Tracking
+                    System
                   </span>{" "}
                 </div>
               </div>
@@ -67,7 +68,7 @@ export default function FlyingChitalContainer() {
         </div>
       </section>
 
-      {/* Section-2- Flying Chital Smart Vehicle  */}
+      {/* Section-2- Flying Chital Smart and Intelligent Vehicle  */}
       <section className="text-gray-600 body-font mt-0">
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
@@ -82,7 +83,7 @@ export default function FlyingChitalContainer() {
                             <span className=" font-heebo text-[40px] text-primary">
                                 Flying&nbsp;
                             </span>
-                            Chital Smart Container
+                            Chital Smart and Intelligent Container
                             <br />
                             Tracking System <br /> (
                             <span className="border-b-2 border-secondary">FC</span>SCTS)
@@ -93,7 +94,7 @@ export default function FlyingChitalContainer() {
               </span>
               <span className=" text-[40px] font-heebo font-bold gap-2">
                 {" "}
-                Chital Smart Container
+                Chital Smart and Intelligent Container
                 <br /> Tracking System (FCSCTS)
               </span>
             </h1>
@@ -126,10 +127,10 @@ export default function FlyingChitalContainer() {
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
 
             <p class="xl:w-3/4 lg:w-3/4 mx-auto text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] ">
-              "Flying Chital Smart Container Tracking System (FCSCTS)"
-              represents a recently developed system or a specialized product.
-              It is advisable to explore the official website of the relevant
-              company or organization for more information.
+              "Flying Chital Smart and Intelligent Container Tracking System
+              (FCSCTS)" represents a recently developed system or a specialized
+              product. It is advisable to explore the official website of the
+              relevant company or organization for more information.
             </p>
           </div>
           <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">

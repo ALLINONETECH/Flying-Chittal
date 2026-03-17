@@ -36,7 +36,7 @@ export default function Professional() {
               Professional Mobile Radio (TETRA)
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex lg:flex-row  gap-2">
@@ -62,7 +62,7 @@ export default function Professional() {
         </div>
       </section>
 
-      {/* Section-2- Flying Chital Smart Vehicle  */}
+      {/* Section-2- Flying Chital Smart and Intelligent Vehicle  */}
       <section className="text-gray-600 body-font mt-0">
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center lg:ml-10 sm:ml-4">
           <div className="lg:max-w-lg lg:w-full md:w-full w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden ">
@@ -200,7 +200,7 @@ export default function Professional() {
             <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
               <span className="border-b-2 border-secondary"></span>Agriculture Automation Solution (SAgAS)</h1>
             <p className="mb-8 text-justify text-base not-italic font-normal leading-6 w-4/5">
-              The Flying Chital Smart Vehicle Tracking System stands as a transformative solution in the domain of logistics and transportation. By offering end-to-end visibility of cargo movement, this system allows businesses to stay informed about their assets' whereabouts in real-time. The holistic approach of this Smart Vehicle Tracking System signifies a comprehensive solution for businesses seeking to streamline operations, mitigate risks of pilferage and revenue leakage, and ensure seamless and secure cargo transportation
+              The Flying Chital Smart and Intelligent Vehicle Tracking System stands as a transformative solution in the domain of logistics and transportation. By offering end-to-end visibility of cargo movement, this system allows businesses to stay informed about their assets' whereabouts in real-time. The holistic approach of this Smart and Intelligent Vehicle Tracking System signifies a comprehensive solution for businesses seeking to streamline operations, mitigate risks of pilferage and revenue leakage, and ensure seamless and secure cargo transportation
             </p>
           </div> */}
         </div>
@@ -218,7 +218,7 @@ export default function Professional() {
             <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
               <span className="border-b-2 border-secondary"></span>Agriculture Automation Solution (SAgAS)</h1>
             <p className="mb-8 text-justify text-base not-italic font-normal leading-6 w-4/5">
-              The Flying Chital Smart Vehicle Tracking System stands as a transformative solution in the domain of logistics and transportation. By offering end-to-end visibility of cargo movement, this system allows businesses to stay informed about their assets' whereabouts in real-time. The holistic approach of this Smart Vehicle Tracking System signifies a comprehensive solution for businesses seeking to streamline operations, mitigate risks of pilferage and revenue leakage, and ensure seamless and secure cargo transportation
+              The Flying Chital Smart and Intelligent Vehicle Tracking System stands as a transformative solution in the domain of logistics and transportation. By offering end-to-end visibility of cargo movement, this system allows businesses to stay informed about their assets' whereabouts in real-time. The holistic approach of this Smart and Intelligent Vehicle Tracking System signifies a comprehensive solution for businesses seeking to streamline operations, mitigate risks of pilferage and revenue leakage, and ensure seamless and secure cargo transportation
             </p>
           </div> */}
         </div>

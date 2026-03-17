@@ -57,7 +57,7 @@ export default function Help() {
               Help Center
             </h1>
             {/* <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p> */}
 
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
@@ -83,7 +83,7 @@ export default function Help() {
         </div>
       </section>
 
-      {/* Section-2- Flying Chital Smart Vehicle  */}
+      {/* Section-2- Flying Chital Smart and Intelligent Vehicle  */}
       {/* <section className="text-gray-600 body-font mt-0">
         <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center ml-10">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">

@@ -32,7 +32,7 @@ export default function Mobilyt() {
               Mobilyt
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start">
-              Intelligent Smart Vehicle Management System
+              Intelligent Smart and Intelligent Vehicle Management System
             </p>
             <p className="mt-3 text-base md:text-lg text-white/90 max-w-4xl">
               An AI-enabled platform engineered to transform fleet operations
@@ -40,7 +40,7 @@ export default function Mobilyt() {
               Equipment and Heavy Earth Movers — through real-time visibility,
               automation, and data-driven control.
             </p>
-             <div className="text-xl lg:text-2xl not-italic font-normal text-white bg-opacity-80 mt-4 lg:mt-6">
+            <div className="text-xl lg:text-2xl not-italic font-normal text-white bg-opacity-80 mt-4 lg:mt-6">
               <div className="flex lg:flex-row gap-2">
                 <div>
                   <span>
@@ -55,7 +55,8 @@ export default function Mobilyt() {
                     Home
                   </Link>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}/ Mobilyt
+                    {" "}
+                    / Mobilyt
                   </span>
                 </div>
               </div>
@@ -92,10 +93,11 @@ export default function Mobilyt() {
             </h1>
             <div className="my-2 rounded-md p-3 bg-slate-100">
               <p className="not-italic font-normal leading-7 text-[#30343F] text-xl font-heebo">
-                Mobilyt is a fully integrated Smart Vehicle Management System
-                that provides end-to-end visibility across every vehicle in your
-                fleet. From real-time GPS tracking to automated maintenance
-                alerts, it puts complete control at your fingertips.
+                Mobilyt is a fully integrated Smart and Intelligent Vehicle
+                Management System that provides end-to-end visibility across
+                every vehicle in your fleet. From real-time GPS tracking to
+                automated maintenance alerts, it puts complete control at your
+                fingertips.
               </p>
             </div>
             <h1 className="text-2xl font-bold text-primary font-heebo my-2">
@@ -139,7 +141,7 @@ export default function Mobilyt() {
                     />
                   </div>
                 </div>
-              )
+              ),
             )}
           </div>
         </div>
@@ -157,7 +159,9 @@ export default function Mobilyt() {
           </div>
           <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">Real-Time Tracking</span>{" "}
+              <span className="text-primary font-heebo">
+                Real-Time Tracking
+              </span>{" "}
               <span className="font-heebo">&amp; Control</span>
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
@@ -187,13 +191,15 @@ export default function Mobilyt() {
         <div className="container mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 py-8 md:py-14 gap-6 md:gap-10">
           <div className="w-full md:flex-1 lg:pr-12 md:pr-8 flex flex-col md:items-start md:text-left items-start text-start">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold title-font mb-1">
-              <span className="text-primary font-heebo">Intelligent Automation</span>{" "}
+              <span className="text-primary font-heebo">
+                Intelligent Automation
+              </span>{" "}
               <span className="font-heebo">&amp; Monitoring</span>
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             <div className="flex flex-col mt-2 space-y-3">
               {[
-                "AI-powered analytics and smart sensor integration",
+                "AI-powered analytics and Smart and Intelligent sensor integration",
                 "Automated attendance validation with GPS verification",
                 "Vehicle utilisation tracking and performance benchmarking",
                 "Preventive maintenance alerts based on real usage data",
@@ -305,18 +311,37 @@ export default function Mobilyt() {
           <div className="mx-auto flex flex-col lg:flex-row py-6 md:py-10">
             <div className="w-full lg:w-1/2 lg:pr-10 flex flex-col items-start text-left ml-4 sm:ml-8 md:ml-12">
               {[
-                { title: "Live Fleet Tracking", sub: "Interactive map with route history and playback" },
-                { title: "Geo-Fencing", sub: "Automated alerts on zone entry and exit" },
-                { title: "AI Automation", sub: "Smart sensors and predictive maintenance" },
-                { title: "Driver Analytics", sub: "Behaviour monitoring and performance scoring" },
-                { title: "Fuel Management", sub: "Consumption tracking and theft prevention" },
+                {
+                  title: "Live Fleet Tracking",
+                  sub: "Interactive map with route history and playback",
+                },
+                {
+                  title: "Geo-Fencing",
+                  sub: "Automated alerts on zone entry and exit",
+                },
+                {
+                  title: "AI Automation",
+                  sub: "Smart and Intelligent sensors and predictive maintenance",
+                },
+                {
+                  title: "Driver Analytics",
+                  sub: "Behaviour monitoring and performance scoring",
+                },
+                {
+                  title: "Fuel Management",
+                  sub: "Consumption tracking and theft prevention",
+                },
               ].map((item, i) => (
                 <div key={i} className="flex mt-5">
-                  <span><img className="p-1" src={IconFC} alt="" /></span>
+                  <span>
+                    <img className="p-1" src={IconFC} alt="" />
+                  </span>
                   <p className="text-xl not-italic font-medium leading-relaxed font-heebo mb-0">
                     {item.title}
                     <div className="flex gap-2">
-                      <span><img src={IconFC} alt="" /></span>
+                      <span>
+                        <img src={IconFC} alt="" />
+                      </span>
                       <p className="text-xl not-italic font-normal leading-7 font-heebo mb-0">
                         {item.sub}
                       </p>
@@ -327,18 +352,37 @@ export default function Mobilyt() {
             </div>
             <div className="w-full lg:w-1/2 lg:pr-10 flex flex-col md:items-start md:text-left ml-4 sm:ml-8 md:ml-12 mt-2 lg:mt-0">
               {[
-                { title: "Real-Time Dashboards", sub: "Live KPIs, exception alerts and custom reports" },
-                { title: "Preventive Maintenance", sub: "Alerts based on usage, mileage and faults" },
-                { title: "ERP / SAP Integration", sub: "Seamless data flow with enterprise systems" },
-                { title: "Compliance Monitoring", sub: "Statutory compliance and audit-ready records" },
-                { title: "Multi-Modal Support", sub: "LMV, HMV, HEM across road, rail and port" },
+                {
+                  title: "Real-Time Dashboards",
+                  sub: "Live KPIs, exception alerts and custom reports",
+                },
+                {
+                  title: "Preventive Maintenance",
+                  sub: "Alerts based on usage, mileage and faults",
+                },
+                {
+                  title: "ERP / SAP Integration",
+                  sub: "Seamless data flow with enterprise systems",
+                },
+                {
+                  title: "Compliance Monitoring",
+                  sub: "Statutory compliance and audit-ready records",
+                },
+                {
+                  title: "Multi-Modal Support",
+                  sub: "LMV, HMV, HEM across road, rail and port",
+                },
               ].map((item, i) => (
                 <div key={i} className="flex mt-5">
-                  <span><img className="p-1" src={IconFC} alt="" /></span>
+                  <span>
+                    <img className="p-1" src={IconFC} alt="" />
+                  </span>
                   <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
                     {item.title}
                     <div className="flex gap-2">
-                      <span><img src={IconFC} alt="" /></span>
+                      <span>
+                        <img src={IconFC} alt="" />
+                      </span>
                       <p className="text-xl not-italic font-normal leading-7 font-heebo">
                         {item.sub}
                       </p>
@@ -363,8 +407,12 @@ export default function Mobilyt() {
           </div>
           <div className="w-full md:flex-1 lg:pl-12 md:pl-8 flex flex-col md:items-start md:text-left items-start text-start">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">
-              <span className="text-primary font-heebo">Driving Efficiency.</span>{" "}
-              <span className="font-heebo">Ensuring Compliance. Protecting Revenue.</span>
+              <span className="text-primary font-heebo">
+                Driving Efficiency.
+              </span>{" "}
+              <span className="font-heebo">
+                Ensuring Compliance. Protecting Revenue.
+              </span>
             </h1>
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             <p className="text-lg not-italic font-normal leading-7 text-[#30343F] font-heebo">

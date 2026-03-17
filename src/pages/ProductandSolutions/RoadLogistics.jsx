@@ -75,7 +75,7 @@ export default function RoadLogistics() {
               Road Logistics
             </h1>
             <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex flex-col lg:flex-row  gap-2">
@@ -732,14 +732,15 @@ export default function RoadLogistics() {
                           and advanced tools such as data analytics, GPS
                           tracking, and digital platforms are instrumental in
                           optimizing the movement of cargo from point of origin
-                          to the port. Real-time data and smart systems enable
-                          better coordination, minimize congestion, and enhance
-                          security, while also offering better visibility and
-                          predictability for all stakeholders. In an era of
-                          increasingly complex and interconnected supply chains,
-                          these technologies are indispensable for port
-                          logistics, driving economic growth, and facilitating
-                          global trade on an unprecedented scale.
+                          to the port. Real-time data and Smart and
+                          Intelligentsystems enable better coordination,
+                          minimize congestion, and enhance security, while also
+                          offering better visibility and predictability for all
+                          stakeholders. In an era of increasingly complex and
+                          interconnected supply chains, these technologies are
+                          indispensable for port logistics, driving economic
+                          growth, and facilitating global trade on an
+                          unprecedented scale.
                         </p>
                       ) : null}
                       <div
