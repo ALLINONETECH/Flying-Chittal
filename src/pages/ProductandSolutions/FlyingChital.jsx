@@ -71,10 +71,12 @@ export default function flyingChital() {
                 </div>
                 <div className="justify">
                   {" "}
+                  <Link to="/" className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
                   <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     Home
                   </span>
+                  </Link>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
                     / Flying Chital

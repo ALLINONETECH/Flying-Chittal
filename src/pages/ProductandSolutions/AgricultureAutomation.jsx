@@ -86,7 +86,7 @@ export default function AgricultureAutomation() {
               <br />
             </h1>
             <p className=" text-xl not-italic font-normal leading-7 font-heebo mb-8 text-justify w-4/5">
-              flying chital in association with C-DAC, Trivandrum provides a
+              Flying Chital in association with C-DAC, Trivandrum provides a
               completely indigenous Smart Agriculture Automation Solution
               (SAgAS) through Transfer of Technology (ToT). The Technology
               developed by C-DAC Trivandrum achieves automation of farms and
@@ -119,7 +119,7 @@ export default function AgricultureAutomation() {
 
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
             <p className="text-base sm:text-xl mb-8 text-justify w-full">
-              flying chital in association with C-DAC, Trivandrum provides a
+              Flying Chital in association with C-DAC, Trivandrum provides a
               completely indigenous Smart Agriculture Automation Solution
               (SAgAS) through Transfer of Technology (ToT). The Technology
               developed by C-DAC Trivandrum achieves automation of farms and

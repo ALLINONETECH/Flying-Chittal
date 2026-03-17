@@ -97,7 +97,7 @@ export default function Chat() {
                   PHONE
                 </h2>
                 <p className="leading-relaxed text-base mb-20 font-semibold text-center  p-4">
-                  +91 8095355400
+                  +91 7676429520
                 </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Chat() {
                   EMAIL
                 </h2>
                 <p className="leading-relaxed text-base  font-semibold mb-20 text-center  p-4">
-                  inquiry@atulyabhinav.com.
+                  info@flyingchital.com
                 </p>
               </div>
             </div>
@@ -398,7 +398,7 @@ export default function Chat() {
         </div>
       </section>
 
-      <div
+      {/* <div
         className="flex items-center justify-center  bg-cover bg-no-repeat "
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${map}) lightgray 50% / cover no-repeat`,
@@ -427,7 +427,6 @@ export default function Chat() {
                 </div>
               </div>
             </div>
-            {/* Repeat the structure for the other office sections */}
             <div className="p-4 lg:w-1/3">
               <div className="h-full bg-white  rounded-tr-[50px] rounded-bl-[50px]  shadow-lg overflow-hidden">
                 <h1 className="title-font sm:text-3xl text-3xl font-bold font-heebo text-[#3A0749] py-6 text-center">
@@ -455,17 +454,16 @@ export default function Chat() {
                   <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
                     Geneva, Switzerland
                   </p>
-                  {/* Empty paragraph for spacing */}
                   <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3"></p>
                   <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    {/* India - 751021 */}
+                  
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">

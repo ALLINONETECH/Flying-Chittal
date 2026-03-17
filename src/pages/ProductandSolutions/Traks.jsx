@@ -1,5 +1,6 @@
 import React from "react";
-
+import HomeIcon from "../../assets/images/HomeIcon.png";
+import { Link } from "react-router-dom";
 export default function Traks() {
   return (
     <div className="bg-white">
@@ -15,6 +16,28 @@ export default function Traks() {
             service, and security operations with real-time visibility,
             workforce accountability, and measurable performance.
           </p>
+             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+          <div className="flex lg:flex-row  gap-2">
+            <div>
+              <span>
+                <img className="" src={HomeIcon} alt="" />
+              </span>
+            </div>
+            <div className="justify">
+              {" "}
+              <Link to="/" className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
+                <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
+                  {" "}
+                  Home
+                </span>
+              </Link>
+              <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
+                {" "}
+                / Traks
+              </span>{" "}
+            </div>
+          </div>
+        </div>
         </div>
       </section>
 

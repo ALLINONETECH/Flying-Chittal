@@ -1,0 +1,81 @@
+<svg width="512" height="256" viewBox="0 0 512 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="28" y1="12" x2="482" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#180022" />
+      <stop offset="0.45" stop-color="#34104E" />
+      <stop offset="1" stop-color="#21012E" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 84) rotate(90) scale(118 162)">
+      <stop stop-color="#9C7BFF" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#9C7BFF" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="globeFill" x1="56" y1="188" x2="238" y2="262" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B786FF" stop-opacity="0.95" />
+      <stop offset="0.55" stop-color="#7C3AED" stop-opacity="0.92" />
+      <stop offset="1" stop-color="#4C1D95" stop-opacity="0.98" />
+    </linearGradient>
+    <linearGradient id="gridStroke" x1="36" y1="154" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5EBFF" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#D7C3FF" stop-opacity="0.15" />
+    </linearGradient>
+    <filter id="softBlur" x="0" y="0" width="512" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+    <clipPath id="globeClip">
+      <rect x="0" y="140" width="256" height="116" rx="0" />
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="256" rx="0" fill="url(#bg)" />
+  <circle cx="292" cy="92" r="126" fill="url(#glow)" />
+  <circle cx="454" cy="210" r="88" fill="#5B1A7F" opacity="0.18" filter="url(#softBlur)" />
+
+  <g clip-path="url(#globeClip)">
+    <circle cx="124" cy="270" r="132" fill="url(#globeFill)" />
+    <circle cx="124" cy="270" r="136" stroke="#E6D7FF" stroke-opacity="0.22" stroke-width="2" />
+
+    <path d="M-16 214C42 196 78 202 124 214C178 228 213 230 264 212" stroke="url(#gridStroke)" stroke-width="1.7" stroke-linecap="round" opacity="0.92" />
+    <path d="M-28 234C30 214 82 216 124 228C171 241 213 242 276 220" stroke="url(#gridStroke)" stroke-width="1.4" stroke-linecap="round" opacity="0.85" />
+    <path d="M-20 254C34 236 88 238 128 248C177 260 216 258 284 235" stroke="url(#gridStroke)" stroke-width="1.2" stroke-linecap="round" opacity="0.75" />
+
+    <path d="M34 146C58 182 72 218 78 256" stroke="url(#gridStroke)" stroke-width="1.4" stroke-linecap="round" opacity="0.8" />
+    <path d="M80 140C102 180 116 220 120 256" stroke="url(#gridStroke)" stroke-width="1.2" stroke-linecap="round" opacity="0.82" />
+    <path d="M126 140C143 178 154 216 160 256" stroke="url(#gridStroke)" stroke-width="1.2" stroke-linecap="round" opacity="0.78" />
+    <path d="M172 146C186 180 200 216 210 256" stroke="url(#gridStroke)" stroke-width="1.3" stroke-linecap="round" opacity="0.68" />
+
+    <path d="M44 196L72 188L98 204L130 194L160 210L184 196L216 208" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M62 226L90 214L112 230L146 220L174 234L202 218" stroke="#FFFFFF" stroke-opacity="0.36" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <g fill="#FFFFFF">
+      <circle cx="72" cy="188" r="2.5" />
+      <circle cx="98" cy="204" r="2.2" />
+      <circle cx="130" cy="194" r="2.4" />
+      <circle cx="160" cy="210" r="2.2" />
+      <circle cx="184" cy="196" r="2.1" />
+      <circle cx="90" cy="214" r="2.2" />
+      <circle cx="146" cy="220" r="2.2" />
+      <circle cx="202" cy="218" r="2.1" />
+    </g>
+  </g>
+
+  <g transform="translate(34 18)">
+    <path d="M100.5 30.5L92 12L95 11L105 27L112 18L114.5 20L107 30L118.5 29L119 32L106 34.5L112 42.5L109.5 44L103 35L100 44.5L97 43.5L99.5 33L87 31L87.5 28L100.5 30.5Z" fill="#FFFFFF" />
+    <path d="M121 27L112.5 10L115.5 9L125.5 24L134.5 14L137 16.5L129 27L140 26L140.5 29L128.5 31.5L135.5 39.5L133 41.5L125.5 32.5L122 42.5L119 41.5L121 30.5L109 28.5L109.5 25.5L121 27Z" fill="#FFFFFF" />
+    <path d="M130 64C130 53.5066 121.493 45 111 45C100.507 45 92 53.5066 92 64C92 67.4806 92.9393 70.7419 94.5792 73.5423L86.2474 93.9705C85.7487 95.1941 86.8782 96.4567 88.1455 96.0803L104.607 91.1902C106.642 91.7321 108.78 92.0206 111 92.0206C121.493 92.0206 130 83.514 130 73.0206V64Z" fill="#FFFFFF" />
+    <path d="M161.834 88.6724C164.716 85.0841 166.44 80.5354 166.44 75.5825C166.44 64.0438 157.062 54.6656 145.523 54.6656C137.703 54.6656 130.887 58.9562 127.29 65.3149L123.782 72.0224L112.457 72.5024L107.169 64.4787C104.734 60.7833 100.614 58.5596 96.19 58.5596C88.9258 58.5596 83.0371 64.4483 83.0371 71.7125C83.0371 78.3883 88.0774 83.9868 94.7165 84.7041L115.444 86.9447L126.476 90.2345L118.33 118.685L127.053 121.184L138.64 99.5328L148.527 121.888L156.937 118.165L147.47 96.7547L163.539 89.9356C162.95 89.5308 162.384 89.1086 161.834 88.6724Z" fill="#FFFFFF" />
+    <path d="M163.601 88.4455L184.958 78.6243C189.461 76.5535 194.55 79.2239 195.555 84.0715C196.3 87.663 194.546 91.2813 191.297 92.9593L169.653 104.132L181.518 121.443L174.029 126.466L159.626 108.407L143.009 109.066L150.666 128.279L142.327 131.701L133.072 108.467L112.645 104.518L114.374 95.569L133.25 99.2156L149.266 83.3752L163.601 88.4455Z" fill="#FFFFFF" />
+    <path d="M127.909 68.3274C127.909 68.3274 138.224 70.9032 145.014 71.0042C152.536 71.116 161.583 68.3274 161.583 68.3274" stroke="#FFFFFF" stroke-width="5.8" stroke-linecap="round" />
+    <path d="M110.493 92.7961L94.5732 110.367C91.5347 113.723 86.6269 114.252 82.9677 111.586C79.1849 108.83 78.344 103.54 81.0887 99.7491L93.0377 83.2476L110.493 92.7961Z" fill="#FFFFFF" />
+    <path d="M93.4313 109.711L99.6311 127.908L91.1266 130.664L83.5449 113.675L93.4313 109.711Z" fill="#FFFFFF" />
+    <path d="M79.7456 101.41L60.8604 109.621C56.4348 111.546 51.302 109.609 49.2559 105.238C47.1235 100.682 49.3082 95.2574 53.9797 93.3914L74.5038 85.1934L79.7456 101.41Z" fill="#FFFFFF" />
+    <ellipse cx="142.5" cy="77" rx="6" ry="4.2" fill="#7E3AF2" />
+    <ellipse cx="154.5" cy="81.5" rx="5.2" ry="3.6" fill="#7E3AF2" />
+    <ellipse cx="165" cy="76.5" rx="4.6" ry="3.4" fill="#7E3AF2" />
+    <ellipse cx="149" cy="90" rx="4.8" ry="3.5" fill="#7E3AF2" />
+  </g>
+
+  <g transform="translate(240 84)">
+    <text x="0" y="38" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="42" font-style="italic" font-weight="900" letter-spacing="1.2">FLYING CHITAL</text>
+    <text x="0" y="72" fill="#E2B29B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Smart Agile Solutions at Fingertip...</text>
+  </g>
+</svg>

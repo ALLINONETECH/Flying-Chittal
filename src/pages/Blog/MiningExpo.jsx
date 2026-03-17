@@ -27,7 +27,7 @@ export default function MiningExpo() {
         <div className="container px-6 py-16 mx-auto text-start">
           <div className=" mx-auto">
             <h1 className="text-4xl lg:text-4.5xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              flying chital Tech Private Limited's Impactful Presence at the 2nd
+              Flying Chital Tech Private Limited's Impactful Presence at the 2nd
               Odisha Mining & Infrastructure International Expo 2024
             </h1>
             <p className=" text-xl md:text-xl lg:text-2xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
@@ -74,7 +74,7 @@ export default function MiningExpo() {
                   <div className="flex">
                     <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
                       At 2nd Odisha Mining & Infrastructure International Expo
-                      2024, stood flying chital Tech Private Limited (AATPL), a
+                      2024, stood Flying Chital Tech Private Limited (AATPL), a
                       beacon of innovation and digital transformation. With a
                       strategic focus on revolutionizing businesses and
                       pioneering technological advancements, AATPL's

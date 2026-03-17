@@ -87,7 +87,7 @@ export default function AquacultureAutomation() {
             </h1>
 
             <p className=" text-xl not-italic font-normal leading-7 font-heebo mb-8 text-justify w-4/5">
-              flying chital in association with C-DAC, Trivandrum provides a
+              Flying Chital in association with C-DAC, Trivandrum provides a
               completely indigenous Smart Aquaculture Automation Solution
               (SAqAS) through Transfer of Technology (ToT). The Smart System
               developed by C-DAC Trivandrum has an autonomous unit equipped to

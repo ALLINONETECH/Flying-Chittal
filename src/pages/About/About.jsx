@@ -6,6 +6,7 @@ import React from "react";
 // import Dev from "../../assets/images/Dev1.png";
 import Dev from "../../assets/images/Debashis Sir.jpg";
 import Sitanshu from "../../assets/images/Sitanshu Sir.jpg";
+import Vijaya from "../../assets/images/vijay.jpeg";
 // import Pradyumna from "../../assets/images/Pradyumna1.png";
 import Pradyumna from "../../assets/images/Praduman Sir.jpg";
 // import Amar from "../../assets/images/Amar1.png";
@@ -35,6 +36,7 @@ import Tata from "../../assets/images/Tata.png";
 import Nippon from "../../assets/images/nipponsteel.png";
 import Nalco from "../../assets/images/Nalco.png";
 import JSW from "../../assets/images/JSW.png";
+import BMC from "../../assets/images/bmclogo.png";
 import Arcelor from "../../assets/images/Arcelor.png";
 import Jindal from "../../assets/images/jindal.png";
 import JSL from "../../assets/images/JSL.png";
@@ -81,19 +83,19 @@ export default function About() {
   return (
     <div>
       <Helmet>
-        <title>About Us | flying chital</title>
+        <title>About Us | Flying Chital</title>
         <meta
           name="description"
-          content="Learn more about flying chital. Discover our mission, vision, and the team behind our success."
+          content="Learn more about Flying Chital. Discover our mission, vision, and the team behind our success."
         />
         <meta
           name="keywords"
-          content="flying chital, about us, team, mission, vision"
+          content="Flying Chital, about us, team, mission, vision"
         />
-        <meta property="og:title" content="About Us | flying chital" />
+        <meta property="og:title" content="About Us | Flying Chital" />
         <meta
           property="og:description"
-          content="Learn more about flying chital. Discover our mission, vision, and the team behind our success."
+          content="Learn more about Flying Chital. Discover our mission, vision, and the team behind our success."
         />
         <meta property="og:url" content="https://atulyabhinav.com/about" />
         <meta property="og:type" content="website" />
@@ -186,7 +188,7 @@ export default function About() {
               we are
             </h1>
             <p className="text-xl not-italic font-normal leading-7 mb-8 text-justify font-heebo w-5/6">
-              Welcome to flying chital Technologies, a pioneering force in the
+              Welcome to Flying Chital Technologies, a pioneering force in the
               realm of digital transformation and innovation. With a dedicated
               focus on revolutionizing businesses, we specialize in the seamless
               automation of enterprise workflows, leveraging cutting-edge
@@ -197,7 +199,7 @@ export default function About() {
               <br />
               Moreover, our comprehensive suite of managed IT services empowers
               organizations to streamline their operations and drive sustainable
-              growth in an ever-evolving digital landscape. At flying chital
+              growth in an ever-evolving digital landscape. At Flying Chital
               Tech Private Limited, we are committed to propelling businesses
               towards a future of unparalleled technological advancement and
               operational excellence.
@@ -233,7 +235,7 @@ export default function About() {
               we are
             </h1>
             <p className="text-md not-italic font-normal leading-7 mb-8  font-heebo w-5/6 md:w-fit text-black">
-              Welcome to flying chital Technologies, a pioneering force in the
+              Welcome to Flying Chital Technologies, a pioneering force in the
               realm of digital transformation and innovation. With a dedicated
               focus on revolutionizing businesses, we specialize in the seamless
               automation of enterprise workflows, leveraging cutting-edge
@@ -244,7 +246,7 @@ export default function About() {
               <br />
               Moreover, our comprehensive suite of managed IT services empowers
               organizations to streamline their operations and drive sustainable
-              growth in an ever-evolving digital landscape. At flying chital
+              growth in an ever-evolving digital landscape. At Flying Chital
               Tech Private Limited, we are committed to propelling businesses
               towards a future of unparalleled technological advancement and
               operational excellence.
@@ -313,7 +315,7 @@ export default function About() {
           </div>
           <div className="w-full">
             <p className="text-xl not-italic font-heebo sm:text-base font-normal text-center sm:text-justify mb-2 text-gray-900 mx-4 sm:mx-24">
-              Choosing flying chital over others in the digital transformation
+              Choosing Flying Chital over others in the digital transformation
               and innovation landscape is a decision grounded in our unwavering
               commitment to excellence and the distinct value we bring to the
               table. We understand that the digital terrain is constantly
@@ -397,10 +399,7 @@ export default function About() {
                 </h2>
                 <div className="flex flex-col">
                   <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                    "Our vision is to empower individuals living in remote and
-                    underserved areas with accessible, affordable and
-                    cutting-edge technology solutions that enhance their quality
-                    of life, bridge the digital divide...
+                    Flying Chital Private Limited envisions building a future-ready enterprise where Artificial Intelligence and Data Analytics form the strategic core of every solution we create—transforming complex challenges into intelligent, market-ready products and platforms. We are committed to developing scalable, high-impact solutions with strong ...
                     <br />{" "}
                   </p>
 
@@ -441,10 +440,7 @@ export default function About() {
                 </h2>
                 <div className="flex flex-col">
                   <p className="text-xl not-italic font-normal leading-7 font-heebo">
-                    "At flying chital Tech Private Limited, our mission is to
-                    pioneer innovation in supply chain and logistics operations,
-                    revolutionizing industrial processes across remote and
-                    underserved areas...
+                    Flying Chital Private Limited is committed to designing and delivering intelligent, scalable, and commercially viable technology solutions powered by Artificial Intelligence and Data Analytics. Our mission is to transform data into actionable insight, automate decision-making through advanced AI capabilities, and build market-ready products that...
                     <br />
                   </p>
                   <Link to="/mission">
@@ -485,10 +481,7 @@ export default function About() {
                 </h2>
                 <div className="flex flex-col">
                   <p className="text-xl  font-normal leading-7 font-heebo">
-                    “At Aditya Abhinav Tech Private Limited, we stand by the
-                    following core values, which guide our every action.
-                    Together, these values shape our company culture and drive
-                    us towards achieving our...
+                    At Flying Chital Private Limited, our foundation rests on unwavering ethics, strong corporate governance, and absolute integrity in every decision we make. We are committed to transparency, accountability, and responsible leadership, ensuring that our actions consistently align with the highest professional and legal standards. We foster a culture ...
                     <br />
                   </p>
                   <Link to="/values">
@@ -537,7 +530,32 @@ export default function About() {
               </span>
             </h1>
           </div>
+          <div className="container mx-auto flex flex-col-reverse md:flex-row px-5 py-24 items-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl  mb-4 font-heebo text-gray-900">
+                Vijay Anand Krishnan
+              </h1>
+              <p className="text-xl not-italic font-bold leading-6 lg:w-1/2 w-full font-heebo text-black">
+                Director, Business Strategy & Growth
+              </p>
+              <p className="text-xl not-italic font-normal leading-7 font-heebo   text-justify mt-2">
+                Mr. Vijay Anand Krishnan is a seasoned entrepreneur having extensive experience across Asia Africa and Middle East. He has founded and led companies operating in various infrastructure verticals such as oil & gas infrastructure, power generation, telecom networks, and water infrastructure.
 
+                As Director – Business Strategy & Growth at Flying Chital Private Limited, he brings deep global market insight, strong government and industry relationships, and proven expertise in structuring complex infrastructure projects. His presence strengthens the Board by enhancing Flying Chital’s capability to expand internationally, build strategic partnerships, and pursue high-value industrial & technology projects.
+
+              </p>
+              <span>
+                <img src={Socialicon} alt="" />
+              </span>
+            </div>
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+              <img
+                className="object-cover object-center rounded-tr-[70px] rounded-bl-[70px]"
+                alt="hero"
+                src={Vijaya}
+              />
+            </div>
+          </div>
           <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-[50px] rounded-br-[50px] ">
               <img
@@ -564,7 +582,7 @@ export default function About() {
                 domestic manufacturing and self-sufficiency, Pradyumna is
                 instrumental in transforming our company into a hub of
                 innovation and self-reliance. Through this experience, Pradyumna
-                embodies flying chital’s vision of being a perfect fusion of
+                embodies Flying Chital’s vision of being a perfect fusion of
                 discipline, operational excellence, cutting edge innovation and
                 strategic foresight. His deep commitment to unyielding business
                 ethics and exemplary corporate governance strongly reflects our
@@ -971,38 +989,22 @@ export default function About() {
           </div>
 
           <div className="flex flex-wrap -m-4">
+                        <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
+
+                <img className="mt-20" src={BMC} alt="" />
+              </div>
+            </div>
             <div className=" md:w-1/3 p-4 ">
               <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <img className="p-1" src={intelligent} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Intelligent 24*7 Real time tracking</h2> */}
                 <div className="flex">
-                  {/* <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p> */}
                 </div>
                 <img className="" src={Tata} alt="" />
               </div>
             </div>
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white h-full  ">
-                {/* <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
 
-                                    <img className="p-1" src={Driver} alt="" />
-                                </div> */}
-                {/* <h2 className="text-lg text-gray-900 font-medium title-font mb-2">Driver Scorecards</h2> */}
-                {/* <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div>
-                                <div className="flex">
-                                    <span><img className="p-1" src={Rightarr} alt="" /></span><p className="leading-relaxed text-base">Alerts on fuel drainage<br /> </p>
-                                </div> */}
                 <img className="mt-20" src={JSW} alt="" />
               </div>
             </div>

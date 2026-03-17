@@ -15,20 +15,20 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <Helmet>
-        <title>flying chital | Home</title>
+        <title>Flying Chital | Home</title>
         <meta
           name="description"
-          content="Welcome to flying chital's official website. Explore our services, solutions, and expertise."
+          content="Welcome to Flying Chital's official website. Explore our services, solutions, and expertise."
         />
         <meta
           name="keywords"
-          content="flying chital, software solutions, web development, consulting"
+          content="Flying Chital, software solutions, web development, consulting"
         />
-        <meta name="author" content="flying chital" />
-        <meta property="og:title" content="flying chital | Home" />
+        <meta name="author" content="Flying Chital" />
+        <meta property="og:title" content="Flying Chital | Home" />
         <meta
           property="og:description"
-          content="Welcome to flying chital's official website. Explore our services, solutions, and expertise."
+          content="Welcome to Flying Chital's official website. Explore our services, solutions, and expertise."
         />
         <meta property="og:url" content="https://atulyabhinav.com/" />
         <meta property="og:type" content="website" />
@@ -65,7 +65,7 @@ export default function Home() {
                 for intelligent digital ecosystems across Android, iOS, and web
                 platforms.
               </p>
-              <div className="mt-8 md:mt-10 flex flex-wrap gap-3">
+              {/* <div className="mt-8 md:mt-10 flex flex-wrap gap-3">
                 <button
                   onClick={() =>
                     digitalRef.current?.scrollIntoView({ behavior: "smooth" })
@@ -100,7 +100,7 @@ export default function Home() {
                 >
                   Results-Driven Systems
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

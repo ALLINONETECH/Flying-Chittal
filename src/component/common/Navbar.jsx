@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import clogo from "../../assets/images/clogo.png";
-import flogo from "../../assets/images/flogo.png";
+import brandLogo from "../../assets/images/fclogofh.png";
 import {
   Bars3Icon,
   ChevronDownIcon,
@@ -124,8 +123,8 @@ export default function Navbar() {
         <div className="flex">
           <Link to="/">
             <img
-              src={clogo || flogo}
-              className="h-14 md:h-16 mr-2"
+              src={brandLogo}
+              className="h-14 md:h-16 w-auto mr-2"
               alt="FlyingChital Logo"
             />
           </Link>

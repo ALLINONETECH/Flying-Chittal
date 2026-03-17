@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import HomeIcon from "../../assets/images/HomeIcon.png";
 export default function Mobilyt() {
   return (
     <div className="bg-white">
@@ -13,7 +14,30 @@ export default function Mobilyt() {
             Movers through real-time visibility, automation and data-driven
             control.
           </p>
+             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
+          <div className="flex lg:flex-row  gap-2">
+            <div>
+              <span>
+                <img className="" src={HomeIcon} alt="" />
+              </span>
+            </div>
+            <div className="justify">
+              {" "}
+              <Link to="/" className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
+                <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
+                  {" "}
+                  Home
+                </span>
+              </Link>
+              <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
+                {" "}
+                / Mobilyt
+              </span>{" "}
+            </div>
+          </div>
         </div>
+        </div>
+     
       </section>
 
       <section className="container mx-auto px-6 py-10">

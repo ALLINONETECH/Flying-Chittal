@@ -376,7 +376,7 @@ export default function Blog() {
             </div>
             <div class="flex-1 px-4 md:px-8 py-6 md:py-10 flex flex-col items-center md:items-start text-center md:text-left">
               <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                flying chital Tech Private Limited's Impactful Presence at the
+                Flying Chital Tech Private Limited's Impactful Presence at the
                 2nd Odisha Mining & Infrastructure International Expo 2024
               </h2>
               <p class="text-lg lg:text-xl font-normal leading-relaxed text-gray-800 mb-6">
