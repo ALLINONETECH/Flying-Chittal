@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import React, { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import OILGas1 from "../../assets/images/OILGas1.png";
 import Blog1 from "../../assets/images/Blog1.png";
 import IMining from "../../assets/images/IMining.png";
@@ -11,7 +11,6 @@ import Fertilizer1 from "../../assets/images/Fertilizer1.png";
 import IAgro from "../../assets/images/IAgro.png";
 import Warehouse from "../../assets/images/Warehouse.png";
 import Aqua1 from "../../assets/images/Aqua1.png";
-import HomeIcon from "../../assets/images/HomeIcon.png";
 
 export default function Industry() {
   const transportRef = useRef();
@@ -22,6 +21,7 @@ export default function Industry() {
   const oilRef = useRef();
   const warehousingRef = useRef();
   const agricultureRef = useRef();
+  const aquacultureRef = useRef();
   const { search } = useLocation();
   const params = new URLSearchParams(search);
   const page = params.get("page");
@@ -34,336 +34,235 @@ export default function Industry() {
   };
 
   useEffect(() => {
-    if (page == "transport") {
-      scrollToSection(transportRef);
-    }
-    if (page == "mining") {
-      scrollToSection(miningRef);
-    }
-    if (page == "metals") {
-      scrollToSection(metalsRef);
-    }
-    if (page == "cement") {
-      scrollToSection(cementRef);
-    }
-    if (page == "fertiliser") {
-      scrollToSection(fertiliserRef);
-    }
-    if (page == "oil") {
-      scrollToSection(oilRef);
-    }
-    if (page == "warehousing") {
-      scrollToSection(warehousingRef);
-    }
-    if (page == "agriculture") {
-      scrollToSection(agricultureRef);
-    }
+    const map = {
+      transport: transportRef,
+      mining: miningRef,
+      metals: metalsRef,
+      cement: cementRef,
+      fertiliser: fertiliserRef,
+      oil: oilRef,
+      warehousing: warehousingRef,
+      agriculture: agricultureRef,
+      aquaculture: aquacultureRef,
+    };
+    if (page && map[page]) scrollToSection(map[page]);
   }, [page]);
+
+  const industries = [
+    {
+      sectionRef: transportRef,
+      image: Transformation,
+      title: "Transportation & Logistics",
+      description:
+        "India's logistics sector is witnessing a transformative shift towards Logistics 4.0, integrating IoT, AI, big data analytics, and automation to streamline operations, enhance efficiency, and optimize supply chains across its vast road, rail, port, and air networks.",
+    },
+    {
+      sectionRef: miningRef,
+      image: IMining,
+      title: "Mining",
+      description:
+        "The Indian mining sector is a vital component of the economy, responsible for extraction of minerals including coal, iron ore, and bauxite. Smart technologies are revolutionizing operations, boosting safety, and driving efficiency at every stage.",
+    },
+    {
+      sectionRef: metalsRef,
+      image: IManufacture,
+      title: "Metal Manufacturing",
+      description:
+        "India's metal manufacturing sector produces steel, aluminum, copper, and more — supporting infrastructure and automotive industries. Intelligent systems enable precision, waste reduction, and end-to-end traceability across plants.",
+    },
+    {
+      sectionRef: cementRef,
+      image: ICement,
+      title: "Cement",
+      description:
+        "The Indian cement industry plays a pivotal role in economic development. Efficient logistics management — from raw material movement to timely dispatch of finished products — is critical, and smart solutions are bridging these gaps.",
+    },
+    {
+      sectionRef: fertiliserRef,
+      image: Fertilizer1,
+      title: "Fertilizers",
+      description:
+        "Fertilizer and chemical plants are significant contributors to India's agricultural sector. Smart logistics and real-time monitoring ensure timely supply of inputs, supporting food security and rural development across the country.",
+    },
+    {
+      sectionRef: oilRef,
+      image: OILGas1,
+      title: "Oil & Gas",
+      description:
+        "The Indian downstream sector encompasses refining and distribution of petroleum products. Intelligent fleet and asset management ensures a continuous supply of essential fuels that power industries and households across India.",
+    },
+    {
+      sectionRef: warehousingRef,
+      image: Warehouse,
+      title: "Warehousing",
+      description:
+        "Warehousing in India is evolving into smart, efficient hubs through automation, robotics, and data analytics. IoT sensors, RFID, and automated storage systems optimize inventory tracking, minimize errors, and elevate supply chain performance.",
+    },
+    {
+      sectionRef: agricultureRef,
+      image: IAgro,
+      title: "Agriculture",
+      description:
+        "India's agricultural sector is transforming through precision farming with drones, satellite imagery, and GPS. IoT devices and soil sensors provide real-time insights into crop conditions, empowering farmers to maximize yield and sustainability.",
+    },
+    {
+      sectionRef: aquacultureRef,
+      image: Aqua1,
+      title: "Aquaculture",
+      description:
+        "India's aquaculture sector integrates IoT, sensors, and data analytics to monitor water quality, temperature, and feeding patterns. Automated feeding systems promote healthier species growth and more sustainable aquaculture practices.",
+    },
+  ];
+
+  const quickNav = [
+    "Transportation & Logistics",
+    "Mining",
+    "Metal Manufacturing",
+    "Cement",
+    "Fertilizers",
+    "Oil & Gas",
+    "Warehousing",
+    "Agriculture",
+    "Aquaculture",
+  ];
+
+  const stats = [
+    { value: "9+", label: "Industries" },
+    { value: "50+", label: "Deployments" },
+    { value: "15+", label: "Years Experience" },
+    { value: "99%", label: "Uptime SLA" },
+  ];
+
   return (
     <div className="overflow-x-hidden">
-      {/* {/ Section-1 /} */}
+      {/* Hero */}
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="relative bg-no-repeat bg-center bg-cover"
         style={{
-          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${Blog1})`,
+          backgroundImage: `linear-gradient(160deg, rgba(30, 27, 130, 0.95) 0%, rgba(55, 52, 169, 0.80) 60%, rgba(99, 55, 170, 0.75) 100%), url(${Blog1})`,
         }}
       >
-        <nav
-          x-data="{ isOpen: false }"
-          className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex lg:hidden"></div>
+        {/* Ambient glows */}
+        <div className="absolute top-12 right-24 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-8 left-12 w-96 h-56 bg-indigo-300/15 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="relative container px-6 pt-24 pb-10 mx-auto text-center">
+          {/* Pill badge */}
+          <span className="inline-block bg-white/20 backdrop-blur-sm text-white text-sm font-semibold px-5 py-1.5 rounded-full mb-6 tracking-widest uppercase">
+            Our Industries
+          </span>
+
+          <h1 className="text-5xl lg:text-7xl font-bold font-heebo text-white leading-tight mb-5">
+            Industries <span className="text-orange-400">We Serve</span>
+          </h1>
+
+          <p className="text-lg lg:text-xl text-white/80 font-heebo max-w-2xl mx-auto mb-10 leading-relaxed">
+            We provide Smart and Intelligent Solutions to Simplify Your Future —
+            across India&apos;s most critical sectors.
+          </p>
+
+          {/* Quick-nav chips */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {quickNav.map((label) => (
+              <span
+                key={label}
+                className="bg-white/10 hover:bg-white/25 backdrop-blur-sm text-white text-sm font-heebo font-medium px-4 py-1.5 rounded-full border border-white/20 cursor-default transition-colors duration-200"
+              >
+                {label}
+              </span>
+            ))}
           </div>
-        </nav>
-        <div className="container px-6 py-16 mx-auto text-start">
-          <div className=" mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              Industries
-            </h1>
-            <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart and Intelligent Solutions to Simplify Your Future
-            </p>
-            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex lg:flex-row  gap-2">
-                <div>
-                  <span>
-                    <img className="" src={HomeIcon} alt="" />
-                  </span>
+
+          {/* Stats strip */}
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden max-w-3xl mx-auto mb-10">
+            {stats.map((s) => (
+              <div
+                key={s.label}
+                className="bg-white/5 backdrop-blur-sm py-6 px-4 text-center"
+              >
+                <div className="text-3xl font-bold font-heebo text-orange-400">
+                  {s.value}
                 </div>
-                <div classNAme="justify">
-                  {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    Home
-                  </span>
-                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    / Industries
-                  </span>{" "}
+                <div className="text-white/70 text-sm font-heebo mt-1">
+                  {s.label}
                 </div>
               </div>
-            </div>
+            ))}
+          </div> */}
+
+          {/* Breadcrumb */}
+          <div className="flex items-center justify-center gap-2 text-white/60 text-sm font-heebo pb-8">
+            <Link to="/" className="hover:text-white transition-colors">
+              Home
+            </Link>
+            <span>/</span>
+            <span className="text-white">Industries</span>
           </div>
         </div>
       </section>
 
-      {/* Section-2  */}
-      <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px] overflow-x-hidden">
-        <div className="container px-5 py-10 mx-auto">
-          <div class="text-center mb-14 mt-10">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-              <span className=" text-indigo-800 font-bold text-[40px]  ">
-                Industries
-              </span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-          </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/2" data-aos="fade-right">
+      {/* Section Header */}
+      <section className="py-16 px-6 bg-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold font-heebo text-gray-900 mb-3">
+            Sectors We <span className="text-indigo-700">Transform</span>
+          </h2>
+          <div className="w-16 h-1 bg-orange-400 rounded-full mx-auto mb-4" />
+          <p className="text-gray-500 font-heebo max-w-2xl mx-auto text-lg">
+            From mining to agriculture, our intelligent platforms drive
+            efficiency and visibility across India&apos;s most critical
+            industries.
+          </p>
+        </div>
+      </section>
+
+      {/* Industries Grid */}
+      <section className="pb-20 px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {industries.map((industry, index) => (
               <div
-                ref={transportRef}
-                className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105"
+                key={index}
+                ref={industry.sectionRef}
+                className="group bg-white border border-gray-100 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col"
               >
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center rounded-tr-[30px] "
-                  src={Transformation}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Transportation & Logistics
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The transportation and logistics industry in India is a
-                    dynamic and rapidly evolving sector that plays a pivotal
-                    role in the country's economic growth. With a vast network
-                    of roads, railways, ports, and airways, India's logistics
-                    sector is witnessing a transformative shift towards
-                    Logistics 4.0. This next wave of innovation involves the
-                    integration of advanced technologies like Internet of Things
-                    (IoT), artificial intelligence (AI), big data analytics, and
-                    automation to streamline operations, enhance efficiency, and
-                    optimize supply chains.
+                <div className="overflow-hidden">
+                  <img
+                    src={industry.image}
+                    alt={industry.title}
+                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-xl font-bold font-heebo text-gray-900 mb-3">
+                    {industry.title}
+                  </h3>
+                  <p className="text-gray-600 font-heebo text-base leading-relaxed flex-1">
+                    {industry.description}
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="p-4 md:w-1/2 " ref={miningRef} data-aos="fade-left">
-              <div className="h-full border-2 border-gray-200 bg-white shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={IMining}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Mining
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The Indian mining sector is a vital component of the
-                    country's economy, responsible for the extraction of various
-                    minerals and metals. India possesses significant mineral
-                    resources, including coal, iron ore, bauxite, and more.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/2" ref={metalsRef} data-aos="fade-right">
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={IManufacture}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Metal Manufacturing
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Metal manufacturing plants in India form a crucial part of
-                    the country's industrial landscape. India has a strong and
-                    diverse metal manufacturing sector, producing various metals
-                    like steel, aluminum, copper, and more. These plants support
-                    infrastructure development, automotive industries, and
-                    numerous other sectors.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/2" ref={cementRef} data-aos="fade-left">
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={ICement}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Cement
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The Indian cement industry plays a pivotal role in the
-                    country's economic development, contributing significantly
-                    to infrastructure projects and construction activities. With
-                    a robust growth trajectory, the industry faces challenges,
-                    among which efficient logistics management stands out
-                    prominently. The seamless movement of raw materials, such as
-                    limestone and gypsum, to manufacturing units and the timely
-                    distribution of finished cement products to various
-                    construction sites are critical for the industry's success.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="p-4 md:w-1/2"
-              ref={fertiliserRef}
-              data-aos="fade-right"
-            >
-              <div className="h-full border-2 border-gray-200  bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={Fertilizer1}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Fertilizers
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    Fertilizer and Chemical manufacturing plants are significant
-                    contributors to India's agricultural and industrial sectors.
-                    These plants produce a wide range of chemical products,
-                    including fertilizers, pesticides, and other chemicals used
-                    in agriculture, manufacturing, and healthcare. The Indian
-                    fertilizer industry plays a crucial role in supporting the
-                    country's agricultural sector, ensuring food security and
-                    promoting rural development.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/2" ref={oilRef} data-aos="fade-left">
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={OILGas1}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Oil & Gas
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The Indian downstream sector is of paramount importance in
-                    the country's energy industry. This sector encompasses the
-                    refining and distribution of petroleum and petrochemical
-                    products. It plays a critical role in ensuring the
-                    availability of essential fuels like petrol, diesel, and
-                    natural gas, which power various industries, transportation,
-                    and households across India. The downstream sector is
-                    pivotal for meeting energy demands and facilitating economic
-                    growth.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="p-4 md:w-1/2"
-              ref={warehousingRef}
-              data-aos="fade-right"
-            >
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={Warehouse}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Warehousing
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    The warehousing industry in India is undergoing a
-                    transformative shift with the integration of advanced
-                    technologies, heralding the era of Logistics 4.0. Embracing
-                    automation, robotics, and data-driven analytics, warehouses
-                    are evolving into Smart and Intelligent and efficient hubs
-                    that streamline operations and enhance overall supply chain
-                    management. Automated storage and retrieval systems (AS/RS),
-                    IoT-enabled sensors, and RFID technology are being employed
-                    to optimize inventory tracking, minimize errors, and improve
-                    overall warehouse efficiency.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="p-4 md:w-1/2"
-              ref={agricultureRef}
-              data-aos="fade-left"
-            >
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={IAgro}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Agriculture
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    In India, the agricultural sector is undergoing a
-                    significant transformation through the adoption of advanced
-                    technologies aimed at improving yield and sustainability.
-                    Precision agriculture, enabled by technologies such as
-                    drones, satellite imagery, and GPS, allows farmers to
-                    optimize resource utilization by precisely managing
-                    irrigation, fertilization, and pest control. Internet of
-                    Things (IoT) devices, soil sensors, and data analytics
-                    provide real-time insights into soil health and crop
-                    conditions, empowering farmers to make informed decisions
-                    and maximize productivity.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="p-4 md:w-1/2"
-              ref={agricultureRef}
-              data-aos="fade-right"
-            >
-              <div className="h-full border-2 border-gray-200 bg-white border-opacity-60 shadow-lg md:shadow-xl overflow-hidden rounded-tr-[30px] rounded-bl-[30px] transition-transform transform hover:scale-105">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={Aqua1}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3">
-                    Aquaculture
-                  </h1>
-                  <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                    In India, the aquaculture sector is increasingly turning to
-                    advanced technologies to enhance productivity and yield.
-                    With the rising demand for seafood, integrating innovative
-                    solutions has become crucial for sustainable and efficient
-                    aquaculture practices. Advanced technologies such as
-                    Internet of Things (IoT), sensors, and data analytics are
-                    being employed to monitor and manage crucial parameters like
-                    water quality, temperature, and feeding patterns. Automated
-                    feeding systems with precise control mechanisms optimize the
-                    nutrition intake of aquatic species, promoting healthier
-                    growth.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA Banner */}
+      <section className="bg-indigo-900 py-16 px-6 text-center">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-3xl lg:text-4xl font-bold font-heebo text-white mb-4">
+            Ready to Transform Your Industry?
+          </h2>
+          <p className="text-indigo-200 font-heebo text-lg mb-8">
+            Connect with our team to discover how Flying Chittal&apos;s
+            intelligent solutions can drive efficiency in your sector.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-heebo font-semibold px-8 py-3 rounded-full transition-colors duration-200"
+          >
+            Get in Touch
+          </Link>
         </div>
       </section>
     </div>
