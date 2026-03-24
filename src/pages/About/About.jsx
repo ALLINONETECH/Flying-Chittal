@@ -18,9 +18,11 @@ import kalki from "../../assets/images/KK Panda Sir.jpg";
 import Bibhu from "../../assets/images/Bibhu Sir.jpg";
 import Abhijit from "../../assets/images/Abhijit Radke.jpg";
 import Amit from "../../assets/images/Amit.jpg";
+import Jaya from "../../assets/images/jaya.png";
 import Chiranjiv from "../../assets/images/Chiranjiv sir 2.jpg";
 import Biplab from "../../assets/images/Biplab JI.jpg";
 import Debashis from "../../assets/images/Debashis Sahoo ji.jpg";
+import Nayan from "../../assets/images/nayan.jpeg";
 
 import Samba from "../../assets/images/Samba1.png";
 import Who1 from "../../assets/images/Who1.png";
@@ -37,6 +39,7 @@ import Nippon from "../../assets/images/nipponsteel.png";
 import Nalco from "../../assets/images/Nalco.png";
 import JSW from "../../assets/images/JSW.png";
 import BMC from "../../assets/images/bmclogo.png";
+import YCS from "../../assets/images/ycs.png";
 import Arcelor from "../../assets/images/Arcelor.png";
 import Jindal from "../../assets/images/jindal.png";
 import JSL from "../../assets/images/JSL.png";
@@ -83,6 +86,7 @@ export default function About() {
 
   const deploymentClients = [
     { name: "BMC", logo: BMC },
+    { name: "YCS", logo: YCS },
     { name: "Tata", logo: Tata },
     { name: "JSW", logo: JSW },
     { name: "Nippon Steel", logo: Nippon },
@@ -97,12 +101,12 @@ export default function About() {
   ];
 
   const leadershipTeam = [
-    {
-      name: "Vijay Anand Krishnan",
-      role: "Director, Business Strategy, Growth & Sustainability",
-      image: Vijaya,
-      bio: "Mr. Vijay Anand Krishnan is a seasoned entrepreneur having extensive experience across Asia Africa and Middle East. He has founded and led companies operating in various infrastructure verticals such as oil and gas infrastructure, power generation, telecom networks, and water infrastructure. As Director - Business Strategy and Growth at Flying Chital Private Limited, he brings deep global market insight, strong government and industry relationships, and proven expertise in structuring complex infrastructure projects. His presence strengthens the Board by enhancing Flying Chital's capability to expand internationally, build strategic partnerships, and pursue high-value industrial and technology projects.",
-    },
+    // {
+    //   name: "Vijay Anand Krishnan",
+    //   role: "Director, Business Strategy, Growth & Sustainability",
+    //   image: Vijaya,
+    //   bio: "Mr. Vijay Anand Krishnan is a seasoned entrepreneur having extensive experience across Asia Africa and Middle East. He has founded and led companies operating in various infrastructure verticals such as oil and gas infrastructure, power generation, telecom networks, and water infrastructure. As Director - Business Strategy and Growth at Flying Chital Private Limited, he brings deep global market insight, strong government and industry relationships, and proven expertise in structuring complex infrastructure projects. His presence strengthens the Board by enhancing Flying Chital's capability to expand internationally, build strategic partnerships, and pursue high-value industrial and technology projects.",
+    // },
     {
       name: "Pradyumna Mishra",
       role: "Co-Founder & CEO",
@@ -120,37 +124,55 @@ export default function About() {
 
   const developmentTeam = [
     {
-      name: "Abhijit Radke",
-      role: "Software Developer",
-      image: Abhijit,
-    },
-    {
       name: "Bibhudutta Das",
       role: "Principal Software Architect",
       image: Bibhu,
+      bio: "Full-stack technologist specializing in building and scaling production systems for enterprises and high-growth startups. He drives architecture, delivery, and reliability from concept to deployment.",
+    },
+    {
+      name: "Abhijit Radke",
+      role: "Software Developer",
+      image: Abhijit,
+      bio: "Software developer focused on building scalable and maintainable web applications. He translates complex requirements into clean, reliable code with strong attention to quality.",
     },
     {
       name: "Amit Mazumdar",
       role: "Software Developer",
       image: Amit,
+      bio: "Software developer with strong backend and application performance expertise. He builds secure, efficient systems using modern engineering practices and clean code principles.",
+    },
+    {
+      name: "Jaya Kumari",
+      role: "Manager– Business Development & Strategy",
+      image: Jaya,
+      bio: "Business development and strategy leader focused on growth, partnerships, and market expansion. She aligns client needs with technology solutions to drive sustainable business outcomes.",
     },
   ];
 
   const operationTeam = [
     {
-      name: "Biplab Kumar Naik",
-      role: "Operations Manager",
-      image: Biplab,
-    },
-    {
       name: "Chiranjeev Bindhani",
       role: "Senior Operation Manager",
       image: Chiranjiv,
+      bio: "Senior operations leader managing large-scale execution and field delivery. He drives process efficiency, service quality, and reliable outcomes across client engagements.",
+    },
+    {
+      name: "Biplab Kumar Naik",
+      role: "Operations Manager",
+      image: Biplab,
+      bio: "Operations manager overseeing workflows, resource planning, and on-ground execution. He ensures projects are delivered efficiently while maintaining high quality and performance standards.",
     },
     {
       name: "Debashish Sahoo",
       role: "Field Executive",
       image: Debashis,
+      bio: "Field executive focused on smooth on-site execution and timely delivery. He supports deployments with a strong commitment to client satisfaction and operational discipline.",
+    },
+    {
+      name: "P Nayan Kumar Dora",
+      role: "Field Executive",
+      image: Nayan,
+      bio: "Field executive supporting implementation, service continuity, and client support on site. He ensures tasks are completed on schedule with close attention to quality.",
     },
   ];
 
@@ -202,25 +224,33 @@ export default function About() {
   return (
     <div>
       <Helmet>
-        <title>About Us | Flying Chital</title>
+        <title>About Us | Flying Chital - Meet Our Expert Team</title>
         <meta
           name="description"
-          content="Learn more about Flying Chital. Discover our mission, vision, and the team behind our success."
+          content="Learn more about Flying Chital and meet our expert team. Discover our mission, vision, and the leaders driving innovation in AI, IoT, and enterprise solutions."
         />
         <meta
           name="keywords"
-          content="Flying Chital, about us, team, mission, vision"
+          content="Flying Chital, about us, leadership team, mission, vision, technology experts, AI, IoT, digital solutions"
         />
-        <meta property="og:title" content="About Us | Flying Chital" />
+        <meta
+          property="og:title"
+          content="About Us | Flying Chital - Leadership & Development Team"
+        />
         <meta
           property="og:description"
-          content="Learn more about Flying Chital. Discover our mission, vision, and the team behind our success."
+          content="Meet the expert team at Flying Chital. Led by visionary leaders with decades of experience in technology, innovation, and business strategy."
         />
-        <meta property="og:url" content="https://atulyabhinav.com/about" />
+        <meta property="og:url" content="https://flyingchital.com/about" />
         <meta property="og:type" content="website" />
+        <meta name="author" content="Flying Chital Private Limited" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:site_name" content="Flying Chital" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | Flying Chital" />
         <meta
-          property="og:image"
-          content="https://atulyabhinav.com/assets/Praduman%20Sir-e7a57db4.jpg"
+          name="twitter:description"
+          content="Meet the expert team behind Flying Chital - Leaders in AI, IoT, and enterprise digital solutions"
         />
       </Helmet>
       {/* Section-1 About us */}
@@ -559,6 +589,7 @@ export default function About() {
         title="Development Team"
         subtitle="Our builders and architects delivering scalable, intelligent software products."
         members={developmentTeam}
+        showBio
       />
 
       <TeamSection
@@ -566,6 +597,7 @@ export default function About() {
         title="Operation Team"
         subtitle="The operational experts ensuring reliability, speed, and high-quality on-ground delivery."
         members={operationTeam}
+        showBio
       />
 
       <section

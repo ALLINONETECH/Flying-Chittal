@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function TeamSection({
   sectionRef,
@@ -10,6 +10,14 @@ export default function TeamSection({
   variant = "grid",
   sectionClassName = "",
 }) {
+  const [expandedMember, setExpandedMember] = useState(null);
+
+  const toggleMemberBio = (memberName) => {
+    setExpandedMember((current) =>
+      current === memberName ? null : memberName,
+    );
+  };
+
   return (
     <section
       ref={sectionRef}
@@ -74,37 +82,74 @@ export default function TeamSection({
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {members.map((member) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-9">
+            {members.map((member, idx) => (
               <article
                 key={member.name}
-                className="group h-full rounded-3xl border border-gray-200 bg-white shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+                className="group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
               >
-                <div className="relative bg-gradient-to-br from-indigo-50 to-orange-50 p-4">
-                  <div className="rounded-2xl overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className={`w-full ${showBio ? "h-56" : "h-64"} object-cover object-center group-hover:scale-[1.03] transition-transform duration-500`}
-                      loading="lazy"
-                    />
-                  </div>
+                {/* Photo area */}
+                <div className="relative overflow-hidden bg-gradient-to-br from-indigo-100 via-purple-50 to-orange-50 h-72 p-4">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-contain object-top group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  {/* Bottom fade into card */}
+                  <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
+                  {/* Index badge */}
+                  <span className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm text-indigo-700 text-xs font-bold font-heebo flex items-center justify-center shadow-sm">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
                 </div>
 
-                <div className="px-5 pb-6 pt-3">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 font-heebo">
+                {/* Info */}
+                <div className="relative z-10 px-6 pt-4 pb-7">
+                  <h3 className="text-xl font-bold text-gray-900 font-heebo leading-tight break-words">
                     {member.name}
                   </h3>
-                  <p className="mt-1 text-primary font-semibold font-heebo">
-                    {member.role}
-                  </p>
+                  <div className="flex items-center gap-2 mt-2">
+                    <span className="block w-5 h-0.5 bg-orange-400 rounded-full" />
+                    <p className="text-sm font-semibold font-heebo text-indigo-600">
+                      {member.role}
+                    </p>
+                  </div>
 
                   {showBio && member.bio ? (
-                    <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed font-heebo">
-                      {member.bio}
-                    </p>
+                    <>
+                      <p className="mt-3 text-sm text-gray-500 leading-relaxed font-heebo line-clamp-2">
+                        {member.bio}
+                      </p>
+
+                      <button
+                        type="button"
+                        onClick={() => toggleMemberBio(member.name)}
+                        className="mt-3 text-sm font-semibold font-heebo text-indigo-600 hover:text-indigo-700 transition-colors"
+                        aria-expanded={expandedMember === member.name}
+                      >
+                        {expandedMember === member.name
+                          ? "Show less"
+                          : "Read bio"}
+                      </button>
+
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                          expandedMember === member.name
+                            ? "max-h-40 opacity-100 mt-3"
+                            : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <p className="text-sm text-gray-600 leading-relaxed font-heebo">
+                          {member.bio}
+                        </p>
+                      </div>
+                    </>
                   ) : null}
                 </div>
+
+                {/* Animated bottom accent bar */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </article>
             ))}
           </div>
