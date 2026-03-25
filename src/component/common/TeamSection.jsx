@@ -86,66 +86,83 @@ export default function TeamSection({
             {members.map((member, idx) => (
               <article
                 key={member.name}
-                className="group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+                className="group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
               >
                 {/* Photo area */}
-                <div className="relative overflow-hidden bg-gradient-to-br from-indigo-100 via-purple-50 to-orange-50 h-72 p-4">
+                <div className="relative overflow-hidden bg-gradient-to-br from-indigo-100 via-purple-50 to-orange-50 h-[25rem] p-4">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-contain object-top group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
-                  {/* Bottom fade into card */}
-                  <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
-                  {/* Index badge */}
-                  <span className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm text-indigo-700 text-xs font-bold font-heebo flex items-center justify-center shadow-sm">
+                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/25 to-transparent" />
+
+                  <span className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/85 backdrop-blur-sm text-indigo-700 text-xs font-bold font-heebo flex items-center justify-center shadow-sm">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
-                </div>
-
-                {/* Info */}
-                <div className="relative z-10 px-6 pt-4 pb-7">
-                  <h3 className="text-xl font-bold text-gray-900 font-heebo leading-tight break-words">
-                    {member.name}
-                  </h3>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="block w-5 h-0.5 bg-orange-400 rounded-full" />
-                    <p className="text-sm font-semibold font-heebo text-indigo-600">
-                      {member.role}
-                    </p>
-                  </div>
 
                   {showBio && member.bio ? (
                     <>
-                      <p className="mt-3 text-sm text-gray-500 leading-relaxed font-heebo line-clamp-2">
-                        {member.bio}
-                      </p>
+                      <div className="absolute left-5 right-5 bottom-5 z-20 rounded-2xl border border-gray-200/50 bg-white/80 backdrop-blur-md p-5 shadow-lg transition-all duration-300 md:group-hover:opacity-0 md:group-hover:translate-y-3">
+                        <p className="text-sm font-semibold font-heebo text-indigo-600">
+                          {member.role}
+                        </p>
+                        <h3 className="mt-1 text-2xl font-bold text-gray-900 font-heebo leading-tight break-words">
+                          {member.name}
+                        </h3>
+                        <button
+                          type="button"
+                          onClick={() => toggleMemberBio(member.name)}
+                          className="mt-4 inline-block px-4 py-2 text-sm font-semibold font-heebo text-white bg-indigo-600/80 hover:bg-indigo-700/90 backdrop-blur-md border border-indigo-500/50 rounded-lg transition-all duration-300 md:hidden"
+                          aria-expanded={expandedMember === member.name}
+                        >
+                          {expandedMember === member.name
+                            ? "Show less"
+                            : "Read bio"}
+                        </button>
+                      </div>
 
-                      <button
-                        type="button"
-                        onClick={() => toggleMemberBio(member.name)}
-                        className="mt-3 text-sm font-semibold font-heebo text-indigo-600 hover:text-indigo-700 transition-colors"
-                        aria-expanded={expandedMember === member.name}
-                      >
-                        {expandedMember === member.name
-                          ? "Show less"
-                          : "Read bio"}
-                      </button>
+                      <div className="pointer-events-none absolute left-5 right-5 bottom-5 z-30 rounded-2xl border-2 border-indigo-500/60 bg-white/75 backdrop-blur-md p-5 shadow-xl opacity-0 translate-y-4 transition-all duration-300 md:group-hover:opacity-100 md:group-hover:translate-y-0 md:group-hover:pointer-events-auto">
+                        <p className="text-sm font-semibold font-heebo text-gray-500">
+                          {member.role}
+                        </p>
+                        <h3 className="mt-1 text-2xl font-bold text-gray-900 font-heebo leading-tight break-words">
+                          {member.name}
+                        </h3>
+                        <p className="mt-3 text-sm text-gray-600 leading-relaxed font-heebo line-clamp-4">
+                          {member.bio}
+                        </p>
+                      </div>
 
                       <div
-                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        className={`absolute left-5 right-5 bottom-5 z-30 rounded-2xl border-2 border-indigo-500/60 bg-white/75 backdrop-blur-md p-5 shadow-xl transition-all duration-300 md:hidden ${
                           expandedMember === member.name
-                            ? "max-h-40 opacity-100 mt-3"
-                            : "max-h-0 opacity-0"
+                            ? "opacity-100 translate-y-0"
+                            : "pointer-events-none opacity-0 translate-y-4"
                         }`}
                       >
-                        <p className="text-sm text-gray-600 leading-relaxed font-heebo">
+                        <p className="text-sm font-semibold font-heebo text-gray-500">
+                          {member.role}
+                        </p>
+                        <h3 className="mt-1 text-2xl font-bold text-gray-900 font-heebo leading-tight break-words">
+                          {member.name}
+                        </h3>
+                        <p className="mt-3 text-sm text-gray-600 leading-relaxed font-heebo line-clamp-4">
                           {member.bio}
                         </p>
                       </div>
                     </>
-                  ) : null}
+                  ) : (
+                    <div className="absolute left-5 right-5 bottom-5 z-20 rounded-2xl border border-gray-200/50 bg-white/80 backdrop-blur-md p-5 shadow-lg">
+                      <p className="text-sm font-semibold font-heebo text-indigo-600">
+                        {member.role}
+                      </p>
+                      <h3 className="mt-1 text-2xl font-bold text-gray-900 font-heebo leading-tight break-words">
+                        {member.name}
+                      </h3>
+                    </div>
+                  )}
                 </div>
 
                 {/* Animated bottom accent bar */}

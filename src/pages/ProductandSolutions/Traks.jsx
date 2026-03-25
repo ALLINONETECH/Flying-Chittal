@@ -411,6 +411,68 @@ export default function Traks() {
           </div>
         </div>
       </section>
+
+      {/* Complementary Solutions CTA */}
+      <section className="bg-gradient-to-r from-slate-900 via-indigo-900 to-purple-900 py-16 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-heebo mb-4">
+              Strengthen Your Operational Ecosystem
+            </h2>
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+              Traks delivers field force excellence. Pair it with intelligent
+              logistics management and mobility solutions for complete
+              operational visibility.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Link
+              to="/flyingchital"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-white font-heebo mb-3 group-hover:text-blue-300 transition-colors">
+                Flying Chital - Logistics Intelligence
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Integrate field operations with end-to-end logistics visibility.
+                Flying Chital provides multimodal logistics management,
+                real-time transportation tracking, and supply chain network
+                control.
+              </p>
+              <span className="text-blue-300 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                Explore Flying Chital →
+              </span>
+            </Link>
+
+            <Link
+              to="/mobilyt"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-white font-heebo mb-3 group-hover:text-orange-300 transition-colors">
+                Mobilyt - Vehicle Intelligence
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Add vehicle-level insights to your field operations. Mobilyt
+                delivers real-time fleet tracking, driver behavior analytics,
+                and asset telematics to complement field force management.
+              </p>
+              <span className="text-orange-300 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                Explore Mobilyt →
+              </span>
+            </Link>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              to="/services"
+              className="inline-block px-8 py-3 bg-white text-indigo-900 hover:bg-gray-100 rounded-lg font-semibold transition-colors"
+            >
+              View All Services & Solutions
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

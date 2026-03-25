@@ -43,6 +43,8 @@ export default function ProductFeatureCardsGrid({
                     className="h-6 w-6 object-contain"
                     src={card.icon}
                     alt=""
+                    loading="lazy"
+                    decoding="async"
                   />
                 ) : (
                   <span className="text-sm font-bold text-primary font-heebo">

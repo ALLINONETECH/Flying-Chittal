@@ -1,51 +1,165 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Services() {
-    return (
-        <div>
-            <section className="bg-[#000048]  dark:bg-gray-900">
-                <nav x-data="{ isOpen: false }" className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
-                    <div className="flex items-center justify-between">
-                        {/* <a href="#">
-                            <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt />
-                        </a> */}
-                        {/* Mobile menu button */}
-                        <div className="flex lg:hidden">
+  const services = [
+    {
+      title: "Enterprise Application Development",
+      description:
+        "Custom web and mobile applications built with modern stacks (React, Node.js, Java) optimized for scale and performance.",
+      link: "/flyingchital",
+    },
+    {
+      title: "Field Force Management & Workforce Optimization",
+      description:
+        "Deploy intelligent field operations platforms with real-time tracking, attendance, and performance monitoring via Traks.",
+      link: "/traks",
+    },
+    {
+      title: "Vehicle Tracking & Mobility Intelligence",
+      description:
+        "Real-time fleet tracking, vehicle management, and mobility operations control with Mobilyt platform.",
+      link: "/mobilyt",
+    },
+    {
+      title: "AI & Data Analytics",
+      description:
+        "Transform raw operational data into actionable business intelligence with advanced analytics and predictive modeling.",
+      link: "/blog",
+    },
+    {
+      title: "Managed IT Services",
+      description:
+        "End-to-end managed IT support, cloud infrastructure, and system reliability for enterprise operations.",
+      link: "/contact",
+    },
+    {
+      title: "Digital Transformation Consulting",
+      description:
+        "Strategic guidance to reimagine your business processes and operations through technology and automation.",
+      link: "/contact",
+    },
+  ];
 
-                        </div>
-                    </div>
-                    {/* Mobile Menu open: "block", Menu closed: "hidden" */}
-                    <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-                        {/* <div className="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:-px-8 lg:space-y-0">
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Home</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Components</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Pricing</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Contact</a>
-                        </div> */}
-                        {/* <a className="block px-5 py-2 mt-4 text-sm text-center text-white capitalize bg-blue-600 rounded-lg lg:mt-0 hover:bg-blue-500 lg:w-auto" href="#">
-                            Get started
-                        </a> */}
-                    </div>
-                </nav>
-                <div className="container px-6 py-16 mx-auto text-center">
-                    <div className="max-w-lg mx-auto">
-                        <h1 className="text-3xl font-semibold text-gray-100 dark:text-white lg:text-4xl">Building Your Next App with our Awesome components</h1>
-                        <p className="mt-6 text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero similique
-                            obcaecati illum mollitia.</p>
-                        <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
-                            Features
-                        </button>
-                        <p className="mt-3 text-sm text-gray-400 ">No credit card required</p>
-                    </div>
-                    <div className="flex justify-center mt-10">
-                        <img className="object-cover w-full h-96 rounded-xl lg:w-4/5" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" />
-                    </div>
-                </div>
-            </section>
-
-
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-[#000048] via-indigo-900 to-purple-900">
+        <div className="container px-6 py-16 mx-auto text-center">
+          <div className="max-w-2xl mx-auto">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Enterprise Technology Services
+            </h1>
+            <p className="text-lg text-gray-200 mb-8">
+              Comprehensive software, automation, and consulting services to
+              drive your digital transformation and operational excellence.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block px-8 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold transition-colors"
+            >
+              Discuss Your Project
+            </Link>
+          </div>
         </div>
-    )
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
+            Our Service Offerings
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, idx) => (
+              <Link
+                key={idx}
+                to={service.link}
+                className="group bg-white p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 mb-4">{service.description}</p>
+                <span className="text-indigo-600 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                  Learn more →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Products CTA */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+            Explore Our Product Platforms
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link
+              to="/flyingchital"
+              className="group text-center p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg hover:from-blue-100 hover:to-blue-200 transition-colors"
+            >
+              <h3 className="text-2xl font-bold text-blue-900 mb-3 group-hover:text-blue-700">
+                Flying Chital
+              </h3>
+              <p className="text-blue-800 mb-4">
+                Intelligent multimodal logistics management platform with
+                real-time visibility and AI-driven optimization.
+              </p>
+              <span className="text-blue-700 font-semibold">Explore →</span>
+            </Link>
+            <Link
+              to="/traks"
+              className="group text-center p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg hover:from-purple-100 hover:to-purple-200 transition-colors"
+            >
+              <h3 className="text-2xl font-bold text-purple-900 mb-3 group-hover:text-purple-700">
+                Traks
+              </h3>
+              <p className="text-purple-800 mb-4">
+                AI-powered field force management for sales, service, and
+                security operations with real-time tracking.
+              </p>
+              <span className="text-purple-700 font-semibold">Explore →</span>
+            </Link>
+            <Link
+              to="/mobilyt"
+              className="group text-center p-8 bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg hover:from-orange-100 hover:to-orange-200 transition-colors"
+            >
+              <h3 className="text-2xl font-bold text-orange-900 mb-3 group-hover:text-orange-700">
+                Mobilyt
+              </h3>
+              <p className="text-orange-800 mb-4">
+                Smart mobility platform delivering vehicle tracking, fleet
+                management, and operational insights.
+              </p>
+              <span className="text-orange-700 font-semibold">Explore →</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-gradient-to-r from-indigo-600 to-purple-600 py-16">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Ready to Transform Your Operations?
+          </h2>
+          <p className="text-gray-100 mb-8 max-w-2xl mx-auto">
+            Let's discuss how our enterprise solutions can streamline your
+            workflows, reduce costs, and unlock new growth opportunities.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block px-8 py-3 text-indigo-600 bg-white hover:bg-gray-100 rounded-lg font-semibold transition-colors"
+          >
+            Get Started Today
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
 }
 
-export default Services
+export default Services;

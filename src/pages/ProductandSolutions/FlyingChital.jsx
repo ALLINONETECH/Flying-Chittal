@@ -461,6 +461,61 @@ export default function flyingChital() {
           </div>
         </div>
       </section>
+
+      {/* Complementary Solutions CTA */}
+      <section className="bg-gradient-to-r from-slate-900 via-indigo-900 to-purple-900 py-16 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-heebo mb-4">
+              Complete Your Operational Stack
+            </h2>
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+              Flying Chital works best alongside intelligent field force and vehicle management solutions for truly end-to-end operational visibility.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Link 
+              to="/traks" 
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-white font-heebo mb-3 group-hover:text-indigo-300 transition-colors">
+                Traks - Field Force Management
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Complement your logistics operations with intelligent field force management. Traks adds real-time workforce visibility, attendance integrity, and field team optimization to your logistics stack.
+              </p>
+              <span className="text-indigo-300 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                Explore Traks →
+              </span>
+            </Link>
+
+            <Link 
+              to="/mobilyt" 
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-white font-heebo mb-3 group-hover:text-orange-300 transition-colors">
+                Mobilyt - Vehicle Tracking
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Add vehicle-level telematics and asset intelligence to your Flying Chital logistics platform. Mobilyt delivers real-time fleet visibility, driver behavior analytics, and mobility operations control.
+              </p>
+              <span className="text-orange-300 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                Explore Mobilyt →
+              </span>
+            </Link>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link 
+              to="/services" 
+              className="inline-block px-8 py-3 bg-white text-indigo-900 hover:bg-gray-100 rounded-lg font-semibold transition-colors"
+            >
+              View All Services & Solutions
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

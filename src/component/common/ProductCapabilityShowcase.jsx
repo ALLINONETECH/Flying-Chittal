@@ -82,6 +82,8 @@ export default function ProductCapabilityShowcase({
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                         src={card.image}
                         alt={card.alt}
+                        loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/45 to-transparent"></div>
 

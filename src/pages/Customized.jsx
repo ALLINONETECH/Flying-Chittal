@@ -1,139 +1,283 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-// import Cement from '../../assets/images/Cement.png'
-// import Thermal from '../../assets/images/Thermal.png'
-// import Fertilizer from '../../assets/images/Fertilizer.png'
-// import Down from '../../assets/images/Down.png'
-// import Agro from '../../assets/images/Agro.png'
-import Blog1 from "../assets/images/Blog1.png";
-// import Efficiency4 from "../../assets/images/Efficiency4.png";
-// import Resource4 from "../../assets/images/Resource4.png";
-// import Realtime4 from "../../assets/images/Realtime4.png";
-// import Reduced4 from "../../assets/images/Reduced4.png";
-// import Data4 from "../../assets/images/Data4.png";
-// import Safety4 from "../../assets/images/Safety4.png";
-// import Customer4 from "../../assets/images/Customer4.png";
 import customized1 from "../assets/images/customized1.png";
 import Customizedbg from "../assets/images/Customizedbg.png";
 import HomeIcon from "../assets/images/HomeIcon.png";
 import Custom from "../assets/images/Custom.png";
-import home1 from "../assets/images/home1.jpg";
 import customised1 from "../assets/images/istockphoto-om9LdZNEx8.jpg";
+import Telematics2 from "../assets/images/Telematics2.png";
+import IconFC from "../assets/images/IconFC.png";
+
+import ProductIntroSection from "../component/common/ProductIntroSection";
+import ProductCapabilityShowcase from "../component/common/ProductCapabilityShowcase";
+import ProductFeatureDeepDive from "../component/common/ProductFeatureDeepDive";
+import ProductFeatureCardsGrid from "../component/common/ProductFeatureCardsGrid";
 
 export default function Customized() {
+  const introSections = [
+    {
+      heading: "Tailored Logistics Features for Complex Operations",
+      body: "Flying Chital Customized Features enables domain-specific workflows that adapt to unique operational rules, compliance constraints, and enterprise priorities.",
+    },
+    {
+      heading: "Unified Interface for Multi-System Coordination",
+      body: "Integrate regulatory portals, enterprise systems, and logistics workflows into one digital operating view for faster and safer decisions.",
+    },
+    {
+      heading: "Operational Flexibility Without Fragmentation",
+      body: "Deliver custom process controls and reports without breaking data continuity, movement visibility, or control room execution discipline.",
+    },
+  ];
+
+  const introCapabilityTags = [
+    "Custom Workflow Design",
+    "Regulatory Integrations",
+    "Role-Based Decision Views",
+  ];
+
+  const capabilityStats = [
+    { value: "1", label: "Unified Platform" },
+    { value: "API", label: "Integration Ready" },
+    { value: "24/7", label: "Control Visibility" },
+  ];
+
+  const capabilityCards = [
+    {
+      kicker: "Workflow",
+      title: "Custom Process Logic for Operations",
+      description:
+        "Model organization-specific workflows for dispatch, compliance, approvals, and execution monitoring in one adaptable system.",
+      image: customized1,
+      alt: "Customized logistics workflow",
+    },
+    {
+      kicker: "Integration",
+      title: "Government and Enterprise System Interfaces",
+      description:
+        "Connect logistics data with regulatory and enterprise systems to reduce manual dependency and improve process integrity.",
+      image: Custom,
+      alt: "System integration dashboard",
+    },
+    {
+      kicker: "Control",
+      title: "Role-Based Stakeholder Enablement",
+      description:
+        "Deliver contextual access for operations, supervisors, transporters, and management teams through role-specific views.",
+      image: customised1,
+      alt: "Role-based control in logistics",
+    },
+    {
+      kicker: "Intelligence",
+      title: "Custom Reporting and Action Insights",
+      description:
+        "Create tailored reports and operational dashboards aligned to business KPIs, shift cycles, and governance needs.",
+      image: Telematics2,
+      alt: "Custom logistics analytics",
+    },
+  ];
+
+  const enablementBullets = [
+    "Custom workflow templates for domain-specific operations",
+    "System-driven approvals and validation checkpoints",
+    "Unified visibility across stakeholders and process layers",
+    "Regulatory and enterprise portal integration support",
+    "Reduced manual intervention and process latency",
+    "Faster action with role-based operational context",
+  ];
+
+  const governanceBullets = [
+    "Custom KPI dashboards by function and responsibility",
+    "Shift-wise, route-wise, and period-wise reporting controls",
+    "Compliance evidence and audit-ready data trails",
+    "Predictive and prescriptive insight extensions",
+    "Configurable exception monitoring and alert routing",
+    "Executive summaries for governance and planning reviews",
+  ];
+
+  const platformCards = [
+    {
+      title: "Custom Workflow Engine",
+      description: "Design operational paths to match your business logic.",
+      icon: IconFC,
+    },
+    {
+      title: "System Integrations",
+      description: "Interface with regulatory and enterprise platforms.",
+      icon: IconFC,
+    },
+    {
+      title: "Role-Based Access",
+      description: "Deliver the right data to the right stakeholder.",
+      icon: IconFC,
+    },
+    {
+      title: "Command Visibility",
+      description: "Central view for active process and movement control.",
+      icon: IconFC,
+    },
+    {
+      title: "Custom Reports",
+      description: "Generate tailored insights for execution and leadership.",
+      icon: IconFC,
+    },
+    {
+      title: "Audit and Compliance",
+      description: "Track verifiable actions across integrated workflows.",
+      icon: IconFC,
+    },
+  ];
+
   return (
-    <div>
-      {/* Section-1 Industry */}
-      {/* {/ Section-1 /} */}
+    <div className="overflow-x-hidden bg-white">
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="bg-no-repeat bg-center bg-cover rounded-br-[80px] lg:rounded-br-[110px]"
         style={{
-          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${Customizedbg})`,
+          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.78) 8%, rgba(55, 52, 169, 0.48) 115%), url(${Customizedbg})`,
         }}
       >
-        <nav
-          x-data="{ isOpen: false }"
-          className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex lg:hidden"></div>
-          </div>
-          {/* <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div> */}
-        </nav>
-        <div className="container px-6 py-16 mx-auto text-start">
-          <div className=" mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              Customized Features
-            </h1>
-            <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart and Intelligent Solutions to Simplify Your Future
-            </p>
-            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex lg:flex-row  gap-2">
-                <div>
-                  <span>
-                    <img className="" src={HomeIcon} alt="" />
-                  </span>
-                </div>
-                <div classNAme="justify">
+        <div className="container px-6 py-14 lg:py-20 mx-auto text-start">
+          <h1 className="text-4xl lg:text-6xl font-medium font-heebo text-gray-100">
+            Customized Features
+          </h1>
+          <p className="text-xl lg:text-3xl mt-4 lg:mt-6 text-white font-medium tracking-wide font-heebo max-w-4xl">
+            Tailored Logistics Workflows for Your Business Reality
+          </p>
+          <p className="mt-3 text-base md:text-lg text-white/90 max-w-4xl">
+            Build organization-specific logistics capabilities on a unified
+            platform without sacrificing visibility, control, or compliance
+            confidence.
+          </p>
+
+          <div className="text-lg lg:text-2xl font-normal text-white mt-5 lg:mt-7">
+            <div className="flex gap-2 items-center">
+              <img src={HomeIcon} alt="Home" />
+              <div>
+                <Link
+                  to="/"
+                  className="text-[#F85A47] font-[700] font-heebo lg:text-[28px] text-[16px]"
+                >
+                  Home
+                </Link>
+                <span className="font-[700] font-heebo lg:text-[28px] text-[16px]">
                   {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    Flying Chital
-                  </span>
-                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    / Customized Features
-                  </span>{" "}
-                </div>
+                  / Flying Chital / Customized Features
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="text-center mb-14 mt-10">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-          <span className=" text-indigo-800 font-bold text-[40px]  ">
-            Customized
-          </span>
-          <span className=" text-[40px] font-heebo font-bold "> Features</span>
-        </h1>
-        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+      <ProductIntroSection
+        productName="Customized Features"
+        eyebrow="Flying Chital Logistics Suite"
+        title="Configurable Capabilities for Complex Logistics Use Cases"
+        subtitle="Design process, integration, and reporting layers that reflect your operational model while keeping one connected control framework."
+        capabilityTags={introCapabilityTags}
+        sections={introSections}
+      />
 
-        <p class="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s text-justify">
-          A comprehensive logistics platform with customized features offers a
-          game-changing solution by providing greater capability, empowerment to
-          stakeholders, and easy access to critical decision-making information,
-          all on one unified platform. This integrated system, capable of
-          interfacing with diverse government regulatory portals such as Vahan,
-          Parivahan/Sarathi, GSTIN, Mining Regulatory Portals, FOIS, and
-          ERP/SAP, offers a seamless and efficient solution for businesses.
-        </p>
-      </div>
+      <ProductCapabilityShowcase
+        eyebrow="Customization Capabilities"
+        title="Adaptable Control Across Workflow, Data, and Governance Layers"
+        description="A customization framework built for high-control environments where operational context, compliance, and agility must coexist."
+        stats={capabilityStats}
+        cards={capabilityCards}
+      />
 
-      <div
-        className="flex items-center justify-center  bg-cover bg-no-repeat "
-        style={{
-          background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${customised1}) lightgray 50% / cover no-repeat`,
-        }}
-      >
-        <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
-          <h1 className="font-heebo text-4xl font-bold mb-5 ">
-            Customized Features
-          </h1>
-          <p className="font-heebo text-lg font-normal text-justify mb-10 ">
-            Stakeholders can access vital data, track shipments, and ensure
-            compliance with regulatory requirements effortlessly. By
-            consolidating information from these various sources into a single
-            platform, businesses gain a holistic view of their logistics
-            operations, enabling more informed decision-making, enhanced
-            efficiency, and ultimately, a competitive edge in today's dynamic
-            and complex supply chain landscape.
-          </p>
-        </div>
-      </div>
+      <ProductFeatureDeepDive
+        eyebrow="Execution Enablement"
+        title="Operational Flexibility with System-Led Control"
+        description="Enable stakeholder-specific workflows and integrated checkpoints so execution remains agile without losing process discipline."
+        image={customised1}
+        imageAlt="Customized operations enablement"
+        bullets={enablementBullets}
+        stats={["Flexible workflows", "Unified view", "Faster execution"]}
+      />
 
-      <div className="container px-6 py-16 mx-auto text-center">
-        <div className="max-w-lg mx-auto">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-            <span className="text-indigo-800 font-bold text-[40px]">
-              Interfaced
-            </span>
-            <span className="text-[40px] font-heebo font-bold">
-              / Integrated With
-            </span>
-          </h1>
-          <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+      <ProductFeatureDeepDive
+        eyebrow="Governance Layer"
+        title="Custom Analytics and Compliance Confidence"
+        description="Shape analytics and reporting around your governance model while maintaining evidence-ready operational traceability."
+        image={Custom}
+        imageAlt="Custom governance dashboards"
+        bullets={governanceBullets}
+        stats={["Actionable insights", "Audit readiness", "Better decisions"]}
+        reverse
+        overlayLabel="Custom Governance Intelligence"
+        overlayText="Tailored reporting and compliance visibility that supports both day-to-day operations and strategic oversight."
+      />
+
+      <ProductFeatureCardsGrid
+        eyebrow="Platform Modules"
+        title="Built-In Modules for Custom Logistics Deployments"
+        description="Capabilities designed to support process customization, integration orchestration, and control-room governance."
+        cards={platformCards}
+      />
+
+      <section className="bg-gradient-to-r from-slate-900 via-indigo-900 to-purple-900 py-16 sm:py-24">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-heebo mb-4">
+              Build Your Ideal Logistics Configuration
+            </h2>
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+              Combine customized workflows with multimodal execution and
+              telemetry intelligence for a complete, enterprise-ready logistics
+              stack.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              to="/flyingchital"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                Flying Chital
+              </h3>
+              <p className="text-gray-200">
+                Unified multimodal logistics intelligence and execution control.
+              </p>
+            </Link>
+
+            <Link
+              to="/roadLogistics"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-300 transition-colors">
+                Road Logistics
+              </h3>
+              <p className="text-gray-200">
+                Apply custom workflow controls to road movement operations.
+              </p>
+            </Link>
+
+            <Link
+              to="/telematics"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                Telematics
+              </h3>
+              <p className="text-gray-200">
+                Extend custom process intelligence with real-time telemetry
+                data.
+              </p>
+            </Link>
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              to="/contact"
+              className="inline-block px-8 py-3 bg-white text-indigo-900 hover:bg-gray-100 rounded-lg font-semibold transition-colors"
+            >
+              Talk to Our Logistics Team
+            </Link>
+          </div>
         </div>
-        <div className="flex justify-center mt-8">
-          <img
-            className="object-cover object-center drop-shadow-lg"
-            alt="hero"
-            src={Custom}
-          />
-        </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -184,6 +184,8 @@ export default function SampleScreenshots({
                 alt={`screenshot-${realIdx + 1}`}
                 className="w-full h-auto block select-none"
                 draggable={false}
+                loading={diff === 0 ? "eager" : "lazy"}
+                decoding="async"
               />
             </div>
           );

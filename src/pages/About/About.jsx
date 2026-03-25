@@ -54,7 +54,6 @@ import TeamSection from "../../component/common/TeamSection";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useRef } from "react";
-import { Helmet } from "react-helmet-async";
 
 export default function About() {
   const whoRef = useRef();
@@ -223,36 +222,6 @@ export default function About() {
 
   return (
     <div>
-      <Helmet>
-        <title>About Us | Flying Chital - Meet Our Expert Team</title>
-        <meta
-          name="description"
-          content="Learn more about Flying Chital and meet our expert team. Discover our mission, vision, and the leaders driving innovation in AI, IoT, and enterprise solutions."
-        />
-        <meta
-          name="keywords"
-          content="Flying Chital, about us, leadership team, mission, vision, technology experts, AI, IoT, digital solutions"
-        />
-        <meta
-          property="og:title"
-          content="About Us | Flying Chital - Leadership & Development Team"
-        />
-        <meta
-          property="og:description"
-          content="Meet the expert team at Flying Chital. Led by visionary leaders with decades of experience in technology, innovation, and business strategy."
-        />
-        <meta property="og:url" content="https://flyingchital.com/about" />
-        <meta property="og:type" content="website" />
-        <meta name="author" content="Flying Chital Private Limited" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:site_name" content="Flying Chital" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | Flying Chital" />
-        <meta
-          name="twitter:description"
-          content="Meet the expert team behind Flying Chital - Leaders in AI, IoT, and enterprise digital solutions"
-        />
-      </Helmet>
       {/* Section-1 About us */}
       <section
         className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"

@@ -11,7 +11,6 @@ import homebluebg from "../../assets/images/homebluebg.png";
 import fclogo from "../../assets/images/fclogo.png";
 import traksLogo from "../../assets/images/traks/Tracks Logo (Square)).png";
 import mobilytLogo from "../../assets/images/Mobilyt/Mobilyt Logo.png";
-import { Helmet } from "react-helmet-async";
 export default function Home() {
   const digitalRef = useRef();
   const automateRef = useRef();
@@ -107,27 +106,6 @@ export default function Home() {
 
   return (
     <ParallaxProvider>
-      <Helmet>
-        <title>Flying Chital | Home</title>
-        <meta
-          name="description"
-          content="Welcome to Flying Chital's official website. Explore our services, solutions, and expertise."
-        />
-        <meta
-          name="keywords"
-          content="Flying Chital, software solutions, web development, consulting"
-        />
-        <meta name="author" content="Flying Chital" />
-        <meta property="og:title" content="Flying Chital | Home" />
-        <meta
-          property="og:description"
-          content="Welcome to Flying Chital's official website. Explore our services, solutions, and expertise."
-        />
-        <meta property="og:url" content="https://atulyabhinav.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://atulyabhinav.com/logo.png" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
       <style>{`
         @keyframes fcTicker {
           0% { transform: translateX(0); }

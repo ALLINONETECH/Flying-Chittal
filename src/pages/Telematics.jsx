@@ -1,107 +1,284 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-// import Cement from '../../assets/images/Cement.png'
-// import Thermal from '../../assets/images/Thermal.png'
-// import Fertilizer from '../../assets/images/Fertilizer.png'
-// import Down from '../../assets/images/Down.png'
-// import Agro from '../../assets/images/Agro.png'
-import Blog1 from "../assets/images/Blog1.png";
-// import Efficiency4 from "../../assets/images/Efficiency4.png";
-// import Resource4 from "../../assets/images/Resource4.png";
-// import Realtime4 from "../../assets/images/Realtime4.png";
-// import Reduced4 from "../../assets/images/Reduced4.png";
-// import Data4 from "../../assets/images/Data4.png";
-// import Safety4 from "../../assets/images/Safety4.png";
-// import Customer4 from "../../assets/images/Customer4.png";
-import Telematics2 from "../assets/images/Telematics2.png";
-import Telematicsbg from "../assets/images/Telematicsbg.png";
 import HomeIcon from "../assets/images/HomeIcon.png";
-import home1 from "../assets/images/home1.jpg";
+import Telematicsbg from "../assets/images/Telematicsbg.png";
 import Telematics1 from "../assets/images/istockphoto-Iio1XWTxUf.jpg";
+import Telematics2 from "../assets/images/Telematics2.png";
+import Card2 from "../assets/images/istockphoto-Gmxn3WwBXe2.jpg";
+import Card11 from "../assets/images/istockphoto-ATX1YbrzMH.jpg";
+import IconFC from "../assets/images/IconFC.png";
+
+import ProductIntroSection from "../component/common/ProductIntroSection";
+import ProductCapabilityShowcase from "../component/common/ProductCapabilityShowcase";
+import ProductFeatureDeepDive from "../component/common/ProductFeatureDeepDive";
+import ProductFeatureCardsGrid from "../component/common/ProductFeatureCardsGrid";
 
 export default function Telematics() {
+  const introSections = [
+    {
+      heading: "Intelligent Telematics for Logistics 4.0",
+      body: "Flying Chital Telematics combines GPS, RFID, sensor data, and digital checkpoints to provide continuous operational visibility across assets and movement workflows.",
+    },
+    {
+      heading: "Real-Time Monitoring and Event Intelligence",
+      body: "Capture location, transit events, and operational alerts instantly so teams can respond quickly and reduce disruption risk.",
+    },
+    {
+      heading: "Connected Decisions Across the Supply Chain",
+      body: "Use data streams and analytics to improve route discipline, utilization, compliance control, and movement predictability.",
+    },
+  ];
+
+  const introCapabilityTags = [
+    "Live Asset Visibility",
+    "IoT Event Tracking",
+    "Telematics Analytics",
+  ];
+
+  const capabilityStats = [
+    { value: "24/7", label: "Asset Monitoring" },
+    { value: "GPS", label: "Location Intelligence" },
+    { value: "IoT", label: "Sensor Integration" },
+  ];
+
+  const capabilityCards = [
+    {
+      kicker: "Tracking",
+      title: "Real-Time Vehicle and Asset Tracking",
+      description:
+        "Track vehicle movement, route adherence, and transit progress continuously with map-driven telematics visibility.",
+      image: Telematics1,
+      alt: "Real-time telematics tracking",
+    },
+    {
+      kicker: "Sensors",
+      title: "RFID and IoT-Based Event Capture",
+      description:
+        "Collect operational events from connected sensors and checkpoints to improve movement validation and control.",
+      image: Telematics2,
+      alt: "RFID and IoT telemetry",
+    },
+    {
+      kicker: "Compliance",
+      title: "Driver and Vehicle Compliance Readiness",
+      description:
+        "Strengthen execution safety with digital verification workflows and compliance-aware operations checks.",
+      image: Card11,
+      alt: "Driver and vehicle compliance",
+    },
+    {
+      kicker: "Control",
+      title: "Operational Alerting and Exception Response",
+      description:
+        "Detect anomalies early and route exceptions to the right teams with alert-led intervention paths.",
+      image: Card2,
+      alt: "Telematics control room alerts",
+    },
+  ];
+
+  const monitoringBullets = [
+    "Continuous GPS tracking for vehicle and asset movement",
+    "Route deviation and geofence alert monitoring",
+    "RFID-assisted checkpoint validation",
+    "Automated event logging for journey milestones",
+    "Role-based dashboards for operations command teams",
+    "Faster escalation through exception-led workflows",
+  ];
+
+  const analyticsBullets = [
+    "Descriptive analytics for operational transparency",
+    "Predictive cues for delay and utilization risk",
+    "Prescriptive recommendations for response actions",
+    "Fuel and movement efficiency trend insights",
+    "Service-level performance and compliance indicators",
+    "Custom executive reports for decision-making",
+  ];
+
+  const platformCards = [
+    {
+      title: "Live Tracking Console",
+      description:
+        "Monitor active movement with map-based situational visibility.",
+      icon: IconFC,
+    },
+    {
+      title: "Geofence Alerts",
+      description: "Trigger immediate alerts on route or zone deviations.",
+      icon: IconFC,
+    },
+    {
+      title: "RFID Event Capture",
+      description:
+        "Record transit checkpoints and movement transitions digitally.",
+      icon: IconFC,
+    },
+    {
+      title: "Driver Compliance Checks",
+      description: "Validate operational readiness before assignment.",
+      icon: IconFC,
+    },
+    {
+      title: "Control Room Dashboard",
+      description: "Centralized monitoring for logistics command teams.",
+      icon: IconFC,
+    },
+    {
+      title: "Analytics and Reports",
+      description:
+        "Convert telemetry data into actionable operational insights.",
+      icon: IconFC,
+    },
+  ];
+
   return (
-    <div>
-      {/* {/ Section-1 /} */}
+    <div className="overflow-x-hidden bg-white">
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="bg-no-repeat bg-center bg-cover rounded-br-[80px] lg:rounded-br-[110px]"
         style={{
-          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${Telematicsbg})`,
+          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.78) 8%, rgba(55, 52, 169, 0.48) 115%), url(${Telematicsbg})`,
         }}
       >
-        <nav
-          x-data="{ isOpen: false }"
-          className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex lg:hidden"></div>
-          </div>
-          {/* <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"></div> */}
-        </nav>
-        <div className="container px-6 py-16 mx-auto text-start">
-          <div className=" mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              Telematics
-            </h1>
-            <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart and Intelligent Solutions to Simplify Your Future
-            </p>
-            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex lg:flex-row  gap-2">
-                <div>
-                  <span>
-                    <img className="" src={HomeIcon} alt="" />
-                  </span>
-                </div>
-                <div classNAme="justify">
+        <div className="container px-6 py-14 lg:py-20 mx-auto text-start">
+          <h1 className="text-4xl lg:text-6xl font-medium font-heebo text-gray-100">
+            Telematics
+          </h1>
+          <p className="text-xl lg:text-3xl mt-4 lg:mt-6 text-white font-medium tracking-wide font-heebo max-w-4xl">
+            Intelligent Telematics for Real-Time Logistics Visibility
+          </p>
+          <p className="mt-3 text-base md:text-lg text-white/90 max-w-4xl">
+            A modern telemetry platform that connects vehicles, assets, sensors,
+            and events to deliver faster decisions and more reliable operations.
+          </p>
+
+          <div className="text-lg lg:text-2xl font-normal text-white mt-5 lg:mt-7">
+            <div className="flex gap-2 items-center">
+              <img src={HomeIcon} alt="Home" />
+              <div>
+                <Link
+                  to="/"
+                  className="text-[#F85A47] font-[700] font-heebo lg:text-[28px] text-[16px]"
+                >
+                  Home
+                </Link>
+                <span className="font-[700] font-heebo lg:text-[28px] text-[16px]">
                   {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    Flying Chital
-                  </span>
-                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    /Telematics
-                  </span>{" "}
-                </div>
+                  / Flying Chital / Telematics
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="text-center mb-14 mt-10">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-          <span className=" text-indigo-800 font-bold text-[40px]  ">
-            Telematics
-          </span>
-        </h1>
-        <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+      <ProductIntroSection
+        productName="Telematics"
+        eyebrow="Flying Chital Logistics Suite"
+        title="Connected Telemetry for Smarter Movement Decisions"
+        subtitle="Unify tracking, event capture, alerting, and analytics into one intelligent telematics system for logistics operations."
+        capabilityTags={introCapabilityTags}
+        sections={introSections}
+      />
 
-        <p class="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s text-justify">
-          Advanced telematics, RFID, Automatic Number Plate Recognition, IoT
-          sensors, and edge computing are integral components of Logistics 4.0,
-          as they enable real-time data collection, analysis, and
-          decision-making in supply chain management.
-        </p>
-      </div>
+      <ProductCapabilityShowcase
+        eyebrow="Telematics Capabilities"
+        title="Operational Visibility from Sensor Signal to Action"
+        description="Capabilities built to improve monitoring precision, response speed, and execution confidence across logistics networks."
+        stats={capabilityStats}
+        cards={capabilityCards}
+      />
 
-      <div
-        className="flex items-center justify-center  bg-cover bg-no-repeat "
-        style={{
-          background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${Telematics1}) lightgray 50% / cover no-repeat`,
-        }}
-      >
-        <div className=" w-auto md:w-4/5 text-start mt-40 text-white  grid content-end">
-          <h1 className="font-heebo text-4xl font-bold mb-5 ">Telematics</h1>
-          <p className="font-heebo text-lg font-normal text-justify mb-10 ">
-            These technologies enhance tracking, visibility, and automation,
-            making logistics more efficient and responsive to changing demands.
-            They optimize route planning, reduce delays, and improve asset
-            management, leading to cost savings and streamlined operations.
-          </p>
+      <ProductFeatureDeepDive
+        eyebrow="Monitoring Layer"
+        title="Real-Time Movement Monitoring and Exception Alerts"
+        description="Track movement continuously and resolve issues earlier with sensor-driven events, route visibility, and dashboard-led control."
+        image={Telematics1}
+        imageAlt="Telematics operations monitoring"
+        bullets={monitoringBullets}
+        stats={["Live telemetry", "Faster alerts", "Better control"]}
+      />
+
+      <ProductFeatureDeepDive
+        eyebrow="Intelligence Layer"
+        title="Analytics That Improve Telematics-Led Operations"
+        description="Transform telemetry streams into actionable insights that support planning, efficiency improvement, and stronger operational outcomes."
+        image={Telematics2}
+        imageAlt="Telematics analytics"
+        bullets={analyticsBullets}
+        stats={["Insight depth", "Lower risk", "Higher reliability"]}
+        reverse
+        overlayLabel="Telemetry Intelligence"
+        overlayText="Operational intelligence that turns live tracking data into practical, execution-ready decisions."
+      />
+
+      <ProductFeatureCardsGrid
+        eyebrow="Platform Modules"
+        title="Built-In Capabilities for Telematics Operations"
+        description="Core modules for monitoring teams, compliance workflows, and analytics-driven logistics management."
+        cards={platformCards}
+      />
+
+      <section className="bg-gradient-to-r from-slate-900 via-indigo-900 to-purple-900 py-16 sm:py-24">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-heebo mb-4">
+              Integrate Telematics with Your Logistics Stack
+            </h2>
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+              Connect telematics intelligence with multimodal planning and road
+              execution for end-to-end operational control.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              to="/flyingchital"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                Flying Chital
+              </h3>
+              <p className="text-gray-200">
+                Unified multimodal logistics intelligence and execution control.
+              </p>
+            </Link>
+
+            <Link
+              to="/roadLogistics"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-300 transition-colors">
+                Road Logistics
+              </h3>
+              <p className="text-gray-200">
+                Apply telematics signals directly to road movement execution
+                decisions.
+              </p>
+            </Link>
+
+            <Link
+              to="/railLogistics"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                Rail Logistics
+              </h3>
+              <p className="text-gray-200">
+                Extend telemetry-informed control into rail corridor operations.
+              </p>
+            </Link>
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              to="/contact"
+              className="inline-block px-8 py-3 bg-white text-indigo-900 hover:bg-gray-100 rounded-lg font-semibold transition-colors"
+            >
+              Talk to Our Logistics Team
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

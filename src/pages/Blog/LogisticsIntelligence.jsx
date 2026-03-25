@@ -52,9 +52,16 @@ export default function LogisticsIntelligence() {
             Challenge, Ideate &amp; Create
           </p>
           <div className="flex items-center gap-2 text-white/80 text-sm font-heebo">
-            <Link to="/" className="text-orange-400 hover:text-orange-300 font-semibold transition-colors">Home</Link>
+            <Link
+              to="/"
+              className="text-orange-400 hover:text-orange-300 font-semibold transition-colors"
+            >
+              Home
+            </Link>
             <span>/</span>
-            <Link to="/blog" className="hover:text-white transition-colors">Blogs</Link>
+            <Link to="/blog" className="hover:text-white transition-colors">
+              Blogs
+            </Link>
             <span>/</span>
             <span className="text-white">Logistics Intelligence</span>
           </div>
@@ -66,14 +73,17 @@ export default function LogisticsIntelligence() {
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl lg:text-4xl font-bold font-heebo text-gray-900 mb-2">
             <span className="text-indigo-700">Logistics</span> Intelligence,{" "}
-            <span className="text-indigo-700">Connectivity</span> &amp; Real-Time Virtualization
+            <span className="text-indigo-700">Connectivity</span> &amp;
+            Real-Time Virtualization
           </h2>
           <div className="w-16 h-1 rounded-full bg-orange-400 mx-auto mb-6" />
           <p className="text-lg text-gray-600 font-heebo leading-relaxed max-w-3xl mx-auto">
-            These concepts represent the convergence of advanced technologies and data-driven approaches in logistics.
-            By leveraging Logistics Intelligence, ensuring Logistics Connectivity, and implementing Real-Time
-            Virtualization, businesses can achieve more efficient, agile, and responsive supply chain operations —
-            ultimately leading to improved customer satisfaction and competitive advantage.
+            These concepts represent the convergence of advanced technologies
+            and data-driven approaches in logistics. By leveraging Logistics
+            Intelligence, ensuring Logistics Connectivity, and implementing
+            Real-Time Virtualization, businesses can achieve more efficient,
+            agile, and responsive supply chain operations — ultimately leading
+            to improved customer satisfaction and competitive advantage.
           </p>
         </div>
       </section>
@@ -94,14 +104,22 @@ export default function LogisticsIntelligence() {
                     className="w-20 h-20 rounded-xl object-cover flex-shrink-0"
                   />
                   <div>
-                    <h3 className="text-xl font-bold font-heebo text-gray-900 mb-2">{feat.title}</h3>
-                    <p className="text-gray-600 font-heebo text-sm leading-relaxed">{feat.description}</p>
+                    <h3 className="text-xl font-bold font-heebo text-gray-900 mb-2">
+                      {feat.title}
+                    </h3>
+                    <p className="text-gray-600 font-heebo text-sm leading-relaxed">
+                      {feat.description}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img src={Logisticintel1} alt="Logistics Intelligence" className="w-full h-full object-cover" />
+              <img
+                src={Logisticintel1}
+                alt="Logistics Intelligence"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -115,11 +133,16 @@ export default function LogisticsIntelligence() {
           </h3>
           <div className="space-y-4">
             {insights.map((insight, i) => (
-              <div key={i} className="flex gap-4 p-5 bg-indigo-50 border border-indigo-100 rounded-2xl">
+              <div
+                key={i}
+                className="flex gap-4 p-5 bg-indigo-50 border border-indigo-100 rounded-2xl"
+              >
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-600 text-white text-sm font-bold flex items-center justify-center">
                   {i + 1}
                 </div>
-                <p className="text-gray-700 font-heebo leading-relaxed">{insight}</p>
+                <p className="text-gray-700 font-heebo leading-relaxed">
+                  {insight}
+                </p>
               </div>
             ))}
           </div>
@@ -138,10 +161,71 @@ export default function LogisticsIntelligence() {
             Logistics Intelligence, Connectivity &amp; Real-Time Virtualization
           </h2>
           <p className="text-lg font-heebo text-white/80 leading-relaxed">
-            Let's revolutionize the way we manage logistics in the mining and ore processing industry by harnessing
-            the power of IoT and smart technologies. Together, we can unlock an era of unprecedented efficiency
-            and optimization.
+            Let's revolutionize the way we manage logistics in the mining and
+            ore processing industry by harnessing the power of IoT and smart
+            technologies. Together, we can unlock an era of unprecedented
+            efficiency and optimization.
           </p>
+        </div>
+      </section>
+
+      {/* CTA - Related Solutions */}
+      <section className="bg-gradient-to-r from-indigo-600 to-purple-600 py-16 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-heebo mb-4">
+              Ready to Transform Your Logistics?
+            </h2>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
+              Explore our intelligent logistics platform built to deliver
+              real-time connectivity, analytics, and operational control.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <Link
+              to="/flyingchital"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-white font-heebo mb-3 group-hover:text-yellow-300 transition-colors">
+                Flying Chital Platform
+              </h3>
+              <p className="text-gray-100 mb-4">
+                End-to-end multimodal logistics management with real-time
+                visibility, AI-driven optimization, and integrated digital
+                workflows.
+              </p>
+              <span className="text-yellow-300 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                Explore Solution →
+              </span>
+            </Link>
+
+            <Link
+              to="/services"
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-white font-heebo mb-3 group-hover:text-yellow-300 transition-colors">
+                Logistics Services
+              </h3>
+              <p className="text-gray-100 mb-4">
+                Comprehensive enterprise solutions including supply chain
+                optimization, data analytics, and digital transformation
+                consulting.
+              </p>
+              <span className="text-yellow-300 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                View Services →
+              </span>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <Link
+              to="/contact"
+              className="inline-block px-8 py-3 bg-white text-indigo-600 hover:bg-gray-100 rounded-lg font-semibold transition-colors"
+            >
+              Schedule a Consultation
+            </Link>
+          </div>
         </div>
       </section>
     </div>

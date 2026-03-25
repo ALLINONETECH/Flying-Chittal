@@ -109,6 +109,8 @@ export default function ProductFeatureDeepDive({
                 className="h-full w-full object-cover"
                 src={image}
                 alt={imageAlt}
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/25 to-transparent"></div>
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">

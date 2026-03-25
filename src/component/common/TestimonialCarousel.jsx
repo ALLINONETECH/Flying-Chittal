@@ -205,6 +205,8 @@ export default function TestimonialCarousel({
                       src={testimonial.avatar}
                       alt={testimonial.author}
                       className="w-14 h-14 rounded-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   )}
                   <div className="flex-grow">
