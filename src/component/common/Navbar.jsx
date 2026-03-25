@@ -5,7 +5,7 @@ import {
   ChevronDownIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { Navbar as NavBarTailWind, MobileNav } from "@material-tailwind/react";
+import { Navbar as NavBarTailWind, Collapse } from "@material-tailwind/react";
 import { Link, useLocation } from "react-router-dom";
 import { navItem } from "./navList";
 
@@ -164,12 +164,12 @@ export default function Navbar() {
           </div>
         </div>
 
-        <MobileNav
+        <Collapse
           open={openNav}
           className="border-0 shadow-none bg-gradient-to-r from-[#f8f9ff]/95 via-white/95 to-[#fff6ed]/95 backdrop-blur-xl rounded-b-2xl"
         >
           <div className="container mx-auto pb-3">{navList}</div>
-        </MobileNav>
+        </Collapse>
       </NavBarTailWind>
     </div>
   );

@@ -20,35 +20,4 @@ export default defineConfig({
       hook: "writeBundle", // Ensures files are copied after the bundle is written
     }),
   ],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (!id.includes("node_modules")) return;
-
-          if (id.includes("react") || id.includes("react-dom") || id.includes("react-router-dom")) {
-            return "vendor-react";
-          }
-
-          if (id.includes("firebase")) {
-            return "vendor-firebase";
-          }
-
-          if (id.includes("quill") || id.includes("react-quill")) {
-            return "vendor-editor";
-          }
-
-          if (id.includes("lottie-web")) {
-            return "vendor-lottie";
-          }
-
-          if (id.includes("aos") || id.includes("react-scroll-parallax") || id.includes("@material-tailwind")) {
-            return "vendor-ui";
-          }
-
-          return "vendor-misc";
-        },
-      },
-    },
-  },
 });

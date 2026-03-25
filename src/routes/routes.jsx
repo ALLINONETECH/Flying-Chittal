@@ -85,9 +85,34 @@ const PrivateRoute = ({ element }) => {
   return isAuthenticated() ? element : <Navigate to="/admin/login" replace />;
 };
 
-// User/Public Routes
-const UserRoutes = () => {
+export default function Routes() {
   const router = useRoutes([
+    {
+      path: "/admin",
+      element: <AdminLayout />,
+      children: [
+        {
+          index: true,
+          element: (
+            <Navigate
+              to={isAuthenticated() ? "/admin/dashboard" : "/admin/login"}
+              replace
+            />
+          ),
+        },
+        { path: "login", element: <Login /> },
+        {
+          path: "dashboard",
+          element: <PrivateRoute element={<AdminDashboard />} />,
+        },
+        { path: "blogs", element: <PrivateRoute element={<AddBlogPage />} /> },
+        { path: "leaders", element: <PrivateRoute element={<AddLeader />} /> },
+        {
+          path: "*",
+          element: <NotFound message="This page is under construction." />,
+        },
+      ],
+    },
     {
       path: "/",
       element: <Parentlayout />,
@@ -124,48 +149,12 @@ const UserRoutes = () => {
         { path: "/fertilizer", element: <Fertilizer /> },
         { path: "/edgeComputing", element: <EdgeComputing /> },
         { path: "/allblogs", element: <AllBlog /> },
-
         { path: "/chat", element: <Chat /> },
         { path: "/termsandcondition", element: <Terms /> },
         { path: "*", element: <UserNotFound /> },
       ],
     },
   ]);
-  return router;
-};
 
-// Admin Routes
-const AdminRoutes = () => {
-  const router = useRoutes([
-    {
-      path: "/admin",
-      element: <AdminLayout />, // Common Admin Layout
-      children: [
-        // { index: true, element: <Navigate to="/login" replace /> }, // Redirect "/admin" to "/admin/login"
-        { path: "login", element: <Login /> },
-        {
-          path: "dashboard",
-          element: <PrivateRoute element={<AdminDashboard />} />,
-        },
-        { path: "blogs", element: <PrivateRoute element={<AddBlogPage />} /> },
-        { path: "leaders", element: <PrivateRoute element={<AddLeader />} /> },
-
-        {
-          path: "*",
-          element: <NotFound message="This page is under construction." />,
-        },
-      ],
-    },
-  ]);
-  return router;
-};
-
-// Combined Router
-export default function Routes() {
-  return (
-    <Suspense fallback={<RouteLoader />}>
-      <UserRoutes />
-      <AdminRoutes />
-    </Suspense>
-  );
+  return <Suspense fallback={<RouteLoader />}>{router}</Suspense>;
 }

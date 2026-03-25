@@ -7,7 +7,7 @@ import Automation1 from "../../assets/images/Automation1.png";
 import Edge1 from "../../assets/images/Edge1.png";
 import Empower from "../../assets/images/Empower.png";
 import smalllogo from "../../assets/images/smalllogo.png";
-import homebluebg from "../../assets/images/homebluebg.png";
+import homebluebg from "../../assets/images/homebluebg.webp";
 import fclogo from "../../assets/images/fclogo.png";
 import traksLogo from "../../assets/images/traks/Tracks Logo (Square)).png";
 import mobilytLogo from "../../assets/images/Mobilyt/Mobilyt Logo.png";

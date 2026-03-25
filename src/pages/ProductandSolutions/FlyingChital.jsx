@@ -27,7 +27,7 @@ import manicon from "../../assets/images/man.png";
 import moneyicon from "../../assets/images/money.png";
 import awardicon from "../../assets/images/award.png";
 import right1 from "../../assets/images/right1.png";
-import conclusion from "../../assets/images/65723.jpg";
+import conclusion from "../../assets/images/65723.webp";
 import { Link } from "react-router-dom";
 import ProductIntroSection from "../../component/common/ProductIntroSection";
 import ProductCapabilityShowcase from "../../component/common/ProductCapabilityShowcase";

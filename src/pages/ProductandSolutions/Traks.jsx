@@ -9,11 +9,11 @@ import fieldWorker from "../../assets/images/traks/Field_worker_tapping_checkin_
 import gpsCheckin from "../../assets/images/traks/Smartphone_gps_checkin_animation_46a24813a9.jpeg";
 import nightShift from "../../assets/images/traks/Supervisor_dashboard_night_shift_d9818895db.jpeg";
 import industrialSite from "../../assets/images/traks/Industrial_field_operation_site_66cf9c52a1.jpeg";
-import highlight1 from "../../assets/images/traks/hf_20260129_163028_786c0689-3eb0-4fc9-a373-288ee3040c33.png";
-import highlight2 from "../../assets/images/traks/hf_20260129_163210_7706eae1-9356-4c72-a269-7e42ed1bf1f5.png";
-import highlight3 from "../../assets/images/traks/hf_20260130_014143_fa3b1e6e-1b4a-4227-bf77-2f0cd078b6fd.png";
-import highlight4 from "../../assets/images/traks/hf_20260130_030926_c3bb045e-a591-4c63-b062-03f0db2baf2c.png";
-import highlight5 from "../../assets/images/traks/hf_20260131_060818_e2819554-ff54-4e0b-983c-7ccf9f7b3ec6.png";
+import highlight1 from "../../assets/images/traks/hf_20260129_163028_786c0689-3eb0-4fc9-a373-288ee3040c33.webp";
+import highlight2 from "../../assets/images/traks/hf_20260129_163210_7706eae1-9356-4c72-a269-7e42ed1bf1f5.webp";
+import highlight3 from "../../assets/images/traks/hf_20260130_014143_fa3b1e6e-1b4a-4227-bf77-2f0cd078b6fd.webp";
+import highlight4 from "../../assets/images/traks/hf_20260130_030926_c3bb045e-a591-4c63-b062-03f0db2baf2c.webp";
+import highlight5 from "../../assets/images/traks/hf_20260131_060818_e2819554-ff54-4e0b-983c-7ccf9f7b3ec6.webp";
 import conclusionImg from "../../assets/images/traks/Clean_electrostruction_animation_style_wide_169_da_cb799d3b35.jpeg";
 import ProductIntroSection from "../../component/common/ProductIntroSection";
 import ProductCapabilityShowcase from "../../component/common/ProductCapabilityShowcase";
