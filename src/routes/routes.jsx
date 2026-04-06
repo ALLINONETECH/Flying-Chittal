@@ -73,7 +73,7 @@ const blogRoutes = blogsData.map((b) => {
 
 function RouteLoader() {
   return (
-    <div className="relative min-h-[42vh] flex items-center justify-center px-6 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
+    <div className="fixed inset-0 z-[999] flex min-h-screen w-full items-center justify-center overflow-hidden bg-gradient-to-b from-slate-50 to-white px-6">
       <div className="absolute -top-16 -left-8 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl" />
       <div className="absolute -bottom-20 -right-4 h-56 w-56 rounded-full bg-orange-200/30 blur-3xl" />
 
