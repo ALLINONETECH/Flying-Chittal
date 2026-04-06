@@ -227,6 +227,13 @@ const ROUTE_SEO = {
     keywords:
       "edge computing, real-time analytics, industrial IoT, distributed intelligence",
   },
+  "/svmsLaunch": {
+    title: "SVMS Launched in Bhubaneswar | Flying Chital Blog",
+    description:
+      "Flying Chital launches the Smart Vehicle Management System (SVMS) at Bhubaneswar Municipal Corporation — enabling intelligent, cost-effective urban fleet management for 800+ vehicles.",
+    keywords:
+      "SVMS launch, Smart Vehicle Management System, Bhubaneswar Municipal Corporation, BMC, urban governance, Flying Chital, vehicle tracking, smart city Odisha",
+  },
   "/traks": {
     title: "Traks | Field Force Management Platform",
     description:

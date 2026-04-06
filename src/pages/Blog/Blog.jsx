@@ -1,73 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Revolution from "../../assets/images/Revolution.png";
-import Revolution2 from "../../assets/images/Revolution2.png";
-import Empowering1 from "../../assets/images/Empowering1.png";
-import Streamline from "../../assets/images/Streamline.png";
-import Optimize from "../../assets/images/Optimize.png";
-import ExpoCovr from "../../assets/images/Expo.png";
 import Blogbg from "../../assets/images/Blogbg.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
+import blogsData from "../../assets/json/blogs.js";
+import blogImageMap from "../../assets/json/blogImageMap";
 
-const blogs = [
-  {
-    id: 1,
-    title:
-      "Revolutionizing Data Management for Enterprise Digital Transformation",
-    excerpt:
-      "MACH architecture — Microservices, API-first, Cloud-native, and Headless — allows businesses to deploy an ecosystem of pluggable, scalable, and replaceable third-party solutions to solve discrete business problems.",
-    image: Revolution,
-    link: "/edgeComputing",
-    category: "Technology",
-    featured: true,
-  },
-  {
-    id: 2,
-    title: "Empowering Businesses with MACH Architecture",
-    excerpt:
-      "The Digital Transformation initiative of enterprises is typically focused on the enablement of better products, services, experience, or business models. At the heart of such transformation is data.",
-    image: Empowering1,
-    link: "/mACHArchitecture",
-    category: "Architecture",
-  },
-  {
-    id: 3,
-    title: "Streamlining Fertilizer Supply Chain",
-    excerpt:
-      "Managing Outbound Supply chain for Fertilizer sector is often cumbersome as the allocation and distribution is under the control of the Government of India, with 99% transportation managed by Indian Railways.",
-    image: Streamline,
-    link: "/fertilizer",
-    category: "Supply Chain",
-  },
-  {
-    id: 4,
-    title: "Revolutionizing Mining and Ore Processing",
-    excerpt:
-      "Revolutionize logistics in the mining and ore processing industry by harnessing the power of IoT and Smart technologies, unlocking unprecedented efficiency and optimization.",
-    image: Revolution2,
-    link: "/logisticsIntelligence",
-    category: "Mining",
-  },
-  {
-    id: 5,
-    title: "Optimizing Operations in Mining and Metal Industries",
-    excerpt:
-      "Some of the typical challenges faced by a Mining and Metal Industries whose business is diversified to Iron and Steel Plants and mines. Manual data collection from various entities causes major bottlenecks.",
-    image: Optimize,
-    link: "/miningMetal",
-    category: "Industrial",
-  },
-  {
-    id: 6,
-    title:
-      "Flying Chital's Impactful Presence at the 2nd Odisha Mining & Infrastructure International Expo 2024",
-    excerpt:
-      "Flying Chital showcased its groundbreaking logistics platform at the expo, redefining industry standards with cutting-edge innovation and excellence, driving efficiency and sustainability.",
-    image: ExpoCovr,
-    link: "/MiningExpo",
-    category: "Events",
-  },
-];
+const blogs = blogsData.map((b) => ({ ...b, image: blogImageMap[b.imageKey] }));
 
 const categoryColors = {
   Technology: "bg-indigo-100 text-indigo-700",
@@ -76,11 +14,13 @@ const categoryColors = {
   Mining: "bg-amber-100 text-amber-700",
   Industrial: "bg-orange-100 text-orange-700",
   Events: "bg-rose-100 text-rose-700",
+  Launch: "bg-teal-100 text-teal-700",
 };
 
 export default function Blog() {
-  const featured = blogs[0];
-  const rest = blogs.slice(1);
+  const sorted = [...blogs].reverse();
+  const featured = sorted[0];
+  const rest = sorted.slice(1);
 
   return (
     <div className="bg-white">

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="./src/assets/images/logo.png" />
+    <link rel="icon" type="image" href="./src/assets/images/logos1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -24,7 +24,20 @@
     <title>Flying Chital Tech Private Limited</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+      /* Prevent fallback SEO text from flashing before React mounts */
+      #root > main {
+        display: none;
+      }
     </style>
+    <noscript>
+      <style>
+        /* Show fallback content only when JavaScript is disabled */
+        #root > main {
+          display: block;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <div id="root">

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Link } from "react-router-dom";
-import CareerFC from "../assets/images/real.webp";
+import CareerFC from "../assets/images/officebranding_c.jpg";
 import career1 from "../assets/images/career1.png";
 import customised1 from "../assets/images/istockphoto-2yraRHBeGo.jpg";
 
