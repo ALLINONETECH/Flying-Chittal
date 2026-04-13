@@ -123,7 +123,7 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-orange-400/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-indigo-400/10 rounded-full -ml-40 -mb-40 blur-3xl"></div>
 
-          <div className="container mx-auto text-start px-4 py-12 md:px-8 md:py-16 lg:px-16 xl:px-24 relative z-10">
+          <div className="container mx-auto text-start px-4 pt-28 pb-12 md:px-8 md:pt-32 md:pb-16 lg:px-16 xl:px-24 relative z-10">
             <div className="mx-auto max-w-5xl">
               {/* Badge */}
               <div

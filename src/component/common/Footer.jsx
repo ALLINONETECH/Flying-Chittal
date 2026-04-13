@@ -13,6 +13,7 @@ const utilityLinks = [
   { label: "Contact", to: "/contact" },
   { label: "Help Centre", to: "/help" },
   { label: "Terms", to: "/termsandcondition" },
+  { label: "Privacy Policy", to: "/privacy" },
 ];
 
 const capabilityBadges = [
