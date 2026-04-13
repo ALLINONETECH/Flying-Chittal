@@ -123,7 +123,7 @@ export default function career() {
             opportunity arise, we will reach out to you promptly. We appreciate
             your interest in joining our team and anticipate the possibility of
             connecting with you in the near future. Kindly forward your updated
-            resume to career@atulyabhinav.com.
+            resume to info@flyingchital.com.
           </p>
         </div>
       </div>
