@@ -1,28 +1,27 @@
 import React, { useEffect, useRef, useState } from "react";
-import brandLogo from "../../assets/images/fclogofh.png";
+import brandLogo from "../../assets/images/logos1.png";
 import {
   Bars3Icon,
   ChevronDownIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { Navbar as NavBarTailWind, Collapse } from "@material-tailwind/react";
 import { Link, useLocation } from "react-router-dom";
 import { navItem } from "./navList";
 
 export default function Navbar() {
   const [openNav, setOpenNav] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileExpanded, setMobileExpanded] = useState(null);
   const navRootRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 960) {
+      if (window.innerWidth >= 1024) {
         setOpenNav(false);
-        setActiveDropdown(null);
+        setMobileExpanded(null);
       }
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -30,22 +29,18 @@ export default function Navbar() {
   useEffect(() => {
     setOpenNav(false);
     setActiveDropdown(null);
+    setMobileExpanded(null);
   }, [location.pathname, location.search]);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (!navRootRef.current?.contains(event.target)) {
+    const handleClickOutside = (e) => {
+      if (!navRootRef.current?.contains(e.target)) {
         setActiveDropdown(null);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
-  const handleDropdownClick = (label) => {
-    setActiveDropdown(activeDropdown === label ? null : label);
-  };
 
   const isCurrentRoute = (to) => {
     if (!to) return false;
@@ -54,123 +49,177 @@ export default function Navbar() {
     );
   };
 
-  const navList = (
-    <ul className="flex flex-col lg:items-center mt-3 lg:mt-0 font-medium md:flex-row md:space-x-1 lg:space-x-2">
-      {navItem.map((item) => (
-        <li key={item.label} className="relative">
-          <button
-            id={`mega-menu-icons-dropdown-button-${item.label}`}
-            data-dropdown-toggle={`mega-menu-icons-dropdown-${item.label}`}
-            className={`group flex items-center justify-between w-full py-2 px-4 text-[15px] font-semibold rounded-full border-b border-gray-100 md:w-auto md:border-0 transition-all duration-300 ${
-              activeDropdown === item.label
-                ? "text-primary bg-gradient-to-r from-indigo-50 to-orange-50 shadow-sm"
-                : "text-gray-700 hover:bg-gradient-to-r hover:from-indigo-50/80 hover:to-orange-50/80 hover:text-primary"
-            }`}
-            onClick={() => handleDropdownClick(item.label)}
-          >
-            {item.label}
-            <ChevronDownIcon
-              className={`w-4 h-4 ml-2 transition-transform duration-300 ${
-                activeDropdown === item.label ? "rotate-180" : "rotate-0"
-              }`}
-            />
-          </button>
-          <div
-            id={`mega-menu-icons-dropdown-${item.label}`}
-            className={`z-20 ${
-              activeDropdown === item.label ? "block" : "hidden"
-            } lg:absolute lg:top-full lg:left-0 lg:mt-2 w-full lg:w-80`}
-          >
-            <div className="p-3 lg:p-4 bg-white/95 backdrop-blur-xl border border-indigo-100 rounded-2xl shadow-[0_20px_50px_rgba(55,52,169,0.16)]">
-              <ul
-                className="space-y-1"
-                aria-labelledby={`mega-menu-icons-dropdown-button-${item.label}`}
-              >
-                {item.subMenu &&
-                  item.subMenu.map((subItem) => (
-                    <li key={subItem.label}>
-                      <Link
-                        to={subItem.to}
-                        className={`block px-3 py-2 rounded-lg text-sm transition-all duration-200 ${
-                          isCurrentRoute(subItem.to)
-                            ? "bg-gradient-to-r from-indigo-50 to-orange-50 text-primary font-semibold"
-                            : "text-gray-700 hover:bg-gradient-to-r hover:from-indigo-50/70 hover:to-orange-50/70 hover:text-primary"
-                        }`}
-                      >
-                        {subItem.label}
-                      </Link>
-                    </li>
-                  ))}
-              </ul>
-            </div>
-          </div>
-        </li>
-      ))}
+  const isSubmenuActive = (menu) =>
+    menu.subMenu?.some((s) => isCurrentRoute(s.to));
 
-      <li>
+  return (
+    <header
+      ref={navRootRef}
+      className="absolute top-0 left-0 z-50 w-full text-white"
+    >
+      <div className="mx-auto flex h-[90px] w-full max-w-[1280px] items-center gap-7 px-4 sm:px-6 lg:px-8">
         <Link
-          to="/career"
-          className={`text-[15px] font-semibold rounded-full px-4 py-2 mr-1 md:mr-2 transition-all duration-300 ${
-            isCurrentRoute("/career")
-              ? "bg-gradient-to-r from-indigo-50 to-orange-50 text-primary shadow-sm"
-              : "text-gray-700 hover:bg-gradient-to-r hover:from-indigo-50/80 hover:to-orange-50/80 hover:text-primary"
-          }`}
+          to="/"
+          className="shrink-0 inline-flex items-center py-1.5 transition-opacity duration-200 hover:opacity-90"
         >
-          Careers
+          <img
+            src={brandLogo}
+            className="h-16 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.22)]"
+            alt="FlyingChital Logo"
+          />
         </Link>
-      </li>
 
-      <li>
-        <button id="contact-cta" className="w-full md:w-auto">
+        <ul className="hidden min-w-0 flex-1 items-center gap-2 lg:flex">
+          {navItem.map((item) => (
+            <li key={item.label} className="relative">
+              <button
+                onClick={() =>
+                  setActiveDropdown(
+                    activeDropdown === item.label ? null : item.label,
+                  )
+                }
+                className={`inline-flex items-center gap-1 rounded-full px-3.5 py-2.5 text-[15px] font-semibold transition-all duration-150 ${
+                  activeDropdown === item.label || isSubmenuActive(item)
+                    ? "bg-white/18 text-white shadow-[0_0_0_1px_rgba(255,255,255,0.18)]"
+                    : "text-white/90 hover:bg-white/18 hover:text-white hover:shadow-[0_0_0_1px_rgba(255,255,255,0.14)]"
+                }`}
+              >
+                {item.label}
+                <ChevronDownIcon
+                  className={`h-4 w-4 transition-transform duration-150 ${
+                    activeDropdown === item.label ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {activeDropdown === item.label && (
+                <div className="absolute left-0 top-full z-50 mt-3 w-[350px]">
+                  <div
+                    className="rounded-3xl border border-white/25 p-2.5 backdrop-blur-xl shadow-[0_20px_50px_rgba(18,20,74,0.45)]"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(145deg, rgba(55, 52, 169, 0.88) 0%, rgba(84, 89, 229, 0.82) 55%, rgba(126, 88, 232, 0.8) 100%)",
+                    }}
+                  >
+                    <ul className="space-y-1">
+                      {item.subMenu?.map((sub) => (
+                        <li key={sub.label}>
+                          <Link
+                            to={sub.to}
+                            className={`block rounded-2xl px-4 py-3 text-[18px] leading-tight transition-all duration-150 ${
+                              isCurrentRoute(sub.to)
+                                ? "bg-white/20 font-semibold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.15)]"
+                                : "text-white/90 hover:bg-white/18 hover:text-white hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12)]"
+                            }`}
+                          >
+                            {sub.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+
+        <div className="ml-auto hidden items-center gap-2 lg:flex">
+          <Link
+            to="/career"
+            className="rounded-full px-3.5 py-2.5 text-[15px] font-semibold text-white/90 transition-all duration-150 hover:bg-white/18 hover:text-white hover:shadow-[0_0_0_1px_rgba(255,255,255,0.14)]"
+          >
+            Careers
+          </Link>
           <Link
             to="/chat"
-            className="inline-flex items-center justify-center w-full md:w-auto text-white bg-gradient-to-r from-orange-500 via-orange-500 to-orange-600 hover:from-primary hover:to-indigo-600 focus:ring-4 focus:ring-orange-200 font-semibold rounded-full text-sm px-5 py-2 mr-1 md:mr-2 md:mt-0 transition-all duration-300 shadow-md hover:shadow-xl"
+            className="rounded-full bg-orange-500 px-6 py-2.5 text-[15px] font-semibold text-white transition-all duration-150 hover:bg-orange-400 hover:shadow-[0_8px_22px_rgba(249,115,22,0.45)]"
           >
             Contact Us
           </Link>
-        </button>
-      </li>
-    </ul>
-  );
-
-  return (
-    <div ref={navRootRef} className="sticky top-0 z-50">
-      <NavBarTailWind className="mx-auto bg-gradient-to-r from-[#f8f9ff]/95 via-white/95 to-[#fff6ed]/95 backdrop-blur-xl border-b border-indigo-100/70 rounded-none max-w-full shadow-[0_10px_30px_rgba(15,23,42,0.08)] px-2 lg:px-4">
-        <div className="container mx-auto flex items-center justify-between text-blue-gray-900 py-1">
-          <div className="flex items-center">
-            <Link
-              to="/"
-              className="rounded-xl px-1.5 py-1 bg-white/90 border border-indigo-100/80 shadow-sm hover:shadow-md transition-all duration-300"
-            >
-              <img
-                src={brandLogo}
-                className="h-10 md:h-12 lg:h-14 w-auto"
-                alt="FlyingChital Logo"
-              />
-            </Link>
-          </div>
-
-          <div className="hidden lg:block">{navList}</div>
-
-          <div
-            className="ml-auto h-9 w-9 rounded-xl text-inherit hover:bg-indigo-50 focus:bg-indigo-50 active:bg-indigo-100 lg:hidden cursor-pointer flex items-center justify-center transition-colors duration-300"
-            onClick={() => setOpenNav(!openNav)}
-          >
-            {openNav ? (
-              <XMarkIcon className="h-6 w-6 text-primary" />
-            ) : (
-              <Bars3Icon className="h-6 w-6 text-primary" />
-            )}
-          </div>
         </div>
 
-        <Collapse
-          open={openNav}
-          className="border-0 shadow-none bg-gradient-to-r from-[#f8f9ff]/95 via-white/95 to-[#fff6ed]/95 backdrop-blur-xl rounded-b-2xl"
+        <button
+          className="ml-auto rounded-lg p-2 text-white/90 transition-all duration-150 hover:bg-white/18 hover:text-white lg:hidden"
+          onClick={() => setOpenNav(!openNav)}
+          aria-label="Toggle menu"
         >
-          <div className="container mx-auto pb-3">{navList}</div>
-        </Collapse>
-      </NavBarTailWind>
-    </div>
+          {openNav ? (
+            <XMarkIcon className="h-6 w-6" />
+          ) : (
+            <Bars3Icon className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      {openNav && (
+        <div
+          className="border-t border-white/15 px-4 pb-4 pt-2 lg:hidden"
+          style={{
+            backgroundImage:
+              "linear-gradient(135deg, rgba(55, 52, 169, 0.96) 0%, rgba(99, 102, 241, 0.94) 50%, rgba(139, 92, 246, 0.92) 100%)",
+          }}
+        >
+          <ul className="space-y-1">
+            {navItem.map((item) => (
+              <li key={item.label}>
+                <button
+                  className="flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-[15px] font-semibold text-white/90 transition-all duration-150 hover:bg-white/18 hover:text-white"
+                  onClick={() =>
+                    setMobileExpanded(
+                      mobileExpanded === item.label ? null : item.label,
+                    )
+                  }
+                >
+                  {item.label}
+                  <ChevronDownIcon
+                    className={`h-4 w-4 transition-transform ${
+                      mobileExpanded === item.label ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                {mobileExpanded === item.label && (
+                  <ul className="ml-3 mt-1 space-y-0.5 border-l border-white/20 pl-3">
+                    {item.subMenu?.map((sub) => (
+                      <li key={sub.label}>
+                        <Link
+                          to={sub.to}
+                          className={`block rounded-lg px-2 py-2 text-sm transition-all duration-150 ${
+                            isCurrentRoute(sub.to)
+                              ? "font-semibold text-white bg-white/12"
+                              : "text-white/75 hover:bg-white/12 hover:text-white"
+                          }`}
+                        >
+                          {sub.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+
+            <li>
+              <Link
+                to="/career"
+                className="block rounded-xl px-3 py-2.5 text-[15px] font-semibold text-white/90 transition-all duration-150 hover:bg-white/18 hover:text-white"
+              >
+                Careers
+              </Link>
+            </li>
+          </ul>
+
+          <div className="mt-3 border-t border-white/10 pt-3">
+            <Link
+              to="/chat"
+              className="flex w-full items-center justify-center rounded-full bg-orange-500 px-5 py-2.5 text-[15px] font-semibold text-white transition-all duration-150 hover:bg-orange-400 hover:shadow-[0_8px_22px_rgba(249,115,22,0.45)]"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      )}
+    </header>
   );
 }

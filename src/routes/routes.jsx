@@ -49,6 +49,9 @@ const Help = lazy(() => import("../pages/Help"));
 const Blog = lazy(() => import("../pages/Blog/Blog"));
 const DynamicBlog = lazy(() => import("../pages/Blog/DynamicBlog"));
 const Terms = lazy(() => import("../pages/termsandservices/Terms"));
+const PrivacyPolicy = lazy(
+  () => import("../pages/termsandservices/PrivacyPolicy"),
+);
 const AdminLayout = lazy(() => import("../admin/AdminLayout"));
 const Login = lazy(() => import("../admin/login"));
 const AdminDashboard = lazy(() => import("../admin/AdminDashboard"));
@@ -189,6 +192,7 @@ export default function Routes() {
         { path: "/allblogs", element: <AllBlog /> },
         { path: "/chat", element: <Chat /> },
         { path: "/termsandcondition", element: <Terms /> },
+        { path: "/privacy", element: <PrivacyPolicy /> },
         { path: "*", element: <UserNotFound /> },
       ],
     },
