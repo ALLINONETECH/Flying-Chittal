@@ -37,7 +37,7 @@ export default function AquacultureAutomation() {
               Aquaculture Automation Solution
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              We provide Smart Solutions to Simplify Your Future
+              We provide Smart and Intelligent Solutions to Simplify Your Future
             </p>
             {/* <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button> */}
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
@@ -64,7 +64,7 @@ export default function AquacultureAutomation() {
         </div>
       </section>
 
-      {/* Section-2- Flying Chital Smart Vehicle  */}
+      {/* Section-2- Flying Chital Smart and Intelligent Vehicle  */}
       <section className="text-gray-600 body-font mt-0">
         <div className="container mx-auto px-5 py-12 lg:flex lg:flex-row flex-col items-center lg:ml-10">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
@@ -88,13 +88,13 @@ export default function AquacultureAutomation() {
 
             <p className=" text-xl not-italic font-normal leading-7 font-heebo mb-8 text-justify w-4/5">
               Flying Chital in association with C-DAC, Trivandrum provides a
-              completely indigenous Smart Aquaculture Automation Solution
-              (SAqAS) through Transfer of Technology (ToT). The Smart System
-              developed by C-DAC Trivandrum has an autonomous unit equipped to
-              monitor the status and control the various pond parameters. SAqAS
-              unit helps to improve the quality of products, enhance water
-              management, productivity in terms of the use of resources, and
-              reduces the environmental impact.
+              completely indigenous Smart and Intelligent Aquaculture Automation
+              Solution (SAqAS) through Transfer of Technology (ToT). The Smart
+              and IntelligentSystem developed by C-DAC Trivandrum has an
+              autonomous unit equipped to monitor the status and control the
+              various pond parameters. SAqAS unit helps to improve the quality
+              of products, enhance water management, productivity in terms of
+              the use of resources, and reduces the environmental impact.
               <br /> SAqAS offers remote monitoring of the fish farming system
               based on Internet of Things (IOT) for real-time monitor and
               control of a fish farming eco-system. It ensures pragmatic and
@@ -184,7 +184,7 @@ export default function AquacultureAutomation() {
             <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
               <span className="border-b-2 border-secondary"></span>Agriculture Automation Solution (SAgAS)</h1>
             <p className="mb-8 text-justify text-base not-italic font-normal leading-6 w-4/5">
-              The Flying Chital Smart Vehicle Tracking System stands as a transformative solution in the domain of logistics and transportation. By offering end-to-end visibility of cargo movement, this system allows businesses to stay informed about their assets' whereabouts in real-time. The holistic approach of this Smart Vehicle Tracking System signifies a comprehensive solution for businesses seeking to streamline operations, mitigate risks of pilferage and revenue leakage, and ensure seamless and secure cargo transportation
+              The Flying Chital Smart and Intelligent Vehicle Tracking System stands as a transformative solution in the domain of logistics and transportation. By offering end-to-end visibility of cargo movement, this system allows businesses to stay informed about their assets' whereabouts in real-time. The holistic approach of this Smart and Intelligent Vehicle Tracking System signifies a comprehensive solution for businesses seeking to streamline operations, mitigate risks of pilferage and revenue leakage, and ensure seamless and secure cargo transportation
             </p>
           </div> */}
         </div>

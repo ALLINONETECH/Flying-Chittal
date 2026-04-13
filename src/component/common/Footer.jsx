@@ -1,151 +1,272 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import brandLogo from "../../assets/images/FlyingchitalTransperant.png";
-import footerImage from "../../assets/images/footer.jpg";
 import { navItem } from "./navList";
 
-const quickLinks = [
+const quickActions = [
+  { label: "Get in touch", to: "/contact", primary: true },
+  { label: "Explore blogs", to: "/blog" },
   { label: "Careers", to: "/career" },
-  { label: "Contact Us", to: "/chat", primary: true },
+];
+
+const utilityLinks = [
+  { label: "Contact", to: "/contact" },
+  { label: "Help Centre", to: "/help" },
+  { label: "Terms", to: "/termsandcondition" },
+];
+
+const capabilityBadges = [
+  "Fleet Telematics",
+  "Rail Logistics",
+  "Industrial IoT",
+  "Field Automation",
+  "Control Tower Visibility",
+  "Operational Analytics",
 ];
 
 const getFooterPath = (path = "") => path.replace(/\?$/, "");
+
+function FooterIcon({ children }) {
+  return (
+    <span className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-indigo-200">
+      {children}
+    </span>
+  );
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-      className="text-gray-600 body-font bg-[#1d2939]"
-      style={{
-        background: `linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgb(96 1 72 / 98%)),url('${footerImage}')`,
-        backgroundSize: "6px, auto, cover",
-      }}
-    >
-      <div className="container px-5 py-20 mx-auto">
-        <div className="grid gap-12 lg:grid-cols-[280px_minmax(0,1fr)] items-start">
-          <div className="text-center md:text-left">
-            <Link
-              to="/"
-              className="inline-flex title-font font-medium items-center justify-center md:justify-start"
-            >
-              <img
-                src={brandLogo}
-                alt="Flying Chital logo"
-                className="w-full max-w-[260px]"
-              />
-            </Link>
+    <footer className="relative overflow-hidden bg-slate-900 text-slate-200">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(99,102,241,0.26),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(249,115,22,0.22),_transparent_28%)]" />
+      <div className="absolute left-1/2 top-0 h-px w-[92%] -translate-x-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
-            <p className="mt-5 text-sm leading-6 text-gray-200">
-              Explore the same navigation structure from the header and reach the
-              right section faster.
-            </p>
+      <div className="relative container mx-auto px-6 pt-8 pb-6">
+        <div className="mb-6 rounded-[24px] border border-white/10 bg-gradient-to-r from-indigo-500/15 via-white/8 to-orange-500/15 p-5 shadow-[0_24px_60px_rgba(15,23,42,0.22)] backdrop-blur-sm lg:p-6">
+          <div className="grid gap-5 lg:grid-cols-[minmax(0,1.2fr)_auto] lg:items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-indigo-100/90">
+                Ready to transform operations?
+              </p>
+              <h2 className="mt-2 max-w-2xl text-xl font-bold leading-tight text-white font-heebo md:text-3xl">
+                Book a product walkthrough and see how Flying Chital fits your
+                logistics and industrial workflows.
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-200/85">
+                Get a focused conversation around deployment, visibility gaps,
+                field execution, and the right operating model for your team.
+              </p>
+            </div>
 
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-3 md:justify-start">
-              {quickLinks.map((item) => (
-                <Link
-                  key={item.label}
-                  to={item.to}
-                  className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${
-                    item.primary
-                      ? "bg-secondary text-white hover:bg-primary"
-                      : "border border-white/30 text-white hover:bg-white/10"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
+            <div className="flex flex-wrap gap-2.5 lg:justify-end">
+              <Link
+                to="/contact"
+                className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100"
+              >
+                Request a Demo
+              </Link>
+              <Link
+                to="/services"
+                className="rounded-full border border-white/20 bg-white/5 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+              >
+                View Services
+              </Link>
             </div>
           </div>
+        </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
-            {navItem.map((section) => (
-              <div key={section.label} className="text-center md:text-left">
-                <h2 className="title-font mb-4 text-md font-bold tracking-widest text-gray-200">
-                  {section.label}
-                </h2>
+        <div className="mb-8 rounded-[22px] border border-white/10 bg-white/[0.06] p-5 shadow-[0_24px_60px_rgba(15,23,42,0.28)] backdrop-blur-sm lg:p-6">
+          <div className="grid gap-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1.95fr)] lg:items-start">
+            <div>
+              <Link to="/" className="inline-flex items-center">
+                <img
+                  src={brandLogo}
+                  alt="Flying Chital logo"
+                  className="w-full max-w-[210px]"
+                />
+              </Link>
 
-                <ul className="space-y-3">
-                  {section.subMenu?.map((subItem) => (
-                    <li key={`${section.label}-${subItem.label}`}>
-                      <Link
-                        to={getFooterPath(subItem.to)}
-                        className="text-sm leading-6 text-gray-200 transition-colors hover:text-white"
-                      >
-                        {subItem.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <p className="mt-4 max-w-xl text-sm leading-6 text-slate-300">
+                Flying Chital builds connected platforms for logistics,
+                telematics, field operations, and industrial visibility. The
+                footer should help users act fast, not force them to hunt.
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                {capabilityBadges.map((badge) => (
+                  <span
+                    key={badge}
+                    className="rounded-full border border-white/12 bg-white/6 px-3 py-1 text-[11px] font-semibold tracking-wide text-slate-200"
+                  >
+                    {badge}
+                  </span>
+                ))}
               </div>
-            ))}
+
+              <div className="mt-5 flex flex-wrap gap-2.5">
+                {quickActions.map((item) => (
+                  <Link
+                    key={item.label}
+                    to={item.to}
+                    className={`rounded-full px-4 py-2.5 text-sm font-semibold transition-all duration-200 ${
+                      item.primary
+                        ? "bg-orange-500 text-white shadow-lg shadow-orange-950/30 hover:bg-orange-400"
+                        : "border border-white/15 bg-white/5 text-white hover:border-indigo-300/40 hover:bg-white/12"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-5">
+              <div className="grid gap-3 sm:grid-cols-3">
+                <a
+                  href="mailto:info@flyingchital.com"
+                  className="group rounded-2xl border border-white/10 bg-slate-950/40 p-4 transition-colors hover:border-indigo-300/30 hover:bg-slate-950/70"
+                >
+                  <FooterIcon>
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={1.8}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8m-2 10H5a2 2 0 01-2-2V8a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2z"
+                      />
+                    </svg>
+                  </FooterIcon>
+                  <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">
+                    Email
+                  </p>
+                  <p className="mt-1.5 text-sm font-semibold text-white break-all group-hover:text-indigo-200">
+                    info@flyingchital.com
+                  </p>
+                </a>
+
+                <a
+                  href="tel:+917894567778"
+                  className="group rounded-2xl border border-white/10 bg-slate-950/40 p-4 transition-colors hover:border-indigo-300/30 hover:bg-slate-950/70"
+                >
+                  <FooterIcon>
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={1.8}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 5a2 2 0 012-2h3.28a2 2 0 011.9 1.37l1.03 3.09a2 2 0 01-.45 2.05l-1.28 1.28a16 16 0 006.99 6.99l1.28-1.28a2 2 0 012.05-.45l3.09 1.03A2 2 0 0121 18.72V22a2 2 0 01-2 2h-1C9.16 24 0 14.84 0 3V2a2 2 0 012-2h1z"
+                      />
+                    </svg>
+                  </FooterIcon>
+                  <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">
+                    Phone
+                  </p>
+                  <p className="mt-1.5 text-sm font-semibold text-white group-hover:text-indigo-200">
+                    +91 78945 67778
+                  </p>
+                </a>
+
+                <Link
+                  to="/about"
+                  className="group rounded-2xl border border-white/10 bg-slate-950/40 p-4 transition-colors hover:border-indigo-300/30 hover:bg-slate-950/70"
+                >
+                  <FooterIcon>
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={1.8}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </FooterIcon>
+                  <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">
+                    Office
+                  </p>
+                  <p className="mt-1.5 text-sm font-semibold text-white group-hover:text-indigo-200">
+                    Odisha, India
+                  </p>
+                </Link>
+              </div>
+
+              <div className="rounded-[20px] border border-white/10 bg-slate-950/25 p-5 shadow-[0_16px_40px_rgba(15,23,42,0.18)]">
+                <div className="mb-4 flex items-center justify-between gap-4 border-b border-white/10 pb-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-indigo-200">
+                    Navigation
+                  </p>
+                  <Link
+                    to="/contact"
+                    className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300 transition-colors hover:text-white"
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+
+                <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                  {navItem.map((section) => (
+                    <div key={section.label}>
+                      <h3 className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-200">
+                        {section.label}
+                      </h3>
+                      <ul className="space-y-2">
+                        {section.subMenu?.map((subItem) => (
+                          <li key={`${section.label}-${subItem.label}`}>
+                            <Link
+                              to={getFooterPath(subItem.to)}
+                              className="text-sm leading-5 text-slate-400 transition-colors hover:text-white"
+                            >
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-white/10 bg-black/15">
-        <div className="container mx-auto flex flex-wrap flex-col px-5 py-4 sm:flex-row">
-          <p className="text-center text-sm text-gray-200 sm:text-left">
+      <div className="relative border-t border-white/10 bg-slate-950/35">
+        <div className="container mx-auto flex flex-col gap-3 px-6 py-4 lg:flex-row lg:items-center lg:justify-between">
+          <p className="text-center text-sm text-slate-400 lg:text-left">
             © {currentYear} Flying Chital Tech Pvt. Ltd.
           </p>
 
-          <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
-            <a className="text-gray-200 transition-colors hover:text-white">
-              <svg
-                fill="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 lg:justify-end">
+            {utilityLinks.map((item) => (
+              <Link
+                key={item.label}
+                to={item.to}
+                className="text-sm text-slate-400 transition-colors hover:text-white"
               >
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-              </svg>
-            </a>
-            <a className="ml-3 text-gray-200 transition-colors hover:text-white">
-              <svg
-                fill="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-              </svg>
-            </a>
-            <a className="ml-3 text-gray-200 transition-colors hover:text-white">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-              >
-                <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
-              </svg>
-            </a>
-            <a className="ml-3 text-gray-200 transition-colors hover:text-white">
-              <svg
-                fill="currentColor"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={0}
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="none"
-                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                />
-                <circle cx={4} cy={4} r={2} stroke="none" />
-              </svg>
-            </a>
-          </span>
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

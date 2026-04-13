@@ -8,7 +8,7 @@ export default function Terms() {
         Thank you for using Flying Chital. These Terms of Service (the "Terms")
         are intended to make you aware of your legal rights and responsibilities
         with respect to your access to and use of the Flying Chital website and
-        Application at www.atulyabhinav.com (the "Site") and any related mobile
+        Application at www.flyingchital.com (the "Site") and any related mobile
         or software applications ("Flying Chital Platform") including but not
         limited to delivery of information via the website whether existing now
         or in the future that link to the Terms (collectively, the "Services").

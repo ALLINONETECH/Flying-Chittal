@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import React from "react";
+import { Link } from "react-router-dom";
 import Blog1 from "../assets/images/Blog1.png";
 import HomeIcon from "../assets/images/HomeIcon.png";
 import Lottie from "lottie-react";
@@ -7,236 +8,194 @@ import helpCenter from "../assets/json/helpCenter.json";
 import phone from "../assets/json/phone.json";
 import email from "../assets/json/email.json";
 
+const supportCards = [
+  {
+    title: "Email Support",
+    value: "info@flyingchital.com",
+    note: "Our support team typically responds within one business day.",
+    animation: email,
+  },
+  {
+    title: "Phone Support",
+    value: "+91 7676429520",
+    note: "Monday to Friday, 8 AM to 5 PM.",
+    animation: phone,
+  },
+];
+
+const quickHelp = [
+  "Product onboarding and implementation guidance",
+  "Technical troubleshooting and incident response",
+  "Enterprise integration and deployment assistance",
+  "General product and account support",
+];
+
 export default function Help() {
   return (
-    <div>
+    <div className="bg-white">
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="relative overflow-hidden bg-no-repeat bg-center bg-cover rounded-br-[60px] md:rounded-br-[100px]"
         style={{
-          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${Blog1})`,
+          backgroundImage: `linear-gradient(120deg, rgba(55, 52, 169, 0.78) 0%, rgba(55, 52, 169, 0.62) 55%, rgba(79, 70, 229, 0.58) 100%), url(${Blog1})`,
         }}
       >
-        <nav
-          x-data="{ isOpen: false }"
-          className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
-        >
-          <div className="flex items-center justify-between">
-            {/* <a href="#">
-                            <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt />
-                        </a> */}
-            {/* Mobile menu button */}
-            <div className="flex lg:hidden"></div>
-          </div>
-          {/* Mobile Menu open: "block", Menu closed: "hidden" */}
+        <div className="absolute -top-20 right-0 h-72 w-72 rounded-full bg-orange-300/20 blur-3xl"></div>
+        <div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-indigo-300/20 blur-3xl"></div>
 
-          {/* <div className="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:-px-8 lg:space-y-0">
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Home</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Components</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Pricing</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Contact</a>
-                        </div> */}
-          {/* <a className="block px-5 py-2 mt-4 text-sm text-center text-white capitalize bg-blue-600 rounded-lg lg:mt-0 hover:bg-blue-500 lg:w-auto" href="#">
-                            Get started
-                        </a> */}
-        </nav>
-        {/* <div className="container px-6 py-16 mx-auto text-center">
-          <div className="max-w-lg mx-auto">
-            <h1 className="text-xl not-italic font-bold font-heebo  text-gray-100 dark:text-white lg:text-4xl">
-              Help
-            </h1>
-            <p className="mt-6 text-white text-xl not-italic font-bold leading-8 font-heebo w-full">
-              Challenge, Ideate & Create
-            </p>
-            <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize  rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none"></button>
-            <p className="mt-3 text-sm text-gray-400 "></p>
-          </div>
-        </div> */}
-        <div className="container px-6 py-16 mx-auto text-start">
-          <div className=" mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 py-12 md:py-16 lg:py-24">
+          <div className="max-w-3xl text-start">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 font-heebo">
+              <span className="h-2 w-2 rounded-full bg-orange-400"></span>
+              Customer Support
+            </span>
+
+            <h1 className="mt-5 text-4xl lg:text-6xl font-bold font-heebo text-gray-100 leading-tight">
               Help Center
             </h1>
-            {/* <p className=" text-3xl  leading-9 mt-6 text-white not-italic font-bold  font-heebo w-full">
-              We provide Smart Solutions to Simplify Your Future
-            </p> */}
 
-            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex lg:flex-row  gap-2">
-                <div>
-                  <span>
-                    <img className="" src={HomeIcon} alt="" />
-                  </span>
-                </div>
-                <div classNAme="justify">
-                  {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    Home
-                  </span>
-                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    / Help Center
-                  </span>{" "}
-                </div>
-              </div>
+            <p className="mt-4 text-base sm:text-lg text-white/90 max-w-2xl leading-relaxed font-heebo">
+              Get fast support from our team for product usage, technical
+              issues, and implementation guidance.
+            </p>
+
+            <div className="mt-6 flex items-center gap-2 text-base sm:text-lg font-semibold text-white font-heebo">
+              <img src={HomeIcon} alt="Home" className="h-5 w-5" />
+              <Link
+                to="/"
+                className="text-[#F85A47] hover:text-[#ff796a] transition-colors"
+              >
+                Home
+              </Link>
+              <span>/ Help Center</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section-2- Flying Chital Smart Vehicle  */}
-      {/* <section className="text-gray-600 body-font mt-0">
-        <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center ml-10">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
-          </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="text-3xl not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-start text-gray-900">
-              <span className="border-b-2 border-secondary"></span>Rake Indent
-              Status Monitoring
-            </h1>
-            <p className="mb-8 text-justify text-base not-italic font-normal leading-6 w-4/5">
-              Traditionally, this process relied on manual paperwork and
-              communication, leading to delays and errors. Customers willing to
-              transport their consignments in rake loads/wagonloads should get
-              registered on FBD portal of Indian Railways and place an online
-              indent for supply wagons/rakes duly paying the prescribed wagon
-              demand registration fee notified from time to time. Flying Chital
-              Application helps stakeholders to get all information about Rake
-              Indent and Approval on a real time basis.
-            </p>
-          </div>
-        </div>
-      </section> */}
-      <section className=" bg-[#ffffff] dark:bg-gray-900">
-        <div className="container px-6 py-12 mx-auto">
-          <div>
-            {/* <p className="font-medium text-blue-500 dark:text-blue-400">
-              Contact us
-            </p> */}
-            <h1 className="mt-2 text-2xl font-semibold text-gray-950-100 md:text-3xl dark:text-white">
+      <section className="py-14 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 font-heebo leading-tight">
               Chat to our friendly team
-            </h1>
-            <p className="mt-3 text-gray-500 dark:text-gray-400">
-              We’d love to hear from you. Please fill out this form or shoot us
-              an email.
+            </h2>
+            <div className="mt-4 flex justify-center gap-2">
+              <div className="h-1.5 w-16 rounded-full bg-orange-400"></div>
+              <div className="h-1.5 w-8 rounded-full bg-indigo-300"></div>
+            </div>
+            <p className="mt-6 text-base sm:text-lg text-slate-600 leading-7 font-heebo">
+              We would love to hear from you. Fill out the support form and we
+              will assist you as quickly as possible.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
-            <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-              <div>
-                <Lottie animationData={helpCenter} loop={true} />
-              </div>
-              <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                    />
-                  </svg>
-                </span>
-                <h2 className="pt-10 mt-10 text-base font-medium text-gray-800 dark:text-white">
-                  <Lottie
-                    animationData={email}
-                    loop={true}
-                    style={{
-                      height: "20%",
-                      width: "20%",
-                      position: "relative",
-                      left: "80px",
-                    }}
-                  />{" "}
-                  customercare@atulyaabhinav.com
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Our friendly team is here to help.
+
+          <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+            <div className="lg:col-span-4 space-y-4">
+              <div className="rounded-[28px] border border-indigo-100 bg-indigo-50/60 p-5 shadow-sm">
+                <Lottie
+                  animationData={helpCenter}
+                  loop={true}
+                  className="h-40"
+                />
+                <p className="mt-2 text-sm text-slate-600 font-heebo">
+                  Tell us what you need, and we will connect you with the right
+                  support team.
                 </p>
               </div>
 
-              <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                    />
-                  </svg>
-                </span>
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
+              {supportCards.map((card) => (
+                <article
+                  key={card.title}
+                  className="rounded-[28px] border border-slate-200 bg-white p-5 shadow-[0_18px_55px_rgba(15,23,42,0.08)]"
+                >
                   <Lottie
-                    animationData={phone}
+                    animationData={card.animation}
                     loop={true}
-                    style={{ height: "40%", width: "40%" }}
+                    className="h-16 w-16"
                   />
-                  +91 67479 63768
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Mon-Fri from 8am to 5pm.
-                </p>
-              </div>
+                  <h3 className="mt-3 text-lg font-bold text-slate-900 font-heebo">
+                    {card.title}
+                  </h3>
+                  <p className="mt-1 text-base font-semibold text-primary font-heebo">
+                    {card.value}
+                  </p>
+                  <p className="mt-2 text-sm text-slate-600 font-heebo">
+                    {card.note}
+                  </p>
+                </article>
+              ))}
+
+              <article className="rounded-[28px] border border-slate-200 bg-white p-5 shadow-[0_18px_55px_rgba(15,23,42,0.08)]">
+                <h3 className="text-lg font-bold text-slate-900 font-heebo">
+                  Quick Help Areas
+                </h3>
+                <ul className="mt-3 space-y-2">
+                  {quickHelp.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm text-slate-600 font-heebo"
+                    >
+                      <span className="mt-1 h-2 w-2 rounded-full bg-orange-400"></span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
             </div>
-            <div className="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
-              <form>
-                <div className="-mx-2 md:items-center md:flex">
-                  <div className="flex-1 px-2">
-                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="John "
-                      className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                    />
-                  </div>
-                  <div className="flex-1 px-2 mt-4 md:mt-0">
-                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Doe"
-                      className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                    />
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+
+            <div className="lg:col-span-8 rounded-[30px] border border-slate-200 bg-white p-6 sm:p-8 shadow-[0_24px_80px_rgba(15,23,42,0.08)]">
+              <form
+                className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                onSubmit={(e) => e.preventDefault()}
+              >
+                <label className="block">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
+                    First Name
+                  </span>
+                  <input
+                    type="text"
+                    placeholder="John"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
+                  />
+                </label>
+
+                <label className="block">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
+                    Last Name
+                  </span>
+                  <input
+                    type="text"
+                    placeholder="Doe"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
+                  />
+                </label>
+
+                <label className="block sm:col-span-2">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     Email address
-                  </label>
+                  </span>
                   <input
                     type="email"
                     placeholder="johndoe@example.com"
-                    className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
                   />
-                </div>
-                <div className="w-full mt-4">
-                  <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                </label>
+
+                <label className="block sm:col-span-2">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     Message
-                  </label>
+                  </span>
                   <textarea
-                    className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                    placeholder="Message"
-                    defaultValue={""}
+                    rows={6}
+                    placeholder="How can we help you?"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100 resize-none"
                   />
+                </label>
+
+                <div className="sm:col-span-2">
+                  <button className="w-full rounded-full bg-gradient-to-r from-[#3734a9] to-indigo-600 px-4 py-3 text-sm font-semibold tracking-wide text-white shadow-lg transition hover:from-indigo-700 hover:to-[#3734a9]">
+                    Send message
+                  </button>
                 </div>
-                <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                  Send message
-                </button>
               </form>
             </div>
           </div>

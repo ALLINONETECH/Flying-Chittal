@@ -1,532 +1,260 @@
 import React from "react";
-import Blog1 from "../assets/images/Blog1.png";
+import { Link } from "react-router-dom";
 import Phone from "../assets/images/Phone.png";
 import Email from "../assets/images/Email.png";
-import contactusbluebg from "../assets/images/contactusbluebg.png";
-import cardmedia from "../assets/images/cardmedia.png";
 import HomeIcon from "../assets/images/HomeIcon.png";
+import contactusbluebg from "../assets/images/contactusbluebg.png";
 import map from "../assets/images/map.png";
+
+const contactCards = [
+  {
+    title: "Phone",
+    value: "+91 7676429520",
+    icon: Phone,
+  },
+  {
+    title: "Email",
+    value: "info@flyingchital.com",
+    icon: Email,
+  },
+];
+
+const officeLocations = [
+  {
+    title: "Registered Office",
+    lines: ["Sector V, Niladri Vihar", "Bhubaneswar, Odisha", "India - 751021"],
+  },
+  // {
+  //   title: "Head Office",
+  //   lines: ["Devanahalli, Bangalore", "Karnataka, India", "India - 562110"],
+  // },
+  // {
+  //   title: "Branch Office",
+  //   lines: ["Geneva, Switzerland"],
+  // },
+];
 
 export default function Chat() {
   return (
-    <div>
+    <div className="bg-white">
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat rounded-br-[60px] md:rounded-br-[100px]"
         style={{
-          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${contactusbluebg})`,
+          backgroundImage: `linear-gradient(120deg, rgba(55, 52, 169, 0.78) 0%, rgba(55, 52, 169, 0.62) 55%, rgba(79, 70, 229, 0.58) 100%), url(${contactusbluebg})`,
         }}
       >
-        <nav
-          x-data="{ isOpen: false }"
-          className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
-        >
-          <div className="flex items-center justify-between">
-            {/* <a href="#">
-                              <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt />
-                          </a> */}
+        <div className="absolute -top-24 right-0 h-72 w-72 rounded-full bg-orange-300/20 blur-3xl"></div>
+        <div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-indigo-300/20 blur-3xl"></div>
 
-            <div className="flex lg:hidden"></div>
-          </div>
-        </nav>
-        <div className="container px-6 py-16 mx-auto text-start">
-          <div className="max-w-lg ">
-            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 py-12 md:py-16 lg:py-24">
+          <div className="max-w-3xl text-start">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 font-heebo">
+              <span className="h-2 w-2 rounded-full bg-orange-400"></span>
+              Contact and Support
+            </span>
+
+            <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-heebo leading-tight">
               Contact Us
             </h1>
 
-            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex lg:flex-row  gap-2">
-                <div>
-                  <span>
-                    <img className="" src={HomeIcon} alt="" />
-                  </span>
-                </div>
-                <div classNAme="justify">
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
-                    Home
-                  </span>
-                  <span className="font-[700] font-heebo text-[32px]">
-                    {" "}
-                    / Contact Us
-                  </span>{" "}
-                </div>
-              </div>
+            <p className="mt-4 text-base sm:text-lg text-white/90 max-w-2xl leading-relaxed font-heebo">
+              Reach out to our team for product inquiries, partnership
+              discussions, implementation support, and enterprise assistance.
+            </p>
+
+            <div className="mt-6 flex items-center gap-2 text-base sm:text-lg font-semibold text-white font-heebo">
+              <img src={HomeIcon} alt="Home" className="h-5 w-5" />
+              <Link
+                to="/"
+                className="text-[#F85A47] hover:text-[#ff796a] transition-colors"
+              >
+                Home
+              </Link>
+              <span>/ Contact Us</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="text-gray-600 body-font">
-        <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center my-8 text-gray-900">
-          <span className=" font-heebo text-[40px] text-primary">
-            <span className="border-b-2 border-secondary">Connect&nbsp;</span>
-          </span>
-          With Us
-        </h1>
-        <div className="flex justify-center items-center">
-          <p className="text-xl not-italic  font-normal leading-7  text-center mt-4 w-5/6">
-            We kindly request all our valued clients to submit their queries
-            using the following format. This will enable us to provide you with
-            more accurate and timely assistance. Thank you for your cooperation,
-            and we look forward to assisting you effectively.
-          </p>
-        </div>
-
-        <div className="container px-10 py-10 mx-auto flex flex-wrap ">
-          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-2/6 md:w-2/6 lg:pl-20 lg:text-left text-center  ">
-            {/* <div className="flex flex-col mt-5 lg:items-start items-center ">
-                            <div className=" flex-grow rounded-tr-[50px] rounded-bl-[50px] shadow-lg   md:shadow-xl  bg-white h-full border-2 border-green-700 ">
-                                <div className=" inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mt-10 ml-32 ">
-                                    <img className="p-1" src={Phone} alt="" />
-                                </div>
-                                <h2 className="text-gray-900 text-lg title-font font-medium text-center  p-4">
-                                    PHONE
-                                </h2>
-                                <p className="leading-relaxed text-base mb-20 text-center  p-4">
-                                    +91 8095355400
-                                </p>
-                            </div>
-                        </div> */}
-
-            <div className="flex flex-col mb-4 lg:items-start items-center  sm:mr-16">
-              <div className=" flex-grow  py-4 px-10 rounded-tr-[50px] rounded-bl-[50px]  shadow-lg   md:shadow-xl  bg-white h-full w-full ">
-                <div className=" inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mt-10 md:ml-20 sm:ml-20 ">
-                  <img className="p-1" src={Phone} alt="" />
-                </div>
-                <h2 className="text-gray-900 text-2xl title-font font-bold text-center  p-4">
-                  PHONE
-                </h2>
-                <p className="leading-relaxed text-base mb-20 font-semibold text-center  p-4">
-                  +91 7676429520
-                </p>
-              </div>
+      <section className="py-14 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 font-heebo leading-tight">
+              <span className="text-primary">Connect</span> With Us
+            </h2>
+            <div className="mt-4 flex justify-center gap-2">
+              <div className="h-1.5 w-16 rounded-full bg-orange-400"></div>
+              <div className="h-1.5 w-8 rounded-full bg-indigo-300"></div>
             </div>
-
-            <div className="flex flex-col lg:items-start items-center mt-5 sm:mr-16 ">
-              <div className=" flex-grow   py-6 px-10 rounded-tr-[50px] rounded-bl-[50px]  shadow-lg   md:shadow-xl  bg-white h-full  w-full ">
-                <div className=" inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mt-10 md:ml-20 sm:ml-20 ">
-                  <img className="p-1" src={Email} alt="" />
-                </div>
-                <h2 className="text-gray-900 text-2xl  font-bold text-center  p-4">
-                  EMAIL
-                </h2>
-                <p className="leading-relaxed text-base  font-semibold mb-20 text-center  p-4">
-                  info@flyingchital.com
-                </p>
-              </div>
-            </div>
+            <p className="mt-6 text-base sm:text-lg text-slate-600 leading-7 font-heebo">
+              Share your query in the form below and our team will get back to
+              you with timely, accurate assistance.
+            </p>
           </div>
 
-          {/* <div className="lg:w-4/6 md:w-4/6 mx-auto  sm:mt-20 sm:mb-10 lg:mb-0 rounded-lg overflow-hidden  rounded-bl-[30px]  shadow-lg  md:shadow-xl  bg-white ">
-                        <div className="flex flex-col text-center w-full mb-12">
-                            <p className="lg:w-full mx-auto text-[20px] font-[400] leading-7 font-heebo text-black mt-10">
-                                Our friendly team would love to hear from you
-                            </p>
-                        </div>
+          <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+            <div className="lg:col-span-4 space-y-4">
+              {contactCards.map((card) => (
+                <article
+                  key={card.title}
+                  className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_18px_55px_rgba(15,23,42,0.08)]"
+                >
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-100">
+                    <img
+                      src={card.icon}
+                      alt={card.title}
+                      className="h-6 w-6 object-contain"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-xl font-bold text-slate-900 font-heebo">
+                    {card.title}
+                  </h3>
+                  <p className="mt-2 text-base font-semibold text-slate-600 font-heebo">
+                    {card.value}
+                  </p>
+                </article>
+              ))}
+            </div>
 
-                        <div className="flex flex-wrap -m-2 p-3">
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <label
-                                        htmlFor="name"
-                                        className="text-[20px] font-[400] leading-7 font-heebo text-black"
-                                    >
-                                        First Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        placeholder="First Name"
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base  font-heebo outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    />
-                                </div>
-                            </div>
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <label
-                                        htmlFor="email"
-                                        className="text-[20px] font-[400] leading-7 font-heebo text-black"
-                                    >
-                                        E-mail
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        placeholder="E-mail "
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    />
-                                </div>
-                            </div>
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <label
-                                        htmlFor="name"
-                                        className="text-[20px] font-[400] leading-7 font-heebo text-black"
-                                    >
-                                        Organization
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        placeholder="Organization "
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    />
-                                </div>
-                            </div>
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <label
-                                        htmlFor="email"
-                                        className="text-[20px] font-[400] leading-7 font-heebo text-black"
-                                    >
-                                        Contact Number
-                                    </label>
-                                    <input
-                                        type="name"
-                                        id="name"
-                                        name="name"
-                                        placeholder="Contact Number "
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    />
-                                </div>
-                            </div>
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <label
-                                        htmlFor="name"
-                                        className="text-[20px] font-[400] leading-7 font-heebo text-black"
-                                    >
-                                        Region
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        placeholder="Region "
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    />
-                                </div>
-                            </div>
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <label
-                                        htmlFor="name"
-                                        className="text-[20px] font-[400] leading-7 font-heebo text-black"
-                                    >
-                                        Inquiry Type
-                                    </label>
-                                    <input
-                                        type="name"
-                                        id="name"
-                                        name="name"
-                                        placeholder="Inquiry Type "
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg  md:shadow-xl  bg-white  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    />
-                                </div>
-                            </div>
-                            <div className="p-2 w-full ">
-                                <div className="relative ">
-                                    <label
-                                        htmlFor="message"
-                                        className="text-[20px] font-[400] leading-7 font-heebo text-black"
-                                    >
-                                        Message
-                                    </label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        placeholder=" Enter Message "
-                                        className="w-full bg-gray-100 shadow-lg  md:shadow-xl  bg-white  bg-opacity-50 rounded focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                                        defaultValue={""}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mt-6 p-4">
-                            <button
-                                type="submit"
-                                className="block w-full rounded-full bg-secondary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                SUBMIT
-                            </button>
-                        </div>
-                    </div> */}
-          <div id="contact-form" className="lg:w-4/6 md:w-5/6 sm:w-full mx-auto lg:mt-10 sm:mt-16 sm:mb-10 lg:mb-10 rounded-tr-[50px] overflow-hidden rounded-bl-[30px] shadow-lg md:shadow-xl border-1 bg-white">
-            <div className="flex flex-col text-center w-full mb-8">
-              <p className="lg:w-full mx-auto text-[20px] font-[400] leading-7 font-heebo text-black mt-10">
+            <div className="lg:col-span-8 rounded-[30px] border border-slate-200 bg-white p-6 sm:p-8 shadow-[0_24px_80px_rgba(15,23,42,0.08)]">
+              <p className="text-lg sm:text-xl font-semibold text-slate-900 font-heebo text-center sm:text-left">
                 Our friendly team would love to hear from you
               </p>
-            </div>
 
-            <div className="flex flex-wrap -m-2 p-5">
-              {/* Input fields go here */}
-              <div className="p-3 w-full sm:w-1/2">
-                <div className="relative">
-                  <label
-                    htmlFor="name"
-                    className="text-lg md:text-xl lg:text-lg font-normal font-heebo text-black"
-                  >
+              <form
+                className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4"
+                onSubmit={(e) => e.preventDefault()}
+              >
+                <label className="block">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     First Name
-                  </label>
+                  </span>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
                     placeholder="First Name"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg md:shadow-xl bg-white focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base md:text-lg lg:text-lg outline-none text-gray-700 py-1 px-3 sm:px-4 md:py-2 leading-8 transition-colors duration-200 ease-in-out"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
                   />
-                </div>
-              </div>
-              <div className="p-3 w-full sm:w-1/2">
-                <div className="relative">
-                  <label
-                    htmlFor="name"
-                    className="text-lg md:text-xl lg:text-lg font-normal font-heebo text-black"
-                  >
+                </label>
+
+                <label className="block">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     E-mail
-                  </label>
+                  </span>
                   <input
                     type="email"
-                    id="email"
-                    name="email"
-                    placeholder="E-mail "
-                    className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg md:shadow-xl bg-white focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base md:text-lg lg:text-lg outline-none text-gray-700 py-1 px-3 sm:px-4 md:py-2 leading-8 transition-colors duration-200 ease-in-out"
+                    placeholder="E-mail"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
                   />
-                </div>
-              </div>
+                </label>
 
-              <div className="p-3 w-full sm:w-1/2 ">
-                <div className="relative">
-                  <label
-                    htmlFor="name"
-                    className="text-lg md:text-xl lg:text-lg font-normal font-heebo text-black"
-                  >
+                <label className="block">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     Organization
-                  </label>
+                  </span>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
                     placeholder="Organization"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg md:shadow-xl bg-white focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base md:text-lg lg:text-lg outline-none text-gray-700 py-1 px-3 sm:px-4 md:py-2 leading-8 transition-colors duration-200 ease-in-out"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
                   />
-                </div>
-              </div>
-              <div className=" p-3 w-full sm:w-1/2">
-                <div className="relative">
-                  <label
-                    htmlFor="name"
-                    className="text-lg md:text-xl lg:text-lg font-normal font-heebo text-black"
-                  >
+                </label>
+
+                <label className="block">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     Contact Number
-                  </label>
+                  </span>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
                     placeholder="Contact Number"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg md:shadow-xl bg-white focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base md:text-lg lg:text-lg outline-none text-gray-700 py-1 px-3 sm:px-4 md:py-2 leading-8 transition-colors duration-200 ease-in-out"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
                   />
-                </div>
-              </div>
-              <div className="p-3 w-full sm:w-1/2">
-                <div className="relative">
-                  <label
-                    htmlFor="name"
-                    className="text-lg md:text-xl lg:text-lg font-normal font-heebo text-black"
-                  >
+                </label>
+
+                <label className="block">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     Region
-                  </label>
+                  </span>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
-                    placeholder="  Region"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg md:shadow-xl bg-white focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base md:text-lg lg:text-lg outline-none text-gray-700 py-1 px-3 sm:px-4 md:py-2 leading-8 transition-colors duration-200 ease-in-out"
+                    placeholder="Region"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
                   />
-                </div>
-              </div>
-              <div className="p-3 w-full sm:w-1/2">
-                <div className="relative">
-                  <label
-                    htmlFor="name"
-                    className="text-lg md:text-xl lg:text-lg font-normal font-heebo text-black"
-                  >
+                </label>
+
+                <label className="block">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     Inquiry Type
-                  </label>
+                  </span>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
                     placeholder="Inquiry Type"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded shadow-lg md:shadow-xl bg-white focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base md:text-lg lg:text-lg outline-none text-gray-700 py-1 px-3 sm:px-4 md:py-2 leading-8 transition-colors duration-200 ease-in-out"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
                   />
-                </div>
-              </div>
+                </label>
 
-              <div className="p-3 w-full ">
-                <div className="relative ">
-                  <label
-                    htmlFor="message"
-                    className="text-[20px] font-[400] leading-7 font-heebo text-black"
-                  >
+                <label className="block sm:col-span-2">
+                  <span className="text-sm font-semibold text-slate-700 font-heebo">
                     Message
-                  </label>
+                  </span>
                   <textarea
-                    id="message"
-                    name="message"
-                    placeholder=" Enter Message "
-                    className="w-full bg-gray-100 shadow-lg  md:shadow-xl  bg-white  bg-opacity-50 rounded focus:border-indigo-500 focus:bg-white md:text-lg lg:text-lg focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                    defaultValue={""}
+                    rows={5}
+                    placeholder="Enter Message"
+                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-slate-700 outline-none focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100 resize-none"
                   />
-                </div>
-              </div>
-            </div>
+                </label>
 
-            <div className="mb-2  p-6">
-              <button
-                type="submit"
-                className="block w-full rounded-full bg-secondary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                SUBMIT
-              </button>
+                <div className="sm:col-span-2 pt-2">
+                  <button
+                    type="submit"
+                    className="w-full rounded-full bg-gradient-to-r from-[#3734a9] to-indigo-600 px-4 py-3 text-sm font-semibold tracking-wide text-white shadow-lg transition hover:from-indigo-700 hover:to-[#3734a9]"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* <div
-        className="flex items-center justify-center  bg-cover bg-no-repeat "
+      <section
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-14 sm:py-16"
         style={{
-          background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${map}) lightgray 50% / cover no-repeat`,
+          backgroundImage: `linear-gradient(180deg, rgba(15, 23, 42, 0.76) 0%, rgba(15, 23, 42, 0.86) 100%), url(${map})`,
         }}
       >
-        <div className="container px-5 py-20 mx-auto">
-          <h1 className="text-white sm:text-4xl font-bold  mb-5 ml-4">
-            Location
-          </h1>
-          <div className="flex flex-wrap ">
-            <div className="p-4 lg:w-1/3">
-              <div className="h-full bg-white  rounded-tr-[50px] rounded-bl-[50px]  shadow-lg  overflow-hidden">
-                <h1 className="title-font sm:text-3xl text-3xl font-bold font-heebo text-[#3A0749] py-6 text-center">
-                  Registered Office
-                </h1>
-                <div className="p-6">
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    Sector V, Niladri Vihar
-                  </p>
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    Bhubaneswar, Odisha
-                  </p>
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    India - 751021
-                  </p>
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center font-heebo">
+            Locations
+          </h2>
+          <div className="mt-4 flex justify-center gap-2">
+            <div className="h-1.5 w-16 rounded-full bg-orange-400"></div>
+            <div className="h-1.5 w-8 rounded-full bg-indigo-300"></div>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+            {officeLocations.map((office) => (
+              <article
+                key={office.title}
+                className="rounded-[28px] border border-white/20 bg-white/95 p-6 shadow-[0_18px_55px_rgba(15,23,42,0.2)]"
+              >
+                <h3 className="text-xl font-bold text-slate-900 font-heebo">
+                  {office.title}
+                </h3>
+                <div className="mt-3 space-y-1.5">
+                  {office.lines.map((line) => (
+                    <p
+                      key={line}
+                      className="text-sm sm:text-base text-slate-600 font-heebo"
+                    >
+                      {line}
+                    </p>
+                  ))}
                 </div>
-              </div>
-            </div>
-            <div className="p-4 lg:w-1/3">
-              <div className="h-full bg-white  rounded-tr-[50px] rounded-bl-[50px]  shadow-lg overflow-hidden">
-                <h1 className="title-font sm:text-3xl text-3xl font-bold font-heebo text-[#3A0749] py-6 text-center">
-                  Head Office
-                </h1>
-                <div className="p-6">
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    Devanhalli, Bangalore
-                  </p>
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    Karnataka, India
-                  </p>
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    India - 562110
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 lg:w-1/3">
-              <div className="h-full bg-white  rounded-tr-[50px] rounded-bl-[50px]  shadow-lg  overflow-hidden">
-                <h1 className="title-font sm:text-3xl text-3xl font-bold font-heebo text-[#3A0749] py-6 text-center">
-                  Branch Office
-                </h1>
-                <div className="p-6">
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                    Geneva, Switzerland
-                  </p>
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3"></p>
-                  <p className="text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black mb-3">
-                  
-                  </p>
-                </div>
-              </div>
-            </div>
+              </article>
+            ))}
           </div>
         </div>
-      </div> */}
-
-      {/* <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-wrap -m-4">
-                        <div className="p-4 lg:w-1/3">
-                            <div className="h-full bg-white  rounded-tr-[50px] rounded-bl-[50px]  shadow-lg  w-full md:shadow-xl  text-center ">
-                                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"></h2>
-                                <h1 className="title-font sm:text-4xl  font-bold font-heebo text-[#3A0749]  mb-3 py-10"> Registered Office</h1>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-                                    Sector V, Niladri Vihar
-                                </p>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-                                    Bhubaneswar, Odisha
-
-                                </p>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-
-                                    India - 751021
-                                </p>
-
-
-                            </div>
-                        </div>
-                        <div className="p-4 lg:w-1/3">
-                            <div className="h-full bg-white  rounded-tr-[50px] rounded-bl-[50px]  shadow-lg  w-full md:shadow-xl  text-center ">
-                                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"></h2>
-                                <h1 className="title-font sm:text-4xl text-4xl font-bold font-heebo text-[#3A0749] py-10 "> Head Office</h1>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-                                    Devanhalli,Bangalore
-                                </p>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-                                    Karnataka, India
-
-                                </p>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-
-                                    India - 562110
-                                </p>
-
-
-                            </div>
-                        </div>
-                        <div className="p-4 lg:w-1/3">
-                            <div className="h-full bg-white  rounded-tr-[50px] rounded-bl-[50px]  shadow-lg  w-full md:shadow-xl  text-center ">
-                                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"></h2>
-                                <h1 className="title-font sm:text-4xl text-4xl font-bold font-heebo text-[#3A0749] py-10  "> Branch Office </h1>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-                                    Geneva, Switerzland
-                                </p>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-                                </p>
-                                <p className=" text-xl not-italic font-normal font-heebo leading-relaxed text-center text-black p-2">
-
-                                    India - 751021
-                                </p>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+      </section>
     </div>
   );
 }

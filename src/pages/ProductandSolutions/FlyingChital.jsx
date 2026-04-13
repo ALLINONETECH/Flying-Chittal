@@ -27,9 +27,234 @@ import manicon from "../../assets/images/man.png";
 import moneyicon from "../../assets/images/money.png";
 import awardicon from "../../assets/images/award.png";
 import right1 from "../../assets/images/right1.png";
-import conclusion from "../../assets/images/65723.jpg";
+import conclusion from "../../assets/images/65723.webp";
 import { Link } from "react-router-dom";
+import ProductIntroSection from "../../component/common/ProductIntroSection";
+import ProductCapabilityShowcase from "../../component/common/ProductCapabilityShowcase";
+import ProductFeatureDeepDive from "../../component/common/ProductFeatureDeepDive";
+import ProductFeatureCardsGrid from "../../component/common/ProductFeatureCardsGrid";
+import SampleScreenshots from "../../component/common/SampleScreenshots";
 export default function flyingChital() {
+  const introSections = [
+    {
+      heading: "Multimodal Integrated Logistics Management",
+      body: "Flying Chital stands as a trailblazing, multi-modal integrated logistics management platform, revolutionizing the logistics landscape with its comprehensive suite of services. By combining advanced analytics, customized reporting capabilities and infographics, it seamlessly streamlines and optimizes logistics operations while delivering logistics intelligence, connectivity, and real-time virtualization.",
+    },
+    {
+      heading: "Decision-Making Information at Fingertip",
+      body: "Positioned at the forefront of its category, Flying Chital's mobility feature offers smart and intelligent agile logistics operations at fingertip, ensuring unparalleled accessibility and one hundred percent visibility, irrespective of location or device. Its integrated digital platform interfaces effortlessly with government regulatory portals, ERP and SAP environments, and other enterprise systems for real-time dashboards and customizable reports.",
+    },
+    {
+      heading: "End-to-End Visibility",
+      body: "This innovative platform ensures end-to-end visibility from source to destination while reducing turnaround times, operational expenses, and the risks of pilferage and revenue leakages. Adaptable across road, rail, container, and port terminals, Flying Chital serves as a versatile and comprehensive solution for businesses operating in the modern logistics landscape.",
+    },
+  ];
+
+  const introCapabilityTags = [
+    "Logistics Intelligence",
+    "Logistics Connectivity",
+    "Real-Time Virtualization",
+  ];
+
+  const capabilityStats = [
+    { value: "4", label: "Solution Modules" },
+    { value: "24/7", label: "Operational Visibility" },
+    { value: "100%", label: "Connected Workflow" },
+  ];
+
+  const capabilityCards = [
+    {
+      kicker: "Rail",
+      title: "Rail Logistics with End-to-End Wagon Visibility",
+      description:
+        "Coordinate rake movement, turnaround, loading, unloading, and decision-making through a connected rail logistics control layer.",
+      image: raillogistic,
+      alt: "Flying Chital rail logistics solution",
+      href: "/railLogistics",
+    },
+    {
+      kicker: "Road",
+      title: "Road Logistics for Agile Transport Operations",
+      description:
+        "Track vehicle movement, streamline dispatch, and improve operational responsiveness across dynamic road logistics networks.",
+      image: roadogistic,
+      alt: "Flying Chital road logistics solution",
+      href: "/roadLogistics",
+    },
+    {
+      kicker: "Telematics",
+      title: "Telematics for Real-Time Asset Intelligence",
+      description:
+        "Bring traceability, route discipline, and on-ground asset awareness into a single digital operating environment.",
+      image: telematics,
+      alt: "Flying Chital telematics solution",
+      href: "/telematics",
+    },
+    {
+      kicker: "Custom",
+      title: "Customised Solutions for Complex Logistics Workflows",
+      description:
+        "Adapt Flying Chital to site-specific processes, enterprise integrations, and domain requirements without losing visibility or control.",
+      image: customisedfeature,
+      alt: "Flying Chital customised logistics solution",
+      href: "/customized",
+    },
+  ];
+
+  const highlightsStats = [
+    "Digital operations",
+    "Multi-modal coverage",
+    "Anytime visibility",
+  ];
+
+  const highlightsGroups = [
+    {
+      title: "Operational Enablement",
+      items: [
+        "Digitalization with reduced paper and menial work",
+        "Weighment solutions including man-less, in-motion weigh bridges",
+        "Mobile app support alongside the web platform",
+        "Automation for vehicle and driver assignment, entry, exit, weighment, validation, verification, and documentation",
+        "Telematics with GPS trace and track across fixed, portable, and solar deployments",
+      ],
+    },
+    {
+      title: "Platform Capabilities",
+      items: [
+        "HEM, HMV, and LMV management at trip level within mines, plants, and ports",
+        "Analytics and customised reports for operational decision-making",
+        "A single integrated digital platform across logistics workflows",
+        "Multi-modal coverage across road, rail, and port terminals",
+        "End-to-end visibility anytime, anywhere, on any device",
+      ],
+    },
+  ];
+
+  const firefightingStats = ["High TAT", "Manual workflows", "Low visibility"];
+
+  const firefightingBullets = [
+    "Current process disjointed",
+    "Data collected offline and not leveraged to full potential",
+    "Manual and paper-based system",
+    "High dependency on manpower",
+    "High turnaround times leading to higher cost",
+    "Limited visibility and control",
+    "Delays and chaos across operations",
+  ];
+
+  const outcomesStats = [
+    "Lower TAT",
+    "Higher efficiency",
+    "Real-time visibility",
+  ];
+
+  const outcomeGroups = [
+    {
+      title: "Reduced",
+      items: [
+        "Turn Around Time (TAT)",
+        "Cost of operations",
+        "Revenue leakage and loss",
+        "Operational fatigue",
+      ],
+    },
+    {
+      title: "Increased",
+      items: [
+        "Production efficiency",
+        "Top line performance",
+        "Bottom line improvement",
+      ],
+    },
+    {
+      title: "Operational Gains",
+      items: [
+        "End-to-end real-time visibility",
+        "Trip-level monitoring and control",
+        "Proactive preventive action",
+        "Reduced need for reactive corrective action",
+      ],
+    },
+  ];
+
+  const featureCards = [
+    {
+      title: "Single Integrated Solution",
+      description:
+        "Multi-modal road and rail orchestration in one operating platform rather than fragmented ecosystem tools.",
+      icon: group,
+    },
+    {
+      title: "Cash Flow Optimization",
+      description:
+        "Optimizes cash flow for enterprises and transport operators with tighter operational control.",
+      icon: handicon,
+    },
+    {
+      title: "Complete Mobility",
+      description:
+        "Integration with ERP, SAP, and TALLY for seamless exchange of operational data and insights.",
+      icon: mobilicon,
+    },
+    {
+      title: "Visibility and Control",
+      description:
+        "Enterprises, transporters, and truck owners gain a common visibility layer for coordinated execution.",
+      icon: awardicon,
+    },
+    {
+      title: "Profiles",
+      description:
+        "Digital workspace and role-based profiles empower every stakeholder in the logistics chain.",
+      icon: manicon,
+    },
+    {
+      title: "Revenue Optimization",
+      description:
+        "Enterprises reduce cost while transporters improve revenue, creating win-win outcomes.",
+      icon: moneyicon,
+    },
+  ];
+
+  const inSummaryPoints = [
+    {
+      title: "Single Integrated Digital Platform",
+      detail:
+        "Real-time situational awareness enables proactive action instead of reactive response.",
+    },
+    {
+      title: "Multi Modal Transport",
+      detail:
+        "Road and rail networks can run independently or in a combined operating model.",
+    },
+    {
+      title: "Complete Visibility",
+      detail:
+        "Inbound and outbound movement visibility across mines, plants, ports, and railway yards.",
+    },
+    {
+      title: "Automation First",
+      detail: "Manual, inefficient process layers are eliminated by design.",
+    },
+    {
+      title: "Revenue Protection",
+      detail: "Lower cost, wastage, pilferage, and leakage through control and traceability.",
+    },
+    {
+      title: "Operational Reliability",
+      detail: "Higher efficiency, transparency, and process consistency at scale.",
+    },
+    {
+      title: "Regulatory Connectivity",
+      detail: "Seamless integration with government and regulatory portals.",
+    },
+    {
+      title: "Logistics 4.0 Alignment",
+      detail:
+        "Built for digital, connected, data-driven logistics transformation.",
+    },
+  ];
+
   return (
     <div className="overflow-x-hidden">
       <section
@@ -60,7 +285,7 @@ export default function flyingChital() {
               Flying Chital
             </h1>
             <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              Smart Agile Logistics at Fingertip...
+              Smart and Intelligent Agile Logistics at Fingertip...
             </p>
             <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
               <div className="flex lg:flex-row  gap-2">
@@ -71,11 +296,14 @@ export default function flyingChital() {
                 </div>
                 <div className="justify">
                   {" "}
-                  <Link to="/" className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    {" "}
-                    Home
-                  </span>
+                  <Link
+                    to="/"
+                    className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]"
+                  >
+                    <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
+                      {" "}
+                      Home
+                    </span>
                   </Link>
                   <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
                     {" "}
@@ -87,887 +315,204 @@ export default function flyingChital() {
           </div>
         </div>
       </section>
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full md:w-1/3 w-full mb-10 md:mb-0 sm:pl-20 ">
-            <div className="flex flex-col m-2 p-4 space-y-4  ">
-              <img
-                className="object-cover object-center rounded"
-                alt="hero"
-                src={fclogo}
-              />
-              <div className=" px-3 py-4 bg-[#EAEFF3]  ">
-                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo sm:text-lg not-italic font-medium text-primary bg-[#dce0ee] mb-3">
-                  Logistics Intelligence
-                </div>
-                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo sm:text-xl not-italic font-medium text-secondary bg-[#ece3e6] mb-3">
-                  Logistics Connectivity
-                </div>
-                <div className="flex px-3 py-6 justify-center items-start self-stretch rounded-xl font-heebo sm:text-xl not-italic font-medium text-black bg-[#dddde6]">
-                  Real-Time Virtualization
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-20 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center ">
-            {/* <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-                            <br className="hidden lg:inline-block" />readymade gluten
-                        </h1> */}
-            <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo mb-2 mx-2">
-              Multimodal Integrated Logistics Management
-            </h1>
-            <div className="my-2 rounded-md p-2 bg-slate-200 ">
-              <p className=" not-italic font-normal leading-7  text-[#30343F]mb-4  text-xl mt-2 mr-2 font-heebo ">
-                Flying Chital stands as a trailblazing, multi-modal integrated
-                logistics management platform, revolutionizing the logistics
-                landscape with its comprehensive suite of services. By combining
-                advanced analytics, customized reporting capabilities and
-                infographics it seamlessly streamlines and optimizes logistics
-                operations, providing invaluable logistics intelligence,
-                connectivity, and real-time virtualization.
-              </p>
-            </div>
+      <ProductIntroSection
+        logo={fclogo}
+        productName="Flying Chital"
+        eyebrow="Logistics Transformation Platform"
+        title="Smart, Connected, and Agile Logistics Intelligence"
+        subtitle="A multi-modal logistics management platform built to unify visibility, decision-making, and operational control across modern supply chains."
+        capabilityTags={introCapabilityTags}
+        sections={introSections}
+      />
 
-            <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo my-2 mx-2">
-              Decision Making Information at Fingertip
-            </h1>
-            <div className="bg-orange-50 my-2 rounded-md p-2 ">
-              <p className=" not-italic font-normal leading-7  text-[#30343F] mb-4  text-xl mt-2 mr-2 ">
-                Positioned at the forefront of its category, Flying Chital's
-                mobility feature offers 'Smart Agile Logistics Operations at
-                Fingertip, ensuring unparalleled accessibility and 100%
-                visibility, irrespective of location or device. Moreover, its
-                integrated digital platform interfaces effortlessly with various
-                Government Regulatory Portals, including Vahan, Parivahan, GST
-                Portal, Govt Mining Regulatory Portals, ERP/SAP, and more,
-                enabling real-time data access through customizable dashboards
-                and reports.
-              </p>
-            </div>
-            <h1 className="text-2xl not-italic font-bold leading-8 text-primary font-heebo my-2 mx-2">
-              End to End Visibility
-            </h1>
-            <div className="my-2 rounded-md p-2 bg-zinc-100 ">
-              <p className=" not-italic font-normal leading-7  text-[#30343F]mb-4  text-xl mt-2 mr-2 ">
-                This innovative platform not only ensures end-to-end visibility
-                from source to destination but also significantly reduces
-                turnaround times, operational expenses, and the risks of
-                pilferage and revenue leakages. With its adaptability to
-                multiple transportation modes, including road, rail, container,
-                and port terminals, this digital logistics management system
-                serves as a versatile, comprehensive solution for businesses
-                operating in the modern logistics landscape. Flying Chital is a
-                cost effective conveneient door way to Logistics 4.0.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductCapabilityShowcase
+        eyebrow="Solution Showcase"
+        title="Explore the Operating Layers Behind Flying Chital"
+        description="Each module extends the same logistics intelligence backbone across rail, road, telematics, and customised workflows, while keeping operational visibility and enterprise connectivity intact."
+        stats={capabilityStats}
+        cards={capabilityCards}
+      />
 
-      <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-100">
-        <div className="container md:px-32 py-5 mx-auto">
-          <div className="flex flex-wrap -m-4 ">
-            <div className="w-full sm:w-auto md:w-1/2 p-4">
-              <Link to="/railLogistics">
-                <div className="border border-gray-200 rounded-tr-[80px] rounded-bl-[50px] shadow-lg md:shadow-xl h-full transition-transform transform hover:scale-105">
-                  <img
-                    className="w-full h-full object-cover"
-                    src={raillogistic}
-                    alt=""
-                  />
-                </div>
-              </Link>
-            </div>
+      <ProductFeatureDeepDive
+        eyebrow="Operational Core"
+        title="The Core Capabilities That Make Logistics Agile"
+        description="Flying Chital combines digital workflows, multi-modal orchestration, telematics, automation, and enterprise reporting into a single operational system designed for high-volume logistics environments."
+        image={logisticfire}
+        imageAlt="Flying Chital logistics operations"
+        bulletGroups={highlightsGroups}
+        stats={highlightsStats}
+      />
 
-            <div className=" w-auto md:w-1/2 p-4">
-              <Link to="/roadLogistics">
-                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl transition-transform transform hover:scale-105">
-                  <img className=" w-full" src={roadogistic} alt="" />
-                </div>
-              </Link>
-            </div>
-            <div className=" w-auto md:w-1/2 p-4">
-              <Link to="/telematics">
-                <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl transition-transform transform hover:scale-105">
-                  <img className=" w-full" src={telematics} alt="" />
-                </div>
-              </Link>
-            </div>
+      <ProductFeatureDeepDive
+        eyebrow="Operational Pain Points"
+        title="Why Logistics Operations Slip Into Constant Fire Fighting"
+        description="Without an integrated digital workflow, logistics teams end up reacting to delays, fragmented information, and manual processes instead of controlling operations with live data and coordinated execution."
+        image={logisticfire2}
+        imageAlt="Logistics operations under pressure"
+        bullets={firefightingBullets}
+        stats={firefightingStats}
+        reverse
+        overlayLabel="Operational Pressure"
+        overlayText="The section frames the legacy pain points that Flying Chital is designed to remove through visibility, orchestration, and automation."
+      />
 
-            <div className=" w-auto md:w-1/2 p-4">
-              <Link to="/customized">
-                <div className=" border-gray-200  rounded-tr-[80px] rounded-bl-[50px]  shadow-lg  md:shadow-xl border-2 transition-transform transform hover:scale-105 ">
-                  <img
-                    className="rounded-tr-[15px] w-full"
-                    src={customisedfeature}
-                    alt=""
-                  />
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductFeatureDeepDive
+        eyebrow="Operational Outcomes"
+        title="Smart Agile Logistics Drives Smoother, More Predictable Operations"
+        description="Flying Chital improves operational flow by reducing manual friction, lowering cost leakages, increasing production efficiency, and giving teams the visibility needed to act before disruption compounds."
+        image={Citem3}
+        imageAlt="Smart agile logistics operations"
+        bulletGroups={outcomeGroups}
+        stats={outcomesStats}
+        overlayLabel="Operational Outcomes"
+        overlayText="The platform shifts logistics teams from reactive firefighting to measurable, proactive execution with better visibility and lower operational drag."
+      />
 
-      <section className="text-gray-600 body-font mt-10 rounded-tl-[50px] rounded-br-[50px] pb-10 container">
-        <div className="container px-5 py-10 mx-auto ">
-          <h1 className="title-font sm:text-4xl text-3xl font-medium text-gray-900 mt-5 text-start  md:text-start ml-12">
-            <span className="text-[#3734a9]">Highlights</span>
-          </h1>
-          <div className="flex text-start  md:text-start ml-12">
-            <div className="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-          </div>
-
-          <div className=" mx-auto flex flex-col lg:flex-row  py-10 ">
-            <div className="lg:w-full md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-start text-left   ml-12">
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo mb-0">
-                  Digitalization
-                  <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo mb-0">
-                      Reduced Paper and Menial Work
-                    </p>
-                  </div>
-                </p>
-              </div>
-
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  Weighment Solutions
-                  <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                      Man less, In Motion Weigh Bridges
-                    </p>
-                  </div>
-                </p>
-              </div>
-
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  Mobility
-                  <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                      Mobile App along with web version
-                    </p>
-                  </div>
-                </p>
-              </div>
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  Automation
-                  <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                      Vehicle & Driver Assignment, Entry, Exit, Weighment,{" "}
-                      <br />
-                      Validation & Verification, Documentation
-                    </p>
-                  </div>
-                </p>
-              </div>
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  Telematics
-                  <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                      GPS Trace and Track, Fixed/Portable/Solar
-                    </p>
-                  </div>
-                </p>
-              </div>
-            </div>
-
-            <div className="lg:w-full md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left  ml-12">
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  HEM/HMV/LMV Management
-                  <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                      Trip level within mines, plants, port
-                    </p>
-                  </div>
-                </p>
-              </div>
-
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  Analytics & Customised Reports
-                  {/* <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
-                  </div> */}
-                </p>
-              </div>
-
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  Single Integrated Digital Platform
-                  {/* <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
-                  </div> */}
-                </p>
-              </div>
-
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  Multi Modal
-                  <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                      Road, Rail, Port Terminals
-                    </p>
-                  </div>
-                </p>
-              </div>
-              <div className="flex mt-5">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                  End to End Visibility
-                  <div className="flex gap-2">
-                    <span>
-                      <img className="" src={IconFC} alt="" />
-                    </span>
-                    <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                      Anytime/Anywhere/Any Device
-                    </p>
-                  </div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Logistic every minute */}
-      <section className="text-gray-600 body-font mt-10 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
-        <div className="container  flex flex-col-reverse md:flex-row items-center px-5 py-10">
-          <div className="relative lg:flex-grow md:w-1/2 lg:pr-12 md:pr-16 flex flex-col md:items-start md:text-left items-start  text-start ">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-              <span className="text-indigo-800 font-bold text-[40px]  ">
-                Logistics&nbsp;
-              </span>
-              <span className="text-[40px] font-heebo font-bold ">
-                Every Minute Fire Fighting
-              </span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
-
-            <div className="flex flex-col mt-5">
-              {/* Repeat this block for each item */}
-              <div className="flex items-start">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  Current process disjointed
-                </p>
-              </div>
-              <div className="flex items-start">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  Data collected offline - Not leveraged to full potential
-                </p>
-              </div>
-              {/* <div className="flex items-start">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  Data collected offline - Not leveraged to full potential
-                </p>
-              </div> */}
-              <div className="flex items-center">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  Manual and paper-based system
-                </p>
-              </div>
-              <div className="flex items-center">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  High dependency on manpower
-                </p>
-              </div>
-              <div className="flex items-center">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  High Turn around Times (TAT)- Higher Cost
-                </p>
-              </div>
-              <div className="flex items-center">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  Limited visibilty and control
-                </p>
-              </div>
-              <div className="flex items-center">
-                <span>
-                  <img className="p-1" src={IconFC} alt="" />
-                </span>
-                <p className="text-xl not-italic font-medium leading-relaxed font-heebo">
-                  Delays and chaos
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg overflow-hidden">
-            <img
-              className="object-cover object-center absolute ml-52 bottom-48  hidden md:block"
-              alt="hero"
-              src={logisticfire}
-            />
-            <img
-              className="object-cover object-center  rounded-bl-lg"
-              alt="hero"
-              src={logisticfire2}
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="text-gray-600 body-font mt-10">
-        <div className="container mx-auto flex pl-8 py-12 md:flex-row flex-col items-start" >
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative rounded-tl-lg overflow-hidden">
-            <img
-              className="object-cover object-center rounded-tl-[50px] rounded-br-[50px] drop-shadow-lg"
-              alt="hero"
-              src={Citem3}
-            />
-          </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-start text-start">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1" >
-              <span className=" text-indigo-800 font-bold text-[40px] ">
-                Smart
-              </span>
-              <span className=" text-[40px] font-heebo font-bold ">
-                {" "}
-                Agile Logistics – Smooth Operations
-              </span>
-            </h1>
-            <div className="w-16 h-1  rounded-full bg-orange-400 inline-flex"></div>
-
-            <div className="mx-auto flex py-5 md:flex-row flex-col ">
-              <div>
-                <div className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                    Reduced
-                    <div className="flex gap-2">
-                      <span>
-                        <img className="" src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Turn Around Time (TAT)
-                      </p>
-                    </div>
-                    <div className="flex gap-2">
-                      <span>
-                        <img className="" src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Cost of Operations
-                      </p>
-                    </div>
-                    <div className="flex gap-2">
-                      <span>
-                        <img className="" src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Revenue Leakage/Loss
-                      </p>
-                    </div>
-                    <div className="flex gap-2">
-                      <span>
-                        <img className="" src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Fatigue
-                      </p>
-                    </div>
-                  </p>
-                </div>
-                <div className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                    Increased
-                    <div className="flex gap-2">
-                      <span>
-                        <img className="" src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Production Efficiency
-                      </p>
-                    </div>
-                    <div className="flex gap-2">
-                      <span>
-                        <img className="" src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Top line
-                      </p>
-                    </div>
-                    <div className="flex gap-2">
-                      <span>
-                        <img className="" src={IconFC} alt="" />
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                        Bottom line
-                      </p>
-                    </div>
-                  </p>
-                </div>
-              </div>
-              <div className=" mt-4">
-                <div className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                    End to End Visibility – Real Time
-                    <div className="flex gap-2">
-                      <span>
-                        {/* <img className="" src={IconFC} alt="" /> */}
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
-                    </div>
-                  </p>
-                </div>
-
-                <div className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                    Trip Level Monitoring and Control
-                    <div className="flex gap-2">
-                      <span>
-                        {/* <img className="" src={IconFC} alt="" /> */}
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
-                    </div>
-                  </p>
-                </div>
-                <div className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                    Proactive Preventive Action
-                    <div className="flex gap-2">
-                      <span>
-                        {/* <img className="" src={IconFC} alt="" /> */}
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
-                    </div>
-                  </p>
-                </div>
-                <div className="flex mt-5">
-                  <span>
-                    <img className="p-1" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                    No need for Reactive <br />
-                    Corrective Action
-                    <div className="flex gap-2">
-                      <span>
-                        {/* <img className="" src={IconFC} alt="" /> */}
-                      </span>
-                      <p className="text-xl not-italic font-normal leading-7 font-heebo "></p>
-                    </div>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="text-gray-600 body-font bg-indigo-800 rounded-tl-[50px] rounded-br-[50px]">
-        <div className="container px-5 py-10 mx-auto">
-          <div class="text-center mb-14">
-            <h1 class=" text-[5rem] font-bold title-font text-white mb-1">
-              Features
-            </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-            <div class="flex justify-center">
-              <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-            </div>
-          </div>
-          <div className="flex flex-wrap -m-4">
-            <div className=" md:w-1/3 p-4 ">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  <img className="p-1" src={group} alt="" />
-                </div>
-                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
-                  Single Integrated Solution <br />
-                  Multi Modal-Road and Rail
-                </h1>
-                <div className="">
-                  <p className="text-xl not-italic font-normal leading-7 ">
-                    Competition is trying to solve individual ecosystem
-                    problems.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px] h-full w-full bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                  <img className="p-1" src={handicon} alt="" />
-                </div>
-                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
-                  Cash Flow Optimization
-                </h1>
-                <div className="">
-                  <p className="text-xl not-italic font-normal leading-7 ">
-                    Optimizes cash flow for enterprises and transports.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px] h-full  bg-white shadow-lg  md:shadow-xl">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-
-                  <img className="p-1" src={mobilicon} alt="" />
-                </div>
-                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
-                  Complete Mobility
-                </h1>
-                <div className="">
-                  <p className="text-xl not-italic font-normal leading-7 ">
-                    Integration with ERP/SAP/TALLY platforms for seamless
-                    exchange of data and information.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                  <img className="p-1" src={awardicon} alt="" />
-                </div>
-                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
-                  Visibility and Control
-                </h1>
-
-                <div className="">
-                  <p className="text-xl not-italic font-normal leading-7 ">
-                    Enterprises, Transporters, Truck owners get complete
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl h-full">
-                <div className="  inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                  <img className="p-1" src={manicon} alt="" />
-                </div>
-                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
-                  Profiles
-                </h1>
-                <div className="">
-                  <p className="text-xl not-italic font-normal leading-7 ">
-                    Digital Workspace and Profiles empower all stakeholders and
-                    users.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-tr-[30px] rounded-bl-[30px]  bg-white shadow-lg  md:shadow-xl">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-tr-lg  rounded-bl-lg bg-indigo-100 text-indigo-500 mb-4">
-                  {/* <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-6 h-6" viewBox="0 0 24 24">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg> */}
-                  <img className="p-1" src={moneyicon} alt="" />
-                </div>
-                <h1 className="text-2xl not-italic font-bold leading-8 text-gray-900  title-font mb-2">
-                  Revenue Optimization
-                </h1>
-                <div className="pb-6">
-                  <p className="text-xl not-italic font-normal leading-7 ">
-                    Enterprises reduce cost. Transporters increase revenue. Win
-                    Win for All.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductFeatureCardsGrid
+        eyebrow="Platform Features"
+        title="Feature Set Built for Integrated Logistics Performance"
+        description="Flying Chital combines multimodal orchestration, enterprise integrations, visibility controls, and revenue-focused operations in one connected digital platform."
+        cards={featureCards}
+      />
 
       {/* /test */}
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-10 mx-auto">
-          <div class="text-center mb-14">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-              Sample Screenshots
-            </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-            <div class="flex justify-center">
-              <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
+      <SampleScreenshots images={[sc1, sc2, sc3, sc4]} />
+
+      <section className="relative overflow-hidden py-14 sm:py-16">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(55,52,169,0.10),_transparent_32%),radial-gradient(circle_at_bottom_right,_rgba(248,90,71,0.10),_transparent_28%)]"></div>
+
+        <div className="container relative z-10 mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10 items-start">
+            <div className="lg:col-span-7">
+              <div className="rounded-[32px] border border-slate-200 bg-white p-6 shadow-[0_24px_80px_rgba(15,23,42,0.08)] sm:p-8 lg:p-10">
+                <div className="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1.5 text-sm font-semibold text-primary font-heebo">
+                  <span className="h-2 w-2 rounded-full bg-orange-400"></span>
+                  Strategic Snapshot
+                </div>
+
+                <h2 className="mt-5 text-3xl font-bold leading-tight text-slate-900 font-heebo sm:text-4xl lg:text-5xl">
+                  In Summary
+                </h2>
+
+                <div className="mt-5 flex gap-2">
+                  <div className="h-1.5 w-16 rounded-full bg-orange-400"></div>
+                  <div className="h-1.5 w-8 rounded-full bg-indigo-300"></div>
+                </div>
+
+                <p className="mt-5 text-base leading-7 text-slate-600 font-heebo sm:text-lg">
+                  Flying Chital consolidates logistics execution into one
+                  intelligent operating layer, enabling proactive action,
+                  stronger control, and measurable operational outcomes.
+                </p>
+
+                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {inSummaryPoints.map((point, index) => (
+                    <article
+                      key={point.title}
+                      className={`rounded-3xl border p-5 sm:p-6 ${
+                        index % 3 === 0
+                          ? "border-indigo-100 bg-indigo-50/60"
+                          : index % 3 === 1
+                            ? "border-orange-100 bg-orange-50/70"
+                            : "border-slate-200 bg-slate-50"
+                      }`}
+                    >
+                      <div className="flex items-start gap-3">
+                        <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-sm font-bold text-primary shadow-sm font-heebo">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <div>
+                          <h3 className="text-lg font-bold leading-tight text-slate-900 font-heebo">
+                            {point.title}
+                          </h3>
+                          <p className="mt-2 text-sm leading-6 text-slate-600 font-heebo sm:text-base">
+                            {point.detail}
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-wrap  place-content-center ">
-            <div className=" flex m-auto mb-28 w-1/4  place-content-center">
-              <img
-                className="object-non object-center w-auto "
-                alt="hero"
-                src={sc1}
-              />
-            </div>
-            <div className=" flex m-auto mb-28 w-1/4  place-content-center">
-              <img className="object-cover w-auto" alt="hero" src={sc2} />
-            </div>
-            <div className=" m-auto flex m-auto mb-28 w-1/4  place-content-center">
-              <img className="object-cover w-auto " alt="hero" src={sc3} />
-            </div>
-            <div className=" flex m-auto mb-28 w-1/4  place-content-center">
-              <img className="object-cover w-auto " alt="hero" src={sc4} />
+
+            <div className="lg:col-span-5">
+              <div className="relative h-full min-h-[320px] overflow-hidden rounded-[32px] border border-white/70 shadow-[0_26px_80px_rgba(15,23,42,0.12)] sm:min-h-[420px] lg:sticky lg:top-24">
+                <img
+                  className="h-full w-full object-cover"
+                  alt="Flying Chital summary"
+                  src={conclusion}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/25 to-transparent"></div>
+                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                  <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur-md sm:p-5">
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/80 font-heebo">
+                      Strategic Outcome
+                    </p>
+                    <p className="mt-2 text-lg font-semibold leading-7 text-white font-heebo sm:text-xl">
+                      A connected logistics platform that reduces leakage,
+                      improves transparency, and enables consistent operational
+                      performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="text-gray-600 body-font mt-10 rounded-tl-[50px] rounded-br-[50px] bg-gray-100 pb-10">
-        <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-start ">
-          <div className=" relative lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-start text-start  ">
-            <h1 className="title-font sm:text-4xl text-3xl  font-medium text-gray-900  mt-5">
-              In Summary
-            </h1>
-            <div class="flex justify-center">
-              <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={IconFC} alt="" />
-              </span>
-              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                Single Integrated Digital Platform
-                <div className="flex gap-2">
-                  <span>
-                    <img className="" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                    Real Time Situational Awareness- Proactive Action not
-                    Reactive Response
-                  </p>
-                </div>
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={IconFC} alt="" />
-              </span>
-              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                Multi Modal Transport
-                <div className="flex gap-2">
-                  <span>
-                    <img className="" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                    Road and Rail Network – Combined/ Independent as Stand Alone
-                  </p>
-                </div>
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={IconFC} alt="" />
-              </span>
-              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                Complete Visibility
-                <div className="flex gap-2">
-                  <span>
-                    <img className="" src={IconFC} alt="" />
-                  </span>
-                  <p className="text-xl not-italic font-normal leading-7 font-heebo ">
-                    Inbound/Outbound – Within Mines/Plants/Ports/Railway Yards
-                  </p>
-                </div>
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={IconFC} alt="" />
-              </span>
-              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                Automation Eliminates Inefficient Manual Processes
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={IconFC} alt="" />
-              </span>
-              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                Reduced Costs, Wastage, Pilferage – Revenue Leakage
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={IconFC} alt="" />
-              </span>
-              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                Enhanced Efficiency, Transparency, Reliability
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={IconFC} alt="" />
-              </span>
-              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                Seamless Interface with Govt. & Regulatory Portals
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={IconFC} alt="" />
-              </span>
-              <p className="text-xl not-italic font-medium leading-relaxed font-heebo ">
-                Aligned with Logistics 4.0
-              </p>
-            </div>
-
-            {/* <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base">
-                Data collected offline - Not leveraged to full potential{" "}
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base">
-                Manual and paper-based system
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base">
-                High dependency on manpower{" "}
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base">
-                Higher TATs - higher cost{" "}
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base">
-                Limited visibility and control
-              </p>
-            </div>
-            <div className="flex mt-5">
-              <span>
-                <img className="p-1" src={Rightarr} alt="" />
-              </span>
-              <p className="leading-relaxed text-base">Delays and chaos</p>
-            </div> */}
+      {/* Complementary Solutions CTA */}
+      <section className="bg-gradient-to-r from-slate-900 via-indigo-900 to-purple-900 py-16 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-heebo mb-4">
+              Complete Your Operational Stack
+            </h2>
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+              Flying Chital works best alongside intelligent field force and vehicle management solutions for truly end-to-end operational visibility.
+            </p>
           </div>
-          <div className=" relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded-tl-lg">
-            {/* <img
-              className="object-cover object-center absolute ml-52 bottom-48"
-              alt="hero"
-              src={right1}
-            /> */}
-            <img
-              className="object-cover object-center  rounded-bl-3xl rounded-tr-3xl"
-              alt="hero"
-              src={conclusion}
-            />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Link 
+              to="/traks" 
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-white font-heebo mb-3 group-hover:text-indigo-300 transition-colors">
+                Traks - Field Force Management
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Complement your logistics operations with intelligent field force management. Traks adds real-time workforce visibility, attendance integrity, and field team optimization to your logistics stack.
+              </p>
+              <span className="text-indigo-300 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                Explore Traks →
+              </span>
+            </Link>
+
+            <Link 
+              to="/mobilyt" 
+              className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-lg p-8 transition-all duration-300 hover:shadow-xl"
+            >
+              <h3 className="text-2xl font-bold text-white font-heebo mb-3 group-hover:text-orange-300 transition-colors">
+                Mobilyt - Vehicle Tracking
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Add vehicle-level telematics and asset intelligence to your Flying Chital logistics platform. Mobilyt delivers real-time fleet visibility, driver behavior analytics, and mobility operations control.
+              </p>
+              <span className="text-orange-300 font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                Explore Mobilyt →
+              </span>
+            </Link>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link 
+              to="/services" 
+              className="inline-block px-8 py-3 bg-white text-indigo-900 hover:bg-gray-100 rounded-lg font-semibold transition-colors"
+            >
+              View All Services & Solutions
+            </Link>
           </div>
         </div>
       </section>

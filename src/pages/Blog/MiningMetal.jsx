@@ -1,243 +1,131 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BlogMining from "../../assets/images/BlogMining.png";
 import MinMetal from "../../assets/images/MinMetal.png";
-import IconFC from "../../assets/images/IconFC.png";
-import HomeIcon from "../../assets/images/HomeIcon.png";
+
+const challenges = [
+  {
+    title: "Manual Data Collection",
+    issue:
+      "Manual collection of data from various entities like transporters, SAP, plants, plots, and railway sidings leads to errors and difficulty getting meaningful insights required for immediate action. Entry/Exit remain paper-based.",
+    solution:
+      "Automate data collection with an integrated platform that electronically captures Entry/Exit events and provides real-time insights across all logistics touch points.",
+  },
+  {
+    title: "Operational Visibility Gaps",
+    issue:
+      "Lack of real-time visibility across the logistics network makes it difficult to monitor progress, identify bottlenecks, and take corrective actions promptly.",
+    solution:
+      "Deploy IoT-powered smart tracking across touch points to create a live digital view of material movement — from loading at the plant to delivery at the destination.",
+  },
+  {
+    title: "Revenue Leakage via e-PoD",
+    issue:
+      "Approximately 10–15% of inbound loaded trucks exit the plant without proof of delivery, causing significant revenue leakage due to lack of an e-PoD solution across touch points.",
+    solution:
+      "Incorporate a 'Lat-Long e-PoD' module that auto-registers GPS coordinates at the unloading point, eliminating false trip closures during transit and ensuring accountability.",
+  },
+  {
+    title: "High Transportation Costs",
+    issue:
+      "Excessive time for trucks to enter, load, and exit — compounded by manual generation of multiple invoices and e-WAY bills — increases transporter costs and slows TAT.",
+    solution:
+      "Implement RPA (Robotic Process Automation) for Auto Invoicing and Auto e-WAY bill generation to dramatically improve TAT, reduce costly errors, and enable better rate negotiations.",
+  },
+  {
+    title: "Non-Compliant Trip Closures",
+    issue:
+      "Trips are often closed during transit rather than at the actual unloading point, leading to incorrect operational data and compliance issues.",
+    solution:
+      "The Lat-Long e-PoD module ensures unloading operators close trips at the verified GPS-confirmed destination, eliminating fraudulent or premature closures.",
+  },
+];
 
 export default function MiningMetal() {
   return (
-    <div>
-      {/* {/ Section-1 /} */}
+    <div className="bg-white">
+      {/* Hero */}
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="relative bg-no-repeat bg-center bg-cover min-h-[420px] flex items-end pb-16 rounded-br-[80px] overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${BlogMining})`,
+          backgroundImage: `linear-gradient(95deg, rgba(55,52,169,0.88) 0%, rgba(55,52,169,0.55) 100%), url(${BlogMining})`,
         }}
       >
-        <nav
-          x-data="{ isOpen: false }"
-          className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex lg:hidden"></div>
-          </div>
-          {/* <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-                    </div> */}
-        </nav>
-        <div className="container px-6 py-16 mx-auto text-start">
-          <div className=" mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-medium font-heebo  text-gray-100 dark:text-white ">
-              Mining And Metal
-            </h1>
-            <p className=" text-xl md:text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-medium tracking-wide font-heebo w-full text-start ">
-              Challenge, Ideate & Create
-            </p>
-            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex lg:flex-row  gap-2">
-                <div>
-                  <span>
-                    <img className="" src={HomeIcon} alt="" />
-                  </span>
-                </div>
-                <div classNAme="justify">
-                  {" "}
-                  <span className="text-[#F85A47] font-[700] font-heebo text-[32px] ">
-                    Home
-                  </span>
-                  <span className="font-[700] font-heebo text-[32px] ">
-                    {" "}
-                    / Blogs
-                  </span>{" "}
-                </div>
-              </div>
-            </div>
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-10 right-10 w-72 h-72 rounded-full bg-white/5 blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-indigo-400/10 blur-3xl" />
+        </div>
+        <div className="container px-6 mx-auto relative z-10">
+          <span className="inline-block bg-white/20 backdrop-blur-sm text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-4 border border-white/30">
+            Mining &amp; Industrial
+          </span>
+          <h1 className="text-4xl lg:text-5xl font-bold font-heebo text-white mb-4 max-w-3xl leading-tight">
+            Mining And Metal
+          </h1>
+          <p className="text-lg text-white/80 font-heebo mb-6 max-w-xl">
+            Challenge, Ideate &amp; Create
+          </p>
+          <div className="flex items-center gap-2 text-white/80 text-sm font-heebo">
+            <Link to="/" className="text-orange-400 hover:text-orange-300 font-semibold transition-colors">Home</Link>
+            <span>/</span>
+            <Link to="/blog" className="hover:text-white transition-colors">Blogs</Link>
+            <span>/</span>
+            <span className="text-white">Mining And Metal</span>
           </div>
         </div>
       </section>
 
-      {/* Section-2 */}
-      <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]">
-        <div className="container px-5 py-10 mx-auto">
-          <div class="text-center mb-14">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-1">
-              <span className=" text-indigo-800 font-bold text-[40px] ">
-                Mining
-              </span>
-              <span className=" text-[40px] font-heebo font-bold ">
-                {" "}
-                And Metal
-              </span>
-            </h1>
-            <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
+      {/* Intro */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold font-heebo text-gray-900 mb-2">
+            <span className="text-indigo-700">Mining</span> And Metal
+          </h2>
+          <div className="w-16 h-1 rounded-full bg-orange-400 mx-auto mb-6" />
+          <p className="text-lg text-gray-600 font-heebo leading-relaxed max-w-3xl mx-auto">
+            The mining and metal industry covers a wide range of topics related to the extraction, processing, and
+            utilization of minerals and metals. Digital transformation of supply chain operations in this sector
+            can dramatically improve efficiency, traceability, and profitability.
+          </p>
+        </div>
+      </section>
 
-            <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F]  xl:w-3/4 lg:w-3/4 mx-auto ">
-              A blog focused on mining and metal industry would typically cover
-              a wide range of topics related to the extraction, processing, and
-              utilization of minerals and metals. Here's a breakdown of what
-              such a blog might include
-            </p>
+      {/* Feature Image */}
+      <section className="px-6 pb-10">
+        <div className="container mx-auto max-w-5xl">
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img src={MinMetal} alt="Mining and Metal Operations" className="w-full object-cover" />
           </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 ">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-tr-[50px]  overflow-hidden  shadow-lg md:shadow-xl">
-                <img
-                  className="lg:h-72 md:h-full w-full object-cover object-center rounded-bl-[50px]"
-                  src={MinMetal}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h1 className="text-[32px] font-[700] font-heebo leading-[38px] text-[#30343F]  mb-3"></h1>
-                  <div className="flex ">
-                    <div className="h-12 w-24">
-                      <img className="p-1  " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        First drawback is the manual collection of data from
-                        various entities like transporters, SAP, plants, plots,
-                        railway sidings, etc. There are a lot of errors making
-                        it difficult to get meaningful insights required for
-                        immediate action. Entry/Exit are paper based and not
-                        captured electronically.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1  " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3 mr-10">
-                        First drawback is the manual collection of data from
-                        various entities like transporters, SAP, plants, plots,
-                        railway sidings, etc. There are a lot of errors making
-                        it difficult to get meaningful insights required for
-                        immediate action. Entry/Exit are paper based and not
-                        captured electronically
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1 " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        Given the nature of logistics operation, there is a huge
-                        scope for revenue leakage (approx. 10-15 % of the
-                        inbound loaded trucks exit plant without proof of
-                        delivery). The major reason being a lack of e-PoD
-                        solution across touch points.
-                      </p>
-                    </div>
-                  </div>
+        </div>
+      </section>
 
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1  " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        First drawback is the manual collection of data from
-                        various entities like transporters, SAP, plants, plots,
-                        railway sidings, etc. There are a lot of errors making
-                        it difficult to get meaningful insights required for
-                        immediate action. Entry/Exit are paper based and not
-                        captured electronically
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1  " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        Increase in transportation cost by the transporters
-                        because of the amount of time it used to take for a
-                        truck to get inside the plant, load the material, and
-                        exit the plant in addition to the time taken for manual
-                        generation of multiple set of invoices and e-WAY bills.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1  " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        First drawback is the manual collection of data from
-                        various entities like transporters, SAP, plants, plots,
-                        railway sidings, etc. There are a lot of errors making
-                        it difficult to get meaningful insights required for
-                        immediate action. Entry/Exit are paper based and not
-                        captured electronically
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1  " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        Incorporate cutting edge technology such as RPA
-                        (Robotics Process Automation) for Auto Invoicing
-                        Generation and Auto e-WAY bill generation. This will
-                        help customers in improving TAT tremendously, reduce
-                        costly errors, and help negotiate better rates with
-                        transporters.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1  " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        Incorporate the 'Lat-Long e-PoD' module that helps
-                        unloading operators to close the trip with e-POD, by
-                        auto registering the Lat-Long at unloading point. This
-                        will eliminate various cases of trip closures during
-                        transit.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1" src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        Incorporate cutting edge technology such as RPA
-                        (Robotics Process Automation) for Auto Invoicing
-                        Generation and Auto e-WAY bill generation. This will
-                        help customers in improving TAT tremendously, reduce
-                        costly errors, and help negotiate better rates with
-                        transporters.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex">
-                    <div className="h-12 w-24">
-                      <img className="p-1  " src={IconFC} alt="" />
-                    </div>
-                    <div>
-                      <p className="text-[20px] font-[400] font-heebo leading-[28px] text-[#30343F] mb-3">
-                        Incorporate cutting edge technology such as RPA
-                        (Robotics Process Automation) for Auto Invoicing
-                        Generation and Auto e-WAY bill generation. This will
-                        help customers in improving TAT tremendously, reduce
-                        costly errors, and help negotiate better rates with
-                        transporters.
-                      </p>
-                    </div>
+      {/* Challenges & Solutions */}
+      <section className="py-10 pb-20 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-5xl">
+          <h3 className="text-2xl font-bold font-heebo text-indigo-900 text-center mb-10">
+            Key Challenges &amp; Solutions
+          </h3>
+          <div className="space-y-6">
+            {challenges.map((item, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="flex-shrink-0 w-9 h-9 rounded-full bg-indigo-600 text-white text-sm font-bold flex items-center justify-center">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h4 className="text-lg font-bold font-heebo text-gray-900 mb-1">{item.title}</h4>
+                    <p className="text-gray-600 font-heebo text-sm leading-relaxed">{item.issue}</p>
                   </div>
                 </div>
+                <div className="ml-13 bg-indigo-50 rounded-xl p-4 border border-indigo-100">
+                  <p className="text-xs font-bold text-indigo-500 uppercase tracking-widest mb-1">Solution</p>
+                  <p className="text-sm font-heebo text-gray-700 leading-relaxed">{item.solution}</p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

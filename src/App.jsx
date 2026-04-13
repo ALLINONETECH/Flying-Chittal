@@ -10,6 +10,7 @@ import { analytics } from "./firebase/firebase";
 import { logEvent } from "firebase/analytics";
 import { startSession } from "./firebase/firebaseUtilities";
 import { endSession } from "./firebase/firebaseUtilities";
+import SeoMeta from "./component/common/SeoMeta";
 
 // Move ScrollToTop inside Router context
 function ScrollToTop() {
@@ -32,6 +33,7 @@ function App() {
           <Router>
             {/* Wrap ScrollToTop inside Router */}
             <ScrollToTop />
+            <SeoMeta />
             <RouteChangeLogger />
             <Routes />
           </Router>

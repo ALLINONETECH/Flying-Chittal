@@ -1,994 +1,245 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import HomeIcon from "../../assets/images/HomeIcon.png";
+import roadHero from "../../assets/images/Blog1.png";
 import Card from "../../assets/images/istockphoto-fS1CLV3ig5.jpg";
 import Card2 from "../../assets/images/istockphoto-Gmxn3WwBXe2.jpg";
 import Card3 from "../../assets/images/istockphoto-Q7uqFa1tlN.jpg";
-import Card4 from "../../assets/images/card-media4.png";
-import Card5 from "../../assets/images/card-media5.png";
-import Card6 from "../../assets/images/card-media6.png";
 import Card7 from "../../assets/images/istockphoto-sjXLTHaloU.jpg";
-import Card8 from "../../assets/images/card-media8.png";
-import Card9 from "../../assets/images/card-media9.png";
-import Card10 from "../../assets/images/card-media10.png";
 import Card11 from "../../assets/images/istockphoto-ATX1YbrzMH.jpg";
-import Blog1 from "../../assets/images/Blog1.png";
-import HomeIcon from "../../assets/images/HomeIcon.png";
-import raillogistic1 from "../../assets/images/raillogistic1.jpg";
-import raillogistic2 from "../../assets/images/raillogistic2.jpg";
-import raillogistic3 from "../../assets/images/raillogistic3.jpg";
-import raillogistic4 from "../../assets/images/inboundToPorts.jpg";
-import raillogistic5 from "../../assets/images/istockphoto-Y8Nei51GvL.jpg";
-import raillogistic6 from "../../assets/images/railInbound.jpg";
 import raillogistic7 from "../../assets/images/istockphoto-es9kqyNnxj.jpg";
+import IconFC from "../../assets/images/IconFC.png";
+
+import ProductIntroSection from "../../component/common/ProductIntroSection";
+import ProductCapabilityShowcase from "../../component/common/ProductCapabilityShowcase";
+import ProductFeatureDeepDive from "../../component/common/ProductFeatureDeepDive";
+import ProductFeatureCardsGrid from "../../component/common/ProductFeatureCardsGrid";
 
 export default function RoadLogistics() {
-  const [readmore, setReadmore] = useState({
-    readmore1: false,
-    readmore2: false,
-    readmore3: false,
-    readmore4: false,
-    readmore5: false,
-    readmore6: false,
-    readmore7: false,
-  });
-  const toggleReadMore = (section) => {
-    setReadmore((prevState) => ({
-      ...prevState,
-      [section]: !prevState[section],
-    }));
-  };
+  const introSections = [
+    {
+      heading: "Integrated Road Logistics Management",
+      body: "Road Logistics in Flying Chital brings planning, dispatch, transit control, and delivery intelligence into one connected digital operating layer.",
+    },
+    {
+      heading: "Operational Transparency in Real Time",
+      body: "Track vehicles, drivers, loads, and checkpoints continuously to reduce uncertainty and make faster execution decisions.",
+    },
+    {
+      heading: "Scalable Performance Across Routes",
+      body: "Use analytics, automation, and workflow controls to reduce delays, improve utilization, and strengthen service reliability.",
+    },
+  ];
+
+  const introCapabilityTags = [
+    "Route-Level Visibility",
+    "Transit Control Automation",
+    "Transporter Integration",
+  ];
+
+  const capabilityStats = [
+    { value: "24/7", label: "Transit Monitoring" },
+    { value: "GPS", label: "Live Tracking" },
+    { value: "AI", label: "Optimization Insights" },
+  ];
+
+  const capabilityCards = [
+    {
+      kicker: "Dispatch",
+      title: "Smart Dispatch and Vehicle Allocation",
+      description:
+        "Allocate vehicles and routes intelligently using demand, capacity, and timing signals from the operations layer.",
+      image: Card,
+      alt: "Road dispatch planning",
+    },
+    {
+      kicker: "Transit",
+      title: "Automated Transit Milestones",
+      description:
+        "Capture movement milestones, gate events, and delivery progress in real time for accurate operational control.",
+      image: Card2,
+      alt: "Transit milestone automation",
+    },
+    {
+      kicker: "Verification",
+      title: "Driver and Vehicle Validation",
+      description:
+        "Validate credentials, compliance checks, and operational readiness before trip assignment to reduce risk.",
+      image: Card3,
+      alt: "Vehicle and driver verification",
+    },
+    {
+      kicker: "Network",
+      title: "Transporter and Telematics Integration",
+      description:
+        "Connect transport partners, vehicle telemetry, and execution workflows for seamless cross-stakeholder coordination.",
+      image: Card11,
+      alt: "Transporter integration and telematics",
+    },
+  ];
+
+  const executionBullets = [
+    "Live route tracking with exception alerts",
+    "Digital transit and transaction points",
+    "Automated validation and verification flows",
+    "Trip-wise operational dashboards for supervisors",
+    "Integrated transporter workflows and bidding controls",
+    "Faster decision support with real-time data context",
+  ];
+
+  const intelligenceBullets = [
+    "Descriptive analytics for current operations visibility",
+    "Predictive indicators for delay and utilization risk",
+    "Prescriptive recommendations for response actions",
+    "Cost and fuel efficiency trend monitoring",
+    "Delivery and SLA performance benchmarking",
+    "Custom reporting for operations and leadership teams",
+  ];
+
+  const platformCards = [
+    {
+      title: "Digital Workspace",
+      description: "Role-based views for planners, operators, and management.",
+      icon: IconFC,
+    },
+    {
+      title: "Automated Documentation",
+      description: "Generate and manage transit documents with fewer errors.",
+      icon: IconFC,
+    },
+    {
+      title: "Invoicing and Payments",
+      description: "Track billing events and payment workflows in one flow.",
+      icon: IconFC,
+    },
+    {
+      title: "Reverse Bidding",
+      description: "Enable transparent transporter bidding and rate control.",
+      icon: IconFC,
+    },
+    {
+      title: "Control Room Dashboards",
+      description: "Centralized command visibility for active road movement.",
+      icon: IconFC,
+    },
+    {
+      title: "Integrated Telematics",
+      description: "Connect tracking intelligence directly into operations.",
+      icon: IconFC,
+    },
+  ];
+
   return (
-    <div>
-      {/* Section-1 Industry */}
+    <div className="overflow-x-hidden bg-white">
       <section
-        className=" bg-no-repeat bg-center bg-cover rounded-br-[100px]"
+        className="bg-no-repeat bg-center bg-cover rounded-br-[80px] lg:rounded-br-[110px]"
         style={{
-          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.60) 12.02%, rgba(55, 52, 169, 0.50) 119.37%), url(${Blog1})`,
+          backgroundImage: `linear-gradient(95deg, rgba(55, 52, 169, 0.78) 8%, rgba(55, 52, 169, 0.48) 115%), url(${roadHero})`,
         }}
       >
-        <nav
-          x-data="{ isOpen: false }"
-          className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center"
-        >
-          <div className="flex items-center justify-between">
-            {/* <a href="#">
-                            <img className="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt />
-                        </a> */}
-            {/* Mobile menu button */}
-            <div className="flex lg:hidden"></div>
+        <div className="container px-6 py-14 lg:py-20 mx-auto text-start">
+          <h1 className="text-4xl lg:text-6xl font-medium font-heebo text-gray-100">Road Logistics</h1>
+          <p className="text-xl lg:text-3xl mt-4 lg:mt-6 text-white font-medium tracking-wide font-heebo max-w-4xl">
+            Smart Road Execution with Real-Time Visibility
+          </p>
+          <p className="mt-3 text-base md:text-lg text-white/90 max-w-4xl">
+            A modern road logistics platform for dispatch planning, trip control, compliance checks, and performance analytics across the full transport cycle.
+          </p>
+
+          <div className="text-lg lg:text-2xl font-normal text-white mt-5 lg:mt-7">
+            <div className="flex gap-2 items-center">
+              <img src={HomeIcon} alt="Home" />
+              <div>
+                <Link to="/" className="text-[#F85A47] font-[700] font-heebo lg:text-[28px] text-[16px]">
+                  Home
+                </Link>
+                <span className="font-[700] font-heebo lg:text-[28px] text-[16px]"> / Flying Chital / Road Logistics</span>
+              </div>
+            </div>
           </div>
-          {/* Mobile Menu open: "block", Menu closed: "hidden" */}
-          <div className="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-            {/* <div className="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:-px-8 lg:space-y-0">
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Home</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Components</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Pricing</a>
-                            <a className="text-gray-700 transition-colors duration-300 transform lg:mx-8 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Contact</a>
-                        </div> */}
-            {/* <a className="block px-5 py-2 mt-4 text-sm text-center text-white capitalize bg-blue-600 rounded-lg lg:mt-0 hover:bg-blue-500 lg:w-auto" href="#">
-                            Get started
-                        </a> */}
-          </div>
-        </nav>
-        <div className="container px-6 py-16 mx-auto text-start">
-          <div className=" mx-auto">
-            <h1 className="text-4xl lg:text-6xl not-italic font-bold font-heebo  text-gray-100 dark:text-white  text-start">
-              Road Logistics
-            </h1>
-            <p className=" text-xl lg:text-3xl leading-7 lg:leading-9 mt-4 lg:mt-6 text-white not-italic font-bold  font-heebo w-full">
-              We provide Smart Solutions to Simplify Your Future
+        </div>
+      </section>
+
+      <ProductIntroSection
+        productName="Road Logistics"
+        eyebrow="Flying Chital Logistics Suite"
+        title="Connected Road Operations for Faster, Safer Movement"
+        subtitle="Unify dispatch, transit monitoring, compliance checks, and delivery controls in one intelligent road logistics system."
+        capabilityTags={introCapabilityTags}
+        sections={introSections}
+      />
+
+      <ProductCapabilityShowcase
+        eyebrow="Road Capabilities"
+        title="Operational Control from Dispatch to Delivery"
+        description="Core capabilities designed to improve movement reliability, service predictability, and transporter collaboration."
+        stats={capabilityStats}
+        cards={capabilityCards}
+      />
+
+      <ProductFeatureDeepDive
+        eyebrow="Execution Layer"
+        title="Trip-Level Control with Real-Time Event Tracking"
+        description="Get complete execution visibility through automated milestones, route alerts, and integrated operations dashboards."
+        image={Card7}
+        imageAlt="Road operations dashboard"
+        bullets={executionBullets}
+        stats={["Live transit", "Faster response", "Lower delay risk"]}
+      />
+
+      <ProductFeatureDeepDive
+        eyebrow="Decision Layer"
+        title="Analytics-Driven Improvement Across Road Network"
+        description="Use descriptive, predictive, and prescriptive intelligence to improve throughput, reduce inefficiencies, and optimize route economics."
+        image={raillogistic7}
+        imageAlt="Road logistics analytics"
+        bullets={intelligenceBullets}
+        stats={["Better planning", "Lower cost", "Higher reliability"]}
+        reverse
+        overlayLabel="Road Intelligence"
+        overlayText="Turn movement data into practical decisions that improve service outcomes across road logistics operations."
+      />
+
+      <ProductFeatureCardsGrid
+        eyebrow="Platform Modules"
+        title="Built-In Capabilities for Road Logistics Teams"
+        description="Modules designed for daily execution, compliance assurance, and management control."
+        cards={platformCards}
+      />
+
+      <section className="bg-gradient-to-r from-slate-900 via-indigo-900 to-purple-900 py-16 sm:py-24">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-heebo mb-4">
+              Connect Road Operations with Multimodal Intelligence
+            </h2>
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+              Integrate road logistics with rail planning and telematics intelligence for unified end-to-end control.
             </p>
-            <div className="text-xl lg:text-2xl not-italic font-normal  text-white bg-opacity-80 mt-4 lg:mt-6 ">
-              <div className="flex flex-col lg:flex-row  gap-2">
-                <div>
-                  <span>
-                    <img className="" src={HomeIcon} alt="" />
-                  </span>
-                </div>
-                <div classNAme="justify">
-                  <span className="text-[#F85A47] font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    Flying Chital
-                  </span>
-                  <span className="font-[700] font-heebo lg:text-[32px] text-[18px]">
-                    / Road Logistics
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
 
-      {/* Section-2  */}
-      <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px]">
-        <div className="container px-5 py-10 mx-auto">
-          <div class="text-center mb-5">
-            <h1 className="font-heebo text-[40px]  not-italic font-bold leading-9 title-font sm:text-4xl mb-4 text-center text-gray-900">
-              <span className=" font-heebo text-[40px] text-primary ">
-                Flying Chital&nbsp;
-              </span>
-              Integrated Road Logistics Management System
-              <br />
-              (FCI
-              <span className="border-b-4 border-secondary">RL</span>MS)
-            </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link to="/flyingchital" className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">Flying Chital</h3>
+              <p className="text-gray-200">Multimodal logistics intelligence across planning and execution layers.</p>
+            </Link>
+
+            <Link to="/railLogistics" className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-300 transition-colors">Rail Logistics</h3>
+              <p className="text-gray-200">Synchronize rail and road workflows to improve throughput and turnaround.</p>
+            </Link>
+
+            <Link to="/telematics" className="group bg-white/10 backdrop-blur-md hover:bg-white/20 border border-white/20 rounded-xl p-6 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">Telematics</h3>
+              <p className="text-gray-200">Enhance road visibility with integrated asset and vehicle telemetry.</p>
+            </Link>
           </div>
-          <div className="container px-5  mx-auto">
-            <div class="text-start mb-5">
-              <p class=" text-xl not-italic font-normal leading-7 font-heebo xl:w-full lg:w-full mx-auto text-gray-500s text-justify text-[#30343F]">
-                Leveraging technologies in road logistics management provides
-                real-time tracking, route optimization, and efficient load
-                management. It enhances visibility, reduces fuel consumption,
-                and minimizes delivery times, resulting in cost savings,
-                improved customer service, and a more sustainable and agile road
-                logistics network.
-                <br /> <br /> Technology-driven efficient road logistics have
-                revolutionized the transportation industry. Advanced tools like
-                GPS tracking, route optimization, and real-time data analysis
-                streamline operations, reducing delivery times and minimizing
-                fuel consumption. Automation, IoT sensors, and AI-driven systems
-                enhance supply chain visibility, ensuring accurate tracking and
-                efficient inventory management. Additionally, digital platforms
-                and mobile apps improve communication and coordination among
-                stakeholders, making road logistics more responsive and
-                customer-centric.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px]">
-        <div className="container mx-auto md:px-32 md:py-5 sm:px-0 sm:py-0">
-          <div className="flex flex-wrap -m-4 ">
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img className="rounded-tr-[80px] w-full" src={Card} alt="" />
-                </div>
-
-                <h2 className="text-4xl text-gray-900 font-bold title-font p-6">
-                  Digital Workspace with Digital Profiles
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    We create a digital ecosystem through integration of
-                    advanced technologies, such as AI, cloud computing, and IoT,
-                    to streamline and digitize business processes. It results in
-                    a digital workplace where tasks, communication, and
-                    collaboration occur seamlessly and efficiently. Digital
-                    profiles for employees and stakeholders provide a
-                    comprehensive view of their roles, preferences, and
-                    interactions, enhancing personalized experiences. Moreover,
-                    a digital interface connects all stakeholders, including
-                    customers, suppliers, and employees, fostering real-time
-                    data sharing and decision-making. This digital
-                    transformation optimizes operations, increases productivity,
-                    and positions businesses to stay competitive.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card2}
-                    alt=""
-                  />
-                </div>
-
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Automated Transit & Transaction Points
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    Automated transaction and transit points in logistics
-                    management are revolutionizing the industry by harnessing
-                    state-of-the-art technologies. These points facilitate
-                    seamless and efficient movement of goods through real-time
-                    monitoring, automation, and data analytics. Advanced systems
-                    like RFID, IoT sensors, and AI-driven platforms ensure
-                    accurate tracking, reduce human error, and optimize the flow
-                    of products. They enable swift transactions, minimize
-                    delays, and enhance security, making the entire supply chain
-                    more reliable and cost-effective.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card3}
-                    alt=""
-                  />
-                </div>
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Automated Validation & Verification
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    Our digital solutions enhance efficiency and accuracy by
-                    automating the validation & verification process, reducing
-                    human error and saving time. They provide a secure and
-                    tamper-proof digital record of all transactions, ensuring
-                    transparency and trust among stakeholders. In logistics
-                    management, this technology allows for real-time tracking,
-                    reducing delays, and enhancing supply chain visibility.
-                    Additionally, it streamlines compliance, mitigates fraud,
-                    and ensures that all parties involved in the process can
-                    rely on the integrity and authenticity of the data.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card4}
-                    alt=""
-                  />
-                </div>
-
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Automated Documentation
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    Technology-driven automated document generation and printing
-                    at transaction/transit points offer a host of advantages in
-                    modern business operations. By automating this process,
-                    businesses can ensure the swift and accurate creation of
-                    essential documents, reducing the likelihood of errors and
-                    saving valuable time. Real-time data updating further
-                    enhances the efficiency of this system, allowing for
-                    immediate access to the most up-to-date information.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card5}
-                    alt=""
-                  />
-                </div>
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Invoicing & Payment
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    Create an Invoice: Include your business name, logo, and
-                    contact information. Add the client's details: name,
-                    address, and contact information. Assign a unique invoice
-                    number and date. Clearly outline the products or services
-                    provided, along with their quantities and prices. Calculate
-                    the total amount, including any taxes or discounts. Specify
-                    the payment terms (e.g., due upon receipt, net 30 days).
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card6}
-                    alt=""
-                  />
-                </div>
-
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Reverse Bidding
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    Reverse bidding is a procurement strategy in which buyers
-                    post their requirements for a service or product, and
-                    sellers then bid to win the business. Unlike traditional
-                    bidding where sellers compete to offer the lowest price, in
-                    reverse bidding, sellers compete to offer the best value,
-                    which may include factors such as quality, delivery time,
-                    and additional services.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card7}
-                    alt=""
-                  />
-                </div>
-
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Integrated Transporter Module
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    We provide a digital platform to tag vehicles on government
-                    regulatory portals, verify vehicle and driver credentials
-                    from platforms like Vahan and Parivahan, and seamlessly link
-                    them to permits, delivery orders (DO), and shipping orders
-                    (SO) it offers significant advantages. Transporters can use
-                    the portal for reverse bidding and making payments. This
-                    integrated approach minimizes administrative burden, reduces
-                    human error, and ensures regulatory compliance.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card8}
-                    alt=""
-                  />
-                </div>
-
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Descriptive, Predictive & Prescriptive Analytics
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    Data mining-based descriptive, predictive, and prescriptive
-                    analytics are essential components of Integrated Logistics
-                    Management Systems (ILMS). Descriptive analytics help in
-                    understanding past performance, offering insights into
-                    historical trends and identifying areas for improvement.
-                    Predictive analytics enable ILMS to forecast future trends,
-                    demands, and potential issues, allowing proactive planning
-                    and resource allocation. Prescriptive analytics takes it a
-                    step further by providing actionable recommendations,
-                    optimizing decisions, and offering solutions to enhance
-                    efficiency and reduce costs.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card9}
-                    alt=""
-                  />
-                </div>
-
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Customized Reports
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    Customized, tailor-made reports with infographics, including
-                    shift-wise, day-wise, weekly, monthly, and quarterly
-                    insights, are integral to an Integrated Logistics Management
-                    System (ILMS). These reports offer a comprehensive view of
-                    logistics operations, making it easier to identify patterns,
-                    bottlenecks, and areas for improvement. Infographics enhance
-                    data visualization, enabling stakeholders to quickly grasp
-                    complex information. This level of customization empowers
-                    decision-makers to fine-tune strategies, allocate resources
-                    efficiently, and optimize processes, leading to cost
-                    reductions, improved performance, and a competitive edge in
-                    the fast-paced logistics industry.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-full md:w-1/2 p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card10}
-                    alt=""
-                  />
-                </div>
-
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Centralized Command and Control Room
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    A Centralized Logistics Operation Command and Control Room
-                    serves as the nerve center of logistics management,
-                    aggregating all aspects of operations onto one digital wall.
-                    This centralized approach enables proactive decision-making,
-                    as it offers real-time visibility into the entire supply
-                    chain. It provides access to alerts, alarms, and performance
-                    metrics, allowing for immediate responses to potential
-                    issues. This shift from reactive to proactive action can
-                    significantly reduce disruptions, enhance efficiency, and
-                    mitigate risks, ultimately ensuring a more reliable and
-                    responsive logistics operation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" w-auto md:w-full p-4  ">
-              <div className="border border-gray-200  rounded-tr-[80px] rounded-bl-[50px] h-full  bg-white shadow-lg  md:shadow-xl ">
-                <div className="w-full h-auto inline-flex items-center justify-center rounded-tr-[80px] rounded-bl-lg bg-indigo-100 text-indigo-500 ">
-                  <img
-                    className="rounded-tr-[80px] w-full"
-                    src={Card11}
-                    alt=""
-                  />
-                </div>
-
-                <h2 className="text-3xl not-italic font-bold leading-9 text-[#121113] title-font font-heebo p-6">
-                  Integrated Telematics
-                </h2>
-                <div className="px-6 pb-6">
-                  <p className=" text-xl not-italic font-normal leading-7 font-heebo text-[#121113] text-justify">
-                    {" "}
-                    Interface with Vahan enables swift digital vehicle
-                    inspections using just the vehicle number, providing access
-                    to crucial information like registration, insurance,
-                    fitness, and taxation status. This expedites security checks
-                    and prevents penalties and delays by ensuring compliance
-                    with all vehicle details.
-                    <br />
-                    Interface with Sarathi/Pari Vahan facilitates rapid digital
-                    driver inspections using only the driver's license number
-                    and date of birth, offering details such as a photograph,
-                    license expiration date, and current status. This
-                    streamlines security checks and prevents penalties and
-                    delays by ensuring compliance with all driver information.
-                    <br />
-                    Key benefits:
-                    <br />• Ensuring complete compliance and verification of
-                    both the vehicle and driver before task allocation.
-                    <br />• Access to real-time information to avoid penalties
-                    for violating government compliance rules (e.g., expired
-                    licenses or lack of insurance).
-                    <br />• Preventing potential sales losses due to
-                    non-compliance with government regulations, such as taxation
-                    and fitness certification.
-                    <br />• Eliminating paperwork and the need for
-                    cross-verification of driver and vehicle information, as it
-                    comes directly from government APIs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="text-gray-600 body-font bg-gray-100 rounded-tl-[50px] rounded-br-[50px]  ">
-        <div className="container mx-auto md:px-32 md:py-5 sm:px-0 sm:py-0">
-          <div className="flex flex-wrap -m-4 ">
-            <div className="flex justify-center w-full mb-3">
-              <section className="text-gray-600 body-font rounded-tl-[50px] rounded-br-[50px] bg-gray-200">
-                <div className="container px-5 py-10 mx-auto">
-                  <div class="text-center mb-5">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-                      <span className=" text-indigo-800 font-bold text-[40px] ">
-                        Module &nbsp;
-                      </span>
-                      <span className=" text-[40px] font-heebo font-bold ">
-                        & Features
-                      </span>
-                    </h1>
-                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"></p>
-                    <div class="flex justify-center">
-                      <div class="w-16 h-1 mt-2 rounded-full bg-orange-400 inline-flex"></div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            <div className="flex flex-wrap -m-4 mb-2 ">
-              <div className=" w-auto md:w-1/2 p-4">
-                <div
-                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[50px] rounded-bl-[50px]  shadow-lg "
-                  style={{
-                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic1}) lightgray 50% / cover no-repeat`,
-                  }}
-                >
-                  <div className=" w-auto md:w-4/5 text-start text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-60">
-                      Outbound From Mines
-                    </h1>
-                    <div className="button-container relative mb-10">
-                      <p className="font-heebo text-lg font-normal text-justify mb-2">
-                        Efficient mine outbound logistics, powered by
-                        technology, has revolutionized the mining industry. By
-                        leveraging advanced tracking and automation systems,
-                        mines can optimize the transportation of raw materials
-                        and products,
-                      </p>
-                      {readmore.readmore1 ? (
-                        <p className="font-heebo text-lg font-normal text-justify mb-20">
-                          reducing costs and increasing overall productivity.
-                          Real-time monitoring of shipments, route optimization,
-                          and predictive maintenance of transportation vehicles
-                          are just a few examples of how technology streamlines
-                          the outbound logistics process. This not only enhances
-                          the safety of the supply chain but also minimizes
-                          environmental impacts, making it a sustainable and
-                          forward-thinking approach to resource extraction. In a
-                          rapidly evolving industry, embracing these
-                          technological solutions is essential for ensuring both
-                          economic viability and environmental responsibility.
-                        </p>
-                      ) : null}
-                      <div
-                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
-                          readmore.readmore1 ? "opacity-100" : ""
-                        }`}
-                      >
-                        {/* <button
-                          onClick={() => toggleReadMore("readmore1")}
-                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                        >
-                          {readmore.readmore1 ? "Read Less" : "Read More"}
-                        </button> */}
-                        <button
-                          onClick={() => toggleReadMore("readmore1")}
-                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
-                        >
-                          {readmore.readmore1 ? "Read Less" : "Read More"}
-                          <span class="ml-2">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              class="w-4 h-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className=" w-auto md:w-1/2 p-4">
-                <div
-                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
-                  style={{
-                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%),url(${raillogistic3})  lightgray 50% / cover no-repeat`,
-                  }}
-                >
-                  <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-52 ">
-                      Inbound To Plants
-                    </h1>
-                    <div className="button-container relative mb-10">
-                      <p className="font-heebo text-lg font-normal text-justify mb-2">
-                        Leveraging high-end technologies in logistics management
-                        for sourcing raw materials and other essentials is a
-                        game-changer in the modern business landscape. These
-                        technologies, including artificial intelligence,
-                      </p>
-                      {readmore.readmore2 ? (
-                        <p className="font-heebo text-lg font-normal text-justify mb-20">
-                          blockchain, and Internet of Things (IoT), offer
-                          real-time visibility and optimization capabilities
-                          that streamline the entire supply chain process. They
-                          enable companies to track the movement of raw
-                          materials from source to destination, anticipate
-                          potential disruptions, and ensure timely deliveries.
-                          Additionally, advanced data analytics can help in
-                          making data-driven decisions for procurement,
-                          inventory management, and demand forecasting. By
-                          harnessing the power of these cutting-edge tools,
-                          businesses can not only reduce costs but also enhance
-                          their agility and responsiveness, ensuring a
-                          competitive edge in an increasingly complex global
-                          marketplace.
-                        </p>
-                      ) : null}
-                      <div
-                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
-                          readmore.readmore2 ? "opacity-100" : ""
-                        }`}
-                      >
-                        {/* <button
-                          onClick={() => toggleReadMore("readmore2")}
-                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                        >
-                          {readmore.readmore2 ? "Read Less" : "Read More"}
-                        </button> */}
-
-                        <button
-                          onClick={() => toggleReadMore("readmore2")}
-                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
-                        >
-                          {readmore.readmore2 ? "Read Less" : "Read More"}
-                          <span class="ml-2">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              class="w-4 h-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className=" w-auto md:w-1/2 p-4">
-                <div
-                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
-                  style={{
-                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic2}) lightgray 50% / cover no-repeat`,
-                  }}
-                >
-                  <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5  mt-40 ">
-                      Outbound From Plants
-                    </h1>
-
-                    <div className="button-container relative mb-10">
-                      <p className="font-heebo text-lg font-normal text-justify mb-2">
-                        Harnessing high-end technologies for efficient logistics
-                        management in the supply of finished goods and products
-                        is imperative for businesses looking to maintain
-                        security and meet customer demand with precision.
-                      </p>
-                      {readmore.readmore3 ? (
-                        <p className="font-heebo text-lg font-normal text-justify mb-20">
-                          Advanced technologies like AI, RFID, and automation
-                          systems empower companies to monitor the entire
-                          distribution network in real-time, ensuring the safety
-                          of products and minimizing the risk of theft or
-                          damage. Furthermore, these tools optimize routes,
-                          anticipate potential delays, and enhance inventory
-                          visibility, all of which are crucial for on-time
-                          deliveries. By integrating these innovative solutions,
-                          companies can guarantee the seamless flow of products,
-                          enhance customer satisfaction, and remain competitive
-                          in an increasingly fast-paced and demanding market.
-                        </p>
-                      ) : null}
-                      <div
-                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
-                          readmore.readmore3 ? "opacity-100" : ""
-                        }`}
-                      >
-                        {/* <button
-                          onClick={() => toggleReadMore("readmore3")}
-                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                        >
-                          {readmore.readmore3 ? "Read Less" : "Read More"}
-                        </button> */}
-
-                        <button
-                          onClick={() => toggleReadMore("readmore3")}
-                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
-                        >
-                          {readmore.readmore3 ? "Read Less" : "Read More"}
-                          <span class="ml-2">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              class="w-4 h-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className=" w-auto md:w-1/2 p-4">
-                <div
-                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
-                  style={{
-                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%),url(${raillogistic4})  lightgray 50% / cover no-repeat`,
-                  }}
-                >
-                  <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
-                      Inbound To Ports
-                    </h1>
-                    <div className="button-container relative mb-10">
-                      <p className="font-heebo text-lg font-normal text-justify mb-2">
-                        Technologies play a pivotal role in managing inbound
-                        logistics to ports, ensuring the efficiency and
-                        effectiveness of this critical gateway in global trade.
-                      </p>
-                      {readmore.readmore4 ? (
-                        <p className="font-heebo text-lg font-normal text-justify mb-20">
-                          The modern world relies on the seamless flow of goods,
-                          and advanced tools such as data analytics, GPS
-                          tracking, and digital platforms are instrumental in
-                          optimizing the movement of cargo from point of origin
-                          to the port. Real-time data and smart systems enable
-                          better coordination, minimize congestion, and enhance
-                          security, while also offering better visibility and
-                          predictability for all stakeholders. In an era of
-                          increasingly complex and interconnected supply chains,
-                          these technologies are indispensable for port
-                          logistics, driving economic growth, and facilitating
-                          global trade on an unprecedented scale.
-                        </p>
-                      ) : null}
-                      <div
-                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
-                          readmore.readmore4 ? "opacity-100" : ""
-                        }`}
-                      >
-                        {/* <button
-                          onClick={() => toggleReadMore("readmore4")}
-                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                        >
-                          {readmore.readmore4 ? "Read Less" : "Read More"}
-                        </button> */}
-
-                        <button
-                          onClick={() => toggleReadMore("readmore4")}
-                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
-                        >
-                          {readmore.readmore4 ? "Read Less" : "Read More"}
-                          <span class="ml-2">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              class="w-4 h-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className=" w-auto md:w-1/2 p-4">
-                <div
-                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
-                  style={{
-                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic5})  lightgray 50% / cover no-repeat`,
-                  }}
-                >
-                  <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
-                      Outbound From Ports
-                    </h1>
-                    <div className="button-container relative mb-10">
-                      <p className="font-heebo text-lg font-normal text-justify mb-2">
-                        Technology is paramount in managing outbound logistics
-                        from ports, serving as the linchpin of efficient and
-                        effective global trade. Ports are the gateway for
-                        exports and outbound shipments, and the integration of
-                        advanced tools
-                      </p>
-                      {readmore.readmore5 ? (
-                        <p className="font-heebo text-lg font-normal text-justify mb-20">
-                          such as real-time tracking, automation, and predictive
-                          analytics is crucial in optimizing the movement of
-                          goods. These technologies enable the timely loading of
-                          cargo onto vessels, streamline customs processes, and
-                          enhance security and compliance. Additionally,
-                          data-driven insights empower businesses to make
-                          informed decisions and optimize their supply chain
-                          strategies. By embracing technological innovations,
-                          ports can ensure the swift and secure flow of
-                          products, bolster international trade, and contribute
-                          significantly to economic growth and competitiveness
-                          on a global scale.
-                        </p>
-                      ) : null}
-                      <div
-                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
-                          readmore.readmore5 ? "opacity-100" : ""
-                        }`}
-                      >
-                        {/* <button
-                          onClick={() => toggleReadMore("readmore5")}
-                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                        >
-                          {readmore.readmore5 ? "Read Less" : "Read More"}
-                        </button> */}
-                        <button
-                          onClick={() => toggleReadMore("readmore5")}
-                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
-                        >
-                          {readmore.readmore5 ? "Read Less" : "Read More"}
-                          <span class="ml-2">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              class="w-4 h-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className=" w-auto md:w-1/2 p-4">
-                <div
-                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
-                  style={{
-                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic6})  lightgray 50% / cover no-repeat`,
-                  }}
-                >
-                  <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
-                      Inbound To Railway Sidings
-                    </h1>
-                    <div className="button-container relative mb-10">
-                      <p className="font-heebo text-lg font-normal text-justify mb-2">
-                        Technologies are indispensable in the efficient
-                        management of inbound logistics at railway sidings,
-                        offering numerous advantages for businesses and the
-                        transportation sector.
-                      </p>
-                      {readmore.readmore6 ? (
-                        <p className="font-heebo text-lg font-normal text-justify mb-20">
-                          These advancements include sensor-based monitoring,
-                          RFID tracking, and digital inventory management
-                          systems, which provide real-time visibility into cargo
-                          movements and storage at sidings. They enhance the
-                          coordination and scheduling of inbound shipments,
-                          reduce congestion, and minimize waiting times. By
-                          harnessing these tools, companies can optimize their
-                          logistics, reduce costs, and enhance their overall
-                          supply chain efficiency, making railway sidings a
-                          crucial component in the seamless movement of goods.
-                        </p>
-                      ) : null}
-                      <div
-                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
-                          readmore.readmore6 ? "opacity-100" : ""
-                        }`}
-                      >
-                        {/* <button
-                          onClick={() => toggleReadMore("readmore6")}
-                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                        >
-                          {readmore.readmore6 ? "Read Less" : "Read More"}
-                        </button> */}
-
-                        <button
-                          onClick={() => toggleReadMore("readmore6")}
-                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
-                        >
-                          {readmore.readmore6 ? "Read Less" : "Read More"}
-                          <span class="ml-2">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              class="w-4 h-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className=" w-auto md:w-1/2 p-4">
-                <div
-                  className="flex items-center justify-center  bg-cover bg-no-repeat rounded-tr-[80px] rounded-bl-[50px]  shadow-lg "
-                  style={{
-                    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(${raillogistic7})  lightgray 50% / cover no-repeat`,
-                  }}
-                >
-                  <div className=" w-auto md:w-4/5 text-start  text-white  grid content-end">
-                    <h1 className="font-heebo text-4xl font-bold mb-5 mt-40 ">
-                      Outbound From Railway Sidings
-                    </h1>
-
-                    <div className="button-container relative mb-10">
-                      <p className="font-heebo text-lg font-normal text-justify mb-2">
-                        Technological advancements are pivotal in managing
-                        outbound logistics at railway sidings, offering an array
-                        of benefits for businesses and the transportation
-                        industry. These innovations, such as real-time tracking
-                        systems,
-                      </p>
-                      {readmore.readmore7 ? (
-                        <p className="font-heebo text-lg font-normal text-justify mb-20">
-                          automation, and data analytics, facilitate the
-                          efficient loading and dispatch of goods from sidings.
-                          They enhance scheduling, routing, and last-mile
-                          delivery, ensuring the timely and secure movement of
-                          products. Additionally, technology enables predictive
-                          maintenance of railway infrastructure, reducing the
-                          risk of disruptions and ensuring the safety and
-                          reliability of the outbound logistics process. By
-                          leveraging these tools, companies can streamline their
-                          supply chain, reduce operational costs, and improve
-                          the overall efficiency of transporting goods via
-                          railway sidings, contributing to economic growth and
-                          sustainability.
-                        </p>
-                      ) : null}
-                      <div
-                        className={`text-blue-500 absolute bottom-0 left-1 opacity-0 transition-opacity duration-300 ${
-                          readmore.readmore7 ? "opacity-100" : ""
-                        }`}
-                      >
-                        {/* <button
-                          onClick={() => toggleReadMore("readmore7")}
-                          className="hover:underline focus:outline-none bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                        >
-                          {readmore.readmore7 ? "Read Less" : "Read More"}
-                        </button> */}
-                        <button
-                          onClick={() => toggleReadMore("readmore7")}
-                          className="inline-flex text-white font-bold bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-sm font-heebo"
-                        >
-                          {readmore.readmore7 ? "Read Less" : "Read More"}
-                          <span class="ml-2">
-                            <svg
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              class="w-4 h-4"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="mt-10 text-center">
+            <Link to="/contact" className="inline-block px-8 py-3 bg-white text-indigo-900 hover:bg-gray-100 rounded-lg font-semibold transition-colors">
+              Talk to Our Logistics Team
+            </Link>
           </div>
         </div>
       </section>

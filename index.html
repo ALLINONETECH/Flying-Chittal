@@ -2,24 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="./src/assets/images/logo.png" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" type="image" href="./src/assets/images/logos1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Flying Chital Tech provides AI-powered telematics, logistics intelligence, and industrial automation for fleets, rail, mining, and manufacturing."
+    />
+    <link rel="canonical" href="https://flyingchital.com/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Flying Chital Tech Private Limited",
+        "url": "https://flyingchital.com/",
+        "logo": "https://flyingchital.com/logo.png",
+        "description": "AI-powered telematics, logistics intelligence, and industrial automation solutions.",
+        "sameAs": []
+      }
+    </script>
 
     <title>Flying Chital Tech Private Limited</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+      /* Prevent fallback SEO text from flashing before React mounts */
+      #root > main {
+        display: none;
+      }
     </style>
+    <noscript>
+      <style>
+        /* Show fallback content only when JavaScript is disabled */
+        #root > main {
+          display: block;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main>
+        <h1>Flying Chital Tech Private Limited</h1>
+        <p>
+          Flying Chital Tech Private Limited helps enterprises modernize field
+          operations through connected mobility, telematics intelligence, and
+          industrial digitalization. We design software platforms that unify
+          people, vehicles, equipment, and control rooms into one reliable data
+          flow. Our solutions support logistics companies, rail operations,
+          manufacturing plants, mining environments, and service organizations
+          that need real-time visibility. By combining IoT device inputs,
+          location signals, workflow automation, and decision dashboards, we
+          reduce manual gaps and improve execution quality across day-to-day
+          operations.
+        </p>
+        <p>
+          Our product approach focuses on measurable outcomes. Teams can monitor
+          fleet utilization, route adherence, fuel efficiency, trip timelines,
+          driver behavior, safety events, and asset health in one place.
+          Supervisors receive actionable alerts, while management gets clear
+          analytics for planning and performance governance. We also support
+          configurable business processes for dispatch, loading, unloading,
+          transit tracking, compliance workflows, and exception handling. This
+          helps organizations move from reactive coordination to proactive,
+          data-driven control.
+        </p>
+        <p>
+          Beyond software delivery, Flying Chital Tech Private Limited partners
+          with clients on implementation strategy, integration, and long-term
+          operational maturity. Our teams work on scalable architectures,
+          user-friendly interfaces, and secure data practices so solutions stay
+          practical in real environments. Whether a customer is beginning
+          digital transformation or expanding an existing platform, we deliver
+          adaptable systems that improve transparency, accountability, and
+          business resilience.
+        </p>
+      </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
-  <script>
-    AOS.init();
-  </script>
 </html>
