@@ -22,7 +22,14 @@ const contactCards = [
 const officeLocations = [
   {
     title: "Registered Office",
-    lines: ["Sector V, Niladri Vihar", "Bhubaneswar, Odisha", "India - 751021"],
+    lines: [
+      "Flying Chital Private Limited",
+      "Room No 228, Second Floor, DLF Cyber City",
+      "IDCO Info Park, Technology Corridor",
+      "Chandaka Industrial Estate, Patia",
+      "Bhubaneswar, Dist - Khorda, Odisha 751024",
+      "Email: info@flyingchital.com",
+    ],
   },
   // {
   //   title: "Head Office",

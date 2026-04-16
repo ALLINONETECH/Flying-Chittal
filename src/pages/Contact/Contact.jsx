@@ -72,10 +72,10 @@ export default function Contact() {
                   Monday to Saturday, 9:00 AM to 7:00 PM
                 </p>
                 <a
-                  href="tel:+917894567778"
+                  href="tel:+917676429520"
                   className="text-indigo-700 font-semibold mt-3 inline-block"
                 >
-                  +91 78945 67778
+                  +91 7676429520
                 </a>
               </div>
 

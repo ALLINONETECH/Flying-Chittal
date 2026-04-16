@@ -68,37 +68,55 @@ export default function Home() {
   const testimonials = [
     {
       quote:
-        "Flying Chital has revolutionized our logistics operations. The real-time visibility and automation have reduced costs by 35% while improving delivery times.",
-      author: "Rajesh Kumar",
-      role: "VP Logistics",
-      company: "Leading Retail Chain",
+        "Flying Chital's Intelligent Fleet Management Application has significantly enhanced operational efficiency, reducing costs, and effectively plugging revenue leakage through real time, end to end visibility. It is an indispensable solution and a must have platform for all transport operators and contractors globally.",
+      author: "Managing Director",
+      role: "Ripley JRC Ventures Private Limited",
+      company: "Jain Road Carriers",
       rating: 5,
       avatar: null,
     },
     {
       quote:
-        "Traks transformed our field operations. With real-time tracking and automated workflows, our service delivery efficiency increased by 45%.",
-      author: "Priya Sharma",
-      role: "Operations Manager",
-      company: "Industrial Manufacturing",
+        "Flying Chital's Integrated Logistics Management Application has enhanced operational efficiency, reducing costs, and effectively plugging revenue leakage through real time, end to end visibility in bulk raw material movement. It is a must have solution for private mine operators and manufacturing plants.",
+      author: "General Manager",
+      role: "JRC Transcon Private Limited",
+      company: "JRC Transcon Private Limited",
       rating: 5,
       avatar: null,
     },
     {
       quote:
-        "The data-driven insights from their platform helped us identify and prevent revenue leakages. Outstanding ROI within the first quarter.",
-      author: "Vikram Singh",
-      role: "CFO",
-      company: "Mining & Resources",
+        "Flying Chital's Smart Vehicle Management System (SVMS) has significantly streamlined vehicular operations and brought substantial reductions in operational costs. The system has enhanced efficiency, transparency, and control, making it a highly effective solution for modern urban fleet and municipal transport management.",
+      author: "Additional Commissioner",
+      role: "Bhubaneswar Municipal Corporation",
+      company: "Bhubaneswar Municipal Corporation",
       rating: 5,
       avatar: null,
     },
     {
       quote:
-        "Their AI-powered automation eliminated manual inefficiencies completely. A game-changer for our organization's digital transformation journey.",
-      author: "Meera Patel",
-      role: "Chief Technology Officer",
-      company: "Government Agency",
+        "Flying Chital's Attendance and Field Personnel Monitoring and Management System has demonstrated seamless implementation and reliability. The team's strong project management, timely execution, and responsive after sales support have ensured smooth operations and measurable improvements in workforce supervision and overall efficiency.",
+      author: "Managing Director",
+      role: "Yatri Corporate Services Pvt. Ltd.",
+      company: "Yatri Corporate Services Pvt. Ltd. (YCS)",
+      rating: 5,
+      avatar: null,
+    },
+    {
+      quote:
+        "Flying Chital's Integrated Logistics Management Application has transformed inbound and outbound logistics with real time visibility. It has improved efficiency, reduced costs, and minimized leakages. The swift execution, seamless implementation, and proactive 24X7 support make it indispensable for mining operators and manufacturing plants handling high volume logistics operations.",
+      author: "General Manager",
+      role: "SJSPL Plant, Barbil",
+      company: "SJSPL",
+      rating: 5,
+      avatar: null,
+    },
+    {
+      quote:
+        "Flying Chital's Integrated Logistics Management Application has enabled real time visibility in iron ore movement, improving efficiency, reducing costs, and curbing leakages. The rapid execution, smooth implementation, and proactive 24X7 support have been instrumental in sustaining our high intensity, continuous mining and logistics operations.",
+      author: "DGM",
+      role: "Bolani Mines, SAIL",
+      company: "SAIL Bolani Mines",
       rating: 5,
       avatar: null,
     },
