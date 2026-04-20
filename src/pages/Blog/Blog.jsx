@@ -7,6 +7,15 @@ import blogImageMap from "../../assets/json/blogImageMap";
 
 const blogs = blogsData.map((b) => ({ ...b, image: blogImageMap[b.imageKey] }));
 
+const slugify = (value = "") =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+const getCanonicalBlogPath = (blog) => `/blog/${blog.id}-${slugify(blog.title)}`;
+
 const categoryColors = {
   Technology: "bg-indigo-100 text-indigo-700",
   Architecture: "bg-purple-100 text-purple-700",
@@ -84,7 +93,7 @@ export default function Blog() {
       <section className="py-10">
         <div className="container mx-auto px-4 sm:px-6">
           <Link
-            to={featured.link}
+            to={getCanonicalBlogPath(featured)}
             className="group block rounded-[30px] overflow-hidden shadow-[0_24px_80px_rgba(15,23,42,0.10)] border border-slate-100 bg-white hover:shadow-[0_32px_100px_rgba(55,52,169,0.18)] transition-shadow duration-300"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -137,7 +146,7 @@ export default function Blog() {
             {rest.map((blog) => (
               <Link
                 key={blog.id}
-                to={blog.link}
+                to={getCanonicalBlogPath(blog)}
                 className="group flex flex-col rounded-[24px] overflow-hidden border border-slate-100 bg-white shadow-[0_18px_55px_rgba(15,23,42,0.07)] hover:shadow-[0_28px_70px_rgba(55,52,169,0.14)] hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="overflow-hidden">

@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React, { Suspense, lazy, useEffect, useState } from "react";
-import { useRoutes, Navigate } from "react-router-dom";
+import { useRoutes, Navigate, useParams } from "react-router-dom";
 import blogsData from "../assets/json/blogs.js";
 import BrandLogo from "../assets/images/logos1.png";
 
 const About = lazy(() => import("../pages/About/About"));
 const Parentlayout = lazy(() => import("../component/layout/parentlayout"));
 const Home = lazy(() => import("../pages/Home/Home"));
-const Contact = lazy(() => import("../pages/Contact/Contact"));
+const Contact = lazy(() => import("../pages/Contact/contact"));
 const Services = lazy(() => import("../pages/Services/Services"));
 const Industry = lazy(() => import("../pages/ProductandSolutions/Industry"));
 const AssetManagement = lazy(() => import("../pages/AssetManagement"));
@@ -61,18 +61,67 @@ const AllBlog = lazy(() => import("../pages/Blog/AllBlog"));
 const AddLeader = lazy(() => import("../admin/pages/Leaders/addLeaders"));
 const UserNotFound = lazy(() => import("../pages/NotFound"));
 
+const slugify = (value = "") =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
 // Auto-generate blog article routes from blogs.js
 // - Blogs with a "component" field render their own handcrafted JSX page
 // - Blogs without "component" (or component: null) use the DynamicBlog template
 const blogPageModules = import.meta.glob("../pages/Blog/*.jsx");
-const blogRoutes = blogsData.map((b) => {
+const blogEntries = blogsData.map((b) => ({
+  ...b,
+  canonicalPath: `/blog/${b.id}-${slugify(b.title)}`,
+}));
+
+const createBlogElement = (b) => {
   if (b.component) {
     const loader = blogPageModules[`../pages/Blog/${b.component}.jsx`];
+    if (!loader) {
+      return <DynamicBlog blog={b} />;
+    }
     const Component = lazy(loader);
-    return { path: b.link, element: <Component /> };
+    return <Component />;
   }
-  return { path: b.link, element: <DynamicBlog blog={b} /> };
-});
+  return <DynamicBlog blog={b} />;
+};
+
+const blogBySlug = blogEntries.reduce((acc, b) => {
+  const slug = b.canonicalPath.replace("/blog/", "");
+  acc[slug] = b;
+  return acc;
+}, {});
+
+const blogElementById = blogEntries.reduce((acc, b) => {
+  acc[b.id] = createBlogElement(b);
+  return acc;
+}, {});
+
+const blogLegacyRoutes = blogEntries
+  .filter((b) => b.link && b.link !== b.canonicalPath)
+  .map((b) => ({
+    path: b.link,
+    element: blogElementById[b.id] || <UserNotFound />,
+  }));
+
+function BlogDetailRoute() {
+  const { slug } = useParams();
+  const blog = blogBySlug[slug];
+
+  if (!blog) {
+    return <UserNotFound />;
+  }
+
+  return blogElementById[blog.id] || <UserNotFound />;
+}
+
+const blogRoutes = [
+  { path: "/blog/:slug", element: <BlogDetailRoute /> },
+  ...blogLegacyRoutes,
+];
 
 function RouteLoader() {
   return (

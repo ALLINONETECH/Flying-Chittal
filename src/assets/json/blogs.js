@@ -103,6 +103,138 @@ const blogs = [
         category: "Launch",
         date: "2026-04-05",
     },
+    {
+        id: 8,
+        title: "Industry 5.0 and Agentic AI: Building Human-Centric, Resilient Operations",
+        excerpt:
+            "Industry 5.0 is not about replacing people with AI. It is about combining human judgment with AI speed and agentic autonomy to build measurable, sustainable business outcomes.",
+        imageKey: "Industry",
+        link: "/industry5-agentic-ai",
+        category: "Technology",
+        date: "2026-04-20",
+        theme: "blue",
+        content: [
+            {
+                type: "intro",
+                heading: "The Shift From Industry 4.0 to Industry 5.0",
+                text: "Industry 4.0 focused on connectivity through IoT, data pipelines, and automation. Industry 5.0 builds on that base and advances a more complete goal: human-centric, sustainable, and resilient industrial ecosystems.",
+            },
+            {
+                type: "highlights",
+                title: "What Defines This Next Phase",
+                items: [
+                    {
+                        icon: "users",
+                        title: "Human judgment stays central",
+                        description:
+                            "People bring context, creativity, and accountability in high-impact decisions.",
+                    },
+                    {
+                        icon: "cpu",
+                        title: "AI augments execution",
+                        description:
+                            "AI delivers speed, pattern recognition, and predictive capability at scale.",
+                    },
+                    {
+                        icon: "rocket",
+                        title: "Agentic AI adds autonomy",
+                        description:
+                            "Systems can initiate actions, adapt workflows, and coordinate across operations.",
+                    },
+                    {
+                        icon: "shield",
+                        title: "Resilience becomes operational",
+                        description:
+                            "Enterprises can respond faster to disruption without losing governance control.",
+                    },
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Enter Agentic AI: The Next Leap",
+                paragraphs: [
+                    "Traditional AI systems are mostly reactive: they analyze and recommend. Agentic AI goes further by taking initiative where policy permits.",
+                    "In logistics, that means systems that do not just detect delays but reroute shipments automatically. In plants, anomalies are not only flagged but resolved in real time through coordinated actions.",
+                    "This shift is already underway. The core question is no longer if autonomous assistance is possible, but where it creates real operational value.",
+                ],
+            },
+            {
+                type: "bullets",
+                title: "Where AI and Agentic AI Become Ubiquitous",
+                items: [
+                    "Operations and Manufacturing: Predictive maintenance evolves into self-healing systems; production plans adapt to real-time constraints; quality control becomes increasingly autonomous.",
+                    "Logistics and Supply Chain: Route optimization adjusts in motion; fraud risks are detected earlier; exception handling is increasingly end-to-end and automated.",
+                    "Workforce Augmentation: AI copilots support operators and decision-makers; dependence on tribal knowledge decreases; onboarding and upskilling accelerate.",
+                    "Enterprise Decision-Making: Dashboards mature into decision engines with scenario simulation, risk forecasting, and continuous optimization.",
+                    "Everyday Business Processes: Compliance tracking, customer interactions, and cross-functional coordination become intelligent and low-friction.",
+                ],
+            },
+            {
+                type: "narrative",
+                badge: "Avoiding the Hype Trap",
+                heading: "Adopt AI with purpose, not pressure",
+                paragraphs: [
+                    "Every technology wave brings overenthusiasm. The risk is implementing AI because it is available, not because it is necessary.",
+                    "Common pitfalls include solving low-impact problems with high-complexity systems, treating deployments as showcases, and underestimating integration, maintenance, and training costs.",
+                    "The result is familiar: high investment, low utilization, and eventual disillusionment.",
+                ],
+                imageKey: "Optimize",
+                imageAlt: "Industrial operations optimization dashboard",
+                imageRight: true,
+            },
+            {
+                type: "bullets",
+                title: "The Right Lens: Objective Cost-Benefit Thinking",
+                items: [
+                    "What exact business problem are we solving?",
+                    "What measurable impact can be delivered: cost, efficiency, risk, or service quality?",
+                    "Is AI the simplest viable solution, or unnecessary complexity?",
+                    "What is the expected payback period and adoption curve?",
+                    "Can the solution deliver repeatable value, not one-time novelty?",
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Flying Chital's Perspective: Practical Intelligence Over Theoretical Innovation",
+                paragraphs: [
+                    "At Flying Chital, technology is a means to business outcomes. Real transformation depends not only on innovation but also on how quickly teams can absorb and use it.",
+                    "That is why solutions are designed for ease of use, rapid adoption, operational relevance, and scalable growth. The focus remains on high-impact pain points with measurable gains from day one.",
+                    "This moves enterprises from investment-heavy experimentation to value-driven deployment.",
+                ],
+            },
+            {
+                type: "highlights",
+                title: "The Road Ahead: Human + AI Synergy",
+                items: [
+                    {
+                        icon: "check",
+                        title: "Agentic AI handles repetition",
+                        description:
+                            "High-frequency decisions, ongoing adjustments, and data-heavy coordination can run with policy-aware autonomy.",
+                    },
+                    {
+                        icon: "star",
+                        title: "Humans lead strategy",
+                        description:
+                            "People focus on oversight, innovation, and ethical governance where judgment is essential.",
+                    },
+                    {
+                        icon: "globe",
+                        title: "Balance determines winners",
+                        description:
+                            "Successful organizations leverage intelligence without losing control and adopt innovation without losing purpose.",
+                    },
+                ],
+            },
+            {
+                type: "cta",
+                heading: "AI is infrastructure, not the destination",
+                text: "The true differentiator is not who adopts AI first, but who adopts it wisely. Before every deployment, ask: does this create real value or just visible complexity?",
+                buttonText: "Talk to Flying Chital",
+                buttonLink: "/contact",
+            },
+        ],
+    },
     // {
     //     id: 8,
     //     title: "Smart Fleet Visibility: A Dynamic Blog Example",

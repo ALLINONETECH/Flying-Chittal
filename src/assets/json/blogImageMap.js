@@ -3,6 +3,7 @@
 
 import Revolution from "../images/Revolution.png";
 import Revolution2 from "../images/Revolution2.png";
+import Industry from "../images/industry.png";
 import Empowering1 from "../images/Empowering1.png";
 import Streamline from "../images/Streamline.png";
 import Optimize from "../images/Optimize.png";
@@ -12,6 +13,7 @@ import SVMSCover from "../images/SVMSLAUNCH/WhatsApp Image 2026-04-05 at 2.16.40
 const blogImageMap = {
     Revolution,
     Revolution2,
+    Industry,
     Empowering1,
     Streamline,
     Optimize,

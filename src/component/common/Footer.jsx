@@ -123,7 +123,7 @@ export default function Footer() {
             </div>
 
             <div className="space-y-5">
-              <div className="grid gap-3 sm:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-2">
                 <a
                   href="mailto:info@flyingchital.com"
                   className="group rounded-2xl border border-white/10 bg-slate-950/40 p-4 transition-colors hover:border-indigo-300/30 hover:bg-slate-950/70"
@@ -174,41 +174,26 @@ export default function Footer() {
                     Phone
                   </p>
                   <p className="mt-1.5 text-sm font-semibold text-white group-hover:text-indigo-200">
-                    +91 78945 67778
+                    +91 7676429520
                   </p>
                 </a>
 
-                <Link
-                  to="/about"
-                  className="group rounded-2xl border border-white/10 bg-slate-950/40 p-4 transition-colors hover:border-indigo-300/30 hover:bg-slate-950/70"
-                >
-                  <FooterIcon>
-                    <svg
-                      className="h-5 w-5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={1.8}
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-                  </FooterIcon>
-                  <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">
-                    Office
+              </div>
+
+              <div className="rounded-[20px] border border-white/10 bg-slate-950/25 p-5 shadow-[0_16px_40px_rgba(15,23,42,0.18)]">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-indigo-200">
+                  Office Address (Registered Office)
+                </p>
+                <div className="space-y-1.5 text-sm leading-6 text-slate-300">
+                  <p>Flying Chital Private Limited</p>
+                  <p>Room No 228, Second Floor, DLF Cyber City</p>
+                  <p>IDCO Info Park, Technology Corridor</p>
+                  <p>Chandaka Industrial Estate, Patia</p>
+                  <p>Bhubaneswar, Dist - Khorda, Odisha 751024</p>
+                  <p>
+                    Email: <a className="text-indigo-200 hover:text-white transition-colors" href="mailto:info@flyingchital.com">info@flyingchital.com</a>
                   </p>
-                  <p className="mt-1.5 text-sm font-semibold text-white group-hover:text-indigo-200">
-                    Odisha, India
-                  </p>
-                </Link>
+                </div>
               </div>
 
               <div className="rounded-[20px] border border-white/10 bg-slate-950/25 p-5 shadow-[0_16px_40px_rgba(15,23,42,0.18)]">
