@@ -19,6 +19,7 @@ import Bibhu from "../../assets/images/Bibhu Sir.jpg";
 import Abhijit from "../../assets/images/Abhijit Radke.jpg";
 import Amit from "../../assets/images/Amit.jpg";
 import Jaya from "../../assets/images/jaya.png";
+import Bhawna from "../../assets/images/bhawna.jpeg";
 import Chiranjiv from "../../assets/images/Chiranjiv sir 2.jpg";
 import Biplab from "../../assets/images/Biplab JI.jpg";
 import Debashis from "../../assets/images/Debashis Sahoo ji.jpg";
@@ -43,8 +44,11 @@ import YCS from "../../assets/images/ycs.png";
 import Arcelor from "../../assets/images/Arcelor.png";
 import Jindal from "../../assets/images/jindal.png";
 import JSL from "../../assets/images/JSL.png";
+import VlAccess from "../../assets/images/vlaccess.jpeg";
+import Idtech from "../../assets/images/idtech.jpeg";
 import TataSteel from "../../assets/images/TataSteel.png";
 import BRPL from "../../assets/images/BRPL.png";
+import SAIL from "../../assets/images/sail.jpeg";
 import SJSPL from "../../assets/images/SJSPL.png";
 import MYTHRI from "../../assets/images/MYTHRI.png";
 import HomeIcon from "../../assets/images/HomeIcon.png";
@@ -84,15 +88,18 @@ export default function About() {
   }, []);
 
   const deploymentClients = [
+    { name: "SAIL", logo: SAIL },
     { name: "BMC", logo: BMC },
-    { name: "YCS", logo: YCS },
-    { name: "Tata", logo: Tata },
     { name: "JSW", logo: JSW },
+    { name: "SJSPL", logo: SJSPL },
+    { name: "YCS", logo: YCS },
+    { name: "Vl Access", logo: VlAccess },
+    { name: "Id tech", logo: Idtech },
+    { name: "Tata", logo: Tata },
     { name: "Nippon Steel", logo: Nippon },
     { name: "Tata Steel", logo: TataSteel },
     { name: "Arcelor", logo: Arcelor },
     { name: "Jindal", logo: Jindal },
-    { name: "SJSPL", logo: SJSPL },
     { name: "Nalco", logo: Nalco },
     { name: "JSL", logo: JSL },
     { name: "MYTHRI", logo: MYTHRI },
@@ -141,9 +148,9 @@ export default function About() {
       bio: "Software developer with strong backend and application performance expertise. He builds secure, efficient systems using modern engineering practices and clean code principles.",
     },
     {
-      name: "Jaya Kumari",
+      name: "Bhawna Mishra",
       role: "Manager– Business Development & Strategy",
-      image: Jaya,
+      image: Bhawna,
       bio: "Business development and strategy leader focused on growth, partnerships, and market expansion. She aligns client needs with technology solutions to drive sustainable business outcomes.",
     },
   ];
