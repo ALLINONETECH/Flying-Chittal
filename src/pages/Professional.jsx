@@ -86,7 +86,7 @@ export default function Professional() {
             <div className="w-16 h-1 mb-6 rounded-full bg-orange-400 inline-flex"></div>
 
             <p className="mb-8 text-justify text-[16px] md:text-[20px] lg:text-[20px] font-[400] font-heebo leading-[24px] text-[#30343F] w-full md:w-4/5">
-              Flying Chital Tech Private Limited is pleased to offer
+              Flying Chital Private Limited is pleased to offer
               comprehensive services for the supply and installation of the
               indigenous TETRA Professional Mobile Radio (PMR) systems, tailored
               to meet the specific communication requirements within the

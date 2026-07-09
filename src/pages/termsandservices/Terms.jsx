@@ -16,13 +16,13 @@ export default function Terms() {
       <p className="font-bold">
         These Terms are effective for all existing and future Flying Chital
         customers, including but without limitation to users having access to
-        'Flying Chital Tech Private Limited’s operator profile page' to manage
+        'Flying Chital Private Limited’s operator profile page' to manage
         their claimed operator profiles.
       </p>
       <p>
         Please read these Terms carefully. By accessing or using the Flying
         Chital Platform, you are agreeing to these Terms and concluding a
-        legally binding contract with Flying Chital Tech Private Limited. You
+        legally binding contract with Flying Chital Private Limited. You
         may not use the Services if you do not accept the Terms or are unable to
         be bound by the Terms. Your use of the Flying Chital Platform is at your
         own risk, including the risk that you might be exposed to content that
@@ -52,7 +52,7 @@ export default function Terms() {
         the purpose of sharing, displaying, hosting, publishing, transacting, or
         uploading information or views or pictures and includes other persons
         jointly participating in using the Services including without limitation
-        a user having access to 'Flying Chital Tech Private Limited operator
+        a user having access to 'Flying Chital Private Limited operator
         profile page' to manage claimed operator profiles or otherwise.
       </p>
       <h2 className="font-bold">Content</h2>

@@ -142,7 +142,7 @@ export default function Career() {
               <div className="w-14 h-1 bg-orange-400 rounded-full mb-6" />
               <div className="space-y-4 text-gray-600 font-heebo text-base leading-relaxed">
                 <p>
-                  Flying Chital Tech Private Limited invites dynamic talent to
+                  Flying Chital Private Limited invites dynamic talent to
                   join our team and be part of our groundbreaking journey in
                   Digital Transformation, Edge Computing, Mobility, and Managed
                   IT Services.

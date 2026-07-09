@@ -381,7 +381,7 @@ export default function About() {
                   Moreover, our comprehensive suite of managed IT services
                   empowers organizations to streamline their operations and
                   drive sustainable growth in an ever-evolving digital
-                  landscape. At Flying Chital Tech Private Limited, we are
+                  landscape. At Flying Chital Private Limited, we are
                   committed to propelling businesses towards a future of
                   unparalleled technological advancement and operational
                   excellence.

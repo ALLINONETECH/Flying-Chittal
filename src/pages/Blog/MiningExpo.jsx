@@ -6,7 +6,7 @@ const sections = [
   {
     heading: "Introduction",
     content:
-      "At the 2nd Odisha Mining & Infrastructure International Expo 2024, stood Flying Chital Tech Private Limited — a beacon of innovation and digital transformation. With a strategic focus on revolutionizing businesses and pioneering technological advancements, Flying Chital's participation at the expo marked a significant milestone in the realm of industrial innovation.",
+      "At the 2nd Odisha Mining & Infrastructure International Expo 2024, stood Flying Chital Private Limited — a beacon of innovation and digital transformation. With a strategic focus on revolutionizing businesses and pioneering technological advancements, Flying Chital's participation at the expo marked a significant milestone in the realm of industrial innovation.",
   },
   {
     heading: "Flying Chital: A Vanguard of Digital Transformation",
