@@ -146,13 +146,13 @@ export default function About() {
       role: "Software Developer",
       image: Amit,
       bio: "Software developer with strong backend and application performance expertise. He builds secure, efficient systems using modern engineering practices and clean code principles.",
-    },
-    {
-      name: "Bhawna Mishra",
-      role: "Manager– Business Development & Strategy",
-      image: Bhawna,
-      bio: "Business development and strategy leader focused on growth, partnerships, and market expansion. She aligns client needs with technology solutions to drive sustainable business outcomes.",
-    },
+    }
+    // {
+    //   name: "Bhawna Mishra",
+    //   role: "Manager– Business Development & Strategy",
+    //   image: Bhawna,
+    //   bio: "Business development and strategy leader focused on growth, partnerships, and market expansion. She aligns client needs with technology solutions to drive sustainable business outcomes.",
+    // },
   ];
 
   const operationTeam = [
@@ -174,12 +174,12 @@ export default function About() {
       image: Debashis,
       bio: "Field executive focused on smooth on-site execution and timely delivery. He supports deployments with a strong commitment to client satisfaction and operational discipline.",
     },
-    {
-      name: "P Nayan Kumar Dora",
-      role: "Field Executive",
-      image: Nayan,
-      bio: "Field executive supporting implementation, service continuity, and client support on site. He ensures tasks are completed on schedule with close attention to quality.",
-    },
+    // {
+    //   name: "P Nayan Kumar Dora",
+    //   role: "Field Executive",
+    //   image: Nayan,
+    //   bio: "Field executive supporting implementation, service continuity, and client support on site. He ensures tasks are completed on schedule with close attention to quality.",
+    // },
   ];
 
   const whyChooseUsPoints = [
@@ -197,6 +197,29 @@ export default function About() {
       title: "Proven Track Record",
       description:
         "With a proven track record of delivering results, we provide not just technology, but a comprehensive partnership in achieving your goals. Our dedication to staying on the cutting edge ensures that clients stay ahead through increased efficiency, enhanced productivity, and future-proofed operations.",
+    },
+  ];
+
+  const whyFlyingChitalPoints = [
+    {
+      title: "Essential to the ecosystem",
+      description:
+        "The Chital supports the ecosystem around it. It reminds us that significance is not always about being at the top of the food chain, but about creating value within the ecosystem we serve.",
+    },
+    {
+      title: "Swift, with agility and timing",
+      description:
+        "Speed matters, but agility and timing matter just as much. The Chital inspires us to move decisively, adapt quickly, and act at the right moment.",
+    },
+    {
+      title: "Masters of adaptation",
+      description:
+        "Despite the challenges of the wild, Chital continue to thrive. Their strength lies in adapting, evolving, and finding ways to move forward.",
+    },
+    {
+      title: "Finding a way forward",
+      description:
+        "Even in difficult and unpredictable situations, Chital navigate obstacles and keep moving. That resilience is central to how we approach challenges.",
     },
   ];
 
@@ -420,6 +443,54 @@ export default function About() {
               We combine domain expertise, intelligent technology, and practical
               execution to deliver solutions that adapt to your business and
               create lasting operational impact.
+            </p>
+          </div>
+
+          <div className="mb-12 rounded-3xl border border-indigo-100 bg-white/90 p-6 shadow-lg sm:p-8 lg:p-10">
+            <div className="mx-auto max-w-4xl text-center">
+              <span className="inline-flex items-center gap-2 rounded-full border border-orange-100 bg-orange-50 px-4 py-1.5 text-sm font-semibold text-orange-700 font-heebo">
+                Our Name, Our Philosophy
+              </span>
+              <h2 className="mt-4 text-2xl font-bold leading-tight text-gray-900 font-heebo sm:text-3xl lg:text-4xl">
+                Why Flying Chital?
+              </h2>
+              <p className="mt-3 text-lg font-semibold text-primary font-heebo sm:text-xl">
+                We don't just run with the herd. We find our own way to fly.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-gray-600 font-heebo sm:text-lg">
+                The Spotted Deer, or Chital, is more than a beautiful creature
+                of the wild. It embodies the philosophy we believe in.
+              </p>
+            </div>
+
+            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+              {whyFlyingChitalPoints.map((point, index) => (
+                <article
+                  key={point.title}
+                  className="rounded-2xl border border-gray-100 bg-gradient-to-br from-slate-50 to-white p-5 sm:p-6"
+                >
+                  <div className="flex items-start gap-4">
+                    <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 font-bold text-primary font-heebo">
+                      {index + 1}
+                    </span>
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-900 font-heebo sm:text-xl">
+                        {point.title}
+                      </h3>
+                      <p className="mt-2 text-base leading-relaxed text-gray-600 font-heebo">
+                        {point.description}
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <p className="mx-auto mt-8 max-w-4xl text-center text-base leading-relaxed text-gray-700 font-heebo sm:text-lg">
+              That's why we are called <strong>FLYING CHITAL.</strong> We may
+              not always be the biggest, the fastest, or the strongest, but we
+              believe in being agile, adaptive, resilient, and essential to the
+              ecosystem we operate in.
             </p>
           </div>
 

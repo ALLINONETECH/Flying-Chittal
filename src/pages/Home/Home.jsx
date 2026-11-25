@@ -40,6 +40,14 @@ export default function Home() {
 
   const productsSolutions = [
     {
+      title: "Intelligent Quantity & Quality Tracking",
+      description:
+        "Multimodal material tracking and blend reconciliation to predict quantity and quality from source through stockyards to the plant.",
+      image: Edge1,
+      link: "/from-mine-to-manufacturing-plant",
+      icon: "📊",
+    },
+    {
       title: "Flying Chital Intelligent Logistics Management",
       description:
         "Smart, multimodal integrated logistics management platform revolutionizing logistics with AI and real-time visibility.",

@@ -22,6 +22,7 @@
 //   { type:"richText",   heading?:"", paragraphs:[""] }
 //   { type:"keyStats",   title?:"", stats:[{ value:"800+", label:"Vehicles" }] }
 //   { type:"cta",        heading:"", text?:"", buttonText:"", buttonLink:"" }
+//   { type:"video",      title?:"", url:"https://youtu.be/..." }
 //
 // When migrating to an API, replace this export with a fetch call returning the same shape.
 
@@ -232,6 +233,140 @@ const blogs = [
                 text: "The true differentiator is not who adopts AI first, but who adopts it wisely. Before every deployment, ask: does this create real value or just visible complexity?",
                 buttonText: "Talk to Flying Chital",
                 buttonLink: "/contact",
+            },
+        ],
+    },
+    {
+        id: 9,
+        title: "From the Mine to the Manufacturing Plant: Predicting Quantity and Quality",
+        excerpt:
+            "How intelligent multimodal tracking, digital twins, blend modelling, and predictive analytics can reconcile quantity and quality across mines, conveyors, stockyards, rail, and manufacturing plants.",
+        imageKey: "BlogMining",
+        link: "/from-mine-to-manufacturing-plant",
+        category: "Mining",
+        date: "2026-11-25",
+        theme: "amber",
+        content: [
+            {
+                type: "intro",
+                heading: "Predicting the Blend Before It Reaches the Plant",
+                text: "In metals, mining, and manufacturing, finished-product quality is shaped well before production starts. Iron ore, coal, limestone, and other bulk materials come from different sources, and each delivery can vary in grade, moisture, and chemical composition. As these materials travel by road, rail, and conveyor, are stored in stockyards, and are blended for consumption, a practical question emerges: do we know what quantity and quality will actually reach the plant, early enough to respond?",
+            },
+            {
+                type: "richText",
+                heading: "One View of Material Across Every Route",
+                paragraphs: [
+                    "Flying Chital's Intelligent Multimodal Quantity & Quality Tracking and Blend Reconciliation platform connects material movement with stockyard inventory and plant requirements. It is designed to follow material from its origin through transport, unloading, storage, blending, reclaiming, and consumption.",
+                    "Rather than treating each truck, rake, conveyor, or stockyard as a separate source of records, the platform builds a shared operational picture: what material moved, where it came from, how much is available, and how its quality changes as it combines with other material.",
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Following Blends Along Pipe Conveyors",
+                paragraphs: [
+                    "On a long conveyor with multiple loading and transfer points, each new addition can change the blend already in motion. The digital model accounts for the quantity added at each point, belt speed, travel time, material source, moisture, and available chemical analysis.",
+                    "As the material advances, the system recalculates source contributions and the weighted blend. Teams can see how the mix is expected to change along the route and estimate the quality of the material before it arrives at the plant.",
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Building Material Genealogy in Road and Rail Stockyards",
+                paragraphs: [
+                    "A stockyard may receive material from many mines through hundreds of truck deliveries or through railway rakes containing material from multiple sources. Recording origin, quantity, time, unloading location, and quality information creates a traceable history for incoming material.",
+                    "As deliveries are added and stock is reclaimed, the system updates inventory quantities, source-wise contribution, and estimated blended characteristics. Truck-wise, rake-wise, and wagon-wise records feed a consistent view of stockyard inventory, regardless of how the material arrived.",
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Knowing What Is Available for Production",
+                paragraphs: [
+                    "The most useful measure is not only what was loaded or received, but what is available to consume at a particular time. Combining movement, unloading, stockyard, reclaiming, and consumption information helps estimate available tonnes, source contribution, moisture, blended chemistry, and expected availability.",
+                    "This gives production teams a better view of future plant feed and reduces the gap between a receipt record and the material that can actually be used in the process.",
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Connecting Daily Blend Plans to Operational Reality",
+                paragraphs: [
+                    "Plants work to defined blend and production plans. The platform can compare actual and predicted material characteristics with those requirements, highlighting emerging differences in parameters such as total iron, silica, alumina, moisture, material grade, and source contribution.",
+                    "When a shortfall or mismatch becomes visible early, planners have more time to review supply and production choices instead of discovering the deviation only after the material has entered the process.",
+                ],
+            },
+            {
+                type: "richText",
+                heading: "From Detecting Deviations to Evaluating Responses",
+                paragraphs: [
+                    "A warning is most valuable when it helps teams decide what to do next. Using available source quantities, material quality, transport constraints, operating capacity, and production needs, mathematical optimization and AI-assisted decision support can help evaluate alternative blend choices.",
+                    "Options may include adjusting quantities from particular sources, changing loading rates at conveyor transfer points, selecting an alternate material combination, or modifying stockyard reclaiming sequences. The intent is to support decisions that bring the expected blend closer to plan while respecting operational constraints.",
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Forecasting Plant Feed Before It Arrives",
+                paragraphs: [
+                    "A Digital Twin of material movement can combine conveyor speed, loading rates, travel times, stockyard activity, and material genealogy to estimate what may reach the plant in the next 30 or 60 minutes, or further ahead where the available data supports it.",
+                    "Planners can use these forecasts to assess expected quantity, arrival time, blend, and quality against the production plan. If a mismatch is projected, the team can consider corrective measures while there is still time to influence the outcome.",
+                ],
+            },
+            {
+                type: "highlights",
+                title: "Technology Working as One Operational System",
+                items: [
+                    {
+                        icon: "layers",
+                        title: "Digital Twin and material genealogy",
+                        description:
+                            "Represent material movement, inventory, and blending as a connected operational model.",
+                    },
+                    {
+                        icon: "cpu",
+                        title: "Industrial IoT and integration",
+                        description:
+                            "Connect relevant weighbridges, belt weighers, PLCs, sensors, GPS, ERP, MES, and laboratory systems.",
+                    },
+                    {
+                        icon: "chart-bar",
+                        title: "Modelling and predictive analytics",
+                        description:
+                            "Apply mass balance, weighted blend calculations, and forecasts to estimate future material conditions.",
+                    },
+                    {
+                        icon: "rocket",
+                        title: "Optimization and decision support",
+                        description:
+                            "Evaluate practical material combinations and operational adjustments against production needs.",
+                    },
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Why Quantity and Quality Intelligence Matters",
+                paragraphs: [
+                    "For steel plants, beneficiation operations, mining complexes, cement works, and other bulk-material-intensive industries, raw-material management affects more than logistics. It influences production efficiency, product consistency, energy use, inventory confidence, and operating cost.",
+                    "Connecting quantity, quality, and movement can improve reconciliation, clarify stockyard conditions, support adherence to blend plans, surface deviations earlier, and reduce dependence on disconnected records and manual reporting. The result is a stronger basis for timely, informed operating decisions.",
+                ],
+            },
+            {
+                type: "richText",
+                heading: "Every Tonne Accounted For. Every Blend Understood.",
+                paragraphs: [
+                    "The next step in industrial digital transformation is to connect transport, conveyors, stockyards, blending, inventory, and production planning rather than digitizing each activity in isolation.",
+                    "Flying Chital's goal is to help create that connected view—from the mine to the stockyard, along the conveyor, and into the manufacturing plant—so teams can understand what is moving, how much is moving, what its quality is, what it may become after blending, and when it is expected to be available.",
+                    "Knowing what is in inventory matters. Having a reliable view of what will be available next, and how it aligns with production, can make that knowledge operationally useful.",
+                ],
+            },
+            {
+                type: "video",
+                title: "Watch the Solution Overview",
+                url: "https://youtu.be/siAM5BLBI00",
+            },
+            {
+                type: "cta",
+                heading: "Read the Complete LinkedIn Article",
+                text: "Explore the full Intelligent Multimodal Quantity & Quality Tracking and Blend Reconciliation article.",
+                buttonText: "Open on LinkedIn",
+                buttonLink:
+                    "https://www.linkedin.com/pulse/from-mine-manufacturing-plant-what-you-could-predict-quality-mishra-mprgf/",
             },
         ],
     },

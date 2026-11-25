@@ -8,6 +8,7 @@ import Empowering1 from "../images/Empowering1.png";
 import Streamline from "../images/Streamline.png";
 import Optimize from "../images/Optimize.png";
 import ExpoCovr from "../images/Expo.png";
+import BlogMining from "../images/BlogMining.png";
 import SVMSCover from "../images/SVMSLAUNCH/WhatsApp Image 2026-04-05 at 2.16.40 PM (1).jpeg";
 
 const blogImageMap = {
@@ -18,6 +19,7 @@ const blogImageMap = {
     Streamline,
     Optimize,
     ExpoCovr,
+    BlogMining,
     SVMSCover,
 };
 

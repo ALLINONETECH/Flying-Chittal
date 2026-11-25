@@ -391,6 +391,26 @@ function SectionKeyStats({ s, t }) {
  * { type:"cta", heading:"", text?:"", buttonText:"", buttonLink:"" }
  */
 function SectionCta({ s, t }) {
+  const isExternalLink = /^https?:\/\//i.test(s.buttonLink || "");
+  const ButtonContent = (
+    <>
+      {s.buttonText}
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M5 12h14M12 5l7 7-7 7"
+        />
+      </svg>
+    </>
+  );
+
   return (
     <section className={`py-20 px-6 ${t.ctaBg}`}>
       <div className="container mx-auto max-w-3xl text-center">
@@ -403,26 +423,51 @@ function SectionCta({ s, t }) {
           </p>
         )}
         {s.buttonText && (
-          <Link
-            to={s.buttonLink || "/contact"}
-            className="inline-flex items-center gap-2 bg-white text-slate-900 font-bold font-heebo px-8 py-3.5 rounded-full hover:bg-gray-100 transition-colors shadow-lg text-base"
-          >
-            {s.buttonText}
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              viewBox="0 0 24 24"
+          isExternalLink ? (
+            <a
+              href={s.buttonLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-slate-900 font-bold font-heebo px-8 py-3.5 rounded-full hover:bg-gray-100 transition-colors shadow-lg text-base"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 12h14M12 5l7 7-7 7"
-              />
-            </svg>
-          </Link>
+              {ButtonContent}
+            </a>
+          ) : (
+            <Link
+              to={s.buttonLink || "/contact"}
+              className="inline-flex items-center gap-2 bg-white text-slate-900 font-bold font-heebo px-8 py-3.5 rounded-full hover:bg-gray-100 transition-colors shadow-lg text-base"
+            >
+              {ButtonContent}
+            </Link>
+          )
         )}
+      </div>
+    </section>
+  );
+}
+
+function SectionVideo({ s }) {
+  const videoId = (s.url || "").match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|watch\?v=))([A-Za-z0-9_-]+)/)?.[1];
+
+  if (!videoId) return null;
+
+  return (
+    <section className="py-12 pb-16 px-6 bg-gray-50">
+      <div className="container mx-auto max-w-5xl">
+        {s.title && (
+          <h3 className="text-2xl font-bold font-heebo text-amber-700 text-center mb-8">
+            {s.title}
+          </h3>
+        )}
+        <div className="rounded-2xl overflow-hidden shadow-xl aspect-video bg-black">
+          <iframe
+            className="w-full h-full"
+            src={`https://www.youtube.com/embed/${videoId}`}
+            title={s.title || "Flying Chital YouTube video"}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
       </div>
     </section>
   );
@@ -511,6 +556,8 @@ export default function DynamicBlog({ blog }) {
             return <SectionRichText key={i} s={s} t={t} />;
           case "keyStats":
             return <SectionKeyStats key={i} s={s} t={t} />;
+          case "video":
+            return <SectionVideo key={i} s={s} />;
           case "cta":
             return <SectionCta key={i} s={s} t={t} />;
           default:

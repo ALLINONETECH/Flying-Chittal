@@ -18,6 +18,10 @@ export const navItem = [
     to: "/products",
     subMenu: [
       {
+        label: "Intelligent Quantity & Quality Tracking",
+        to: "/from-mine-to-manufacturing-plant",
+      },
+      {
         label:
           "Intelligent Integrated Multi Modal (Road, Rail & Conveyor) Logistics Management System",
         to: "/flyingchital",
